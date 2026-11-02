@@ -1,0 +1,7 @@
+# HST fixed-point metadata: Gaia DR3 1533365584518328576
+
+The reviewed target query returned HTTP 200 at 2026-11-02 12:38:15 UTC; the 5,334-byte raw VOTable has SHA256 `281a15c331e9cc1a063b76b16dc7f54632f9552c74888c7a835d6dd9fbf20b83`. It contains the exact query echo, one QUERY_STATUS=OK without later error/overflow, 31 FIELDs matching the fresh positive control, and explicit empty TABLEDATA. Zero rows is the finite result for HST `image` metadata whose reported `s_region` contains the unpropagated Gaia DR3 2016.0 position (185.71462554756414°, +40.88393733581962°). The 20-row cap was not reached.
+
+This single point ignores proper motion, parallax, astrometric orbit and positional uncertainty. It cannot exclude a footprint at another epoch or nearby position, establish availability or quality of image pixels, identify a source or companion, prove an orbit, or prove novelty. The [fresh known fixed-point control](../hst-1533-control-v2-20261102T1233Z-01a193cc/INDEPENDENT_SCIENCE_RESULT_REVIEW.json) passed the mechanics check but hit its cap: 20 rows were five objects with four access variants each. It does not establish archive completeness. No product links were followed.
+
+The [target query](QUERY.adql), [protocol](PROTOCOL.md), [frozen manifest](MANIFEST.json), [preflight](INDEPENDENT_PREFLIGHT.md), capture records and separate science/execution reviews document this bounded acquisition. The original 14 remain held; no scientific policy, release or holdout changed. The directory's `1232Z` is a unique label, not the retrieval timestamp.

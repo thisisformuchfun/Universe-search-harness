@@ -1,0 +1,114 @@
+{
+  "finished_utc": "2026-11-02T08:42:37.378897+00:00",
+  "status": "PRODUCT_TRANSPORT_PREFIX_ONLY_IDENTITY_PENDING",
+  "manifest_sha256": "7ada7fbbfc0ee3feda6e160926082e8b9d63c2c1986fa0ff00f316c517f2f239",
+  "records": [
+    {
+      "stage": "root",
+      "decision": "PASS_INDEX",
+      "capture_record_sha256": "0c09c2824cb39e6e90b9a353593c10de871e8929bb8820f9e52e52c07656a2c8",
+      "request_record_sha256": "b9e3bb6e01194c4001eb6d3c57a058b91ca202751c8337a61e2e7dbef59d3e1e",
+      "body_sha256": "cf493675ced7a1332ee9105c7c6043ce6a8257f0093e1848390e13f2d5f89a83",
+      "body_bytes": 92063,
+      "http_status": 200,
+      "tls_verify_result": 0,
+      "cleanup_status": "EXIT_CONFIRMED",
+      "owned_pid": 14312,
+      "http_headers_verified": true,
+      "polling_overshoot_possible": true
+    },
+    {
+      "stage": "day",
+      "decision": "PASS_INDEX",
+      "capture_record_sha256": "e8705a35aa281aff48d82a1181b0787921d80bd41a92913a4628557d4b54f9d5",
+      "request_record_sha256": "0915ec79bec0c4f9d4067d8e98c2fa88647da90357a38c55ad14b818a737aa84",
+      "body_sha256": "a30e1d187ccdeb48d9465d95f1ab1d749cf4ddb3a332262e718965315de1396f",
+      "body_bytes": 1299,
+      "http_status": 200,
+      "tls_verify_result": 0,
+      "cleanup_status": "EXIT_CONFIRMED",
+      "owned_pid": 24252,
+      "http_headers_verified": true,
+      "polling_overshoot_possible": true
+    },
+    {
+      "stage": "plan",
+      "decision": "PASS_INDEX",
+      "capture_record_sha256": "7c271b3cb0840e64075332cae0a2d95806cdd8208812187a48025d9f925f59c1",
+      "request_record_sha256": "cf9bef817d7f9d57b8750b3e8d66c642604f61c30b2403bd92d171c422dd34fa",
+      "body_sha256": "510e1ae4f23937c221130734b6922de7dca00122de71077d858c64c63aa8551a",
+      "body_bytes": 312833,
+      "http_status": 200,
+      "tls_verify_result": 0,
+      "cleanup_status": "EXIT_CONFIRMED",
+      "owned_pid": 20428,
+      "http_headers_verified": true,
+      "polling_overshoot_possible": true
+    },
+    {
+      "stage": "product",
+      "decision": "PASS_TRANSPORT_PREFIX_ONLY",
+      "capture_record_sha256": "85f7628a5235ec2e6801bb6195b1773100ad6231d33530de48a34630bd8401a5",
+      "request_record_sha256": "9c8c47f5a7fa8c718dfd45f58936862c5f28fa41fcd04b25b1ffe4dbf968482f",
+      "body_sha256": "7a33d6a4ff8594c33b43181309bc5ad4e0739e6245943e06ba099172d04742de",
+      "body_bytes": 550080,
+      "http_status": 200,
+      "tls_verify_result": 0,
+      "cleanup_status": "EXIT_CONFIRMED",
+      "owned_pid": 15340,
+      "http_headers_verified": true,
+      "polling_overshoot_possible": true
+    }
+  ],
+  "lifecycle": [
+    {
+      "stage": "root",
+      "request_file_state": "VALID_JSON",
+      "owned_file_state": "VALID_JSON",
+      "native_file_state": "VALID_JSON",
+      "process_started": true,
+      "http_transport_complete": true
+    },
+    {
+      "stage": "day",
+      "request_file_state": "VALID_JSON",
+      "owned_file_state": "VALID_JSON",
+      "native_file_state": "VALID_JSON",
+      "process_started": true,
+      "http_transport_complete": true
+    },
+    {
+      "stage": "plan",
+      "request_file_state": "VALID_JSON",
+      "owned_file_state": "VALID_JSON",
+      "native_file_state": "VALID_JSON",
+      "process_started": true,
+      "http_transport_complete": true
+    },
+    {
+      "stage": "product",
+      "request_file_state": "VALID_JSON",
+      "owned_file_state": "VALID_JSON",
+      "native_file_state": "VALID_JSON",
+      "process_started": true,
+      "http_transport_complete": true
+    }
+  ],
+  "request_files_present": 4,
+  "requests_validly_recorded": 4,
+  "not_prepared": [],
+  "lease_released": true,
+  "owned_process_exit_confirmed": true,
+  "last_owned_pid": 15340,
+  "last_owned_process": {
+    "pid": 15340,
+    "creation_filetime_100ns": "134380825490703601",
+    "observed_utc": "2026-11-02T08:42:29.078467+00:00",
+    "executable_expected": "C:/Windows/System32/curl.exe",
+    "identity_status": "OWNED_HANDLE_CREATION_TIME_OBSERVED",
+    "instruction": "Never kill or claim ownership based on a stale PID alone."
+  },
+  "product_identity_validated": false,
+  "new_orbit_or_holdout_evaluation": false,
+  "native_headers_and_diagnostics": "local evidence only; privacy review before any packaging"
+}

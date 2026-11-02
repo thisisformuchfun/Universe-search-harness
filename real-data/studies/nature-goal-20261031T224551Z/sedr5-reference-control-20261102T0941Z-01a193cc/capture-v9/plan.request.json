@@ -1,0 +1,46 @@
+{
+  "started_utc": "2026-11-02T09:49:15.314748+00:00",
+  "request": {
+    "name": "plan",
+    "method": "GET",
+    "url": "https://casdc.china-vo.org/lamost/vac/sedr5/fits/20150309/HD110643N151055B02/",
+    "manifest_sha256": "d66c10ad95f2882fed0ceff6fe5c50bf36aeef63ba827150ace0f1989cc173e1",
+    "protocol_sha256": "4184d702c11f72a8cdca7fd1cbc38d8125cd4d812ef7524417d30504e0da0968",
+    "expected_link": "20150309_HD110643N151055B02_15_142.fit",
+    "response_policy": "no redirects, no retries; native evidence local only"
+  },
+  "command": [
+    "C:/Windows/System32/curl.exe",
+    "--disable",
+    "--proto",
+    "=https",
+    "--connect-timeout",
+    "15",
+    "--max-time",
+    "45",
+    "--max-filesize",
+    "500000",
+    "--silent",
+    "--show-error",
+    "--dump-header",
+    "C:\\gogogo\\universe search harness\\blackhole search\\astra-20261031T2113Z-01a193cc\\studies\\nature-goal-20261031T224551Z\\sedr5-reference-control-20261102T0941Z-01a193cc\\capture-v9\\plan.headers",
+    "--output",
+    "C:\\gogogo\\universe search harness\\blackhole search\\astra-20261031T2113Z-01a193cc\\studies\\nature-goal-20261031T224551Z\\sedr5-reference-control-20261102T0941Z-01a193cc\\capture-v9\\plan.raw",
+    "--write-out",
+    "%{http_code}\n%{ssl_verify_result}\n%{size_download}\n%{num_redirects}\n%{url_effective}\n",
+    "--url",
+    "https://casdc.china-vo.org/lamost/vac/sedr5/fits/20150309/HD110643N151055B02/"
+  ],
+  "limits": {
+    "body_bytes": 500000,
+    "header_bytes": 65536,
+    "stdout_bytes": 4096,
+    "stderr_bytes": 262144,
+    "curl_seconds": 45,
+    "process_seconds": 48,
+    "poll_seconds": 0.02,
+    "owned_process_cleanup_seconds": 2
+  },
+  "batch_deadline_ns": 48028307349200,
+  "effective_curl_seconds": 45
+}

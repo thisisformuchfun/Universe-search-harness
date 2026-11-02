@@ -1,0 +1,1 @@
+SELECT TOP 20 x.id1 AS x_specobjid,x.id2 AS gaia_source_id,x.ra1,x.dec1,x.ra2,x.dec2,x.distance,s.specobjid AS s_specobjid,s.plate,s.mjd,s.fiberid,s.ra AS fiber_ra,s.dec AS fiber_dec,s.run2d FROM sdss_dr17.x1p5__specobj__gaia_dr3__gaia_source AS x JOIN sdss_dr17.specobj AS s ON x.id1=s.specobjid WHERE x.id2=1607896637338835712 ORDER BY x.id1

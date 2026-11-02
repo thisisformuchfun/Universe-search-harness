@@ -1,0 +1,48 @@
+{
+  "finished_utc": "2026-11-02T10:44:40.419724+00:00",
+  "status": "STOP_UNPARSED_CONTENT",
+  "manifest_sha256": "e6ddcdc47660910ba3eaa79e4438f032c7945f13fd32cadd1dace636abeae33a",
+  "records": [
+    {
+      "stage": "table",
+      "decision": "STOP_UNPARSED_CONTENT",
+      "capture_record_sha256": "ab643118f97eaff0f50bc7afbcfe9c217addffe69dee268b92bc24f6c7c872b1",
+      "request_record_sha256": "f7bd032a0e14d1baa2191744c63b543a37f5e1b84c03103a590d31091589aa89",
+      "body_sha256": "94f41f32f8c0d34798fc223d4af10fd19a16fc63bc9e30069a6d2ff4ead90267",
+      "body_bytes": 7874,
+      "http_status": 200,
+      "tls_verify_result": 0,
+      "cleanup_status": "EXIT_CONFIRMED",
+      "owned_pid": 13144,
+      "http_headers_verified": true,
+      "polling_overshoot_possible": true
+    }
+  ],
+  "lifecycle": [
+    {
+      "stage": "table",
+      "request_file_state": "VALID_JSON",
+      "owned_file_state": "VALID_JSON",
+      "native_file_state": "VALID_JSON",
+      "process_started": true,
+      "http_transport_complete": true
+    }
+  ],
+  "request_files_present": 1,
+  "requests_validly_recorded": 1,
+  "not_prepared": [],
+  "lease_released": true,
+  "owned_process_exit_confirmed": true,
+  "last_owned_pid": 13144,
+  "last_owned_process": {
+    "pid": 13144,
+    "creation_filetime_100ns": "134380898797647594",
+    "observed_utc": "2026-11-02T10:44:39.772690+00:00",
+    "executable_expected": "C:/Windows/System32/curl.exe",
+    "identity_status": "OWNED_HANDLE_CREATION_TIME_OBSERVED",
+    "instruction": "Never kill or claim ownership based on a stale PID alone."
+  },
+  "product_identity_validated": false,
+  "new_orbit_or_holdout_evaluation": false,
+  "native_headers_and_diagnostics": "local evidence only; privacy review before any packaging"
+}

@@ -1,0 +1,110 @@
+{
+  "started_utc": "2026-11-02T09:56:04.837782+00:00",
+  "finished_utc": "2026-11-02T09:56:04.848121+00:00",
+  "elapsed_seconds": 0.0099453,
+  "manifest_sha256": "b8ad205d4e015a59a24ff48aed9a0123bbedaff79eeed987d662241a11ef890e",
+  "product_sha256": "0e1c7ac03810cd41ad1df477f0977d82e92ba1bad71e442912ca282b339fb439",
+  "sample_sha256": "445105154437335a95353a37aecbe93609d89a48bdee3b99fbcb54be33de8513",
+  "numpy_version": "2.3.5",
+  "astropy_version": "7.1.1",
+  "sample_identity": {
+    "specid": "20150309HD110643N151055B0215142",
+    "obsdate": "2015-03-09",
+    "planid": "HD110643N151055B02",
+    "spid": "15",
+    "fiberid": "142",
+    "iexp": "0",
+    "mjm": "82211011",
+    "obsid": "331215142",
+    "ra": "166.9787490000",
+    "dec": "16.3964380000",
+    "filename": "20150309/HD110643N151055B02/20150309_HD110643N151055B02_15_142.fit"
+  },
+  "matched_fits_identity": {
+    "planid": "HD110643N151055B02",
+    "spid": 15,
+    "fiberid": 142,
+    "catalogue_ra": "166.978749",
+    "catalogue_dec": "16.396438",
+    "header_obsid_present": false,
+    "independent_astrometry_established": false
+  },
+  "date_header_strings": {
+    "DATE-OBS": {
+      "value": "2015-03-09T15:56:25.12",
+      "comment": "UTC date and time at the start of observati"
+    },
+    "DATE-BEG": {
+      "value": "2015-03-09T23:31:24.0",
+      "comment": "Local time at the start of observation"
+    },
+    "DATE-END": {
+      "value": "2015-03-10T00:54:03.0",
+      "comment": "Local time at the end of observation"
+    }
+  },
+  "frames": [
+    {
+      "mjm": "82211011",
+      "arm": "b",
+      "pixels": 4136,
+      "finite": 4136,
+      "finite_adjacent_pairs": 4135,
+      "increasing_pairs": 4135,
+      "decreasing_pairs": 0,
+      "equal_pairs": 0
+    },
+    {
+      "mjm": "82211040",
+      "arm": "b",
+      "pixels": 4136,
+      "finite": 4136,
+      "finite_adjacent_pairs": 4135,
+      "increasing_pairs": 4135,
+      "decreasing_pairs": 0,
+      "equal_pairs": 0
+    },
+    {
+      "mjm": "82211068",
+      "arm": "b",
+      "pixels": 4136,
+      "finite": 4136,
+      "finite_adjacent_pairs": 4135,
+      "increasing_pairs": 4135,
+      "decreasing_pairs": 0,
+      "equal_pairs": 0
+    },
+    {
+      "mjm": "82211011",
+      "arm": "r",
+      "pixels": 4136,
+      "finite": 4136,
+      "finite_adjacent_pairs": 4135,
+      "increasing_pairs": 0,
+      "decreasing_pairs": 4135,
+      "equal_pairs": 0
+    },
+    {
+      "mjm": "82211040",
+      "arm": "r",
+      "pixels": 4136,
+      "finite": 4136,
+      "finite_adjacent_pairs": 4135,
+      "increasing_pairs": 0,
+      "decreasing_pairs": 4135,
+      "equal_pairs": 0
+    },
+    {
+      "mjm": "82211068",
+      "arm": "r",
+      "pixels": 4136,
+      "finite": 4136,
+      "finite_adjacent_pairs": 4135,
+      "increasing_pairs": 0,
+      "decreasing_pairs": 4135,
+      "equal_pairs": 0
+    }
+  ],
+  "scope": "one matched catalogue reference and LOGLAM ordering; no flux, RV, calibration or source-attribution inference",
+  "holdout_evaluated": false
+}

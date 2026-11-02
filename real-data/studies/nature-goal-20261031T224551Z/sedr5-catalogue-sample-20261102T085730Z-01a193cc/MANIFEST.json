@@ -1,0 +1,11 @@
+{
+  "created_utc": "2026-11-02T08:58:55.966276+00:00",
+  "script_sha256": "536ccf41236eb2f1700c278113baee00c0cbfd2efbf2c1cdefc07816e97970d5",
+  "protocol_sha256": "5effc84dbf44e4a9d48942e9397492a8ac2382863f0ba47d21df3f6b691c409a",
+  "library_sha256": "3f9b82d0ce290efc280dd4e70e1963045bc95aa527cf880387e6f8ccbcb525f5",
+  "transport_sha256": "0f6c1d71336306b5e0bb319f5ced7cfe0e059af891d6632d28f49e634c2c8f42",
+  "test_sha256": "5370e3c9cc0000ee02fae75004c6d115a27cac538d5502ebd467c8db47bf7e64",
+  "test_result_sha256": "03d7fbd85efe59ea96e53252f800356d3d25669b5f1b19b560e27d7365822540",
+  "review_status": "PENDING_INDEPENDENT_REVIEW",
+  "scope": "one public example CSV; no target query or science inference"
+}

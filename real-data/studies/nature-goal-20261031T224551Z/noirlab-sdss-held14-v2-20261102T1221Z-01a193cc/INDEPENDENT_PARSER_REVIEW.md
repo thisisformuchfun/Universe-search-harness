@@ -1,0 +1,5 @@
+# Independent fixed zero-response parser review
+
+On 2026-11-02 UTC `/root/ps1_execution_review` accepted this reader only for the pinned original-14 response. Parser SHA256 `a531a0a662686e28e36df288c8becc658eceef56db3b448007583a9cba612f1c`; test SHA256 `82552b7a827a7ea44d1881d0ce17afde67a7236d6a4f2f84f7064c6f2c15b0e1`; output SHA256 `ba66a363d977ed86a9a5fbd7df70e827d875d6465c7ae96e2a4d3067c2cd8896`. All 14 parser evidence pins matched and the saved JSON equalled an independent parse of the exact body. The same 14 distinct decimal-string IDs, exact query echo, leading QUERY_STATUS OK, TableRows=0, explicit empty TABLEDATA, positive-matching FIELD attributes and bound shape-control status were checked. All 12 synthetic tests passed under socket/process denial.
+
+One initial parser invocation failed before writing because it retained a stale filename; the corrected invocation is the sole completed output, not the sole attempted invocation. This is a fixed-response reader, not a general fresh VOTable parser. Zero rows apply only to the selected clean-view nearest-neighbor query; they do not establish absence of SDSS spectra, an RV or an orbit.

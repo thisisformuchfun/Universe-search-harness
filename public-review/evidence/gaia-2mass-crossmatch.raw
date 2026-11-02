@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<VOTABLE version="1.4" xmlns="http://www.ivoa.net/xml/VOTable/v1.3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.ivoa.net/xml/VOTable/v1.3 http://www.ivoa.net/xml/VOTable/votable-1.4.xsd">
+<RESOURCE type="results">
+<INFO name="QUERY_STATUS" value="OK"/>
+<INFO name="PROVIDER" value="ARI (Astronomisches Rechen Institut - Heidelberg, Germany)">ARI's TAP access to the Gaia Archive.</INFO>
+<INFO name="QUERY" value="SELECT * FROM gaiadr3.tmass_psc_xsc_best_neighbour WHERE source_id IN (632497706010874240,824344003814438528,1533365584518328576,1538284425878995712,2245423750054837888,2852726284550996352,3316050687674598656,4299244434901041024,4491401821468887552,5591318172608607232,5928370816455687808,5929746958324419200,5959603097090964992,5991734159714775296) ORDER BY source_id"/>
+<TABLE name="result_S1793483535722">
+<FIELD ID="source_id" datatype="long" name="source_id" ucd="meta.id;meta.main">
+<DESCRIPTION>Unique Gaia source identifier</DESCRIPTION>
+</FIELD>
+<FIELD ID="clean_tmass_psc_xsc_oid" datatype="int" name="clean_tmass_psc_xsc_oid" ucd="meta.id.cross">
+<DESCRIPTION>External Catalogue source identifier</DESCRIPTION>
+</FIELD>
+<FIELD ID="original_ext_source_id" arraysize="*" datatype="char" name="original_ext_source_id" ucd="meta.id.cross">
+<DESCRIPTION>Original External Catalogue source identifier</DESCRIPTION>
+</FIELD>
+<FIELD ID="angular_distance" datatype="float" name="angular_distance" ucd="pos.angDistance" unit="arcsec">
+<DESCRIPTION>Angular Distance between the two sources</DESCRIPTION>
+</FIELD>
+<FIELD ID="number_of_neighbours" datatype="short" name="number_of_neighbours" ucd="meta.version">
+<DESCRIPTION>Number of neighbours in External Catalogue</DESCRIPTION>
+</FIELD>
+<FIELD ID="number_of_mates" datatype="short" name="number_of_mates" ucd="meta.version">
+<DESCRIPTION>Number of mates in Gaia Catalogue</DESCRIPTION>
+</FIELD>
+<FIELD ID="xm_flag" datatype="short" name="xm_flag" ucd="meta.code.status">
+<DESCRIPTION>Cross-match algorithm flag</DESCRIPTION>
+</FIELD>
+<DATA>
+<TABLEDATA>
+  <TR>
+    <TD>632497706010874240</TD>
+    <TD>346578333</TD>
+    <TD>09181709+1753474</TD>
+    <TD>0.1837366</TD>
+    <TD>1</TD>
+    <TD>0</TD>
+    <TD>8</TD>
+  </TR>
+  <TR>
+    <TD>824344003814438528</TD>
+    <TD>420857409</TD>
+    <TD>09424670+4626140</TD>
+    <TD>0.12869598</TD>
+    <TD>1</TD>
+    <TD>0</TD>
+    <TD>8</TD>
+  </TR>
+  <TR>
+    <TD>1533365584518328576</TD>
+    <TD>407779379</TD>
+    <TD>12225151+4053020</TD>
+    <TD>0.10823338</TD>
+    <TD>1</TD>
+    <TD>0</TD>
+    <TD>8</TD>
+  </TR>
+  <TR>
+    <TD>1538284425878995712</TD>
+    <TD>412799738</TD>
+    <TD>12144335+4302203</TD>
+    <TD>0.03323081</TD>
+    <TD>1</TD>
+    <TD>0</TD>
+    <TD>8</TD>
+  </TR>
+  <TR>
+    <TD>2245423750054837888</TD>
+    <TD>460114934</TD>
+    <TD>20302904+6500497</TD>
+    <TD>0.12679149</TD>
+    <TD>1</TD>
+    <TD>0</TD>
+    <TD>8</TD>
+  </TR>
+  <TR>
+    <TD>2852726284550996352</TD>
+    <TD>370093996</TD>
+    <TD>23522491+2617313</TD>
+    <TD>0.10239172</TD>
+    <TD>1</TD>
+    <TD>0</TD>
+    <TD>8</TD>
+  </TR>
+  <TR>
+    <TD>3316050687674598656</TD>
+    <TD>301874898</TD>
+    <TD>05574603+0249147</TD>
+    <TD>0.044485852</TD>
+    <TD>1</TD>
+    <TD>0</TD>
+    <TD>8</TD>
+  </TR>
+  <TR>
+    <TD>4299244434901041024</TD>
+    <TD>321544174</TD>
+    <TD>20032871+0923103</TD>
+    <TD>0.19312248</TD>
+    <TD>1</TD>
+    <TD>0</TD>
+    <TD>8</TD>
+  </TR>
+  <TR>
+    <TD>4491401821468887552</TD>
+    <TD>322061698</TD>
+    <TD>17260039+0933307</TD>
+    <TD>0.010882805</TD>
+    <TD>1</TD>
+    <TD>0</TD>
+    <TD>8</TD>
+  </TR>
+  <TR>
+    <TD>5591318172608607232</TD>
+    <TD>157995084</TD>
+    <TD>07284982-3449562</TD>
+    <TD>0.08746857</TD>
+    <TD>1</TD>
+    <TD>0</TD>
+    <TD>8</TD>
+  </TR>
+  <TR>
+    <TD>5928370816455687808</TD>
+    <TD>63293552</TD>
+    <TD>16261565-5634286</TD>
+    <TD>0.06917316</TD>
+    <TD>1</TD>
+    <TD>0</TD>
+    <TD>8</TD>
+  </TR>
+  <TR>
+    <TD>5929746958324419200</TD>
+    <TD>73559012</TD>
+    <TD>16570977-5424386</TD>
+    <TD>0.08243581</TD>
+    <TD>1</TD>
+    <TD>0</TD>
+    <TD>8</TD>
+  </TR>
+  <TR>
+    <TD>5959603097090964992</TD>
+    <TD>128166688</TD>
+    <TD>17223876-4159169</TD>
+    <TD>0.071471445</TD>
+    <TD>1</TD>
+    <TD>0</TD>
+    <TD>8</TD>
+  </TR>
+  <TR>
+    <TD>5991734159714775296</TD>
+    <TD>123922102</TD>
+    <TD>16130516-4301021</TD>
+    <TD>0.05502261</TD>
+    <TD>1</TD>
+    <TD>1</TD>
+    <TD>8</TD>
+  </TR>
+</TABLEDATA>
+</DATA>
+</TABLE>
+</RESOURCE><RESOURCE type="meta" utype="adhoc:service" name="Datalink_GaiaDR3">
+<DESCRIPTION>Get all the linked data the specified Gaia-DR3 source ID.</DESCRIPTION>
+<PARAM arraysize="51" datatype="char" name="accessURL" ucd="meta.ref.url" value="https://gaia.ari.uni-heidelberg.de/datalink/gaiadr3">
+<DESCRIPTION>URL to invoke the service.</DESCRIPTION>
+</PARAM>
+<GROUP name="inputParams">
+<PARAM name="sourceid" datatype="long" ref="source_id" value=""/>
+</GROUP>
+</RESOURCE>
+</VOTABLE>

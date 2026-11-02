@@ -1,0 +1,5 @@
+# Independent original-14 preflight
+
+On 2026-11-02 UTC `/root/ps1_science_review` accepted the exact original-14 query. It matches the saved HELD_OBJECTS and Gaia rows with 14 unique decimal IDs; its projection/join, deterministic order, TOP201/MAXREC201 and stop-on-cap/overflow conditions are frozen. The independently reviewed 14-value shape control recovered one published positive at a different time; it does not establish all-member behavior, a shared archive snapshot, completeness, fibre attribution, an RV or an orbit.
+
+`/root/ps1_execution_review` accepted the one fixed GET with manifest SHA256 `492881e4f72087336be505980092257fcd5957ff66ee6a9d61219906d597ef1a`. All 61 pins matched; missing each of 13 shape inputs blocked in independent simulations; all 20 offline tests passed with socket/process denial. Custody was unchanged, session idle, capture absent and no locks present. HTTP-complete is transport only; independent TAP/schema/cap/identity review remains required. No ranking, release policy or holdout evaluation is authorized.

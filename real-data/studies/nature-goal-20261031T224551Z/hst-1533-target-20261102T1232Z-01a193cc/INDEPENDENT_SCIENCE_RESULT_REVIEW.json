@@ -1,0 +1,66 @@
+{
+  "verdict": "PASS_BOUNDED_EMPTY_FIXED_POINT_METADATA",
+  "reviewed_utc": "2026-11-02T12:39:11.105810+00:00",
+  "reviewer": "independent science reviewer",
+  "scope": "Single held Gaia source; descriptive HST image-footprint metadata at its unpropagated reference position; no product access, orbit fit, ranking, release or holdout evaluation.",
+  "input_sha256": {
+    "raw_sha256": "281a15c331e9cc1a063b76b16dc7f54632f9552c74888c7a835d6dd9fbf20b83",
+    "result_sha256": "5d8675d4bf1f6ddf5c9e20b439b3f691f2c1121fa1c33fc6952733d811e929a0",
+    "native_metadata_sha256": "7a2ced4b7d0841e211a083e6fcf347bb9aa4870769495b62290c2b8f7ffd1721",
+    "query_sha256": "55f760dde70c8f8943a7c4a7a994652ac8925e9e659ac3e218ece070585b554d",
+    "protocol_sha256": "b7e787c2bf70af40e329af03c4fb9d8c8fdec1939b61eec1a4dbae3cf501c8ba",
+    "manifest_sha256": "fa0fbc8537370aec7c33888c7a8551b092a7c537dcadacf1d53041875c53f5ad",
+    "gaia_raw_sha256": "1125405b6e1974040a1ec9accadcaaed566d928691ced1509e07c3cc63a24f08",
+    "gaia_parsed_sha256": "ac3b2ef6fdbc44b732404d1e5f8db4801185f1a10977959c4a1318d9cd426862",
+    "control_raw_sha256": "760770c6c3e0d3ff0d7d548b2a9b90182f95bcc668b42c7a3e9ae7ad08cb20e2",
+    "control_science_review_sha256": "88caf042d4e991f2d7cb47ecce1ac04c41e64cb372c6037aac355501b355b5c0",
+    "control_execution_review_sha256": "d6474ac0399c2889e2dc9f714de59e0c2a8dad6b9f7f2bf1159771253649f71d"
+  },
+  "transport": {
+    "http_status": 200,
+    "curl_exit": 0,
+    "tls_verify_result": 0,
+    "redirect_count": 0,
+    "limit_failure": null,
+    "raw_bytes": 5334,
+    "finished_utc": "2026-11-02T12:38:15.648433+00:00"
+  },
+  "votable": {
+    "version": "1.4",
+    "query_echo_exact": true,
+    "query_status_sequence": [
+      "OK"
+    ],
+    "trailing_error_or_overflow": false,
+    "field_count": 31,
+    "field_attributes_match_fresh_positive_control": true,
+    "tabledata_explicit": true,
+    "row_count": 0,
+    "top": 20,
+    "maxrec": 20,
+    "at_cap": false,
+    "full_external_xsd_validation_performed": false
+  },
+  "source": {
+    "gaia_dr3_source_id_exact": "1533365584518328576",
+    "ra_icrs_deg_exact": "185.71462554756414",
+    "dec_icrs_deg_exact": "40.88393733581962",
+    "reference_epoch_julian_year": "2016.0",
+    "input_raw_and_parsed_row_match": true,
+    "point_propagated_to_observation_epoch": false,
+    "position_uncertainty_or_orbit_in_query": false
+  },
+  "interpretation": "The service returned no HST image metadata rows for the query requiring the archived s_region to contain this one unpropagated Gaia 2016 reference point, in this response. This is not a general absence of HST imaging, source coverage at other epochs, a resolved companion, or any orbital or black-hole finding.",
+  "limits": [
+    "The fresh positive tests a different fixed point at a different time and does not prove completeness for this target or all footprints.",
+    "Proper motion, parallax, orbital motion, position uncertainty and footprint/astrometric errors can move a source relative to this single reference point.",
+    "The point predicate does not test a surrounding area or the separate offset PS1 position.",
+    "No returned rows means there is no target polygon, detector coverage, usable pixels, resolution, association or image access to evaluate.",
+    "No held-source disposition or release criterion changed."
+  ],
+  "privacy": {
+    "product_urls_followed": false,
+    "product_values_or_native_headers_in_this_review": false,
+    "returned_access_column_rows": 0
+  }
+}

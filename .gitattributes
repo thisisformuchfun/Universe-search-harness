@@ -1,0 +1,12 @@
+# Preserve hashes of the historical packet and dated review across platforms.
+real-data/** -text
+public-review/** -text
+dashboard/** -text
+docs/media/** -text
+scripts/** -text
+README.md -text
+EXPORT_REVIEW.md -text
+EXPORT_MANIFEST.json -text
+verify_export.py -text
+.gitattributes -text
+.gitignore -text

@@ -1,0 +1,436 @@
+[
+  {
+    "record_id": "5991734159714775296:OrbitalAlternative",
+    "source_id": "5991734159714775296",
+    "nss_solution_type": "OrbitalAlternative",
+    "a0_mas": 1.6160556559991888,
+    "f_phot_solar": 11486.615821231457,
+    "observable_not_companion_mass": true,
+    "parallax_relative_error": 0.07273209819019902,
+    "period_relative_error": 0.0006318829432442629,
+    "efficiency": 0.35784402,
+    "uncertainty": {
+      "status": "UNAVAILABLE",
+      "reason": "solution type covariance not supported; alternatives remain held"
+    },
+    "status": "HOLD_QUALITY_AND_NOVELTY",
+    "novelty_status": "UNKNOWN_NOT_CLEARED",
+    "reasons": [
+      "No exhaustive literature/novelty clearance",
+      "No independent orbit and luminous/blend/triple-alternative validation",
+      "Alternative/targeted solution needs independent review",
+      "Full supported covariance unavailable or invalid"
+    ],
+    "evidence": [],
+    "partition": "train",
+    "review_links": {
+      "gaia_source": "https://gea.esac.esa.int/archive/",
+      "simbad": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=Gaia+DR3+5991734159714775296",
+      "ads_search": "https://ui.adsabs.harvard.edu/search/q=5991734159714775296",
+      "warning": "Links are for human follow-up, not proof of absence in literature."
+    }
+  },
+  {
+    "record_id": "3316050687674598656:OrbitalAlternative",
+    "source_id": "3316050687674598656",
+    "nss_solution_type": "OrbitalAlternative",
+    "a0_mas": 1.1892301430772636,
+    "f_phot_solar": 1918.5064966973753,
+    "observable_not_companion_mass": true,
+    "parallax_relative_error": 0.03849855756191161,
+    "period_relative_error": 0.0004574391894481687,
+    "efficiency": 0.0,
+    "uncertainty": {
+      "status": "UNAVAILABLE",
+      "reason": "solution type covariance not supported; alternatives remain held"
+    },
+    "status": "HOLD_QUALITY_AND_NOVELTY",
+    "novelty_status": "UNKNOWN_NOT_CLEARED",
+    "reasons": [
+      "No exhaustive literature/novelty clearance",
+      "No independent orbit and luminous/blend/triple-alternative validation",
+      "Alternative/targeted solution needs independent review",
+      "Full supported covariance unavailable or invalid"
+    ],
+    "evidence": [],
+    "partition": "train",
+    "review_links": {
+      "gaia_source": "https://gea.esac.esa.int/archive/",
+      "simbad": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=Gaia+DR3+3316050687674598656",
+      "ads_search": "https://ui.adsabs.harvard.edu/search/q=3316050687674598656",
+      "warning": "Links are for human follow-up, not proof of absence in literature."
+    }
+  },
+  {
+    "record_id": "5928370816455687808:OrbitalAlternative",
+    "source_id": "5928370816455687808",
+    "nss_solution_type": "OrbitalAlternative",
+    "a0_mas": 1.1752213401158706,
+    "f_phot_solar": 1196.2136846037818,
+    "observable_not_companion_mass": true,
+    "parallax_relative_error": 0.0888300845173757,
+    "period_relative_error": 0.0006894529400545374,
+    "efficiency": 0.2928781,
+    "uncertainty": {
+      "status": "UNAVAILABLE",
+      "reason": "solution type covariance not supported; alternatives remain held"
+    },
+    "status": "HOLD_QUALITY_AND_NOVELTY",
+    "novelty_status": "UNKNOWN_NOT_CLEARED",
+    "reasons": [
+      "No exhaustive literature/novelty clearance",
+      "No independent orbit and luminous/blend/triple-alternative validation",
+      "Alternative/targeted solution needs independent review",
+      "Full supported covariance unavailable or invalid"
+    ],
+    "evidence": [],
+    "partition": "train",
+    "review_links": {
+      "gaia_source": "https://gea.esac.esa.int/archive/",
+      "simbad": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=Gaia+DR3+5928370816455687808",
+      "ads_search": "https://ui.adsabs.harvard.edu/search/q=5928370816455687808",
+      "warning": "Links are for human follow-up, not proof of absence in literature."
+    }
+  },
+  {
+    "record_id": "1533365584518328576:OrbitalAlternative",
+    "source_id": "1533365584518328576",
+    "nss_solution_type": "OrbitalAlternative",
+    "a0_mas": 0.9969768620734208,
+    "f_phot_solar": 337.9309798248796,
+    "observable_not_companion_mass": true,
+    "parallax_relative_error": 0.051472322916595745,
+    "period_relative_error": 0.0004753865869030432,
+    "efficiency": 0.3961269,
+    "uncertainty": {
+      "status": "UNAVAILABLE",
+      "reason": "solution type covariance not supported; alternatives remain held"
+    },
+    "status": "HOLD_QUALITY_AND_NOVELTY",
+    "novelty_status": "UNKNOWN_NOT_CLEARED",
+    "reasons": [
+      "No exhaustive literature/novelty clearance",
+      "No independent orbit and luminous/blend/triple-alternative validation",
+      "Alternative/targeted solution needs independent review",
+      "Full supported covariance unavailable or invalid"
+    ],
+    "evidence": [],
+    "partition": "test",
+    "review_links": {
+      "gaia_source": "https://gea.esac.esa.int/archive/",
+      "simbad": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=Gaia+DR3+1533365584518328576",
+      "ads_search": "https://ui.adsabs.harvard.edu/search/q=1533365584518328576",
+      "warning": "Links are for human follow-up, not proof of absence in literature."
+    }
+  },
+  {
+    "record_id": "632497706010874240:OrbitalAlternative",
+    "source_id": "632497706010874240",
+    "nss_solution_type": "OrbitalAlternative",
+    "a0_mas": 2.2268420716729476,
+    "f_phot_solar": 460.0720253761667,
+    "observable_not_companion_mass": true,
+    "parallax_relative_error": 0.0872639209062593,
+    "period_relative_error": 0.0007693879208073866,
+    "efficiency": 0.0,
+    "uncertainty": {
+      "status": "UNAVAILABLE",
+      "reason": "solution type covariance not supported; alternatives remain held"
+    },
+    "status": "HOLD_QUALITY_AND_NOVELTY",
+    "novelty_status": "UNKNOWN_NOT_CLEARED",
+    "reasons": [
+      "No exhaustive literature/novelty clearance",
+      "No independent orbit and luminous/blend/triple-alternative validation",
+      "Alternative/targeted solution needs independent review",
+      "Full supported covariance unavailable or invalid"
+    ],
+    "evidence": [],
+    "partition": "train",
+    "review_links": {
+      "gaia_source": "https://gea.esac.esa.int/archive/",
+      "simbad": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=Gaia+DR3+632497706010874240",
+      "ads_search": "https://ui.adsabs.harvard.edu/search/q=632497706010874240",
+      "warning": "Links are for human follow-up, not proof of absence in literature."
+    }
+  },
+  {
+    "record_id": "1538284425878995712:OrbitalAlternative",
+    "source_id": "1538284425878995712",
+    "nss_solution_type": "OrbitalAlternative",
+    "a0_mas": 1.0758359306973466,
+    "f_phot_solar": 131.59483512356053,
+    "observable_not_companion_mass": true,
+    "parallax_relative_error": 0.035686839546937695,
+    "period_relative_error": 0.00041908587404183536,
+    "efficiency": 0.41893804,
+    "uncertainty": {
+      "status": "UNAVAILABLE",
+      "reason": "solution type covariance not supported; alternatives remain held"
+    },
+    "status": "HOLD_QUALITY_AND_NOVELTY",
+    "novelty_status": "UNKNOWN_NOT_CLEARED",
+    "reasons": [
+      "No exhaustive literature/novelty clearance",
+      "No independent orbit and luminous/blend/triple-alternative validation",
+      "Alternative/targeted solution needs independent review",
+      "Full supported covariance unavailable or invalid"
+    ],
+    "evidence": [],
+    "partition": "train",
+    "review_links": {
+      "gaia_source": "https://gea.esac.esa.int/archive/",
+      "simbad": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=Gaia+DR3+1538284425878995712",
+      "ads_search": "https://ui.adsabs.harvard.edu/search/q=1538284425878995712",
+      "warning": "Links are for human follow-up, not proof of absence in literature."
+    }
+  },
+  {
+    "record_id": "5959603097090964992:OrbitalAlternative",
+    "source_id": "5959603097090964992",
+    "nss_solution_type": "OrbitalAlternative",
+    "a0_mas": 1.7268713451273492,
+    "f_phot_solar": 130.88088530367494,
+    "observable_not_companion_mass": true,
+    "parallax_relative_error": 0.02453562005118139,
+    "period_relative_error": 0.0005562997873040074,
+    "efficiency": 0.0,
+    "uncertainty": {
+      "status": "UNAVAILABLE",
+      "reason": "solution type covariance not supported; alternatives remain held"
+    },
+    "status": "HOLD_QUALITY_AND_NOVELTY",
+    "novelty_status": "UNKNOWN_NOT_CLEARED",
+    "reasons": [
+      "No exhaustive literature/novelty clearance",
+      "No independent orbit and luminous/blend/triple-alternative validation",
+      "Alternative/targeted solution needs independent review",
+      "Full supported covariance unavailable or invalid"
+    ],
+    "evidence": [],
+    "partition": "train",
+    "review_links": {
+      "gaia_source": "https://gea.esac.esa.int/archive/",
+      "simbad": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=Gaia+DR3+5959603097090964992",
+      "ads_search": "https://ui.adsabs.harvard.edu/search/q=5959603097090964992",
+      "warning": "Links are for human follow-up, not proof of absence in literature."
+    }
+  },
+  {
+    "record_id": "4491401821468887552:OrbitalAlternative",
+    "source_id": "4491401821468887552",
+    "nss_solution_type": "OrbitalAlternative",
+    "a0_mas": 1.2952876229760453,
+    "f_phot_solar": 129.62526084953956,
+    "observable_not_companion_mass": true,
+    "parallax_relative_error": 0.059072440961995924,
+    "period_relative_error": 0.0006543734864471637,
+    "efficiency": 0.35211158,
+    "uncertainty": {
+      "status": "UNAVAILABLE",
+      "reason": "solution type covariance not supported; alternatives remain held"
+    },
+    "status": "HOLD_QUALITY_AND_NOVELTY",
+    "novelty_status": "UNKNOWN_NOT_CLEARED",
+    "reasons": [
+      "No exhaustive literature/novelty clearance",
+      "No independent orbit and luminous/blend/triple-alternative validation",
+      "Alternative/targeted solution needs independent review",
+      "Full supported covariance unavailable or invalid"
+    ],
+    "evidence": [],
+    "partition": "train",
+    "review_links": {
+      "gaia_source": "https://gea.esac.esa.int/archive/",
+      "simbad": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=Gaia+DR3+4491401821468887552",
+      "ads_search": "https://ui.adsabs.harvard.edu/search/q=4491401821468887552",
+      "warning": "Links are for human follow-up, not proof of absence in literature."
+    }
+  },
+  {
+    "record_id": "824344003814438528:OrbitalAlternative",
+    "source_id": "824344003814438528",
+    "nss_solution_type": "OrbitalAlternative",
+    "a0_mas": 0.9835535395665055,
+    "f_phot_solar": 67.70234320623186,
+    "observable_not_companion_mass": true,
+    "parallax_relative_error": 0.03293746107464156,
+    "period_relative_error": 0.0013062237005140858,
+    "efficiency": 0.0,
+    "uncertainty": {
+      "status": "UNAVAILABLE",
+      "reason": "solution type covariance not supported; alternatives remain held"
+    },
+    "status": "HOLD_QUALITY_AND_NOVELTY",
+    "novelty_status": "UNKNOWN_NOT_CLEARED",
+    "reasons": [
+      "No exhaustive literature/novelty clearance",
+      "No independent orbit and luminous/blend/triple-alternative validation",
+      "Alternative/targeted solution needs independent review",
+      "Full supported covariance unavailable or invalid"
+    ],
+    "evidence": [],
+    "partition": "train",
+    "review_links": {
+      "gaia_source": "https://gea.esac.esa.int/archive/",
+      "simbad": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=Gaia+DR3+824344003814438528",
+      "ads_search": "https://ui.adsabs.harvard.edu/search/q=824344003814438528",
+      "warning": "Links are for human follow-up, not proof of absence in literature."
+    }
+  },
+  {
+    "record_id": "5929746958324419200:OrbitalAlternative",
+    "source_id": "5929746958324419200",
+    "nss_solution_type": "OrbitalAlternative",
+    "a0_mas": 0.6657559319247196,
+    "f_phot_solar": 59.31214872115871,
+    "observable_not_companion_mass": true,
+    "parallax_relative_error": 0.05566281472069397,
+    "period_relative_error": 0.0027461972191888196,
+    "efficiency": 0.30739048,
+    "uncertainty": {
+      "status": "UNAVAILABLE",
+      "reason": "solution type covariance not supported; alternatives remain held"
+    },
+    "status": "HOLD_QUALITY_AND_NOVELTY",
+    "novelty_status": "UNKNOWN_NOT_CLEARED",
+    "reasons": [
+      "No exhaustive literature/novelty clearance",
+      "No independent orbit and luminous/blend/triple-alternative validation",
+      "Alternative/targeted solution needs independent review",
+      "Full supported covariance unavailable or invalid"
+    ],
+    "evidence": [],
+    "partition": "validation",
+    "review_links": {
+      "gaia_source": "https://gea.esac.esa.int/archive/",
+      "simbad": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=Gaia+DR3+5929746958324419200",
+      "ads_search": "https://ui.adsabs.harvard.edu/search/q=5929746958324419200",
+      "warning": "Links are for human follow-up, not proof of absence in literature."
+    }
+  },
+  {
+    "record_id": "5591318172608607232:OrbitalAlternative",
+    "source_id": "5591318172608607232",
+    "nss_solution_type": "OrbitalAlternative",
+    "a0_mas": 1.4563366935292077,
+    "f_phot_solar": 38.83581362680154,
+    "observable_not_companion_mass": true,
+    "parallax_relative_error": 0.026441271945081914,
+    "period_relative_error": 0.0007686396068708467,
+    "efficiency": 0.0,
+    "uncertainty": {
+      "status": "UNAVAILABLE",
+      "reason": "solution type covariance not supported; alternatives remain held"
+    },
+    "status": "HOLD_QUALITY_AND_NOVELTY",
+    "novelty_status": "UNKNOWN_NOT_CLEARED",
+    "reasons": [
+      "No exhaustive literature/novelty clearance",
+      "No independent orbit and luminous/blend/triple-alternative validation",
+      "Alternative/targeted solution needs independent review",
+      "Full supported covariance unavailable or invalid"
+    ],
+    "evidence": [],
+    "partition": "test",
+    "review_links": {
+      "gaia_source": "https://gea.esac.esa.int/archive/",
+      "simbad": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=Gaia+DR3+5591318172608607232",
+      "ads_search": "https://ui.adsabs.harvard.edu/search/q=5591318172608607232",
+      "warning": "Links are for human follow-up, not proof of absence in literature."
+    }
+  },
+  {
+    "record_id": "2852726284550996352:OrbitalAlternative",
+    "source_id": "2852726284550996352",
+    "nss_solution_type": "OrbitalAlternative",
+    "a0_mas": 0.5040796994452214,
+    "f_phot_solar": 37.310584095317815,
+    "observable_not_companion_mass": true,
+    "parallax_relative_error": 0.024965507173885557,
+    "period_relative_error": 0.0009255858699932243,
+    "efficiency": 0.0,
+    "uncertainty": {
+      "status": "UNAVAILABLE",
+      "reason": "solution type covariance not supported; alternatives remain held"
+    },
+    "status": "HOLD_QUALITY_AND_NOVELTY",
+    "novelty_status": "UNKNOWN_NOT_CLEARED",
+    "reasons": [
+      "No exhaustive literature/novelty clearance",
+      "No independent orbit and luminous/blend/triple-alternative validation",
+      "Alternative/targeted solution needs independent review",
+      "Full supported covariance unavailable or invalid"
+    ],
+    "evidence": [],
+    "partition": "train",
+    "review_links": {
+      "gaia_source": "https://gea.esac.esa.int/archive/",
+      "simbad": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=Gaia+DR3+2852726284550996352",
+      "ads_search": "https://ui.adsabs.harvard.edu/search/q=2852726284550996352",
+      "warning": "Links are for human follow-up, not proof of absence in literature."
+    }
+  },
+  {
+    "record_id": "4299244434901041024:OrbitalAlternative",
+    "source_id": "4299244434901041024",
+    "nss_solution_type": "OrbitalAlternative",
+    "a0_mas": 0.5295656707679784,
+    "f_phot_solar": 34.40651650609976,
+    "observable_not_companion_mass": true,
+    "parallax_relative_error": 0.033559008566144424,
+    "period_relative_error": 0.0008081982329640506,
+    "efficiency": 0.2641404,
+    "uncertainty": {
+      "status": "UNAVAILABLE",
+      "reason": "solution type covariance not supported; alternatives remain held"
+    },
+    "status": "HOLD_QUALITY_AND_NOVELTY",
+    "novelty_status": "UNKNOWN_NOT_CLEARED",
+    "reasons": [
+      "No exhaustive literature/novelty clearance",
+      "No independent orbit and luminous/blend/triple-alternative validation",
+      "Alternative/targeted solution needs independent review",
+      "Full supported covariance unavailable or invalid"
+    ],
+    "evidence": [],
+    "partition": "train",
+    "review_links": {
+      "gaia_source": "https://gea.esac.esa.int/archive/",
+      "simbad": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=Gaia+DR3+4299244434901041024",
+      "ads_search": "https://ui.adsabs.harvard.edu/search/q=4299244434901041024",
+      "warning": "Links are for human follow-up, not proof of absence in literature."
+    }
+  },
+  {
+    "record_id": "2245423750054837888:OrbitalAlternative",
+    "source_id": "2245423750054837888",
+    "nss_solution_type": "OrbitalAlternative",
+    "a0_mas": 1.0100063999316693,
+    "f_phot_solar": 28.24083073865593,
+    "observable_not_companion_mass": true,
+    "parallax_relative_error": 0.03165326121604022,
+    "period_relative_error": 0.001366437021931735,
+    "efficiency": 0.0,
+    "uncertainty": {
+      "status": "UNAVAILABLE",
+      "reason": "solution type covariance not supported; alternatives remain held"
+    },
+    "status": "HOLD_QUALITY_AND_NOVELTY",
+    "novelty_status": "UNKNOWN_NOT_CLEARED",
+    "reasons": [
+      "No exhaustive literature/novelty clearance",
+      "No independent orbit and luminous/blend/triple-alternative validation",
+      "Alternative/targeted solution needs independent review",
+      "Full supported covariance unavailable or invalid"
+    ],
+    "evidence": [],
+    "partition": "test",
+    "review_links": {
+      "gaia_source": "https://gea.esac.esa.int/archive/",
+      "simbad": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=Gaia+DR3+2245423750054837888",
+      "ads_search": "https://ui.adsabs.harvard.edu/search/q=2245423750054837888",
+      "warning": "Links are for human follow-up, not proof of absence in literature."
+    }
+  }
+]

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Produced with MAST VOTable encoder version 1.0 -->
+<VOTABLE version="1.4" xmlns="http://www.ivoa.net/xml/VOTable/v1.3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.ivoa.net/xml/VOTable/v1.3 http://www.ivoa.net/xml/VOTable/v1.3">
+<RESOURCE type="results">
+<INFO name="QUERY_STATUS" value="OK"/>
+<INFO name="QUERY" value="SELECT TOP 20 objid,obs_collection,facility_name,instrument_name,target_name,obs_id,obs_publisher_did,dataproduct_type,calib_level,s_region,s_ra,s_dec,s_fov,s_resolution,s_xel1,s_xel2,t_min,t_max,t_exptime,t_resolution,t_xel,em_min,em_max,em_res_power,em_xel,pol_states,pol_xel,o_ucd,access_url,access_format,access_estsize FROM ivoa.obscore WHERE obs_collection='HST' AND dataproduct_type='image' AND CONTAINS(POINT('ICRS',185.71462554756414,40.88393733581962),s_region)=1 ORDER BY objid"/>
+<TABLE>
+<FIELD name="objid" datatype="long" unit="n.n" ucd="meta.record">
+<DESCRIPTION>primary key</DESCRIPTION></FIELD>
+<FIELD name="obs_collection" datatype="char" arraysize="*" unit="n.n" ucd="meta.id">
+<DESCRIPTION>name of data collection</DESCRIPTION></FIELD>
+<FIELD name="facility_name" datatype="char" arraysize="*" unit="n.n" ucd="meta.id;instr.tel">
+<DESCRIPTION>telescope name</DESCRIPTION></FIELD>
+<FIELD name="instrument_name" datatype="char" arraysize="*" unit="n.n" ucd="meta.id;instr">
+<DESCRIPTION>instrument name</DESCRIPTION></FIELD>
+<FIELD name="target_name" datatype="char" arraysize="*" unit="n.n" ucd="meta.id;src">
+<DESCRIPTION>name of target</DESCRIPTION></FIELD>
+<FIELD name="obs_id" datatype="char" arraysize="*" unit="n.n" ucd="meta.id">
+<DESCRIPTION>internal dataset identifier</DESCRIPTION></FIELD>
+<FIELD name="obs_publisher_did" datatype="char" arraysize="*" unit="n.n" ucd="meta.ref.ivoid">
+<DESCRIPTION>publisher dataset identifier</DESCRIPTION></FIELD>
+<FIELD name="dataproduct_type" datatype="char" arraysize="*" unit="n.n" ucd="meta.code.class">
+<DESCRIPTION>type of product</DESCRIPTION></FIELD>
+<FIELD name="calib_level" datatype="int" unit="n.n" ucd="meta.code;obs.calib">
+<DESCRIPTION>calibration level (-1 through 5)</DESCRIPTION></FIELD>
+<FIELD name="s_region" datatype="char" arraysize="*" unit="n.n" ucd="pos.outline;obs.field">
+<DESCRIPTION>region bounded by observation</DESCRIPTION></FIELD>
+<FIELD name="s_ra" datatype="double" unit="deg" ucd="pos.eq.ra">
+<DESCRIPTION>ra of central coordinates</DESCRIPTION></FIELD>
+<FIELD name="s_dec" datatype="double" unit="deg" ucd="pos.eq.dec">
+<DESCRIPTION>dec of central coordinates</DESCRIPTION></FIELD>
+<FIELD name="s_fov" datatype="double" unit="deg" ucd="phys.angSize;instr.fov">
+<DESCRIPTION>size of region covered</DESCRIPTION></FIELD>
+<FIELD name="s_resolution" datatype="double" unit="arcsec" ucd="pos.angResolution">
+<DESCRIPTION>typical spatial resolution</DESCRIPTION></FIELD>
+<FIELD name="s_xel1" datatype="int" unit="n.n" ucd="meta.number">
+<DESCRIPTION>dimensions along one spatial axis (naxis1)</DESCRIPTION></FIELD>
+<FIELD name="s_xel2" datatype="int" unit="n.n" ucd="meta.number">
+<DESCRIPTION>dimensions along other spatial axis (naxis2)</DESCRIPTION></FIELD>
+<FIELD name="t_min" datatype="double" unit="d" ucd="time.start;obs.exposure">
+<DESCRIPTION>observation start mjd</DESCRIPTION></FIELD>
+<FIELD name="t_max" datatype="double" unit="d" ucd="time.end;obs.exposure">
+<DESCRIPTION>observation end mjd</DESCRIPTION></FIELD>
+<FIELD name="t_exptime" datatype="double" unit="s" ucd="time.duration;obs.exposure">
+<DESCRIPTION>total exposure time</DESCRIPTION></FIELD>
+<FIELD name="t_resolution" datatype="double" unit="s" ucd="time.resolution">
+<DESCRIPTION>typical temporal resolution</DESCRIPTION></FIELD>
+<FIELD name="t_xel" datatype="int" unit="n.n" ucd="meta.number">
+<DESCRIPTION>dimensions along time axis (naxis)</DESCRIPTION></FIELD>
+<FIELD name="em_min" datatype="double" unit="m" ucd="em.wl;stat.min">
+<DESCRIPTION>minimum wavelength</DESCRIPTION></FIELD>
+<FIELD name="em_max" datatype="double" unit="m" ucd="em.wl;stat.max">
+<DESCRIPTION>maximum wavelength</DESCRIPTION></FIELD>
+<FIELD name="em_res_power" datatype="double" unit="n.n" ucd="spect.resolution">
+<DESCRIPTION>typical spectral resolution</DESCRIPTION></FIELD>
+<FIELD name="em_xel" datatype="int" unit="n.n" ucd="meta.number">
+<DESCRIPTION>dimensions along energy axis (naxis)</DESCRIPTION></FIELD>
+<FIELD name="pol_states" datatype="char" arraysize="*" unit="n.n" ucd="meta.code;phys.polarization">
+<DESCRIPTION>polarization states in data</DESCRIPTION></FIELD>
+<FIELD name="pol_xel" datatype="int" unit="n.n" ucd="meta.number">
+<DESCRIPTION>dimensions along polarization axis</DESCRIPTION></FIELD>
+<FIELD name="o_ucd" datatype="char" arraysize="*" unit="n.n" ucd="meta.ucd">
+<DESCRIPTION>ucd describing observable axis</DESCRIPTION></FIELD>
+<FIELD name="access_url" datatype="char" arraysize="*" unit="n.n" ucd="meta.ref.url">
+<DESCRIPTION>url to download the data</DESCRIPTION></FIELD>
+<FIELD name="access_format" datatype="char" arraysize="*" unit="n.n" ucd="meta.code.mime">
+<DESCRIPTION>format of the data file(s)</DESCRIPTION></FIELD>
+<FIELD name="access_estsize" datatype="long" unit="kbyte" ucd="phys.size;meta.file">
+<DESCRIPTION>estimated size of download</DESCRIPTION></FIELD>
+<DATA>
+<TABLEDATA>
+</TABLEDATA>
+</DATA>
+</TABLE>
+</RESOURCE>
+</VOTABLE>

@@ -1,0 +1,276 @@
+{
+  "created_utc": "2026-11-02T08:52:57.604905+00:00",
+  "scope": "local source-specific acquisition and metadata description; not a fresh holdout or discovery",
+  "files": [
+    {
+      "path": "C:\\gogogo\\universe search harness\\blackhole search\\astra-20261031T2113Z-01a193cc\\studies\\nature-goal-20261031T224551Z\\held1533-sedr5-20261102T081926Z-01a193cc\\PROTOCOL_V5.json",
+      "bytes": 4892,
+      "sha256": "1f72d83ee0d6214c9e148f1c3e5d4cf2fe562a6cfac3d03d8e94ae2db8db29ca"
+    },
+    {
+      "path": "C:\\gogogo\\universe search harness\\blackhole search\\astra-20261031T2113Z-01a193cc\\studies\\nature-goal-20261031T224551Z\\held1533-sedr5-20261102T081926Z-01a193cc\\CAPTURE_MANIFEST_V9.json",
+      "bytes": 862,
+      "sha256": "7ada7fbbfc0ee3feda6e160926082e8b9d63c2c1986fa0ff00f316c517f2f239"
+    },
+    {
+      "path": "C:\\gogogo\\universe search harness\\blackhole search\\astra-20261031T2113Z-01a193cc\\studies\\nature-goal-20261031T224551Z\\held1533-sedr5-20261102T081926Z-01a193cc\\capture_serial_v9.py",
+      "bytes": 20987,
+      "sha256": "3f9b82d0ce290efc280dd4e70e1963045bc95aa527cf880387e6f8ccbcb525f5"
+    },
+    {
+      "path": "C:\\gogogo\\universe search harness\\blackhole search\\astra-20261031T2113Z-01a193cc\\studies\\nature-goal-20261031T224551Z\\held1533-sedr5-20261102T081926Z-01a193cc\\native_transport_sedr5_v5.py",
+      "bytes": 8821,
+      "sha256": "0f6c1d71336306b5e0bb319f5ced7cfe0e059af891d6632d28f49e634c2c8f42"
+    },
+    {
+      "path": "C:\\gogogo\\universe search harness\\blackhole search\\astra-20261031T2113Z-01a193cc\\studies\\nature-goal-20261031T224551Z\\held1533-sedr5-20261102T081926Z-01a193cc\\test_capture_v9.py",
+      "bytes": 13014,
+      "sha256": "a9fd61ce366db13e34355f1daf429c24ece2ec9beda3ee54f0debe7b7a44ac78"
+    },
+    {
+      "path": "C:\\gogogo\\universe search harness\\blackhole search\\astra-20261031T2113Z-01a193cc\\studies\\nature-goal-20261031T224551Z\\held1533-sedr5-20261102T081926Z-01a193cc\\test_transport_deferred_v2.py",
+      "bytes": 2232,
+      "sha256": "cd19e7be272f48ac353d160c28a4f9e7f7ba8d561ef6ceefd0e7a29f34c95061"
+    },
+    {
+      "path": "C:\\gogogo\\universe search harness\\blackhole search\\astra-20261031T2113Z-01a193cc\\studies\\nature-goal-20261031T224551Z\\held1533-sedr5-20261102T081926Z-01a193cc\\TEST_V9_RESULT.json",
+      "bytes": 816,
+      "sha256": "870274929a1ce35936f4ee2d435fd4d5d107b326abfe6d357647c6ea7f6d7299"
+    },
+    {
+      "path": "C:\\gogogo\\universe search harness\\blackhole search\\astra-20261031T2113Z-01a193cc\\studies\\nature-goal-20261031T224551Z\\held1533-sedr5-20261102T081926Z-01a193cc\\TEST_V9_STDOUT.raw",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "C:\\gogogo\\universe search harness\\blackhole search\\astra-20261031T2113Z-01a193cc\\studies\\nature-goal-20261031T224551Z\\held1533-sedr5-20261102T081926Z-01a193cc\\TEST_V9_STDERR.raw",
+      "bytes": 2537,
+      "sha256": "818722ed276d943282646dbc4a45db043fe95601e37dc1fccc0c521e57a6ac63"
+    },
+    {
+      "path": "C:\\gogogo\\universe search harness\\blackhole search\\astra-20261031T2113Z-01a193cc\\studies\\nature-goal-20261031T224551Z\\held1533-sedr5-20261102T081926Z-01a193cc\\METADATA_PROTOCOL_V2.md",
+      "bytes": 1828,
+      "sha256": "97c8cbff9b3c8f256f9f0dcb93f93b3ccfc7c37da4d3c0c5c7efb6144fcf416c"
+    },
+    {
+      "path": "C:\\gogogo\\universe search harness\\blackhole search\\astra-20261031T2113Z-01a193cc\\studies\\nature-goal-20261031T224551Z\\held1533-sedr5-20261102T081926Z-01a193cc\\inspect_metadata_v2.py",
+      "bytes": 7611,
+      "sha256": "4b9bef75f4e93c918b0f9cd803d925969149ae91e90c75502065a346e8bcb8fa"
+    },
+    {
+      "path": "C:\\gogogo\\universe search harness\\blackhole search\\astra-20261031T2113Z-01a193cc\\studies\\nature-goal-20261031T224551Z\\held1533-sedr5-20261102T081926Z-01a193cc\\test_inspect_metadata_v2.py",
+      "bytes": 1424,
+      "sha256": "a08d45e3120b8925644c2afb808ee57c50868c17f4d251ed73dbb35d8f9d8ce6"
+    },
+    {
+      "path": "C:\\gogogo\\universe search harness\\blackhole search\\astra-20261031T2113Z-01a193cc\\studies\\nature-goal-20261031T224551Z\\held1533-sedr5-20261102T081926Z-01a193cc\\metadata-v2\\CLAIM.json",
+      "bytes": 137,
+      "sha256": "8184b25b3c7f7433060ec109a447aa892703ed7a51cf4fbad1083f1b0d3dffc1"
+    },
+    {
+      "path": "C:\\gogogo\\universe search harness\\blackhole search\\astra-20261031T2113Z-01a193cc\\studies\\nature-goal-20261031T224551Z\\held1533-sedr5-20261102T081926Z-01a193cc\\metadata-v2\\METADATA.json",
+      "bytes": 4547,
+      "sha256": "23d9d3b4c06fbd2c9d04990d0364c3eca68c26c2dfabd268f0b508bc16339102"
+    },
+    {
+      "path": "C:\\gogogo\\universe search harness\\blackhole search\\astra-20261031T2113Z-01a193cc\\studies\\nature-goal-20261031T224551Z\\held1533-sedr5-20261102T081926Z-01a193cc\\PRIMARY_SOURCE_NOTE.md",
+      "bytes": 1573,
+      "sha256": "7d2039fa1223a6cd0c73b7eeea0ff0981a4d7f6300bd84a0d01e0451b4ad5ff7"
+    },
+    {
+      "path": "C:\\gogogo\\universe search harness\\blackhole search\\astra-20261031T2113Z-01a193cc\\studies\\nature-goal-20261031T224551Z\\held1533-sedr5-20261102T081926Z-01a193cc\\INDEPENDENT_SCIENCE_REVIEW.md",
+      "bytes": 1302,
+      "sha256": "74cb6e899b0ea460981834b56b1696c762ad22a63eb19e445b54c6fc73b12916"
+    },
+    {
+      "path": "C:\\gogogo\\universe search harness\\blackhole search\\astra-20261031T2113Z-01a193cc\\studies\\nature-goal-20261031T224551Z\\held1533-sedr5-20261102T081926Z-01a193cc\\INDEPENDENT_EXECUTION_REVIEW_V9.md",
+      "bytes": 1590,
+      "sha256": "4c30732ac1a4bad021156e1210c41d32ccaddef3476f8ace608629b37b9f4a94"
+    },
+    {
+      "path": "C:\\gogogo\\universe search harness\\blackhole search\\astra-20261031T2113Z-01a193cc\\studies\\nature-goal-20261031T224551Z\\held1533-sedr5-20261102T081926Z-01a193cc\\INDEPENDENT_CAPTURE_AUDIT.md",
+      "bytes": 1472,
+      "sha256": "d422704b6e62a97bb7ce26076b5e6325c701e51ff66e0ab58d5cacb2df478a33"
+    },
+    {
+      "path": "C:\\gogogo\\universe search harness\\blackhole search\\astra-20261031T2113Z-01a193cc\\studies\\nature-goal-20261031T224551Z\\held1533-sedr5-20261102T081926Z-01a193cc\\INDEPENDENT_METADATA_REVIEW.md",
+      "bytes": 1335,
+      "sha256": "96ff648122b21c839546994b08cb1c45d17fda13d99b714569161f1a6b82dba6"
+    },
+    {
+      "path": "C:\\gogogo\\universe search harness\\blackhole search\\astra-20261031T2113Z-01a193cc\\studies\\nature-goal-20261031T224551Z\\held1533-sedr5-20261102T081926Z-01a193cc\\RUN_REPORT.md",
+      "bytes": 3380,
+      "sha256": "61150c573dd47651e770e55f39ad0bbc64cbd37c0a2758dad656d2347ac5b38c"
+    },
+    {
+      "path": "C:\\gogogo\\universe search harness\\blackhole search\\astra-20261031T2113Z-01a193cc\\studies\\nature-goal-20261031T224551Z\\held1533-sedr5-20261102T081926Z-01a193cc\\EXPERIMENT_LEDGER.jsonl",
+      "bytes": 840,
+      "sha256": "5d44e7fac9391a309b586c384d4697a07c8583d396cbecd1398b2d040681781f"
+    },
+    {
+      "path": "C:\\gogogo\\universe search harness\\blackhole search\\astra-20261031T2113Z-01a193cc\\studies\\nature-goal-20261031T224551Z\\held1533-sedr5-20261102T081926Z-01a193cc\\capture-v9\\CLAIM.json",
+      "bytes": 512,
+      "sha256": "52354616b62496320f1271ce4603ab2099e96dc76c178be523758d78baf801d5"
+    },
+    {
+      "path": "C:\\gogogo\\universe search harness\\blackhole search\\astra-20261031T2113Z-01a193cc\\studies\\nature-goal-20261031T224551Z\\held1533-sedr5-20261102T081926Z-01a193cc\\capture-v9\\RESULTS.json",
+      "bytes": 4233,
+      "sha256": "b8d6e323083e8732f8f5d2476bc9985a6bfed7e77e1dd448d4671d1c057b9743"
+    },
+    {
+      "path": "C:\\gogogo\\universe search harness\\blackhole search\\astra-20261031T2113Z-01a193cc\\studies\\nature-goal-20261031T224551Z\\held1533-sedr5-20261102T081926Z-01a193cc\\capture-v9\\root.request.json",
+      "bytes": 1686,
+      "sha256": "b9e3bb6e01194c4001eb6d3c57a058b91ca202751c8337a61e2e7dbef59d3e1e"
+    },
+    {
+      "path": "C:\\gogogo\\universe search harness\\blackhole search\\astra-20261031T2113Z-01a193cc\\studies\\nature-goal-20261031T224551Z\\held1533-sedr5-20261102T081926Z-01a193cc\\capture-v9\\root.owned.json",
+      "bytes": 467,
+      "sha256": "d960d197365c6cb78b81fc0860b8021e37fe0113c47bc99cc218f65680f64e42"
+    },
+    {
+      "path": "C:\\gogogo\\universe search harness\\blackhole search\\astra-20261031T2113Z-01a193cc\\studies\\nature-goal-20261031T224551Z\\held1533-sedr5-20261102T081926Z-01a193cc\\capture-v9\\root.json",
+      "bytes": 1645,
+      "sha256": "0c09c2824cb39e6e90b9a353593c10de871e8929bb8820f9e52e52c07656a2c8"
+    },
+    {
+      "path": "C:\\gogogo\\universe search harness\\blackhole search\\astra-20261031T2113Z-01a193cc\\studies\\nature-goal-20261031T224551Z\\held1533-sedr5-20261102T081926Z-01a193cc\\capture-v9\\root.raw",
+      "bytes": 92063,
+      "sha256": "cf493675ced7a1332ee9105c7c6043ce6a8257f0093e1848390e13f2d5f89a83"
+    },
+    {
+      "path": "C:\\gogogo\\universe search harness\\blackhole search\\astra-20261031T2113Z-01a193cc\\studies\\nature-goal-20261031T224551Z\\held1533-sedr5-20261102T081926Z-01a193cc\\capture-v9\\root.headers",
+      "bytes": 171,
+      "sha256": "487ea6f35b3120d218291a606bc1f53ecb1e611f43463ded3854eafcc1285d9e"
+    },
+    {
+      "path": "C:\\gogogo\\universe search harness\\blackhole search\\astra-20261031T2113Z-01a193cc\\studies\\nature-goal-20261031T224551Z\\held1533-sedr5-20261102T081926Z-01a193cc\\capture-v9\\root.curl.stdout",
+      "bytes": 69,
+      "sha256": "309d31b63d9908671771807c5213f4d1f489ff53b2c333dd421f38e37a56e03e"
+    },
+    {
+      "path": "C:\\gogogo\\universe search harness\\blackhole search\\astra-20261031T2113Z-01a193cc\\studies\\nature-goal-20261031T224551Z\\held1533-sedr5-20261102T081926Z-01a193cc\\capture-v9\\root.curl.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "C:\\gogogo\\universe search harness\\blackhole search\\astra-20261031T2113Z-01a193cc\\studies\\nature-goal-20261031T224551Z\\held1533-sedr5-20261102T081926Z-01a193cc\\capture-v9\\day.request.json",
+      "bytes": 1711,
+      "sha256": "0915ec79bec0c4f9d4067d8e98c2fa88647da90357a38c55ad14b818a737aa84"
+    },
+    {
+      "path": "C:\\gogogo\\universe search harness\\blackhole search\\astra-20261031T2113Z-01a193cc\\studies\\nature-goal-20261031T224551Z\\held1533-sedr5-20261102T081926Z-01a193cc\\capture-v9\\day.owned.json",
+      "bytes": 467,
+      "sha256": "afdb73350a87a12d3ca1f2f6fbac00e47e6045f22ca5efe693c6708ac7c0270c"
+    },
+    {
+      "path": "C:\\gogogo\\universe search harness\\blackhole search\\astra-20261031T2113Z-01a193cc\\studies\\nature-goal-20261031T224551Z\\held1533-sedr5-20261102T081926Z-01a193cc\\capture-v9\\day.json",
+      "bytes": 1656,
+      "sha256": "e8705a35aa281aff48d82a1181b0787921d80bd41a92913a4628557d4b54f9d5"
+    },
+    {
+      "path": "C:\\gogogo\\universe search harness\\blackhole search\\astra-20261031T2113Z-01a193cc\\studies\\nature-goal-20261031T224551Z\\held1533-sedr5-20261102T081926Z-01a193cc\\capture-v9\\day.raw",
+      "bytes": 1299,
+      "sha256": "a30e1d187ccdeb48d9465d95f1ab1d749cf4ddb3a332262e718965315de1396f"
+    },
+    {
+      "path": "C:\\gogogo\\universe search harness\\blackhole search\\astra-20261031T2113Z-01a193cc\\studies\\nature-goal-20261031T224551Z\\held1533-sedr5-20261102T081926Z-01a193cc\\capture-v9\\day.headers",
+      "bytes": 171,
+      "sha256": "54e312ac6121a04b66bde5abc6b73ae115a71621c4622f78d2b4bef676cf0bc2"
+    },
+    {
+      "path": "C:\\gogogo\\universe search harness\\blackhole search\\astra-20261031T2113Z-01a193cc\\studies\\nature-goal-20261031T224551Z\\held1533-sedr5-20261102T081926Z-01a193cc\\capture-v9\\day.curl.stdout",
+      "bytes": 77,
+      "sha256": "4d5db40b30ec8ac7692baf9923e1b65c06f56b1b1657956ef24c8869a29facb5"
+    },
+    {
+      "path": "C:\\gogogo\\universe search harness\\blackhole search\\astra-20261031T2113Z-01a193cc\\studies\\nature-goal-20261031T224551Z\\held1533-sedr5-20261102T081926Z-01a193cc\\capture-v9\\day.curl.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "C:\\gogogo\\universe search harness\\blackhole search\\astra-20261031T2113Z-01a193cc\\studies\\nature-goal-20261031T224551Z\\held1533-sedr5-20261102T081926Z-01a193cc\\capture-v9\\plan.request.json",
+      "bytes": 1771,
+      "sha256": "cf9bef817d7f9d57b8750b3e8d66c642604f61c30b2403bd92d171c422dd34fa"
+    },
+    {
+      "path": "C:\\gogogo\\universe search harness\\blackhole search\\astra-20261031T2113Z-01a193cc\\studies\\nature-goal-20261031T224551Z\\held1533-sedr5-20261102T081926Z-01a193cc\\capture-v9\\plan.owned.json",
+      "bytes": 467,
+      "sha256": "23c2a265e9d5d2817f87a584da738368029ee403acacc7187eaf07f2d69ae2b8"
+    },
+    {
+      "path": "C:\\gogogo\\universe search harness\\blackhole search\\astra-20261031T2113Z-01a193cc\\studies\\nature-goal-20261031T224551Z\\held1533-sedr5-20261102T081926Z-01a193cc\\capture-v9\\plan.json",
+      "bytes": 1704,
+      "sha256": "7c271b3cb0840e64075332cae0a2d95806cdd8208812187a48025d9f925f59c1"
+    },
+    {
+      "path": "C:\\gogogo\\universe search harness\\blackhole search\\astra-20261031T2113Z-01a193cc\\studies\\nature-goal-20261031T224551Z\\held1533-sedr5-20261102T081926Z-01a193cc\\capture-v9\\plan.raw",
+      "bytes": 312833,
+      "sha256": "510e1ae4f23937c221130734b6922de7dca00122de71077d858c64c63aa8551a"
+    },
+    {
+      "path": "C:\\gogogo\\universe search harness\\blackhole search\\astra-20261031T2113Z-01a193cc\\studies\\nature-goal-20261031T224551Z\\held1533-sedr5-20261102T081926Z-01a193cc\\capture-v9\\plan.headers",
+      "bytes": 171,
+      "sha256": "727652f06b4ba47c2d927f7f5ea82adfa99428937ebc4d2050511c22687a1577"
+    },
+    {
+      "path": "C:\\gogogo\\universe search harness\\blackhole search\\astra-20261031T2113Z-01a193cc\\studies\\nature-goal-20261031T224551Z\\held1533-sedr5-20261102T081926Z-01a193cc\\capture-v9\\plan.curl.stdout",
+      "bytes": 98,
+      "sha256": "36d46a41023fc19a9e3dcb6647a2868ddab3f2e7ff9eb68bc14886e72cba7b11"
+    },
+    {
+      "path": "C:\\gogogo\\universe search harness\\blackhole search\\astra-20261031T2113Z-01a193cc\\studies\\nature-goal-20261031T224551Z\\held1533-sedr5-20261102T081926Z-01a193cc\\capture-v9\\plan.curl.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "C:\\gogogo\\universe search harness\\blackhole search\\astra-20261031T2113Z-01a193cc\\studies\\nature-goal-20261031T224551Z\\held1533-sedr5-20261102T081926Z-01a193cc\\capture-v9\\product.request.json",
+      "bytes": 1822,
+      "sha256": "9c8c47f5a7fa8c718dfd45f58936862c5f28fa41fcd04b25b1ffe4dbf968482f"
+    },
+    {
+      "path": "C:\\gogogo\\universe search harness\\blackhole search\\astra-20261031T2113Z-01a193cc\\studies\\nature-goal-20261031T224551Z\\held1533-sedr5-20261102T081926Z-01a193cc\\capture-v9\\product.owned.json",
+      "bytes": 467,
+      "sha256": "8631fcccfa10d2e800c0026e53929d71e5b6e76727de95b696c7faf2bdcecd97"
+    },
+    {
+      "path": "C:\\gogogo\\universe search harness\\blackhole search\\astra-20261031T2113Z-01a193cc\\studies\\nature-goal-20261031T224551Z\\held1533-sedr5-20261102T081926Z-01a193cc\\capture-v9\\product.json",
+      "bytes": 1794,
+      "sha256": "85f7628a5235ec2e6801bb6195b1773100ad6231d33530de48a34630bd8401a5"
+    },
+    {
+      "path": "C:\\gogogo\\universe search harness\\blackhole search\\astra-20261031T2113Z-01a193cc\\studies\\nature-goal-20261031T224551Z\\held1533-sedr5-20261102T081926Z-01a193cc\\capture-v9\\product.raw",
+      "bytes": 550080,
+      "sha256": "7a33d6a4ff8594c33b43181309bc5ad4e0739e6245943e06ba099172d04742de"
+    },
+    {
+      "path": "C:\\gogogo\\universe search harness\\blackhole search\\astra-20261031T2113Z-01a193cc\\studies\\nature-goal-20261031T224551Z\\held1533-sedr5-20261102T081926Z-01a193cc\\capture-v9\\product.headers",
+      "bytes": 251,
+      "sha256": "11ca62d1bdc1884800bb990de0e9f229afb53459cb198bd12b6e16fa64026de2"
+    },
+    {
+      "path": "C:\\gogogo\\universe search harness\\blackhole search\\astra-20261031T2113Z-01a193cc\\studies\\nature-goal-20261031T224551Z\\held1533-sedr5-20261102T081926Z-01a193cc\\capture-v9\\product.curl.stdout",
+      "bytes": 136,
+      "sha256": "f2c967aef12b4de25ba959589d5cad5d7d6f7ed2e131746f8f12b6fa3c0e2cd0"
+    },
+    {
+      "path": "C:\\gogogo\\universe search harness\\blackhole search\\astra-20261031T2113Z-01a193cc\\studies\\nature-goal-20261031T224551Z\\held1533-sedr5-20261102T081926Z-01a193cc\\capture-v9\\product.curl.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "parent_experiment_ledger": {
+    "path": "C:\\gogogo\\universe search harness\\blackhole search\\astra-20261031T2113Z-01a193cc\\studies\\nature-goal-20261031T224551Z\\experiment_ledger_checkpoint59.jsonl",
+    "bytes": 486444,
+    "sha256": "11b9b6ace7253bb5a6889fa5129c651555bb543849bf4574d25dd2f4abdf8216"
+  },
+  "holdout_custody": {
+    "path": "C:\\gogogo\\universe search harness\\blackhole search\\coordination\\HOLDOUT_CUSTODY.json",
+    "bytes": 3879,
+    "sha256": "155f5aa7f98726c62add15bd302b9f43ca4a216ed14850ecbf649c82a65d3c14"
+  },
+  "holdout_state": "DO_NOT_EVALUATE",
+  "holdout_owner": "astra-20261031T2113Z-01a193cc",
+  "native_headers_and_diagnostics": "local only; limited scan is not a full privacy audit",
+  "browser_catalogue_form": "form inspected; no catalogue query submitted at this checkpoint",
+  "new_scientific_criteria_or_release": false
+}

@@ -1,0 +1,349 @@
+{
+  "created_utc": "2026-11-01T07:16:25.156232+00:00",
+  "verdict": "POPULATED_SCALAR_GEOMETRY_CONTROL_PASSES_V2_WITH_BOUNDED_UNKNOWN_ARCHIVE_COVERAGE",
+  "protocol_sha256": "4bb39d2e6441776e2b45a7a1f5f62bcc2049ccf3a170a120bb1c8b16f59f8d78",
+  "raw_sha256": "dbfb5660e120a04888538f8e8bce4b0d22ca52ea5784b50f85f5c9b065e8d01b",
+  "retrieval_sha256": "385b51743b69a22aa35aa139b121682b773ed86cdebb619001a6ca5e42a3fa21",
+  "result_sha256": "fa2fc8c8dda5b53a3f5342b5b5788f0f2fa063645709aecf4f807a19f26cf94a",
+  "previous_row_raw_sha256": "af7e5a48d410518c79a6360d8951cd6ad955f1c32ca113f33aed156a2ab981ba",
+  "body_bytes": 18907,
+  "elapsed_seconds": 34.3240717,
+  "query_status": "OK",
+  "query_echo_exact": true,
+  "field_count": 31,
+  "schema_names_order_types_units_UCDs_match": true,
+  "all620_raw_cells_retained_in_immutable_response": true,
+  "response_rows": 20,
+  "distinct_observed_objids": 5,
+  "objid_order_nondecreasing": true,
+  "objids_unique": false,
+  "whole_row_tuples_distinct": 20,
+  "known_objid_present": true,
+  "known_objid_rows": 4,
+  "known_first28_cells_equal_original_control": true,
+  "row_group_comparison": [
+    {
+      "objid_exact_string": "109191367",
+      "one_based_response_rows": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "obs_id": "n3t401e2q",
+      "first28_cells_identical": true,
+      "different_fields": [
+        "access_url",
+        "access_format",
+        "access_estsize"
+      ],
+      "distinct_full_raw_row_tuples": 4,
+      "all_row_cell_sha256": [
+        "8d71247221c70f0104506b794f5b35b520a0c52257e47a53e953cf1591ad9f21",
+        "b16300230ece800b22cf68e226f534ed9c4e40f6153a64ab65ab2321fdb1e9bb",
+        "74af17c7efa5646c3153bf55601bc704267a963f7fa593051141b619b4a71c11",
+        "d221a29fd7e1fa02c8547068a30d2661d11824f86853909b499bb4d6598e5651"
+      ],
+      "access_metadata": [
+        {
+          "access_url_literal_sha256": "0acc2c75c99025f0df2207173ccb4665de39631554e0d4006176823fb824534f",
+          "access_format_raw": "application/fits",
+          "access_estsize_raw": "1120320",
+          "access_estsize_reported_unit": "kbyte"
+        },
+        {
+          "access_url_literal_sha256": "7a07250875c1f2c44acd6847fbe29f0ae6fbc3ce27782a26c27160fc8337d9f8",
+          "access_format_raw": "image/jpeg",
+          "access_estsize_raw": "19809",
+          "access_estsize_reported_unit": "kbyte"
+        },
+        {
+          "access_url_literal_sha256": "2d0bdfad711d77db96a3b8667873140d6953b509359aafc94cadabff78c6c11f",
+          "access_format_raw": "image/jpeg",
+          "access_estsize_raw": "3984",
+          "access_estsize_reported_unit": "kbyte"
+        },
+        {
+          "access_url_literal_sha256": "3e6406d6a3d1100be2e6bf7f5b63b6e19d9d9bad03611ac05b35d5cfb3f74bef",
+          "access_format_raw": "application/fits",
+          "access_estsize_raw": "4904640",
+          "access_estsize_reported_unit": "kbyte"
+        }
+      ],
+      "null_field_names": [
+        "s_fov",
+        "s_resolution",
+        "s_xel1",
+        "s_xel2",
+        "t_resolution",
+        "t_xel",
+        "em_res_power",
+        "em_xel",
+        "pol_states",
+        "pol_xel",
+        "o_ucd"
+      ]
+    },
+    {
+      "objid_exact_string": "109191376",
+      "one_based_response_rows": [
+        5,
+        6,
+        7,
+        8
+      ],
+      "obs_id": "n3t401drq",
+      "first28_cells_identical": true,
+      "different_fields": [
+        "access_url",
+        "access_format",
+        "access_estsize"
+      ],
+      "distinct_full_raw_row_tuples": 4,
+      "all_row_cell_sha256": [
+        "41563386835e240cccd57b5ce7c17b3744a038b35fecaea27ad7f3f9a2f6cd8f",
+        "35c3524939590b38e891561574c7705ffde38b67a8f1054b6ca282bd87cfe5b6",
+        "c8d049fd80ddfeaea69bbe5aee2e2ad9c8c4401a1500ba2629948c5bb797279f",
+        "565485c67fde639c61572c5ccaf96b88b1605327cfdeeb96d20745403565464a"
+      ],
+      "access_metadata": [
+        {
+          "access_url_literal_sha256": "2eda8a513f55a3ec2e00727f702af38af9e3b898e3c90d7f2a6276272f9e1476",
+          "access_format_raw": "application/fits",
+          "access_estsize_raw": "1120320",
+          "access_estsize_reported_unit": "kbyte"
+        },
+        {
+          "access_url_literal_sha256": "0d51c3a08af71f076cd773758337990a472912d71250f432850d2b78a9d9fc61",
+          "access_format_raw": "image/jpeg",
+          "access_estsize_raw": "18317",
+          "access_estsize_reported_unit": "kbyte"
+        },
+        {
+          "access_url_literal_sha256": "1f3c21d6f6a6d35c744738ce36a7427d19ee8ad5c6f7b1cf924a5c0d9e47cfec",
+          "access_format_raw": "image/jpeg",
+          "access_estsize_raw": "3612",
+          "access_estsize_reported_unit": "kbyte"
+        },
+        {
+          "access_url_literal_sha256": "affa91e1453c3077699c617f0fa8e9877125b4e19a2b1beed6060d23d50577be",
+          "access_format_raw": "application/fits",
+          "access_estsize_raw": "4904640",
+          "access_estsize_reported_unit": "kbyte"
+        }
+      ],
+      "null_field_names": [
+        "s_fov",
+        "s_resolution",
+        "s_xel1",
+        "s_xel2",
+        "t_resolution",
+        "t_xel",
+        "em_res_power",
+        "em_xel",
+        "pol_states",
+        "pol_xel",
+        "o_ucd"
+      ]
+    },
+    {
+      "objid_exact_string": "109191380",
+      "one_based_response_rows": [
+        9,
+        10,
+        11,
+        12
+      ],
+      "obs_id": "n3t401eaq",
+      "first28_cells_identical": true,
+      "different_fields": [
+        "access_url",
+        "access_format",
+        "access_estsize"
+      ],
+      "distinct_full_raw_row_tuples": 4,
+      "all_row_cell_sha256": [
+        "510830a9473153cb42a91db2b1bb976e09513607c549e8f7044e04ee129f349f",
+        "999b4569b4cde0cc2c3cf51d4c81ba2e7a7b2cf4be9064c94b9a2b0325af6b4e",
+        "93935463138a601699ce85d140ecd198c975ed25a8ad857a9541b4670b8c1aff",
+        "c258018be7de54547a9fa6efdc1eb1daa70cbfb00c6b49ab514f4afc707c286e"
+      ],
+      "access_metadata": [
+        {
+          "access_url_literal_sha256": "a8f7c4774ee027742d61a76463d5ba702918e656e625a344d1b0689e5fd7de4f",
+          "access_format_raw": "application/fits",
+          "access_estsize_raw": "1120320",
+          "access_estsize_reported_unit": "kbyte"
+        },
+        {
+          "access_url_literal_sha256": "d1960c5bdd92cdab2737a1f533b429e0dda74ed707a41aafe92360f957ccfe69",
+          "access_format_raw": "image/jpeg",
+          "access_estsize_raw": "19729",
+          "access_estsize_reported_unit": "kbyte"
+        },
+        {
+          "access_url_literal_sha256": "5c684f6ef9108eb1d1cae249d843ffebe4446e2a98f37cd74abb7eaf5403c0e8",
+          "access_format_raw": "image/jpeg",
+          "access_estsize_raw": "4012",
+          "access_estsize_reported_unit": "kbyte"
+        },
+        {
+          "access_url_literal_sha256": "30bc60f5792749aeed87d8ce32b4b523be0f67242451fa2506fd972887c9e955",
+          "access_format_raw": "application/fits",
+          "access_estsize_raw": "4904640",
+          "access_estsize_reported_unit": "kbyte"
+        }
+      ],
+      "null_field_names": [
+        "s_fov",
+        "s_resolution",
+        "s_xel1",
+        "s_xel2",
+        "t_resolution",
+        "t_xel",
+        "em_res_power",
+        "em_xel",
+        "pol_states",
+        "pol_xel",
+        "o_ucd"
+      ]
+    },
+    {
+      "objid_exact_string": "109191389",
+      "one_based_response_rows": [
+        13,
+        14,
+        15,
+        16
+      ],
+      "obs_id": "n3t401egq",
+      "first28_cells_identical": true,
+      "different_fields": [
+        "access_url",
+        "access_format",
+        "access_estsize"
+      ],
+      "distinct_full_raw_row_tuples": 4,
+      "all_row_cell_sha256": [
+        "4c674eaf9114432825226378b72c7766c9939d7c8d417bbd660632fa6ab77dad",
+        "42fd8cf6cf0a6801fb7920213c407ef6a7d8d701b08aa391fde7dcf12d313053",
+        "9cbd872f7a36b01ca996c9806fb15193d76257cae511b0333f887fb1baad90bf",
+        "93b131c8e71397849e83a7acfa8da69cc02d542a052e4a1381a906dd22773659"
+      ],
+      "access_metadata": [
+        {
+          "access_url_literal_sha256": "0b84ef30a8d3ad06c89b6600f602f1a7dcd77520535ebc1f42fd562777232b7f",
+          "access_format_raw": "application/fits",
+          "access_estsize_raw": "1120320",
+          "access_estsize_reported_unit": "kbyte"
+        },
+        {
+          "access_url_literal_sha256": "ed966111172422a60cdf27384d48ec0c9aeef83a4dc4b6599821f558a303ef6b",
+          "access_format_raw": "image/jpeg",
+          "access_estsize_raw": "18519",
+          "access_estsize_reported_unit": "kbyte"
+        },
+        {
+          "access_url_literal_sha256": "1f22de8da0efef48ba3d24048ae62203074cf72219d02519616219b2d2100479",
+          "access_format_raw": "image/jpeg",
+          "access_estsize_raw": "3694",
+          "access_estsize_reported_unit": "kbyte"
+        },
+        {
+          "access_url_literal_sha256": "c53f4fafed1a07f9cb67ee50c72100ab6077c9bfe8dda64906dc92ded39bc919",
+          "access_format_raw": "application/fits",
+          "access_estsize_raw": "4904640",
+          "access_estsize_reported_unit": "kbyte"
+        }
+      ],
+      "null_field_names": [
+        "s_fov",
+        "s_resolution",
+        "s_xel1",
+        "s_xel2",
+        "t_resolution",
+        "t_xel",
+        "em_res_power",
+        "em_xel",
+        "pol_states",
+        "pol_xel",
+        "o_ucd"
+      ]
+    },
+    {
+      "objid_exact_string": "109191393",
+      "one_based_response_rows": [
+        17,
+        18,
+        19,
+        20
+      ],
+      "obs_id": "n3t401ehq",
+      "first28_cells_identical": true,
+      "different_fields": [
+        "access_url",
+        "access_format",
+        "access_estsize"
+      ],
+      "distinct_full_raw_row_tuples": 4,
+      "all_row_cell_sha256": [
+        "508889034b60860fa58fd6faaf0b5bf58f5eb8c771e8294ac7bca05a02d5fbf9",
+        "f88348f2693d28c52b76c59d3f0b9284d486a3aaed205459144450a8eb5b778f",
+        "1584b111f62232eea53f1ba152bfcc14f8cf284360a14da03c2cb80bc9099310",
+        "3724bfb05ae93e3159d5ae1dd300780859b9897208357c3344450d0ca677a608"
+      ],
+      "access_metadata": [
+        {
+          "access_url_literal_sha256": "c7b05dcf257ac6625c8eb1512bb42a355f76a7ef2c2965beac1f5666ad31cea6",
+          "access_format_raw": "application/fits",
+          "access_estsize_raw": "1120320",
+          "access_estsize_reported_unit": "kbyte"
+        },
+        {
+          "access_url_literal_sha256": "74bb9bc0445425949e462c7bbf5b1b6157bac31c2b935679e82ee816e794aaa7",
+          "access_format_raw": "image/jpeg",
+          "access_estsize_raw": "19353",
+          "access_estsize_reported_unit": "kbyte"
+        },
+        {
+          "access_url_literal_sha256": "a4b19f95e2816b07d127b7d2efb17659c0395676a034757e29cbfae465b0cdbf",
+          "access_format_raw": "image/jpeg",
+          "access_estsize_raw": "4071",
+          "access_estsize_reported_unit": "kbyte"
+        },
+        {
+          "access_url_literal_sha256": "758721752841614f92c310c47087216ce7f1e2fa49d4d828e9a8b5c329232340",
+          "access_format_raw": "application/fits",
+          "access_estsize_raw": "4904640",
+          "access_estsize_reported_unit": "kbyte"
+        }
+      ],
+      "null_field_names": [
+        "s_fov",
+        "s_resolution",
+        "s_xel1",
+        "s_xel2",
+        "t_resolution",
+        "t_xel",
+        "em_res_power",
+        "em_xel",
+        "pol_states",
+        "pol_xel",
+        "o_ucd"
+      ]
+    }
+  ],
+  "primary_key_description_conflict": "The saved schema describes objid as primary key, but this actual projection returns four rows per objid. It cannot be assumed to identify a unique response row.",
+  "interpretation": "Repeated objids differ only in access URL, format and estimated size. This is observed multiple-access metadata, not four independent epochs or established physical product lineage.",
+  "coverage": "Exactly20 rows reaches TOP/MAXREC. The known-row positive mechanics check passes, while complete overlapping archive coverage remains truncated or unknown.",
+  "pagination": "ORDER BY objid is nonunique. Neither strict row order within ties nor a globally stable unique pagination key is established. No resume, offset/keyset pagination, row dropping or automatic followup.",
+  "future_bounded_target_queries": "The cap counts response rows, including access alternatives, not unique observation identities. Preserve all rows. A20-row target response remains incomplete; any future tie-break or distinct-product inventory requires an explicit versioned query, not an interpretation of this completed run.",
+  "rights": "Public metadata does not establish image rights/access. URLs were read as inert strings for comparison and hashed in this review; none followed.",
+  "no_Gaia_source_association_or_independent_epoch_inference": true,
+  "new_images": 0,
+  "network_requests_by_reviewer": 0,
+  "fits": 0,
+  "source_dispositions_changed": false,
+  "all14_held": true,
+  "scientific_policy_or_holdout_change": false
+}

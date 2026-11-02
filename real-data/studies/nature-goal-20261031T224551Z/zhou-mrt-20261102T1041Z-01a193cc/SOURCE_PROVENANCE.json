@@ -1,0 +1,34 @@
+{
+  "scope": "Finite original-14 literature comparison; public inputs; no holdout evaluation",
+  "publisher_article": {
+    "doi": "10.3847/1538-4357/aeaa3a",
+    "requested_url": "https://iopscience.iop.org/article/10.3847/1538-4357/aeaa3a",
+    "retrieval_utc": "2026-11-02T10:35:30Z",
+    "http_status": 200,
+    "tls_verify_result": 0,
+    "body_sha256": "88beb44cd30930f0f48dbb6746a2abe040d6f014ce26cc0aae7f069cef221ae6",
+    "inspection_sha256": "0525d00a0a7ebe771abc10c0ea74b1c2e59fb3b87960a5657ce30943d75ebf5c",
+    "native_headers": "local only; contain session-bearing fields"
+  },
+  "publisher_table": {
+    "requested_url": "https://content.cld.iop.org/journals/0004-637X/1010/2/216/revision1/apjaeaa3at2_mrt.txt",
+    "retrieval_utc": "2026-11-02T10:44:39Z",
+    "http_status": 200,
+    "tls_verify_result": 0,
+    "body_bytes": 7874,
+    "body_sha256": "94f41f32f8c0d34798fc223d4af10fd19a16fc63bc9e30069a6d2ff4ead90267",
+    "transport_result_sha256": "6e3b841afed3198e9232456404149c9449aab1a050dd4e0fd03db2d50e8be76f",
+    "association": "Publisher-page Table 2 anchors independently verified; body author and table descriptors consistent; no internal DOI",
+    "declared_schema": "17 fixed-width 197-byte records; GaiaDR3 I19 bytes 1-19; Type A3 bytes 63-65"
+  },
+  "comparison": {
+    "result_sha256": "338b6bc6e99f594aab946df9139727aae8dcecf139de20e1e98ee8f81c14b435",
+    "manifest_sha256": "383cd96d8cb298d03f6d2bdce5b5511d5e4f95586faa282e4914982066a80ca4",
+    "held_targets": 14,
+    "table2_unique_ids": 17,
+    "table1_type_i_ids": 2,
+    "preview_controls": 4,
+    "exact_matches": 0,
+    "interpretation": "Only this paper's 19 listed candidate sources; nonmatch does not establish novelty"
+  }
+}

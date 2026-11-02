@@ -1,0 +1,18 @@
+{
+  "created_utc": "2026-11-02T08:58:50.375878+00:00",
+  "command": [
+    "C:\\gogogo\\universe search harness\\blackhole search\\astra-20261031T2113Z-01a193cc\\.venv-fits-study\\Scripts\\python.exe",
+    "-B",
+    "-m",
+    "unittest",
+    "test_sample",
+    "-v"
+  ],
+  "working_directory": "C:\\gogogo\\universe search harness\\blackhole search\\astra-20261031T2113Z-01a193cc\\studies\\nature-goal-20261031T224551Z\\sedr5-catalogue-sample-20261102T085730Z-01a193cc",
+  "returncode": 0,
+  "elapsed_seconds": 0.10151540000515524,
+  "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stderr_sha256": "10bbd658125d5f6a3e63f5140338333b648db5cd6b1c4e72df7ba430de48f983",
+  "scope": "offline synthetic sample parsing only",
+  "tests_expected": 5
+}

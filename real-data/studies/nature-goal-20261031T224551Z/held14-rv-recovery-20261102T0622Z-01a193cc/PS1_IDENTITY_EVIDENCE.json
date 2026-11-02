@@ -1,0 +1,81 @@
+{
+  "created_utc": "2026-11-02T06:34:14.485601+00:00",
+  "status": "DESCRIPTIVE_REVIEW_PENDING_INDEPENDENT_REVIEW",
+  "gaia_source_id": "1533365584518328576",
+  "lamost_ps_id": "157061857151801289",
+  "ps1_row": {
+    "objID": "157061857151801289",
+    "raMean": "185.71518099",
+    "decMean": "40.88389641",
+    "epochMean": "56784.29064815",
+    "qualityFlag": "32",
+    "objInfoFlag": "268959744",
+    "astrometryCorrectionFlag": "0",
+    "nDetections": "1",
+    "ng": "0",
+    "nr": "0",
+    "ni": "1",
+    "gMeanPSFMag": "-999.0",
+    "gMeanPSFMagErr": "-999.0",
+    "gFlags": "0",
+    "rMeanPSFMag": "-999.0",
+    "rMeanPSFMagErr": "-999.0",
+    "rFlags": "0",
+    "iMeanPSFMag": "20.606800079345703",
+    "iMeanPSFMagErr": "0.06439399719238281",
+    "iMeanPSFMagStd": "-999.0",
+    "iMeanPSFMagNpt": "1",
+    "iFlags": "4120"
+  },
+  "gaia_reference_epoch": 2016.0,
+  "raw_unpropagated_gaia_to_ps1_arcsec": 1.5189289548837603,
+  "gaia_pm_total_mas_per_year": 9.272742866212383,
+  "lamost_gaia_g_mag": "16.177345",
+  "lamost_ps_i_mag": "20.606800079345703",
+  "lamost_ps_i_matches_ps1_value_at_saved_precision": true,
+  "interpretation": "One exact PS1 key returns a one-detection row whose mean position differs from the unpropagated Gaia 2016 position by the stated angle. This is not a match significance, proof of association, fibre contamination, independent orbit, or novelty finding.",
+  "limits": [
+    "PS1 i mean uses one point and its standard deviation is -999 (unknown); g and r magnitudes are -999 (unknown).",
+    "PS1 and Gaia positions have different epochs; position uncertainties, covariance, orbital/parallax displacement and source-specific calibration were not propagated.",
+    "DR12 ps_id and photometric estimator lineage remain unverified. Different passbands prevent direct color or flux conclusions.",
+    "A matching catalogue key does not prove which light entered the LAMOST fibre."
+  ],
+  "inputs": {
+    "studies/nature-goal-20261031T224551Z/held14-rv-recovery-20261102T0622Z-01a193cc/ps1-identity-v1/PROTOCOL.json": {
+      "sha256": "45686786c96312641386da5233b9e729934ea5ba6f1916c7f57a815c68b7f2a8",
+      "bytes": 3858
+    },
+    "studies/nature-goal-20261031T224551Z/held14-rv-recovery-20261102T0622Z-01a193cc/ps1-identity-v1/RESULTS.json": {
+      "sha256": "6c553da07bba666f36f1424c66c358ca4420f89cc49d1d8059b5c28adfd28cd1",
+      "bytes": 940
+    },
+    "studies/nature-goal-20261031T224551Z/held14-rv-recovery-20261102T0622Z-01a193cc/ps1-identity-v1/known_control.raw": {
+      "sha256": "2712609536c746be388735b65f48adff43a405183a8ca580a2b43bdfbe032f1f",
+      "bytes": 502
+    },
+    "studies/nature-goal-20261031T224551Z/held14-rv-recovery-20261102T0622Z-01a193cc/ps1-identity-v1/lamost_psid_target.raw": {
+      "sha256": "e74ac19384a736baec00585f6af312f8ec3775d9e11e08124b94163c2db15dbe",
+      "bytes": 402
+    },
+    "studies/nature-goal-20261031T224551Z/held14-rv-recovery-20261102T0622Z-01a193cc/ps1-identity-v1/known_control.json": {
+      "sha256": "4df0ab38559b5b24f3605455a24fc57a24d5e2f3dab6c1f730178023d468b4b6",
+      "bytes": 2299
+    },
+    "studies/nature-goal-20261031T224551Z/held14-rv-recovery-20261102T0622Z-01a193cc/ps1-identity-v1/lamost_psid_target.json": {
+      "sha256": "841c746c772ab05db089a6607a6a58cab16b97b42d0882bfa8b94af6e2e0a1c7",
+      "bytes": 2319
+    },
+    "studies/nature-goal-20261031T224551Z/lamost-dr12-held14-context/prepared-v2-20261101T002111Z/original14_catalogue.parsed.json": {
+      "sha256": "abd2483f5837edb076a4d7d0bfd89b44163bf4cd88261b6815e6b83717e07e97",
+      "bytes": 5150
+    },
+    "followups/held14-20261031T214650Z/evidence/neighbors60/1533365584518328576.parsed.json": {
+      "sha256": "f160da0b6ce0af38d84139d867f8989ef1a7511b36542b454d4bfe08614bf189",
+      "bytes": 5122
+    }
+  },
+  "new_archive_requests": 2,
+  "new_spectral_epochs": 0,
+  "dispositions_changed": false,
+  "new_holdout_evaluation": false
+}

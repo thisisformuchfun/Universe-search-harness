@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<VOTABLE version="1.4" xmlns="http://www.ivoa.net/xml/VOTable/v1.3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.ivoa.net/xml/VOTable/v1.3 http://www.ivoa.net/xml/VOTable/votable-1.4.xsd">
+<RESOURCE type="results">
+<INFO name="QUERY_STATUS" value="OK"/>
+<INFO name="PROVIDER" value="ARI (Astronomisches Rechen Institut - Heidelberg, Germany)">ARI's TAP access to the Gaia Archive.</INFO>
+<INFO name="QUERY" value="SELECT source_id,ra,dec,ref_epoch,parallax,parallax_error,pmra,pmra_error,pmdec,pmdec_error,parallax_pmra_corr,parallax_pmdec_corr,pmra_pmdec_corr,phot_g_mean_mag,bp_rp,ruwe,duplicated_source,ipd_frac_multi_peak,ipd_gof_harmonic_amplitude,astrometric_params_solved,3600*DISTANCE(POINT('ICRS',ra,dec),POINT('ICRS',185.71462554756414,40.88393733581962)) AS separation_arcsec FROM gaiadr3.gaia_source WHERE 1=CONTAINS(POINT('ICRS',ra,dec),CIRCLE('ICRS',185.71462554756414,40.88393733581962,0.0166666666666667)) ORDER BY source_id"/>
+<COOSYS ID="GDR3_ICRS" system="ICRS" epoch="2016" />
+<TABLE name="result_S1793483469939">
+<FIELD ID="source_id" datatype="long" name="source_id" ucd="meta.id;meta.main">
+<DESCRIPTION>Unique source identifier (unique within a particular Data Release)</DESCRIPTION>
+</FIELD>
+<FIELD ID="ra" datatype="double" name="ra" ref="GDR3_ICRS" ucd="pos.eq.ra;meta.main" unit="deg">
+<DESCRIPTION>Right ascension</DESCRIPTION>
+</FIELD>
+<FIELD ID="dec" datatype="double" name="dec" ref="GDR3_ICRS" ucd="pos.eq.dec;meta.main" unit="deg">
+<DESCRIPTION>Declination</DESCRIPTION>
+</FIELD>
+<FIELD ID="ref_epoch" datatype="double" name="ref_epoch" ucd="meta.ref;time.epoch" unit="yr">
+<DESCRIPTION>Reference epoch</DESCRIPTION>
+</FIELD>
+<FIELD ID="parallax" datatype="double" name="parallax" ucd="pos.parallax.trig" unit="mas">
+<DESCRIPTION>Parallax</DESCRIPTION>
+</FIELD>
+<FIELD ID="parallax_error" datatype="float" name="parallax_error" ucd="stat.error;pos.parallax.trig" unit="mas">
+<DESCRIPTION>Standard error of parallax</DESCRIPTION>
+</FIELD>
+<FIELD ID="pmra" datatype="double" name="pmra" ucd="pos.pm;pos.eq.ra" unit="mas.yr**-1">
+<DESCRIPTION>Proper motion in right ascension direction</DESCRIPTION>
+</FIELD>
+<FIELD ID="pmra_error" datatype="float" name="pmra_error" ucd="stat.error;pos.pm;pos.eq.ra" unit="mas.yr**-1">
+<DESCRIPTION>Standard error of proper motion in right ascension direction</DESCRIPTION>
+</FIELD>
+<FIELD ID="pmdec" datatype="double" name="pmdec" ucd="pos.pm;pos.eq.dec" unit="mas.yr**-1">
+<DESCRIPTION>Proper motion in declination direction</DESCRIPTION>
+</FIELD>
+<FIELD ID="pmdec_error" datatype="float" name="pmdec_error" ucd="stat.error;pos.pm;pos.eq.dec" unit="mas.yr**-1">
+<DESCRIPTION>Standard error of proper motion in declination direction</DESCRIPTION>
+</FIELD>
+<FIELD ID="parallax_pmra_corr" datatype="float" name="parallax_pmra_corr" ucd="stat.correlation">
+<DESCRIPTION>Correlation between parallax and proper motion in right ascension</DESCRIPTION>
+</FIELD>
+<FIELD ID="parallax_pmdec_corr" datatype="float" name="parallax_pmdec_corr" ucd="stat.correlation">
+<DESCRIPTION>Correlation between parallax and proper motion in declination</DESCRIPTION>
+</FIELD>
+<FIELD ID="pmra_pmdec_corr" datatype="float" name="pmra_pmdec_corr" ucd="stat.correlation">
+<DESCRIPTION>Correlation between proper motion in right ascension and proper motion in declination</DESCRIPTION>
+</FIELD>
+<FIELD ID="phot_g_mean_mag" datatype="float" name="phot_g_mean_mag" ucd="phot.mag;em.opt" unit="mag">
+<DESCRIPTION>G-band mean magnitude</DESCRIPTION>
+</FIELD>
+<FIELD ID="bp_rp" datatype="float" name="bp_rp" ucd="phot.color;em.opt.B;em.opt.R" unit="mag">
+<DESCRIPTION>BP - RP colour</DESCRIPTION>
+</FIELD>
+<FIELD ID="ruwe" datatype="float" name="ruwe" ucd="stat.error">
+<DESCRIPTION>Renormalised unit weight error</DESCRIPTION>
+</FIELD>
+<FIELD ID="duplicated_source" datatype="short" name="duplicated_source" ucd="meta.code.status">
+<DESCRIPTION>Source with multiple source identifiers</DESCRIPTION>
+</FIELD>
+<FIELD ID="ipd_frac_multi_peak" datatype="short" name="ipd_frac_multi_peak" ucd="stat.value">
+<DESCRIPTION>Percent of successful-IPD windows with more than one peak</DESCRIPTION>
+</FIELD>
+<FIELD ID="ipd_gof_harmonic_amplitude" datatype="float" name="ipd_gof_harmonic_amplitude" ucd="stat.value">
+<DESCRIPTION>Amplitude of the IPD GoF versus position angle of scan</DESCRIPTION>
+</FIELD>
+<FIELD ID="astrometric_params_solved" datatype="short" name="astrometric_params_solved" ucd="meta.number">
+<DESCRIPTION>Which parameters have been solved for?</DESCRIPTION>
+</FIELD>
+<FIELD ID="separation_arcsec" datatype="double" name="separation_arcsec"/>
+<DATA>
+<TABLEDATA>
+  <TR>
+    <TD>1533365584518326400</TD>
+    <TD>185.71100373487332</TD>
+    <TD>40.88100108177301</TD>
+    <TD>2016.0</TD>
+    <TD>0.5126100263415224</TD>
+    <TD>0.37009048</TD>
+    <TD>-0.6970881815449583</TD>
+    <TD>0.33754116</TD>
+    <TD>-7.32381652581809</TD>
+    <TD>0.43144295</TD>
+    <TD>0.057226915</TD>
+    <TD>0.11408153</TD>
+    <TD>-0.17001535</TD>
+    <TD>19.751516</TD>
+    <TD>1.9329453</TD>
+    <TD>1.1207981</TD>
+    <TD>0</TD>
+    <TD>1</TD>
+    <TD>0.012659562</TD>
+    <TD>95</TD>
+    <TD>14.453806423999323</TD>
+  </TR>
+  <TR>
+    <TD>1533365584518328576</TD>
+    <TD>185.71462554756414</TD>
+    <TD>40.88393733581962</TD>
+    <TD>2016.0</TD>
+    <TD>1.150445152932779</TD>
+    <TD>0.07237679</TD>
+    <TD>-9.0617697044507</TD>
+    <TD>0.059560053</TD>
+    <TD>1.966746065559077</TD>
+    <TD>0.08845719</TD>
+    <TD>0.15990528</TD>
+    <TD>0.08832417</TD>
+    <TD>-0.13188337</TD>
+    <TD>16.177345</TD>
+    <TD>1.0625658</TD>
+    <TD>1.7290752</TD>
+    <TD>0</TD>
+    <TD>0</TD>
+    <TD>0.026720006</TD>
+    <TD>31</TD>
+    <TD>0.0</TD>
+  </TR>
+  <TR>
+    <TD>1533365584518329344</TD>
+    <TD>185.71031035184532</TD>
+    <TD>40.88602345544786</TD>
+    <TD>2016.0</TD>
+    <TD>-0.5485165882304732</TD>
+    <TD>0.4423594</TD>
+    <TD>-0.11406296734056505</TD>
+    <TD>0.38545063</TD>
+    <TD>1.0231488798213615</TD>
+    <TD>0.50868976</TD>
+    <TD>0.15054594</TD>
+    <TD>0.085590504</TD>
+    <TD>-0.12846166</TD>
+    <TD>20.016352</TD>
+    <TD>0.23336792</TD>
+    <TD>1.0891447</TD>
+    <TD>0</TD>
+    <TD>2</TD>
+    <TD>0.051643144</TD>
+    <TD>31</TD>
+    <TD>13.940473670061793</TD>
+  </TR>
+  <TR>
+    <TD>1533365588813673728</TD>
+    <TD>185.7131520967809</TD>
+    <TD>40.88946022434856</TD>
+    <TD>2016.0</TD>
+    <TD>1.069524829687177</TD>
+    <TD>0.03998263</TD>
+    <TD>-11.240367695213099</TD>
+    <TD>0.03218169</TD>
+    <TD>-15.213358033021496</TD>
+    <TD>0.047191948</TD>
+    <TD>0.22574821</TD>
+    <TD>0.11211925</TD>
+    <TD>-0.08609672</TD>
+    <TD>15.850337</TD>
+    <TD>1.0437603</TD>
+    <TD>1.1122457</TD>
+    <TD>0</TD>
+    <TD>1</TD>
+    <TD>0.033780824</TD>
+    <TD>31</TD>
+    <TD>20.282782403494164</TD>
+  </TR>
+  <TR>
+    <TD>1533365618878066688</TD>
+    <TD>185.7254127415588</TD>
+    <TD>40.88333303017857</TD>
+    <TD>2016.0</TD>
+    <TD>0.11347821500315702</TD>
+    <TD>0.085565746</TD>
+    <TD>2.2034984058722156</TD>
+    <TD>0.069046415</TD>
+    <TD>-4.885623995220419</TD>
+    <TD>0.08836152</TD>
+    <TD>0.18362528</TD>
+    <TD>-0.09824659</TD>
+    <TD>-0.1483541</TD>
+    <TD>17.51841</TD>
+    <TD>0.5809326</TD>
+    <TD>1.0006107</TD>
+    <TD>0</TD>
+    <TD>0</TD>
+    <TD>0.010857051</TD>
+    <TD>31</TD>
+    <TD>29.440486967459552</TD>
+  </TR>
+  <TR>
+    <TD>1533365618878073856</TD>
+    <TD>185.7231886556317</TD>
+    <TD>40.89764849813677</TD>
+    <TD>2016.0</TD>
+    <TD>0.39522565037156787</TD>
+    <TD>0.24440907</TD>
+    <TD>-8.151182544665428</TD>
+    <TD>0.19583195</TD>
+    <TD>-10.732987640794812</TD>
+    <TD>0.25880948</TD>
+    <TD>0.124570414</TD>
+    <TD>0.01729938</TD>
+    <TD>-0.104528755</TD>
+    <TD>19.266317</TD>
+    <TD>0.8855152</TD>
+    <TD>1.0221198</TD>
+    <TD>0</TD>
+    <TD>0</TD>
+    <TD>0.033962082</TD>
+    <TD>31</TD>
+    <TD>54.58486947811841</TD>
+  </TR>
+  <TR>
+    <TD>1533365623172961408</TD>
+    <TD>185.7289992818766</TD>
+    <TD>40.88914087631421</TD>
+    <TD>2016.0</TD>
+    <TD>1.3295771651692478</TD>
+    <TD>0.55939037</TD>
+    <TD>-3.1701475254000866</TD>
+    <TD>0.46755508</TD>
+    <TD>1.550116119382571</TD>
+    <TD>0.6180188</TD>
+    <TD>0.2369078</TD>
+    <TD>-0.17894667</TD>
+    <TD>-0.30629048</TD>
+    <TD>20.26795</TD>
+    <TD>2.2232094</TD>
+    <TD>0.96486163</TD>
+    <TD>0</TD>
+    <TD>0</TD>
+    <TD>0.022424804</TD>
+    <TD>95</TD>
+    <TD>43.37378012316104</TD>
+  </TR>
+</TABLEDATA>
+</DATA>
+</TABLE>
+</RESOURCE><RESOURCE type="meta" utype="adhoc:service" name="Datalink_GaiaDR3">
+<DESCRIPTION>Get all the linked data the specified Gaia-DR3 source ID.</DESCRIPTION>
+<PARAM arraysize="51" datatype="char" name="accessURL" ucd="meta.ref.url" value="https://gaia.ari.uni-heidelberg.de/datalink/gaiadr3">
+<DESCRIPTION>URL to invoke the service.</DESCRIPTION>
+</PARAM>
+<GROUP name="inputParams">
+<PARAM name="sourceid" datatype="long" ref="source_id" value=""/>
+</GROUP>
+</RESOURCE>
+</VOTABLE>

@@ -1,0 +1,677 @@
+{
+  "schema_version": "research-evidence-sidecar-1",
+  "created_utc": "2026-10-31T22:31:35.530862+00:00",
+  "scope": "All14 fixed held identities; external published evidence only, no production edits/ranking/heldout evaluation.",
+  "primary_paper": "https://arxiv.org/html/2507.09622v1",
+  "fixed_data_release": "https://zenodo.org/records/15166185",
+  "complete_source_id_column_rows": 35831031,
+  "complete_source_id_column_sha256": "7b7d4f4d050b37432135e750c3f96bc8eaf000cb524de6b4b576f37d54c91c2d",
+  "full_hdf5_file_checksum_verified": false,
+  "matched_source_count": 8,
+  "selection_excluded_source_count": 6,
+  "published_class1_count": 3,
+  "published_class0_count": 5,
+  "source_id_encoding": "exact decimal strings derived from int64; never floating point",
+  "published_model_units": {
+    "masses": "solar masses; photometric model estimates, not dynamical masses",
+    "mass_ratio": "dimensionless",
+    "metallicity": "[M/H] as published",
+    "parallax": "mas",
+    "extinction_parameters": "as published model parameters; no conversion to E(B-V) or A_G adopted",
+    "flux_ratio_mean_and_std": "published XP ratio summary; not assumed astrometric G-band ratio or posterior standard error"
+  },
+  "limitations": [
+    "No new single/binary model was trained or fit.",
+    "Class1 is an author threshold label; class0 is not a confirmed single star. No label is a binary/BH probability.",
+    "All8 have log10(single/binary chi-square) below the authors golden-sample necessary0.2 condition; this is not a harness cut.",
+    "Three binary fits have higher chi-square; one of those has authorclass1, requiring threshold/model clarification.",
+    "Local fit uncertainties omit misspecification, multiplicity, extinction and parallax bias; no e_m2 field exists.",
+    "Six catalogue nonmatches are selection exclusions.",
+    "Twelve objects retain incomplete novelty coverage; two are already compact-candidate-study members.",
+    "The original field name derived_unreddened_absolute_G is a naming error: its formula has NO extinction correction. The v2 sidecar uses absolute_G_without_extinction_correction."
+  ],
+  "input_sha256": {
+    "xp-parent-fit-fields\\RESULTS.json": "ab38ccdd0e62bdc1df5fe9b4db55e10dca0d9ff112c60b760042bfb463f343bb",
+    "XP_PARENT_SELECTION_COVERAGE.json": "c04a9a32fe2f9cf8f49ce0afe16b252624ed47e0ad2e1c320904f8a21b43b01c",
+    "xp-parent-id-continuation\\RESULTS.json": "d58dcc2cdd8f41277dcbb60cd51117f8263d9c364616b540ec7502b5567a6c66",
+    "XP_CLASS_SEMANTICS_REVIEW.json": "2a45c11085663dc7867b46e549b7342f9725fff97d26d66e88cb99c9ec6e1078"
+  },
+  "rows": [
+    {
+      "source_id": "5991734159714775296",
+      "parent_catalogue_membership": {
+        "source_id": "5991734159714775296",
+        "matching_row_indices_zero_based": [],
+        "match_count": 0,
+        "status": "NO_EXACT_ID_IN_COMPLETE_PARENT_ID_COLUMN"
+      },
+      "documented_parent_selection_failures": [
+        "source_parallax_gt1mas",
+        "parallax_over_error_gt10"
+      ],
+      "absolute_G_without_extinction_correction": 4.483916430078786,
+      "astrophysical_disposition": "HELD_NO_NEW_RELEASE",
+      "novelty_disposition": "NOT_CLEARED_INCOMPLETE_PRIOR_STUDY_COVERAGE",
+      "not_a_new_discovery": true,
+      "xp_evidence_status": "UNAVAILABLE_OUTSIDE_DOCUMENTED_PARENT_SELECTION",
+      "published_model_fields": null,
+      "interpretation": "No parent-catalogue fit for this source; absence is not negative evidence about companion luminosity."
+    },
+    {
+      "source_id": "3316050687674598656",
+      "parent_catalogue_membership": {
+        "source_id": "3316050687674598656",
+        "matching_row_indices_zero_based": [
+          20117197
+        ],
+        "match_count": 1,
+        "status": "EXACT_ID_MATCH"
+      },
+      "documented_parent_selection_failures": [],
+      "absolute_G_without_extinction_correction": 6.686301976257679,
+      "astrophysical_disposition": "HELD_NO_NEW_RELEASE",
+      "novelty_disposition": "NOT_CLEARED_INCOMPLETE_PRIOR_STUDY_COVERAGE",
+      "not_a_new_discovery": true,
+      "xp_evidence_status": "PUBLISHED_PHOTOMETRIC_MODEL_FIELDS_RETRIEVED",
+      "published_model_fields": {
+        "fit_status_single": 2,
+        "fit_status_binary": 2,
+        "fit_success_single": true,
+        "fit_success_binary": true,
+        "chi2_mass_mh": 79.99774,
+        "chi2_mass_mh_binary": 82.07834,
+        "chi2_diff_mh_mass": -2.080593,
+        "m1_binary": 0.84726864,
+        "e_m1_binary": 0.038940657,
+        "q_binary": 0.9674409,
+        "e_q_binary": 0.09159189,
+        "m2_binary": 0.8196823356233761,
+        "mh_binary": -0.57306427,
+        "e_mh_binary": 0.22890696,
+        "E_binary": 0.97590494,
+        "e_E_binary": 0.033701897,
+        "flux_ratio_mean": 0.8378778,
+        "flux_ratio_std": 0.028166421114125515,
+        "flag_extrap_m2": false,
+        "mass_single": 1.0793622,
+        "e_mass_single": 0.01365162,
+        "mh_single": 0.22095476,
+        "e_mh_single": 0.123307295,
+        "E_single": 0.96167994,
+        "e_E_single": 0.025744222,
+        "parallax": 1.402116807253415,
+        "parallax_error": 0.09780567,
+        "predicted_class": 1
+      },
+      "published_class_validity": {
+        "valid": true,
+        "byte": 254,
+        "bit_index": 5
+      },
+      "descriptive_comparison": {
+        "log10_chi2_single_over_binary": -0.011150846433292593,
+        "meets_published_golden_sample_ratio_condition": false,
+        "published_delta_chi2": -2.080593,
+        "recomputed_delta_from_displayed_fields": -2.080600000000004,
+        "binary_model_has_lower_chi2": false,
+        "published_class1_with_negative_delta": true
+      },
+      "interpretation": "Published photometric model outputs under main-sequence and extinction assumptions. Modest or absent fit improvement does not resolve companion light, triples, blends, or the astrometric orbit.",
+      "provenance": {
+        "fit_response_metadata": "xp-parent-fit-fields/3316050687674598656.json",
+        "fit_response_sha256": "1e98d20ba7974f13a2302da0e23d8e26aa5391942c2d81ef8864653ab2d65b95"
+      }
+    },
+    {
+      "source_id": "5928370816455687808",
+      "parent_catalogue_membership": {
+        "source_id": "5928370816455687808",
+        "matching_row_indices_zero_based": [],
+        "match_count": 0,
+        "status": "NO_EXACT_ID_IN_COMPLETE_PARENT_ID_COLUMN"
+      },
+      "documented_parent_selection_failures": [
+        "source_parallax_gt1mas",
+        "parallax_over_error_gt10"
+      ],
+      "absolute_G_without_extinction_correction": 4.7267790010647595,
+      "astrophysical_disposition": "HELD_NO_NEW_RELEASE",
+      "novelty_disposition": "NOT_CLEARED_INCOMPLETE_PRIOR_STUDY_COVERAGE",
+      "not_a_new_discovery": true,
+      "xp_evidence_status": "UNAVAILABLE_OUTSIDE_DOCUMENTED_PARENT_SELECTION",
+      "published_model_fields": null,
+      "interpretation": "No parent-catalogue fit for this source; absence is not negative evidence about companion luminosity."
+    },
+    {
+      "source_id": "1533365584518328576",
+      "parent_catalogue_membership": {
+        "source_id": "1533365584518328576",
+        "matching_row_indices_zero_based": [
+          14556822
+        ],
+        "match_count": 1,
+        "status": "EXACT_ID_MATCH"
+      },
+      "documented_parent_selection_failures": [],
+      "absolute_G_without_extinction_correction": 6.481674593309128,
+      "astrophysical_disposition": "HELD_NO_NEW_RELEASE",
+      "novelty_disposition": "NOT_CLEARED_INCOMPLETE_PRIOR_STUDY_COVERAGE",
+      "not_a_new_discovery": true,
+      "xp_evidence_status": "PUBLISHED_PHOTOMETRIC_MODEL_FIELDS_RETRIEVED",
+      "published_model_fields": {
+        "fit_status_single": 4,
+        "fit_status_binary": 2,
+        "fit_success_single": true,
+        "fit_success_binary": true,
+        "chi2_mass_mh": 38.60607,
+        "chi2_mass_mh_binary": 35.736946,
+        "chi2_diff_mh_mass": 2.8691244,
+        "m1_binary": 0.614884,
+        "e_m1_binary": 0.008767482,
+        "q_binary": 0.5493745,
+        "e_q_binary": 0.106128015,
+        "m2_binary": 0.337801590058,
+        "mh_binary": -1.6551756,
+        "e_mh_binary": 0.2486113,
+        "E_binary": 0.018033305,
+        "e_E_binary": 0.018672869,
+        "flux_ratio_mean": 0.11381574,
+        "flux_ratio_std": 0.03668698418443866,
+        "flag_extrap_m2": false,
+        "mass_single": 0.64690554,
+        "e_mass_single": 0.0036779286,
+        "mh_single": -1.2400203,
+        "e_mh_single": 0.08429637,
+        "E_single": 0.051312424,
+        "e_E_single": 0.016239475,
+        "parallax": 1.150445152932779,
+        "parallax_error": 0.07237679,
+        "predicted_class": 1
+      },
+      "published_class_validity": {
+        "valid": true,
+        "byte": 255,
+        "bit_index": 6
+      },
+      "descriptive_comparison": {
+        "log10_chi2_single_over_binary": 0.03353815788356382,
+        "meets_published_golden_sample_ratio_condition": false,
+        "published_delta_chi2": 2.8691244,
+        "recomputed_delta_from_displayed_fields": 2.8691239999999993,
+        "binary_model_has_lower_chi2": true,
+        "published_class1_with_negative_delta": false
+      },
+      "interpretation": "Published photometric model outputs under main-sequence and extinction assumptions. Modest or absent fit improvement does not resolve companion light, triples, blends, or the astrometric orbit.",
+      "provenance": {
+        "fit_response_metadata": "xp-parent-fit-fields/1533365584518328576.json",
+        "fit_response_sha256": "ea2b537bb1620d8a0c442f589a85132d0f254cf574ae1bff0a264c38b32c6172"
+      }
+    },
+    {
+      "source_id": "632497706010874240",
+      "parent_catalogue_membership": {
+        "source_id": "632497706010874240",
+        "matching_row_indices_zero_based": [],
+        "match_count": 0,
+        "status": "NO_EXACT_ID_IN_COMPLETE_PARENT_ID_COLUMN"
+      },
+      "documented_parent_selection_failures": [
+        "parallax_over_error_gt10"
+      ],
+      "absolute_G_without_extinction_correction": 8.120996191940861,
+      "astrophysical_disposition": "HELD_NO_NEW_RELEASE",
+      "novelty_disposition": "NOT_CLEARED_INCOMPLETE_PRIOR_STUDY_COVERAGE",
+      "not_a_new_discovery": true,
+      "xp_evidence_status": "UNAVAILABLE_OUTSIDE_DOCUMENTED_PARENT_SELECTION",
+      "published_model_fields": null,
+      "interpretation": "No parent-catalogue fit for this source; absence is not negative evidence about companion luminosity."
+    },
+    {
+      "source_id": "1538284425878995712",
+      "parent_catalogue_membership": {
+        "source_id": "1538284425878995712",
+        "matching_row_indices_zero_based": [
+          14563002
+        ],
+        "match_count": 1,
+        "status": "EXACT_ID_MATCH"
+      },
+      "documented_parent_selection_failures": [],
+      "absolute_G_without_extinction_correction": 7.458904721165926,
+      "astrophysical_disposition": "HELD_NO_NEW_RELEASE",
+      "novelty_disposition": "NOT_CLEARED_INCOMPLETE_PRIOR_STUDY_COVERAGE",
+      "not_a_new_discovery": true,
+      "xp_evidence_status": "PUBLISHED_PHOTOMETRIC_MODEL_FIELDS_RETRIEVED",
+      "published_model_fields": {
+        "fit_status_single": 2,
+        "fit_status_binary": 2,
+        "fit_success_single": true,
+        "fit_success_binary": true,
+        "chi2_mass_mh": 56.53175,
+        "chi2_mass_mh_binary": 56.133728,
+        "chi2_diff_mh_mass": 0.39802513,
+        "m1_binary": 0.70470214,
+        "e_m1_binary": 0.00893007,
+        "q_binary": 0.16387907,
+        "e_q_binary": 0.2549012,
+        "m2_binary": 0.11548593133020979,
+        "mh_binary": 0.29873386,
+        "e_mh_binary": 0.065528296,
+        "E_binary": 0.061224274,
+        "e_E_binary": 0.032839842,
+        "flux_ratio_mean": 0.0021013836,
+        "flux_ratio_std": 0.002348280511518713,
+        "flag_extrap_m2": false,
+        "mass_single": 0.70693874,
+        "e_mass_single": 0.007564825,
+        "mh_single": 0.30383727,
+        "e_mh_single": 0.059056107,
+        "E_single": 0.070189774,
+        "e_E_single": 0.024555033,
+        "parallax": 1.883048666224665,
+        "parallax_error": 0.07112139,
+        "predicted_class": 0
+      },
+      "published_class_validity": {
+        "valid": true,
+        "byte": 255,
+        "bit_index": 2
+      },
+      "descriptive_comparison": {
+        "log10_chi2_single_over_binary": 0.0030685438072425523,
+        "meets_published_golden_sample_ratio_condition": false,
+        "published_delta_chi2": 0.39802513,
+        "recomputed_delta_from_displayed_fields": 0.39802200000000454,
+        "binary_model_has_lower_chi2": true,
+        "published_class1_with_negative_delta": false
+      },
+      "interpretation": "Published photometric model outputs under main-sequence and extinction assumptions. Modest or absent fit improvement does not resolve companion light, triples, blends, or the astrometric orbit.",
+      "provenance": {
+        "fit_response_metadata": "xp-parent-fit-fields/1538284425878995712.json",
+        "fit_response_sha256": "c3c28ee3b81c40c54ed025ad9e56717131d1b6dc862b827a6c8edc3bc1cfafed"
+      }
+    },
+    {
+      "source_id": "5959603097090964992",
+      "parent_catalogue_membership": {
+        "source_id": "5959603097090964992",
+        "matching_row_indices_zero_based": [
+          18945027
+        ],
+        "match_count": 1,
+        "status": "EXACT_ID_MATCH"
+      },
+      "documented_parent_selection_failures": [],
+      "absolute_G_without_extinction_correction": 7.033430286990232,
+      "astrophysical_disposition": "HELD_NO_NEW_RELEASE",
+      "novelty_disposition": "NOT_CLEARED_INCOMPLETE_PRIOR_STUDY_COVERAGE",
+      "not_a_new_discovery": true,
+      "xp_evidence_status": "PUBLISHED_PHOTOMETRIC_MODEL_FIELDS_RETRIEVED",
+      "published_model_fields": {
+        "fit_status_single": 2,
+        "fit_status_binary": 2,
+        "fit_success_single": true,
+        "fit_success_binary": true,
+        "chi2_mass_mh": 76.02751,
+        "chi2_mass_mh_binary": 66.72863,
+        "chi2_diff_mh_mass": 9.298888,
+        "m1_binary": 0.58306056,
+        "e_m1_binary": 0.01115388,
+        "q_binary": 0.8192267,
+        "e_q_binary": 0.03238504,
+        "m2_binary": 0.47765877846895194,
+        "mh_binary": -1.019165,
+        "e_mh_binary": 0.13761139,
+        "E_binary": 0.14544307,
+        "e_E_binary": 0.025380716,
+        "flux_ratio_mean": 0.36096638,
+        "flux_ratio_std": 0.08332179043092224,
+        "flag_extrap_m2": false,
+        "mass_single": 0.7157173,
+        "e_mass_single": 0.0036333594,
+        "mh_single": -0.06491018,
+        "e_mh_single": 0.026134847,
+        "E_single": 0.15405641,
+        "e_E_single": 0.027813224,
+        "parallax": 2.0585188935200804,
+        "parallax_error": 0.053821318,
+        "predicted_class": 1
+      },
+      "published_class_validity": {
+        "valid": true,
+        "byte": 223,
+        "bit_index": 3
+      },
+      "descriptive_comparison": {
+        "log10_chi2_single_over_binary": 0.05665855853149014,
+        "meets_published_golden_sample_ratio_condition": false,
+        "published_delta_chi2": 9.298888,
+        "recomputed_delta_from_displayed_fields": 9.298880000000011,
+        "binary_model_has_lower_chi2": true,
+        "published_class1_with_negative_delta": false
+      },
+      "interpretation": "Published photometric model outputs under main-sequence and extinction assumptions. Modest or absent fit improvement does not resolve companion light, triples, blends, or the astrometric orbit.",
+      "provenance": {
+        "fit_response_metadata": "xp-parent-fit-fields/5959603097090964992.json",
+        "fit_response_sha256": "cc0b50f9e5f2b462c595c1a9634a5776df0e694a03acdf8a0b6214ec02001bde"
+      }
+    },
+    {
+      "source_id": "4491401821468887552",
+      "parent_catalogue_membership": {
+        "source_id": "4491401821468887552",
+        "matching_row_indices_zero_based": [
+          18964888
+        ],
+        "match_count": 1,
+        "status": "EXACT_ID_MATCH"
+      },
+      "documented_parent_selection_failures": [],
+      "absolute_G_without_extinction_correction": 7.18257955050438,
+      "astrophysical_disposition": "HELD_NO_NEW_RELEASE",
+      "novelty_disposition": "PRIOR_COMPACT_CANDIDATE_STUDY_CONFIRMED",
+      "not_a_new_discovery": true,
+      "xp_evidence_status": "PUBLISHED_PHOTOMETRIC_MODEL_FIELDS_RETRIEVED",
+      "published_model_fields": {
+        "fit_status_single": 2,
+        "fit_status_binary": 2,
+        "fit_success_single": true,
+        "fit_success_binary": true,
+        "chi2_mass_mh": 45.22798,
+        "chi2_mass_mh_binary": 54.197845,
+        "chi2_diff_mh_mass": -8.969862,
+        "m1_binary": 0.60304195,
+        "e_m1_binary": 0.012318688,
+        "q_binary": 0.89478743,
+        "e_q_binary": 0.035106584,
+        "m2_binary": 0.5395943566226886,
+        "mh_binary": -0.41843572,
+        "e_mh_binary": 0.063381396,
+        "E_binary": 0.11484987,
+        "e_E_binary": 0.04216333,
+        "flux_ratio_mean": 0.5317663,
+        "flux_ratio_std": 0.08506367421171755,
+        "flag_extrap_m2": false,
+        "mass_single": 0.75861543,
+        "e_mass_single": 0.0070734923,
+        "mh_single": 0.4181715,
+        "e_mh_single": 0.058997642,
+        "E_single": 0.117533214,
+        "e_E_single": 0.018072505,
+        "parallax": 1.3776379888618755,
+        "parallax_error": 0.100647084,
+        "predicted_class": 0
+      },
+      "published_class_validity": {
+        "valid": true,
+        "byte": 255,
+        "bit_index": 0
+      },
+      "descriptive_comparison": {
+        "log10_chi2_single_over_binary": -0.07857482713193904,
+        "meets_published_golden_sample_ratio_condition": false,
+        "published_delta_chi2": -8.969862,
+        "recomputed_delta_from_displayed_fields": -8.969864999999999,
+        "binary_model_has_lower_chi2": false,
+        "published_class1_with_negative_delta": false
+      },
+      "interpretation": "Published photometric model outputs under main-sequence and extinction assumptions. Modest or absent fit improvement does not resolve companion light, triples, blends, or the astrometric orbit.",
+      "provenance": {
+        "fit_response_metadata": "xp-parent-fit-fields/4491401821468887552.json",
+        "fit_response_sha256": "62844a353ec39ddeabd1a7bcff328258508a80657098d3f55474efd86b4b9b9d"
+      }
+    },
+    {
+      "source_id": "824344003814438528",
+      "parent_catalogue_membership": {
+        "source_id": "824344003814438528",
+        "matching_row_indices_zero_based": [
+          9652159
+        ],
+        "match_count": 1,
+        "status": "EXACT_ID_MATCH"
+      },
+      "documented_parent_selection_failures": [],
+      "absolute_G_without_extinction_correction": 6.064813124800633,
+      "astrophysical_disposition": "HELD_NO_NEW_RELEASE",
+      "novelty_disposition": "PRIOR_COMPACT_CANDIDATE_STUDY_CONFIRMED",
+      "not_a_new_discovery": true,
+      "xp_evidence_status": "PUBLISHED_PHOTOMETRIC_MODEL_FIELDS_RETRIEVED",
+      "published_model_fields": {
+        "fit_status_single": 2,
+        "fit_status_binary": 2,
+        "fit_success_single": true,
+        "fit_success_binary": true,
+        "chi2_mass_mh": 81.53801,
+        "chi2_mass_mh_binary": 78.60152,
+        "chi2_diff_mh_mass": 2.9364882,
+        "m1_binary": 0.77116406,
+        "e_m1_binary": 0.01082604,
+        "q_binary": 0.30959603,
+        "e_q_binary": 0.22568704,
+        "m2_binary": 0.23874933145468183,
+        "mh_binary": -0.15971932,
+        "e_mh_binary": 0.053611998,
+        "E_binary": 2.4041281e-15,
+        "e_E_binary": 0.03031387,
+        "flux_ratio_mean": 0.009690467,
+        "flux_ratio_std": 0.007997662101826916,
+        "flag_extrap_m2": false,
+        "mass_single": 0.77814376,
+        "e_mass_single": 0.0035548003,
+        "mh_single": -0.13901062,
+        "e_mh_single": 0.053072795,
+        "E_single": 0.0113691725,
+        "e_E_single": 0.01612482,
+        "parallax": 1.2982048430321869,
+        "parallax_error": 0.07266987,
+        "predicted_class": 0
+      },
+      "published_class_validity": {
+        "valid": true,
+        "byte": 255,
+        "bit_index": 7
+      },
+      "descriptive_comparison": {
+        "log10_chi2_single_over_binary": 0.01592916341481795,
+        "meets_published_golden_sample_ratio_condition": false,
+        "published_delta_chi2": 2.9364882,
+        "recomputed_delta_from_displayed_fields": 2.9364900000000063,
+        "binary_model_has_lower_chi2": true,
+        "published_class1_with_negative_delta": false
+      },
+      "interpretation": "Published photometric model outputs under main-sequence and extinction assumptions. Modest or absent fit improvement does not resolve companion light, triples, blends, or the astrometric orbit.",
+      "provenance": {
+        "fit_response_metadata": "xp-parent-fit-fields/824344003814438528.json",
+        "fit_response_sha256": "068323ab29dc12ab9d56abf6d429cee4211c208da780dfb8c73a13b508ef48e0"
+      }
+    },
+    {
+      "source_id": "5929746958324419200",
+      "parent_catalogue_membership": {
+        "source_id": "5929746958324419200",
+        "matching_row_indices_zero_based": [],
+        "match_count": 0,
+        "status": "NO_EXACT_ID_IN_COMPLETE_PARENT_ID_COLUMN"
+      },
+      "documented_parent_selection_failures": [
+        "source_parallax_gt1mas"
+      ],
+      "absolute_G_without_extinction_correction": 3.9826054483970594,
+      "astrophysical_disposition": "HELD_NO_NEW_RELEASE",
+      "novelty_disposition": "NOT_CLEARED_INCOMPLETE_PRIOR_STUDY_COVERAGE",
+      "not_a_new_discovery": true,
+      "xp_evidence_status": "UNAVAILABLE_OUTSIDE_DOCUMENTED_PARENT_SELECTION",
+      "published_model_fields": null,
+      "interpretation": "No parent-catalogue fit for this source; absence is not negative evidence about companion luminosity."
+    },
+    {
+      "source_id": "5591318172608607232",
+      "parent_catalogue_membership": {
+        "source_id": "5591318172608607232",
+        "matching_row_indices_zero_based": [
+          11307594
+        ],
+        "match_count": 1,
+        "status": "EXACT_ID_MATCH"
+      },
+      "documented_parent_selection_failures": [],
+      "absolute_G_without_extinction_correction": 9.104356359978791,
+      "astrophysical_disposition": "HELD_NO_NEW_RELEASE",
+      "novelty_disposition": "NOT_CLEARED_INCOMPLETE_PRIOR_STUDY_COVERAGE",
+      "not_a_new_discovery": true,
+      "xp_evidence_status": "PUBLISHED_PHOTOMETRIC_MODEL_FIELDS_RETRIEVED",
+      "published_model_fields": {
+        "fit_status_single": 2,
+        "fit_status_binary": 2,
+        "fit_success_single": true,
+        "fit_success_binary": true,
+        "chi2_mass_mh": 130.36626,
+        "chi2_mass_mh_binary": 128.93697,
+        "chi2_diff_mh_mass": 1.4292915,
+        "m1_binary": 0.45411322,
+        "e_m1_binary": 0.06859225,
+        "q_binary": 0.37162903,
+        "e_q_binary": 0.32096443,
+        "m2_binary": 0.1687616554587766,
+        "mh_binary": -0.29220313,
+        "e_mh_binary": 0.31739733,
+        "E_binary": 0.022650257,
+        "e_E_binary": 0.064298905,
+        "flux_ratio_mean": 0.0569268,
+        "flux_ratio_std": 0.02839750772783779,
+        "flag_extrap_m2": false,
+        "mass_single": 0.48069334,
+        "e_mass_single": 0.008706684,
+        "mh_single": -0.14507023,
+        "e_mh_single": 0.035296876,
+        "E_single": 0.005007901,
+        "e_E_single": 0.042056866,
+        "parallax": 2.511720279047537,
+        "parallax_error": 0.09143778,
+        "predicted_class": 0
+      },
+      "published_class_validity": {
+        "valid": true,
+        "byte": 255,
+        "bit_index": 2
+      },
+      "descriptive_comparison": {
+        "log10_chi2_single_over_binary": 0.004787746351209631,
+        "meets_published_golden_sample_ratio_condition": false,
+        "published_delta_chi2": 1.4292915,
+        "recomputed_delta_from_displayed_fields": 1.4292900000000088,
+        "binary_model_has_lower_chi2": true,
+        "published_class1_with_negative_delta": false
+      },
+      "interpretation": "Published photometric model outputs under main-sequence and extinction assumptions. Modest or absent fit improvement does not resolve companion light, triples, blends, or the astrometric orbit.",
+      "provenance": {
+        "fit_response_metadata": "xp-parent-fit-fields/5591318172608607232.json",
+        "fit_response_sha256": "15b7190199cdd159b1c3cef44b8126afc77161872fbe1b5e89970b4898790035"
+      }
+    },
+    {
+      "source_id": "2852726284550996352",
+      "parent_catalogue_membership": {
+        "source_id": "2852726284550996352",
+        "matching_row_indices_zero_based": [
+          823131
+        ],
+        "match_count": 1,
+        "status": "EXACT_ID_MATCH"
+      },
+      "documented_parent_selection_failures": [],
+      "absolute_G_without_extinction_correction": 4.7552817736689565,
+      "astrophysical_disposition": "HELD_NO_NEW_RELEASE",
+      "novelty_disposition": "NOT_CLEARED_INCOMPLETE_PRIOR_STUDY_COVERAGE",
+      "not_a_new_discovery": true,
+      "xp_evidence_status": "PUBLISHED_PHOTOMETRIC_MODEL_FIELDS_RETRIEVED",
+      "published_model_fields": {
+        "fit_status_single": 2,
+        "fit_status_binary": 2,
+        "fit_success_single": true,
+        "fit_success_binary": true,
+        "chi2_mass_mh": 65.76829,
+        "chi2_mass_mh_binary": 72.19732,
+        "chi2_diff_mh_mass": -6.4290347,
+        "m1_binary": 0.8348529,
+        "e_m1_binary": 0.022184191,
+        "q_binary": 0.8076626,
+        "e_q_binary": 0.04947066,
+        "m2_binary": 0.67427946383154,
+        "mh_binary": -0.7363667,
+        "e_mh_binary": 0.14260174,
+        "E_binary": 0.008550694,
+        "e_E_binary": 0.010881651,
+        "flux_ratio_mean": 0.32954255,
+        "flux_ratio_std": 0.067390319517488,
+        "flag_extrap_m2": false,
+        "mass_single": 0.9756345,
+        "e_mass_single": 0.003531158,
+        "mh_single": -0.1196637,
+        "e_mh_single": 0.045792058,
+        "E_single": 0.029167261,
+        "e_E_single": 0.011464887,
+        "parallax": 1.0801258371276543,
+        "parallax_error": 0.034543805,
+        "predicted_class": 0
+      },
+      "published_class_validity": {
+        "valid": true,
+        "byte": 255,
+        "bit_index": 3
+      },
+      "descriptive_comparison": {
+        "log10_chi2_single_over_binary": -0.04050452645624134,
+        "meets_published_golden_sample_ratio_condition": false,
+        "published_delta_chi2": -6.4290347,
+        "recomputed_delta_from_displayed_fields": -6.429030000000012,
+        "binary_model_has_lower_chi2": false,
+        "published_class1_with_negative_delta": false
+      },
+      "interpretation": "Published photometric model outputs under main-sequence and extinction assumptions. Modest or absent fit improvement does not resolve companion light, triples, blends, or the astrometric orbit.",
+      "provenance": {
+        "fit_response_metadata": "xp-parent-fit-fields/2852726284550996352.json",
+        "fit_response_sha256": "f39b1923c3f78f6146040bc1c4bb454884dc449d7c43e1a8642d3b46a1a0c471"
+      }
+    },
+    {
+      "source_id": "4299244434901041024",
+      "parent_catalogue_membership": {
+        "source_id": "4299244434901041024",
+        "matching_row_indices_zero_based": [],
+        "match_count": 0,
+        "status": "NO_EXACT_ID_IN_COMPLETE_PARENT_ID_COLUMN"
+      },
+      "documented_parent_selection_failures": [
+        "source_parallax_gt1mas"
+      ],
+      "absolute_G_without_extinction_correction": 3.075558617277011,
+      "astrophysical_disposition": "HELD_NO_NEW_RELEASE",
+      "novelty_disposition": "NOT_CLEARED_INCOMPLETE_PRIOR_STUDY_COVERAGE",
+      "not_a_new_discovery": true,
+      "xp_evidence_status": "UNAVAILABLE_OUTSIDE_DOCUMENTED_PARENT_SELECTION",
+      "published_model_fields": null,
+      "interpretation": "No parent-catalogue fit for this source; absence is not negative evidence about companion luminosity."
+    },
+    {
+      "source_id": "2245423750054837888",
+      "parent_catalogue_membership": {
+        "source_id": "2245423750054837888",
+        "matching_row_indices_zero_based": [],
+        "match_count": 0,
+        "status": "NO_EXACT_ID_IN_COMPLETE_PARENT_ID_COLUMN"
+      },
+      "documented_parent_selection_failures": [
+        "source_parallax_gt1mas"
+      ],
+      "absolute_G_without_extinction_correction": 4.975053824061405,
+      "astrophysical_disposition": "HELD_NO_NEW_RELEASE",
+      "novelty_disposition": "NOT_CLEARED_INCOMPLETE_PRIOR_STUDY_COVERAGE",
+      "not_a_new_discovery": true,
+      "xp_evidence_status": "UNAVAILABLE_OUTSIDE_DOCUMENTED_PARENT_SELECTION",
+      "published_model_fields": null,
+      "interpretation": "No parent-catalogue fit for this source; absence is not negative evidence about companion luminosity."
+    }
+  ]
+}

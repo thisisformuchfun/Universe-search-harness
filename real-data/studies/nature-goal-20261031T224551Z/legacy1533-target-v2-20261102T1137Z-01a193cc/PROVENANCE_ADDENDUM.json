@@ -1,0 +1,11 @@
+{
+  "created_utc": "2026-11-02T11:45:18.514101+00:00",
+  "base_provenance_sha256": "60fdaa6a71537b7b38686a84515d6c637d6d65545e5b9eb61db8ab4f3b46f469",
+  "correction": "The earlier resource sample was a root transcription without a recorded sample timestamp; do not infer its time or peak use.",
+  "earlier_resource_sample_timestamp_utc": null,
+  "timestamped_sample": "RESOURCE_SAMPLE_TIMESTAMPED.json",
+  "timestamped_sample_sha256": "361bdca49ac03a9665c9437e37ba04613dbaacfeeb2d2b8d1820e70543677f38",
+  "weight_inventory_sha256": "bb7c7367998d3d190f27be389202be75d3c3567f1df6ddcb16433e8766cd8c22",
+  "weight_inventory_calculation_timestamp_utc": null,
+  "weight_counts": "25/25, 5/25, 25/25 zero z weights for target, PS1 position and neighbor respectively; descriptive only"
+}

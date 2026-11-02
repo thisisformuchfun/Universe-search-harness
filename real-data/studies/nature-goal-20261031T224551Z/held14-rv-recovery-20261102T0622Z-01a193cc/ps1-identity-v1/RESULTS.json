@@ -1,0 +1,32 @@
+{
+  "created_utc": "2026-11-02T06:32:57.952698+00:00",
+  "status": "COMPLETE_CAPTURE_UNINTERPRETED",
+  "protocol_sha256": "45686786c96312641386da5233b9e729934ea5ba6f1916c7f57a815c68b7f2a8",
+  "records": [
+    {
+      "name": "known_control",
+      "status": "HTTP_COMPLETE_UNPARSED",
+      "http_status": 200,
+      "raw_bytes": 502,
+      "raw_sha256": "2712609536c746be388735b65f48adff43a405183a8ca580a2b43bdfbe032f1f",
+      "returned_rows": 1
+    },
+    {
+      "name": "lamost_psid_target",
+      "status": "HTTP_COMPLETE_UNPARSED",
+      "http_status": 200,
+      "raw_bytes": 402,
+      "raw_sha256": "e74ac19384a736baec00585f6af312f8ec3775d9e11e08124b94163c2db15dbe",
+      "returned_rows": 1
+    }
+  ],
+  "errors": [],
+  "fetch_invocations": 2,
+  "invoked_names": [
+    "known_control",
+    "lamost_psid_target"
+  ],
+  "unattempted": [],
+  "no_retry_resume_or_source_disposition_change": true,
+  "science_not_yet_reviewed": true
+}

@@ -1,0 +1,25 @@
+test_exited_and_not_started_are_distinct (test_capture_v9.CleanupTests.test_exited_and_not_started_are_distinct) ... ok
+test_hash_reads_bounded_blocks (test_capture_v9.CleanupTests.test_hash_reads_bounded_blocks) ... ok
+test_unconfirmed_process_is_not_called_terminated (test_capture_v9.CleanupTests.test_unconfirmed_process_is_not_called_terminated) ... ok
+test_unconfirmed_exit_never_hashes_moving_outputs (test_transport_deferred_v2.DeferredEvidenceTest.test_unconfirmed_exit_never_hashes_moving_outputs) ... ok
+test_complete_status_and_proxy_block (test_capture_v9.HeaderTests.test_complete_status_and_proxy_block) ... ok
+test_missing_malformed_or_mismatched_rejected (test_capture_v9.HeaderTests.test_missing_malformed_or_mismatched_rejected) ... ok
+test_base_and_duplicate_href_are_rejected (test_capture_v9.IndexTests.test_base_and_duplicate_href_are_rejected) ... ok
+test_exact_unique_child (test_capture_v9.IndexTests.test_exact_unique_child) ... ok
+test_fixed_scope_and_caps (test_capture_v9.IndexTests.test_fixed_scope_and_caps) ... ok
+test_invalid_utf8_or_nul_fails (test_capture_v9.IndexTests.test_invalid_utf8_or_nul_fails) ... ok
+test_lookalikes_rejected (test_capture_v9.IndexTests.test_lookalikes_rejected) ... ok
+test_product_magic_is_explicitly_not_identity (test_capture_v9.IndexTests.test_product_magic_is_explicitly_not_identity) ... ok
+test_transport_failure_never_admits (test_capture_v9.IndexTests.test_transport_failure_never_admits) ... ok
+test_current_process_identity_never_authorizes_pid_only_action (test_capture_v9.OwnershipTests.test_current_process_identity_never_authorizes_pid_only_action) ... ok
+test_exception_after_spawn_retains_lease_and_current_identity (test_capture_v9.OwnershipTests.test_exception_after_spawn_retains_lease_and_current_identity) ... ok
+test_interruption_during_identity_preserves_known_pid (test_capture_v9.OwnershipTests.test_interruption_during_identity_preserves_known_pid) ... ok
+test_partial_metadata_does_not_prevent_final_handoff (test_capture_v9.OwnershipTests.test_partial_metadata_does_not_prevent_final_handoff) ... ok
+test_pid_is_in_memory_before_persistence_failure (test_capture_v9.OwnershipTests.test_pid_is_in_memory_before_persistence_failure) ... ok
+test_deadline_stops_before_sleep (test_capture_v9.TimingTests.test_deadline_stops_before_sleep) ... ok
+test_early_wake_stops (test_capture_v9.TimingTests.test_early_wake_stops) ... ok
+
+----------------------------------------------------------------------
+Ran 20 tests in 0.136s
+
+OK

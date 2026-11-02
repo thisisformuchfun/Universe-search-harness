@@ -1,0 +1,74 @@
+{
+  "created_utc": "2026-11-02T08:33:27.599848+00:00",
+  "scope": "Public metadata and, only if the fixed literal child links appear in the preceding listings, one provisional existing-target single-exposure product; no spectral fitting, inferred velocities, source ranking, criterion or release changes.",
+  "hypothesis": "The DR5 value-added release may preserve separate sub-exposures from the already-known 2015 LAMOST observation of Gaia DR3 1533365584518328576.",
+  "identity_basis": {
+    "source_id_exact_string": "1533365584518328576",
+    "existing_combined_obsid": "294101037",
+    "date": "20150108, provisional UTC-date path hypothesis; provider directory convention unverified",
+    "planid": "HD122456N425117B01",
+    "spectrograph": "01",
+    "fiber": "037",
+    "header_source_sha256": "2bfdfe2b133b1f5d9f880ae81be5002b48b7eb89cb8c45f538e048542cc32e06",
+    "cross_release_identity": "provisional until actual returned product and metadata checked",
+    "date_caveat": "Prior combined product reports median UTC 2015-01-08T21:25:00; DATE-BEG/END are local 2015-01-09. A missing 20150108 path is inconclusive; no automatic alternate-date retry."
+  },
+  "documentation": [
+    "https://dr5.lamost.org/sedr5/",
+    "https://nadc.china-vo.org/res/r100448/",
+    "https://arxiv.org/abs/2106.12715v2"
+  ],
+  "requests": [
+    {
+      "id": "root",
+      "url": "https://casdc.china-vo.org/lamost/vac/sedr5/fits/",
+      "max_body_bytes": 500000
+    },
+    {
+      "id": "day",
+      "url": "https://casdc.china-vo.org/lamost/vac/sedr5/fits/20150108/",
+      "max_body_bytes": 500000
+    },
+    {
+      "id": "plan",
+      "url": "https://casdc.china-vo.org/lamost/vac/sedr5/fits/20150108/HD122456N425117B01/",
+      "max_body_bytes": 500000
+    },
+    {
+      "id": "product",
+      "url": "https://casdc.china-vo.org/lamost/vac/sedr5/fits/20150108/HD122456N425117B01/20150108_HD122456N425117B01_01_037.fit",
+      "max_body_bytes": 4000000
+    }
+  ],
+  "limits": {
+    "requests_max": 4,
+    "sum_body_max_bytes": 5500000,
+    "timeout_seconds_per_request": 45,
+    "connect_timeout_seconds": 15,
+    "retry": 0,
+    "redirects": 0,
+    "minimum_spacing_seconds": 1,
+    "batch_seconds": 210,
+    "curl_minimum_version": "8.4.0",
+    "header_bytes_monitored": 65536,
+    "native_stdout_bytes_monitored": 4096,
+    "native_stderr_bytes_monitored": 262144,
+    "monitor_poll_seconds": 0.02,
+    "polling_overshoot_possible": true,
+    "owned_process_cleanup_seconds": 2
+  },
+  "admission": "One serial process with fixed URLs and no redirects/retries. Each stage requires a durable request record and exact validated predecessor link. Stop on transport, size, link, content or cleanup failure. No alternate observing-date retry. Retain the dedicated exclusive lease if owned-process exit is unconfirmed; record PID. Native headers/diagnostics remain local pending privacy review. Product transport/prefix success is not FITS or identity validation. Require nonempty bounded HTTP header blocks whose final status agrees with curl metadata. Each spawned owned PID is reported to the adapter immediately; an unconfirmed exit retains the lease and PID when available. Record process creation FILETIME if available; an unknown or stale PID never authorizes a kill. If owned-process exit is unconfirmed, retain lease and defer native-output hashing until the child is demonstrably stopped. Distinguish request records, process starts and completed HTTP responses.",
+  "success": "Index stages only validate fixed literal child links and transport. A product stage can pass transport and FITS prefix only; identity and FITS metadata success remain pending a separately reviewed offline validation against the saved combined-product header. No source attribution or new night follows.",
+  "limitations": [
+    "If exposure-level provenance establishes the same observation, releases may share underlying exposures and instrument systematics; release-specific calibration and retained contributions remain unverified. No photon independence is established.",
+    "Original g/r SNR 4.4/3.45 is for combined DR12 record; the paper's SNR>5 comparisons do not calibrate it.",
+    "gid groups within three arcseconds; grouping is not proof of correct source attribution.",
+    "No RV, orbit, mass, BH probability, holdout or release claim follows from file availability.",
+    "Even a same-fibre match does not establish that Gaia source 1533365584518328576 supplied all light entering the fibre."
+  ],
+  "holdout": "DO_NOT_EVALUATE; custody unchanged",
+  "gpu": "none",
+  "output": "new session-specific directory only",
+  "version": "V5 review corrections for owned process identity and unstable outputs",
+  "transport_source": "Hash-pinned, narrowly adapted previously reviewed native transport; incremental failure-path hashing and confirmed-exit/PID handoff are independent-review gates."
+}

@@ -1,0 +1,243 @@
+{
+  "created_utc": "2026-11-02T07:31:18.180747+00:00",
+  "scope": "Offline PS1 stack exposure and PSF feasibility; no new source or orbital claim",
+  "files": [
+    {
+      "path": "followups/held14-20261031T214650Z/evidence/neighbors60/1533365584518328576.parsed.json",
+      "bytes": 5122,
+      "sha256": "f160da0b6ce0af38d84139d867f8989ef1a7511b36542b454d4bfe08614bf189"
+    },
+    {
+      "path": "followups/held14-20261031T214650Z/evidence/neighbors60/1533365584518328576.raw",
+      "bytes": 8999,
+      "sha256": "c5d380888d9eca35b328be4726bdd6bde86275a600f3f21c9242bdfa9cd6a591"
+    },
+    {
+      "path": "studies/nature-goal-20261031T224551Z/experiment_ledger_checkpoint58.jsonl",
+      "bytes": 485848,
+      "sha256": "e032fad503482cd891b2d760ae3a1d90b651df85b89dbca07cce46f2baaa14d2"
+    },
+    {
+      "path": "studies/nature-goal-20261031T224551Z/held14-rv-recovery-20261102T0622Z-01a193cc/PS1_IDENTITY_EVIDENCE.json",
+      "bytes": 3925,
+      "sha256": "96a77ab17003d22902a992410c86c3fd8689f6cd5d701e393ee1b2651fa0cb63"
+    },
+    {
+      "path": "studies/nature-goal-20261031T224551Z/held1533-offline-feasibility-20261102T072412Z-01a193cc/BOUNDS_TEST_RESULT.json",
+      "bytes": 1037,
+      "sha256": "2cad8164e303790c359647ff2a7af1e544057775a849e2892012dffda410374d"
+    },
+    {
+      "path": "studies/nature-goal-20261031T224551Z/held1533-offline-feasibility-20261102T072412Z-01a193cc/BOUNDS_TEST_STDERR.txt",
+      "bytes": 513,
+      "sha256": "49b2a19c3dfd0ef54d8a99a6ebc50595f42e4d3ecd1fe682d94be430dd8bac6f"
+    },
+    {
+      "path": "studies/nature-goal-20261031T224551Z/held1533-offline-feasibility-20261102T072412Z-01a193cc/BOUNDS_TEST_STDOUT.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "studies/nature-goal-20261031T224551Z/held1533-offline-feasibility-20261102T072412Z-01a193cc/ENGINEERING_CHANGE.diff",
+      "bytes": 7274,
+      "sha256": "077dc4951a4461fe4cbdf6c7d7bf06e5be27daec260f8623e5b419bdca36cc7d"
+    },
+    {
+      "path": "studies/nature-goal-20261031T224551Z/held1533-offline-feasibility-20261102T072412Z-01a193cc/ENGINEERING_CHANGELOG.md",
+      "bytes": 1213,
+      "sha256": "cf62312068b0c4fe78ae6c0452a424643b659d8073f10cdf1d2e5d6dfdde77cf"
+    },
+    {
+      "path": "studies/nature-goal-20261031T224551Z/held1533-offline-feasibility-20261102T072412Z-01a193cc/ENGINEERING_CHANGELOG_V2.md",
+      "bytes": 2034,
+      "sha256": "df3bd607fd27ff0a3761509f1f2c03e1930a3316e4d91c88903cebb010576020"
+    },
+    {
+      "path": "studies/nature-goal-20261031T224551Z/held1533-offline-feasibility-20261102T072412Z-01a193cc/ENGINEERING_CHANGE_V2.diff",
+      "bytes": 7300,
+      "sha256": "cd0343a682981e447db9f56ad3dda74dd83b68d4ceb9249ac82d166de8968ea6"
+    },
+    {
+      "path": "studies/nature-goal-20261031T224551Z/held1533-offline-feasibility-20261102T072412Z-01a193cc/INDEPENDENT_EXECUTION_REVIEW.md",
+      "bytes": 1701,
+      "sha256": "86393d73d05f3d9780ae981297f9c07b76ab72490ef1d0c1a89f2220f52d9dd2"
+    },
+    {
+      "path": "studies/nature-goal-20261031T224551Z/held1533-offline-feasibility-20261102T072412Z-01a193cc/INDEPENDENT_SCIENCE_FINAL.md",
+      "bytes": 796,
+      "sha256": "1f790d54bed93c8a0a56fc06b08f3d67c90b8a38002ace6327eab461eca42241"
+    },
+    {
+      "path": "studies/nature-goal-20261031T224551Z/held1533-offline-feasibility-20261102T072412Z-01a193cc/INDEPENDENT_SCIENCE_REVIEW.md",
+      "bytes": 1828,
+      "sha256": "5447d3c08128379db1f7a69e8492f70dc20cf01e00bc073c48e1a3c52120b98d"
+    },
+    {
+      "path": "studies/nature-goal-20261031T224551Z/held1533-offline-feasibility-20261102T072412Z-01a193cc/INDEPENDENT_SCIENCE_REVIEW_V2.md",
+      "bytes": 2399,
+      "sha256": "077921cac3b9b567bb1d8f5141c8210d037c1f9e6afed36744a7ea825f05df0f"
+    },
+    {
+      "path": "studies/nature-goal-20261031T224551Z/held1533-offline-feasibility-20261102T072412Z-01a193cc/NEXT_ACTION.md",
+      "bytes": 1264,
+      "sha256": "bef5dc52d1e51dfe0346848fb4c05a7ad55bafe71e6256e71e022ffa33c1248a"
+    },
+    {
+      "path": "studies/nature-goal-20261031T224551Z/held1533-offline-feasibility-20261102T072412Z-01a193cc/OBSERVATIONS.json",
+      "bytes": 10833,
+      "sha256": "236631b72fa766cc23f05bed089d8ea57f25672323cd54cc7782928b07479ed4"
+    },
+    {
+      "path": "studies/nature-goal-20261031T224551Z/held1533-offline-feasibility-20261102T072412Z-01a193cc/OBSERVATIONS_V2.json",
+      "bytes": 11123,
+      "sha256": "abb7921cac94fe546249d10513d89851360863bbc1ad3eb21ea25216def8fea7"
+    },
+    {
+      "path": "studies/nature-goal-20261031T224551Z/held1533-offline-feasibility-20261102T072412Z-01a193cc/PIXEL_VALUE_CLARIFICATION.md",
+      "bytes": 709,
+      "sha256": "1215df99f09051c31011002e016dc5b1c376938e4c70eec5b449be66a4ef6203"
+    },
+    {
+      "path": "studies/nature-goal-20261031T224551Z/held1533-offline-feasibility-20261102T072412Z-01a193cc/REPORT.md",
+      "bytes": 2959,
+      "sha256": "b6aea07cab144e585c98bf6cd40dec36e4831b543eaca90594f1c5bc357be492"
+    },
+    {
+      "path": "studies/nature-goal-20261031T224551Z/held1533-offline-feasibility-20261102T072412Z-01a193cc/REPORT_V2.md",
+      "bytes": 3544,
+      "sha256": "b7282411aa2677e442bde43270d9ded42a5e660ff33f26a17865148648055d42"
+    },
+    {
+      "path": "studies/nature-goal-20261031T224551Z/held1533-offline-feasibility-20261102T072412Z-01a193cc/REPRODUCIBILITY.md",
+      "bytes": 934,
+      "sha256": "356396744c1b6cbbd7b235ce80019810729c9d98b312061969dda43b792faba8"
+    },
+    {
+      "path": "studies/nature-goal-20261031T224551Z/held1533-offline-feasibility-20261102T072412Z-01a193cc/REPRODUCIBILITY_V2.md",
+      "bytes": 1327,
+      "sha256": "3e6e084547be388571c8e4ca701d6a8213be2840d051abb5751e875dffa5910c"
+    },
+    {
+      "path": "studies/nature-goal-20261031T224551Z/held1533-offline-feasibility-20261102T072412Z-01a193cc/V2_TEST_RESULT.json",
+      "bytes": 1186,
+      "sha256": "cf0f4563f67e2f75e5a9f05af70cebd209ef4f7faaa3baec13fe6aa1cb39d006"
+    },
+    {
+      "path": "studies/nature-goal-20261031T224551Z/held1533-offline-feasibility-20261102T072412Z-01a193cc/V2_TEST_STDERR.txt",
+      "bytes": 636,
+      "sha256": "25ff06051c323f2f0a1e643f8c0fbcf9cf8553cd73725edc2639f221ca3f2662"
+    },
+    {
+      "path": "studies/nature-goal-20261031T224551Z/held1533-offline-feasibility-20261102T072412Z-01a193cc/V2_TEST_STDOUT.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "studies/nature-goal-20261031T224551Z/held1533-offline-feasibility-20261102T072412Z-01a193cc/inspect_saved_inputs.py",
+      "bytes": 5621,
+      "sha256": "e38895358f79e90cbe50feb0169380315f25c6b77dbe9642cd4d5d7fbc156a20"
+    },
+    {
+      "path": "studies/nature-goal-20261031T224551Z/held1533-offline-feasibility-20261102T072412Z-01a193cc/inspect_saved_inputs_v2.py",
+      "bytes": 5836,
+      "sha256": "bd2a578890cd94821d5b59488f30f66b0d943a34bcca1e74165ae7f30dd9fcb2"
+    },
+    {
+      "path": "studies/nature-goal-20261031T224551Z/held1533-offline-feasibility-20261102T072412Z-01a193cc/patch-proof-lf/inspect_saved_inputs.py",
+      "bytes": 5836,
+      "sha256": "bd2a578890cd94821d5b59488f30f66b0d943a34bcca1e74165ae7f30dd9fcb2"
+    },
+    {
+      "path": "studies/nature-goal-20261031T224551Z/held1533-offline-feasibility-20261102T072412Z-01a193cc/patch-proof-lf/pixel_bounds.py",
+      "bytes": 474,
+      "sha256": "435075067c0e8efbef905c54300624397dad5e5b5abd07a6de8bffb4327ff502"
+    },
+    {
+      "path": "studies/nature-goal-20261031T224551Z/held1533-offline-feasibility-20261102T072412Z-01a193cc/patch-proof-lf/test_pixel_bounds.py",
+      "bytes": 930,
+      "sha256": "a627834c88cd9d666fadac7f9538cf6aa88b22a66462cbe37ea4452dbd0ee3b7"
+    },
+    {
+      "path": "studies/nature-goal-20261031T224551Z/held1533-offline-feasibility-20261102T072412Z-01a193cc/patch-proof-lf/test_wcs_coords.py",
+      "bytes": 1058,
+      "sha256": "eb4f025feef06e014ec0df8aad0d30e517a7711c9ebe9cc02008ff7a46f4cb32"
+    },
+    {
+      "path": "studies/nature-goal-20261031T224551Z/held1533-offline-feasibility-20261102T072412Z-01a193cc/patch-proof-lf/wcs_coords.py",
+      "bytes": 323,
+      "sha256": "df488bce8ce3b2b2aa588bbb7d6513f0cdcac8afd81c1d8fb3fe6a67a5eabd0d"
+    },
+    {
+      "path": "studies/nature-goal-20261031T224551Z/held1533-offline-feasibility-20261102T072412Z-01a193cc/patch-proof/inspect_saved_inputs.py",
+      "bytes": 5911,
+      "sha256": "bf9d10d74e99e8c0bbc85ce1489bd73f821adc42928d6670d595fc2ade76c2b3"
+    },
+    {
+      "path": "studies/nature-goal-20261031T224551Z/held1533-offline-feasibility-20261102T072412Z-01a193cc/patch-proof/pixel_bounds.py",
+      "bytes": 484,
+      "sha256": "e15e83a6f46fa19452211427f3960eeea85db6128a772b48341c63609f0f64a4"
+    },
+    {
+      "path": "studies/nature-goal-20261031T224551Z/held1533-offline-feasibility-20261102T072412Z-01a193cc/patch-proof/test_pixel_bounds.py",
+      "bytes": 953,
+      "sha256": "7a701853260fca8c657f0b9cb47cfafd01c0c448d25723b93a0999219c745b60"
+    },
+    {
+      "path": "studies/nature-goal-20261031T224551Z/held1533-offline-feasibility-20261102T072412Z-01a193cc/patch-proof/test_wcs_coords.py",
+      "bytes": 1082,
+      "sha256": "ab115837481cbff891bde4468842f15e673c215b0801c7e5ee7c9491c69afbb9"
+    },
+    {
+      "path": "studies/nature-goal-20261031T224551Z/held1533-offline-feasibility-20261102T072412Z-01a193cc/patch-proof/wcs_coords.py",
+      "bytes": 331,
+      "sha256": "ebc55bdb89b979d5ab4a9495d10182d3d8cf070aca2e2f19c880a899078e07c0"
+    },
+    {
+      "path": "studies/nature-goal-20261031T224551Z/held1533-offline-feasibility-20261102T072412Z-01a193cc/pixel_bounds.py",
+      "bytes": 474,
+      "sha256": "435075067c0e8efbef905c54300624397dad5e5b5abd07a6de8bffb4327ff502"
+    },
+    {
+      "path": "studies/nature-goal-20261031T224551Z/held1533-offline-feasibility-20261102T072412Z-01a193cc/test_pixel_bounds.py",
+      "bytes": 930,
+      "sha256": "a627834c88cd9d666fadac7f9538cf6aa88b22a66462cbe37ea4452dbd0ee3b7"
+    },
+    {
+      "path": "studies/nature-goal-20261031T224551Z/held1533-offline-feasibility-20261102T072412Z-01a193cc/test_wcs_coords.py",
+      "bytes": 1058,
+      "sha256": "eb4f025feef06e014ec0df8aad0d30e517a7711c9ebe9cc02008ff7a46f4cb32"
+    },
+    {
+      "path": "studies/nature-goal-20261031T224551Z/held1533-offline-feasibility-20261102T072412Z-01a193cc/wcs_coords.py",
+      "bytes": 323,
+      "sha256": "df488bce8ce3b2b2aa588bbb7d6513f0cdcac8afd81c1d8fb3fe6a67a5eabd0d"
+    },
+    {
+      "path": "studies/nature-goal-20261031T224551Z/held1533-ps1-image-20261102T0648Z-01a193cc/CHECKPOINT_STATE.json",
+      "bytes": 4261,
+      "sha256": "3ee9b9a0a52abe99de75c24ddc5f244cf6bc7f17dc7e29f627fea3da8a2014e0"
+    },
+    {
+      "path": "studies/nature-goal-20261031T224551Z/held1533-ps1-image-20261102T0648Z-01a193cc/cutouts-v1/target_i.raw",
+      "bytes": 126720,
+      "sha256": "e79a0ae9bb28662b031fc9407c227b4acb91dbbbdad9935df56855697c3fac27"
+    },
+    {
+      "path": "studies/nature-goal-20261031T224551Z/held1533-ps1-image-20261102T0648Z-01a193cc/cutouts-v1/target_weight.raw",
+      "bytes": 129600,
+      "sha256": "a10067b2fbe0adbd2b864264cf9006335495521a4e89fad036aa078b189c5283"
+    }
+  ],
+  "previous_ledger": {
+    "path": "studies/nature-goal-20261031T224551Z/experiment_ledger_checkpoint58.jsonl",
+    "bytes": 485848,
+    "sha256": "e032fad503482cd891b2d760ae3a1d90b651df85b89dbca07cce46f2baaa14d2"
+  },
+  "new_ledger_path": "studies/nature-goal-20261031T224551Z/experiment_ledger_checkpoint59.jsonl",
+  "holdout_custody_sha256": "155f5aa7f98726c62add15bd302b9f43ca4a216ed14850ecbf649c82a65d3c14",
+  "new_native_archive_requests": 0,
+  "browser_documentation_searches_not_counted_as_native_requests": true,
+  "scientific_dispositions_changed": false,
+  "new_holdout_evaluation": false,
+  "limitations": "Suffix match is not exposure identity; PSF/variance calibration remains unverified; V1 outputs and failed diff are retained."
+}

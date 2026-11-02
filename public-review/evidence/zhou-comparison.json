@@ -1,0 +1,23 @@
+{
+  "finished_utc": "2026-11-02T10:50:15.110547+00:00",
+  "comparison_manifest_sha256": "383cd96d8cb298d03f6d2bdce5b5511d5e4f95586faa282e4914982066a80ca4",
+  "table_body_sha256": "94f41f32f8c0d34798fc223d4af10fd19a16fc63bc9e30069a6d2ff4ead90267",
+  "publisher_article_sha256": "88beb44cd30930f0f48dbb6746a2abe040d6f014ce26cc0aae7f069cef221ae6",
+  "publisher_inspection_sha256": "0525d00a0a7ebe771abc10c0ea74b1c2e59fb3b87960a5657ce30943d75ebf5c",
+  "target_sha256": "989a7695c1f7110d54e703d2fd55ee4e016511b8adf568ca4ef5c2e370519d09",
+  "target_count": 14,
+  "table2_rows": 17,
+  "table2_unique_ids": 17,
+  "type_counts": {
+    "II": 5,
+    "III": 12
+  },
+  "preview_controls_passed": 4,
+  "table1_type_i_count": 2,
+  "table2_matches": [],
+  "table1_type_i_matches": [],
+  "identifier_handling": "exact ASCII decimal strings; fixed-width field; never float",
+  "scope": "this published 19-object sample only; nonmatch is not novelty or a BH conclusion",
+  "holdout_evaluated": false,
+  "science_policy_changed": false
+}

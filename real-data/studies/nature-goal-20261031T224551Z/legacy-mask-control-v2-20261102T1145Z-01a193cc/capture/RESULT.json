@@ -1,0 +1,32 @@
+{
+  "status": "HTTP_COMPLETE_FITS_UNVALIDATED",
+  "requests_attempted": 1,
+  "target_requested": false,
+  "holdout_evaluated": false,
+  "http_status": 200,
+  "curl_exit": 0,
+  "tls_verify_result": 0,
+  "redirect_count": 0,
+  "body_bytes": 264960,
+  "body_sha256": "e56b8a2e5fa37dc45d5f67a0ff07cf9d49a13ad6dc75c4ddf505650c6ac5f6bd",
+  "cleanup_status": "EXIT_CONFIRMED",
+  "polling_overshoot_possible": true,
+  "fits_science_validation": false,
+  "fetch_invoked": true,
+  "process_start_observed": true,
+  "request_record_present": true,
+  "native_reported_pid": 13276,
+  "finished_utc": "2026-11-02T11:46:10.033799+00:00",
+  "safe_to_release": true,
+  "owned_process_exit_confirmed": true,
+  "last_owned_pid": 13276,
+  "last_owned_process": {
+    "pid": 13276,
+    "creation_filetime_100ns": "134380935693043726",
+    "observed_utc": "2026-11-02T11:46:09.311383+00:00",
+    "executable_expected": "C:/Windows/System32/curl.exe",
+    "identity_status": "OWNED_HANDLE_CREATION_TIME_OBSERVED",
+    "instruction": "Never kill or claim ownership based on a stale PID alone."
+  },
+  "lease_release_pending": true
+}

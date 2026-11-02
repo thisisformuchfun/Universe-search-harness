@@ -1,0 +1,104 @@
+{
+  "created_utc": "2026-11-02T11:48:04.403805+00:00",
+  "mask_sha256": "e56b8a2e5fa37dc45d5f67a0ff07cf9d49a13ad6dc75c4ddf505650c6ac5f6bd",
+  "image_sha256": "033df85a32f94a79932af1e15d29d9804f77362c64dc4ae8b63a16bc4ba4edf9",
+  "cutout_radesys_card": null,
+  "cutout_equinox_card": null,
+  "mask_radesys_card": null,
+  "mask_equinox_card": 2000.0,
+  "astropy_cutout_frame": "<ICRS Frame>",
+  "astropy_mask_frame": "<FK5 Frame (equinox=2000.0)>",
+  "samples": [
+    {
+      "cutout_xy": [
+        64.0,
+        64.0
+      ],
+      "mask_numeric_xy": [
+        2348.999999999973,
+        1164.0000000001114
+      ],
+      "mask_frame_aware_xy": [
+        2348.9789013411537,
+        1163.936190151751
+      ],
+      "numeric_vs_frame_aware_offset_pixels": [
+        -0.021098658819482807,
+        -0.0638098483605063
+      ]
+    },
+    {
+      "cutout_xy": [
+        15.0,
+        15.0
+      ],
+      "mask_numeric_xy": [
+        2299.9999999999072,
+        1114.9999999999925
+      ],
+      "mask_frame_aware_xy": [
+        2299.9788950837983,
+        1114.9361964031077
+      ],
+      "numeric_vs_frame_aware_offset_pixels": [
+        -0.021104916108924954,
+        -0.06380359688478165
+      ]
+    },
+    {
+      "cutout_xy": [
+        112.0,
+        15.0
+      ],
+      "mask_numeric_xy": [
+        2397.000000000029,
+        1115.000000000121
+      ],
+      "mask_frame_aware_xy": [
+        2396.9788950872758,
+        1114.9361840165307
+      ],
+      "numeric_vs_frame_aware_offset_pixels": [
+        -0.02110491275334425,
+        -0.0638159835903025
+      ]
+    },
+    {
+      "cutout_xy": [
+        15.0,
+        112.0
+      ],
+      "mask_numeric_xy": [
+        2299.999999999811,
+        1212.0000000003654
+      ],
+      "mask_frame_aware_xy": [
+        2299.978907467776,
+        1211.936196414363
+      ],
+      "numeric_vs_frame_aware_offset_pixels": [
+        -0.02109253203479966,
+        -0.06380358600245017
+      ]
+    },
+    {
+      "cutout_xy": [
+        112.0,
+        112.0
+      ],
+      "mask_numeric_xy": [
+        2396.9999999999695,
+        1211.9999999999122
+      ],
+      "mask_frame_aware_xy": [
+        2396.9789074703144,
+        1211.9361840270576
+      ],
+      "numeric_vs_frame_aware_offset_pixels": [
+        -0.021092529655106773,
+        -0.06381597285462703
+      ]
+    }
+  ],
+  "interpretation": "numeric grid agreement does not resolve frame convention or absolute astrometry"
+}

@@ -1,0 +1,11 @@
+{
+  "prepared_utc": "2026-11-02T10:54:14.062926+00:00",
+  "old_report_sha256": "d8c2a1604b07b8a82c93a36ca040e696a109c99feb2bbfc367b4181bc1691b3a",
+  "draft_report_sha256": "ee0dbf0c8e48510c38c8ed7a8d2b761f2aabc2dc8926edb427d8b9cdf1163641",
+  "old_ledger_sha256": "3281e1320616b54df4fceb2c5639bb6dc1a64d5a3be062955086ff37add85127",
+  "new_ledger_sha256": "7d584a3cee4b7c4fa3099527710f99b04afb32e799423a23b741951b4a8d558a",
+  "new_ledger_exact_prefix": true,
+  "new_events": 3,
+  "holdout_evaluated": false,
+  "result_sha256": "338b6bc6e99f594aab946df9139727aae8dcecf139de20e1e98ee8f81c14b435"
+}

@@ -1,0 +1,913 @@
+{
+  "generated_utc": "2026-11-02T14:38:45.015868+00:00",
+  "matrix_as_of": "2026-11-02T06:35:12.523267+00:00",
+  "rows": [
+    {
+      "source_id": "1533365584518328576",
+      "status": "HELD_ORBIT_AND_NOVELTY_UNRESOLVED",
+      "period_days": 15.692089776023604,
+      "ra_deg": 185.7146258165012,
+      "dec_deg": 40.88393731140186,
+      "parallax_mas": 1.1668509132047593,
+      "parallax_error_mas": 0.060060527,
+      "literature_measurement": "U. One existing LAMOST 2015 spectrum has pipeline `z=-0.00023659`, error `0.00001158`; its approximate optical `cz` is −70.93 km/s, scaled error 3.47 km/s. No LASP RV row.",
+      "material_risk": "g/r S/N 4.4/3.45; velocity frame/calibration unresolved. The LAMOST PS-ID value matches a one-detection PS1 row about 1.52″ from Gaia 2016; source/fibre association remains unresolved. XP class 1 is not a confirmed binary.",
+      "next_measurement": "Validate this spectrum with suitable low-S/N controls and obtain independent, source-attributed RV epochs; a single uncalibrated redshift cannot test the orbit.",
+      "xp_blend": {
+        "bp_total": 35,
+        "bp_blended": 1,
+        "rp_total": 45,
+        "rp_blended": 1,
+        "as_of": "2026-11-02T04:37:05.160325+00:00"
+      },
+      "later_followup": "A public SEDR5 product matches saved DR6 plate/fibre metadata, but source attribution and RV calibration remain unresolved. Two subsequent held-fibre lookups returned empty bodies; these are not validated nonmatches or RV measurements.",
+      "later_followup_as_of": "2026-11-02T10:04:11Z",
+      "public_review": {
+        "reviewed_utc": "2026-11-02T14:38:45.015868+00:00",
+        "matches": [
+          {
+            "kind": "Published spectral-model catalogue row",
+            "title": "Li et al. (2025): Gaia BP/RP spectral fits",
+            "url": "https://arxiv.org/html/2507.09622v1",
+            "dataset_url": "https://zenodo.org/records/15166185",
+            "detail": "This exact source appears in the published parent dataset with model class 1. A model label is not a confirmed binary, a black-hole identification, or proof of novelty.",
+            "contact": {
+              "name": "Jiadong Li",
+              "role": "First author; email listed in the paper",
+              "email": "jdli@mpia.de",
+              "source_url": "https://arxiv.org/html/2507.09622v1"
+            }
+          },
+          {
+            "kind": "Public spectrum",
+            "title": "LAMOST J122251.51+405302.1 · observation 294101037",
+            "url": "https://dc.zah.uni-heidelberg.de/lamost6/q/sdl_lrs/dlget?ID=lamost6/lrs/294101037",
+            "detail": "One LAMOST low-resolution spectrum dated 2015-01-08. One released observation, not an RV time series; no SB1/SB2 or companion classification inferred. Low signal-to-noise; the queried stellar-parameter table contained no row.",
+            "contact": null
+          }
+        ],
+        "checks": [
+          {
+            "title": "Li et al. 2026 printed tables",
+            "url": "https://arxiv.org/html/2610.34715v1",
+            "result": "Not in the printed examples; the complete 1,835-source table was unavailable in the saved preprint."
+          },
+          {
+            "title": "Simon et al. 2026 sample",
+            "url": "https://arxiv.org/html/2603.20371v2",
+            "result": "No exact ID match in the 34-row published sample."
+          },
+          {
+            "title": "Müller-Horn et al. 2026 parent catalogues",
+            "url": "https://arxiv.org/html/2510.05982v2",
+            "result": "No exact ID match in the two checked parent tables (40,692 rows)."
+          },
+          {
+            "title": "Zhou & Gu 2026 candidate tables",
+            "url": "https://doi.org/10.3847/1538-4357/aeaa3a",
+            "result": "No exact ID match in the 17 Table 2 IDs; the earlier review also found no match in the two Table 1 IDs."
+          }
+        ],
+        "cross_id": {
+          "designation": "2MASS J12225151+4053020",
+          "separation_arcsec": 0.10823338,
+          "number_of_mates": 0,
+          "lookup_url": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=2MASS+J12225151%2B4053020"
+        },
+        "xp_status": "Exact parent-dataset row found.",
+        "limitations": "These are finite exact-ID checks against sources captured October 31–November 2, not an exhaustive search of all papers or aliases. A web-index positive control failed, and a missing match does not establish novelty. The full Li 2026 machine-readable table remains unavailable. The full XP HDF5 checksum was not verified."
+      }
+    },
+    {
+      "source_id": "1538284425878995712",
+      "status": "HELD_ORBIT_AND_NOVELTY_UNRESOLVED",
+      "period_days": 14.470571249544475,
+      "ra_deg": 183.6805259459893,
+      "dec_deg": 43.038892434264085,
+      "parallax_mas": 1.8199919304866932,
+      "parallax_error_mas": 0.06494976,
+      "literature_measurement": "U. No independent RV recovered. A conditional two-epoch Gaia forecast is a measurement-design calculation, not observed velocity.",
+      "material_risk": "Most Gaia XP BP/RP transits are blend-flagged; the published class-0 fit does not exclude a luminous secondary.",
+      "next_measurement": "Deblended, component-sensitive multi-epoch spectra; propagate the Gaia orbital uncertainties when choosing phases.",
+      "xp_blend": {
+        "bp_total": 31,
+        "bp_blended": 30,
+        "rp_total": 41,
+        "rp_blended": 40,
+        "as_of": "2026-11-02T04:37:05.160325+00:00"
+      },
+      "public_review": {
+        "reviewed_utc": "2026-11-02T14:38:45.015868+00:00",
+        "matches": [
+          {
+            "kind": "Published spectral-model catalogue row",
+            "title": "Li et al. (2025): Gaia BP/RP spectral fits",
+            "url": "https://arxiv.org/html/2507.09622v1",
+            "dataset_url": "https://zenodo.org/records/15166185",
+            "detail": "This exact source appears in the published parent dataset with model class 0. A model label is not a confirmed binary, a black-hole identification, or proof of novelty.",
+            "contact": {
+              "name": "Jiadong Li",
+              "role": "First author; email listed in the paper",
+              "email": "jdli@mpia.de",
+              "source_url": "https://arxiv.org/html/2507.09622v1"
+            }
+          }
+        ],
+        "checks": [
+          {
+            "title": "Li et al. 2026 printed tables",
+            "url": "https://arxiv.org/html/2610.34715v1",
+            "result": "Not in the printed examples; the complete 1,835-source table was unavailable in the saved preprint."
+          },
+          {
+            "title": "Simon et al. 2026 sample",
+            "url": "https://arxiv.org/html/2603.20371v2",
+            "result": "No exact ID match in the 34-row published sample."
+          },
+          {
+            "title": "Müller-Horn et al. 2026 parent catalogues",
+            "url": "https://arxiv.org/html/2510.05982v2",
+            "result": "No exact ID match in the two checked parent tables (40,692 rows)."
+          },
+          {
+            "title": "Zhou & Gu 2026 candidate tables",
+            "url": "https://doi.org/10.3847/1538-4357/aeaa3a",
+            "result": "No exact ID match in the 17 Table 2 IDs; the earlier review also found no match in the two Table 1 IDs."
+          }
+        ],
+        "cross_id": {
+          "designation": "2MASS J12144335+4302203",
+          "separation_arcsec": 0.03323081,
+          "number_of_mates": 0,
+          "lookup_url": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=2MASS+J12144335%2B4302203"
+        },
+        "xp_status": "Exact parent-dataset row found.",
+        "limitations": "These are finite exact-ID checks against sources captured October 31–November 2, not an exhaustive search of all papers or aliases. A web-index positive control failed, and a missing match does not establish novelty. The full Li 2026 machine-readable table remains unavailable. The full XP HDF5 checksum was not verified."
+      }
+    },
+    {
+      "source_id": "2245423750054837888",
+      "status": "HELD_ORBIT_AND_NOVELTY_UNRESOLVED",
+      "period_days": 91.098644139502,
+      "ra_deg": 307.62093564552384,
+      "dec_deg": 65.0138172993394,
+      "parallax_mas": 0.8370482845089452,
+      "parallax_error_mas": 0.026495308,
+      "literature_measurement": "U. No independent RV recovered; PS1 has separate catalog detections near this source and a 5.465″ neighbor.",
+      "material_risk": "The neighbor is 1.32 G mag fainter; PS1 astrometric calibration includes Gaia and its photometry does not measure Gaia-window contamination.",
+      "next_measurement": "Source-attributed multi-epoch RVs and line profiles, with resolved imaging or aperture/flux checks.",
+      "xp_blend": {
+        "bp_total": 29,
+        "bp_blended": 3,
+        "rp_total": 62,
+        "rp_blended": 1,
+        "as_of": "2026-11-02T04:37:05.160325+00:00"
+      },
+      "public_review": {
+        "reviewed_utc": "2026-11-02T14:38:45.015868+00:00",
+        "matches": [],
+        "checks": [
+          {
+            "title": "Li et al. 2026 printed tables",
+            "url": "https://arxiv.org/html/2610.34715v1",
+            "result": "Not in the printed examples; the complete 1,835-source table was unavailable in the saved preprint."
+          },
+          {
+            "title": "Simon et al. 2026 sample",
+            "url": "https://arxiv.org/html/2603.20371v2",
+            "result": "No exact ID match in the 34-row published sample."
+          },
+          {
+            "title": "Müller-Horn et al. 2026 parent catalogues",
+            "url": "https://arxiv.org/html/2510.05982v2",
+            "result": "No exact ID match in the two checked parent tables (40,692 rows)."
+          },
+          {
+            "title": "Zhou & Gu 2026 candidate tables",
+            "url": "https://doi.org/10.3847/1538-4357/aeaa3a",
+            "result": "No exact ID match in the 17 Table 2 IDs; the earlier review also found no match in the two Table 1 IDs."
+          }
+        ],
+        "cross_id": {
+          "designation": "2MASS J20302904+6500497",
+          "separation_arcsec": 0.12679149,
+          "number_of_mates": 0,
+          "lookup_url": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=2MASS+J20302904%2B6500497"
+        },
+        "xp_status": "Outside the published XP parent selection; absence says nothing about a companion.",
+        "limitations": "These are finite exact-ID checks against sources captured October 31–November 2, not an exhaustive search of all papers or aliases. A web-index positive control failed, and a missing match does not establish novelty. The full Li 2026 machine-readable table remains unavailable. The full XP HDF5 checksum was not verified."
+      }
+    },
+    {
+      "source_id": "2852726284550996352",
+      "status": "HELD_ORBIT_AND_NOVELTY_UNRESOLVED",
+      "period_days": 19.896257707709832,
+      "ra_deg": 358.1038582123959,
+      "dec_deg": 26.29202302072699,
+      "parallax_mas": 1.0497867244377312,
+      "parallax_error_mas": 0.026208458,
+      "literature_measurement": "U. No independent RV epoch recovered; Gaia combined-CCF mean is not an epoch series. A published catalogue lists a possible wide pair.",
+      "material_risk": "The 6.089″ association is a candidate wide companion, not a confirmed triple; a class-0 XP fit does not exclude inner luminous light.",
+      "next_measurement": "Measure both resolved sources and obtain component-sensitive RV epochs for the target.",
+      "xp_blend": {
+        "bp_total": 28,
+        "bp_blended": 0,
+        "rp_total": 50,
+        "rp_blended": 1,
+        "as_of": "2026-11-02T04:37:05.160325+00:00"
+      },
+      "public_review": {
+        "reviewed_utc": "2026-11-02T14:38:45.015868+00:00",
+        "matches": [
+          {
+            "kind": "Published spectral-model catalogue row",
+            "title": "Li et al. (2025): Gaia BP/RP spectral fits",
+            "url": "https://arxiv.org/html/2507.09622v1",
+            "dataset_url": "https://zenodo.org/records/15166185",
+            "detail": "This exact source appears in the published parent dataset with model class 0. A model label is not a confirmed binary, a black-hole identification, or proof of novelty.",
+            "contact": {
+              "name": "Jiadong Li",
+              "role": "First author; email listed in the paper",
+              "email": "jdli@mpia.de",
+              "source_url": "https://arxiv.org/html/2507.09622v1"
+            }
+          },
+          {
+            "kind": "Published wide-pair catalogue entry",
+            "title": "El-Badry et al. (2021): Gaia wide binaries",
+            "url": "https://arxiv.org/html/2101.05282v3",
+            "dataset_url": "https://cdsarc.cds.unistra.fr/viz-bin/cat/J/MNRAS/506/2269",
+            "detail": "The exact Gaia ID is paired in the published catalogue with 2852726284550996224, about 6.09 arcseconds away. This is a likely wide stellar association, not a confirmed inner orbit or black hole.",
+            "contact": {
+              "name": "Kareem El-Badry",
+              "role": "First author",
+              "email": "kelbadry@caltech.edu",
+              "source_url": "https://www.astro.caltech.edu/people/teaching-faculty"
+            }
+          }
+        ],
+        "checks": [
+          {
+            "title": "Li et al. 2026 printed tables",
+            "url": "https://arxiv.org/html/2610.34715v1",
+            "result": "Not in the printed examples; the complete 1,835-source table was unavailable in the saved preprint."
+          },
+          {
+            "title": "Simon et al. 2026 sample",
+            "url": "https://arxiv.org/html/2603.20371v2",
+            "result": "No exact ID match in the 34-row published sample."
+          },
+          {
+            "title": "Müller-Horn et al. 2026 parent catalogues",
+            "url": "https://arxiv.org/html/2510.05982v2",
+            "result": "No exact ID match in the two checked parent tables (40,692 rows)."
+          },
+          {
+            "title": "Zhou & Gu 2026 candidate tables",
+            "url": "https://doi.org/10.3847/1538-4357/aeaa3a",
+            "result": "No exact ID match in the 17 Table 2 IDs; the earlier review also found no match in the two Table 1 IDs."
+          }
+        ],
+        "cross_id": {
+          "designation": "2MASS J23522491+2617313",
+          "separation_arcsec": 0.10239172,
+          "number_of_mates": 0,
+          "lookup_url": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=2MASS+J23522491%2B2617313"
+        },
+        "xp_status": "Exact parent-dataset row found.",
+        "limitations": "These are finite exact-ID checks against sources captured October 31–November 2, not an exhaustive search of all papers or aliases. A web-index positive control failed, and a missing match does not establish novelty. The full Li 2026 machine-readable table remains unavailable. The full XP HDF5 checksum was not verified."
+      }
+    },
+    {
+      "source_id": "3316050687674598656",
+      "status": "HELD_ORBIT_AND_NOVELTY_UNRESOLVED",
+      "period_days": 6.286964401693138,
+      "ra_deg": 89.44186826752684,
+      "dec_deg": 2.8207455113134556,
+      "parallax_mas": 1.4356358653468373,
+      "parallax_error_mas": 0.05526991,
+      "literature_measurement": "U. No independent RV recovered; published XP class-1 label accompanies a worse two-star chi-square.",
+      "material_risk": "Most XP BP/RP transits are blend-flagged; the label and fitted components are not a confirmed binary.",
+      "next_measurement": "Decontaminated multi-epoch spectra and line-profile checks before interpreting the Gaia orbit or XP model.",
+      "xp_blend": {
+        "bp_total": 32,
+        "bp_blended": 32,
+        "rp_total": 38,
+        "rp_blended": 37,
+        "as_of": "2026-11-02T04:37:05.160325+00:00"
+      },
+      "public_review": {
+        "reviewed_utc": "2026-11-02T14:38:45.015868+00:00",
+        "matches": [
+          {
+            "kind": "Published spectral-model catalogue row",
+            "title": "Li et al. (2025): Gaia BP/RP spectral fits",
+            "url": "https://arxiv.org/html/2507.09622v1",
+            "dataset_url": "https://zenodo.org/records/15166185",
+            "detail": "This exact source appears in the published parent dataset with model class 1. A model label is not a confirmed binary, a black-hole identification, or proof of novelty.",
+            "contact": {
+              "name": "Jiadong Li",
+              "role": "First author; email listed in the paper",
+              "email": "jdli@mpia.de",
+              "source_url": "https://arxiv.org/html/2507.09622v1"
+            }
+          }
+        ],
+        "checks": [
+          {
+            "title": "Li et al. 2026 printed tables",
+            "url": "https://arxiv.org/html/2610.34715v1",
+            "result": "Not in the printed examples; the complete 1,835-source table was unavailable in the saved preprint."
+          },
+          {
+            "title": "Simon et al. 2026 sample",
+            "url": "https://arxiv.org/html/2603.20371v2",
+            "result": "No exact ID match in the 34-row published sample."
+          },
+          {
+            "title": "Müller-Horn et al. 2026 parent catalogues",
+            "url": "https://arxiv.org/html/2510.05982v2",
+            "result": "No exact ID match in the two checked parent tables (40,692 rows)."
+          },
+          {
+            "title": "Zhou & Gu 2026 candidate tables",
+            "url": "https://doi.org/10.3847/1538-4357/aeaa3a",
+            "result": "No exact ID match in the 17 Table 2 IDs; the earlier review also found no match in the two Table 1 IDs."
+          }
+        ],
+        "cross_id": {
+          "designation": "2MASS J05574603+0249147",
+          "separation_arcsec": 0.044485852,
+          "number_of_mates": 0,
+          "lookup_url": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=2MASS+J05574603%2B0249147"
+        },
+        "xp_status": "Exact parent-dataset row found.",
+        "limitations": "These are finite exact-ID checks against sources captured October 31–November 2, not an exhaustive search of all papers or aliases. A web-index positive control failed, and a missing match does not establish novelty. The full Li 2026 machine-readable table remains unavailable. The full XP HDF5 checksum was not verified."
+      }
+    },
+    {
+      "source_id": "4299244434901041024",
+      "status": "HELD_ORBIT_AND_NOVELTY_UNRESOLVED",
+      "period_days": 31.501475704330648,
+      "ra_deg": 300.86970875896895,
+      "dec_deg": 9.386232771725169,
+      "parallax_mas": 0.8340891520924897,
+      "parallax_error_mas": 0.027991205,
+      "literature_measurement": "U. No independent RV epoch recovered; Gaia combined-CCF mean is not an epoch series.",
+      "material_risk": "Gaia period 31.501 d lies in a published scan-angle feature; a 3.893″, ΔG 6.29 neighbor exists.",
+      "next_measurement": "Calibrated RV variability and phase coverage independent of Gaia; examine scan and contaminating-light alternatives.",
+      "xp_blend": {
+        "bp_total": 25,
+        "bp_blended": 0,
+        "rp_total": 50,
+        "rp_blended": 0,
+        "as_of": "2026-11-02T04:37:05.160325+00:00"
+      },
+      "public_review": {
+        "reviewed_utc": "2026-11-02T14:38:45.015868+00:00",
+        "matches": [],
+        "checks": [
+          {
+            "title": "Li et al. 2026 printed tables",
+            "url": "https://arxiv.org/html/2610.34715v1",
+            "result": "Not in the printed examples; the complete 1,835-source table was unavailable in the saved preprint."
+          },
+          {
+            "title": "Simon et al. 2026 sample",
+            "url": "https://arxiv.org/html/2603.20371v2",
+            "result": "No exact ID match in the 34-row published sample."
+          },
+          {
+            "title": "Müller-Horn et al. 2026 parent catalogues",
+            "url": "https://arxiv.org/html/2510.05982v2",
+            "result": "No exact ID match in the two checked parent tables (40,692 rows)."
+          },
+          {
+            "title": "Zhou & Gu 2026 candidate tables",
+            "url": "https://doi.org/10.3847/1538-4357/aeaa3a",
+            "result": "No exact ID match in the 17 Table 2 IDs; the earlier review also found no match in the two Table 1 IDs."
+          }
+        ],
+        "cross_id": {
+          "designation": "2MASS J20032871+0923103",
+          "separation_arcsec": 0.19312248,
+          "number_of_mates": 0,
+          "lookup_url": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=2MASS+J20032871%2B0923103"
+        },
+        "xp_status": "Outside the published XP parent selection; absence says nothing about a companion.",
+        "limitations": "These are finite exact-ID checks against sources captured October 31–November 2, not an exhaustive search of all papers or aliases. A web-index positive control failed, and a missing match does not establish novelty. The full Li 2026 machine-readable table remains unavailable. The full XP HDF5 checksum was not verified."
+      }
+    },
+    {
+      "source_id": "5591318172608607232",
+      "status": "HELD_ORBIT_AND_NOVELTY_UNRESOLVED",
+      "period_days": 24.94616570444552,
+      "ra_deg": 112.20769637571776,
+      "dec_deg": -34.83235573026559,
+      "parallax_mas": 2.5738028087812235,
+      "parallax_error_mas": 0.06805462,
+      "literature_measurement": "U. No independent RV recovered; XP class-0 is a model label only.",
+      "material_risk": "A resolved Gaia neighbor 11.26″ away has very different astrometry; unresolved companions remain possible.",
+      "next_measurement": "Stop the completed archive paths; obtain component-sensitive RV epochs.",
+      "xp_blend": {
+        "bp_total": 33,
+        "bp_blended": 2,
+        "rp_total": 46,
+        "rp_blended": 1,
+        "as_of": "2026-11-02T04:37:05.160325+00:00"
+      },
+      "public_review": {
+        "reviewed_utc": "2026-11-02T14:38:45.015868+00:00",
+        "matches": [
+          {
+            "kind": "Published spectral-model catalogue row",
+            "title": "Li et al. (2025): Gaia BP/RP spectral fits",
+            "url": "https://arxiv.org/html/2507.09622v1",
+            "dataset_url": "https://zenodo.org/records/15166185",
+            "detail": "This exact source appears in the published parent dataset with model class 0. A model label is not a confirmed binary, a black-hole identification, or proof of novelty.",
+            "contact": {
+              "name": "Jiadong Li",
+              "role": "First author; email listed in the paper",
+              "email": "jdli@mpia.de",
+              "source_url": "https://arxiv.org/html/2507.09622v1"
+            }
+          }
+        ],
+        "checks": [
+          {
+            "title": "Li et al. 2026 printed tables",
+            "url": "https://arxiv.org/html/2610.34715v1",
+            "result": "Not in the printed examples; the complete 1,835-source table was unavailable in the saved preprint."
+          },
+          {
+            "title": "Simon et al. 2026 sample",
+            "url": "https://arxiv.org/html/2603.20371v2",
+            "result": "No exact ID match in the 34-row published sample."
+          },
+          {
+            "title": "Müller-Horn et al. 2026 parent catalogues",
+            "url": "https://arxiv.org/html/2510.05982v2",
+            "result": "No exact ID match in the two checked parent tables (40,692 rows)."
+          },
+          {
+            "title": "Zhou & Gu 2026 candidate tables",
+            "url": "https://doi.org/10.3847/1538-4357/aeaa3a",
+            "result": "No exact ID match in the 17 Table 2 IDs; the earlier review also found no match in the two Table 1 IDs."
+          }
+        ],
+        "cross_id": {
+          "designation": "2MASS J07284982-3449562",
+          "separation_arcsec": 0.08746857,
+          "number_of_mates": 0,
+          "lookup_url": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=2MASS+J07284982-3449562"
+        },
+        "xp_status": "Exact parent-dataset row found.",
+        "limitations": "These are finite exact-ID checks against sources captured October 31–November 2, not an exhaustive search of all papers or aliases. A web-index positive control failed, and a missing match does not establish novelty. The full Li 2026 machine-readable table remains unavailable. The full XP HDF5 checksum was not verified."
+      }
+    },
+    {
+      "source_id": "5928370816455687808",
+      "status": "HELD_ORBIT_AND_NOVELTY_UNRESOLVED",
+      "period_days": 31.58748151581934,
+      "ra_deg": 246.56517633162468,
+      "dec_deg": -56.574619319523826,
+      "parallax_mas": 0.5661092215910641,
+      "parallax_error_mas": 0.05028753,
+      "literature_measurement": "U. No independent RV recovered.",
+      "material_risk": "Neighbor 1.329″ away; Gaia period 31.587 d lies in the published scan-angle feature; many XP transits are blend-flagged.",
+      "next_measurement": "Source-attributed RVs and resolved-light constraints independent of Gaia astrometry.",
+      "xp_blend": {
+        "bp_total": 27,
+        "bp_blended": 21,
+        "rp_total": 38,
+        "rp_blended": 32,
+        "as_of": "2026-11-02T04:37:05.160325+00:00"
+      },
+      "public_review": {
+        "reviewed_utc": "2026-11-02T14:38:45.015868+00:00",
+        "matches": [],
+        "checks": [
+          {
+            "title": "Li et al. 2026 printed tables",
+            "url": "https://arxiv.org/html/2610.34715v1",
+            "result": "Not in the printed examples; the complete 1,835-source table was unavailable in the saved preprint."
+          },
+          {
+            "title": "Simon et al. 2026 sample",
+            "url": "https://arxiv.org/html/2603.20371v2",
+            "result": "No exact ID match in the 34-row published sample."
+          },
+          {
+            "title": "Müller-Horn et al. 2026 parent catalogues",
+            "url": "https://arxiv.org/html/2510.05982v2",
+            "result": "No exact ID match in the two checked parent tables (40,692 rows)."
+          },
+          {
+            "title": "Zhou & Gu 2026 candidate tables",
+            "url": "https://doi.org/10.3847/1538-4357/aeaa3a",
+            "result": "No exact ID match in the 17 Table 2 IDs; the earlier review also found no match in the two Table 1 IDs."
+          }
+        ],
+        "cross_id": {
+          "designation": "2MASS J16261565-5634286",
+          "separation_arcsec": 0.06917316,
+          "number_of_mates": 0,
+          "lookup_url": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=2MASS+J16261565-5634286"
+        },
+        "xp_status": "Outside the published XP parent selection; absence says nothing about a companion.",
+        "limitations": "These are finite exact-ID checks against sources captured October 31–November 2, not an exhaustive search of all papers or aliases. A web-index positive control failed, and a missing match does not establish novelty. The full Li 2026 machine-readable table remains unavailable. The full XP HDF5 checksum was not verified."
+      }
+    },
+    {
+      "source_id": "5929746958324419200",
+      "status": "HELD_ORBIT_AND_NOVELTY_UNRESOLVED",
+      "period_days": 53.999188027654874,
+      "ra_deg": 254.29066457418193,
+      "dec_deg": -54.41076331489868,
+      "parallax_mas": 0.6105705069090743,
+      "parallax_error_mas": 0.033986073,
+      "literature_measurement": "U. No independent RV recovered.",
+      "material_risk": "Neighbor 1.959″ away; some XP transits are blend-flagged. The attempted DECaPS catalogue/image controls did not validate that route.",
+      "next_measurement": "Source-attributed repeated spectra and resolved imaging; do not treat the failed DECaPS control as a non-detection.",
+      "xp_blend": {
+        "bp_total": 35,
+        "bp_blended": 12,
+        "rp_total": 44,
+        "rp_blended": 18,
+        "as_of": "2026-11-02T04:37:05.160325+00:00"
+      },
+      "public_review": {
+        "reviewed_utc": "2026-11-02T14:38:45.015868+00:00",
+        "matches": [],
+        "checks": [
+          {
+            "title": "Li et al. 2026 printed tables",
+            "url": "https://arxiv.org/html/2610.34715v1",
+            "result": "Not in the printed examples; the complete 1,835-source table was unavailable in the saved preprint."
+          },
+          {
+            "title": "Simon et al. 2026 sample",
+            "url": "https://arxiv.org/html/2603.20371v2",
+            "result": "No exact ID match in the 34-row published sample."
+          },
+          {
+            "title": "Müller-Horn et al. 2026 parent catalogues",
+            "url": "https://arxiv.org/html/2510.05982v2",
+            "result": "No exact ID match in the two checked parent tables (40,692 rows)."
+          },
+          {
+            "title": "Zhou & Gu 2026 candidate tables",
+            "url": "https://doi.org/10.3847/1538-4357/aeaa3a",
+            "result": "No exact ID match in the 17 Table 2 IDs; the earlier review also found no match in the two Table 1 IDs."
+          }
+        ],
+        "cross_id": {
+          "designation": "2MASS J16570977-5424386",
+          "separation_arcsec": 0.08243581,
+          "number_of_mates": 0,
+          "lookup_url": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=2MASS+J16570977-5424386"
+        },
+        "xp_status": "Outside the published XP parent selection; absence says nothing about a companion.",
+        "limitations": "These are finite exact-ID checks against sources captured October 31–November 2, not an exhaustive search of all papers or aliases. A web-index positive control failed, and a missing match does not establish novelty. The full Li 2026 machine-readable table remains unavailable. The full XP HDF5 checksum was not verified."
+      }
+    },
+    {
+      "source_id": "5959603097090964992",
+      "status": "HELD_ORBIT_AND_NOVELTY_UNRESOLVED",
+      "period_days": 25.22729708025345,
+      "ra_deg": 260.6614849328008,
+      "dec_deg": -41.98807588854681,
+      "parallax_mas": 2.0204475328763114,
+      "parallax_error_mas": 0.049572933,
+      "literature_measurement": "U. No independent RV recovered; published XP class-1 is a model label.",
+      "material_risk": "Gaia solar-like variability label and possible composite light are alternatives to an orbital interpretation.",
+      "next_measurement": "Multi-epoch RVs and component-sensitive spectra; compare variability and line profiles.",
+      "xp_blend": {
+        "bp_total": 44,
+        "bp_blended": 0,
+        "rp_total": 50,
+        "rp_blended": 0,
+        "as_of": "2026-11-02T04:37:05.160325+00:00"
+      },
+      "public_review": {
+        "reviewed_utc": "2026-11-02T14:38:45.015868+00:00",
+        "matches": [
+          {
+            "kind": "Published spectral-model catalogue row",
+            "title": "Li et al. (2025): Gaia BP/RP spectral fits",
+            "url": "https://arxiv.org/html/2507.09622v1",
+            "dataset_url": "https://zenodo.org/records/15166185",
+            "detail": "This exact source appears in the published parent dataset with model class 1. A model label is not a confirmed binary, a black-hole identification, or proof of novelty.",
+            "contact": {
+              "name": "Jiadong Li",
+              "role": "First author; email listed in the paper",
+              "email": "jdli@mpia.de",
+              "source_url": "https://arxiv.org/html/2507.09622v1"
+            }
+          }
+        ],
+        "checks": [
+          {
+            "title": "Li et al. 2026 printed tables",
+            "url": "https://arxiv.org/html/2610.34715v1",
+            "result": "Not in the printed examples; the complete 1,835-source table was unavailable in the saved preprint."
+          },
+          {
+            "title": "Simon et al. 2026 sample",
+            "url": "https://arxiv.org/html/2603.20371v2",
+            "result": "No exact ID match in the 34-row published sample."
+          },
+          {
+            "title": "Müller-Horn et al. 2026 parent catalogues",
+            "url": "https://arxiv.org/html/2510.05982v2",
+            "result": "No exact ID match in the two checked parent tables (40,692 rows)."
+          },
+          {
+            "title": "Zhou & Gu 2026 candidate tables",
+            "url": "https://doi.org/10.3847/1538-4357/aeaa3a",
+            "result": "No exact ID match in the 17 Table 2 IDs; the earlier review also found no match in the two Table 1 IDs."
+          }
+        ],
+        "cross_id": {
+          "designation": "2MASS J17223876-4159169",
+          "separation_arcsec": 0.071471445,
+          "number_of_mates": 0,
+          "lookup_url": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=2MASS+J17223876-4159169"
+        },
+        "xp_status": "Exact parent-dataset row found.",
+        "limitations": "These are finite exact-ID checks against sources captured October 31–November 2, not an exhaustive search of all papers or aliases. A web-index positive control failed, and a missing match does not establish novelty. The full Li 2026 machine-readable table remains unavailable. The full XP HDF5 checksum was not verified."
+      }
+    },
+    {
+      "source_id": "5991734159714775296",
+      "status": "HELD_ORBIT_AND_NOVELTY_UNRESOLVED",
+      "period_days": 15.739223706431797,
+      "ra_deg": 243.2715196307612,
+      "dec_deg": -43.017299603457424,
+      "parallax_mas": 0.5827248773872341,
+      "parallax_error_mas": 0.042382803,
+      "literature_measurement": "U. No independent RV recovered.",
+      "material_risk": "Gaia neighbor 0.981″ away, shared 2MASS association, and all returned XP BP/RP spectral transits blend-flagged.",
+      "next_measurement": "Resolved or demonstrably deblended spectroscopy at multiple epochs; an unresolved catalogue match is insufficient.",
+      "xp_blend": {
+        "bp_total": 36,
+        "bp_blended": 36,
+        "rp_total": 52,
+        "rp_blended": 52,
+        "as_of": "2026-11-02T04:37:05.160325+00:00"
+      },
+      "public_review": {
+        "reviewed_utc": "2026-11-02T14:38:45.015868+00:00",
+        "matches": [],
+        "checks": [
+          {
+            "title": "Li et al. 2026 printed tables",
+            "url": "https://arxiv.org/html/2610.34715v1",
+            "result": "Not in the printed examples; the complete 1,835-source table was unavailable in the saved preprint."
+          },
+          {
+            "title": "Simon et al. 2026 sample",
+            "url": "https://arxiv.org/html/2603.20371v2",
+            "result": "No exact ID match in the 34-row published sample."
+          },
+          {
+            "title": "Müller-Horn et al. 2026 parent catalogues",
+            "url": "https://arxiv.org/html/2510.05982v2",
+            "result": "No exact ID match in the two checked parent tables (40,692 rows)."
+          },
+          {
+            "title": "Zhou & Gu 2026 candidate tables",
+            "url": "https://doi.org/10.3847/1538-4357/aeaa3a",
+            "result": "No exact ID match in the 17 Table 2 IDs; the earlier review also found no match in the two Table 1 IDs."
+          }
+        ],
+        "cross_id": {
+          "designation": "2MASS J16130516-4301021",
+          "separation_arcsec": 0.05502261,
+          "number_of_mates": 1,
+          "lookup_url": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=2MASS+J16130516-4301021"
+        },
+        "xp_status": "Outside the published XP parent selection; absence says nothing about a companion.",
+        "limitations": "These are finite exact-ID checks against sources captured October 31–November 2, not an exhaustive search of all papers or aliases. A web-index positive control failed, and a missing match does not establish novelty. The full Li 2026 machine-readable table remains unavailable. The full XP HDF5 checksum was not verified."
+      }
+    },
+    {
+      "source_id": "632497706010874240",
+      "status": "HELD_ORBIT_AND_NOVELTY_UNRESOLVED",
+      "period_days": 31.38662480515533,
+      "ra_deg": 139.57115582033933,
+      "dec_deg": 17.89651973174572,
+      "parallax_mas": 1.4813052021677846,
+      "parallax_error_mas": 0.1292645,
+      "literature_measurement": "U. No independent RV recovered.",
+      "material_risk": "Gaia period 31.387 d lies in the published scan-angle feature; the wide-pair assessment is incomplete.",
+      "next_measurement": "Calibrated RV variability over independent phases; stop repeating the completed DESI product paths.",
+      "xp_blend": {
+        "bp_total": 40,
+        "bp_blended": 0,
+        "rp_total": 47,
+        "rp_blended": 1,
+        "as_of": "2026-11-02T04:37:05.160325+00:00"
+      },
+      "public_review": {
+        "reviewed_utc": "2026-11-02T14:38:45.015868+00:00",
+        "matches": [],
+        "checks": [
+          {
+            "title": "Li et al. 2026 printed tables",
+            "url": "https://arxiv.org/html/2610.34715v1",
+            "result": "Not in the printed examples; the complete 1,835-source table was unavailable in the saved preprint."
+          },
+          {
+            "title": "Simon et al. 2026 sample",
+            "url": "https://arxiv.org/html/2603.20371v2",
+            "result": "No exact ID match in the 34-row published sample."
+          },
+          {
+            "title": "Müller-Horn et al. 2026 parent catalogues",
+            "url": "https://arxiv.org/html/2510.05982v2",
+            "result": "No exact ID match in the two checked parent tables (40,692 rows)."
+          },
+          {
+            "title": "Zhou & Gu 2026 candidate tables",
+            "url": "https://doi.org/10.3847/1538-4357/aeaa3a",
+            "result": "No exact ID match in the 17 Table 2 IDs; the earlier review also found no match in the two Table 1 IDs."
+          }
+        ],
+        "cross_id": {
+          "designation": "2MASS J09181709+1753474",
+          "separation_arcsec": 0.1837366,
+          "number_of_mates": 0,
+          "lookup_url": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=2MASS+J09181709%2B1753474"
+        },
+        "xp_status": "Outside the published XP parent selection; absence says nothing about a companion.",
+        "limitations": "These are finite exact-ID checks against sources captured October 31–November 2, not an exhaustive search of all papers or aliases. A web-index positive control failed, and a missing match does not establish novelty. The full Li 2026 machine-readable table remains unavailable. The full XP HDF5 checksum was not verified."
+      }
+    },
+    {
+      "source_id": "4491401821468887552",
+      "status": "PREVIOUSLY_STUDIED_CANDIDATE_NOT_NEW",
+      "period_days": 31.30919944699542,
+      "ra_deg": 261.50159586038217,
+      "dec_deg": 9.558491274765457,
+      "parallax_mas": 1.3164827580094702,
+      "parallax_error_mas": 0.07776785,
+      "literature_measurement": "P: [Li et al. 2026](https://arxiv.org/html/2610.34715v1). One LAMOST 2018 LASP RV, −5.31 ± 4.36 km/s, is recovered.",
+      "material_risk": "Fibre has NEARWHOPPER warning; independence from the paper's effective RV epoch is unknown; 31.309 d alias concern.",
+      "next_measurement": "Additional calibrated RVs and fibre/line-profile quality review. This is a literature-recovery control, never a discovery.",
+      "xp_blend": {
+        "bp_total": 36,
+        "bp_blended": 0,
+        "rp_total": 43,
+        "rp_blended": 1,
+        "as_of": "2026-11-02T04:37:05.160325+00:00"
+      },
+      "public_review": {
+        "reviewed_utc": "2026-11-02T14:38:45.015868+00:00",
+        "matches": [
+          {
+            "kind": "Published compact-candidate study",
+            "title": "Li et al. (2026): Gaia DR3 compact-binary candidates",
+            "url": "https://arxiv.org/html/2610.34715v1",
+            "detail": "The exact Gaia ID appears in Tables 1 and 2. The paper records one effective RV epoch for this source; it does not independently confirm a black hole.",
+            "contact": {
+              "name": "Ye Xu",
+              "role": "Corresponding author",
+              "email": "xuye@pmo.ac.cn",
+              "source_url": "https://english.pmo.cas.cn/sourcedb/expert/staffs/202311/t20231102_531136.html"
+            }
+          },
+          {
+            "kind": "Published spectral-model catalogue row",
+            "title": "Li et al. (2025): Gaia BP/RP spectral fits",
+            "url": "https://arxiv.org/html/2507.09622v1",
+            "dataset_url": "https://zenodo.org/records/15166185",
+            "detail": "This exact source appears in the published parent dataset with model class 0. A model label is not a confirmed binary, a black-hole identification, or proof of novelty.",
+            "contact": {
+              "name": "Jiadong Li",
+              "role": "First author; email listed in the paper",
+              "email": "jdli@mpia.de",
+              "source_url": "https://arxiv.org/html/2507.09622v1"
+            }
+          },
+          {
+            "kind": "Public spectrum",
+            "title": "LAMOST J172600.40+093330.7 · observation 664307135",
+            "url": "https://dc.zah.uni-heidelberg.de/lamost6/q/sdl_lrs/dlget?ID=lamost6/lrs/664307135",
+            "detail": "One LAMOST low-resolution spectrum dated 2018-05-18. One released observation, not an RV time series; no SB1/SB2 or companion classification inferred. A neighbouring-fibre warning is recorded; line-profile reliability has not been assessed.",
+            "contact": null
+          }
+        ],
+        "checks": [
+          {
+            "title": "Li et al. 2026 printed tables",
+            "url": "https://arxiv.org/html/2610.34715v1",
+            "result": "Exact ID appears in the printed tables."
+          },
+          {
+            "title": "Simon et al. 2026 sample",
+            "url": "https://arxiv.org/html/2603.20371v2",
+            "result": "No exact ID match in the 34-row published sample."
+          },
+          {
+            "title": "Müller-Horn et al. 2026 parent catalogues",
+            "url": "https://arxiv.org/html/2510.05982v2",
+            "result": "No exact ID match in the two checked parent tables (40,692 rows)."
+          },
+          {
+            "title": "Zhou & Gu 2026 candidate tables",
+            "url": "https://doi.org/10.3847/1538-4357/aeaa3a",
+            "result": "No exact ID match in the 17 Table 2 IDs; the earlier review also found no match in the two Table 1 IDs."
+          }
+        ],
+        "cross_id": {
+          "designation": "2MASS J17260039+0933307",
+          "separation_arcsec": 0.010882805,
+          "number_of_mates": 0,
+          "lookup_url": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=2MASS+J17260039%2B0933307"
+        },
+        "xp_status": "Exact parent-dataset row found.",
+        "limitations": "These are finite exact-ID checks against sources captured October 31–November 2, not an exhaustive search of all papers or aliases. A web-index positive control failed, and a missing match does not establish novelty. The full Li 2026 machine-readable table remains unavailable. The full XP HDF5 checksum was not verified."
+      }
+    },
+    {
+      "source_id": "824344003814438528",
+      "status": "PREVIOUSLY_STUDIED_CANDIDATE_NOT_NEW",
+      "period_days": 31.498720306335702,
+      "ra_deg": 145.69450864125196,
+      "dec_deg": 46.43724027469479,
+      "parallax_mas": 1.2363126565134968,
+      "parallax_error_mas": 0.040721,
+      "literature_measurement": "P: [Li et al. 2026](https://arxiv.org/html/2610.34715v1), one effective RV epoch in that study.",
+      "material_risk": "31.499 d scan-angle concern; Gaia variability label is not an orbital test.",
+      "next_measurement": "Additional calibrated RV epochs and line-profile checks. This is a literature-recovery control, never a discovery.",
+      "xp_blend": {
+        "bp_total": 40,
+        "bp_blended": 0,
+        "rp_total": 51,
+        "rp_blended": 1,
+        "as_of": "2026-11-02T04:37:05.160325+00:00"
+      },
+      "public_review": {
+        "reviewed_utc": "2026-11-02T14:38:45.015868+00:00",
+        "matches": [
+          {
+            "kind": "Published compact-candidate study",
+            "title": "Li et al. (2026): Gaia DR3 compact-binary candidates",
+            "url": "https://arxiv.org/html/2610.34715v1",
+            "detail": "The exact Gaia ID appears in Tables 1 and 2. The paper records one effective RV epoch for this source; it does not independently confirm a black hole.",
+            "contact": {
+              "name": "Ye Xu",
+              "role": "Corresponding author",
+              "email": "xuye@pmo.ac.cn",
+              "source_url": "https://english.pmo.cas.cn/sourcedb/expert/staffs/202311/t20231102_531136.html"
+            }
+          },
+          {
+            "kind": "Published spectral-model catalogue row",
+            "title": "Li et al. (2025): Gaia BP/RP spectral fits",
+            "url": "https://arxiv.org/html/2507.09622v1",
+            "dataset_url": "https://zenodo.org/records/15166185",
+            "detail": "This exact source appears in the published parent dataset with model class 0. A model label is not a confirmed binary, a black-hole identification, or proof of novelty.",
+            "contact": {
+              "name": "Jiadong Li",
+              "role": "First author; email listed in the paper",
+              "email": "jdli@mpia.de",
+              "source_url": "https://arxiv.org/html/2507.09622v1"
+            }
+          }
+        ],
+        "checks": [
+          {
+            "title": "Li et al. 2026 printed tables",
+            "url": "https://arxiv.org/html/2610.34715v1",
+            "result": "Exact ID appears in the printed tables."
+          },
+          {
+            "title": "Simon et al. 2026 sample",
+            "url": "https://arxiv.org/html/2603.20371v2",
+            "result": "No exact ID match in the 34-row published sample."
+          },
+          {
+            "title": "Müller-Horn et al. 2026 parent catalogues",
+            "url": "https://arxiv.org/html/2510.05982v2",
+            "result": "No exact ID match in the two checked parent tables (40,692 rows)."
+          },
+          {
+            "title": "Zhou & Gu 2026 candidate tables",
+            "url": "https://doi.org/10.3847/1538-4357/aeaa3a",
+            "result": "No exact ID match in the 17 Table 2 IDs; the earlier review also found no match in the two Table 1 IDs."
+          }
+        ],
+        "cross_id": {
+          "designation": "2MASS J09424670+4626140",
+          "separation_arcsec": 0.12869598,
+          "number_of_mates": 0,
+          "lookup_url": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=2MASS+J09424670%2B4626140"
+        },
+        "xp_status": "Exact parent-dataset row found.",
+        "limitations": "These are finite exact-ID checks against sources captured October 31–November 2, not an exhaustive search of all papers or aliases. A web-index positive control failed, and a missing match does not establish novelty. The full Li 2026 machine-readable table remains unavailable. The full XP HDF5 checksum was not verified."
+      }
+    }
+  ]
+}

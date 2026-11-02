@@ -1,0 +1,16 @@
+{
+  "created_utc": "2026-11-02T09:45:00.882437+00:00",
+  "status": "PENDING_INDEPENDENT_REVIEW",
+  "scope": "reference control transport and FITS prefix only",
+  "max_requests": 3,
+  "max_total_body_bytes": 5000000,
+  "script_sha256": "51d456869d45308e79f39b4fcd2cae19b7f8bd35f31962308b0ff8e406e2efdd",
+  "protocol_sha256": "4184d702c11f72a8cdca7fd1cbc38d8125cd4d812ef7524417d30504e0da0968",
+  "library_sha256": "3f9b82d0ce290efc280dd4e70e1963045bc95aa527cf880387e6f8ccbcb525f5",
+  "transport_sha256": "0f6c1d71336306b5e0bb319f5ced7cfe0e059af891d6632d28f49e634c2c8f42",
+  "root_sha256": "cf493675ced7a1332ee9105c7c6043ce6a8257f0093e1848390e13f2d5f89a83",
+  "root_record_sha256": "0c09c2824cb39e6e90b9a353593c10de871e8929bb8820f9e52e52c07656a2c8",
+  "sample_sha256": "445105154437335a95353a37aecbe93609d89a48bdee3b99fbcb54be33de8513",
+  "test_sha256": "9b7b61c8b448ae70b2a23f9870eff5771c8f00353c2d0f1467b284a0e941e679",
+  "test_result_sha256": "d3cf3da59ab9b0da59efa63c3f5c448ef138be896b56dcd49b615b835b1b23eb"
+}

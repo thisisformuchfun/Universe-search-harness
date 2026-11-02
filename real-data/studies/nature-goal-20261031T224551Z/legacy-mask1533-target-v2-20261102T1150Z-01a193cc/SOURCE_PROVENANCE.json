@@ -1,0 +1,57 @@
+{
+  "created_utc": "2026-11-02T11:55:17.442078+00:00",
+  "scope": "control and one existing held-source DR9 mask; quality flags only",
+  "source_identifier": "1533365584518328576",
+  "sources": {
+    "control": {
+      "url": "https://portal.nersc.gov/cfs/cosmo/data/legacysurvey/dr9/north/coadd/154/1548p465/legacysurvey-1548p465-maskbits.fits.fz",
+      "started_utc": "2026-11-02T11:46:09.294840+00:00",
+      "finished_utc": "2026-11-02T11:46:10.010358+00:00",
+      "http_status": 200,
+      "curl_exit": 0,
+      "tls_verify_result": 0,
+      "redirects": 0,
+      "body_bytes": 264960,
+      "body_sha256": "e56b8a2e5fa37dc45d5f67a0ff07cf9d49a13ad6dc75c4ddf505650c6ac5f6bd",
+      "request_sha256": "1a2df1a9a8e59cba430f07c3e55bcbc8186ce86961f6372d77449e3567e24e40",
+      "native_record_sha256": "30074decf45b44bdc1927505adf191c935a859fcdb5ef4967662a8d6212aa947",
+      "terminal_result_sha256": "aeb73b53ee0b9211cbff308422509d9fb3259bd7aa9bb439c6bb3b01e465e370",
+      "finish_sha256": "a4cd5f7d86ed7d04ae6691d868918468172384560e2e70442b3874ae13313d80",
+      "headers_diagnostics": "local only; excluded from portable packaging"
+    },
+    "target": {
+      "url": "https://portal.nersc.gov/cfs/cosmo/data/legacysurvey/dr9/north/coadd/185/1857p410/legacysurvey-1857p410-maskbits.fits.fz",
+      "started_utc": "2026-11-02T11:52:08.442059+00:00",
+      "finished_utc": "2026-11-02T11:52:09.036953+00:00",
+      "http_status": 200,
+      "curl_exit": 0,
+      "tls_verify_result": 0,
+      "redirects": 0,
+      "body_bytes": 256320,
+      "body_sha256": "cd1409e6d636e7bfa284f16ca985adfb151ff81a6c384485bb0f8feea9a061c4",
+      "request_sha256": "fdbf017a7a8f14c085264b276c7519f3e2e12240257a9b66ab51c4443f49eec2",
+      "native_record_sha256": "8c2d1c362445e770fad34b5332eb3260fe2cbbaf9cfd584dde7d7a00f6260591",
+      "terminal_result_sha256": "decdc14df04a6162f50057691e3dd13c95dbcb6b735082affe6da544a5ff429c",
+      "finish_sha256": "3a8171405e6c13c99bdcddc6b17fc176011e24315fdd2e45dd2777aeffb46df5",
+      "headers_diagnostics": "local only; excluded from portable packaging"
+    }
+  },
+  "preceding_image_provenance_sha256": "60fdaa6a71537b7b38686a84515d6c637d6d65545e5b9eb61db8ab4f3b46f469",
+  "derived_artifacts_sha256": {
+    "MASK_HEADER_INVENTORY.json": "b40b0c400b227c1ba6f4f6dc7c289731d894962c01445ff0a6dcf9ff41a996eb",
+    "TARGET_MASK_WINDOWS.json": "0bc4c9cb0c4a5869c4044c0a54c22141ac76d7ea90ada32879efbc7f3a89c602",
+    "INDEPENDENT_SCIENCE_MASK_REVIEW.md": "d2f01e2c5b22a1133eb07e6da3bb0d123020376519f0380a50c9e0d6841ad316",
+    "INDEPENDENT_EXECUTION_CAPTURE_REVIEW.md": "ccc5ef833e9d8c136841b764afc3cdbc8ef9273c4368d075ee3605555fffc80a",
+    "REVIEW_QUEUE_V7.md": "eb3889c5125adca63f5449c78de85343bafd313f2d37e0ba324b7f58de451641",
+    "RUN_REPORT.md": "46a6c956fcef396c43cdf18d3540dab00b690099ca41867bab31e3e2d504af34",
+    "NEXT_ACTION.md": "39039ef7589ff4265b57febd993a555c6a998320ff55975567ba8131020521c8"
+  },
+  "limitations": [
+    "same processing as coadd; not independent photons",
+    "two WCS interpretations do not bound true positions",
+    "SATUR bits mean saturation in at least one input",
+    "mask bits do not prove cause of zero weight or an orbit",
+    "producer FITS checksums absent",
+    "holdout not evaluated"
+  ]
+}

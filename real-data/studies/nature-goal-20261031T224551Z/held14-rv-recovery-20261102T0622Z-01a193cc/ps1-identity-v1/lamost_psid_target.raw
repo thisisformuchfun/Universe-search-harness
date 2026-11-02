@@ -1,0 +1,2 @@
+objID,raMean,decMean,epochMean,qualityFlag,objInfoFlag,astrometryCorrectionFlag,nDetections,ng,nr,ni,gMeanPSFMag,gMeanPSFMagErr,gFlags,rMeanPSFMag,rMeanPSFMagErr,rFlags,iMeanPSFMag,iMeanPSFMagErr,iMeanPSFMagStd,iMeanPSFMagNpt,iFlags
+157061857151801289,185.71518099,40.88389641,56784.29064815,32,268959744,0,1,0,0,1,-999.0,-999.0,0,-999.0,-999.0,0,20.606800079345703,0.06439399719238281,-999.0,1,4120

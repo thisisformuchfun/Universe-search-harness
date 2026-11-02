@@ -1,0 +1,7 @@
+# Legacy DR9 mask-control result
+
+The documented 1548p465 north-brick mask file was retrieved once on 2026-11-02 at 11:46 UTC: HTTP 200, 264,960 bytes, SHA256 `e56b8a2e5fa37dc45d5f67a0ff07cf9d49a13ad6dc75c4ddf505650c6ac5f6bd`. TLS, redirect count, exact request, child exit and lease release passed [independent execution review](INDEPENDENT_EXECUTION_CAPTURE_REVIEW.md).
+
+Header-first inspection found optical `MASKBITS` as a 3600x3600 HCOMPRESS int16 image with 100x100 tiles. An independently examined 128x128 section contained only value 4096, the documented GALAXY bit; this is a nonzero format control, not a saturation control. No producer FITS CHECKSUM/DATASUM was present. The raw numerical image and mask pixel grids agree after offsets, but their header frame conventions lead Astropy to ICRS versus FK5 and a 0.01761-arcsec difference at the control. Exact physical registration and observation epochs remain unverified. See [header inventory](MASK_HEADER_INVENTORY.json), [frame comparison](MASK_FRAME_COMPARISON.json), [correction](MASK_WCS_CORRECTION.md), and [independent science review](INDEPENDENT_SCIENCE_CONTROL_REVIEW.md).
+
+The held-field mask was not part of this control. Any later target-mask analysis must preserve both mappings and sampled pixel unions; flags are survey quality context, not independent photons, evidence of a companion or an orbit, or a calibrated absence claim.

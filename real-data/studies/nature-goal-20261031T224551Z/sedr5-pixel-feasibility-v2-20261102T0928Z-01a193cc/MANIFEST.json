@@ -1,0 +1,10 @@
+{
+  "created_utc": "2026-11-02T09:30:08.739426+00:00",
+  "status": "PENDING_INDEPENDENT_REVIEW",
+  "scope": "descriptive arrays only, no RV fit or holdout",
+  "script_sha256": "404a0d3ebf2c411fdf5bd6056207bad7af0c2c243693978e57d9885008ea7b09",
+  "protocol_sha256": "a706111d6020e6ca17ea8c55181eecb54eb01ac7be6b136553eca8a6e8fb23e4",
+  "test_sha256": "961539289eecdb28698846c1d062157e9ab1c7b194c8865197d31462f2cb7fa6",
+  "test_result_sha256": "c055ad40571c0e5be5b95d623af43b3b8e3485592f71534521986bd610e6b4a8",
+  "product_sha256": "7a33d6a4ff8594c33b43181309bc5ad4e0739e6245943e06ba099172d04742de"
+}

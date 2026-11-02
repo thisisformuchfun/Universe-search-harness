@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VOTABLE xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="xmlns:http://www.ivoa.net/xml/VOTable-1.2.xsd" version="1.2">
+<RESOURCE type="results">
+<DESCRIPTION>DALServer TAP Query</DESCRIPTION>
+<INFO name="QUERY_STATUS" value="OK"/>
+<INFO name="QUERY" value="SELECT TOP 20 x.id1 AS x_specobjid,x.id2 AS gaia_source_id,x.ra1,x.dec1,x.ra2,x.dec2,x.distance,s.specobjid AS s_specobjid,s.plate,s.mjd,s.fiberid,s.ra AS fiber_ra,s.dec AS fiber_dec,s.run2d FROM sdss_dr17.x1p5__specobj__gaia_dr3__gaia_source AS x JOIN sdss_dr17.specobj AS s ON x.id1=s.specobjid WHERE x.id2=1607896637338835712 AND x.id2=0 ORDER BY x.id1"/>
+<INFO name="TableRows" value="0"/>
+<TABLE>
+<FIELD ID="x_specobjid" name="x_specobjid" datatype="long" ucd="meta.id;meta.main">
+<DESCRIPTION>ID in left/first table (specobjid)</DESCRIPTION>
+</FIELD>
+<FIELD ID="gaia_source_id" name="gaia_source_id" datatype="long" ucd="meta.id;meta.main">
+<DESCRIPTION>ID in right/second table (source_id)</DESCRIPTION>
+</FIELD>
+<FIELD ID="ra1" name="ra1" datatype="double" ucd="pos.eq.ra;meta.main">
+<DESCRIPTION>Right ascension in left/first table (ra)</DESCRIPTION>
+</FIELD>
+<FIELD ID="dec1" name="dec1" datatype="double" ucd="pos.eq.dec;meta.main">
+<DESCRIPTION>Declination in left/first table (dec)</DESCRIPTION>
+</FIELD>
+<FIELD ID="ra2" name="ra2" datatype="double" ucd="pos.eq.ra;meta.main">
+<DESCRIPTION>Right ascension in right/second table (ra)</DESCRIPTION>
+</FIELD>
+<FIELD ID="dec2" name="dec2" datatype="double" ucd="pos.eq.dec;meta.main">
+<DESCRIPTION>Declination in right/second table (dec)</DESCRIPTION>
+</FIELD>
+<FIELD ID="distance" name="distance" datatype="double" ucd="pos.angDistance">
+<DESCRIPTION>Distance between ra1,dec1 and ra2,dec2 (arcsec)</DESCRIPTION>
+</FIELD>
+<FIELD ID="s_specobjid" name="s_specobjid" datatype="long" ucd="meta.id;src">
+<DESCRIPTION>Unique database ID based on PLATE, MJD, FIBERID, RUN2D</DESCRIPTION>
+</FIELD>
+<FIELD ID="plate" name="plate" datatype="short">
+<DESCRIPTION>Plate number</DESCRIPTION>
+</FIELD>
+<FIELD ID="mjd" name="mjd" datatype="int" unit="days">
+<DESCRIPTION>MJD of observation</DESCRIPTION>
+</FIELD>
+<FIELD ID="fiberid" name="fiberid" datatype="short">
+<DESCRIPTION>Fiber ID</DESCRIPTION>
+</FIELD>
+<FIELD ID="fiber_ra" name="fiber_ra" datatype="double" ucd="pos.eq.ra;meta.main" unit="deg">
+<DESCRIPTION>Right ascension of fiber, J2000</DESCRIPTION>
+</FIELD>
+<FIELD ID="fiber_dec" name="fiber_dec" datatype="double" ucd="pos.eq.dec;meta.main" unit="deg">
+<DESCRIPTION>Declination of fiber, J2000</DESCRIPTION>
+</FIELD>
+<FIELD ID="run2d" name="run2d" datatype="char" arraysize="32">
+<DESCRIPTION>2D Reduction version of spectrum</DESCRIPTION>
+</FIELD>
+<DATA>
+<TABLEDATA>
+</TABLEDATA>
+</DATA>
+</TABLE>
+</RESOURCE>
+</VOTABLE>

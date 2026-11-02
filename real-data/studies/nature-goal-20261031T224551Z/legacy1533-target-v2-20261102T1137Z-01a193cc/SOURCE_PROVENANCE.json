@@ -1,0 +1,64 @@
+{
+  "created_utc": "2026-11-02T11:42:12.072004+00:00",
+  "scope": "one published control and one existing held Gaia field; no new orbit or science policy",
+  "source_identifier": "1533365584518328576",
+  "sources": {
+    "control": {
+      "url": "https://www.legacysurvey.org/viewer/fits-cutout?ra=154.7709&dec=46.4537&layer=ls-dr9-north&pixscale=0.262&bands=grz&size=128&subimage&invvar",
+      "started_utc": "2026-11-02T11:32:28.354870+00:00",
+      "finished_utc": "2026-11-02T11:32:29.373313+00:00",
+      "http_status": 200,
+      "curl_exit": 0,
+      "tls_verify_result": 0,
+      "redirects": 0,
+      "body_bytes": 417600,
+      "body_sha256": "033df85a32f94a79932af1e15d29d9804f77362c64dc4ae8b63a16bc4ba4edf9",
+      "request_sha256": "9f535028b062e5d629ede317c0953355a83b1bcad3113773067d46d41798320f",
+      "native_record_sha256": "43b6941713eb883af490bdebabbe5f01a6d96b79671d7f62a0c8fb9e256314a5",
+      "terminal_result_sha256": "0df5fb4db4c6bdcfabf25b6368cf675470558feb83f4333117416b5da7b7878a",
+      "finish_sha256": "4763e901083850ea0c815c12b520367138d52eb8f287d60b044223a5e478890a",
+      "headers_diagnostics": "local only; excluded from portable packaging"
+    },
+    "target": {
+      "url": "https://www.legacysurvey.org/viewer/fits-cutout?ra=185.71462554756414&dec=40.88393733581962&layer=ls-dr9-north&pixscale=0.262&bands=grz&size=192&subimage&invvar",
+      "started_utc": "2026-11-02T11:38:22.101587+00:00",
+      "finished_utc": "2026-11-02T11:38:38.619143+00:00",
+      "http_status": 200,
+      "curl_exit": 0,
+      "tls_verify_result": 0,
+      "redirects": 0,
+      "body_bytes": 1195200,
+      "body_sha256": "eb89b9c44c2e1c8273f901c2269c90c2f9cdfa2784644d05175719749addc2af",
+      "request_sha256": "e2d17f6f174b3d2f80fff4736ed353ecb54a9b7fcba2a6898fba806a23ab3838",
+      "native_record_sha256": "040bb40c6ed895f267d03464a3792941a9df88663d8f84250c4d05648e2619aa",
+      "terminal_result_sha256": "ca1531d8391f01a206c7bd3a415f57c7aec673ee484e0104a5b2377023ca0414",
+      "finish_sha256": "ea11cf24c66924ee8fe3a2d8e10d8c69506349a6388daa6c23543c2fcbdfa79a",
+      "headers_diagnostics": "local only; excluded from portable packaging"
+    }
+  },
+  "derived_artifacts_sha256": {
+    "TARGET_FITS_INVENTORY.json": "a8cf0651e48eaa442d06388f0ac6cf212a2f04eca7a6b6c0958d161289f64d28",
+    "LOCAL_WEIGHT_COUNTS.json": "bb7c7367998d3d190f27be389202be75d3c3567f1df6ddcb16433e8766cd8c22",
+    "INDEPENDENT_SCIENCE_FITS_REVIEW.md": "856ad4c56721d806be8deef35c321246ff26e1c3309b8b134de13a2d0bd99e9c",
+    "INDEPENDENT_EXECUTION_CAPTURE_REVIEW.md": "fd182e36305f2363c93a289456b5d654bc955e1e93465fbced61dfc01fe871e4",
+    "REVIEW_QUEUE_V6.md": "36cbfe45d95210ce2944fa05a1ef8abe9e4e819bfa969240233e5ad4219131e3",
+    "RUN_REPORT.md": "d522d757363126c80ae2d7fffd78de4dad97585ad5af9878a72caac8d45bfd4d",
+    "NEXT_ACTION.md": "5963ad81ffd19afbea0d889dc40563dfd233cfbc3c37ba6ccbde0385a2182985"
+  },
+  "limitations": [
+    "coadd images, not epoch RVs",
+    "zero z weights at primary and bright neighbor",
+    "quality mask and PSF not supplied",
+    "Gaia/PS1 calibration dependence",
+    "historical holdout quarantined and not evaluated"
+  ],
+  "resource_sample": {
+    "visible_ram_gib": 63.15,
+    "free_ram_gib": 44.08,
+    "gpu": "NVIDIA GeForce RTX 4090",
+    "gpu_total_mib": 24564,
+    "gpu_used_mib": 0,
+    "driver": "610.88",
+    "interpretation": "instantaneous, not peak"
+  }
+}

@@ -1,0 +1,151 @@
+{
+  "created_utc": "2026-11-02T08:48:32.102607+00:00",
+  "scope": "metadata only; no spectral fit, RV estimate, orbit or release decision",
+  "inputs": {
+    "sedr5_sha256": "7a33d6a4ff8594c33b43181309bc5ad4e0739e6245943e06ba099172d04742de",
+    "dr6_sha256": "2bfdfe2b133b1f5d9f880ae81be5002b48b7eb89cb8c45f538e048542cc32e06",
+    "protocol_sha256": "97c8cbff9b3c8f256f9f0dcb93f93b3ccfc7c37da4d3c0c5c7efb6144fcf416c",
+    "script_sha256": "4b9bef75f4e93c918b0f9cd803d925969149ae91e90c75502065a346e8bcb8fa"
+  },
+  "python": "3.11.4",
+  "astropy": "7.1.1",
+  "product_hdu_types": [
+    "PrimaryHDU",
+    "BinTableHDU",
+    "BinTableHDU",
+    "BinTableHDU"
+  ],
+  "provider_prose_format": "documentation describes ASCII table extensions; actual inspected extensions are binary tables",
+  "comparison": {
+    "PLANID": {
+      "sedr5": "HD122456N425117B01",
+      "dr6": "HD122456N425117B01",
+      "equal": true
+    },
+    "SPID": {
+      "sedr5": 1,
+      "dr6": 1,
+      "equal": true
+    },
+    "FIBERID": {
+      "sedr5": 37,
+      "dr6": 37,
+      "equal": true
+    },
+    "RA": {
+      "sedr5": 185.714633,
+      "dr6": 185.714633,
+      "equal": true
+    },
+    "DEC": {
+      "sedr5": 40.883936,
+      "dr6": 40.883936,
+      "equal": true
+    },
+    "RADECSYS": {
+      "sedr5": "FK5",
+      "dr6": "FK5",
+      "equal": true
+    },
+    "EQUINOX": {
+      "sedr5": 2000.0,
+      "dr6": 2000.0,
+      "equal": true
+    },
+    "DATE-BEG": {
+      "sedr5": "2015-01-09T04:44:35.0",
+      "dr6": "2015-01-09T04:44:35.0",
+      "equal": true
+    },
+    "DATE-END": {
+      "sedr5": "2015-01-09T06:06:16.0",
+      "dr6": "2015-01-09T06:06:16.0",
+      "equal": true
+    }
+  },
+  "sedr5_extension1_obsid_header": null,
+  "dr6_primary_obsid_header": 294101037,
+  "frames": [
+    {
+      "mjm": "82124924",
+      "arm": "b",
+      "exposure_seconds": 1500.0,
+      "fiber_mask": 0,
+      "nominal_local_minute_label": "2015-01-09T04:44:00+08:00",
+      "nominal_utc_minute_label": "2015-01-08T20:44:00+00:00"
+    },
+    {
+      "mjm": "82124952",
+      "arm": "b",
+      "exposure_seconds": 1500.0,
+      "fiber_mask": 0,
+      "nominal_local_minute_label": "2015-01-09T05:12:00+08:00",
+      "nominal_utc_minute_label": "2015-01-08T21:12:00+00:00"
+    },
+    {
+      "mjm": "82124981",
+      "arm": "b",
+      "exposure_seconds": 1500.0,
+      "fiber_mask": 0,
+      "nominal_local_minute_label": "2015-01-09T05:41:00+08:00",
+      "nominal_utc_minute_label": "2015-01-08T21:41:00+00:00"
+    },
+    {
+      "mjm": "82124924",
+      "arm": "r",
+      "exposure_seconds": 1500.0,
+      "fiber_mask": 0,
+      "nominal_local_minute_label": "2015-01-09T04:44:00+08:00",
+      "nominal_utc_minute_label": "2015-01-08T20:44:00+00:00"
+    },
+    {
+      "mjm": "82124952",
+      "arm": "r",
+      "exposure_seconds": 1500.0,
+      "fiber_mask": 0,
+      "nominal_local_minute_label": "2015-01-09T05:12:00+08:00",
+      "nominal_utc_minute_label": "2015-01-08T21:12:00+00:00"
+    },
+    {
+      "mjm": "82124981",
+      "arm": "r",
+      "exposure_seconds": 1500.0,
+      "fiber_mask": 0,
+      "nominal_local_minute_label": "2015-01-09T05:41:00+08:00",
+      "nominal_utc_minute_label": "2015-01-08T21:41:00+00:00"
+    }
+  ],
+  "time_interpretation": "nominal labels assume UTC+08, uniform 1,440-minute days and no leap-second modeling; exact start, accuracy and quantization are not established",
+  "sedr5_date_obs": {
+    "value": "2015-01-08T21:09:35.80",
+    "comment": "UTC date and time at the start of observati"
+  },
+  "dr6_date_obs": {
+    "value": "2015-01-08T21:25:00",
+    "comment": "The observation median UTC"
+  },
+  "sedr5_date_beg": {
+    "value": "2015-01-09T04:44:35.0",
+    "comment": "Local time at the start of observation"
+  },
+  "sedr5_date_obs_minus_local_begin_as_utc_seconds": 1500.8,
+  "conditional_time_interpretation": "DATE-OBS is treated as UTC and DATE-BEG as UTC+08 only for this comparison; discrepancy is not corrected",
+  "sedr5_mjd": {
+    "value": 57030,
+    "comment": "Local Modified Julian day"
+  },
+  "local_begin_calendar_mjd_day": 57031,
+  "local_mjd_label_discrepancy": "unresolved; no automatic correction",
+  "dr6_mjd": 57030,
+  "dr6_lmjd": 57031,
+  "dr6_reported_exposure_counts": {
+    "NEXP": 1,
+    "NEXP_B": 3,
+    "NEXP_R": 1
+  },
+  "interpretation_limits": [
+    "matching metadata do not establish retained DR6 contributors or independent photons",
+    "catalogue coordinates do not prove the Gaia source supplied all fibre light",
+    "same-night arms are not independent nights or an orbit"
+  ]
+}

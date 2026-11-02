@@ -1,0 +1,45 @@
+{
+  "created_utc": "2026-11-02T06:32:48.412723+00:00",
+  "script_sha256": "4d27e93cd55258fedb3b7f9bee532af317d17ee34d2e00f1339912691994e1c2",
+  "input_pins": {
+    "C:\\gogogo\\universe search harness\\blackhole search\\astra-20261031T2113Z-01a193cc\\studies\\nature-goal-20261031T224551Z\\hst-fixed-point-control-tools\\native_transport.py": "80aed571bb16a274b61264d2f61a9425fd528a99777353e48d30e9e8c7205087",
+    "C:\\gogogo\\universe search harness\\blackhole search\\astra-20261031T2113Z-01a193cc\\studies\\nature-goal-20261031T224551Z\\lamost-dr12-held14-context\\prepared-v2-20261101T002111Z\\original14_catalogue.parsed.json": "abd2483f5837edb076a4d7d0bfd89b44163bf4cd88261b6815e6b83717e07e97",
+    "C:\\gogogo\\universe search harness\\blackhole search\\astra-20261031T2113Z-01a193cc\\studies\\nature-goal-20261031T224551Z\\ps1-held224-context-20261101\\DETAILED_REVIEW_V3.json": "0679444206c6b76f90354598eedaca9499fc99bbd66f04a143f135f78de79ada",
+    "C:\\gogogo\\universe search harness\\blackhole search\\astra-20261031T2113Z-01a193cc\\studies\\nature-goal-20261031T224551Z\\ps1-held224-context-20261101\\capture\\metadata.raw": "50306ef42d8c4b43ef629e5856c1d0b51b7ee346c92dad6d12548b9ff6d1f1fe",
+    "C:\\gogogo\\universe search harness\\blackhole search\\astra-20261031T2113Z-01a193cc\\studies\\nature-goal-20261031T224551Z\\held14-checkpoint52-v3\\CHECKPOINT_STATE.json": "74adc299f3adedcbdeb4645a6f31d900c3007528d6206ef598734c1f8516a63b"
+  },
+  "requests": [
+    {
+      "name": "known_control",
+      "objID": "186013076210907350",
+      "method": "GET",
+      "url": "https://catalogs.mast.stsci.edu/api/v0.1/panstarrs/dr2/mean.csv?objID=186013076210907350&pagesize=2&columns=%5BobjID%2CraMean%2CdecMean%2CepochMean%2CqualityFlag%2CobjInfoFlag%2CastrometryCorrectionFlag%2CnDetections%2Cng%2Cnr%2Cni%2CgMeanPSFMag%2CgMeanPSFMagErr%2CgFlags%2CrMeanPSFMag%2CrMeanPSFMagErr%2CrFlags%2CiMeanPSFMag%2CiMeanPSFMagErr%2CiMeanPSFMagStd%2CiMeanPSFMagNpt%2CiFlags%5D",
+      "follow_returned_URLs": false
+    },
+    {
+      "name": "lamost_psid_target",
+      "objID": "157061857151801289",
+      "method": "GET",
+      "url": "https://catalogs.mast.stsci.edu/api/v0.1/panstarrs/dr2/mean.csv?objID=157061857151801289&pagesize=2&columns=%5BobjID%2CraMean%2CdecMean%2CepochMean%2CqualityFlag%2CobjInfoFlag%2CastrometryCorrectionFlag%2CnDetections%2Cng%2Cnr%2Cni%2CgMeanPSFMag%2CgMeanPSFMagErr%2CgFlags%2CrMeanPSFMag%2CrMeanPSFMagErr%2CrFlags%2CiMeanPSFMag%2CiMeanPSFMagErr%2CiMeanPSFMagStd%2CiMeanPSFMagNpt%2CiFlags%5D",
+      "follow_returned_URLs": false
+    }
+  ],
+  "hypothesis": "The DR12 ps_id value might identify a PS1 object whose mean-row coordinates/photometry clarify the apparent PS i versus Gaia G discrepancy for the already held source.",
+  "success": "Known control returns its prior exact PS1 object and i magnitude, then target ID returns one exact row; blank or sentinel quality/photometry fields remain unknown.",
+  "stop": "Stop immediately if the control fails, any HTTP/TLS/CSV check fails, or after the two exact-key requests. Do not query neighbors or retry.",
+  "limits": {
+    "requests_max": 2,
+    "body_bytes_each": 1000000,
+    "body_bytes_total_max": 2000000,
+    "acquisition_loop_seconds": 80,
+    "minimum_delay_after_previous_completion_seconds": 2.25,
+    "redirects": 0,
+    "retries": 0,
+    "concurrency": 1,
+    "polling_and_owned_process_cleanup_overshoot_possible": true,
+    "deadline_anchor": "after input verification, claim creation and transport module loading"
+  },
+  "limitations": "DR12 ps_id/photometric estimator lineage is unverified; cross-survey bands and epochs differ. Close positions and flags cannot prove identity, attribution, contamination, or an orbit.",
+  "no_spectrum_fitting_ranking_release_or_holdout": true,
+  "documentation": "https://catalogs.mast.stsci.edu/docs/panstarrs.html"
+}

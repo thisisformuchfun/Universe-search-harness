@@ -1,0 +1,46 @@
+{
+  "started_utc": "2026-11-02T10:44:39.755625+00:00",
+  "request": {
+    "name": "table",
+    "method": "GET",
+    "url": "https://content.cld.iop.org/journals/0004-637X/1010/2/216/revision1/apjaeaa3at2_mrt.txt",
+    "manifest_sha256": "e6ddcdc47660910ba3eaa79e4438f032c7945f13fd32cadd1dace636abeae33a",
+    "protocol_sha256": "0c19b737023d7a5a174c16ee58972cb0aa3bda0781ad9bb8b0481d3778948234",
+    "expected_link": null,
+    "response_policy": "no redirects, no retries; native evidence local only"
+  },
+  "command": [
+    "C:/Windows/System32/curl.exe",
+    "--disable",
+    "--proto",
+    "=https",
+    "--connect-timeout",
+    "15",
+    "--max-time",
+    "45",
+    "--max-filesize",
+    "2000000",
+    "--silent",
+    "--show-error",
+    "--dump-header",
+    "C:\\gogogo\\universe search harness\\blackhole search\\astra-20261031T2113Z-01a193cc\\studies\\nature-goal-20261031T224551Z\\zhou-mrt-20261102T1041Z-01a193cc\\capture-v9\\table.headers",
+    "--output",
+    "C:\\gogogo\\universe search harness\\blackhole search\\astra-20261031T2113Z-01a193cc\\studies\\nature-goal-20261031T224551Z\\zhou-mrt-20261102T1041Z-01a193cc\\capture-v9\\table.raw",
+    "--write-out",
+    "%{http_code}\n%{ssl_verify_result}\n%{size_download}\n%{num_redirects}\n%{url_effective}\n",
+    "--url",
+    "https://content.cld.iop.org/journals/0004-637X/1010/2/216/revision1/apjaeaa3at2_mrt.txt"
+  ],
+  "limits": {
+    "body_bytes": 2000000,
+    "header_bytes": 65536,
+    "stdout_bytes": 4096,
+    "stderr_bytes": 262144,
+    "curl_seconds": 45,
+    "process_seconds": 48,
+    "poll_seconds": 0.02,
+    "owned_process_cleanup_seconds": 2
+  },
+  "batch_deadline_ns": 51355390054100,
+  "effective_curl_seconds": 45
+}

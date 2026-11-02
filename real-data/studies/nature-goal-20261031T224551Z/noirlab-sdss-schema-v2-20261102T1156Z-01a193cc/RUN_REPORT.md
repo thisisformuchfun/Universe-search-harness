@@ -1,0 +1,7 @@
+# NOIRLab SDSS DR17 schema and control chain
+
+The public NOIRLab TAP schema request returned HTTP 200 and a 3,858-byte VOTable, SHA256 `86def01aba2baa9ef9263b7477c9c7efed6cec611ad164caf29b066052903b23`. Independent reviewers verified QUERY_STATUS OK, exact query echo, 18 unique rows and no overflow. It describes crossmatch `id1` as SDSS `specobjid` and `id2` as Gaia `source_id`, both BIGINT; the distance description says arcseconds while its unit cell is blank. The [V3 fixed-fixture inventory](SCHEMA_INVENTORY_V3.json) and [independent parser review](INDEPENDENT_PARSER_REVIEW.md) document a narrowly scoped reader, not a reusable general VOTable validator.
+
+The separate [published non-held positive](../noirlab-sdss-positive-v3-20261102T1205Z-01a193cc/INDEPENDENT_SCIENCE_CONTROL_REVIEW.md) recovered the exact Gaia and SDSS plate/MJD/fibre tuple. The [forced-empty control](../noirlab-sdss-empty-20261102T1210Z-01a193cc/INDEPENDENT_SCIENCE_CONTROL_REVIEW.md) returned explicit zero TABLEDATA rows with the same 14 fields and no overflow. Since the contradictory query can be optimized, this checks empty serialization, not join execution or source coverage. The provider describes a nearest-neighbor 1.5-arcsec crossmatch and a clean `specobj` view; neither is an exhaustive source or epoch census.
+
+These controls contain no held-source observation result, calibrated RV or discovery. The original-14 query, if subsequently performed, has its own protocol, evidence and review. No ranking, release or scientific holdout policy changed.

@@ -1,0 +1,21 @@
+{
+  "created_utc": "2026-11-02T12:13:16.038026+00:00",
+  "input_sha256": "8a389807a54877647888c99308b49c539e134a9a4a1e68921d9a270e5d1b9d3e",
+  "query_sha256": "fb7d5e6a5b0c6317d2973f95cf9afa7b6760d76f59ad7d5069036da98df83717",
+  "evidence_pins": {
+    "query": "fb7d5e6a5b0c6317d2973f95cf9afa7b6760d76f59ad7d5069036da98df83717",
+    "protocol": "28322ad11d7604aafbc68a22076bf19a85c49ce6cabfa2fcaf6e217e1717cea5",
+    "raw": "8a389807a54877647888c99308b49c539e134a9a4a1e68921d9a270e5d1b9d3e",
+    "request": "5f84f9d51e8d3c8dea4d3f21c053e47daa5e3af76e5c902f9c616d7ea734140f",
+    "native": "5903728cec5e77ba9b0fff1e7d76fe647d917b9069dfe17aacf16bbf0f4b6e4f",
+    "result": "c80cf635080b26d22514708193564846b8a41f4786bd69f49c35f1c81f323a21",
+    "finish": "738987fcaa4fb0ae585078d7e61feced161085c836348934282f5a497f96b957",
+    "positive_raw": "4a2ca013b79bbe7bd1d57286f7504554f640139034c8f1e2dce35183a7f809f5"
+  },
+  "result": {
+    "status": "PASS_FIXED_EMPTY_SERIALIZATION",
+    "row_count": 0,
+    "fields_match_positive": true,
+    "scope": "contradictory predicate may bypass join; no source coverage conclusion"
+  }
+}

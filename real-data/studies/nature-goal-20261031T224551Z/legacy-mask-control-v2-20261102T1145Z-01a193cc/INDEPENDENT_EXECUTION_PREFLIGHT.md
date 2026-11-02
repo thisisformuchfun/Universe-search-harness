@@ -1,0 +1,3 @@
+# Independent execution preflight
+
+On 2026-11-02 UTC `/root/ps1_execution_review` accepted exactly the one fixed control-brick mask GET. Manifest SHA256 `4336210267cd13a7d18507ff8fd870969ad0c887ed52903f9675097754acf63b` and all 12 pins matched; code/tests matched the previously examined version and the protocol now explicitly says anonymous access to the exact file is unverified. The validated prior image-control prerequisites, 1548p465-only URL, custody, idle coordination and absent lock/capture checks passed. The reviewer counted but did not rerun the 16 filesystem-using tests; the local run passed. Any response is transport-only until independently reviewed compressed-FITS/optical-mask/WCS checks; the control does not request a held-field mask.

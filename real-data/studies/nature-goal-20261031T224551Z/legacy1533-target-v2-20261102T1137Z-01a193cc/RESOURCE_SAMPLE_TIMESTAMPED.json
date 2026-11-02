@@ -1,0 +1,14 @@
+{
+  "sample_utc": "2026-11-02T11:45:07.5759045Z",
+  "total_visible_memory_kib": 66212484,
+  "free_physical_memory_kib": 45968420,
+  "gpu_name": "NVIDIA GeForce RTX 4090",
+  "gpu_total_mib": 24564,
+  "gpu_used_mib": 0,
+  "driver": "610.88",
+  "interpretation": "point-in-time sample, not a peak",
+  "commands": [
+    "Get-CimInstance Win32_OperatingSystem",
+    "nvidia-smi --query-gpu=name,memory.total,memory.used,driver_version --format=csv,noheader,nounits"
+  ]
+}

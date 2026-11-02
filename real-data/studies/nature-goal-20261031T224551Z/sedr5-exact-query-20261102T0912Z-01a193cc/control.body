@@ -1,0 +1,371 @@
+--astra-sedr5-01a193cc-boundary
+Content-Disposition: form-data; name="pos.ramin"
+
+
+--astra-sedr5-01a193cc-boundary
+Content-Disposition: form-data; name="pos.decmin"
+
+
+--astra-sedr5-01a193cc-boundary
+Content-Disposition: form-data; name="pos.ramax"
+
+
+--astra-sedr5-01a193cc-boundary
+Content-Disposition: form-data; name="pos.decmax"
+
+
+--astra-sedr5-01a193cc-boundary
+Content-Disposition: form-data; name="pos.cra"
+
+0.0
+--astra-sedr5-01a193cc-boundary
+Content-Disposition: form-data; name="pos.cdec"
+
+0.0
+--astra-sedr5-01a193cc-boundary
+Content-Disposition: form-data; name="pos.cradius"
+
+0.0
+--astra-sedr5-01a193cc-boundary
+Content-Disposition: form-data; name="pos.postextarea"
+
+#ra,dec,sep
+
+--astra-sedr5-01a193cc-boundary
+Content-Disposition: form-data; name="pos.posfile"; filename=""
+Content-Type: application/octet-stream
+
+
+--astra-sedr5-01a193cc-boundary
+Content-Disposition: form-data; name="pos.defaultradius"
+
+2
+--astra-sedr5-01a193cc-boundary
+Content-Disposition: form-data; name="pos.type"
+
+none
+--astra-sedr5-01a193cc-boundary
+Content-Disposition: form-data; name="showcolcheck"
+
+
+--astra-sedr5-01a193cc-boundary
+Content-Disposition: form-data; name="showcol"
+
+sexprv.specid
+--astra-sedr5-01a193cc-boundary
+Content-Disposition: form-data; name="sexprv.specid.char"
+
+
+--astra-sedr5-01a193cc-boundary
+Content-Disposition: form-data; name="showcol"
+
+sexprv.obsdate
+--astra-sedr5-01a193cc-boundary
+Content-Disposition: form-data; name="sexprv.obsdate.min"
+
+
+--astra-sedr5-01a193cc-boundary
+Content-Disposition: form-data; name="sexprv.obsdate.max"
+
+
+--astra-sedr5-01a193cc-boundary
+Content-Disposition: form-data; name="showcol"
+
+sexprv.planid
+--astra-sedr5-01a193cc-boundary
+Content-Disposition: form-data; name="sexprv.planid.char"
+
+
+--astra-sedr5-01a193cc-boundary
+Content-Disposition: form-data; name="showcol"
+
+sexprv.spid
+--astra-sedr5-01a193cc-boundary
+Content-Disposition: form-data; name="sexprv.spid.min"
+
+
+--astra-sedr5-01a193cc-boundary
+Content-Disposition: form-data; name="sexprv.spid.max"
+
+
+--astra-sedr5-01a193cc-boundary
+Content-Disposition: form-data; name="showcol"
+
+sexprv.fiberid
+--astra-sedr5-01a193cc-boundary
+Content-Disposition: form-data; name="sexprv.fiberid.min"
+
+
+--astra-sedr5-01a193cc-boundary
+Content-Disposition: form-data; name="sexprv.fiberid.max"
+
+
+--astra-sedr5-01a193cc-boundary
+Content-Disposition: form-data; name="showcol"
+
+sexprv.iexp
+--astra-sedr5-01a193cc-boundary
+Content-Disposition: form-data; name="sexprv.iexp.min"
+
+
+--astra-sedr5-01a193cc-boundary
+Content-Disposition: form-data; name="sexprv.iexp.max"
+
+
+--astra-sedr5-01a193cc-boundary
+Content-Disposition: form-data; name="showcol"
+
+sexprv.mjm
+--astra-sedr5-01a193cc-boundary
+Content-Disposition: form-data; name="sexprv.mjm.char"
+
+
+--astra-sedr5-01a193cc-boundary
+Content-Disposition: form-data; name="showcol"
+
+sexprv.sng
+--astra-sedr5-01a193cc-boundary
+Content-Disposition: form-data; name="sexprv.sng.min"
+
+
+--astra-sedr5-01a193cc-boundary
+Content-Disposition: form-data; name="sexprv.sng.max"
+
+
+--astra-sedr5-01a193cc-boundary
+Content-Disposition: form-data; name="showcol"
+
+sexprv.sni
+--astra-sedr5-01a193cc-boundary
+Content-Disposition: form-data; name="sexprv.sni.min"
+
+
+--astra-sedr5-01a193cc-boundary
+Content-Disposition: form-data; name="sexprv.sni.max"
+
+
+--astra-sedr5-01a193cc-boundary
+Content-Disposition: form-data; name="showcol"
+
+sexprv.subclass
+--astra-sedr5-01a193cc-boundary
+Content-Disposition: form-data; name="sexprv.subclass.char"
+
+
+--astra-sedr5-01a193cc-boundary
+Content-Disposition: form-data; name="showcol"
+
+sexprv.rv
+--astra-sedr5-01a193cc-boundary
+Content-Disposition: form-data; name="sexprv.rv.min"
+
+
+--astra-sedr5-01a193cc-boundary
+Content-Disposition: form-data; name="sexprv.rv.max"
+
+
+--astra-sedr5-01a193cc-boundary
+Content-Disposition: form-data; name="showcol"
+
+sexprv.rverr
+--astra-sedr5-01a193cc-boundary
+Content-Disposition: form-data; name="sexprv.rverr.min"
+
+
+--astra-sedr5-01a193cc-boundary
+Content-Disposition: form-data; name="sexprv.rverr.max"
+
+
+--astra-sedr5-01a193cc-boundary
+Content-Disposition: form-data; name="showcol"
+
+sexprv.rvpa
+--astra-sedr5-01a193cc-boundary
+Content-Disposition: form-data; name="sexprv.rvpa.min"
+
+
+--astra-sedr5-01a193cc-boundary
+Content-Disposition: form-data; name="sexprv.rvpa.max"
+
+
+--astra-sedr5-01a193cc-boundary
+Content-Disposition: form-data; name="showcol"
+
+sexprv.teff
+--astra-sedr5-01a193cc-boundary
+Content-Disposition: form-data; name="sexprv.teff.min"
+
+
+--astra-sedr5-01a193cc-boundary
+Content-Disposition: form-data; name="sexprv.teff.max"
+
+
+--astra-sedr5-01a193cc-boundary
+Content-Disposition: form-data; name="showcol"
+
+sexprv.logg
+--astra-sedr5-01a193cc-boundary
+Content-Disposition: form-data; name="sexprv.logg.min"
+
+
+--astra-sedr5-01a193cc-boundary
+Content-Disposition: form-data; name="sexprv.logg.max"
+
+
+--astra-sedr5-01a193cc-boundary
+Content-Disposition: form-data; name="showcol"
+
+sexprv.feh
+--astra-sedr5-01a193cc-boundary
+Content-Disposition: form-data; name="sexprv.feh.min"
+
+
+--astra-sedr5-01a193cc-boundary
+Content-Disposition: form-data; name="sexprv.feh.max"
+
+
+--astra-sedr5-01a193cc-boundary
+Content-Disposition: form-data; name="showcol"
+
+sexprv.minchi2
+--astra-sedr5-01a193cc-boundary
+Content-Disposition: form-data; name="sexprv.minchi2.min"
+
+
+--astra-sedr5-01a193cc-boundary
+Content-Disposition: form-data; name="sexprv.minchi2.max"
+
+
+--astra-sedr5-01a193cc-boundary
+Content-Disposition: form-data; name="showcol"
+
+sexprv.npix
+--astra-sedr5-01a193cc-boundary
+Content-Disposition: form-data; name="sexprv.npix.min"
+
+
+--astra-sedr5-01a193cc-boundary
+Content-Disposition: form-data; name="sexprv.npix.max"
+
+
+--astra-sedr5-01a193cc-boundary
+Content-Disposition: form-data; name="showcol"
+
+sexprv.nabsline
+--astra-sedr5-01a193cc-boundary
+Content-Disposition: form-data; name="sexprv.nabsline.min"
+
+
+--astra-sedr5-01a193cc-boundary
+Content-Disposition: form-data; name="sexprv.nabsline.max"
+
+
+--astra-sedr5-01a193cc-boundary
+Content-Disposition: form-data; name="showcol"
+
+sexprv.fratio
+--astra-sedr5-01a193cc-boundary
+Content-Disposition: form-data; name="sexprv.fratio.min"
+
+
+--astra-sedr5-01a193cc-boundary
+Content-Disposition: form-data; name="sexprv.fratio.max"
+
+
+--astra-sedr5-01a193cc-boundary
+Content-Disposition: form-data; name="showcol"
+
+sexprv.fratio_b
+--astra-sedr5-01a193cc-boundary
+Content-Disposition: form-data; name="sexprv.fratio_b.min"
+
+
+--astra-sedr5-01a193cc-boundary
+Content-Disposition: form-data; name="sexprv.fratio_b.max"
+
+
+--astra-sedr5-01a193cc-boundary
+Content-Disposition: form-data; name="showcol"
+
+sexprv.fratio_r
+--astra-sedr5-01a193cc-boundary
+Content-Disposition: form-data; name="sexprv.fratio_r.min"
+
+
+--astra-sedr5-01a193cc-boundary
+Content-Disposition: form-data; name="sexprv.fratio_r.max"
+
+
+--astra-sedr5-01a193cc-boundary
+Content-Disposition: form-data; name="showcol"
+
+sexprv.obsid
+--astra-sedr5-01a193cc-boundary
+Content-Disposition: form-data; name="sexprv.obsid.min"
+
+
+--astra-sedr5-01a193cc-boundary
+Content-Disposition: form-data; name="sexprv.obsid.max"
+
+
+--astra-sedr5-01a193cc-boundary
+Content-Disposition: form-data; name="showcol"
+
+sexprv.designation
+--astra-sedr5-01a193cc-boundary
+Content-Disposition: form-data; name="sexprv.designation.char"
+
+
+--astra-sedr5-01a193cc-boundary
+Content-Disposition: form-data; name="showcol"
+
+sexprv.gid
+--astra-sedr5-01a193cc-boundary
+Content-Disposition: form-data; name="sexprv.gid.min"
+
+
+--astra-sedr5-01a193cc-boundary
+Content-Disposition: form-data; name="sexprv.gid.max"
+
+
+--astra-sedr5-01a193cc-boundary
+Content-Disposition: form-data; name="showcol"
+
+sexprv.ra
+--astra-sedr5-01a193cc-boundary
+Content-Disposition: form-data; name="sexprv.ra.min"
+
+
+--astra-sedr5-01a193cc-boundary
+Content-Disposition: form-data; name="sexprv.ra.max"
+
+
+--astra-sedr5-01a193cc-boundary
+Content-Disposition: form-data; name="showcol"
+
+sexprv.dec
+--astra-sedr5-01a193cc-boundary
+Content-Disposition: form-data; name="sexprv.dec.min"
+
+
+--astra-sedr5-01a193cc-boundary
+Content-Disposition: form-data; name="sexprv.dec.max"
+
+
+--astra-sedr5-01a193cc-boundary
+Content-Disposition: form-data; name="showcol"
+
+sexprv.spec
+--astra-sedr5-01a193cc-boundary
+Content-Disposition: form-data; name="sexprv.spec.char"
+
+
+--astra-sedr5-01a193cc-boundary
+Content-Disposition: form-data; name="showcol"
+
+sexprv.filename
+--astra-sedr5-01a193cc-boundary
+Content-Disposition: form-data; name="sexprv.filename.char"
+
+20150309/HD110643N151055B02/20150309_HD110643N151055B02_15_142.fit
+--astra-sedr5-01a193cc-boundary--

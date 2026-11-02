@@ -1,0 +1,299 @@
+{
+  "created_utc": "2026-11-01T02:08:49.743627+00:00",
+  "verdict": "ROOT_REPRODUCIBILITY_AND_READINESS_CHECK_PASSED_NOT_INDEPENDENT_POSTRUN_REVIEW",
+  "script_sha256": "cbc4f9fe645ab57f58db26527f982ea92473734a3d545619b6b702e120338ce0",
+  "protocol_sha256": "dcbc7025421b0504cd1ee41627d08eaf65078498b7975e57a74cc6bfc4f2307c",
+  "authorization_sha256": "2593d94422f5bf507b3f79fb963f7f943bc98ab6e9b95dfd00036378fec38c46",
+  "result_sha256": "6c5e8d41eef28d604c9066af2819c90ffe86c9389d2c175545ae4a872c35e2e3",
+  "requests": 21,
+  "source_count": 200,
+  "body_bytes": 8399387,
+  "rows": 11979,
+  "acquisition_wall_seconds": 98.15700000000652,
+  "totals": {
+    "lamost": {
+      "sources": 161,
+      "rows": 11889,
+      "provisional_group_types": {
+        "possible_single_exposure": 4803,
+        "coadd_product": 1169
+      },
+      "exact_duplicate_rows_retained": 0
+    },
+    "galah": {
+      "sources": 39,
+      "rows": 90,
+      "provisional_group_types": {
+        "spectrum": 90
+      },
+      "exact_duplicate_rows_retained": 0
+    }
+  },
+  "request_checks": [
+    {
+      "name": "lamost_00",
+      "provider": "lamost",
+      "rows": 1155,
+      "sources": 10,
+      "raw_bytes": 811995,
+      "raw_sha256": "2719c34ff63008585289035e6195ac95bc509ac810d3da3e0018455d36ce101d",
+      "retrieval_sha256": "2b53d8d15bb08cbea5d25d2423fa6ee51f3ecc0c918c04ec8c0d2580389b942c",
+      "parsed_sha256": "5c02e54bf877f21d04d1c4ab2c5ac5046104cdcd9b9e7c75ace6f0cfdf7cdf72",
+      "all_raw_cells_preserved": true,
+      "grouping_reproduced": true
+    },
+    {
+      "name": "lamost_01",
+      "provider": "lamost",
+      "rows": 710,
+      "sources": 10,
+      "raw_bytes": 512203,
+      "raw_sha256": "72de60ec83219efff9b4dcfcf89212545488907cdb718b666c94d3723d9a9953",
+      "retrieval_sha256": "39061663a7440e4de1c20f20e8883b221401f5c808f1fff510bbccd6db0dc242",
+      "parsed_sha256": "65ab3b50a7290708b4bc5f0d3c1b22766294bb5931c75b64b2415d449b7e1a9a",
+      "all_raw_cells_preserved": true,
+      "grouping_reproduced": true
+    },
+    {
+      "name": "lamost_02",
+      "provider": "lamost",
+      "rows": 948,
+      "sources": 10,
+      "raw_bytes": 657513,
+      "raw_sha256": "0b3186b381fafcfb11ea1e3397a57680de7f0438ac6dca205a961d98bce3929a",
+      "retrieval_sha256": "a85883cdb8d65f4e7c0201b36a4a7562968ec43c8eee0af2681d64208b9f2bb4",
+      "parsed_sha256": "298a8ddc4458ceeeb6af2349b928c58ad87195b16ba6fc85d49e2c9d4e813f58",
+      "all_raw_cells_preserved": true,
+      "grouping_reproduced": true
+    },
+    {
+      "name": "lamost_03",
+      "provider": "lamost",
+      "rows": 736,
+      "sources": 10,
+      "raw_bytes": 520298,
+      "raw_sha256": "f81016179a40e6500cbb17007639b890948a6dd6f0b920a1040ec83a4d980244",
+      "retrieval_sha256": "ca3071912ff162ac0f25ec26e87036be382e5a8ccbf44f0ba7ff8f280d20b3fc",
+      "parsed_sha256": "27576e200d8c84523dc767960c67dd80f71d7df81af98db22602c78ae9e39f8f",
+      "all_raw_cells_preserved": true,
+      "grouping_reproduced": true
+    },
+    {
+      "name": "lamost_04",
+      "provider": "lamost",
+      "rows": 483,
+      "sources": 10,
+      "raw_bytes": 329977,
+      "raw_sha256": "c0b7b40223cfdc95fb7c4208d4ac53a6a6230e0a92991dc35f1eea289dd1e0a3",
+      "retrieval_sha256": "05dcc84f42878320baacfe8aef2604aaf674f863db64e8461bee76c1f0c59f05",
+      "parsed_sha256": "b298e4467dbe03c873ac100b38d0e9d9c683bb3d4b847e1831652931e02e3e07",
+      "all_raw_cells_preserved": true,
+      "grouping_reproduced": true
+    },
+    {
+      "name": "lamost_05",
+      "provider": "lamost",
+      "rows": 567,
+      "sources": 10,
+      "raw_bytes": 399818,
+      "raw_sha256": "e8f84d7644c3fae01538ceb6a384f8a2da9e501ed5c870333c096d06226c3d6b",
+      "retrieval_sha256": "ba9b128c07ea0183316c1598e663b9e69b5f37c97cc18f8c92b4e9c2b33068ab",
+      "parsed_sha256": "96d4764d226460f002de6b49f7afdf8b45fe57c8f20d9561e4c02aac3923095b",
+      "all_raw_cells_preserved": true,
+      "grouping_reproduced": true
+    },
+    {
+      "name": "lamost_06",
+      "provider": "lamost",
+      "rows": 676,
+      "sources": 10,
+      "raw_bytes": 472641,
+      "raw_sha256": "62c2fc83f8f114ef44e506e4b1c0e9bb4f8e6e88089a846be2a387e74627eec5",
+      "retrieval_sha256": "8617bdaf6c220b0cd7224d621b02d0a2025014e3d00834ec65f22f8bc977c1b7",
+      "parsed_sha256": "9a653dffdba87b3b36b3ad558ffa688f4056652426f3c4eb245e985143340f48",
+      "all_raw_cells_preserved": true,
+      "grouping_reproduced": true
+    },
+    {
+      "name": "lamost_07",
+      "provider": "lamost",
+      "rows": 692,
+      "sources": 10,
+      "raw_bytes": 488120,
+      "raw_sha256": "61ed84728ce0dd6dbb94fc0b8ce7a9755269350f736a52c045b5f2a1daf19d00",
+      "retrieval_sha256": "729e54ebef0bf8aa4bdb165a1dc91a401c6a4be66092ba0f474eb5c50319a9e8",
+      "parsed_sha256": "1161029f8bcc15898c8fb02b4020e9c5499db1378714c078f591f767f3c34384",
+      "all_raw_cells_preserved": true,
+      "grouping_reproduced": true
+    },
+    {
+      "name": "lamost_08",
+      "provider": "lamost",
+      "rows": 1233,
+      "sources": 10,
+      "raw_bytes": 855687,
+      "raw_sha256": "7e5e9662c4fcdf6c6561a47f91003a2571d705713651ae3a43f12370f4b35995",
+      "retrieval_sha256": "37b52328c66788cf441f9d305312195b4c66d319c97167614727bfdc5cd27d18",
+      "parsed_sha256": "7e53eaea97279593c66b640f6a069e4c9ad9f63f7a8e4b2dee6e50aee6c9f530",
+      "all_raw_cells_preserved": true,
+      "grouping_reproduced": true
+    },
+    {
+      "name": "lamost_09",
+      "provider": "lamost",
+      "rows": 859,
+      "sources": 10,
+      "raw_bytes": 591948,
+      "raw_sha256": "ee6964aed7fa80fabc0db20266a4d863fbaab626d5c5f3e3f581c4abe544a3f2",
+      "retrieval_sha256": "c71ed5565ded3ef9c65caa310bf296591e3902420ec4a4603252b8b54a03448f",
+      "parsed_sha256": "c48b7c73c6acbf6c4b02a319a94f2b746b0d290cf519ffe2e0863b673f631740",
+      "all_raw_cells_preserved": true,
+      "grouping_reproduced": true
+    },
+    {
+      "name": "lamost_10",
+      "provider": "lamost",
+      "rows": 610,
+      "sources": 10,
+      "raw_bytes": 430929,
+      "raw_sha256": "6e5c9db48a6c45badf597121e3815edaed65ca3183a2741140e02bfd9ef182f3",
+      "retrieval_sha256": "a0164de7eaa0b6fadb58ca1c0f0ea9f9c625d38f75e3a72a0f7157c6221deccd",
+      "parsed_sha256": "e6cccf45220302d240caee46e08884eb3f5c258cd3974ea8f800630989c48c98",
+      "all_raw_cells_preserved": true,
+      "grouping_reproduced": true
+    },
+    {
+      "name": "lamost_11",
+      "provider": "lamost",
+      "rows": 720,
+      "sources": 10,
+      "raw_bytes": 501768,
+      "raw_sha256": "bcb0fcba09fc6a972df7528c6a2f86b856bb5c988066cb9f3e9a161ba4fa6172",
+      "retrieval_sha256": "1ed25aa310654e9b5693b43beb7ff2dbacf8b620989b646f0e68d121acb36a7d",
+      "parsed_sha256": "467711a7f9e0b80ea0e4efb7e40ff4e6e35aa4b9fbfabd7ea69c71789b77a898",
+      "all_raw_cells_preserved": true,
+      "grouping_reproduced": true
+    },
+    {
+      "name": "lamost_12",
+      "provider": "lamost",
+      "rows": 618,
+      "sources": 10,
+      "raw_bytes": 435771,
+      "raw_sha256": "5a8eac5a0315190c1742af89071a0de31da191642fc01b3736273a38ca1ad7ac",
+      "retrieval_sha256": "ac33ae8b628474bc68fa549bcf90cf46b9f1af08f6bde2a4f059ceeb4573fdda",
+      "parsed_sha256": "670062956a3b3065b26808b046a1427b276740b973cdb1f6f4801cce7f52bad6",
+      "all_raw_cells_preserved": true,
+      "grouping_reproduced": true
+    },
+    {
+      "name": "lamost_13",
+      "provider": "lamost",
+      "rows": 550,
+      "sources": 10,
+      "raw_bytes": 380988,
+      "raw_sha256": "65a27f0357fb7c420773763e589f0c9981bfd5c602cc2c575e6569e755cfcfde",
+      "retrieval_sha256": "108930dddc5029db29e45e77293bc76a2819b24b551a24afb431a5514aab1ec2",
+      "parsed_sha256": "6a0d2f74138be4a07697568c22da1105d053bf398139bd902f53ae6459ff873b",
+      "all_raw_cells_preserved": true,
+      "grouping_reproduced": true
+    },
+    {
+      "name": "lamost_14",
+      "provider": "lamost",
+      "rows": 524,
+      "sources": 10,
+      "raw_bytes": 364931,
+      "raw_sha256": "89fd2fec9ee3eb20a60b67d9e3600c42c875e83f4980c3ecaeb8e501215e9fc9",
+      "retrieval_sha256": "f3ac0718678b8e7fa67fdfff17a6d70403e09d0c97d83e4ad3ac28e967b44dd0",
+      "parsed_sha256": "cf1b2335ac906c46a7d78e04ce3ea7641c446d2bb80c2e877801ec9d24448b84",
+      "all_raw_cells_preserved": true,
+      "grouping_reproduced": true
+    },
+    {
+      "name": "lamost_15",
+      "provider": "lamost",
+      "rows": 770,
+      "sources": 10,
+      "raw_bytes": 545186,
+      "raw_sha256": "5c14b40dc1fa53898bc3d00b26f57729122e1bb8971a1ee4fd93f2012d8e29e7",
+      "retrieval_sha256": "6e45591df2ab6aacd22a30808d7adfd78ebc48734749f40ccab8810678949d44",
+      "parsed_sha256": "e774f011ee7bc40238ff7fb7a3dba6ce47f067043bbcae54635d74c347b60194",
+      "all_raw_cells_preserved": true,
+      "grouping_reproduced": true
+    },
+    {
+      "name": "lamost_16",
+      "provider": "lamost",
+      "rows": 38,
+      "sources": 1,
+      "raw_bytes": 28850,
+      "raw_sha256": "129594bfda77b85e0c950369913d3106306d2b7eb98935b3ae1204199fddd045",
+      "retrieval_sha256": "ac61597d73d15d2ad256c46f70ed80fbe26c5e8a9f3ebd9d1c373879ab10c12b",
+      "parsed_sha256": "557ead50aff2d0367f12036b4a67393e06418f6e05b268473fa9d06ce4ab7048",
+      "all_raw_cells_preserved": true,
+      "grouping_reproduced": true
+    },
+    {
+      "name": "galah_00",
+      "provider": "galah",
+      "rows": 23,
+      "sources": 10,
+      "raw_bytes": 18039,
+      "raw_sha256": "39f77b76d32b6db283f8574c98389db34e7f4aac9ba552bb2f1382e3489ecef8",
+      "retrieval_sha256": "e7d39cecd714e13c8c68882dc2fd8d6ae64d1e2ae4dc6708f3b5ba911e6e02e4",
+      "parsed_sha256": "769b5a4602c533ef9882273d8f856252c7e2903fbce3f0988f81c30cd53688f1",
+      "all_raw_cells_preserved": true,
+      "grouping_reproduced": true
+    },
+    {
+      "name": "galah_01",
+      "provider": "galah",
+      "rows": 25,
+      "sources": 10,
+      "raw_bytes": 19120,
+      "raw_sha256": "294be845c615c6a658bb0a2c2f098234c064186fab0f7db152ec2b1913dc0077",
+      "retrieval_sha256": "a82b3e7a4374740d4facf6c7395dc4d785751e7ebd534ded9d3ac0dd38637e7a",
+      "parsed_sha256": "51d86f5a72d65db1f769b6d62fde1b39bfbb7e2b81b36fa5518f3d75e97d328d",
+      "all_raw_cells_preserved": true,
+      "grouping_reproduced": true
+    },
+    {
+      "name": "galah_02",
+      "provider": "galah",
+      "rows": 21,
+      "sources": 10,
+      "raw_bytes": 16890,
+      "raw_sha256": "6cb7d8f7b6c7e1a2dbabd76a1586399de9923d319a25b10f351d7fefcce15e30",
+      "retrieval_sha256": "595d3a7f06952708c44f39e82f92d15140522099af17f7b0f118de32a0a84686",
+      "parsed_sha256": "9883c8a9734fa8b335932be43b3e5f3886a5bdb4cbaee0d595fc45434d5ff908",
+      "all_raw_cells_preserved": true,
+      "grouping_reproduced": true
+    },
+    {
+      "name": "galah_03",
+      "provider": "galah",
+      "rows": 21,
+      "sources": 9,
+      "raw_bytes": 16715,
+      "raw_sha256": "2c0d007885e66eb718d508ef23fb51d5510d0d988097a09f94bca53da7aff353",
+      "retrieval_sha256": "c713e29764a647a29eced3d2b343c30e49ab11cfcd77dd6929575d7095757e2b",
+      "parsed_sha256": "b818d57dcb30840943c033da7416ddca259d330e5cd6223dabe205251307f247",
+      "all_raw_cells_preserved": true,
+      "grouping_reproduced": true
+    }
+  ],
+  "review_limit": "Both independent preflight reviews accepted the frozen acquisition. Independent postrun agents were unavailable due to usage limit; no such review is claimed.",
+  "scientific_limits": [
+    "Rows and provisional product groups are not independent epochs.",
+    "No RV values, amplitudes, velocity differences, ranks, orbit fits, masses or detection statistics were analyzed.",
+    "LAMOST B/R arms, coadds, timing conventions, zero points and shifted schema descriptions remain interpretation issues.",
+    "GALAH single-precision MJD, flags, secondary estimators and aperture association remain interpretation issues.",
+    "Archive availability, Gaia NSS quality selection and a deterministic 200/3383 subset bias coverage.",
+    "Exact catalogue IDs do not prove spectral photon attribution or exclude blends.",
+    "All 200 sources are measurement-exposed and unavailable as a fresh adaptive holdout."
+  ],
+  "scientific_holds_changed": false,
+  "heldout_evaluated": false,
+  "holdout_custody_sha256": "155f5aa7f98726c62add15bd302b9f43ca4a216ed14850ecbf649c82a65d3c14"
+}

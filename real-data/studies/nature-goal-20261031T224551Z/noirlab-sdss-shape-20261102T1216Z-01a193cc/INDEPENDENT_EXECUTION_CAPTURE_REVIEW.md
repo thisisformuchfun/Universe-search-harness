@@ -1,0 +1,3 @@
+# Independent shape-control transport review
+
+On 2026-11-02 UTC `/root/ps1_execution_review` accepted the single fixed non-held GET. The exact URL/query and 14 non-held values matched; the query outside the IN list was byte-identical to the frozen original-14 query. HTTP 200/TLS verify 0, zero redirects/overages, matching request/raw/header/stream hashes and RESULT-to-FINISH, confirmed child exit, absent PID/leases and unchanged custody were checked. The 3,163-byte body SHA256 is `7c2a79ab93566c877e94d6dc4e674e7bc85c4920cf375cc4d0bbbf0ccf2ddf5f`; native headers and diagnostics remain local. An XML spot-check found one row matching the positive and no sentinel rows; the separate parser/science review supplies the limited control interpretation.

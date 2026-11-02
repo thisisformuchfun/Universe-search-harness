@@ -1,0 +1,224 @@
+{
+  "created_utc": "2026-11-02T11:33:29.138900+00:00",
+  "input_sha256": "033df85a32f94a79932af1e15d29d9804f77362c64dc4ae8b63a16bc4ba4edf9",
+  "astropy": "7.1.1",
+  "numpy": "2.3.5",
+  "fits_verify_exception_passed": true,
+  "warning_types": [],
+  "hdus": [
+    {
+      "index": 0,
+      "extname": null,
+      "class": "PrimaryHDU",
+      "shape": null,
+      "dtype": null,
+      "bunit": null,
+      "band": null,
+      "image_type": "image",
+      "brick": null,
+      "survey": "DECaLS",
+      "version": "DR9-north",
+      "checksum_present": false,
+      "datasum_present": false
+    },
+    {
+      "index": 1,
+      "extname": null,
+      "class": "ImageHDU",
+      "shape": [
+        128,
+        128
+      ],
+      "dtype": ">f4",
+      "bunit": null,
+      "band": "g",
+      "image_type": "image",
+      "brick": "1548p465",
+      "survey": "DECaLS",
+      "version": "DR9-north",
+      "checksum_present": false,
+      "datasum_present": false,
+      "finite_fraction": 1.0,
+      "nonzero_fraction": 1.0,
+      "min": -0.005749030038714409,
+      "max": 1.8623690605163574,
+      "wcs_celestial": true,
+      "ctype": [
+        "RA---TAN",
+        "DEC--TAN"
+      ],
+      "control_pixel_xy": [
+        64.24802239993153,
+        63.518594644848804
+      ],
+      "control_inside": true,
+      "control_pixel_value": 0.6589854955673218
+    },
+    {
+      "index": 2,
+      "extname": null,
+      "class": "ImageHDU",
+      "shape": [
+        128,
+        128
+      ],
+      "dtype": ">f4",
+      "bunit": null,
+      "band": "g",
+      "image_type": "invvar",
+      "brick": "1548p465",
+      "survey": "DECaLS",
+      "version": "DR9-north",
+      "checksum_present": false,
+      "datasum_present": false,
+      "finite_fraction": 1.0,
+      "nonzero_fraction": 1.0,
+      "min": 13230.33203125,
+      "max": 123476.421875,
+      "wcs_celestial": true,
+      "ctype": [
+        "RA---TAN",
+        "DEC--TAN"
+      ],
+      "control_pixel_xy": [
+        64.24802239993153,
+        63.518594644848804
+      ],
+      "control_inside": true,
+      "control_pixel_value": 30336.73828125
+    },
+    {
+      "index": 3,
+      "extname": null,
+      "class": "ImageHDU",
+      "shape": [
+        128,
+        128
+      ],
+      "dtype": ">f4",
+      "bunit": null,
+      "band": "r",
+      "image_type": "image",
+      "brick": "1548p465",
+      "survey": "DECaLS",
+      "version": "DR9-north",
+      "checksum_present": false,
+      "datasum_present": false,
+      "finite_fraction": 1.0,
+      "nonzero_fraction": 1.0,
+      "min": -0.0067792655900120735,
+      "max": 3.4179139137268066,
+      "wcs_celestial": true,
+      "ctype": [
+        "RA---TAN",
+        "DEC--TAN"
+      ],
+      "control_pixel_xy": [
+        64.24802239993153,
+        63.518594644848804
+      ],
+      "control_inside": true,
+      "control_pixel_value": 1.1793674230575562
+    },
+    {
+      "index": 4,
+      "extname": null,
+      "class": "ImageHDU",
+      "shape": [
+        128,
+        128
+      ],
+      "dtype": ">f4",
+      "bunit": null,
+      "band": "r",
+      "image_type": "invvar",
+      "brick": "1548p465",
+      "survey": "DECaLS",
+      "version": "DR9-north",
+      "checksum_present": false,
+      "datasum_present": false,
+      "finite_fraction": 1.0,
+      "nonzero_fraction": 1.0,
+      "min": 4056.67138671875,
+      "max": 48724.30859375,
+      "wcs_celestial": true,
+      "ctype": [
+        "RA---TAN",
+        "DEC--TAN"
+      ],
+      "control_pixel_xy": [
+        64.24802239993153,
+        63.518594644848804
+      ],
+      "control_inside": true,
+      "control_pixel_value": 9313.203125
+    },
+    {
+      "index": 5,
+      "extname": null,
+      "class": "ImageHDU",
+      "shape": [
+        128,
+        128
+      ],
+      "dtype": ">f4",
+      "bunit": null,
+      "band": "z",
+      "image_type": "image",
+      "brick": "1548p465",
+      "survey": "DECaLS",
+      "version": "DR9-north",
+      "checksum_present": false,
+      "datasum_present": false,
+      "finite_fraction": 1.0,
+      "nonzero_fraction": 1.0,
+      "min": -0.05016385018825531,
+      "max": 7.015435695648193,
+      "wcs_celestial": true,
+      "ctype": [
+        "RA---TAN",
+        "DEC--TAN"
+      ],
+      "control_pixel_xy": [
+        64.24802239993153,
+        63.518594644848804
+      ],
+      "control_inside": true,
+      "control_pixel_value": 1.7295929193496704
+    },
+    {
+      "index": 6,
+      "extname": null,
+      "class": "ImageHDU",
+      "shape": [
+        128,
+        128
+      ],
+      "dtype": ">f4",
+      "bunit": null,
+      "band": "z",
+      "image_type": "invvar",
+      "brick": "1548p465",
+      "survey": "DECaLS",
+      "version": "DR9-north",
+      "checksum_present": false,
+      "datasum_present": false,
+      "finite_fraction": 1.0,
+      "nonzero_fraction": 1.0,
+      "min": 1114.7227783203125,
+      "max": 5722.4345703125,
+      "wcs_celestial": true,
+      "ctype": [
+        "RA---TAN",
+        "DEC--TAN"
+      ],
+      "control_pixel_xy": [
+        64.24802239993153,
+        63.518594644848804
+      ],
+      "control_inside": true,
+      "control_pixel_value": 2729.310546875
+    }
+  ],
+  "interpretation": "descriptive only; pass/fail and scientific scope need independent review"
+}

@@ -1,0 +1,5 @@
+# WCS interpretation correction
+
+The first `MASK_CONTROL_INSPECTION.json` reported near-zero residuals after passing numeric longitude/latitude values directly between the two WCS objects. That is **numeric grid alignment only**, not a frame-aware or absolute astrometric validation. The independent science review found that the viewer cutout has no RADESYS/EQUINOX and Astropy defaults to ICRS, whereas the mask has EQUINOX=2000.0, no RADESYS, and Astropy interprets FK5. `compare_mask_frames.py` independently reproduced a difference of about (−0.0211, −0.0638) mask pixels, or roughly 0.0176 arcsec at 0.262 arcsec/pixel, when the default frames are transformed. At a rounding boundary this changes the selected mask pixel.
+
+The provider's intended frame convention and absolute registration are not established by these headers. A separately reviewed target-mask protocol must retain both mappings and disclose epoch, proper-motion and source-position uncertainties; it must not quietly select whichever pixel gives a desired result. See [the comparison](MASK_FRAME_COMPARISON.json). No target mask or companion inference was made from the control.

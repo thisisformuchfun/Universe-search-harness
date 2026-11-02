@@ -1,0 +1,5 @@
+# Independent target-mask transport review
+
+On 2026-11-02 UTC `/root/ps1_execution_review` verified exactly one 1857p410 GET at 11:52:08.442059–11:52:09.036953 UTC: HTTP 200, curl exit 0, TLS verification 0, zero redirects and no recorded overages. Request SHA256 `fdbf017a7a8f14c085264b276c7519f3e2e12240257a9b66ab51c4443f49eec2`; body 256,320 bytes, SHA256 `cd1409e6d636e7bfa284f16ca985adfb151ff81a6c384485bb0f8feea9a061c4`; RESULT SHA256 `decdc14df04a6162f50057691e3dd13c95dbcb6b735082affe6da544a5ff429c`. All 21 input pins, prior control/image prerequisites, native streams/headers/body hashes, status and RESULT-to-FINISH link agreed. The owned curl process had confirmed exit and its recorded PID was absent at review; coordination was idle, no leases existed and custody was unchanged. A limited private header-category scan found no Set-Cookie/auth/challenge/location categories. Raw headers and diagnostics remain local.
+
+The FITS signature and block length are only transport checks; the independent science review covers actual compressed layout, WCS and mask bits.

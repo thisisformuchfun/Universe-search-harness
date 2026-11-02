@@ -1,0 +1,79 @@
+{
+  "created_utc": "2026-11-02T11:52:23.249809+00:00",
+  "sha256": "cd1409e6d636e7bfa284f16ca985adfb151ff81a6c384485bb0f8feea9a061c4",
+  "mode": "physical headers, compression disabled",
+  "fits_verify_exception_passed": true,
+  "warning_types": [],
+  "hdus": [
+    {
+      "index": 0,
+      "class": "PrimaryHDU",
+      "fields": {
+        "BITPIX": 16,
+        "NAXIS": 0
+      }
+    },
+    {
+      "index": 1,
+      "class": "BinTableHDU",
+      "fields": {
+        "XTENSION": "BINTABLE",
+        "BITPIX": 8,
+        "NAXIS": 2,
+        "NAXIS1": 8,
+        "NAXIS2": 1296,
+        "ZIMAGE": true,
+        "ZCMPTYPE": "HCOMPRESS_1",
+        "ZBITPIX": 16,
+        "ZNAXIS": 2,
+        "ZNAXIS1": 3600,
+        "ZNAXIS2": 3600,
+        "ZTILE1": 100,
+        "ZTILE2": 100,
+        "EXTNAME": "MASKBITS",
+        "BRICK": "1857p410",
+        "SURVEY": "DECaLS+BASS+MzLS"
+      }
+    },
+    {
+      "index": 2,
+      "class": "BinTableHDU",
+      "fields": {
+        "XTENSION": "BINTABLE",
+        "BITPIX": 8,
+        "NAXIS": 2,
+        "NAXIS1": 8,
+        "NAXIS2": 1296,
+        "ZIMAGE": true,
+        "ZCMPTYPE": "HCOMPRESS_1",
+        "ZBITPIX": 8,
+        "ZNAXIS": 2,
+        "ZNAXIS1": 3600,
+        "ZNAXIS2": 3600,
+        "ZTILE1": 100,
+        "ZTILE2": 100,
+        "EXTNAME": "WISEM1"
+      }
+    },
+    {
+      "index": 3,
+      "class": "BinTableHDU",
+      "fields": {
+        "XTENSION": "BINTABLE",
+        "BITPIX": 8,
+        "NAXIS": 2,
+        "NAXIS1": 8,
+        "NAXIS2": 1296,
+        "ZIMAGE": true,
+        "ZCMPTYPE": "HCOMPRESS_1",
+        "ZBITPIX": 8,
+        "ZNAXIS": 2,
+        "ZNAXIS1": 3600,
+        "ZNAXIS2": 3600,
+        "ZTILE1": 100,
+        "ZTILE2": 100,
+        "EXTNAME": "WISEM2"
+      }
+    }
+  ]
+}

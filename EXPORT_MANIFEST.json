@@ -1,0 +1,2724 @@
+{
+  "schema": 1,
+  "generated_utc": "2026-11-02",
+  "repository": "thisisformuchfun/Universe-search-harness",
+  "base_commit": "69c2986a84c5cf22180a08fd370b2082a937b32e",
+  "scope": "Additive GitHub update; existing a.zip is not included and must remain unchanged.",
+  "files": [
+    {
+      "path": ".gitattributes",
+      "bytes": 303,
+      "sha256": "65e9a9d49958166bad0144cc6c2d785ff0630e339bcc63a3e4412785cff1a149"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 169,
+      "sha256": "917474765be5934b216289dfbc726e804396e804d8f15ac025a60260b0279e19"
+    },
+    {
+      "path": "EXPORT_REVIEW.md",
+      "bytes": 3765,
+      "sha256": "b2892d7dfdf8c2f31a64de36d68957fe3b32a5f410e88050295aca95f83410de"
+    },
+    {
+      "path": "README.md",
+      "bytes": 8970,
+      "sha256": "30666d0c39136760a30baf9a7c645be657c4ba08c36a6eb562528a8834a5bd73"
+    },
+    {
+      "path": "dashboard/README.md",
+      "bytes": 1185,
+      "sha256": "ade9fd893c9b5ab1ab313ab3c2a2d8004a4c68b6a4fbdfa6f20a54dfeca30065"
+    },
+    {
+      "path": "dashboard/index.html",
+      "bytes": 388,
+      "sha256": "d212a0b79bbedb0aec38f43be8009a355ff74ad84ca545571a3ea9ea77031f95"
+    },
+    {
+      "path": "dashboard/package-lock.json",
+      "bytes": 29569,
+      "sha256": "7bb5f9e9a192cc97c134a01040c3b2e47e4e045084d156c6b0bd38d6161804b6"
+    },
+    {
+      "path": "dashboard/package.json",
+      "bytes": 355,
+      "sha256": "c82c3ba5e08307d9113c4f6cfde70cfe10d9ee3b6343ad54f5ba168184030153"
+    },
+    {
+      "path": "dashboard/src/SpaceView.jsx",
+      "bytes": 16414,
+      "sha256": "3038b86e5a62902d2651c978b24a09b3e83670b8031b25cd84c3774c037a0740"
+    },
+    {
+      "path": "dashboard/src/main.jsx",
+      "bytes": 2069,
+      "sha256": "6f055e07a9eca4660cfc4fda46e0cb7077cdd5ca36d029d65525873b56cafc9b"
+    },
+    {
+      "path": "dashboard/src/snapshot.json",
+      "bytes": 47092,
+      "sha256": "16cf57bcfc109c9740f3c478899a3894689511d3b0f7966967181ad3bd54f95d"
+    },
+    {
+      "path": "dashboard/src/space-geometry.js",
+      "bytes": 1324,
+      "sha256": "329938fafb5ecd066cc5a411210a8538c4f1d3d3cecb344c37ff97fc6998a899"
+    },
+    {
+      "path": "dashboard/src/space-view.css",
+      "bytes": 14010,
+      "sha256": "95afdb483cf212753f41c0ff2aabd71603afdb03dbcd9aed8db351d1b2b8c0fb"
+    },
+    {
+      "path": "dashboard/src/style.css",
+      "bytes": 1205,
+      "sha256": "c0266d862279438843816949379cd57ac039bcb67731197c2bc33274bc588ca5"
+    },
+    {
+      "path": "docs/media/explorer-overview.jpg",
+      "bytes": 67285,
+      "sha256": "dcb647bffe48a7d37ee435737c5ca0d2bd7bf92a2670714564409fd49596fa93"
+    },
+    {
+      "path": "docs/media/research-orbits.gif",
+      "bytes": 5658129,
+      "sha256": "daf5189ab729a37ab2e628e8bec215285e15def1cd9bc950fd3eede035474bab"
+    },
+    {
+      "path": "docs/media/source-review.jpg",
+      "bytes": 70092,
+      "sha256": "d473c66cf14953083e3048b5e923f3b96bb8b0b93be6404ea5b7f62b67fc7af0"
+    },
+    {
+      "path": "public-review/README.md",
+      "bytes": 2466,
+      "sha256": "db426888368822031197e270d1b4dae36749c2c306e59b28e971b75f2529a886"
+    },
+    {
+      "path": "public-review/THIRD_PARTY_NOTICES.md",
+      "bytes": 2859,
+      "sha256": "0da1de97330109a93a6f45cc588dd97e777e73023f835a8f045d764aec40752c"
+    },
+    {
+      "path": "public-review/evidence/gaia-2mass-capture.json",
+      "bytes": 3427,
+      "sha256": "abf54bc83ade0b0be4b3f7bf661a9483415b7c57addad4d16c5bb26f38244ba5"
+    },
+    {
+      "path": "public-review/evidence/gaia-2mass-crossmatch.raw",
+      "bytes": 4995,
+      "sha256": "2a49eccecc716e4fe4e8a5d3b5dc3189da198fbf8b6b01dcb3a6264ede6d04f9"
+    },
+    {
+      "path": "public-review/evidence/held-objects.json",
+      "bytes": 74093,
+      "sha256": "989a7695c1f7110d54e703d2fd55ee4e016511b8adf568ca4ef5c2e370519d09"
+    },
+    {
+      "path": "public-review/evidence/lamost-identifications.json",
+      "bytes": 37381,
+      "sha256": "063c1d5a8ce80261d5c332607e6ea75b800d49844144a2104a354041f7bf6d90"
+    },
+    {
+      "path": "public-review/evidence/li-2026-capture.json",
+      "bytes": 1611,
+      "sha256": "e92bb7dc38013ad690d23cd30e242ae6ce6df887de017dc7cab0f26e82d0b775"
+    },
+    {
+      "path": "public-review/evidence/li-2026-source.raw",
+      "bytes": 2283427,
+      "sha256": "243e8ec21a7e4d7b4300dedecb16d5616bfd6d4a96774e854fa52cdd23953016"
+    },
+    {
+      "path": "public-review/evidence/muller-ms-capture.json",
+      "bytes": 823,
+      "sha256": "6122bfc3a3466cf24a461d8bea19f913410392cd3aa1ac6e9c97556f2f72b9f1"
+    },
+    {
+      "path": "public-review/evidence/muller-ms.csv",
+      "bytes": 9056535,
+      "sha256": "72e76ab548df79f942bb064360ce1c4eacb607e2d067920818709e263d9cdaa2"
+    },
+    {
+      "path": "public-review/evidence/muller-rgb-capture.json",
+      "bytes": 839,
+      "sha256": "ac41aa945b129f1e05610c522396941d07ceed387a9f56cb78becd64f5d25e91"
+    },
+    {
+      "path": "public-review/evidence/muller-rgb.csv",
+      "bytes": 9952764,
+      "sha256": "dbe32424ff4ec5fa773d92ac2892958ae080e777f6a8d2afcaf19617553fcdb5"
+    },
+    {
+      "path": "public-review/evidence/simon-2026-capture.json",
+      "bytes": 1613,
+      "sha256": "54e0257125fe9aff3d079f062a80085de225e0c17ea65bc37a34f75cd51181d5"
+    },
+    {
+      "path": "public-review/evidence/simon-2026-source.raw",
+      "bytes": 10491697,
+      "sha256": "838447d246a87cfa1f56d1bf0b8ee24908a7cbbae3d8903bcf2875877fe8715d"
+    },
+    {
+      "path": "public-review/evidence/wide-pair-evidence.json",
+      "bytes": 6062,
+      "sha256": "b52522a68a9b9bf3e08a72eb808432645f1aa4ecbce4e27929cc689a42443278"
+    },
+    {
+      "path": "public-review/evidence/wide-pair-review.md",
+      "bytes": 2149,
+      "sha256": "69e9eee4c11fb2b181846ba06b0038bc08fb5ee6ef1598a73fb0dd80af6d5826"
+    },
+    {
+      "path": "public-review/evidence/xp-evidence.json",
+      "bytes": 29379,
+      "sha256": "0e1e78812b9308b104a16cd4132871732a902332b16611f8837d54698708b50e"
+    },
+    {
+      "path": "public-review/evidence/xp-review.md",
+      "bytes": 4778,
+      "sha256": "c3eed7095926f052866b5615e33e4b7c28a96fe498f58ed4eb82db265502462d"
+    },
+    {
+      "path": "public-review/evidence/zhou-comparison.json",
+      "bytes": 1018,
+      "sha256": "338b6bc6e99f594aab946df9139727aae8dcecf139de20e1e98ee8f81c14b435"
+    },
+    {
+      "path": "public-review/evidence/zhou-table-capture.json",
+      "bytes": 1724,
+      "sha256": "ab643118f97eaff0f50bc7afbcfe9c217addffe69dee268b92bc24f6c7c872b1"
+    },
+    {
+      "path": "public-review/evidence/zhou-table.raw",
+      "bytes": 7874,
+      "sha256": "94f41f32f8c0d34798fc223d4af10fd19a16fc63bc9e30069a6d2ff4ead90267"
+    },
+    {
+      "path": "public-review/review.json",
+      "bytes": 35479,
+      "sha256": "9e27d8b1bff449c1d56c4c0baa5ddd9e6e22d8b49ef88cf711d63ccdc7979e62"
+    },
+    {
+      "path": "public-review/test_verify_public_review.py",
+      "bytes": 931,
+      "sha256": "3213901024aa4a179c2df9f73bf08561bf6e8dc7114a6ccd7a3764f018c4cd85"
+    },
+    {
+      "path": "public-review/verify_public_review.py",
+      "bytes": 9107,
+      "sha256": "b81255be453526024ef911e90c4667de7a0c8a87355ca7f66f6ec3f4ea5a47f7"
+    },
+    {
+      "path": "real-data/CONTINUATION_CHANGELOG.md",
+      "bytes": 2301,
+      "sha256": "3679953e7a7982a87154cd1d61dba5d67c3ffb1df06b538b28b6cb0d258df9b1"
+    },
+    {
+      "path": "real-data/HISTORICAL_ARCHIVE_OMISSIONS.json",
+      "bytes": 513,
+      "sha256": "7d97b68a1fb62c9faa5a5369ed9a02dedcbb681c8fa9c43c637fa19e66f8d329"
+    },
+    {
+      "path": "real-data/PACKAGING_SELECTION.json",
+      "bytes": 53377,
+      "sha256": "322450e391414d1af3a28f423f381060b3d2e3e8123a235c4e8231ffc06ed0ee"
+    },
+    {
+      "path": "real-data/PORTABLE_MANIFEST.checkpoint60.json",
+      "bytes": 60349,
+      "sha256": "2b185fbae2a31e4c6f7665fb4e37fff10d958a13a3660fac5b7c3419a8bb4353"
+    },
+    {
+      "path": "real-data/PORTABLE_MANIFEST.json",
+      "bytes": 114077,
+      "sha256": "8636dc2825074894a8cff6534ff867766cd3caa1de1f0be54e21adc4d6c87bc8"
+    },
+    {
+      "path": "real-data/RUN_REPORT.before_checkpoint55.md",
+      "bytes": 3518,
+      "sha256": "4a3e11d1fd2f762b9bb535270c939831975cf66806c8f383be0dbcad695ba2f0"
+    },
+    {
+      "path": "real-data/RUN_REPORT.before_checkpoint56.md",
+      "bytes": 4781,
+      "sha256": "532b84069df2a8732c3309b1353bc777ee1fac4383e9b3336d1b8f1bb7e5b107"
+    },
+    {
+      "path": "real-data/RUN_REPORT.before_checkpoint57.md",
+      "bytes": 6783,
+      "sha256": "6ff0782e3b90f3ac83beb93ab47231869db003a67493035e2a44902a9ed0531f"
+    },
+    {
+      "path": "real-data/RUN_REPORT.checkpoint60.md",
+      "bytes": 13336,
+      "sha256": "ee0dbf0c8e48510c38c8ed7a8d2b761f2aabc2dc8926edb427d8b9cdf1163641"
+    },
+    {
+      "path": "real-data/RUN_REPORT.md",
+      "bytes": 215,
+      "sha256": "5562312410c3be8d041797880c2f6d16286f954d495b01a28a869fb3dc20e84e"
+    },
+    {
+      "path": "real-data/START_HERE.checkpoint60.md",
+      "bytes": 6085,
+      "sha256": "010b9662de494b18c83c4ed6988fd6dddcab37b8c822819390d82be4ca4ebb0f"
+    },
+    {
+      "path": "real-data/START_HERE.md",
+      "bytes": 3226,
+      "sha256": "6ee8317cd6c451b1bf12e604a1e4a88560fbab90166df2b34300fa0be62042b6"
+    },
+    {
+      "path": "real-data/artifacts/Universe_Search_Harness_Checkpoint53_20261102_01a193cc.zip.manifest.json",
+      "bytes": 1592,
+      "sha256": "c6e1498170efd451d354a367fce375f29fcfbe6f6c10451eb3e38b29f2cf7cd2"
+    },
+    {
+      "path": "real-data/baseline/original-v1.zip",
+      "bytes": 374020,
+      "sha256": "c7bcf827bf4ddbdfec7fde5734594c879d18f21a0fb0d0562e17ba0c9ba950c1"
+    },
+    {
+      "path": "real-data/evidence/dr6_combined.fit",
+      "bytes": 92160,
+      "sha256": "2bfdfe2b133b1f5d9f880ae81be5002b48b7eb89cb8c45f538e048542cc32e06"
+    },
+    {
+      "path": "real-data/evidence/held_sedr5.fit",
+      "bytes": 550080,
+      "sha256": "7a33d6a4ff8594c33b43181309bc5ad4e0739e6245943e06ba099172d04742de"
+    },
+    {
+      "path": "real-data/evidence/reference_sedr5.fit",
+      "bytes": 550080,
+      "sha256": "0e1c7ac03810cd41ad1df477f0977d82e92ba1bad71e442912ca282b339fb439"
+    },
+    {
+      "path": "real-data/evidence/sample.csv",
+      "bytes": 2935,
+      "sha256": "445105154437335a95353a37aecbe93609d89a48bdee3b99fbcb54be33de8513"
+    },
+    {
+      "path": "real-data/followups/held14-20261031T214650Z/FINAL_REVIEW_QUEUE.md",
+      "bytes": 5320,
+      "sha256": "0eb9df1621d722b0673a66f7232935da2a8a656c414a26865be4458341cebf40"
+    },
+    {
+      "path": "real-data/followups/held14-20261031T214650Z/HELD_OBJECTS.json",
+      "bytes": 74093,
+      "sha256": "989a7695c1f7110d54e703d2fd55ee4e016511b8adf568ca4ef5c2e370519d09"
+    },
+    {
+      "path": "real-data/followups/held14-20261031T214650Z/evidence/gaia/source_all14.parsed.json",
+      "bytes": 75367,
+      "sha256": "ac3b2ef6fdbc44b732404d1e5f8db4801185f1a10977959c4a1318d9cd426862"
+    },
+    {
+      "path": "real-data/followups/held14-20261031T214650Z/evidence/gaia/source_all14.raw",
+      "bytes": 75533,
+      "sha256": "1125405b6e1974040a1ec9accadcaaed566d928691ced1509e07c3cc63a24f08"
+    },
+    {
+      "path": "real-data/followups/held14-20261031T214650Z/evidence/identifications/IDENTIFICATION_REPORT.md",
+      "bytes": 6744,
+      "sha256": "78197c8d46b0289aa604f6dcfaece9a4008cb5d0c3aedfa6b9a0fdf51917c5c4"
+    },
+    {
+      "path": "real-data/followups/held14-20261031T214650Z/evidence/neighbors60/1533365584518328576.parsed.json",
+      "bytes": 5122,
+      "sha256": "f160da0b6ce0af38d84139d867f8989ef1a7511b36542b454d4bfe08614bf189"
+    },
+    {
+      "path": "real-data/followups/held14-20261031T214650Z/evidence/neighbors60/1533365584518328576.raw",
+      "bytes": 8999,
+      "sha256": "c5d380888d9eca35b328be4726bdd6bde86275a600f3f21c9242bdfa9cd6a591"
+    },
+    {
+      "path": "real-data/harness/AGENTS.md",
+      "bytes": 2533,
+      "sha256": "872e07ae8221ead658d63ec4b063bea14b6ec6e18c5579af7044c73237aa9997"
+    },
+    {
+      "path": "real-data/harness/LICENSE",
+      "bytes": 659,
+      "sha256": "cd6a412d21d2578eef676df955bea358dd600a62660684ff811726789295023f"
+    },
+    {
+      "path": "real-data/harness/README.md",
+      "bytes": 5915,
+      "sha256": "3c25b501fb05bed97c8e2a313d028347b930249f4ad7565c45562a4d2970b34b"
+    },
+    {
+      "path": "real-data/harness/audit/CONNECTOR_REPAIR_NOTES.md",
+      "bytes": 2607,
+      "sha256": "3098bd749f5b61fdd5a248a21afef9dac4c82ce08ac99f2ad5340c5df3210757"
+    },
+    {
+      "path": "real-data/harness/data/pilot/REVIEW.md",
+      "bytes": 4218,
+      "sha256": "f67bb5b69b1d8c8f60a577c5e5ff6a0320eb5b05ee519c1e5727051bfb1b9fd7"
+    },
+    {
+      "path": "real-data/harness/data/pilot/SNAPSHOT_MANIFEST.json",
+      "bytes": 969,
+      "sha256": "7aa4cf4794b56fdc5c96a048dce5a08f2c2736d80bfa96969bea9b01243deed9"
+    },
+    {
+      "path": "real-data/harness/data/pilot/gaia_pilot_raw.csv",
+      "bytes": 165181,
+      "sha256": "4cae3b1c7980f6b140f9a156921f108eec12ec73e271b3614736ab2d594b792e"
+    },
+    {
+      "path": "real-data/harness/data/pilot/gaia_pilot_report.json",
+      "bytes": 26493,
+      "sha256": "a800e3616318b522b696796188ecfffc1bf37be048aad5b6a9244fae3951d22c"
+    },
+    {
+      "path": "real-data/harness/data/pilot/jayasinghe234.tsv",
+      "bytes": 209950,
+      "sha256": "8d5e67c7026e7433aad43b535f596889861a4e39070d73a2bb0ebe76ab4b3164"
+    },
+    {
+      "path": "real-data/harness/data/pilot/nss_schema.csv",
+      "bytes": 5236,
+      "sha256": "9380d541933735beb470d7e47971d5d903a9a9737467e3ece44f99681496bd69"
+    },
+    {
+      "path": "real-data/harness/data/pilot/pilot_catalog_crossmatch.json",
+      "bytes": 2961,
+      "sha256": "e39c3e0a28b4fcf956c24a507cad54d9e85e59995444890b7f92ab6c6c41878f"
+    },
+    {
+      "path": "real-data/harness/data/pilot/pilot_dispositions.csv",
+      "bytes": 5408,
+      "sha256": "1fe6348f7e2e4727ee4a2b013d1449fe4abaec92fafd5293a3996e686bcb05be"
+    },
+    {
+      "path": "real-data/harness/data/pilot/provenance.json",
+      "bytes": 1512,
+      "sha256": "e9e778986a78d2bcf0c86c9aaa94223cb55e2eee37e7d21eb54e95d41d38b7eb"
+    },
+    {
+      "path": "real-data/harness/data/pilot/shahaf177.tsv",
+      "bytes": 42643,
+      "sha256": "61b677b171a6e140d2cfafb710f98140895dd20bd64bfb6efc10f69a9c77b1c1"
+    },
+    {
+      "path": "real-data/harness/docs/INDEPENDENT_EXECUTION_REVIEW.md",
+      "bytes": 3230,
+      "sha256": "0ce6af865a4d5707780d353295ad1fcbc06e49dfa2b376122e1bfe54147c9f00"
+    },
+    {
+      "path": "real-data/harness/docs/INDEPENDENT_SCIENCE_REVIEW.md",
+      "bytes": 3850,
+      "sha256": "9ccaf8e7f56d9a7c6eb2640491c82e60eb1bea9c8700f867f374112e6f19c425"
+    },
+    {
+      "path": "real-data/harness/docs/REPAIR_AUDIT.md",
+      "bytes": 2553,
+      "sha256": "c98f60b3e6ef7c21789892f7199719ce5a90e9a8a605503412f8cb6188ade3d1"
+    },
+    {
+      "path": "real-data/harness/docs/SCIENCE.md",
+      "bytes": 3512,
+      "sha256": "6a1ba403bfd405bd488fd7dbc4df79bfae0b28a1f6de3238444338a0a82453d7"
+    },
+    {
+      "path": "real-data/harness/harness2/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "real-data/harness/harness2/cli/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "real-data/harness/harness2/cli/universe.py",
+      "bytes": 10536,
+      "sha256": "11300a8c262de36580b5e38c08dc0b2f440899f37c7dc1d54d7cbe3830ea58cc"
+    },
+    {
+      "path": "real-data/harness/harness2/core/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "real-data/harness/harness2/core/components.py",
+      "bytes": 920,
+      "sha256": "87bd4f648b4a2362186ba67f6bdec711c73154d7b7b7a6af81a1ce1188ef9c53"
+    },
+    {
+      "path": "real-data/harness/harness2/core/guards.py",
+      "bytes": 1961,
+      "sha256": "79ba0e40a3205997609698ed57094af41997e8b526f3e494eca93ab9bdec8c25"
+    },
+    {
+      "path": "real-data/harness/harness2/core/library.py",
+      "bytes": 1071,
+      "sha256": "34f66d3f46a18dc70ea1cec219bd374a04cbf69ddb5b673e9f95ccce688e72cc"
+    },
+    {
+      "path": "real-data/harness/harness2/core/recursion.py",
+      "bytes": 5131,
+      "sha256": "e0cd41a1959d0a48825f077975b6c85dc147f4529cef4d3e0ec8374358b4b345"
+    },
+    {
+      "path": "real-data/harness/harness2/providers/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "real-data/harness/harness2/providers/router.py",
+      "bytes": 3154,
+      "sha256": "307aa0cc98d0e876c91fcbe59dceb90e8fe3aa928d264f3ae67ed067091093af"
+    },
+    {
+      "path": "real-data/harness/harness2/universe/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "real-data/harness/harness2/universe/connectors/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "real-data/harness/harness2/universe/connectors/public_archives.py",
+      "bytes": 28524,
+      "sha256": "89d390f2ad070909a4ff7eab5e8c0d51aa50b42c44108fc3a7fb0b5a9640538c"
+    },
+    {
+      "path": "real-data/harness/harness2/universe/detectors/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "real-data/harness/harness2/universe/detectors/signal_pipeline.py",
+      "bytes": 6217,
+      "sha256": "3dcaf1205bf2a182d9d8bc6a727ee804143b5d68382869d3f5fdc48f936b9ae8"
+    },
+    {
+      "path": "real-data/harness/harness2/universe/novelty.py",
+      "bytes": 2422,
+      "sha256": "df17f919a00bc1c9294531c960220b39501297699e16f35a813c693efffe8412"
+    },
+    {
+      "path": "real-data/harness/policy/guard_manifest.json",
+      "bytes": 2167,
+      "sha256": "558cef0d2d1cab72110c03e2089009ef8cdaf031c63247f8e345bfbbbb81953c"
+    },
+    {
+      "path": "real-data/harness/policy/known_objects.json",
+      "bytes": 940,
+      "sha256": "f449d6939b4d7927d59a31d629435d7c6079e5196d3f5b95ff5e2664a6aaaf0b"
+    },
+    {
+      "path": "real-data/harness/policy/scientific_policy.json",
+      "bytes": 752,
+      "sha256": "9915286a4fd3fb9693429489385be6451de63909b36a3f9ef5e26635e396cb91"
+    },
+    {
+      "path": "real-data/harness/pyproject.toml",
+      "bytes": 436,
+      "sha256": "ce7d4e7a1902dba0c9fa3acbaa68117dd5adc4f3fd020e6a42901e7c2f48ca46"
+    },
+    {
+      "path": "real-data/harness/requirements.lock",
+      "bytes": 46,
+      "sha256": "f632f07a4a0a48044565f15c642a41ceed1c26fdc977e4a8d0ed49559fc4ac87"
+    },
+    {
+      "path": "real-data/harness/runs/astra-approved-baseline-20261031T2133Z/catalog_coverage.json",
+      "bytes": 414,
+      "sha256": "edbc3ac10674dd3033c654936f3764fa7172bf88a2684a350425fc650e5a6b08"
+    },
+    {
+      "path": "real-data/harness/runs/astra-approved-baseline-20261031T2133Z/context.json",
+      "bytes": 35,
+      "sha256": "aac17d869a799662d91bac0c8b28c1209de23be0d484b472a18b639336214ef5"
+    },
+    {
+      "path": "real-data/harness/runs/astra-approved-baseline-20261031T2133Z/human_review_template.json",
+      "bytes": 386,
+      "sha256": "584681d1c94dba8c7249c8eddad24ebd28a204815edbc15a844446a57e2550bf"
+    },
+    {
+      "path": "real-data/harness/runs/astra-approved-baseline-20261031T2133Z/invalid_rows.json",
+      "bytes": 4,
+      "sha256": "a5338d955b09046ec0b16f3a9625b7955c763aae07dc722e474e6078745f932f"
+    },
+    {
+      "path": "real-data/harness/runs/astra-approved-baseline-20261031T2133Z/provenance.json",
+      "bytes": 1640,
+      "sha256": "d0112bbb834fea66fc57e880092a18941ed816f329c35293e2325263d36dc22b"
+    },
+    {
+      "path": "real-data/harness/runs/astra-approved-baseline-20261031T2133Z/raw_rows.json",
+      "bytes": 450877,
+      "sha256": "03f72d8032ea1cd79fb5e73675d3f0c990b599dc7207296d9d0e25c2b70fff77"
+    },
+    {
+      "path": "real-data/harness/runs/astra-approved-baseline-20261031T2133Z/records.json",
+      "bytes": 370410,
+      "sha256": "1cb4d9751428a431070c0b8fc66bea5f00cfbdb7879982c768ef0385480793cf"
+    },
+    {
+      "path": "real-data/harness/runs/astra-approved-baseline-20261031T2133Z/recursion.json",
+      "bytes": 3968,
+      "sha256": "3abcd8c2f3d6e21974cd2412a71339612a1b40814d820d9ee60554ecf90f3be3"
+    },
+    {
+      "path": "real-data/harness/runs/astra-approved-baseline-20261031T2133Z/review_queue.csv",
+      "bytes": 1880,
+      "sha256": "96bb97406908a0d78102ef540178e8b07cb61eec30c3f80d6044e76c818c1887"
+    },
+    {
+      "path": "real-data/harness/runs/astra-approved-baseline-20261031T2133Z/review_queue.json",
+      "bytes": 18704,
+      "sha256": "b8d4eaa2f14a6ee568b0d33285f450a650326c86a0c41e4b627dcfc083c30b59"
+    },
+    {
+      "path": "real-data/harness/runs/astra-approved-baseline-20261031T2133Z/run_manifest.json",
+      "bytes": 1656,
+      "sha256": "24826d749673e6a808c8cb59c97f5eb76d78119ea4fd2121a9d6875e9573dc73"
+    },
+    {
+      "path": "real-data/harness/runs/astra-approved-baseline-20261031T2133Z/summary.json",
+      "bytes": 667,
+      "sha256": "952367ab49e8250711f66c67f1eac3a719bd68b6970233be6eb9c8f1ae8b0de2"
+    },
+    {
+      "path": "real-data/harness/runs/verified-release/catalog_coverage.json",
+      "bytes": 400,
+      "sha256": "4fe7bf809d05a54fa950c606f71806f14495f9b040dfb0eec26c50a285a03f6e"
+    },
+    {
+      "path": "real-data/harness/runs/verified-release/context.json",
+      "bytes": 32,
+      "sha256": "b8d22a7f5f89ad3cb8f60b334707e6b49db32a58ea4608c6018c700967ee4f5f"
+    },
+    {
+      "path": "real-data/harness/runs/verified-release/human_review_template.json",
+      "bytes": 372,
+      "sha256": "fd5284cb454fe78d0b4b2799c1773dc10211a0b9ffe6be491e818a88bd57ea96"
+    },
+    {
+      "path": "real-data/harness/runs/verified-release/invalid_rows.json",
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    {
+      "path": "real-data/harness/runs/verified-release/provenance.json",
+      "bytes": 1624,
+      "sha256": "7318ed00daca28c843d0092926996cc13423300bb82196a247a415fd10378912"
+    },
+    {
+      "path": "real-data/harness/runs/verified-release/raw_rows.json",
+      "bytes": 438375,
+      "sha256": "be6aec77fd386de6b748c92a6135350ba77cee8f72277bbb34be9d46ba211556"
+    },
+    {
+      "path": "real-data/harness/runs/verified-release/records.json",
+      "bytes": 359203,
+      "sha256": "519a87faafbdd3a2fa9536e6097dd1472aa4184ee3ff202f6f64e7884d675d7a"
+    },
+    {
+      "path": "real-data/harness/runs/verified-release/recursion.json",
+      "bytes": 3810,
+      "sha256": "8e7c94be4fe6a998bc9e4b5a9fd19743803487f226ce3ab725c06bb86d8f2e12"
+    },
+    {
+      "path": "real-data/harness/runs/verified-release/review_queue.csv",
+      "bytes": 1880,
+      "sha256": "96bb97406908a0d78102ef540178e8b07cb61eec30c3f80d6044e76c818c1887"
+    },
+    {
+      "path": "real-data/harness/runs/verified-release/review_queue.json",
+      "bytes": 18268,
+      "sha256": "738ea3f48413263fb7911dcb069353ecc473ce7aa95ee197e92d9b19f53534ed"
+    },
+    {
+      "path": "real-data/harness/runs/verified-release/run_manifest.json",
+      "bytes": 1610,
+      "sha256": "57bda4d55b4edcda72571d98f1221b3a00e1fa67f7178ebb06cf93c1cceb8d87"
+    },
+    {
+      "path": "real-data/harness/runs/verified-release/summary.json",
+      "bytes": 645,
+      "sha256": "2dd29d0c1710bf61a53c112b6307af56f3d5d504a1668bbcbb51f6b8340322a7"
+    },
+    {
+      "path": "real-data/harness/scripts/package_release.py",
+      "bytes": 2604,
+      "sha256": "baddacace0885ac723b3c8a5a34c834a3b4144e9bcdad9b3f172630023c90ca8"
+    },
+    {
+      "path": "real-data/harness/scripts/seal_release.py",
+      "bytes": 684,
+      "sha256": "55a80c279acf514818ea91486556bcaa8a1f5d0339fdb19839bdebeeabdc2357"
+    },
+    {
+      "path": "real-data/harness/tests/test_connectors.py",
+      "bytes": 11553,
+      "sha256": "c013cfbf255f52f91149b272986bbbcfd33f464642b333fd6405173b594c5f24"
+    },
+    {
+      "path": "real-data/harness/tests/test_packaging.py",
+      "bytes": 2086,
+      "sha256": "1ebc939622d4b44beabcdfdaa16efc3e9d966fb035f6c56f9620b319526ec00f"
+    },
+    {
+      "path": "real-data/harness/tests/test_science.py",
+      "bytes": 7397,
+      "sha256": "c2f61ce23952c32340c9d09b412fe3e34b3871efe15e56f8a683117d61e6017c"
+    },
+    {
+      "path": "real-data/harness/tests/test_security.py",
+      "bytes": 5659,
+      "sha256": "66614265ab2138cd6d0d827f13622f0ca8da0781f55d530286ae6930257f7122"
+    },
+    {
+      "path": "real-data/portable_check.py",
+      "bytes": 2377,
+      "sha256": "11e56cd1a5f93fcb5c1c20768e72f6899807357a6877e0d02afc5c886e5ee4a2"
+    },
+    {
+      "path": "real-data/portable_manifest_check.py",
+      "bytes": 1895,
+      "sha256": "1b8db4625c6b3679f349f85c0e55b413817d96bc9f61e4c138e6d56dce79251a"
+    },
+    {
+      "path": "real-data/portable_zhou_check.py",
+      "bytes": 2531,
+      "sha256": "7b50696fd4601cca5637da2ec66085852e64b0798fb91fdc00a0eacd8ef28697"
+    },
+    {
+      "path": "real-data/requirements-fits.lock",
+      "bytes": 593,
+      "sha256": "de100dae79f1e73985e0f0fd565c7c93cacfd0b7d17232eea9cdb8f587e55812"
+    },
+    {
+      "path": "real-data/research/orientation/orientation_v1.py",
+      "bytes": 5468,
+      "sha256": "4fffb0752977f49595f71f189538889ae776824b831a165f8538c56bd946973c"
+    },
+    {
+      "path": "real-data/research/orientation/test_orientation_v1.py",
+      "bytes": 2101,
+      "sha256": "2c9d0afc0c0c581d372228c909fcb5eb2318fc8d9605ef78eee4a759b70b4a22"
+    },
+    {
+      "path": "real-data/review/CHECKPOINT53_INDEPENDENT_ARCHIVE_REVIEW.json",
+      "bytes": 1362,
+      "sha256": "bae122dd44aa0f6c473585159c195292225635bb000cc1bd9610757cc8a7abdf"
+    },
+    {
+      "path": "real-data/review/INDEPENDENT_EXECUTION_REVIEW_SESSION.md",
+      "bytes": 12602,
+      "sha256": "8a4817daeb38bf725a1f1d9a3a1c099d7281c31005d4d2667345b6c2ac890a87"
+    },
+    {
+      "path": "real-data/review/REVIEWED_CHANGES.diff",
+      "bytes": 36895,
+      "sha256": "2157db5dcdbebcc37324ba66c443e6fef584af3d51d0f32c3a14b966e40aed81"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/continuation-20261102T1234Z-01a193cc/CHECKPOINT_FINAL.json",
+      "bytes": 2446,
+      "sha256": "17fa721b803eb8e59a4f1df243d51fbab3263cd8d3d724bb02d9d93c2d72f01d"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/continuation-20261102T1234Z-01a193cc/CHECKPOINT_FINAL.md",
+      "bytes": 2197,
+      "sha256": "480617dfb1fb768af09643bfde7cfa7016da8a40ea6c4c66af7bf2cab7677d6f"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/continuation-20261102T1234Z-01a193cc/CONTINUATION_CHANGELOG.md",
+      "bytes": 2301,
+      "sha256": "3679953e7a7982a87154cd1d61dba5d67c3ffb1df06b538b28b6cb0d258df9b1"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/continuation-20261102T1234Z-01a193cc/EXPERIMENT_LEDGER.jsonl",
+      "bytes": 5799,
+      "sha256": "f699ddd1a2303ff96d6146a7c0391cf09af4dcd10afa6bf7a06d5b42f77d5d01"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/continuation-20261102T1234Z-01a193cc/REVIEW_QUEUE_V9.md",
+      "bytes": 1666,
+      "sha256": "64f782926a2d8830df7f1b73f2afabbca54d8bc9f09603091358f5b67fa8bc8a"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/continuation-20261102T1234Z-01a193cc/RUN_REPORT.md",
+      "bytes": 5908,
+      "sha256": "40c954f6c52b85592698103bdcf7299611ab82d3c7e905e5f3728fc4efadf3a0"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/continuation-20261102T1234Z-01a193cc/SOURCE_PROVENANCE.json",
+      "bytes": 9291,
+      "sha256": "b3863f520258c1a1a3af508a624c9734ccd9146868ce3e5892509ec772f55ced"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/execution-review/hst-fixed-point-20261101/DUPLICATE_RECORD_AUDIT.json",
+      "bytes": 4698,
+      "sha256": "0749d27b64c7ca768ae5335aa052fd5d143a935205c67091987a50df77ed1e42"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/execution-review/hst-fixed-point-20261101/POSTRUN_EXECUTION_REVIEW.json",
+      "bytes": 3379,
+      "sha256": "2f2ad1848e901e17964a0e24ffd4f03da14adc57be46c3b8961861b66200354d"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/experiment_ledger_checkpoint59.jsonl",
+      "bytes": 486444,
+      "sha256": "11b9b6ace7253bb5a6889fa5129c651555bb543849bf4574d25dd2f4abdf8216"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/experiment_ledger_checkpoint60.jsonl",
+      "bytes": 491053,
+      "sha256": "89f9cb205c892ec14d7530150fb17c5cbfe386b332f0f41505c387a2180cf026"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/experiment_ledger_checkpoint61.jsonl",
+      "bytes": 492198,
+      "sha256": "3281e1320616b54df4fceb2c5639bb6dc1a64d5a3be062955086ff37add85127"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/experiment_ledger_checkpoint63.jsonl",
+      "bytes": 493809,
+      "sha256": "7d584a3cee4b7c4fa3099527710f99b04afb32e799423a23b741951b4a8d558a"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/ges-eso-held14-cones-20261102T0550Z-01a193cc/SOURCE_PROVENANCE.json",
+      "bytes": 19474,
+      "sha256": "6408bfa78cce8122703257ff04539b1ee25c58ea2d1268be01bb67338fb7c093"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/held14-rv-recovery-20261102T0622Z-01a193cc/PS1_IDENTITY_EVIDENCE.json",
+      "bytes": 3925,
+      "sha256": "96a77ab17003d22902a992410c86c3fd8689f6cd5d701e393ee1b2651fa0cb63"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/held14-rv-recovery-20261102T0622Z-01a193cc/PS1_IDENTITY_REVIEW.md",
+      "bytes": 2582,
+      "sha256": "24ce35ef7b6ab140b6f24d3a3c4aeae282b99e724ae1c8d0145943315d9e2b4a"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/held14-rv-recovery-20261102T0622Z-01a193cc/REDShift_REVIEW.md",
+      "bytes": 3267,
+      "sha256": "cf3a4e211ca89de81d64139530aa20273f3c3984d67c9deb253fd4879e3b7112"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/held14-rv-recovery-20261102T0622Z-01a193cc/SOURCE_MATRIX.md",
+      "bytes": 6987,
+      "sha256": "80355e2e4909295ab181a06df8f53884ed8fd37c211d4f4d1600e878a929427c"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/held14-rv-recovery-20261102T0622Z-01a193cc/ps1-identity-v1/PROTOCOL.json",
+      "bytes": 3858,
+      "sha256": "45686786c96312641386da5233b9e729934ea5ba6f1916c7f57a815c68b7f2a8"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/held14-rv-recovery-20261102T0622Z-01a193cc/ps1-identity-v1/RESULTS.json",
+      "bytes": 940,
+      "sha256": "6c553da07bba666f36f1424c66c358ca4420f89cc49d1d8059b5c28adfd28cd1"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/held14-rv-recovery-20261102T0622Z-01a193cc/ps1-identity-v1/known_control.raw",
+      "bytes": 502,
+      "sha256": "2712609536c746be388735b65f48adff43a405183a8ca580a2b43bdfbe032f1f"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/held14-rv-recovery-20261102T0622Z-01a193cc/ps1-identity-v1/lamost_psid_target.raw",
+      "bytes": 402,
+      "sha256": "e74ac19384a736baec00585f6af312f8ec3775d9e11e08124b94163c2db15dbe"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/held1533-offline-feasibility-20261102T072412Z-01a193cc/NEXT_ACTION.md",
+      "bytes": 1264,
+      "sha256": "bef5dc52d1e51dfe0346848fb4c05a7ad55bafe71e6256e71e022ffa33c1248a"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/held1533-offline-feasibility-20261102T072412Z-01a193cc/PIXEL_VALUE_CLARIFICATION.md",
+      "bytes": 709,
+      "sha256": "1215df99f09051c31011002e016dc5b1c376938e4c70eec5b449be66a4ef6203"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/held1533-offline-feasibility-20261102T072412Z-01a193cc/PROVENANCE.json",
+      "bytes": 12035,
+      "sha256": "510df4c9598a70d1fa83ffb8635e290b778965c1fbeafa13738a22991e4ad7d4"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/held1533-offline-feasibility-20261102T072412Z-01a193cc/REPORT_V2.md",
+      "bytes": 3544,
+      "sha256": "b7282411aa2677e442bde43270d9ded42a5e660ff33f26a17865148648055d42"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/held1533-ps1-image-20261102T0648Z-01a193cc/PROVENANCE.json",
+      "bytes": 23367,
+      "sha256": "41c3363022f9f6ce45dbb463b3969dea9b972915b605f2ca27877bf58b9c4bdd"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/held1533-ps1-image-20261102T0648Z-01a193cc/PROVENANCE_ADDENDUM.json",
+      "bytes": 3920,
+      "sha256": "50e83b81e4f5e71fc47866ab43589d1b6db85ad048db643335ac787d9017532b"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/held1533-ps1-image-20261102T0648Z-01a193cc/REVIEW_QUEUE_V3.md",
+      "bytes": 1408,
+      "sha256": "760a9755d4f811a5692cea38a44ad47b0f98496e502b2148f051674af81b507f"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/held1533-ps1-image-20261102T0648Z-01a193cc/RUN_REPORT_V3.md",
+      "bytes": 2900,
+      "sha256": "ba455943abc73979507704758caf8d055915ac9979d681cccc6b8eb01273cef0"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/held1533-ps1-image-20261102T0648Z-01a193cc/VERIFIER_CORRECTION_V2.md",
+      "bytes": 1296,
+      "sha256": "c8ef8f0828f6ccee8f881b0d1ba8e1de6d6ae455347bc78c24158f5bec57516f"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/held1533-sedr5-20261102T081926Z-01a193cc/CAPTURE_MANIFEST_V9.json",
+      "bytes": 862,
+      "sha256": "7ada7fbbfc0ee3feda6e160926082e8b9d63c2c1986fa0ff00f316c517f2f239"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/held1533-sedr5-20261102T081926Z-01a193cc/INDEPENDENT_CAPTURE_AUDIT.md",
+      "bytes": 1472,
+      "sha256": "d422704b6e62a97bb7ce26076b5e6325c701e51ff66e0ab58d5cacb2df478a33"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/held1533-sedr5-20261102T081926Z-01a193cc/INDEPENDENT_METADATA_REVIEW.md",
+      "bytes": 1335,
+      "sha256": "96ff648122b21c839546994b08cb1c45d17fda13d99b714569161f1a6b82dba6"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/held1533-sedr5-20261102T081926Z-01a193cc/LMJMLIST_ADDENDUM.md",
+      "bytes": 1880,
+      "sha256": "54024827b5a9dc3c5e0e021b3d2593c437e77886a630bc116d1ea8551278994a"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/held1533-sedr5-20261102T081926Z-01a193cc/METADATA_PROTOCOL_V2.md",
+      "bytes": 1828,
+      "sha256": "97c8cbff9b3c8f256f9f0dcb93f93b3ccfc7c37da4d3c0c5c7efb6144fcf416c"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/held1533-sedr5-20261102T081926Z-01a193cc/PROTOCOL_V5.json",
+      "bytes": 4892,
+      "sha256": "1f72d83ee0d6214c9e148f1c3e5d4cf2fe562a6cfac3d03d8e94ae2db8db29ca"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/held1533-sedr5-20261102T081926Z-01a193cc/PROVENANCE.json",
+      "bytes": 17685,
+      "sha256": "dfc3f9cd3f762ae7d47ee6da000c9c719eab10ab1bfb1fe6890f9e0f5c38a298"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/held1533-sedr5-20261102T081926Z-01a193cc/PROVENANCE_ADDENDUM_V2.json",
+      "bytes": 630,
+      "sha256": "410e3ab46e699bcf42766a5294baff77ef178d01109442366d8d644977877355"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/held1533-sedr5-20261102T081926Z-01a193cc/RUN_REPORT_V2.md",
+      "bytes": 3473,
+      "sha256": "9698e23fc037dce1ec6f034ab8184536e9b99d9677b729bd34c3f9cdad1c0afd"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/held1533-sedr5-20261102T081926Z-01a193cc/TEST_V9_RESULT.json",
+      "bytes": 816,
+      "sha256": "870274929a1ce35936f4ee2d435fd4d5d107b326abfe6d357647c6ea7f6d7299"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/held1533-sedr5-20261102T081926Z-01a193cc/TEST_V9_STDERR.raw",
+      "bytes": 2537,
+      "sha256": "818722ed276d943282646dbc4a45db043fe95601e37dc1fccc0c521e57a6ac63"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/held1533-sedr5-20261102T081926Z-01a193cc/TEST_V9_STDOUT.raw",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/held1533-sedr5-20261102T081926Z-01a193cc/capture-v9/RESULTS.json",
+      "bytes": 4233,
+      "sha256": "b8d6e323083e8732f8f5d2476bc9985a6bfed7e77e1dd448d4671d1c057b9743"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/held1533-sedr5-20261102T081926Z-01a193cc/capture-v9/day.raw",
+      "bytes": 1299,
+      "sha256": "a30e1d187ccdeb48d9465d95f1ab1d749cf4ddb3a332262e718965315de1396f"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/held1533-sedr5-20261102T081926Z-01a193cc/capture-v9/day.request.json",
+      "bytes": 1711,
+      "sha256": "0915ec79bec0c4f9d4067d8e98c2fa88647da90357a38c55ad14b818a737aa84"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/held1533-sedr5-20261102T081926Z-01a193cc/capture-v9/plan.raw",
+      "bytes": 312833,
+      "sha256": "510e1ae4f23937c221130734b6922de7dca00122de71077d858c64c63aa8551a"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/held1533-sedr5-20261102T081926Z-01a193cc/capture-v9/plan.request.json",
+      "bytes": 1771,
+      "sha256": "cf9bef817d7f9d57b8750b3e8d66c642604f61c30b2403bd92d171c422dd34fa"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/held1533-sedr5-20261102T081926Z-01a193cc/capture-v9/product.raw",
+      "bytes": 550080,
+      "sha256": "7a33d6a4ff8594c33b43181309bc5ad4e0739e6245943e06ba099172d04742de"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/held1533-sedr5-20261102T081926Z-01a193cc/capture-v9/product.request.json",
+      "bytes": 1822,
+      "sha256": "9c8c47f5a7fa8c718dfd45f58936862c5f28fa41fcd04b25b1ffe4dbf968482f"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/held1533-sedr5-20261102T081926Z-01a193cc/capture-v9/root.raw",
+      "bytes": 92063,
+      "sha256": "cf493675ced7a1332ee9105c7c6043ce6a8257f0093e1848390e13f2d5f89a83"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/held1533-sedr5-20261102T081926Z-01a193cc/capture-v9/root.request.json",
+      "bytes": 1686,
+      "sha256": "b9e3bb6e01194c4001eb6d3c57a058b91ca202751c8337a61e2e7dbef59d3e1e"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/held1533-sedr5-20261102T081926Z-01a193cc/capture_serial_v9.py",
+      "bytes": 20987,
+      "sha256": "3f9b82d0ce290efc280dd4e70e1963045bc95aa527cf880387e6f8ccbcb525f5"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/held1533-sedr5-20261102T081926Z-01a193cc/metadata-v2/METADATA.json",
+      "bytes": 4547,
+      "sha256": "23d9d3b4c06fbd2c9d04990d0364c3eca68c26c2dfabd268f0b508bc16339102"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/held1533-sedr5-20261102T081926Z-01a193cc/native_transport_sedr5_v5.py",
+      "bytes": 8821,
+      "sha256": "0f6c1d71336306b5e0bb319f5ced7cfe0e059af891d6632d28f49e634c2c8f42"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/held1533-sedr5-20261102T081926Z-01a193cc/test_capture_v9.py",
+      "bytes": 13014,
+      "sha256": "a9fd61ce366db13e34355f1daf429c24ece2ec9beda3ee54f0debe7b7a44ac78"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/held1533-sedr5-20261102T081926Z-01a193cc/test_transport_deferred_v2.py",
+      "bytes": 2232,
+      "sha256": "cd19e7be272f48ac353d160c28a4f9e7f7ba8d561ef6ceefd0e7a29f34c95061"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/hst-1533-control-v2-20261102T1233Z-01a193cc/INDEPENDENT_EXECUTION_RESULT_REVIEW.json",
+      "bytes": 3022,
+      "sha256": "d6474ac0399c2889e2dc9f714de59e0c2a8dad6b9f7f2bf1159771253649f71d"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/hst-1533-control-v2-20261102T1233Z-01a193cc/INDEPENDENT_PREFLIGHT.md",
+      "bytes": 649,
+      "sha256": "269b08ad807e7beb0cbe86a33132fcbcb2803fe6abb0aabce49ef7e7ae9112e6"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/hst-1533-control-v2-20261102T1233Z-01a193cc/INDEPENDENT_SCIENCE_RESULT_REVIEW.json",
+      "bytes": 3609,
+      "sha256": "88caf042d4e991f2d7cb47ecce1ac04c41e64cb372c6037aac355501b355b5c0"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/hst-1533-control-v2-20261102T1233Z-01a193cc/MANIFEST.json",
+      "bytes": 1392,
+      "sha256": "bec4540f44f17367faa3d85d6b2a6c8a30619151fcc950957df80c54a12a267d"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/hst-1533-control-v2-20261102T1233Z-01a193cc/PROTOCOL.md",
+      "bytes": 2334,
+      "sha256": "6e059b0a4d0b3e7fb0673851c1e44b9352c272995352c4791bddc16ba9561a14"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/hst-1533-control-v2-20261102T1233Z-01a193cc/QUERY.adql",
+      "bytes": 491,
+      "sha256": "a31374750e59638a58dc8819803ac029557d4f44c476d41379c3809061d79a92"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/hst-1533-control-v2-20261102T1233Z-01a193cc/capture/FINISH.json",
+      "bytes": 223,
+      "sha256": "e44a11128e446c926585d152a3bcb985819a725e1eebfba6a4cf4fc767b6b359"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/hst-1533-control-v2-20261102T1233Z-01a193cc/capture/RESULT.json",
+      "bytes": 1110,
+      "sha256": "6a6560d95b36e98f09df1c23d7b8ed568f1a7c1432e20d8aa0efa9a6ce8156d0"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/hst-1533-control-v2-20261102T1233Z-01a193cc/capture/hst_control.json",
+      "bytes": 2956,
+      "sha256": "53b7918a077681b48130c99def5230c756a3485f64d9525deb118ba6ebd81809"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/hst-1533-control-v2-20261102T1233Z-01a193cc/capture/hst_control.raw",
+      "bytes": 18907,
+      "sha256": "760770c6c3e0d3ff0d7d548b2a9b90182f95bcc668b42c7a3e9ae7ad08cb20e2"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/hst-1533-control-v2-20261102T1233Z-01a193cc/hst_control.py",
+      "bytes": 18468,
+      "sha256": "0888d00bd63278639bc8a27e205e2350d36eed5cad89b769be80133d40c66f99"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/hst-1533-control-v2-20261102T1233Z-01a193cc/test_hst_control.py",
+      "bytes": 15417,
+      "sha256": "78c122b3b3e5cb0b85c540c9b9bbef2f1a7a90b826ec35480ccabdafa6053f42"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/hst-1533-target-20261102T1232Z-01a193cc/INDEPENDENT_EXECUTION_RESULT_REVIEW.json",
+      "bytes": 3186,
+      "sha256": "69f5b68e167c55f749d146e0fa49ba8f4f142000e9fd434f8d0c3e7f8656e830"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/hst-1533-target-20261102T1232Z-01a193cc/INDEPENDENT_PREFLIGHT.md",
+      "bytes": 709,
+      "sha256": "fbc7b247ecb6d5ebbd9952fe743850581a8845fed435109be2f806ef5f8f926b"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/hst-1533-target-20261102T1232Z-01a193cc/INDEPENDENT_SCIENCE_RESULT_REVIEW.json",
+      "bytes": 3511,
+      "sha256": "78dc5eec2b1ddfd9643e91a505e253833bc5689d759240f98436a929fd294b7e"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/hst-1533-target-20261102T1232Z-01a193cc/MANIFEST.json",
+      "bytes": 2556,
+      "sha256": "fa0fbc8537370aec7c33888c7a8551b092a7c537dcadacf1d53041875c53f5ad"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/hst-1533-target-20261102T1232Z-01a193cc/PROTOCOL.md",
+      "bytes": 1594,
+      "sha256": "b7e787c2bf70af40e329af03c4fb9d8c8fdec1939b61eec1a4dbae3cf501c8ba"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/hst-1533-target-20261102T1232Z-01a193cc/QUERY.adql",
+      "bytes": 489,
+      "sha256": "55f760dde70c8f8943a7c4a7a994652ac8925e9e659ac3e218ece070585b554d"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/hst-1533-target-20261102T1232Z-01a193cc/RUN_REPORT.md",
+      "bytes": 1565,
+      "sha256": "30e0eaff63414c3bd67a56809450d0b8ff32f6e739a68f5ffc5dc8b7990ae616"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/hst-1533-target-20261102T1232Z-01a193cc/capture/FINISH.json",
+      "bytes": 223,
+      "sha256": "b5ba0337deb146307a3dad41a311f861d97619920a0d48217ba488d017cc3596"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/hst-1533-target-20261102T1232Z-01a193cc/capture/RESULT.json",
+      "bytes": 1121,
+      "sha256": "5d8675d4bf1f6ddf5c9e20b439b3f691f2c1121fa1c33fc6952733d811e929a0"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/hst-1533-target-20261102T1232Z-01a193cc/capture/hst_target.json",
+      "bytes": 2944,
+      "sha256": "7a2ced4b7d0841e211a083e6fcf347bb9aa4870769495b62290c2b8f7ffd1721"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/hst-1533-target-20261102T1232Z-01a193cc/capture/hst_target.raw",
+      "bytes": 5334,
+      "sha256": "281a15c331e9cc1a063b76b16dc7f54632f9552c74888c7a835d6dd9fbf20b83"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/hst-1533-target-20261102T1232Z-01a193cc/hst_target.py",
+      "bytes": 23568,
+      "sha256": "66ef00cc7a4e612484bc63c21d442d01f5032739664107997218fd3c5f38404f"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/hst-1533-target-20261102T1232Z-01a193cc/test_hst_target.py",
+      "bytes": 19014,
+      "sha256": "fceeefc4ddd77c39869350cb95b5de7d946d42c2e51d2c45b0faffa6396aedb3"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/hst-fixed-point-control-tools/hst-fixed-point-20261101T0708Z-01a193cc/PROTOCOL.json",
+      "bytes": 10032,
+      "sha256": "4bb39d2e6441776e2b45a7a1f5f62bcc2049ccf3a170a120bb1c8b16f59f8d78"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/hst-fixed-point-control-tools/hst-fixed-point-20261101T0708Z-01a193cc/RESULTS.json",
+      "bytes": 718,
+      "sha256": "fa2fc8c8dda5b53a3f5342b5b5788f0f2fa063645709aecf4f807a19f26cf94a"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/hst-fixed-point-control-tools/hst-fixed-point-20261101T0708Z-01a193cc/hst_fixed_point.json",
+      "bytes": 2915,
+      "sha256": "385b51743b69a22aa35aa139b121682b773ed86cdebb619001a6ca5e42a3fa21"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/hst-fixed-point-control-tools/hst-fixed-point-20261101T0708Z-01a193cc/hst_fixed_point.raw",
+      "bytes": 18907,
+      "sha256": "dbfb5660e120a04888538f8e8bce4b0d22ca52ea5784b50f85f5c9b065e8d01b"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/legacy-control-v5-20261102T1133Z-01a193cc/CONTROL_FITS_INVENTORY_V3.json",
+      "bytes": 5463,
+      "sha256": "1d29d06ca590369f12fdae330edc71a8d0c2723ecad327843f17f187edab3253"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/legacy-control-v5-20261102T1133Z-01a193cc/INDEPENDENT_EXECUTION_CONTROL_REVIEW.md",
+      "bytes": 1258,
+      "sha256": "c513a54d2664b64f01b328c5eb321afaadcf4e2647df1f5c22812d2ee7836811"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/legacy-control-v5-20261102T1133Z-01a193cc/INDEPENDENT_EXECUTION_PREFLIGHT.md",
+      "bytes": 846,
+      "sha256": "2ce4546457b165a48bb1be8149ab98c0851e1e7a3577122f63f729306ac86922"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/legacy-control-v5-20261102T1133Z-01a193cc/INDEPENDENT_SCIENCE_CONTROL_REVIEW.md",
+      "bytes": 1262,
+      "sha256": "f85b27649280c9e761a95800eac89d0389474b46ea2ed80414eedbce621bec89"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/legacy-control-v5-20261102T1133Z-01a193cc/INDEPENDENT_SCIENCE_PREFLIGHT.md",
+      "bytes": 1496,
+      "sha256": "7162cba13ad2130734619e55df8a0d4f754710c9b9acdd2228665ec6bbc0c6c2"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/legacy-control-v5-20261102T1133Z-01a193cc/MANIFEST.json",
+      "bytes": 543,
+      "sha256": "d0525979bd757473313ceccc7097cee76d6b786b48470ea8a5a0d00627be6238"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/legacy-control-v5-20261102T1133Z-01a193cc/PROTOCOL.md",
+      "bytes": 3723,
+      "sha256": "e7262df7ad1d3c6e5734e7d8578811de540dc5ce8eb5aec5125e694aa072550d"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/legacy-control-v5-20261102T1133Z-01a193cc/capture/FINISH.json",
+      "bytes": 223,
+      "sha256": "4763e901083850ea0c815c12b520367138d52eb8f287d60b044223a5e478890a"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/legacy-control-v5-20261102T1133Z-01a193cc/capture/RESULT.json",
+      "bytes": 1109,
+      "sha256": "0df5fb4db4c6bdcfabf25b6368cf675470558feb83f4333117416b5da7b7878a"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/legacy-control-v5-20261102T1133Z-01a193cc/capture/legacy_control.json",
+      "bytes": 1872,
+      "sha256": "43b6941713eb883af490bdebabbe5f01a6d96b79671d7f62a0c8fb9e256314a5"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/legacy-control-v5-20261102T1133Z-01a193cc/capture/legacy_control.raw",
+      "bytes": 417600,
+      "sha256": "033df85a32f94a79932af1e15d29d9804f77362c64dc4ae8b63a16bc4ba4edf9"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/legacy-control-v5-20261102T1133Z-01a193cc/inspect_control_fits_v3.py",
+      "bytes": 3666,
+      "sha256": "5c5fdcb105dcffa07fe2636b12931592b786db011f5813e8ff976cf82766b95d"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/legacy-control-v5-20261102T1133Z-01a193cc/legacy_control.py",
+      "bytes": 14767,
+      "sha256": "b3cf773b35acb60d29fdd9ff1d6848471d6a52dc1da7052f4262c5bdaa51481b"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/legacy-control-v5-20261102T1133Z-01a193cc/test_legacy_control.py",
+      "bytes": 12697,
+      "sha256": "4a4ea2b7c0aa8b33a3c33ec5d821efb192e1f223625c891ef0d9449e92e803d3"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/legacy-mask-control-v2-20261102T1145Z-01a193cc/EXPERIMENT_LEDGER.jsonl",
+      "bytes": 789,
+      "sha256": "365a8ad0a6e2c44789c5e2ff897f06b33204b998209e623cf75429f1dd77269d"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/legacy-mask-control-v2-20261102T1145Z-01a193cc/INDEPENDENT_EXECUTION_CAPTURE_REVIEW.md",
+      "bytes": 1039,
+      "sha256": "f4caa30f0bdd3e223d8f432d315bc74413a8d89fb9dbaa2ce066d2579e0cf1cc"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/legacy-mask-control-v2-20261102T1145Z-01a193cc/INDEPENDENT_EXECUTION_PREFLIGHT.md",
+      "bytes": 759,
+      "sha256": "0450fdaa69fcca45fe981fa94165d892ad9cc41330945ac349e0c8a852f904ad"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/legacy-mask-control-v2-20261102T1145Z-01a193cc/INDEPENDENT_SCIENCE_CONTROL_REVIEW.md",
+      "bytes": 1899,
+      "sha256": "2f623573d16965666c6ce0305b9bf555d10579d7d6f7078fc93ca2fb843bd797"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/legacy-mask-control-v2-20261102T1145Z-01a193cc/INDEPENDENT_SCIENCE_PREFLIGHT.md",
+      "bytes": 1292,
+      "sha256": "b68ed10561fbf3d66ba137f3db70ad98ac2d1e9e3ccf80e1036f78b2f4da414a"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/legacy-mask-control-v2-20261102T1145Z-01a193cc/MANIFEST.json",
+      "bytes": 1173,
+      "sha256": "4336210267cd13a7d18507ff8fd870969ad0c887ed52903f9675097754acf63b"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/legacy-mask-control-v2-20261102T1145Z-01a193cc/MASK_CONTROL_INSPECTION.json",
+      "bytes": 2521,
+      "sha256": "6be225fead731d1ea7f7c9901ff157b7bab2e4c5789bd5c39ff62c45bb4eca42"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/legacy-mask-control-v2-20261102T1145Z-01a193cc/MASK_FRAME_COMPARISON.json",
+      "bytes": 2526,
+      "sha256": "cbf417e5aee896cb133ef6237a2ee92f2686a967244c078e25910583b6e76494"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/legacy-mask-control-v2-20261102T1145Z-01a193cc/MASK_HEADER_INVENTORY.json",
+      "bytes": 1836,
+      "sha256": "7d0c4517902e6549b911c175784d889a5ff33ed66352f37157f76575114fc968"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/legacy-mask-control-v2-20261102T1145Z-01a193cc/MASK_WCS_CORRECTION.md",
+      "bytes": 1159,
+      "sha256": "0e2a4a5f18b74de5812cb98dc5a3a865effe5be65352a6869e62d0b2c4721bc6"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/legacy-mask-control-v2-20261102T1145Z-01a193cc/PROTOCOL.md",
+      "bytes": 2179,
+      "sha256": "1a4e7c4f953b8915895b16e9d57d746ed88553fde7e97c1b08cf842fec02916f"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/legacy-mask-control-v2-20261102T1145Z-01a193cc/RUN_REPORT.md",
+      "bytes": 1408,
+      "sha256": "9450b13cd3bc0abb026737f01bf2f042695b31fbadf21eee7c773fee4390fbdd"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/legacy-mask-control-v2-20261102T1145Z-01a193cc/capture/FINISH.json",
+      "bytes": 223,
+      "sha256": "a4cd5f7d86ed7d04ae6691d868918468172384560e2e70442b3874ae13313d80"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/legacy-mask-control-v2-20261102T1145Z-01a193cc/capture/RESULT.json",
+      "bytes": 1109,
+      "sha256": "aeb73b53ee0b9211cbff308422509d9fb3259bd7aa9bb439c6bb3b01e465e370"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/legacy-mask-control-v2-20261102T1145Z-01a193cc/capture/mask_control.json",
+      "bytes": 1823,
+      "sha256": "30074decf45b44bdc1927505adf191c935a859fcdb5ef4967662a8d6212aa947"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/legacy-mask-control-v2-20261102T1145Z-01a193cc/capture/mask_control.raw",
+      "bytes": 264960,
+      "sha256": "e56b8a2e5fa37dc45d5f67a0ff07cf9d49a13ad6dc75c4ddf505650c6ac5f6bd"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/legacy-mask-control-v2-20261102T1145Z-01a193cc/compare_mask_frames.py",
+      "bytes": 2186,
+      "sha256": "5527174fb9ece942b51b0a2516a7da2bc9f7268287038c0644cf0935b6bffbf8"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/legacy-mask-control-v2-20261102T1145Z-01a193cc/inspect_mask_control.py",
+      "bytes": 3562,
+      "sha256": "8005d3f865d9726dc8546efa77d7d18b6eb051d2743749c824d7a0d84fe07657"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/legacy-mask-control-v2-20261102T1145Z-01a193cc/inspect_mask_headers.py",
+      "bytes": 1611,
+      "sha256": "e21986727b6b166efd447f943c718aaa8f85aff45d003f3b29221e660e715e0b"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/legacy-mask-control-v2-20261102T1145Z-01a193cc/mask_control.py",
+      "bytes": 16379,
+      "sha256": "680314305ec108e530a74ed6d4540d770aea2913fdad14f2bad26e9147bbf15e"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/legacy-mask-control-v2-20261102T1145Z-01a193cc/test_mask_control.py",
+      "bytes": 13727,
+      "sha256": "32b4040a7f6096607804730e90e0d256e72562c658017b7360f6b5a82e81929a"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/legacy-mask1533-target-v2-20261102T1150Z-01a193cc/EXPERIMENT_LEDGER.jsonl",
+      "bytes": 1634,
+      "sha256": "ec410b589a2e31c88f9395783cc1f2271ff5636d6b14b476d49ba65c21eba477"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/legacy-mask1533-target-v2-20261102T1150Z-01a193cc/INDEPENDENT_EXECUTION_CAPTURE_REVIEW.md",
+      "bytes": 1080,
+      "sha256": "ccc5ef833e9d8c136841b764afc3cdbc8ef9273c4368d075ee3605555fffc80a"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/legacy-mask1533-target-v2-20261102T1150Z-01a193cc/INDEPENDENT_EXECUTION_PREFLIGHT.md",
+      "bytes": 744,
+      "sha256": "2a9e14dc33aee1c73a1b76db0c8abb1fd6f44f1d88d3fd41c3b74a55633c9679"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/legacy-mask1533-target-v2-20261102T1150Z-01a193cc/INDEPENDENT_SCIENCE_MASK_REVIEW.md",
+      "bytes": 1920,
+      "sha256": "d2f01e2c5b22a1133eb07e6da3bb0d123020376519f0380a50c9e0d6841ad316"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/legacy-mask1533-target-v2-20261102T1150Z-01a193cc/INDEPENDENT_SCIENCE_PREFLIGHT.md",
+      "bytes": 963,
+      "sha256": "775c45f627a580afbf047d7c99e8b0e3cf50790edafec090ef48e14cde4d1d27"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/legacy-mask1533-target-v2-20261102T1150Z-01a193cc/MANIFEST.json",
+      "bytes": 2059,
+      "sha256": "f25aba36ed7d8fdbafa982778135dd0605111a049ac5546a622c594c08a2e92a"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/legacy-mask1533-target-v2-20261102T1150Z-01a193cc/MASK_HEADER_INVENTORY.json",
+      "bytes": 1836,
+      "sha256": "b40b0c400b227c1ba6f4f6dc7c289731d894962c01445ff0a6dcf9ff41a996eb"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/legacy-mask1533-target-v2-20261102T1150Z-01a193cc/NEXT_ACTION.md",
+      "bytes": 1430,
+      "sha256": "39039ef7589ff4265b57febd993a555c6a998320ff55975567ba8131020521c8"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/legacy-mask1533-target-v2-20261102T1150Z-01a193cc/PROTOCOL.md",
+      "bytes": 2970,
+      "sha256": "be8ececf1f9c0bdc91be134124b9bdd9ab13cb281c66389f15d5f2e9593e1381"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/legacy-mask1533-target-v2-20261102T1150Z-01a193cc/REVIEW_QUEUE_V7.md",
+      "bytes": 1874,
+      "sha256": "eb3889c5125adca63f5449c78de85343bafd313f2d37e0ba324b7f58de451641"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/legacy-mask1533-target-v2-20261102T1150Z-01a193cc/RUN_REPORT.md",
+      "bytes": 1956,
+      "sha256": "46a6c956fcef396c43cdf18d3540dab00b690099ca41867bab31e3e2d504af34"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/legacy-mask1533-target-v2-20261102T1150Z-01a193cc/SOURCE_PROVENANCE.json",
+      "bytes": 3325,
+      "sha256": "ae64faf1c1cfdd57284105737d736b559c5ae1715b90ba447bf3c4a8e9f431cf"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/legacy-mask1533-target-v2-20261102T1150Z-01a193cc/TARGET_MASK_WINDOWS.json",
+      "bytes": 12306,
+      "sha256": "0bc4c9cb0c4a5869c4044c0a54c22141ac76d7ea90ada32879efbc7f3a89c602"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/legacy-mask1533-target-v2-20261102T1150Z-01a193cc/capture/FINISH.json",
+      "bytes": 223,
+      "sha256": "3a8171405e6c13c99bdcddc6b17fc176011e24315fdd2e45dd2777aeffb46df5"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/legacy-mask1533-target-v2-20261102T1150Z-01a193cc/capture/RESULT.json",
+      "bytes": 1115,
+      "sha256": "decdc14df04a6162f50057691e3dd13c95dbcb6b735082affe6da544a5ff429c"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/legacy-mask1533-target-v2-20261102T1150Z-01a193cc/capture/mask_target.json",
+      "bytes": 1817,
+      "sha256": "8c2d1c362445e770fad34b5332eb3260fe2cbbaf9cfd584dde7d7a00f6260591"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/legacy-mask1533-target-v2-20261102T1150Z-01a193cc/capture/mask_target.raw",
+      "bytes": 256320,
+      "sha256": "cd1409e6d636e7bfa284f16ca985adfb151ff81a6c384485bb0f8feea9a061c4"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/legacy-mask1533-target-v2-20261102T1150Z-01a193cc/check_mask_evidence.py",
+      "bytes": 1073,
+      "sha256": "c7891ddf3a4a7726aec6173b491e9b87506d54de612b064547adeafb19915981"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/legacy-mask1533-target-v2-20261102T1150Z-01a193cc/inspect_mask_headers.py",
+      "bytes": 1609,
+      "sha256": "e1f3154b76e17752d47dfed54c6cfcbbf0cfd5254d265a49682ddea11a6c47e2"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/legacy-mask1533-target-v2-20261102T1150Z-01a193cc/mask_target.py",
+      "bytes": 18758,
+      "sha256": "ccdaeb1e4fc73beb1c6efb4b3455e729092906dbc73299be08b64c53199b31dc"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/legacy-mask1533-target-v2-20261102T1150Z-01a193cc/read_target_mask.py",
+      "bytes": 6279,
+      "sha256": "51442e5b9e99692fa5eeb12b8b2a5bc218707eba4a643dbd8e8321b185ae2735"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/legacy-mask1533-target-v2-20261102T1150Z-01a193cc/test_mask_decode.py",
+      "bytes": 852,
+      "sha256": "f563c2ae19c4c445197357b965c03ca7dbcd1f91a8fd648b9f22334998143058"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/legacy-mask1533-target-v2-20261102T1150Z-01a193cc/test_mask_target.py",
+      "bytes": 14234,
+      "sha256": "9a0a2f5aa636206c304cd8ac786ec85653780df77fbc0457ed73f3f080bb80e3"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/legacy1533-target-v2-20261102T1137Z-01a193cc/EXPERIMENT_LEDGER.jsonl",
+      "bytes": 1883,
+      "sha256": "395b6b65f2fd7c289487c4ca3b1f10ef30f9588494c450c4e16f8903d4c168d9"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/legacy1533-target-v2-20261102T1137Z-01a193cc/INDEPENDENT_EXECUTION_CAPTURE_REVIEW.md",
+      "bytes": 1223,
+      "sha256": "fd182e36305f2363c93a289456b5d654bc955e1e93465fbced61dfc01fe871e4"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/legacy1533-target-v2-20261102T1137Z-01a193cc/INDEPENDENT_EXECUTION_PREFLIGHT.md",
+      "bytes": 1067,
+      "sha256": "bdc995429e2032d906b19191c378b376dab160fa8b2b1c74d1db6e7497aec47e"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/legacy1533-target-v2-20261102T1137Z-01a193cc/INDEPENDENT_SCIENCE_FITS_REVIEW.md",
+      "bytes": 1917,
+      "sha256": "856ad4c56721d806be8deef35c321246ff26e1c3309b8b134de13a2d0bd99e9c"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/legacy1533-target-v2-20261102T1137Z-01a193cc/INDEPENDENT_SCIENCE_PREFLIGHT.md",
+      "bytes": 1251,
+      "sha256": "cbe12ffde27ef0fef5de0545a48fc1aaa9ac68aefd6ebc104ad33b79ccba6e7c"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/legacy1533-target-v2-20261102T1137Z-01a193cc/LOCAL_WEIGHT_COUNTS.json",
+      "bytes": 3062,
+      "sha256": "bb7c7367998d3d190f27be389202be75d3c3567f1df6ddcb16433e8766cd8c22"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/legacy1533-target-v2-20261102T1137Z-01a193cc/MANIFEST.json",
+      "bytes": 1230,
+      "sha256": "f88ce9a42c67ed945d1c1ba4722dc54e5737d290491796886216abdc1e2dbf59"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/legacy1533-target-v2-20261102T1137Z-01a193cc/PROTOCOL.md",
+      "bytes": 2653,
+      "sha256": "4eb238b3e39832bff58bdb05c2a48c956cf5733ef5d1673f4c950a010431782e"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/legacy1533-target-v2-20261102T1137Z-01a193cc/PROVENANCE_ADDENDUM.json",
+      "bytes": 791,
+      "sha256": "af258b9320953618f5e167a8f5f52ff3e76ae45de6df8a45989b9236e596fad4"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/legacy1533-target-v2-20261102T1137Z-01a193cc/RESOURCE_SAMPLE_TIMESTAMPED.json",
+      "bytes": 481,
+      "sha256": "361bdca49ac03a9665c9437e37ba04613dbaacfeeb2d2b8d1820e70543677f38"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/legacy1533-target-v2-20261102T1137Z-01a193cc/REVIEW_QUEUE_V6.md",
+      "bytes": 1738,
+      "sha256": "36cbfe45d95210ce2944fa05a1ef8abe9e4e819bfa969240233e5ad4219131e3"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/legacy1533-target-v2-20261102T1137Z-01a193cc/RUN_REPORT.md",
+      "bytes": 2689,
+      "sha256": "d522d757363126c80ae2d7fffd78de4dad97585ad5af9878a72caac8d45bfd4d"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/legacy1533-target-v2-20261102T1137Z-01a193cc/SOURCE_PROVENANCE.json",
+      "bytes": 3475,
+      "sha256": "60fdaa6a71537b7b38686a84515d6c637d6d65545e5b9eb61db8ab4f3b46f469"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/legacy1533-target-v2-20261102T1137Z-01a193cc/TARGET_FITS_INVENTORY.json",
+      "bytes": 17501,
+      "sha256": "a8cf0651e48eaa442d06388f0ac6cf212a2f04eca7a6b6c0958d161289f64d28"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/legacy1533-target-v2-20261102T1137Z-01a193cc/capture/FINISH.json",
+      "bytes": 223,
+      "sha256": "ea11cf24c66924ee8fe3a2d8e10d8c69506349a6388daa6c23543c2fcbdfa79a"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/legacy1533-target-v2-20261102T1137Z-01a193cc/capture/RESULT.json",
+      "bytes": 1116,
+      "sha256": "ca1531d8391f01a206c7bd3a415f57c7aec673ee484e0104a5b2377023ca0414"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/legacy1533-target-v2-20261102T1137Z-01a193cc/capture/legacy_target.json",
+      "bytes": 1912,
+      "sha256": "040bb40c6ed895f267d03464a3792941a9df88663d8f84250c4d05648e2619aa"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/legacy1533-target-v2-20261102T1137Z-01a193cc/capture/legacy_target.raw",
+      "bytes": 1195200,
+      "sha256": "eb89b9c44c2e1c8273f901c2269c90c2f9cdfa2784644d05175719749addc2af"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/legacy1533-target-v2-20261102T1137Z-01a193cc/check_evidence.py",
+      "bytes": 1025,
+      "sha256": "514824a42f4497f56d3b85248cb892e54361f6eced9971eb66bfc8ba80363ba5"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/legacy1533-target-v2-20261102T1137Z-01a193cc/inspect_target_fits.py",
+      "bytes": 4253,
+      "sha256": "f5f44303e38ed3cdf39e32ae4b4659bd021e478e30070bd4451fab2abfd0cb9c"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/legacy1533-target-v2-20261102T1137Z-01a193cc/legacy_target.py",
+      "bytes": 17290,
+      "sha256": "82d27ef069f863080aae0e23986204110661497641028bfd7c065d96f0c4646d"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/legacy1533-target-v2-20261102T1137Z-01a193cc/test_legacy_target.py",
+      "bytes": 15170,
+      "sha256": "2631e63db87d25538b756c6ab902834f890047a4ee14fc42eac3d0e98c8641ca"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/legacy1533-target-v2-20261102T1137Z-01a193cc/weight_inventory.py",
+      "bytes": 2440,
+      "sha256": "8583028824db454e865dd87b283589d6e162c6d5fd6b4c294b30a1f5f43b58f1"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/noirlab-sdss-empty-20261102T1210Z-01a193cc/EMPTY_CONTROL.json",
+      "bytes": 1143,
+      "sha256": "c0ff4e6ec5ac1ddcb86f1f7acd22751c55c0a4a0fdd7bdd80a0d59933c077ce9"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/noirlab-sdss-empty-20261102T1210Z-01a193cc/INDEPENDENT_EXECUTION_CAPTURE_REVIEW.md",
+      "bytes": 883,
+      "sha256": "bc0254a0568d4225878d0cf3a99fe1f9c7e2c06a84cc10ec04d45a855fd58ea1"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/noirlab-sdss-empty-20261102T1210Z-01a193cc/INDEPENDENT_PARSER_REVIEW.md",
+      "bytes": 799,
+      "sha256": "608645bf72ecce1a5088a17acf5edb7432d88e35b21be234967c6e584fc299ed"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/noirlab-sdss-empty-20261102T1210Z-01a193cc/INDEPENDENT_PREFLIGHT.md",
+      "bytes": 820,
+      "sha256": "7fe8b166d462ad9dc08e647520d00a30b561f4def8daeb346143d8ce602a1090"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/noirlab-sdss-empty-20261102T1210Z-01a193cc/INDEPENDENT_SCIENCE_CONTROL_REVIEW.md",
+      "bytes": 694,
+      "sha256": "68f6544e8b717957dab1fc204651af3db86ba8f23ec3f21beaf1e8ee9af6635c"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/noirlab-sdss-empty-20261102T1210Z-01a193cc/MANIFEST.json",
+      "bytes": 3162,
+      "sha256": "6680fdfe90efc49baa36235d8c2a64847b4a04ec276121edeb6fec36e67f2e8f"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/noirlab-sdss-empty-20261102T1210Z-01a193cc/PROTOCOL.md",
+      "bytes": 1593,
+      "sha256": "28322ad11d7604aafbc68a22076bf19a85c49ce6cabfa2fcaf6e217e1717cea5"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/noirlab-sdss-empty-20261102T1210Z-01a193cc/QUERY.adql",
+      "bytes": 356,
+      "sha256": "fb7d5e6a5b0c6317d2973f95cf9afa7b6760d76f59ad7d5069036da98df83717"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/noirlab-sdss-empty-20261102T1210Z-01a193cc/capture/FINISH.json",
+      "bytes": 223,
+      "sha256": "738987fcaa4fb0ae585078d7e61feced161085c836348934282f5a497f96b957"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/noirlab-sdss-empty-20261102T1210Z-01a193cc/capture/RESULT.json",
+      "bytes": 1112,
+      "sha256": "c80cf635080b26d22514708193564846b8a41f4786bd69f49c35f1c81f323a21"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/noirlab-sdss-empty-20261102T1210Z-01a193cc/capture/spec_empty.json",
+      "bytes": 2532,
+      "sha256": "5903728cec5e77ba9b0fff1e7d76fe647d917b9069dfe17aacf16bbf0f4b6e4f"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/noirlab-sdss-empty-20261102T1210Z-01a193cc/capture/spec_empty.raw",
+      "bytes": 2815,
+      "sha256": "8a389807a54877647888c99308b49c539e134a9a4a1e68921d9a270e5d1b9d3e"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/noirlab-sdss-empty-20261102T1210Z-01a193cc/parse_empty.py",
+      "bytes": 6461,
+      "sha256": "c8ef759eea2d97b6afd41aac2ab5651e417ec5708e26b32367482497713b7c41"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/noirlab-sdss-empty-20261102T1210Z-01a193cc/spec_empty.py",
+      "bytes": 20988,
+      "sha256": "cd377f15360489423034848faff332ccdb906b6d5cbf303da399a6ce7ab3ff22"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/noirlab-sdss-empty-20261102T1210Z-01a193cc/test_parse_empty.py",
+      "bytes": 2490,
+      "sha256": "7b34b55cd7b311ed7bd2f73f01ad547c9c3cf60931366e3251677176ab2bba53"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/noirlab-sdss-empty-20261102T1210Z-01a193cc/test_spec_empty.py",
+      "bytes": 18537,
+      "sha256": "b594d94a4f910f3497407a2daccdfd85b40779864e4ab8cfa301ef49cd13dfc4"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/noirlab-sdss-held14-v2-20261102T1221Z-01a193cc/CONTROL_CHAIN.md",
+      "bytes": 1793,
+      "sha256": "5c55723c78479594546db5c21a47f0af9784573d99a0acd2ce27457564e1422f"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/noirlab-sdss-held14-v2-20261102T1221Z-01a193cc/EXPERIMENT_LEDGER.jsonl",
+      "bytes": 5615,
+      "sha256": "a64455e5c78153a5e232a2c939460350508fef946849715763333cce8543f6dc"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/noirlab-sdss-held14-v2-20261102T1221Z-01a193cc/HELD14_CROSSMATCH_ZERO.json",
+      "bytes": 2201,
+      "sha256": "ba66a363d977ed86a9a5fbd7df70e827d875d6465c7ae96e2a4d3067c2cd8896"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/noirlab-sdss-held14-v2-20261102T1221Z-01a193cc/INDEPENDENT_EXECUTION_CAPTURE_REVIEW.md",
+      "bytes": 970,
+      "sha256": "b131cd8ba57b7a137351516e5bc430b86f224ea709ee8a967133ecc18e5e9cb7"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/noirlab-sdss-held14-v2-20261102T1221Z-01a193cc/INDEPENDENT_PARSER_REVIEW.md",
+      "bytes": 1158,
+      "sha256": "67f35fd8f12cc8fe39d0279a50d74b8f270212f673d305e23f41956b6fc59a96"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/noirlab-sdss-held14-v2-20261102T1221Z-01a193cc/INDEPENDENT_PREFLIGHT.md",
+      "bytes": 1053,
+      "sha256": "8921c1cafe7151137e4e0433ffe9b2163e5251f6e5453a8c44b65daf6bfc71b9"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/noirlab-sdss-held14-v2-20261102T1221Z-01a193cc/INDEPENDENT_SCIENCE_RESULT_REVIEW.md",
+      "bytes": 1277,
+      "sha256": "0953770bfb4397400dd181330486754a070dc75e12b795275da0450644123005"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/noirlab-sdss-held14-v2-20261102T1221Z-01a193cc/MANIFEST.json",
+      "bytes": 5827,
+      "sha256": "492881e4f72087336be505980092257fcd5957ff66ee6a9d61219906d597ef1a"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/noirlab-sdss-held14-v2-20261102T1221Z-01a193cc/NEXT_ACTION.md",
+      "bytes": 1241,
+      "sha256": "7038d5b6a0c75c73ab3d923d3a1fdf201d0358d6f91c64ff69342f1db035d2b5"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/noirlab-sdss-held14-v2-20261102T1221Z-01a193cc/PROTOCOL.md",
+      "bytes": 2576,
+      "sha256": "6254c6db77af4acc38a5d40a1df15afa692249b1c3c86ec0878c294ca0c9bb8b"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/noirlab-sdss-held14-v2-20261102T1221Z-01a193cc/QUERY.adql",
+      "bytes": 614,
+      "sha256": "61ff172fefa3ed8f9081b1095d471d63b820fcbfb33e097474c31183e6db96e6"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/noirlab-sdss-held14-v2-20261102T1221Z-01a193cc/REVIEW_QUEUE_V8.md",
+      "bytes": 1506,
+      "sha256": "87757da11be1a7a282ab5763659c46b5123269f34a84dc6dedc30c50f34602e0"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/noirlab-sdss-held14-v2-20261102T1221Z-01a193cc/RUN_REPORT.md",
+      "bytes": 1795,
+      "sha256": "976852bd3c44fc68c300812cb04031e480d7828f0710c48152d7309b86ef45da"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/noirlab-sdss-held14-v2-20261102T1221Z-01a193cc/SOURCE_PROVENANCE.json",
+      "bytes": 8350,
+      "sha256": "8a4db3a340315ef51dddcca83663319cf3b39483f5d59b7881341a9795ba10af"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/noirlab-sdss-held14-v2-20261102T1221Z-01a193cc/capture/FINISH.json",
+      "bytes": 223,
+      "sha256": "beab0fe660eb401d348aa40f4966a8d7c1cb22cf494ccee2483ab78c257a62be"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/noirlab-sdss-held14-v2-20261102T1221Z-01a193cc/capture/RESULT.json",
+      "bytes": 1121,
+      "sha256": "171f01cb3a896158162f9dfc51155e5214717dff336b74046c99d852b3afe87d"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/noirlab-sdss-held14-v2-20261102T1221Z-01a193cc/capture/held14_search.json",
+      "bytes": 3118,
+      "sha256": "e4023467599ff2ff766a890084665538f6bbf62c7b9213812873a282f42bd016"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/noirlab-sdss-held14-v2-20261102T1221Z-01a193cc/capture/held14_search.raw",
+      "bytes": 3073,
+      "sha256": "141ee7d0db411c2a2d8019648c9d7a1446f1354c09c9282e83d42293f38bf4a7"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/noirlab-sdss-held14-v2-20261102T1221Z-01a193cc/check_held14_evidence.py",
+      "bytes": 905,
+      "sha256": "aed3012fc688ad29dec7d6be4ee7225026a64d4fe4fe115c25831336b2563267"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/noirlab-sdss-held14-v2-20261102T1221Z-01a193cc/held14_search.py",
+      "bytes": 27980,
+      "sha256": "effcda4f8bab480b99047ab24f50bc212d9c00c3a355a697b75bbbddd99d46b5"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/noirlab-sdss-held14-v2-20261102T1221Z-01a193cc/parse_held_zero.py",
+      "bytes": 8642,
+      "sha256": "a531a0a662686e28e36df288c8becc658eceef56db3b448007583a9cba612f1c"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/noirlab-sdss-held14-v2-20261102T1221Z-01a193cc/test_held14_search.py",
+      "bytes": 22915,
+      "sha256": "aab41942075d38a8b22b567f7939ac700a875996cdfd5b855a44d7ff08718f4b"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/noirlab-sdss-held14-v2-20261102T1221Z-01a193cc/test_parse_held_zero.py",
+      "bytes": 3168,
+      "sha256": "82552b7a827a7ea44d1881d0ce17afde67a7236d6a4f2f84f7064c6f2c15b0e1"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/noirlab-sdss-positive-v3-20261102T1205Z-01a193cc/INDEPENDENT_EXECUTION_CAPTURE_REVIEW.md",
+      "bytes": 981,
+      "sha256": "1283b7f142b427869bd1549b6b941195aeb066dcc8d8f69fa77b8ed9cc528b40"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/noirlab-sdss-positive-v3-20261102T1205Z-01a193cc/INDEPENDENT_PARSER_REVIEW.md",
+      "bytes": 1048,
+      "sha256": "7a6c6a34988f2906844117fabb35604b1b9a8815ac2fac7613f51a0fda43a532"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/noirlab-sdss-positive-v3-20261102T1205Z-01a193cc/INDEPENDENT_PREFLIGHT.md",
+      "bytes": 1443,
+      "sha256": "c0746f6e6042f9e85bb9c0e4ac70432c6c15241fe93001c1b4858ac6acc3c8d8"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/noirlab-sdss-positive-v3-20261102T1205Z-01a193cc/INDEPENDENT_SCIENCE_CONTROL_REVIEW.md",
+      "bytes": 1467,
+      "sha256": "6dc964942bcacc634882aedb68273b57f6e7907cc525a8838ea32845f04b60a1"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/noirlab-sdss-positive-v3-20261102T1205Z-01a193cc/MANIFEST.json",
+      "bytes": 1883,
+      "sha256": "9352244ca5f81a6b5d78ae3ae498e18fe91ed40bf848d0154a52d8cf3cad12f7"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/noirlab-sdss-positive-v3-20261102T1205Z-01a193cc/POSITIVE_CONTROL_V2.json",
+      "bytes": 1896,
+      "sha256": "aa43ad6e505e79e660943bf7e9dafd8dddfc8469172b4090fb7f5c3837b4e076"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/noirlab-sdss-positive-v3-20261102T1205Z-01a193cc/PROTOCOL.md",
+      "bytes": 2633,
+      "sha256": "ad84ffb8d2ec70ae28eb5537bacc7bbfcb1a548e4fced538a6aa3713e39055eb"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/noirlab-sdss-positive-v3-20261102T1205Z-01a193cc/QUERY.adql",
+      "bytes": 345,
+      "sha256": "35501f4e6b6234ccc1a88498cac569992da849b6b3a498fdaa839f261d32c28b"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/noirlab-sdss-positive-v3-20261102T1205Z-01a193cc/capture/FINISH.json",
+      "bytes": 223,
+      "sha256": "01102f82c95d321eb5d9fe74449e7f91bb5d5742d57d677aa6a30cd02ec2b7d5"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/noirlab-sdss-positive-v3-20261102T1205Z-01a193cc/capture/RESULT.json",
+      "bytes": 1112,
+      "sha256": "14d30cf0624cfd3bb12fdbd276331e830220d26048898d409ccf250905701173"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/noirlab-sdss-positive-v3-20261102T1205Z-01a193cc/capture/spec_positive.json",
+      "bytes": 2516,
+      "sha256": "5f7f2a277a3635f012203f6415b4e58885228a97c584472de70a0acb57fc3a43"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/noirlab-sdss-positive-v3-20261102T1205Z-01a193cc/capture/spec_positive.raw",
+      "bytes": 3121,
+      "sha256": "4a2ca013b79bbe7bd1d57286f7504554f640139034c8f1e2dce35183a7f809f5"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/noirlab-sdss-positive-v3-20261102T1205Z-01a193cc/parse_positive_v2.py",
+      "bytes": 9009,
+      "sha256": "1fefa89bf06c6a0f23218589df78689ce5545fe0a394e1029466480bad54d2b0"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/noirlab-sdss-positive-v3-20261102T1205Z-01a193cc/spec_positive.py",
+      "bytes": 18140,
+      "sha256": "842da852054c7f8a787723859c08868c7e0d339dca4cfdff0a513fdf9ba14abb"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/noirlab-sdss-positive-v3-20261102T1205Z-01a193cc/test_parse_positive_v2.py",
+      "bytes": 2922,
+      "sha256": "722878bc7a0d74ebdea41edce79d7a60941896ac65bd5e8ac2a2c7fed80bbc01"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/noirlab-sdss-positive-v3-20261102T1205Z-01a193cc/test_spec_positive.py",
+      "bytes": 16471,
+      "sha256": "f75f6820b0fca6cc2386746d87b065bd417ec3e0b44cab08d729f3c6958d0f5a"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/noirlab-sdss-schema-v2-20261102T1156Z-01a193cc/INDEPENDENT_EXECUTION_CAPTURE_REVIEW.md",
+      "bytes": 1003,
+      "sha256": "692a67437c8263a9230d0de0561e977b23efe8b90395a35a0298e4e53351729d"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/noirlab-sdss-schema-v2-20261102T1156Z-01a193cc/INDEPENDENT_PARSER_REVIEW.md",
+      "bytes": 1031,
+      "sha256": "beb7fc9bc46e2d5e42e7e7db3a75e2219e86829b668dd62be5a52e67569844b2"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/noirlab-sdss-schema-v2-20261102T1156Z-01a193cc/INDEPENDENT_PREFLIGHT.md",
+      "bytes": 911,
+      "sha256": "6c068a3ae3e80fbbf28833f8a95c5598d9a366fe38801a600f8359a5be38ee08"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/noirlab-sdss-schema-v2-20261102T1156Z-01a193cc/INDEPENDENT_SCIENCE_SCHEMA_REVIEW.md",
+      "bytes": 1501,
+      "sha256": "0128216efa5fa94b23f59e5e3ef7b3a5329e40e4dba6da80a1b10b556833d344"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/noirlab-sdss-schema-v2-20261102T1156Z-01a193cc/MANIFEST.json",
+      "bytes": 630,
+      "sha256": "a8ec1f9ad872cd5d46746ebab1722a316889f0cc3bf3f7c0c1ccd2a219f5b1b3"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/noirlab-sdss-schema-v2-20261102T1156Z-01a193cc/PROTOCOL.md",
+      "bytes": 2122,
+      "sha256": "2ac501e518257e5abad62a81f84702215295bd9080a6dc4c704b4ca3cb115f91"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/noirlab-sdss-schema-v2-20261102T1156Z-01a193cc/QUERY.adql",
+      "bytes": 389,
+      "sha256": "97f91cbe7fab05f415e3914ac7ec7bf4f6f369830b547aa15ef64ccd287ec6d2"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/noirlab-sdss-schema-v2-20261102T1156Z-01a193cc/RUN_REPORT.md",
+      "bytes": 1547,
+      "sha256": "c95d6cd13180dd9ae886c990d51950c222718bd32b75e9e1484266f5b1ee1f2b"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/noirlab-sdss-schema-v2-20261102T1156Z-01a193cc/SCHEMA_INVENTORY_V3.json",
+      "bytes": 5303,
+      "sha256": "c27aee0e8e62583e2ded3644191420aa0b022cca76d40d4b277d21f0b438f18c"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/noirlab-sdss-schema-v2-20261102T1156Z-01a193cc/capture/FINISH.json",
+      "bytes": 223,
+      "sha256": "f6cf3fbb9ba3e36a824da8d8f2537ffc4424d53f53c9da23afd04a5ca05cb3d7"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/noirlab-sdss-schema-v2-20261102T1156Z-01a193cc/capture/RESULT.json",
+      "bytes": 1112,
+      "sha256": "d0f33cd29e21e0a1f665ca12762982646f3102151f2db2658bd58301da577b19"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/noirlab-sdss-schema-v2-20261102T1156Z-01a193cc/capture/schema_probe.json",
+      "bytes": 2814,
+      "sha256": "0bb57ac0950e48100b1de74da9cd57e4441f763223f5435e4b7786622f9d9512"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/noirlab-sdss-schema-v2-20261102T1156Z-01a193cc/capture/schema_probe.raw",
+      "bytes": 3858,
+      "sha256": "86def01aba2baa9ef9263b7477c9c7efed6cec611ad164caf29b066052903b23"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/noirlab-sdss-schema-v2-20261102T1156Z-01a193cc/parse_schema_v3.py",
+      "bytes": 8365,
+      "sha256": "5819b76e6dbdabe5805ce3143d833c8418400e78bedee93b1eb351e3d7cdc191"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/noirlab-sdss-schema-v2-20261102T1156Z-01a193cc/schema_probe.py",
+      "bytes": 15508,
+      "sha256": "2b4ee5fe2690f952717635745d073d6f7862ec858988abbcf6f97e8448512bb5"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/noirlab-sdss-schema-v2-20261102T1156Z-01a193cc/test_parse_schema_v3.py",
+      "bytes": 4976,
+      "sha256": "a1d5bf3799c54c11c8960abf26941fc39279b6ffd5376191e71d788915406970"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/noirlab-sdss-schema-v2-20261102T1156Z-01a193cc/test_schema_probe.py",
+      "bytes": 12695,
+      "sha256": "4ceb2e16b62871f6e36db5bc3e4ce73b40e3df89fe067cf8cdee792a4f85219a"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/noirlab-sdss-shape-20261102T1216Z-01a193cc/INDEPENDENT_EXECUTION_CAPTURE_REVIEW.md",
+      "bytes": 755,
+      "sha256": "57dcd517a9e69686d644320b60ebfa91235133979301b0df005aa6f2d1e948b8"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/noirlab-sdss-shape-20261102T1216Z-01a193cc/INDEPENDENT_PARSER_REVIEW.md",
+      "bytes": 961,
+      "sha256": "968829fe9809564d3ee1989cc51140ca3e034475e501cc3d4087618aa3675d22"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/noirlab-sdss-shape-20261102T1216Z-01a193cc/INDEPENDENT_PREFLIGHT.md",
+      "bytes": 934,
+      "sha256": "2a59eb7aa4fe1b3eb576d29dba6d97b4b9de61e3d175cda0dcda0a13a20671ea"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/noirlab-sdss-shape-20261102T1216Z-01a193cc/INDEPENDENT_SCIENCE_CONTROL_REVIEW.md",
+      "bytes": 1006,
+      "sha256": "6ebd0fab79da1bf2101f4da546438fd2a3adf365d31526f667e405e196a48c6b"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/noirlab-sdss-shape-20261102T1216Z-01a193cc/MANIFEST.json",
+      "bytes": 4679,
+      "sha256": "30abccf1049a25266e2cccdbc84d2297ea99f96d664af666454388f66f501a03"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/noirlab-sdss-shape-20261102T1216Z-01a193cc/PROTOCOL.md",
+      "bytes": 1853,
+      "sha256": "f20273833aec24a5a5b4a4f6952eeb43aab9ac45fbd0346c4a852cbac2f3ac21"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/noirlab-sdss-shape-20261102T1216Z-01a193cc/QUERY.adql",
+      "bytes": 386,
+      "sha256": "93f70657397332201f9e57ce653d158ac42b411eaa2b03540c33e6d4c9778308"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/noirlab-sdss-shape-20261102T1216Z-01a193cc/SHAPE_CONTROL.json",
+      "bytes": 1919,
+      "sha256": "bb7ced87ae4a75f9ca429edef539fce86349d02d177ce6b123a134f1adc243f7"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/noirlab-sdss-shape-20261102T1216Z-01a193cc/capture/FINISH.json",
+      "bytes": 223,
+      "sha256": "01a189a16b73fa97ae0165b59fe08da3c6efa19883a5c7d09362e3f92c72aa98"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/noirlab-sdss-shape-20261102T1216Z-01a193cc/capture/RESULT.json",
+      "bytes": 1128,
+      "sha256": "3c6f0933b846495d9ac973b3802c05cb54ea51fa52606a8bd23e665a1c31ef1e"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/noirlab-sdss-shape-20261102T1216Z-01a193cc/capture/shape_control.json",
+      "bytes": 2662,
+      "sha256": "3f98af9a41f2255e567710c7e6da7eba8f89b7509cc8e4cf415433127a99f429"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/noirlab-sdss-shape-20261102T1216Z-01a193cc/capture/shape_control.raw",
+      "bytes": 3163,
+      "sha256": "7c2a79ab93566c877e94d6dc4e674e7bc85c4920cf375cc4d0bbbf0ccf2ddf5f"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/noirlab-sdss-shape-20261102T1216Z-01a193cc/parse_shape.py",
+      "bytes": 9183,
+      "sha256": "10fd6153e17ceec8c1446e9495e95897facca1f5937ed4fe0463cb85f9eeb109"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/noirlab-sdss-shape-20261102T1216Z-01a193cc/shape_control.py",
+      "bytes": 25701,
+      "sha256": "8d38c998f225cf62774ef554f52b9fa7ad0f9fa23d5dd8914a2099f92e5d7857"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/noirlab-sdss-shape-20261102T1216Z-01a193cc/test_parse_shape_v2.py",
+      "bytes": 3845,
+      "sha256": "cac6eab5013a7b3677bfd075796406c7f4d3fa1afad71d19cac5404544712672"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/noirlab-sdss-shape-20261102T1216Z-01a193cc/test_shape_control.py",
+      "bytes": 21513,
+      "sha256": "39f3683cdfbb8386f9030525bd907a9ad9552183f600533bb4ea8c72bf09701f"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/rv200-metadata8-tools/galah-metadata8-v2-prepared-20261101T054446Z-01a193cc/RESULTS.json",
+      "bytes": 2622,
+      "sha256": "c4c2d0e33d81363e32f8a9023dca9143dee79189c91647fd89706063334a22ad"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/rv200-root-postrun-20261101/ROOT_POSTRUN_AUDIT.json",
+      "bytes": 12549,
+      "sha256": "a5a0954c15296532158e3c68b082767b98d24a12cc367d24ba5f17cb876677ae"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/science/hst-fixed-point-control-20261101/POSTRUN_SCIENCE_REVIEW.json",
+      "bytes": 13338,
+      "sha256": "d98561540809febc6b08c6917b6038749f4ad815f32ef37d9251736af9bf0bc0"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/sedr5-catalogue-sample-20261102T085730Z-01a193cc/EXPERIMENT_LEDGER.jsonl",
+      "bytes": 648,
+      "sha256": "3a6ed71ab351b41dc9ab7d719a2a02c0f82845f3c0944ff73a9be19c6c5dcaf6"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/sedr5-catalogue-sample-20261102T085730Z-01a193cc/INDEPENDENT_POST_CAPTURE_REVIEW.md",
+      "bytes": 1324,
+      "sha256": "ec3cb2e752f8ef0737e11ca64ea02850a6ec199c6151e98df59037ac0439b96e"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/sedr5-catalogue-sample-20261102T085730Z-01a193cc/MANIFEST.json",
+      "bytes": 711,
+      "sha256": "646414cf45ca54fd8578be16476dfdc6fccfe56254fe7fe5e4a33312e7996ddf"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/sedr5-catalogue-sample-20261102T085730Z-01a193cc/PROTOCOL.md",
+      "bytes": 1271,
+      "sha256": "5effc84dbf44e4a9d48942e9397492a8ac2382863f0ba47d21df3f6b691c409a"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/sedr5-catalogue-sample-20261102T085730Z-01a193cc/RUN_REPORT.md",
+      "bytes": 918,
+      "sha256": "1024260483f84725712aba0aa6b328b394cbb05861248e5fcae25ef0ae9dfb18"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/sedr5-catalogue-sample-20261102T085730Z-01a193cc/TEST_RESULT.json",
+      "bytes": 781,
+      "sha256": "03d7fbd85efe59ea96e53252f800356d3d25669b5f1b19b560e27d7365822540"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/sedr5-catalogue-sample-20261102T085730Z-01a193cc/capture-v1/RESULTS.json",
+      "bytes": 1333,
+      "sha256": "ff4243a65a3194f5289c076ee59ab96d7fdb8f9fb24d4f6006170e1ded9b7fee"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/sedr5-catalogue-sample-20261102T085730Z-01a193cc/capture-v1/sample.raw",
+      "bytes": 2935,
+      "sha256": "445105154437335a95353a37aecbe93609d89a48bdee3b99fbcb54be33de8513"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/sedr5-catalogue-sample-20261102T085730Z-01a193cc/capture-v1/sample.request.json",
+      "bytes": 1630,
+      "sha256": "66bab311bb1cbe22372efa14cac53c6b5e8f285166e7d9db84d164ee25c6f0d3"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/sedr5-catalogue-sample-20261102T085730Z-01a193cc/sample_fetch.py",
+      "bytes": 9129,
+      "sha256": "536ccf41236eb2f1700c278113baee00c0cbfd2efbf2c1cdefc07816e97970d5"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/sedr5-catalogue-sample-20261102T085730Z-01a193cc/test_sample.py",
+      "bytes": 1098,
+      "sha256": "5370e3c9cc0000ee02fae75004c6d115a27cac538d5502ebd467c8db47bf7e64"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/sedr5-exact-query-20261102T0912Z-01a193cc/EXPERIMENT_LEDGER.jsonl",
+      "bytes": 654,
+      "sha256": "ff295adbd2cccaa9aeb14be0918f9c4a0e979321769b434293cfa2a127910877"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/sedr5-exact-query-20261102T0912Z-01a193cc/INDEPENDENT_CONTROL_AUDIT.md",
+      "bytes": 1352,
+      "sha256": "eda134d3c655191b72d80bdab1553f8489db3cb46a16e96f3f2a0a2e18b80a72"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/sedr5-exact-query-20261102T0912Z-01a193cc/MANIFEST.json",
+      "bytes": 1042,
+      "sha256": "6fefd5df5810567921011256e37c69c7aa18198d26847575447dc2b9adbe7add"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/sedr5-exact-query-20261102T0912Z-01a193cc/PROTOCOL.md",
+      "bytes": 3406,
+      "sha256": "869352fc42cfcbf89a243a2c60b3a990b555c446d7d8b1453bada7a60fb57a76"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/sedr5-exact-query-20261102T0912Z-01a193cc/RUN_REPORT.md",
+      "bytes": 1444,
+      "sha256": "50cb0e3c68d9a0d3edc88e3f06cbf47c35adfabbae2f87a3b1bd461b9f9ea504"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/sedr5-exact-query-20261102T0912Z-01a193cc/TEST_RESULT.json",
+      "bytes": 274,
+      "sha256": "4754d63010a188392bd80b9b7e76dd2a3c8e6da74e933d4f7fc30fc6424e0c55"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/sedr5-exact-query-20261102T0912Z-01a193cc/capture-v1/RESULTS.json",
+      "bytes": 887,
+      "sha256": "b9e7ee624d2aa9b5c7a79759e722f6ce46508440ab4b48a761d37a7200ecd861"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/sedr5-exact-query-20261102T0912Z-01a193cc/capture-v1/control.raw",
+      "bytes": 1359,
+      "sha256": "c87ea085110605f3ecd2023caa3ea321a4ad3c580a431df0f460ad2368f25759"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/sedr5-exact-query-20261102T0912Z-01a193cc/capture-v1/control.request.json",
+      "bytes": 2089,
+      "sha256": "64f84ea8bcf6a11ea9ca1fb30041609f44959ddb126bf20193600cab0f901fdc"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/sedr5-exact-query-20261102T0912Z-01a193cc/control.body",
+      "bytes": 8862,
+      "sha256": "06add9fe268e26af96d5ec1c6cd4b62a2bab32c169039851aaff3353d22e0adc"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/sedr5-exact-query-20261102T0912Z-01a193cc/native_transport_post_v2.py",
+      "bytes": 8555,
+      "sha256": "bc224459bb0de203ce9cd05fa942be0a8fdeb64c7c969e7c6e00d64d1a0f8db9"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/sedr5-exact-query-20261102T0912Z-01a193cc/query_v2.py",
+      "bytes": 12393,
+      "sha256": "81d8b7bc26b86946f614e46a75e8b5b002661f6fca9d6518e3b3162a92c5a1b4"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/sedr5-exact-query-20261102T0912Z-01a193cc/target.body",
+      "bytes": 8862,
+      "sha256": "4f6e5a30cb9eded0d5a32f6ee45912ca718d8ba8385a179b076869cc4b0017c5"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/sedr5-exact-query-20261102T0912Z-01a193cc/test_query_v2.py",
+      "bytes": 7870,
+      "sha256": "3880617d72403c831dd46cb3505f55c76bc09316ebeac075e502b6cbf084101e"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/sedr5-pixel-feasibility-v2-20261102T0928Z-01a193cc/EXPERIMENT_LEDGER.jsonl",
+      "bytes": 629,
+      "sha256": "47012442dbd714baacb7b3f412bc103116040e428d39bfba50666e8f05f44a62"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/sedr5-pixel-feasibility-v2-20261102T0928Z-01a193cc/INDEPENDENT_POST_CAPTURE_REVIEW.md",
+      "bytes": 1430,
+      "sha256": "6b5412401fcae09a3dc5bfc4f4426d736cb5dd80ca3f10a6d458a72f302ea778"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/sedr5-pixel-feasibility-v2-20261102T0928Z-01a193cc/MANIFEST.json",
+      "bytes": 599,
+      "sha256": "a0541ccd8e6be2adb07b43885314ab09a83739600de6ea2708b00ab72dfa6034"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/sedr5-pixel-feasibility-v2-20261102T0928Z-01a193cc/PROTOCOL.md",
+      "bytes": 2917,
+      "sha256": "a706111d6020e6ca17ea8c55181eecb54eb01ac7be6b136553eca8a6e8fb23e4"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/sedr5-pixel-feasibility-v2-20261102T0928Z-01a193cc/RESULTS.json",
+      "bytes": 3296,
+      "sha256": "ce14934e290c8e1212f515f53158ab21d8ba8ce5bab9e38ff2c26187b53d2548"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/sedr5-pixel-feasibility-v2-20261102T0928Z-01a193cc/RUN_REPORT.md",
+      "bytes": 1224,
+      "sha256": "8202644b1219c2cacee876e439a563463e0ccedc5d9c67a74b4411eb45e3d3e3"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/sedr5-pixel-feasibility-v2-20261102T0928Z-01a193cc/TEST_RESULT.json",
+      "bytes": 274,
+      "sha256": "c055ad40571c0e5be5b95d623af43b3b8e3485592f71534521986bd610e6b4a8"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/sedr5-pixel-feasibility-v2-20261102T0928Z-01a193cc/pixel_feasibility_v2.py",
+      "bytes": 5723,
+      "sha256": "404a0d3ebf2c411fdf5bd6056207bad7af0c2c243693978e57d9885008ea7b09"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/sedr5-pixel-feasibility-v2-20261102T0928Z-01a193cc/test_pixel_v2.py",
+      "bytes": 2517,
+      "sha256": "961539289eecdb28698846c1d062157e9ab1c7b194c8865197d31462f2cb7fa6"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/sedr5-pixel-orientation-v2-20261102T0935Z-01a193cc/EXPERIMENT_LEDGER.jsonl",
+      "bytes": 651,
+      "sha256": "2632c6454d06d7178aaa558a7a8e3938403b600c2e7c1864f569308e72787859"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/sedr5-pixel-orientation-v2-20261102T0935Z-01a193cc/INDEPENDENT_POST_CAPTURE_REVIEW.md",
+      "bytes": 1074,
+      "sha256": "9519e39efe50b44547493e6058347579075f637ef29995975d2a061de5b5076e"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/sedr5-pixel-orientation-v2-20261102T0935Z-01a193cc/MANIFEST.json",
+      "bytes": 707,
+      "sha256": "1f2e12f27539cb2d8df85867af1f3c934b35d713454a040f4c28971b8e3fa5b7"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/sedr5-pixel-orientation-v2-20261102T0935Z-01a193cc/NEXT_ACTION.md",
+      "bytes": 1444,
+      "sha256": "ed7ed9b9e439413eb2fd950d8429cbef5fd0bacfce3f9a9f91220cccc8a79d94"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/sedr5-pixel-orientation-v2-20261102T0935Z-01a193cc/PROTOCOL.md",
+      "bytes": 2253,
+      "sha256": "a7365756698878306a433f6a1933947cf50695ae3da3636f9e21700bdb724a03"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/sedr5-pixel-orientation-v2-20261102T0935Z-01a193cc/RESOURCE_SAMPLE.json",
+      "bytes": 675,
+      "sha256": "a83f289b80f84db6f674dc7dd5adb222672f13ad9a1b94a50f64be92cc05a955"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/sedr5-pixel-orientation-v2-20261102T0935Z-01a193cc/RESULTS.json",
+      "bytes": 1945,
+      "sha256": "145fb3c39056823ddbdf2a34484f724be930d2a2f71c53e4f6491b6199401a7d"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/sedr5-pixel-orientation-v2-20261102T0935Z-01a193cc/RUN_REPORT.md",
+      "bytes": 1078,
+      "sha256": "fd7772b03162c5211e91818d040e8bacfcba84200a08dec593c030258cc54ef9"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/sedr5-pixel-orientation-v2-20261102T0935Z-01a193cc/TEST_RESULT.json",
+      "bytes": 273,
+      "sha256": "3dd091afade881d8b3167921bd88f412599b13fb4d02c97d7a075c118c152ee5"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/sedr5-pixel-orientation-v2-20261102T0935Z-01a193cc/orientation_v1.py",
+      "bytes": 5468,
+      "sha256": "4fffb0752977f49595f71f189538889ae776824b831a165f8538c56bd946973c"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/sedr5-pixel-orientation-v2-20261102T0935Z-01a193cc/test_orientation_v1.py",
+      "bytes": 2101,
+      "sha256": "2c9d0afc0c0c581d372228c909fcb5eb2318fc8d9605ef78eee4a759b70b4a22"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/sedr5-reference-control-20261102T0941Z-01a193cc/CHECKPOINT59_INDEPENDENT_REVIEWS.md",
+      "bytes": 1455,
+      "sha256": "a6489c414b84f6596b5c590ba28465975d168c16ae9e6404e38a9444e2e9614a"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/sedr5-reference-control-20261102T0941Z-01a193cc/EXPERIMENT_LEDGER.jsonl",
+      "bytes": 1145,
+      "sha256": "b628de345daabb727e4a412f1087682e5f8cf48d0bb4d8d1ef19e6ffcc13c4b6"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/sedr5-reference-control-20261102T0941Z-01a193cc/INDEPENDENT_CAPTURE_AUDIT.md",
+      "bytes": 1157,
+      "sha256": "d3e03a3bd7edebe6c3188a06af4ffe9b68aedae873e0c40c31c39236304d83a8"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/sedr5-reference-control-20261102T0941Z-01a193cc/INDEPENDENT_METADATA_V2_POST_REVIEW.md",
+      "bytes": 1592,
+      "sha256": "42ca3bf169d44297526f0e01b35480bd935df07ee12ed44d2b347e5376fd0f11"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/sedr5-reference-control-20261102T0941Z-01a193cc/MANIFEST.json",
+      "bytes": 1012,
+      "sha256": "d66c10ad95f2882fed0ceff6fe5c50bf36aeef63ba827150ace0f1989cc173e1"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/sedr5-reference-control-20261102T0941Z-01a193cc/METADATA_MANIFEST_V2.json",
+      "bytes": 772,
+      "sha256": "b8ad205d4e015a59a24ff48aed9a0123bbedaff79eeed987d662241a11ef890e"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/sedr5-reference-control-20261102T0941Z-01a193cc/METADATA_PROTOCOL_V2.md",
+      "bytes": 1910,
+      "sha256": "f0d8aa1bad3d5abfe2be0bfbdc3a7a868a1c98b8d9aa681a85be08cc50898bbe"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/sedr5-reference-control-20261102T0941Z-01a193cc/METADATA_V2_TEST_RESULT.json",
+      "bytes": 274,
+      "sha256": "becaa772c5dde174d114f974bf124a86c5ac32b1b4fffc0da38af74c37ed7b9d"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/sedr5-reference-control-20261102T0941Z-01a193cc/NEXT_ACTION.md",
+      "bytes": 1459,
+      "sha256": "fc57e1ab38ec6535358ee07bf589c6142df8ffa4303c2daf72437857d7c940b3"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/sedr5-reference-control-20261102T0941Z-01a193cc/PROTOCOL.md",
+      "bytes": 2175,
+      "sha256": "4184d702c11f72a8cdca7fd1cbc38d8125cd4d812ef7524417d30504e0da0968"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/sedr5-reference-control-20261102T0941Z-01a193cc/PROVENANCE.json",
+      "bytes": 7950,
+      "sha256": "2d8b7c1cd8c125599a67a302b1d7e3e65809f912c9e461e19600a2c9586d4efa"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/sedr5-reference-control-20261102T0941Z-01a193cc/REVIEW_QUEUE_V4.md",
+      "bytes": 1989,
+      "sha256": "905ac6f23c747da18f9947102a59cedecb7ed1323460e186115abecd38f26cc0"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/sedr5-reference-control-20261102T0941Z-01a193cc/RUN_REPORT.md",
+      "bytes": 1601,
+      "sha256": "2e89ca35d9b9290ddadac96a64e8c09d68f1d48e2311f5f6d5e2c074e34e7785"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/sedr5-reference-control-20261102T0941Z-01a193cc/TEST_RESULT.json",
+      "bytes": 273,
+      "sha256": "d3cf3da59ab9b0da59efa63c3f5c448ef138be896b56dcd49b615b835b1b23eb"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/sedr5-reference-control-20261102T0941Z-01a193cc/capture-v9/RESULTS.json",
+      "bytes": 3420,
+      "sha256": "f5e6881fbe18a3444f53464f1e053bc2f6e41c70c02e5b97142f15b92a7c4899"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/sedr5-reference-control-20261102T0941Z-01a193cc/capture-v9/day.raw",
+      "bytes": 817,
+      "sha256": "f77137489f632226091cd8f6beacf482964fc5e0db40d9361a8198318ccc069e"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/sedr5-reference-control-20261102T0941Z-01a193cc/capture-v9/day.request.json",
+      "bytes": 1725,
+      "sha256": "a69dc2eda866b59ea4f4712e140db9c06be23e1345117406903a81eded8c89f6"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/sedr5-reference-control-20261102T0941Z-01a193cc/capture-v9/plan.raw",
+      "bytes": 320126,
+      "sha256": "05ae1efd7817ad6a54182a5e68c67bf6e7f3d3fa211a4a2184c1798d729e641c"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/sedr5-reference-control-20261102T0941Z-01a193cc/capture-v9/plan.request.json",
+      "bytes": 1785,
+      "sha256": "1cf8b717c8ea540d9b77a160ca59e0670c7bf83f4143deadf7b7a2822e594dfd"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/sedr5-reference-control-20261102T0941Z-01a193cc/capture-v9/product.raw",
+      "bytes": 550080,
+      "sha256": "0e1c7ac03810cd41ad1df477f0977d82e92ba1bad71e442912ca282b339fb439"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/sedr5-reference-control-20261102T0941Z-01a193cc/capture-v9/product.request.json",
+      "bytes": 1836,
+      "sha256": "0dd404cd4be1d47294db9b137f8bb5b453d41f4df3073a1fc641391047871bd2"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/sedr5-reference-control-20261102T0941Z-01a193cc/metadata-v2/RESULTS.json",
+      "bytes": 3012,
+      "sha256": "1fe80f1410d5e7758def6cdcc16172360a37251352690c71f07a92994b2ac455"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/sedr5-reference-control-20261102T0941Z-01a193cc/reference_capture_v1.py",
+      "bytes": 5329,
+      "sha256": "51d456869d45308e79f39b4fcd2cae19b7f8bd35f31962308b0ff8e406e2efdd"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/sedr5-reference-control-20261102T0941Z-01a193cc/reference_metadata_v2.py",
+      "bytes": 7670,
+      "sha256": "5ef294b1466a1c1ed7b208cae1fc15e1e2fd40206fe58ddf6b4688aff2a79f63"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/sedr5-reference-control-20261102T0941Z-01a193cc/test_reference_metadata_v2.py",
+      "bytes": 2915,
+      "sha256": "c3b3b37dabd2a3607464c98f9009a93d5e483ab2afb0105eadc8eb9bfe508fde"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/sedr5-reference-control-20261102T0941Z-01a193cc/test_reference_v1.py",
+      "bytes": 2753,
+      "sha256": "9b7b61c8b448ae70b2a23f9870eff5771c8f00353c2d0f1467b284a0e941e679"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/sedr5-specid-query-20261102T0919Z-01a193cc/EXPERIMENT_LEDGER.jsonl",
+      "bytes": 628,
+      "sha256": "049a0e4bd9f2bdb4f669ef99c944234d439c65f44a2f8663659202fcdeedb8db"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/sedr5-specid-query-20261102T0919Z-01a193cc/IDENTIFIER_CLARIFICATION.md",
+      "bytes": 445,
+      "sha256": "4686dc11574166fef376e397ed7608ee8869bd8fa60240a592ee6f808d36e312"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/sedr5-specid-query-20261102T0919Z-01a193cc/INDEPENDENT_POST_CAPTURE_REVIEW.md",
+      "bytes": 1685,
+      "sha256": "401e84fad04aaab92a57e8db4c1e246b706aff26cd3850f87830e4bacfe838c3"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/sedr5-specid-query-20261102T0919Z-01a193cc/MANIFEST.json",
+      "bytes": 1129,
+      "sha256": "55f58472d4e2725d62447f55594aa84ef3b2f5e077877be72adeb0fa8ae889c2"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/sedr5-specid-query-20261102T0919Z-01a193cc/PROTOCOL.md",
+      "bytes": 2520,
+      "sha256": "ac50f2b8c657db162909fd91a4c1a13c8078201c7a9780e03efca62d8b83a948"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/sedr5-specid-query-20261102T0919Z-01a193cc/RUN_REPORT.md",
+      "bytes": 1248,
+      "sha256": "6ce07ea4f8ad0696db3c19e08436bfd03ab4dac18dc2e94e2896ee8fa127bff1"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/sedr5-specid-query-20261102T0919Z-01a193cc/TEST_RESULT.json",
+      "bytes": 274,
+      "sha256": "e8e416dd11ca93fbc2ffb0dff0b5176fa7812164cc2dd7fa899eb667c00c8fe9"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/sedr5-specid-query-20261102T0919Z-01a193cc/capture-v1/RESULTS.json",
+      "bytes": 1012,
+      "sha256": "6f706b3eada66f80ce5645ca5b838fc1949f102e3fd09cca1b588e9b7d906a16"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/sedr5-specid-query-20261102T0919Z-01a193cc/capture-v1/control.raw",
+      "bytes": 1359,
+      "sha256": "c87ea085110605f3ecd2023caa3ea321a4ad3c580a431df0f460ad2368f25759"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/sedr5-specid-query-20261102T0919Z-01a193cc/capture-v1/control.request.json",
+      "bytes": 2092,
+      "sha256": "7d3ee3f44032b2b0cdee67cc6bdaff3b063a4bfa09394d621faccc998fe75eba"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/sedr5-specid-query-20261102T0919Z-01a193cc/capture-v1/target.raw",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/sedr5-specid-query-20261102T0919Z-01a193cc/capture-v1/target.request.json",
+      "bytes": 2088,
+      "sha256": "7b96240314c6fc8263cbacea4a1861f50b92afc6976831b2705e8dd940988bb2"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/sedr5-specid-query-20261102T0919Z-01a193cc/control.body",
+      "bytes": 8827,
+      "sha256": "16a8606b9aceb3d442fe90c4d916f263325ffb8c1e74eb0efae47c16f16335f4"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/sedr5-specid-query-20261102T0919Z-01a193cc/native_transport_post_v1.py",
+      "bytes": 8555,
+      "sha256": "bc224459bb0de203ce9cd05fa942be0a8fdeb64c7c969e7c6e00d64d1a0f8db9"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/sedr5-specid-query-20261102T0919Z-01a193cc/query_specid_v1.py",
+      "bytes": 12237,
+      "sha256": "7d5c0e6756c2c48fa280a9bbfeb700b675128cb04959488421fae96b74ea82f5"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/sedr5-specid-query-20261102T0919Z-01a193cc/schema_v1.py",
+      "bytes": 1696,
+      "sha256": "b705e110f9a0d23203cbdd596e09088344e1b9f602946060ebee6bfa77ad501f"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/sedr5-specid-query-20261102T0919Z-01a193cc/target.body",
+      "bytes": 8827,
+      "sha256": "cd25c012a6d3186ed7a02b2ff11610d6e8c2029f2783f02ced451809b560f170"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/sedr5-specid-query-20261102T0919Z-01a193cc/test_specid_v1.py",
+      "bytes": 8323,
+      "sha256": "1cdfd6a995b25a2ae7d1a0e453260ad2761567356ddf2f25377712c68e6ee6e2"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/sedr5-target-query-20261102T0913Z-01a193cc/EXPERIMENT_LEDGER.jsonl",
+      "bytes": 559,
+      "sha256": "e9fbd43b4ec6f0b1e93b3f4c51ff75edfe9a124a15b148f2b9064ca337847a25"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/sedr5-target-query-20261102T0913Z-01a193cc/INDEPENDENT_POST_CAPTURE_REVIEW.md",
+      "bytes": 1065,
+      "sha256": "076d4b3fe96d46ee2ae2235d6874dbf86db485255daa6b010bf458eee702ea1c"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/sedr5-target-query-20261102T0913Z-01a193cc/MANIFEST.json",
+      "bytes": 2055,
+      "sha256": "1c93d8e2e759d1f39065c30b9f1c6a62da324331115fc358d90b229a6a2ff64e"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/sedr5-target-query-20261102T0913Z-01a193cc/PROTOCOL.md",
+      "bytes": 2488,
+      "sha256": "a5aa19ad59a33f2e0c69299b56722b40ef57183fe7ac7158ddf4df5fcac2f0d7"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/sedr5-target-query-20261102T0913Z-01a193cc/RUN_REPORT.md",
+      "bytes": 1172,
+      "sha256": "bc7f854da844513d87cc1c0ede8306836ca10bc883344d4e6b87451ee505fe17"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/sedr5-target-query-20261102T0913Z-01a193cc/TEST_RESULT.json",
+      "bytes": 274,
+      "sha256": "7f542d0f1d3e68d40dec315974551ceac64e625abd5befcf0a97227b3166c88f"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/sedr5-target-query-20261102T0913Z-01a193cc/capture-v1/RESULTS.json",
+      "bytes": 1106,
+      "sha256": "829657bc76e96c25195b894b04473ab435c39ecacd2f91d868e10eb54ef6c047"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/sedr5-target-query-20261102T0913Z-01a193cc/capture-v1/target.raw",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/sedr5-target-query-20261102T0913Z-01a193cc/capture-v1/target.request.json",
+      "bytes": 2092,
+      "sha256": "4b28a6e0d9070081196dbbedda20d53b66f60e48398e5a19af1a0e096ecff243"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/sedr5-target-query-20261102T0913Z-01a193cc/native_transport_post_v1.py",
+      "bytes": 8555,
+      "sha256": "bc224459bb0de203ce9cd05fa942be0a8fdeb64c7c969e7c6e00d64d1a0f8db9"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/sedr5-target-query-20261102T0913Z-01a193cc/schema_v1.py",
+      "bytes": 1696,
+      "sha256": "b705e110f9a0d23203cbdd596e09088344e1b9f602946060ebee6bfa77ad501f"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/sedr5-target-query-20261102T0913Z-01a193cc/target.body",
+      "bytes": 8862,
+      "sha256": "4f6e5a30cb9eded0d5a32f6ee45912ca718d8ba8385a179b076869cc4b0017c5"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/sedr5-target-query-20261102T0913Z-01a193cc/target_v1.py",
+      "bytes": 12643,
+      "sha256": "ec5587f62fbba70e24bdd936ea4f0e4f4472bfd82387873bb0c49a21ad404d2a"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/sedr5-target-query-20261102T0913Z-01a193cc/test_control_v1.py",
+      "bytes": 3487,
+      "sha256": "6f84f25432bda7862497e220116738102d399e074d09e38bff8332ff640f7834"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/sedr5-target-query-20261102T0913Z-01a193cc/test_schema_v1.py",
+      "bytes": 2412,
+      "sha256": "ff7345414bdd11bea1d0b3d81192557d98bb9a16366a63ac074a43b9e3b34d68"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/synthetic-provenance-prototype-20261102T073708Z-01a193cc/EXPERIMENT_JOURNAL.jsonl",
+      "bytes": 4105,
+      "sha256": "70cebf7ea9e523645120b380fafda3365fe55c2e78710541cf3d3fa8cf56cd85"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/synthetic-provenance-prototype-20261102T073708Z-01a193cc/LITERATURE_AND_14_OBJECT_FOLLOWUP_20261102.md",
+      "bytes": 2896,
+      "sha256": "f7a0ea07997a2b02656cd5154657129093e4650ec83a27be55cecf6d42e8f09b"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/synthetic-provenance-prototype-20261102T073708Z-01a193cc/PORTABLE_PROOF_QUALIFICATION_V2.md",
+      "bytes": 1783,
+      "sha256": "5b1ab1486def373f2860434cff67ed19a5491ccd38de36752b1ccee8cc106a67"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/synthetic-provenance-prototype-20261102T073708Z-01a193cc/PROVENANCE_V2.json",
+      "bytes": 6675,
+      "sha256": "bd9c780fcef0a8944d1872c5e864c3b3e6b473345abe7d16e5a9ffa6c5df435a"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/synthetic-provenance-prototype-20261102T073708Z-01a193cc/RUN_REPORT_V3.md",
+      "bytes": 3296,
+      "sha256": "7b26a1506ed2d37dc5d2b732809817e77a1c92165539403f05940ab3228e4e26"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/zhou-iop-route-v4-20261102T1034Z-01a193cc/ARTICLE_INSPECTION.json",
+      "bytes": 1294,
+      "sha256": "0525d00a0a7ebe771abc10c0ea74b1c2e59fb3b87960a5657ce30943d75ebf5c"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/zhou-iop-route-v4-20261102T1034Z-01a193cc/PREFLIGHT_REVIEWS.md",
+      "bytes": 1274,
+      "sha256": "5dc669dc6a948d35fc21c1800acf5e1fe168555155927bd7fca1d9c7c04d1d55"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/zhou-iop-route-v4-20261102T1034Z-01a193cc/PROTOCOL.md",
+      "bytes": 2311,
+      "sha256": "12f9f45e1ba8434f55f84dfdc7fba75addfa14fc0035d8e049705a6eb77a67c3"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/zhou-iop-route-v4-20261102T1034Z-01a193cc/capture-v9/RESULTS.json",
+      "bytes": 1766,
+      "sha256": "1eb1a15f66b33c25b3061255ac77ed6b9254e669fd54d90058d372c4567a3da4"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/zhou-iop-route-v4-20261102T1034Z-01a193cc/capture-v9/article.json",
+      "bytes": 1681,
+      "sha256": "1d3dbf0bd01c9144538f366662534706f211aaa57d036655480472b7ccdd630f"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/zhou-iop-route-v4-20261102T1034Z-01a193cc/capture-v9/article.request.json",
+      "bytes": 1712,
+      "sha256": "2465755f4dfeb80d6aa5850b4e906e826ceed97700961c5177f04970e74ab8f8"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/zhou-iop-route-v4-20261102T1034Z-01a193cc/inspect_article.py",
+      "bytes": 5007,
+      "sha256": "3b0bfed0ae15852a776deb1995a508c3957c44101cf148ad0275048486933257"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/zhou-iop-route-v4-20261102T1034Z-01a193cc/test_inspect_article.py",
+      "bytes": 3988,
+      "sha256": "06b467bc30584e7848a07be793353bf9277f32dad4b353213937fdd28a1d445b"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/zhou-mrt-20261102T1041Z-01a193cc/CHECKPOINT60_ACTIVATION.json",
+      "bytes": 434,
+      "sha256": "b5f0bc74e7db66038bd5f644b1ce03795e7d10520586e9a2024faa239aa44899"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/zhou-mrt-20261102T1041Z-01a193cc/CHECKPOINT60_INSTALL.json",
+      "bytes": 605,
+      "sha256": "be1b9d40281107bb3fa35fe21b99e75fc55e976858c8b5a8aad1c33faa73a341"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/zhou-mrt-20261102T1041Z-01a193cc/CHECKPOINT60_PREPARED_V2.json",
+      "bytes": 594,
+      "sha256": "c0a8df3ccc9b9b5e4aba381564eda282670111ed0136e88be72b4d205ea9896c"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/zhou-mrt-20261102T1041Z-01a193cc/CHECKPOINT60_RECOVERY.md",
+      "bytes": 1004,
+      "sha256": "93158ba09e1e61d2860c43d0d98dfb12c3a7b1b457888ff0f40a817c742df5ec"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/zhou-mrt-20261102T1041Z-01a193cc/COMPARE_MANIFEST_V3.json",
+      "bytes": 714,
+      "sha256": "383cd96d8cb298d03f6d2bdce5b5511d5e4f95586faa282e4914982066a80ca4"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/zhou-mrt-20261102T1041Z-01a193cc/COMPARE_TEST_RESULT_V3.json",
+      "bytes": 546,
+      "sha256": "c125e7d568e6cc30c7783acc8719ab288675c971d51144045013fb3f6feb1cbc"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/zhou-mrt-20261102T1041Z-01a193cc/COMPARE_TEST_STDERR_V3.raw",
+      "bytes": 1388,
+      "sha256": "baabb5edf17c5f060a68399d454bbcd403e1f5dea4a532314e68a8880e9f0fec"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/zhou-mrt-20261102T1041Z-01a193cc/COMPARE_TEST_STDOUT_V3.raw",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/zhou-mrt-20261102T1041Z-01a193cc/COMPARISON_REPORT.md",
+      "bytes": 2904,
+      "sha256": "c0f8e7f393b765fc9f340f7c3f947069d25b4dfd14a07bfab6a27d3850001e3d"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/zhou-mrt-20261102T1041Z-01a193cc/COMPARISON_RESULT_V3.json",
+      "bytes": 1018,
+      "sha256": "338b6bc6e99f594aab946df9139727aae8dcecf139de20e1e98ee8f81c14b435"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/zhou-mrt-20261102T1041Z-01a193cc/INDEPENDENT_COMPARISON_REVIEW.md",
+      "bytes": 1352,
+      "sha256": "af597c6979237aaef58e83bdf454256e10d543c8df3e39d8b55cc9b193770693"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/zhou-mrt-20261102T1041Z-01a193cc/NEXT_ACTION.md",
+      "bytes": 1413,
+      "sha256": "7d2bb99765d0409b708cae587f79e98d6b6ff5b700f43f54941f6a229d08499d"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/zhou-mrt-20261102T1041Z-01a193cc/PREFLIGHT_REVIEWS.md",
+      "bytes": 1669,
+      "sha256": "b55ec3a58bed6dc4c2e9e8c63b15097654ce7bb81c2b1ad8ef1fca4b73e35fa6"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/zhou-mrt-20261102T1041Z-01a193cc/PROTOCOL.md",
+      "bytes": 1930,
+      "sha256": "0c19b737023d7a5a174c16ee58972cb0aa3bda0781ad9bb8b0481d3778948234"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/zhou-mrt-20261102T1041Z-01a193cc/REVIEW_QUEUE_V5.md",
+      "bytes": 1129,
+      "sha256": "e0eb48c7718f55527ff425c731da67e2b082fdace59fad3d3ccda0744b2a012a"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/zhou-mrt-20261102T1041Z-01a193cc/SOURCE_PROVENANCE.json",
+      "bytes": 1723,
+      "sha256": "71bd0875d9f029e61e62861169e88255250d9e95429fca879cc172638a04881c"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/zhou-mrt-20261102T1041Z-01a193cc/capture-v9/RESULTS.json",
+      "bytes": 1763,
+      "sha256": "6e3b841afed3198e9232456404149c9449aab1a050dd4e0fd03db2d50e8be76f"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/zhou-mrt-20261102T1041Z-01a193cc/capture-v9/table.json",
+      "bytes": 1724,
+      "sha256": "ab643118f97eaff0f50bc7afbcfe9c217addffe69dee268b92bc24f6c7c872b1"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/zhou-mrt-20261102T1041Z-01a193cc/capture-v9/table.raw",
+      "bytes": 7874,
+      "sha256": "94f41f32f8c0d34798fc223d4af10fd19a16fc63bc9e30069a6d2ff4ead90267"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/zhou-mrt-20261102T1041Z-01a193cc/capture-v9/table.request.json",
+      "bytes": 1744,
+      "sha256": "f7bd032a0e14d1baa2191744c63b543a37f5e1b84c03103a590d31091589aa89"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/zhou-mrt-20261102T1041Z-01a193cc/compare_table_v3.py",
+      "bytes": 6817,
+      "sha256": "8e98a810aee9237837c95387d41e5554adc25f7c9314fc258726041138e9221c"
+    },
+    {
+      "path": "real-data/studies/nature-goal-20261031T224551Z/zhou-mrt-20261102T1041Z-01a193cc/test_compare_table_v3.py",
+      "bytes": 3333,
+      "sha256": "ea206b5a4a043918d6a1bc6eb2f410ed0c27f6008044b99d5542be8b48ed2f0d"
+    },
+    {
+      "path": "scripts/generate-readme-banner.py",
+      "bytes": 4171,
+      "sha256": "70b1b024a05dd963c1eb443b7137b5c1c99e1c6a6d1eef24a48fc1e9f0903d0d"
+    },
+    {
+      "path": "verify_export.py",
+      "bytes": 1145,
+      "sha256": "3d9fe575484e09266de438f4cf40191938d02275cbb941a0b3efffb55d74131f"
+    }
+  ]
+}

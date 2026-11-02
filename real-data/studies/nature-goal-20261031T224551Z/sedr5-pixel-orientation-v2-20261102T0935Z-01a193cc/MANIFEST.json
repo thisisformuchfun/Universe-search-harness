@@ -1,0 +1,11 @@
+{
+  "created_utc": "2026-11-02T09:36:07.439233+00:00",
+  "status": "PENDING_INDEPENDENT_REVIEW",
+  "scope": "paired orientation prototype, not production or RV inference",
+  "script_sha256": "4fffb0752977f49595f71f189538889ae776824b831a165f8538c56bd946973c",
+  "protocol_sha256": "a7365756698878306a433f6a1933947cf50695ae3da3636f9e21700bdb724a03",
+  "test_sha256": "2c9d0afc0c0c581d372228c909fcb5eb2318fc8d9605ef78eee4a759b70b4a22",
+  "test_result_sha256": "3dd091afade881d8b3167921bd88f412599b13fb4d02c97d7a075c118c152ee5",
+  "product_sha256": "7a33d6a4ff8594c33b43181309bc5ad4e0739e6245943e06ba099172d04742de",
+  "prior_result_sha256": "ce14934e290c8e1212f515f53158ab21d8ba8ce5bab9e38ff2c26187b53d2548"
+}

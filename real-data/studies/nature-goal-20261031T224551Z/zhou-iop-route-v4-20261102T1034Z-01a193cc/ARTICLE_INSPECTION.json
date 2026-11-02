@@ -1,0 +1,38 @@
+{
+  "body_sha256": "88beb44cd30930f0f48dbb6746a2abe040d6f014ce26cc0aae7f069cef221ae6",
+  "body_bytes": 187350,
+  "citation_doi_exact": true,
+  "citation_title_contains_expected": true,
+  "lexical_id_occurrences_not_table_validation": {
+    "3443894276188890752": 2,
+    "1560560462739675904": 2,
+    "1893474166810285952": 1,
+    "470096784872760192": 1,
+    "3369415484530173696": 1,
+    "2876854139510029184": 1
+  },
+  "table_controls_verified": false,
+  "candidate_table_links": [
+    {
+      "label_category": "machine-readable",
+      "scheme": "https",
+      "host_category": "content.cld.iop.org",
+      "path_sha256": "a7a96fe2a9c9c9d956aaab4f31a1dccecfebe8805604cdb2f46cd420fc3503e1",
+      "query_present": false,
+      "fragment_present": false,
+      "userinfo_present": false
+    },
+    {
+      "label_category": "machine-readable",
+      "scheme": "https",
+      "host_category": "content.cld.iop.org",
+      "path_sha256": "a7a96fe2a9c9c9d956aaab4f31a1dccecfebe8805604cdb2f46cd420fc3503e1",
+      "query_present": false,
+      "fragment_present": false,
+      "userinfo_present": false
+    }
+  ],
+  "challenge_marker_present": false,
+  "challenge_marker_absence_is_not_clearance": true,
+  "scope": "inert page inspection; untrusted labels and paths withheld; no link followed"
+}

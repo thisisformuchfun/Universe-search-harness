@@ -1,0 +1,23 @@
+{
+  "script_sha256": "ccdaeb1e4fc73beb1c6efb4b3455e729092906dbc73299be08b64c53199b31dc",
+  "protocol_sha256": "be8ececf1f9c0bdc91be134124b9bdd9ab13cb281c66389f15d5f2e9593e1381",
+  "test_sha256": "9a0a2f5aa636206c304cd8ac786ec85653780df77fbc0457ed73f3f080bb80e3",
+  "transport_sha256": "0f6c1d71336306b5e0bb319f5ced7cfe0e059af891d6632d28f49e634c2c8f42",
+  "ownership_utils_sha256": "3f9b82d0ce290efc280dd4e70e1963045bc95aa527cf880387e6f8ccbcb525f5",
+  "curl_sha256": "a6092ef37a7f41cc7cf1a8ff1192aa294e82c73fda0fd2143d813c46b81e55a2",
+  "gaia_source_sha256": "ac3b2ef6fdbc44b732404d1e5f8db4801185f1a10977959c4a1318d9cd426862",
+  "mask_control_raw_sha256": "e56b8a2e5fa37dc45d5f67a0ff07cf9d49a13ad6dc75c4ddf505650c6ac5f6bd",
+  "mask_control_header_sha256": "7d0c4517902e6549b911c175784d889a5ff33ed66352f37157f76575114fc968",
+  "mask_control_inspection_sha256": "6be225fead731d1ea7f7c9901ff157b7bab2e4c5789bd5c39ff62c45bb4eca42",
+  "mask_control_frames_sha256": "cbf417e5aee896cb133ef6237a2ee92f2686a967244c078e25910583b6e76494",
+  "mask_control_result_sha256": "aeb73b53ee0b9211cbff308422509d9fb3259bd7aa9bb439c6bb3b01e465e370",
+  "mask_control_finish_sha256": "a4cd5f7d86ed7d04ae6691d868918468172384560e2e70442b3874ae13313d80",
+  "mask_control_science_sha256": "2f623573d16965666c6ce0305b9bf555d10579d7d6f7078fc93ca2fb843bd797",
+  "mask_control_execution_sha256": "f4caa30f0bdd3e223d8f432d315bc74413a8d89fb9dbaa2ce066d2579e0cf1cc",
+  "target_image_raw_sha256": "eb89b9c44c2e1c8273f901c2269c90c2f9cdfa2784644d05175719749addc2af",
+  "target_image_inventory_sha256": "a8cf0651e48eaa442d06388f0ac6cf212a2f04eca7a6b6c0958d161289f64d28",
+  "target_image_result_sha256": "ca1531d8391f01a206c7bd3a415f57c7aec673ee484e0104a5b2377023ca0414",
+  "target_image_finish_sha256": "ea11cf24c66924ee8fe3a2d8e10d8c69506349a6388daa6c23543c2fcbdfa79a",
+  "target_image_science_sha256": "856ad4c56721d806be8deef35c321246ff26e1c3309b8b134de13a2d0bd99e9c",
+  "target_image_execution_sha256": "fd182e36305f2363c93a289456b5d654bc955e1e93465fbced61dfc01fe871e4"
+}

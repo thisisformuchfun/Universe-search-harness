@@ -1,0 +1,14 @@
+{
+  "instructions": "Fill with source-linked independent evidence. This file does not override automatic holds.",
+  "fields": [
+    "source_id",
+    "orbit_validation_evidence",
+    "full_covariance_review",
+    "luminous_blend_triple_tests",
+    "current_literature_search_date",
+    "literature_queries",
+    "reviewer",
+    "decision"
+  ],
+  "release_enabled": false
+}

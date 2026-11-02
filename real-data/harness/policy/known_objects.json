@@ -1,0 +1,30 @@
+{
+  "4373465352415301632": {
+    "status": "EXCLUDE_KNOWN_BH",
+    "reason": "Gaia BH1, already published",
+    "evidence": [
+      "https://academic.oup.com/mnras/article/518/1/1057/6794289"
+    ]
+  },
+  "5870569352746779008": {
+    "status": "EXCLUDE_KNOWN_BH",
+    "reason": "Gaia BH2, already published",
+    "evidence": [
+      "https://academic.oup.com/mnras/article/521/3/4323/7093135"
+    ]
+  },
+  "6281177228434199296": {
+    "status": "EXCLUDE_PRIOR_REFUTED_CANDIDATE",
+    "reason": "Previously investigated candidate with refuting follow-up; not new",
+    "evidence": [
+      "https://academic.oup.com/mnras/article/518/2/2991/6825524"
+    ]
+  },
+  "4318465066420528000": {
+    "status": "EXCLUDE_KNOWN_BH",
+    "reason": "Gaia BH3, published 2024; included even if outside the DR3 NSS snapshot",
+    "evidence": [
+      "https://www.eso.org/public/archives/releases/sciencepapers/eso2408/eso2408a-panuzzo-et-al.pdf"
+    ]
+  }
+}

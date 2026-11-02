@@ -1,0 +1,92 @@
+{
+  "finished_utc": "2026-11-02T09:49:32.272181+00:00",
+  "status": "PRODUCT_TRANSPORT_PREFIX_ONLY_IDENTITY_PENDING",
+  "manifest_sha256": "d66c10ad95f2882fed0ceff6fe5c50bf36aeef63ba827150ace0f1989cc173e1",
+  "records": [
+    {
+      "stage": "day",
+      "decision": "PASS_INDEX",
+      "capture_record_sha256": "c6ac94bbbfbc38c37dc3564bafbb7f0de78b93c089f60133bdbfbea9fad0c174",
+      "request_record_sha256": "a69dc2eda866b59ea4f4712e140db9c06be23e1345117406903a81eded8c89f6",
+      "body_sha256": "f77137489f632226091cd8f6beacf482964fc5e0db40d9361a8198318ccc069e",
+      "body_bytes": 817,
+      "http_status": 200,
+      "tls_verify_result": 0,
+      "cleanup_status": "EXIT_CONFIRMED",
+      "owned_pid": 22480,
+      "http_headers_verified": true,
+      "polling_overshoot_possible": true
+    },
+    {
+      "stage": "plan",
+      "decision": "PASS_INDEX",
+      "capture_record_sha256": "7adb42dd63d617c8f68b6b660974e19db5fad2b21bdee2702ada906936d53a4b",
+      "request_record_sha256": "1cf8b717c8ea540d9b77a160ca59e0670c7bf83f4143deadf7b7a2822e594dfd",
+      "body_sha256": "05ae1efd7817ad6a54182a5e68c67bf6e7f3d3fa211a4a2184c1798d729e641c",
+      "body_bytes": 320126,
+      "http_status": 200,
+      "tls_verify_result": 0,
+      "cleanup_status": "EXIT_CONFIRMED",
+      "owned_pid": 14612,
+      "http_headers_verified": true,
+      "polling_overshoot_possible": true
+    },
+    {
+      "stage": "product",
+      "decision": "PASS_TRANSPORT_PREFIX_ONLY",
+      "capture_record_sha256": "d39ed4880d88933155e8ee53f88ed9c368c550d5abc9a119ea0ec7a9adb80105",
+      "request_record_sha256": "0dd404cd4be1d47294db9b137f8bb5b453d41f4df3073a1fc641391047871bd2",
+      "body_sha256": "0e1c7ac03810cd41ad1df477f0977d82e92ba1bad71e442912ca282b339fb439",
+      "body_bytes": 550080,
+      "http_status": 200,
+      "tls_verify_result": 0,
+      "cleanup_status": "EXIT_CONFIRMED",
+      "owned_pid": 30396,
+      "http_headers_verified": true,
+      "polling_overshoot_possible": true
+    }
+  ],
+  "lifecycle": [
+    {
+      "stage": "day",
+      "request_file_state": "VALID_JSON",
+      "owned_file_state": "VALID_JSON",
+      "native_file_state": "VALID_JSON",
+      "process_started": true,
+      "http_transport_complete": true
+    },
+    {
+      "stage": "plan",
+      "request_file_state": "VALID_JSON",
+      "owned_file_state": "VALID_JSON",
+      "native_file_state": "VALID_JSON",
+      "process_started": true,
+      "http_transport_complete": true
+    },
+    {
+      "stage": "product",
+      "request_file_state": "VALID_JSON",
+      "owned_file_state": "VALID_JSON",
+      "native_file_state": "VALID_JSON",
+      "process_started": true,
+      "http_transport_complete": true
+    }
+  ],
+  "request_files_present": 3,
+  "requests_validly_recorded": 3,
+  "not_prepared": [],
+  "lease_released": true,
+  "owned_process_exit_confirmed": true,
+  "last_owned_pid": 30396,
+  "last_owned_process": {
+    "pid": 30396,
+    "creation_filetime_100ns": "134380865627818288",
+    "observed_utc": "2026-11-02T09:49:22.790175+00:00",
+    "executable_expected": "C:/Windows/System32/curl.exe",
+    "identity_status": "OWNED_HANDLE_CREATION_TIME_OBSERVED",
+    "instruction": "Never kill or claim ownership based on a stale PID alone."
+  },
+  "product_identity_validated": false,
+  "new_orbit_or_holdout_evaluation": false,
+  "native_headers_and_diagnostics": "local evidence only; privacy review before any packaging"
+}

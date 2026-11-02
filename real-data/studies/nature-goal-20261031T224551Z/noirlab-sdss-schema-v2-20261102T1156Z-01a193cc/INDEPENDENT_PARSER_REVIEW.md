@@ -1,0 +1,5 @@
+# Independent parser review — fixed schema fixture
+
+On 2026-11-02 UTC `/root/ps1_execution_review` accepted V3 only as a reader for the pinned saved schema response. Parser SHA256 `5819b76e6dbdabe5805ce3143d833c8418400e78bedee93b1eb351e3d7cdc191`, test SHA256 `a1d5bf3799c54c11c8960abf26941fc39279b6ffd5376191e71d788915406970`, inventory SHA256 `c27aee0e8e62583e2ded3644191420aa0b022cca76d40d4b277d21f0b438f18c`; all seven evidence pins matched. The reviewer independently reconstructed all 18 XML rows and obtained the same inventory, including 15 unspecified unit cells. All 20 synthetic tests were independently run and passed, including the earlier structural counterexamples.
+
+The reader still accepts some synthetic unknown datatype strings and mismatched FIELD IDs; those did not occur in this hard-pinned body. It must not be treated as a general fresh-response validator. The body is a finite schema inventory, not source coverage, a match or an RV result. V1/V2 parser drafts and prior outputs are retained for audit.

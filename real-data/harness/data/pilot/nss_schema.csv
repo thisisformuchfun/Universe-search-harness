@@ -1,0 +1,78 @@
+column_name,datatype,description
+b_thiele_innes,double,Thiele-Innes element B
+solution_id,long,Solution Identifier
+source_id,long,Source Identifier
+nss_solution_type,char,NSS model adopted
+ra_error,float,Standard error of right ascension
+dec_error,float,Standard error of declination
+parallax,double,Parallax
+parallax_error,float,Standard error of parallax
+pmra,double,Proper motion in right ascension direction
+pmra_error,float,Standard error of proper motion in right ascension direction
+pmdec,double,Proper motion in declination direction
+pmdec_error,float,Standard error of proper motion in declination direction
+a_thiele_innes,double,Thiele-Innes element A
+a_thiele_innes_error,float,Standard error of Thiele-Innes element A
+b_thiele_innes_error,float,Standard error of Thiele-Innes element B
+f_thiele_innes,double,Thiele-Innes element F
+f_thiele_innes_error,float,Standard error of Thiele-Innes element F
+g_thiele_innes,double,Thiele-Innes element G
+g_thiele_innes_error,float,Standard error of Thiele-Innes element G
+c_thiele_innes,double,"C element of Thiele-Innes "
+c_thiele_innes_error,float,"Standard error of C element of Thiele-Innes "
+h_thiele_innes,double,"H element of Thiele-Innes "
+h_thiele_innes_error,float,"Standard error of H element of Thiele-Innes "
+period,double,Orbital Period
+period_error,float,Standard error of Orbital Period
+t_periastron,double,Periastron epoch
+t_periastron_error,float,Standard error of Periastron epoch
+eccentricity,double,eccentricity
+eccentricity_error,float,Standard error of eccentricity
+center_of_mass_velocity,double,The velocity of the center of mass
+center_of_mass_velocity_error,float,Standard error of The velocity of the center of mass
+semi_amplitude_primary,double,Semi-amplitude of the center of mass
+semi_amplitude_primary_error,float,Standard error of Semi-amplitude of the center of mass
+semi_amplitude_secondary,double,The semiamplitude of the radial velocity curve for second component
+semi_amplitude_secondary_error,float,Standard error of The semiamplitude of the radial velocity curve for second component
+mass_ratio,double,Mass ratio
+mass_ratio_error,float,Standard error of Mass ratio
+fill_factor_primary,double,Fill factor of primary
+fill_factor_primary_error,float,Standard error of Fill factor of primary
+fill_factor_secondary,double,Fill factor of secondary
+fill_factor_secondary_error,float,Standard error of Fill factor of secondary
+arg_periastron,double,Argument of periastron
+arg_periastron_error,float,Standard error of Argument of periastron
+temperature_ratio,double,Ratio of the effective temperatures
+temperature_ratio_error,double,Standard error of the ratio of the effective temperatures
+temperature_ratio_definition,short,Code defining which fitting scenario did apply to the effective temperature
+astrometric_n_obs_al,int,Total astrometric CCD observations in AL considered
+astrometric_n_good_obs_al,int,Total astrometric CCD observations in AL actually used
+rv_n_obs_primary,int,Total number of radial velocities considered for the primary
+rv_n_good_obs_primary,int,Total number of radial velocities actually used for the primary
+rv_n_obs_secondary,int,Total number of radial velocities considered for the secondary in the case of SB2
+rv_n_good_obs_secondary,int,Total number of radial velocities actually used for the secondary in the case of SB2
+phot_g_n_obs,int,Total number of G photometry measurements considered
+phot_g_n_good_obs,int,Total number of G photometry measurements actually used
+bit_index,long,"boolean mask for the fields above in the corrVec matrix "
+corr_vec,float,Vector form of the upper triangle of the correlation matrix (column-major ordered)
+obj_func,float,value of the objective function at the solution
+goodness_of_fit,float,goodness of fit in the Hipparcos sense
+efficiency,float,Efficiency of the solution
+significance,float,The significance of the solution (i.e. how worth keeping a model is)
+flags,long,Quality flag for the achieved NSS solution
+conf_spectro_period,float,"The probability of the period for not being due to (gaussian white) noise. Relevant for SB1, SB1C, SB2 and SB2C models. To be ignored otherwise."
+r_pole_sum,double,Sum of the polar radii of primary and secondary (in units of the semi-major axis)
+r_l1_point_sum,double,L1-pointing radii of primary and secondary (in units of the semi-major axis)
+r_spher_sum,double,Sum of the radii of sphere having the same volume as the primary and secondary (in units of the semi-major axis
+ecl_time_primary,double,Time of mid-eclipse of the primary by the secondary
+ecl_time_secondary,double,Time of mid-eclipse of the secondary by the primary
+ecl_dur_primary,double,Duration of primary eclipse assuming spherical components
+ecl_dur_secondary,double,Duration of secondary eclipse assuming spherical components
+g_luminosity_ratio,double,Ratio of the G-band luminosity of the secondary over the primary
+input_period_error,float,Standard error of the period taken from VariEclipsingBinary.frequencyError
+g_rank,double,Rank of the G-band solution
+astrometric_jitter,double,Uncorrelated astrometric jitter term
+inclination,double,Orbital inclination
+inclination_error,float,Standard error of Orbital inclination
+ra,double,Right ascension
+dec,double,Declination

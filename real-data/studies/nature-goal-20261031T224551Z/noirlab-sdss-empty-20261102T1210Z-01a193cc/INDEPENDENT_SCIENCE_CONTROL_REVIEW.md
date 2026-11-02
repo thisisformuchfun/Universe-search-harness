@@ -1,0 +1,3 @@
+# Independent forced-empty science review
+
+On 2026-11-02 UTC `/root/ps1_science_review` independently inspected the 2,815-byte body SHA256 `8a389807a54877647888c99308b49c539e134a9a4a1e68921d9a270e5d1b9d3e`: one VOTable 1.2 results resource/table, QUERY_STATUS OK and exact query echo, TableRows=0, explicit DATA/TABLEDATA and zero TR rows, with no trailing error/overflow. All 14 FIELD attribute dictionaries, including names, types, units, UCDs and arraysize, match the non-held positive response. This passes the frozen empty-serialization control only; the contradictory predicate may be optimized without running the join. It proves neither held-source coverage nor absence of a spectrum.

@@ -1,0 +1,103 @@
+{
+  "created_utc": "2026-11-02T12:25:37.239030+00:00",
+  "scope": "schema + non-held positive/empty/shape controls + fixed original-14 selected metadata query",
+  "sources": {
+    "schema": {
+      "url": "https://datalab.noirlab.edu/tap/sync?REQUEST=doQuery&LANG=ADQL&FORMAT=votable&MAXREC=101&QUERY=SELECT+TOP+100+table_name%2Ccolumn_name%2Cdatatype%2Cunit%2Cdescription+FROM+TAP_SCHEMA.columns+WHERE+%28table_name%3D%27sdss_dr17.specobj%27+OR+table_name%3D%27sdss_dr17.x1p5__specobj__gaia_dr3__gaia_source%27%29+AND+column_name+IN+%28%27id1%27%2C%27id2%27%2C%27distance%27%2C%27ra1%27%2C%27dec1%27%2C%27ra2%27%2C%27dec2%27%2C%27specobjid%27%2C%27plate%27%2C%27mjd%27%2C%27fiberid%27%2C%27ra%27%2C%27dec%27%2C%27run2d%27%2C%27class%27%2C%27subclass%27%2C%27snmedian%27%2C%27zwarning%27%29+ORDER+BY+table_name%2Ccolumn_name",
+      "started_utc": "2026-11-02T11:56:53.217303+00:00",
+      "finished_utc": "2026-11-02T11:56:54.808265+00:00",
+      "http_status": 200,
+      "curl_exit": 0,
+      "tls_verify_result": 0,
+      "redirects": 0,
+      "body_bytes": 3858,
+      "body_sha256": "86def01aba2baa9ef9263b7477c9c7efed6cec611ad164caf29b066052903b23",
+      "request_sha256": "19a61fc6163a6a2b5daa8b5e0c3b3f5f06fe70b3ddd97ac892fa8966f17de8c9",
+      "native_record_sha256": "0bb57ac0950e48100b1de74da9cd57e4441f763223f5435e4b7786622f9d9512",
+      "terminal_result_sha256": "d0f33cd29e21e0a1f665ca12762982646f3102151f2db2658bd58301da577b19",
+      "finish_sha256": "f6cf3fbb9ba3e36a824da8d8f2537ffc4424d53f53c9da23afd04a5ca05cb3d7",
+      "headers_diagnostics": "local only; excluded from portable packaging"
+    },
+    "positive": {
+      "url": "https://datalab.noirlab.edu/tap/sync?REQUEST=doQuery&LANG=ADQL&FORMAT=votable&MAXREC=21&QUERY=SELECT+TOP+20+x.id1+AS+x_specobjid%2Cx.id2+AS+gaia_source_id%2Cx.ra1%2Cx.dec1%2Cx.ra2%2Cx.dec2%2Cx.distance%2Cs.specobjid+AS+s_specobjid%2Cs.plate%2Cs.mjd%2Cs.fiberid%2Cs.ra+AS+fiber_ra%2Cs.dec+AS+fiber_dec%2Cs.run2d+FROM+sdss_dr17.x1p5__specobj__gaia_dr3__gaia_source+AS+x+JOIN+sdss_dr17.specobj+AS+s+ON+x.id1%3Ds.specobjid+WHERE+x.id2%3D1607896637338835712+ORDER+BY+x.id1",
+      "started_utc": "2026-11-02T12:06:38.511514+00:00",
+      "finished_utc": "2026-11-02T12:06:39.981092+00:00",
+      "http_status": 200,
+      "curl_exit": 0,
+      "tls_verify_result": 0,
+      "redirects": 0,
+      "body_bytes": 3121,
+      "body_sha256": "4a2ca013b79bbe7bd1d57286f7504554f640139034c8f1e2dce35183a7f809f5",
+      "request_sha256": "b1e807e086b3364a0fe1627ee2560eeb851e0316a9a7beaf61f6297dbf588ff8",
+      "native_record_sha256": "5f7f2a277a3635f012203f6415b4e58885228a97c584472de70a0acb57fc3a43",
+      "terminal_result_sha256": "14d30cf0624cfd3bb12fdbd276331e830220d26048898d409ccf250905701173",
+      "finish_sha256": "01102f82c95d321eb5d9fe74449e7f91bb5d5742d57d677aa6a30cd02ec2b7d5",
+      "headers_diagnostics": "local only; excluded from portable packaging"
+    },
+    "empty": {
+      "url": "https://datalab.noirlab.edu/tap/sync?REQUEST=doQuery&LANG=ADQL&FORMAT=votable&MAXREC=21&QUERY=SELECT+TOP+20+x.id1+AS+x_specobjid%2Cx.id2+AS+gaia_source_id%2Cx.ra1%2Cx.dec1%2Cx.ra2%2Cx.dec2%2Cx.distance%2Cs.specobjid+AS+s_specobjid%2Cs.plate%2Cs.mjd%2Cs.fiberid%2Cs.ra+AS+fiber_ra%2Cs.dec+AS+fiber_dec%2Cs.run2d+FROM+sdss_dr17.x1p5__specobj__gaia_dr3__gaia_source+AS+x+JOIN+sdss_dr17.specobj+AS+s+ON+x.id1%3Ds.specobjid+WHERE+x.id2%3D1607896637338835712+AND+x.id2%3D0+ORDER+BY+x.id1",
+      "started_utc": "2026-11-02T12:11:59.543971+00:00",
+      "finished_utc": "2026-11-02T12:12:01.148553+00:00",
+      "http_status": 200,
+      "curl_exit": 0,
+      "tls_verify_result": 0,
+      "redirects": 0,
+      "body_bytes": 2815,
+      "body_sha256": "8a389807a54877647888c99308b49c539e134a9a4a1e68921d9a270e5d1b9d3e",
+      "request_sha256": "5f84f9d51e8d3c8dea4d3f21c053e47daa5e3af76e5c902f9c616d7ea734140f",
+      "native_record_sha256": "5903728cec5e77ba9b0fff1e7d76fe647d917b9069dfe17aacf16bbf0f4b6e4f",
+      "terminal_result_sha256": "c80cf635080b26d22514708193564846b8a41f4786bd69f49c35f1c81f323a21",
+      "finish_sha256": "738987fcaa4fb0ae585078d7e61feced161085c836348934282f5a497f96b957",
+      "headers_diagnostics": "local only; excluded from portable packaging"
+    },
+    "shape": {
+      "url": "https://datalab.noirlab.edu/tap/sync?REQUEST=doQuery&LANG=ADQL&FORMAT=votable&MAXREC=201&QUERY=SELECT+TOP+201+x.id1+AS+x_specobjid%2Cx.id2+AS+gaia_source_id%2Cx.ra1%2Cx.dec1%2Cx.ra2%2Cx.dec2%2Cx.distance%2Cs.specobjid+AS+s_specobjid%2Cs.plate%2Cs.mjd%2Cs.fiberid%2Cs.ra+AS+fiber_ra%2Cs.dec+AS+fiber_dec%2Cs.run2d+FROM+sdss_dr17.x1p5__specobj__gaia_dr3__gaia_source+AS+x+JOIN+sdss_dr17.specobj+AS+s+ON+x.id1%3Ds.specobjid+WHERE+x.id2+IN+%281%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C1607896637338835712%29+ORDER+BY+x.id2%2Cx.id1",
+      "started_utc": "2026-11-02T12:18:24.776392+00:00",
+      "finished_utc": "2026-11-02T12:18:26.233715+00:00",
+      "http_status": 200,
+      "curl_exit": 0,
+      "tls_verify_result": 0,
+      "redirects": 0,
+      "body_bytes": 3163,
+      "body_sha256": "7c2a79ab93566c877e94d6dc4e674e7bc85c4920cf375cc4d0bbbf0ccf2ddf5f",
+      "request_sha256": "2893c7ca16f9ff0c7d4a230f30b6bf4f43439f3c04cdd03ee3016d3378bfcabf",
+      "native_record_sha256": "3f98af9a41f2255e567710c7e6da7eba8f89b7509cc8e4cf415433127a99f429",
+      "terminal_result_sha256": "3c6f0933b846495d9ac973b3802c05cb54ea51fa52606a8bd23e665a1c31ef1e",
+      "finish_sha256": "01a189a16b73fa97ae0165b59fe08da3c6efa19883a5c7d09362e3f92c72aa98",
+      "headers_diagnostics": "local only; excluded from portable packaging"
+    },
+    "held14": {
+      "url": "https://datalab.noirlab.edu/tap/sync?REQUEST=doQuery&LANG=ADQL&FORMAT=votable&MAXREC=201&QUERY=SELECT+TOP+201+x.id1+AS+x_specobjid%2Cx.id2+AS+gaia_source_id%2Cx.ra1%2Cx.dec1%2Cx.ra2%2Cx.dec2%2Cx.distance%2Cs.specobjid+AS+s_specobjid%2Cs.plate%2Cs.mjd%2Cs.fiberid%2Cs.ra+AS+fiber_ra%2Cs.dec+AS+fiber_dec%2Cs.run2d+FROM+sdss_dr17.x1p5__specobj__gaia_dr3__gaia_source+AS+x+JOIN+sdss_dr17.specobj+AS+s+ON+x.id1%3Ds.specobjid+WHERE+x.id2+IN+%28632497706010874240%2C824344003814438528%2C1533365584518328576%2C1538284425878995712%2C2245423750054837888%2C2852726284550996352%2C3316050687674598656%2C4299244434901041024%2C4491401821468887552%2C5591318172608607232%2C5928370816455687808%2C5929746958324419200%2C5959603097090964992%2C5991734159714775296%29+ORDER+BY+x.id2%2Cx.id1",
+      "started_utc": "2026-11-02T12:22:37.820692+00:00",
+      "finished_utc": "2026-11-02T12:22:39.243768+00:00",
+      "http_status": 200,
+      "curl_exit": 0,
+      "tls_verify_result": 0,
+      "redirects": 0,
+      "body_bytes": 3073,
+      "body_sha256": "141ee7d0db411c2a2d8019648c9d7a1446f1354c09c9282e83d42293f38bf4a7",
+      "request_sha256": "21a9a0dd47903a8c1f409f2b81e44775c6c73df45dba9663125d09c2fddf598f",
+      "native_record_sha256": "e4023467599ff2ff766a890084665538f6bbf62c7b9213812873a282f42bd016",
+      "terminal_result_sha256": "171f01cb3a896158162f9dfc51155e5214717dff336b74046c99d852b3afe87d",
+      "finish_sha256": "beab0fe660eb401d348aa40f4966a8d7c1cb22cf494ccee2483ab78c257a62be",
+      "headers_diagnostics": "local only; excluded from portable packaging"
+    }
+  },
+  "derived_artifacts_sha256": {
+    "HELD14_CROSSMATCH_ZERO.json": "ba66a363d977ed86a9a5fbd7df70e827d875d6465c7ae96e2a4d3067c2cd8896",
+    "INDEPENDENT_SCIENCE_RESULT_REVIEW.md": "0953770bfb4397400dd181330486754a070dc75e12b795275da0450644123005",
+    "INDEPENDENT_EXECUTION_CAPTURE_REVIEW.md": "b131cd8ba57b7a137351516e5bc430b86f224ea709ee8a967133ecc18e5e9cb7",
+    "INDEPENDENT_PARSER_REVIEW.md": "67f35fd8f12cc8fe39d0279a50d74b8f270212f673d305e23f41956b6fc59a96",
+    "RUN_REPORT.md": "976852bd3c44fc68c300812cb04031e480d7828f0710c48152d7309b86ef45da",
+    "REVIEW_QUEUE_V8.md": "87757da11be1a7a282ab5763659c46b5123269f34a84dc6dedc30c50f34602e0",
+    "NEXT_ACTION.md": "7038d5b6a0c75c73ab3d923d3a1fdf201d0358d6f91c64ff69342f1db035d2b5"
+  },
+  "original_held_source_count": 14,
+  "returned_rows": 0,
+  "limitations": [
+    "nearest-neighbor 1.5 arcsec and clean specobj view are incomplete",
+    "controls occurred at different times",
+    "zero does not prove absence of spectra, an RV or an orbit",
+    "historical scientific holdout not evaluated"
+  ]
+}

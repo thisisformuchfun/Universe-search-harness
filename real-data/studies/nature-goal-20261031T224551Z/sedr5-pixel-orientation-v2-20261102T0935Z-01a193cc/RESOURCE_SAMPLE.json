@@ -1,0 +1,12 @@
+{
+  "record_kind": "root transcription of parallel local command outputs; time is approximate",
+  "observed_utc": "2026-11-02T09:39:12Z",
+  "operating_system_command": "Get-CimInstance Win32_OperatingSystem | Select-Object TotalVisibleMemorySize,FreePhysicalMemory",
+  "total_visible_memory_kib": 66212484,
+  "free_physical_memory_kib": 46071624,
+  "gpu_command": "nvidia-smi --query-gpu=name,memory.total,memory.used --format=csv,noheader,nounits",
+  "gpu_name": "NVIDIA GeForce RTX 4090",
+  "gpu_memory_total_mib": 24564,
+  "gpu_memory_used_mib": 0,
+  "qualification": "point-in-time host readings, not peak usage; not an independently replayable historical measurement"
+}

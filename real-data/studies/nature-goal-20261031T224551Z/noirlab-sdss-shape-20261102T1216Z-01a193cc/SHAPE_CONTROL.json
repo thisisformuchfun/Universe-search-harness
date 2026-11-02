@@ -1,0 +1,41 @@
+{
+  "created_utc": "2026-11-02T12:19:05.857875+00:00",
+  "input_sha256": "7c2a79ab93566c877e94d6dc4e674e7bc85c4920cf375cc4d0bbbf0ccf2ddf5f",
+  "query_sha256": "93f70657397332201f9e57ce653d158ac42b411eaa2b03540c33e6d4c9778308",
+  "evidence_pins": {
+    "query": "93f70657397332201f9e57ce653d158ac42b411eaa2b03540c33e6d4c9778308",
+    "protocol": "f20273833aec24a5a5b4a4f6952eeb43aab9ac45fbd0346c4a852cbac2f3ac21",
+    "raw": "7c2a79ab93566c877e94d6dc4e674e7bc85c4920cf375cc4d0bbbf0ccf2ddf5f",
+    "request": "2893c7ca16f9ff0c7d4a230f30b6bf4f43439f3c04cdd03ee3016d3378bfcabf",
+    "native": "3f98af9a41f2255e567710c7e6da7eba8f89b7509cc8e4cf415433127a99f429",
+    "result": "3c6f0933b846495d9ac973b3802c05cb54ea51fa52606a8bd23e665a1c31ef1e",
+    "finish": "01a189a16b73fa97ae0165b59fe08da3c6efa19883a5c7d09362e3f92c72aa98"
+  },
+  "result": {
+    "status": "PASS_FIXED_14_VALUE_SHAPE_CONTROL",
+    "row_count": 1,
+    "records": [
+      {
+        "x_specobjid": "7912885126627088384",
+        "gaia_source_id": "1607896637338835712",
+        "ra1": 214.17772000000002,
+        "dec1": 52.262147,
+        "ra2": 214.1777755466145,
+        "dec2": 52.26208378970914,
+        "distance": 0.2583826592661557,
+        "s_specobjid": "7912885126627088384",
+        "plate": "7028",
+        "mjd": "56449",
+        "fiberid": "220",
+        "fiber_ra": 214.17772000000002,
+        "fiber_dec": 52.262147,
+        "run2d": "v5_13_2",
+        "computed_separation_arcsec_assuming_degrees": 0.25838265925170484,
+        "fiber_to_paper_rounded_arcsec_assuming_degrees": 0.5577848688481339,
+        "gaia_to_paper_rounded_arcsec_assuming_degrees": 0.3064172752489696
+      }
+    ],
+    "coordinate_assumption": "crossmatch RA/Dec interpreted as degrees; unit cells were blank",
+    "scope": "14-value shape only; preserve sentinels; no completeness, fibre light, RV or orbit conclusion"
+  }
+}

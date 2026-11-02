@@ -1,0 +1,5 @@
+# Independent mask-control transport review
+
+On 2026-11-02 UTC `/root/ps1_execution_review` verified one exact 1548p465 GET at 11:46:09.294840–11:46:10.010358 UTC: HTTP 200, curl exit 0, TLS verification 0, zero redirects, and no recorded cap overage. Request SHA256 `1a2df1a9a8e59cba430f07c3e55bcbc8186ce86961f6372d77449e3567e24e40`; body 264,960 bytes, SHA256 `e56b8a2e5fa37dc45d5f67a0ff07cf9d49a13ad6dc75c4ddf505650c6ac5f6bd`; RESULT SHA256 `aeb73b53ee0b9211cbff308422509d9fb3259bd7aa9bb439c6bb3b01e465e370`. All 12 pinned inputs, native headers/streams/body hashes, write-out and RESULT-to-FINISH hash matched. The owned process exit and absent PID/leases were checked, as was unchanged custody. A limited private header-category scan found no Set-Cookie/auth/challenge/location categories; native headers and diagnostics remain local.
+
+The FITS signature and block alignment are transport checks only. Compressed image structure, optical mask data, WCS registration and checksum interpretation require the separate science review.

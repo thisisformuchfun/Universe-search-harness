@@ -1,0 +1,7 @@
+{
+  "lease_released": true,
+  "safe_to_release": true,
+  "cleanup_status": "EXIT_CONFIRMED",
+  "owned_process_exit_confirmed": true,
+  "terminal_sha256": "c80cf635080b26d22514708193564846b8a41f4786bd69f49c35f1c81f323a21"
+}

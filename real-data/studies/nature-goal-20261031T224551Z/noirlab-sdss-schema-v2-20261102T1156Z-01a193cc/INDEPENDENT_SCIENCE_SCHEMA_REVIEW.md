@@ -1,0 +1,7 @@
+# Independent schema science review
+
+On 2026-11-02 UTC `/root/ps1_science_review` independently examined the 3,858-byte body SHA256 `86def01aba2baa9ef9263b7477c9c7efed6cec611ad164caf29b066052903b23`. The one results resource contains QUERY_STATUS OK, an exact query echo, one five-field TABLEDATA, TableRows 18 and 18 distinct rows; no trailing ERROR or OVERFLOW was present. The schema returns 11 requested `sdss_dr17.specobj` fields and all seven requested crossmatch fields. All five output metadata fields have arraysize 64 and no returned cell reached that width.
+
+The descriptions identify crossmatch `id1` as SDSS `specobjid` and `id2` as Gaia `source_id`, both `adql:BIGINT`. The crossmatch `distance` description says arcseconds but its unit cell is blank; crossmatch coordinate unit cells are also blank. `specobj.ra/dec` are DOUBLE degrees described as fibre J2000 coordinates. Its MJD is an INTEGER in days, not an established exposure midpoint or time scale. [NOIRLab documentation](https://datalab.noirlab.edu/data/sdss) describes a nearest-neighbor crossmatch and a clean spectrum view, neither an exhaustive all-neighbor or epoch inventory.
+
+This establishes the requested schema response, not a match or RV for any held object. Before a held-source query, independently validate a published non-held positive control and a forced-empty query using the same join and output schema. Preserve exact decimal IDs as strings, report cap/overflow, duplicates and source-attribution limits.

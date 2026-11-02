@@ -1,0 +1,5 @@
+# Independent schema transport review
+
+On 2026-11-02 UTC `/root/ps1_execution_review` accepted one source-free TAP_SCHEMA transport. The frozen query matched the GET, native request and effective URL; the owned process exited, HTTP was 200, TLS verify 0, redirects 0 and no recorded overages. Body length was 3,858 bytes and SHA256 `86def01aba2baa9ef9263b7477c9c7efed6cec611ad164caf29b066052903b23`. Request/body/native header and stream hashes and RESULT-to-FINISH terminal hash agreed; the PID was absent, acquisition lease released, and custody/holdout coordination unchanged. Native headers/diagnostics remain local.
+
+An independent XML spot-check found a VOTable 1.2 results table, QUERY_STATUS OK and exact echoed query, with 18 unique five-cell rows, 11 for specobj and seven for the crossmatch, below the cap. Five CHAR fields advertise arraysize 64; 15 unit cells are empty and remain unknown. A separate science review and parser review qualify interpretation; no held-source query occurred.

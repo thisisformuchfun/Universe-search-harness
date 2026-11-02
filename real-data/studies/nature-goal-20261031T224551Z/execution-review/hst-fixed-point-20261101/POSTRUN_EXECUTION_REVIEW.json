@@ -1,0 +1,61 @@
+{
+  "created_utc": "2026-11-01T07:16:28.734943+00:00",
+  "verdict": "ACCEPT_COMPLETE_CAPTURE_AND_KNOWN_ROW_SCALAR_CONTROL_WITH_COVERAGE_HOLD",
+  "protocol_sha256": "4bb39d2e6441776e2b45a7a1f5f62bcc2049ccf3a170a120bb1c8b16f59f8d78",
+  "prepared_review_sha256": "f17e077276d40a8bb9444325de30daad017312377d313f2360e71937e45ec915",
+  "driver_sha256": "90c63d8f067d393aa3fbe4b5052e30b9a1bee3f8d584cd9dd722ae5b22d43730",
+  "transport_sha256": "80aed571bb16a274b61264d2f61a9425fd528a99777353e48d30e9e8c7205087",
+  "proposal_sha256": "cd1e02245c3715b6bdd069c2e3af6cda7cb97081efe7c57d4837e2c6f8670cb7",
+  "retrieval_sha256": "385b51743b69a22aa35aa139b121682b773ed86cdebb619001a6ca5e42a3fa21",
+  "result_sha256": "fa2fc8c8dda5b53a3f5342b5b5788f0f2fa063645709aecf4f807a19f26cf94a",
+  "request_sha256": "b959de6cca201ab9d2c89227427d198f2b6e84e3af212dca17c65d6c1fabf84e",
+  "raw_sha256": "dbfb5660e120a04888538f8e8bce4b0d22ca52ea5784b50f85f5c9b065e8d01b",
+  "privacy_review_sha256": "fda049081852c4bf5a204fba673aca6f8fe126589830ad5e395bbc2928a3f92c",
+  "duplicate_audit_sha256": "0749d27b64c7ca768ae5335aa052fd5d143a935205c67091987a50df77ed1e42",
+  "http_status": 200,
+  "returncode": 0,
+  "ssl_verify_result": 0,
+  "requests": 1,
+  "body_bytes": 18907,
+  "started_utc": "2026-11-01T07:13:16.529587+00:00",
+  "finished_utc": "2026-11-01T07:13:50.822207+00:00",
+  "transport_seconds": 34.2744037,
+  "batch_seconds": 34.3240717,
+  "all_terminal_caps_deadline_and_cleanup_checks_pass": true,
+  "headers_stdout_stderr_bytes": [
+    1675,
+    708,
+    0
+  ],
+  "rows": 20,
+  "fields": 31,
+  "exact_field_order_datatypes_units_UCDs_match": true,
+  "all_QUERY_STATUS": [
+    "OK"
+  ],
+  "response_query_echo_exact": true,
+  "known_control_objid": "109191367",
+  "known_control_rows": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "knownrow_first28_cells_equal_prior_capture": true,
+  "coverage": "TOP20/MAXREC20 boundary reached: truncated or unknown. Repeated objids make ORDER BY objid nonunique; no pagination requested or admitted.",
+  "interpretation": "FrozenV2 known-row scalar query mechanics criterion met by valid31-field TABLEDATA including unchanged known provider metadata. This does not validate global completeness, unique ordering, images/pixels, original-source association, scientific gates or any discovery.",
+  "members_unchanged": 9,
+  "input_pins_unchanged": 22,
+  "reviewer_requests_GPU_fits_or_mutations": 0,
+  "completed_capture_file_hashes": {
+    "EXECUTION_CLAIM.json": "8248b78eb88b42094fd9b5fac45f3659a14727f902261cb73935428a997ce69f",
+    "hst_fixed_point.curl.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "hst_fixed_point.curl.stdout": "369a629bcc2aea3231929f760107f6f621c95f23979a03f2d03b6a958d3519ca",
+    "hst_fixed_point.headers": "49491e901702c840ec358b4f0eb82ad18cbb2e1be72b37e9fab26ec85332b629",
+    "hst_fixed_point.json": "385b51743b69a22aa35aa139b121682b773ed86cdebb619001a6ca5e42a3fa21",
+    "hst_fixed_point.raw": "dbfb5660e120a04888538f8e8bce4b0d22ca52ea5784b50f85f5c9b065e8d01b",
+    "hst_fixed_point.request.json": "b959de6cca201ab9d2c89227427d198f2b6e84e3af212dca17c65d6c1fabf84e",
+    "PROTOCOL.json": "4bb39d2e6441776e2b45a7a1f5f62bcc2049ccf3a170a120bb1c8b16f59f8d78",
+    "RESULTS.json": "fa2fc8c8dda5b53a3f5342b5b5788f0f2fa063645709aecf4f807a19f26cf94a"
+  }
+}

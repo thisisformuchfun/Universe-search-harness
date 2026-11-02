@@ -1,0 +1,13 @@
+{
+  "reason": "exclude uninspected nested historical handoffs; prior complete archive remains on originating PC",
+  "omitted": [
+    {
+      "member": "artifacts/Universe_Search_Harness_Checkpoint53_20261102_01a193cc.zip",
+      "sha256": "bff3862e1f6e42e31c94795f0ec547c7c7d0b6c07c6c8905f0c03405a2669d20"
+    },
+    {
+      "member": "artifacts/Universe_Research_Prototype_Supplement_v2_20261102T0810Z_01a193cc.zip",
+      "sha256": "9de5daac3e80f54820341c523857f9b0a9f5f03f69280c363ab24ffb0b6d1952"
+    }
+  ]
+}

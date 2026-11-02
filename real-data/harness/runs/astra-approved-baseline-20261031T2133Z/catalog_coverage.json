@@ -1,0 +1,14 @@
+[
+  {
+    "catalog": "J/MNRAS/518/2991/table2",
+    "rows": 177,
+    "source": "bundled real 2026-10-19 snapshot",
+    "sha256": "61b677b171a6e140d2cfafb710f98140895dd20bd64bfb6efc10f69a9c77b1c1"
+  },
+  {
+    "catalog": "J/MNRAS/521/5927/table",
+    "rows": 234,
+    "source": "bundled real 2026-10-19 snapshot",
+    "sha256": "8d5e67c7026e7433aad43b535f596889861a4e39070d73a2bb0ebe76ab4b3164"
+  }
+]

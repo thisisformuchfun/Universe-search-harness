@@ -1,0 +1,62 @@
+{
+  "started_utc": "2026-11-02T09:37:05.854973+00:00",
+  "finished_utc": "2026-11-02T09:37:05.863788+00:00",
+  "elapsed_seconds": 0.0095345,
+  "manifest_sha256": "1f2e12f27539cb2d8df85867af1f3c934b35d713454a040f4c28971b8e3fa5b7",
+  "product_sha256": "7a33d6a4ff8594c33b43181309bc5ad4e0739e6245943e06ba099172d04742de",
+  "prior_result_sha256": "ce14934e290c8e1212f515f53158ab21d8ba8ce5bab9e38ff2c26187b53d2548",
+  "numpy_version": "2.3.5",
+  "astropy_version": "7.1.1",
+  "scope": "paired orientation prototype only; no RV or calibration inference",
+  "holdout_evaluated": false,
+  "frames": [
+    {
+      "mjm": "82124924",
+      "arm": "b",
+      "input_orientation": "ascending",
+      "first_loglam": 3.5544865131378174,
+      "last_loglam": 3.771498203277588,
+      "all_fields_roundtrip_byte_equal": true
+    },
+    {
+      "mjm": "82124952",
+      "arm": "b",
+      "input_orientation": "ascending",
+      "first_loglam": 3.5544862747192383,
+      "last_loglam": 3.771497964859009,
+      "all_fields_roundtrip_byte_equal": true
+    },
+    {
+      "mjm": "82124981",
+      "arm": "b",
+      "input_orientation": "ascending",
+      "first_loglam": 3.5544862747192383,
+      "last_loglam": 3.771497964859009,
+      "all_fields_roundtrip_byte_equal": true
+    },
+    {
+      "mjm": "82124924",
+      "arm": "r",
+      "input_orientation": "descending",
+      "first_loglam": 3.956789255142212,
+      "last_loglam": 3.7511370182037354,
+      "all_fields_roundtrip_byte_equal": true
+    },
+    {
+      "mjm": "82124952",
+      "arm": "r",
+      "input_orientation": "descending",
+      "first_loglam": 3.956789493560791,
+      "last_loglam": 3.7511351108551025,
+      "all_fields_roundtrip_byte_equal": true
+    },
+    {
+      "mjm": "82124981",
+      "arm": "r",
+      "input_orientation": "descending",
+      "first_loglam": 3.9567887783050537,
+      "last_loglam": 3.751136541366577,
+      "all_fields_roundtrip_byte_equal": true
+    }
+  ]
+}

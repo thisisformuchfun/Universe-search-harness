@@ -1,0 +1,11 @@
+{
+  "version": "gaia-real-v1",
+  "review_anomaly_threshold_f_phot": 3.0,
+  "release_enabled": false,
+  "release_reason": "No automated black-hole identification or novelty proof. An independent scientific review and a versioned validated release protocol are required.",
+  "ranking_only_edits": ["mass_function_weight", "precision_weight", "efficiency_weight"],
+  "source_holdout_partition": "sha256(source_id) modulo 10: 0-5 train; 6-7 validation; 8-9 test",
+  "known_catalog_no_match": "UNKNOWN_NOT_NOVEL",
+  "unsupported_domains": ["exoplanet_transit", "gw_subthreshold_merger", "anomalous_star"],
+  "caveats_url": "https://gea.esac.esa.int/archive/documentation/GDR3/Data_analysis/chap_cu4nss/sec_cu4nss_combined/sec_cu4nss_combined_caveat.html"
+}

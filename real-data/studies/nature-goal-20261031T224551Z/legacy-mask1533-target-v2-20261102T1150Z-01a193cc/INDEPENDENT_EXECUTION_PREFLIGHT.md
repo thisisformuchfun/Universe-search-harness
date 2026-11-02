@@ -1,0 +1,3 @@
+# Independent execution preflight
+
+On 2026-11-02 UTC `/root/ps1_execution_review` accepted one fixed 1857p410 target-mask GET. Manifest SHA256 `f25aba36ed7d8fdbafa982778135dd0605111a049ac5546a622c594c08a2e92a` and all 21 pins matched; V2 code/tests were byte-identical to the independently examined V1, and the protocol now says the two frame interpretations are not a validated bound on the source position. Prior mask-control and target-image prerequisites passed; custody, idle coordination and absent capture/locks were verified. The reviewer counted but did not rerun the filesystem-using 16-test suite; the local suite passed. Target compressed-FITS, WCS, mask values and synthetic bit decoding remain unvalidated until separate review.

@@ -1,0 +1,12 @@
+{
+  "created_utc": "2026-11-02T09:54:28.181704+00:00",
+  "status": "PENDING_INDEPENDENT_REVIEW",
+  "scope": "reference metadata and LOGLAM ordering only",
+  "script_sha256": "5ef294b1466a1c1ed7b208cae1fc15e1e2fd40206fe58ddf6b4688aff2a79f63",
+  "protocol_sha256": "f0d8aa1bad3d5abfe2be0bfbdc3a7a868a1c98b8d9aa681a85be08cc50898bbe",
+  "test_sha256": "c3b3b37dabd2a3607464c98f9009a93d5e483ab2afb0105eadc8eb9bfe508fde",
+  "test_result_sha256": "becaa772c5dde174d114f974bf124a86c5ac32b1b4fffc0da38af74c37ed7b9d",
+  "product_sha256": "0e1c7ac03810cd41ad1df477f0977d82e92ba1bad71e442912ca282b339fb439",
+  "capture_sha256": "f5e6881fbe18a3444f53464f1e053bc2f6e41c70c02e5b97142f15b92a7c4899",
+  "sample_sha256": "445105154437335a95353a37aecbe93609d89a48bdee3b99fbcb54be33de8513"
+}

@@ -1,0 +1,12 @@
+{
+  "created_utc": "2026-11-02T08:39:37.127789+00:00",
+  "capture_script_sha256": "3f9b82d0ce290efc280dd4e70e1963045bc95aa527cf880387e6f8ccbcb525f5",
+  "protocol_sha256": "1f72d83ee0d6214c9e148f1c3e5d4cf2fe562a6cfac3d03d8e94ae2db8db29ca",
+  "transport_sha256": "0f6c1d71336306b5e0bb319f5ced7cfe0e059af891d6632d28f49e634c2c8f42",
+  "combined_source_sha256": "2bfdfe2b133b1f5d9f880ae81be5002b48b7eb89cb8c45f538e048542cc32e06",
+  "test_sha256": "a9fd61ce366db13e34355f1daf429c24ece2ec9beda3ee54f0debe7b7a44ac78",
+  "deferred_test_sha256": "cd19e7be272f48ac353d160c28a4f9e7f7ba8d561ef6ceefd0e7a29f34c95061",
+  "test_result_sha256": "870274929a1ce35936f4ee2d435fd4d5d107b326abfe6d357647c6ea7f6d7299",
+  "review_status": "PENDING_INDEPENDENT_EXECUTION_REVIEW",
+  "scope": "existing held source metadata/product availability; no physical inference or policy changes"
+}

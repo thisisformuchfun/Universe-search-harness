@@ -1,0 +1,15 @@
+{
+  "data_kind": "REAL_OBSERVATIONAL_ARCHIVE_SNAPSHOT",
+  "fetched_utc": "2026-10-19T23:21:05.787090+00:00",
+  "files": {
+    "gaia_pilot_raw.csv": "4cae3b1c7980f6b140f9a156921f108eec12ec73e271b3614736ab2d594b792e",
+    "REVIEW.md": "f67bb5b69b1d8c8f60a577c5e5ff6a0320eb5b05ee519c1e5727051bfb1b9fd7",
+    "gaia_pilot_report.json": "a800e3616318b522b696796188ecfffc1bf37be048aad5b6a9244fae3951d22c",
+    "nss_schema.csv": "9380d541933735beb470d7e47971d5d903a9a9737467e3ece44f99681496bd69",
+    "provenance.json": "e9e778986a78d2bcf0c86c9aaa94223cb55e2eee37e7d21eb54e95d41d38b7eb",
+    "shahaf177.tsv": "61b677b171a6e140d2cfafb710f98140895dd20bd64bfb6efc10f69a9c77b1c1",
+    "jayasinghe234.tsv": "8d5e67c7026e7433aad43b535f596889861a4e39070d73a2bb0ebe76ab4b3164",
+    "pilot_catalog_crossmatch.json": "e39c3e0a28b4fcf956c24a507cad54d9e85e59995444890b7f92ab6c6c41878f",
+    "pilot_dispositions.csv": "1fe6348f7e2e4727ee4a2b013d1449fe4abaec92fafd5293a3996e686bcb05be"
+  }
+}

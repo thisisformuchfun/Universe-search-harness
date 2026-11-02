@@ -1,0 +1,83 @@
+{
+  "created_utc": "2026-11-02T07:17:16.067430+00:00",
+  "purpose": "Reviewed corrections and local verifier following frozen image provenance",
+  "prior_provenance": {
+    "path": "studies/nature-goal-20261031T224551Z/held1533-ps1-image-20261102T0648Z-01a193cc/PROVENANCE.json",
+    "sha256": "41c3363022f9f6ce45dbb463b3969dea9b972915b605f2ca27877bf58b9c4bdd"
+  },
+  "experiment_ledger": {
+    "path": "studies/nature-goal-20261031T224551Z/experiment_ledger_checkpoint58.jsonl",
+    "sha256": "e032fad503482cd891b2d760ae3a1d90b651df85b89dbca07cce46f2baaa14d2"
+  },
+  "files": [
+    {
+      "path": "studies/nature-goal-20261031T224551Z/held1533-ps1-image-20261102T0648Z-01a193cc/INDEPENDENT_CUTOUT_SCIENCE_REVIEW_V2.md",
+      "bytes": 1937,
+      "sha256": "8ce2e35c14206cdcfb687a2ff976da07e3846450199d177b5489eceaecf35868"
+    },
+    {
+      "path": "studies/nature-goal-20261031T224551Z/held1533-ps1-image-20261102T0648Z-01a193cc/INDEPENDENT_CUTOUT_SCIENCE_REVIEW_V3.md",
+      "bytes": 1939,
+      "sha256": "28cf9316217ecfb917f1662a8ac9c89401b1c96291e6402927225289e32fa3df"
+    },
+    {
+      "path": "studies/nature-goal-20261031T224551Z/held1533-ps1-image-20261102T0648Z-01a193cc/LITERATURE_20261102_V2.md",
+      "bytes": 1645,
+      "sha256": "9c58658b8d64d5bb48bd42b08ec2b31f1be258c26f4c691bb500c2f4e8c178b4"
+    },
+    {
+      "path": "studies/nature-goal-20261031T224551Z/held1533-ps1-image-20261102T0648Z-01a193cc/REVIEW_QUEUE_V2.md",
+      "bytes": 1408,
+      "sha256": "48bb144a7abbae0bafbfae1db44640b9bbf7a17b05db9416c93b4e0a4e6c2048"
+    },
+    {
+      "path": "studies/nature-goal-20261031T224551Z/held1533-ps1-image-20261102T0648Z-01a193cc/REVIEW_QUEUE_V3.md",
+      "bytes": 1408,
+      "sha256": "760a9755d4f811a5692cea38a44ad47b0f98496e502b2148f051674af81b507f"
+    },
+    {
+      "path": "studies/nature-goal-20261031T224551Z/held1533-ps1-image-20261102T0648Z-01a193cc/RUN_REPORT_V2.md",
+      "bytes": 2827,
+      "sha256": "2284a9930f420e666e41cd72d084580aae0d789e5b9dc68e5ff352295f0951cd"
+    },
+    {
+      "path": "studies/nature-goal-20261031T224551Z/held1533-ps1-image-20261102T0648Z-01a193cc/RUN_REPORT_V3.md",
+      "bytes": 2900,
+      "sha256": "ba455943abc73979507704758caf8d055915ac9979d681cccc6b8eb01273cef0"
+    },
+    {
+      "path": "studies/nature-goal-20261031T224551Z/held1533-ps1-image-20261102T0648Z-01a193cc/verify_checkpoint_v2.py",
+      "bytes": 3771,
+      "sha256": "fbf8fda43ce492a8e66c1cf7edd4f46cf694e403725b63922bcac501d2633317"
+    },
+    {
+      "path": "studies/nature-goal-20261031T224551Z/held1533-ps1-image-20261102T0648Z-01a193cc/VERIFIER_CORRECTION.md",
+      "bytes": 1196,
+      "sha256": "1f71a064c51f917a0c86ea170bb4501d837c2063d69b46b9c4de6cdcfc9d9272"
+    },
+    {
+      "path": "studies/nature-goal-20261031T224551Z/held1533-ps1-image-20261102T0648Z-01a193cc/VERIFIER_CORRECTION_V2.md",
+      "bytes": 1296,
+      "sha256": "c8ef8f0828f6ccee8f881b0d1ba8e1de6d6ae455347bc78c24158f5bec57516f"
+    },
+    {
+      "path": "studies/nature-goal-20261031T224551Z/held1533-ps1-image-20261102T0648Z-01a193cc/NEXT_ACTION.md",
+      "bytes": 1401,
+      "sha256": "f1798b09eb49c9efae9d0310beda893450c928cfefd52343e5a147a15c05f19b"
+    },
+    {
+      "path": "studies/nature-goal-20261031T224551Z/held1533-ps1-image-20261102T0648Z-01a193cc/INDEPENDENT_FINAL_REVIEWS.md",
+      "bytes": 1093,
+      "sha256": "ef946ccff08bda16084af200c874500c27defc602cc73f609204b062ebe97a5c"
+    },
+    {
+      "path": "studies/nature-goal-20261031T224551Z/held1533-ps1-image-20261102T0648Z-01a193cc/INTEGRATION_VERIFY_CHECKPOINT54.json",
+      "bytes": 570,
+      "sha256": "cd5feaf3a3d93266cb0224ca7ccda7757aed7197d7548b28960c7d3838fdb6c5"
+    }
+  ],
+  "additional_archive_requests": 0,
+  "source_dispositions_changed": false,
+  "new_holdout_evaluation": false,
+  "scope": "Post-capture text and integrity-verifier corrections; prior manifest and ledger remain immutable."
+}

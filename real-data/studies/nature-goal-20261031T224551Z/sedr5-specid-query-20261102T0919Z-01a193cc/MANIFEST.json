@@ -1,0 +1,17 @@
+{
+  "created_utc": "2026-11-02T09:20:51.952689+00:00",
+  "status": "PENDING_INDEPENDENT_PREFLIGHT",
+  "url": "https://nadc.china-vo.org/data/data/general/sedr5/sexprv/build.csvs",
+  "max_requests": 2,
+  "max_response_bytes_each": 524288,
+  "script_sha256": "7d5c0e6756c2c48fa280a9bbfeb700b675128cb04959488421fae96b74ea82f5",
+  "protocol_sha256": "ac50f2b8c657db162909fd91a4c1a13c8078201c7a9780e03efca62d8b83a948",
+  "transport_sha256": "bc224459bb0de203ce9cd05fa942be0a8fdeb64c7c969e7c6e00d64d1a0f8db9",
+  "library_sha256": "3f9b82d0ce290efc280dd4e70e1963045bc95aa527cf880387e6f8ccbcb525f5",
+  "schema_sha256": "b705e110f9a0d23203cbdd596e09088344e1b9f602946060ebee6bfa77ad501f",
+  "test_sha256": "1cdfd6a995b25a2ae7d1a0e453260ad2761567356ddf2f25377712c68e6ee6e2",
+  "test_result_sha256": "e8e416dd11ca93fbc2ffb0dff0b5176fa7812164cc2dd7fa899eb667c00c8fe9",
+  "sample_sha256": "445105154437335a95353a37aecbe93609d89a48bdee3b99fbcb54be33de8513",
+  "control_body_sha256": "16a8606b9aceb3d442fe90c4d916f263325ffb8c1e74eb0efae47c16f16335f4",
+  "target_body_sha256": "cd25c012a6d3186ed7a02b2ff11610d6e8c2029f2783f02ced451809b560f170"
+}

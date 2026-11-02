@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Produced with MAST VOTable encoder version 1.0 -->
+<VOTABLE version="1.4" xmlns="http://www.ivoa.net/xml/VOTable/v1.3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.ivoa.net/xml/VOTable/v1.3 http://www.ivoa.net/xml/VOTable/v1.3">
+<RESOURCE type="results">
+<INFO name="QUERY_STATUS" value="OK"/>
+<INFO name="QUERY" value="SELECT TOP 20 objid,obs_collection,facility_name,instrument_name,target_name,obs_id,obs_publisher_did,dataproduct_type,calib_level,s_region,s_ra,s_dec,s_fov,s_resolution,s_xel1,s_xel2,t_min,t_max,t_exptime,t_resolution,t_xel,em_min,em_max,em_res_power,em_xel,pol_states,pol_xel,o_ucd,access_url,access_format,access_estsize FROM ivoa.obscore WHERE obs_collection='HST' AND dataproduct_type='image' AND CONTAINS(POINT('ICRS',189.160987245742007,62.180980370585935),s_region)=1 ORDER BY objid"/>
+<TABLE>
+<FIELD name="objid" datatype="long" unit="n.n" ucd="meta.record">
+<DESCRIPTION>primary key</DESCRIPTION></FIELD>
+<FIELD name="obs_collection" datatype="char" arraysize="*" unit="n.n" ucd="meta.id">
+<DESCRIPTION>name of data collection</DESCRIPTION></FIELD>
+<FIELD name="facility_name" datatype="char" arraysize="*" unit="n.n" ucd="meta.id;instr.tel">
+<DESCRIPTION>telescope name</DESCRIPTION></FIELD>
+<FIELD name="instrument_name" datatype="char" arraysize="*" unit="n.n" ucd="meta.id;instr">
+<DESCRIPTION>instrument name</DESCRIPTION></FIELD>
+<FIELD name="target_name" datatype="char" arraysize="*" unit="n.n" ucd="meta.id;src">
+<DESCRIPTION>name of target</DESCRIPTION></FIELD>
+<FIELD name="obs_id" datatype="char" arraysize="*" unit="n.n" ucd="meta.id">
+<DESCRIPTION>internal dataset identifier</DESCRIPTION></FIELD>
+<FIELD name="obs_publisher_did" datatype="char" arraysize="*" unit="n.n" ucd="meta.ref.ivoid">
+<DESCRIPTION>publisher dataset identifier</DESCRIPTION></FIELD>
+<FIELD name="dataproduct_type" datatype="char" arraysize="*" unit="n.n" ucd="meta.code.class">
+<DESCRIPTION>type of product</DESCRIPTION></FIELD>
+<FIELD name="calib_level" datatype="int" unit="n.n" ucd="meta.code;obs.calib">
+<DESCRIPTION>calibration level (-1 through 5)</DESCRIPTION></FIELD>
+<FIELD name="s_region" datatype="char" arraysize="*" unit="n.n" ucd="pos.outline;obs.field">
+<DESCRIPTION>region bounded by observation</DESCRIPTION></FIELD>
+<FIELD name="s_ra" datatype="double" unit="deg" ucd="pos.eq.ra">
+<DESCRIPTION>ra of central coordinates</DESCRIPTION></FIELD>
+<FIELD name="s_dec" datatype="double" unit="deg" ucd="pos.eq.dec">
+<DESCRIPTION>dec of central coordinates</DESCRIPTION></FIELD>
+<FIELD name="s_fov" datatype="double" unit="deg" ucd="phys.angSize;instr.fov">
+<DESCRIPTION>size of region covered</DESCRIPTION></FIELD>
+<FIELD name="s_resolution" datatype="double" unit="arcsec" ucd="pos.angResolution">
+<DESCRIPTION>typical spatial resolution</DESCRIPTION></FIELD>
+<FIELD name="s_xel1" datatype="int" unit="n.n" ucd="meta.number">
+<DESCRIPTION>dimensions along one spatial axis (naxis1)</DESCRIPTION></FIELD>
+<FIELD name="s_xel2" datatype="int" unit="n.n" ucd="meta.number">
+<DESCRIPTION>dimensions along other spatial axis (naxis2)</DESCRIPTION></FIELD>
+<FIELD name="t_min" datatype="double" unit="d" ucd="time.start;obs.exposure">
+<DESCRIPTION>observation start mjd</DESCRIPTION></FIELD>
+<FIELD name="t_max" datatype="double" unit="d" ucd="time.end;obs.exposure">
+<DESCRIPTION>observation end mjd</DESCRIPTION></FIELD>
+<FIELD name="t_exptime" datatype="double" unit="s" ucd="time.duration;obs.exposure">
+<DESCRIPTION>total exposure time</DESCRIPTION></FIELD>
+<FIELD name="t_resolution" datatype="double" unit="s" ucd="time.resolution">
+<DESCRIPTION>typical temporal resolution</DESCRIPTION></FIELD>
+<FIELD name="t_xel" datatype="int" unit="n.n" ucd="meta.number">
+<DESCRIPTION>dimensions along time axis (naxis)</DESCRIPTION></FIELD>
+<FIELD name="em_min" datatype="double" unit="m" ucd="em.wl;stat.min">
+<DESCRIPTION>minimum wavelength</DESCRIPTION></FIELD>
+<FIELD name="em_max" datatype="double" unit="m" ucd="em.wl;stat.max">
+<DESCRIPTION>maximum wavelength</DESCRIPTION></FIELD>
+<FIELD name="em_res_power" datatype="double" unit="n.n" ucd="spect.resolution">
+<DESCRIPTION>typical spectral resolution</DESCRIPTION></FIELD>
+<FIELD name="em_xel" datatype="int" unit="n.n" ucd="meta.number">
+<DESCRIPTION>dimensions along energy axis (naxis)</DESCRIPTION></FIELD>
+<FIELD name="pol_states" datatype="char" arraysize="*" unit="n.n" ucd="meta.code;phys.polarization">
+<DESCRIPTION>polarization states in data</DESCRIPTION></FIELD>
+<FIELD name="pol_xel" datatype="int" unit="n.n" ucd="meta.number">
+<DESCRIPTION>dimensions along polarization axis</DESCRIPTION></FIELD>
+<FIELD name="o_ucd" datatype="char" arraysize="*" unit="n.n" ucd="meta.ucd">
+<DESCRIPTION>ucd describing observable axis</DESCRIPTION></FIELD>
+<FIELD name="access_url" datatype="char" arraysize="*" unit="n.n" ucd="meta.ref.url">
+<DESCRIPTION>url to download the data</DESCRIPTION></FIELD>
+<FIELD name="access_format" datatype="char" arraysize="*" unit="n.n" ucd="meta.code.mime">
+<DESCRIPTION>format of the data file(s)</DESCRIPTION></FIELD>
+<FIELD name="access_estsize" datatype="long" unit="kbyte" ucd="phys.size;meta.file">
+<DESCRIPTION>estimated size of download</DESCRIPTION></FIELD>
+<DATA>
+<TABLEDATA>
+<TR><TD>109191367</TD><TD>HST</TD><TD>STScI</TD><TD>NICMOS/NIC2</TD><TD>FHDF-BLANK-1</TD><TD>n3t401e2q</TD><TD>ivo://archive.stsci.edu/HST?n3t401e2q</TD><TD>image</TD><TD>2</TD><TD>POLYGON 189.168997 62.180233 189.159315 62.177249 189.152977 62.181727 189.16266 62.184712 189.168997 62.180233</TD><TD>189.1725</TD><TD>62.17305555556</TD><TD></TD><TD></TD><TD></TD><TD></TD><TD>50528.41027040509</TD><TD>50528.41036304398</TD><TD>8.0</TD><TD></TD><TD></TD><TD>1.77415e-06</TD><TD>2.37285e-06</TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD>https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HST/product/n3t401e2q_cal.fits</TD><TD>application/fits</TD><TD>1120320</TD></TR>
+<TR><TD>109191367</TD><TD>HST</TD><TD>STScI</TD><TD>NICMOS/NIC2</TD><TD>FHDF-BLANK-1</TD><TD>n3t401e2q</TD><TD>ivo://archive.stsci.edu/HST?n3t401e2q</TD><TD>image</TD><TD>2</TD><TD>POLYGON 189.168997 62.180233 189.159315 62.177249 189.152977 62.181727 189.16266 62.184712 189.168997 62.180233</TD><TD>189.1725</TD><TD>62.17305555556</TD><TD></TD><TD></TD><TD></TD><TD></TD><TD>50528.41027040509</TD><TD>50528.41036304398</TD><TD>8.0</TD><TD></TD><TD></TD><TD>1.77415e-06</TD><TD>2.37285e-06</TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD>https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HST/product/n3t401e2q_cal.jpg</TD><TD>image/jpeg</TD><TD>19809</TD></TR>
+<TR><TD>109191367</TD><TD>HST</TD><TD>STScI</TD><TD>NICMOS/NIC2</TD><TD>FHDF-BLANK-1</TD><TD>n3t401e2q</TD><TD>ivo://archive.stsci.edu/HST?n3t401e2q</TD><TD>image</TD><TD>2</TD><TD>POLYGON 189.168997 62.180233 189.159315 62.177249 189.152977 62.181727 189.16266 62.184712 189.168997 62.180233</TD><TD>189.1725</TD><TD>62.17305555556</TD><TD></TD><TD></TD><TD></TD><TD></TD><TD>50528.41027040509</TD><TD>50528.41036304398</TD><TD>8.0</TD><TD></TD><TD></TD><TD>1.77415e-06</TD><TD>2.37285e-06</TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD>https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HST/product/n3t401e2q_cal_thumb.jpg</TD><TD>image/jpeg</TD><TD>3984</TD></TR>
+<TR><TD>109191367</TD><TD>HST</TD><TD>STScI</TD><TD>NICMOS/NIC2</TD><TD>FHDF-BLANK-1</TD><TD>n3t401e2q</TD><TD>ivo://archive.stsci.edu/HST?n3t401e2q</TD><TD>image</TD><TD>2</TD><TD>POLYGON 189.168997 62.180233 189.159315 62.177249 189.152977 62.181727 189.16266 62.184712 189.168997 62.180233</TD><TD>189.1725</TD><TD>62.17305555556</TD><TD></TD><TD></TD><TD></TD><TD></TD><TD>50528.41027040509</TD><TD>50528.41036304398</TD><TD>8.0</TD><TD></TD><TD></TD><TD>1.77415e-06</TD><TD>2.37285e-06</TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD>https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HST/product/n3t401e2q_ima.fits</TD><TD>application/fits</TD><TD>4904640</TD></TR>
+<TR><TD>109191376</TD><TD>HST</TD><TD>STScI</TD><TD>NICMOS/NIC2</TD><TD>FHDF-BLANK-1</TD><TD>n3t401drq</TD><TD>ivo://archive.stsci.edu/HST?n3t401drq</TD><TD>image</TD><TD>2</TD><TD>POLYGON 189.169647 62.180429 189.159964 62.177445 189.153626 62.181924 189.163309 62.184908 189.169647 62.180429</TD><TD>189.1725</TD><TD>62.17305555556</TD><TD></TD><TD></TD><TD></TD><TD></TD><TD>50528.40597642361</TD><TD>50528.4060690162</TD><TD>8.0</TD><TD></TD><TD></TD><TD>1.77415e-06</TD><TD>2.37285e-06</TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD>https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HST/product/n3t401drq_cal.fits</TD><TD>application/fits</TD><TD>1120320</TD></TR>
+<TR><TD>109191376</TD><TD>HST</TD><TD>STScI</TD><TD>NICMOS/NIC2</TD><TD>FHDF-BLANK-1</TD><TD>n3t401drq</TD><TD>ivo://archive.stsci.edu/HST?n3t401drq</TD><TD>image</TD><TD>2</TD><TD>POLYGON 189.169647 62.180429 189.159964 62.177445 189.153626 62.181924 189.163309 62.184908 189.169647 62.180429</TD><TD>189.1725</TD><TD>62.17305555556</TD><TD></TD><TD></TD><TD></TD><TD></TD><TD>50528.40597642361</TD><TD>50528.4060690162</TD><TD>8.0</TD><TD></TD><TD></TD><TD>1.77415e-06</TD><TD>2.37285e-06</TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD>https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HST/product/n3t401drq_cal.jpg</TD><TD>image/jpeg</TD><TD>18317</TD></TR>
+<TR><TD>109191376</TD><TD>HST</TD><TD>STScI</TD><TD>NICMOS/NIC2</TD><TD>FHDF-BLANK-1</TD><TD>n3t401drq</TD><TD>ivo://archive.stsci.edu/HST?n3t401drq</TD><TD>image</TD><TD>2</TD><TD>POLYGON 189.169647 62.180429 189.159964 62.177445 189.153626 62.181924 189.163309 62.184908 189.169647 62.180429</TD><TD>189.1725</TD><TD>62.17305555556</TD><TD></TD><TD></TD><TD></TD><TD></TD><TD>50528.40597642361</TD><TD>50528.4060690162</TD><TD>8.0</TD><TD></TD><TD></TD><TD>1.77415e-06</TD><TD>2.37285e-06</TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD>https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HST/product/n3t401drq_cal_thumb.jpg</TD><TD>image/jpeg</TD><TD>3612</TD></TR>
+<TR><TD>109191376</TD><TD>HST</TD><TD>STScI</TD><TD>NICMOS/NIC2</TD><TD>FHDF-BLANK-1</TD><TD>n3t401drq</TD><TD>ivo://archive.stsci.edu/HST?n3t401drq</TD><TD>image</TD><TD>2</TD><TD>POLYGON 189.169647 62.180429 189.159964 62.177445 189.153626 62.181924 189.163309 62.184908 189.169647 62.180429</TD><TD>189.1725</TD><TD>62.17305555556</TD><TD></TD><TD></TD><TD></TD><TD></TD><TD>50528.40597642361</TD><TD>50528.4060690162</TD><TD>8.0</TD><TD></TD><TD></TD><TD>1.77415e-06</TD><TD>2.37285e-06</TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD>https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HST/product/n3t401drq_ima.fits</TD><TD>application/fits</TD><TD>4904640</TD></TR>
+<TR><TD>109191380</TD><TD>HST</TD><TD>STScI</TD><TD>NICMOS/NIC2</TD><TD>FHDF-BLANK-1</TD><TD>n3t401eaq</TD><TD>ivo://archive.stsci.edu/HST?n3t401eaq</TD><TD>image</TD><TD>2</TD><TD>POLYGON 189.168577 62.180536 189.158894 62.177552 189.152556 62.18203 189.162239 62.185015 189.168577 62.180536</TD><TD>189.1725</TD><TD>62.17305555556</TD><TD></TD><TD></TD><TD></TD><TD></TD><TD>50528.413904664354</TD><TD>50528.41399725695</TD><TD>8.0</TD><TD></TD><TD></TD><TD>1.77415e-06</TD><TD>2.37285e-06</TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD>https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HST/product/n3t401eaq_cal.fits</TD><TD>application/fits</TD><TD>1120320</TD></TR>
+<TR><TD>109191380</TD><TD>HST</TD><TD>STScI</TD><TD>NICMOS/NIC2</TD><TD>FHDF-BLANK-1</TD><TD>n3t401eaq</TD><TD>ivo://archive.stsci.edu/HST?n3t401eaq</TD><TD>image</TD><TD>2</TD><TD>POLYGON 189.168577 62.180536 189.158894 62.177552 189.152556 62.18203 189.162239 62.185015 189.168577 62.180536</TD><TD>189.1725</TD><TD>62.17305555556</TD><TD></TD><TD></TD><TD></TD><TD></TD><TD>50528.413904664354</TD><TD>50528.41399725695</TD><TD>8.0</TD><TD></TD><TD></TD><TD>1.77415e-06</TD><TD>2.37285e-06</TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD>https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HST/product/n3t401eaq_cal.jpg</TD><TD>image/jpeg</TD><TD>19729</TD></TR>
+<TR><TD>109191380</TD><TD>HST</TD><TD>STScI</TD><TD>NICMOS/NIC2</TD><TD>FHDF-BLANK-1</TD><TD>n3t401eaq</TD><TD>ivo://archive.stsci.edu/HST?n3t401eaq</TD><TD>image</TD><TD>2</TD><TD>POLYGON 189.168577 62.180536 189.158894 62.177552 189.152556 62.18203 189.162239 62.185015 189.168577 62.180536</TD><TD>189.1725</TD><TD>62.17305555556</TD><TD></TD><TD></TD><TD></TD><TD></TD><TD>50528.413904664354</TD><TD>50528.41399725695</TD><TD>8.0</TD><TD></TD><TD></TD><TD>1.77415e-06</TD><TD>2.37285e-06</TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD>https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HST/product/n3t401eaq_cal_thumb.jpg</TD><TD>image/jpeg</TD><TD>4012</TD></TR>
+<TR><TD>109191380</TD><TD>HST</TD><TD>STScI</TD><TD>NICMOS/NIC2</TD><TD>FHDF-BLANK-1</TD><TD>n3t401eaq</TD><TD>ivo://archive.stsci.edu/HST?n3t401eaq</TD><TD>image</TD><TD>2</TD><TD>POLYGON 189.168577 62.180536 189.158894 62.177552 189.152556 62.18203 189.162239 62.185015 189.168577 62.180536</TD><TD>189.1725</TD><TD>62.17305555556</TD><TD></TD><TD></TD><TD></TD><TD></TD><TD>50528.413904664354</TD><TD>50528.41399725695</TD><TD>8.0</TD><TD></TD><TD></TD><TD>1.77415e-06</TD><TD>2.37285e-06</TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD>https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HST/product/n3t401eaq_ima.fits</TD><TD>application/fits</TD><TD>4904640</TD></TR>
+<TR><TD>109191389</TD><TD>HST</TD><TD>STScI</TD><TD>NICMOS/NIC2</TD><TD>FHDF-BLANK-1</TD><TD>n3t401egq</TD><TD>ivo://archive.stsci.edu/HST?n3t401egq</TD><TD>image</TD><TD>2</TD><TD>POLYGON 189.169226 62.180732 189.159544 62.177748 189.153206 62.182227 189.162889 62.185211 189.169226 62.180732</TD><TD>189.1725</TD><TD>62.17305555556</TD><TD></TD><TD></TD><TD></TD><TD></TD><TD>50528.44031666667</TD><TD>50528.44040922454</TD><TD>8.0</TD><TD></TD><TD></TD><TD>1.77415e-06</TD><TD>2.37285e-06</TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD>https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HST/product/n3t401egq_cal.fits</TD><TD>application/fits</TD><TD>1120320</TD></TR>
+<TR><TD>109191389</TD><TD>HST</TD><TD>STScI</TD><TD>NICMOS/NIC2</TD><TD>FHDF-BLANK-1</TD><TD>n3t401egq</TD><TD>ivo://archive.stsci.edu/HST?n3t401egq</TD><TD>image</TD><TD>2</TD><TD>POLYGON 189.169226 62.180732 189.159544 62.177748 189.153206 62.182227 189.162889 62.185211 189.169226 62.180732</TD><TD>189.1725</TD><TD>62.17305555556</TD><TD></TD><TD></TD><TD></TD><TD></TD><TD>50528.44031666667</TD><TD>50528.44040922454</TD><TD>8.0</TD><TD></TD><TD></TD><TD>1.77415e-06</TD><TD>2.37285e-06</TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD>https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HST/product/n3t401egq_cal.jpg</TD><TD>image/jpeg</TD><TD>18519</TD></TR>
+<TR><TD>109191389</TD><TD>HST</TD><TD>STScI</TD><TD>NICMOS/NIC2</TD><TD>FHDF-BLANK-1</TD><TD>n3t401egq</TD><TD>ivo://archive.stsci.edu/HST?n3t401egq</TD><TD>image</TD><TD>2</TD><TD>POLYGON 189.169226 62.180732 189.159544 62.177748 189.153206 62.182227 189.162889 62.185211 189.169226 62.180732</TD><TD>189.1725</TD><TD>62.17305555556</TD><TD></TD><TD></TD><TD></TD><TD></TD><TD>50528.44031666667</TD><TD>50528.44040922454</TD><TD>8.0</TD><TD></TD><TD></TD><TD>1.77415e-06</TD><TD>2.37285e-06</TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD>https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HST/product/n3t401egq_cal_thumb.jpg</TD><TD>image/jpeg</TD><TD>3694</TD></TR>
+<TR><TD>109191389</TD><TD>HST</TD><TD>STScI</TD><TD>NICMOS/NIC2</TD><TD>FHDF-BLANK-1</TD><TD>n3t401egq</TD><TD>ivo://archive.stsci.edu/HST?n3t401egq</TD><TD>image</TD><TD>2</TD><TD>POLYGON 189.169226 62.180732 189.159544 62.177748 189.153206 62.182227 189.162889 62.185211 189.169226 62.180732</TD><TD>189.1725</TD><TD>62.17305555556</TD><TD></TD><TD></TD><TD></TD><TD></TD><TD>50528.44031666667</TD><TD>50528.44040922454</TD><TD>8.0</TD><TD></TD><TD></TD><TD>1.77415e-06</TD><TD>2.37285e-06</TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD>https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HST/product/n3t401egq_ima.fits</TD><TD>application/fits</TD><TD>4904640</TD></TR>
+<TR><TD>109191393</TD><TD>HST</TD><TD>STScI</TD><TD>NICMOS/NIC2</TD><TD>FHDF-BLANK-1</TD><TD>n3t401ehq</TD><TD>ivo://archive.stsci.edu/HST?n3t401ehq</TD><TD>image</TD><TD>2</TD><TD>POLYGON 189.169226 62.180732 189.159544 62.177748 189.153206 62.182227 189.162889 62.185211 189.169226 62.180732</TD><TD>189.1725</TD><TD>62.17305555556</TD><TD></TD><TD></TD><TD></TD><TD></TD><TD>50528.440536539354</TD><TD>50528.44062916667</TD><TD>8.0</TD><TD></TD><TD></TD><TD>1.77415e-06</TD><TD>2.37285e-06</TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD>https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HST/product/n3t401ehq_cal.fits</TD><TD>application/fits</TD><TD>1120320</TD></TR>
+<TR><TD>109191393</TD><TD>HST</TD><TD>STScI</TD><TD>NICMOS/NIC2</TD><TD>FHDF-BLANK-1</TD><TD>n3t401ehq</TD><TD>ivo://archive.stsci.edu/HST?n3t401ehq</TD><TD>image</TD><TD>2</TD><TD>POLYGON 189.169226 62.180732 189.159544 62.177748 189.153206 62.182227 189.162889 62.185211 189.169226 62.180732</TD><TD>189.1725</TD><TD>62.17305555556</TD><TD></TD><TD></TD><TD></TD><TD></TD><TD>50528.440536539354</TD><TD>50528.44062916667</TD><TD>8.0</TD><TD></TD><TD></TD><TD>1.77415e-06</TD><TD>2.37285e-06</TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD>https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HST/product/n3t401ehq_cal.jpg</TD><TD>image/jpeg</TD><TD>19353</TD></TR>
+<TR><TD>109191393</TD><TD>HST</TD><TD>STScI</TD><TD>NICMOS/NIC2</TD><TD>FHDF-BLANK-1</TD><TD>n3t401ehq</TD><TD>ivo://archive.stsci.edu/HST?n3t401ehq</TD><TD>image</TD><TD>2</TD><TD>POLYGON 189.169226 62.180732 189.159544 62.177748 189.153206 62.182227 189.162889 62.185211 189.169226 62.180732</TD><TD>189.1725</TD><TD>62.17305555556</TD><TD></TD><TD></TD><TD></TD><TD></TD><TD>50528.440536539354</TD><TD>50528.44062916667</TD><TD>8.0</TD><TD></TD><TD></TD><TD>1.77415e-06</TD><TD>2.37285e-06</TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD>https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HST/product/n3t401ehq_cal_thumb.jpg</TD><TD>image/jpeg</TD><TD>4071</TD></TR>
+<TR><TD>109191393</TD><TD>HST</TD><TD>STScI</TD><TD>NICMOS/NIC2</TD><TD>FHDF-BLANK-1</TD><TD>n3t401ehq</TD><TD>ivo://archive.stsci.edu/HST?n3t401ehq</TD><TD>image</TD><TD>2</TD><TD>POLYGON 189.169226 62.180732 189.159544 62.177748 189.153206 62.182227 189.162889 62.185211 189.169226 62.180732</TD><TD>189.1725</TD><TD>62.17305555556</TD><TD></TD><TD></TD><TD></TD><TD></TD><TD>50528.440536539354</TD><TD>50528.44062916667</TD><TD>8.0</TD><TD></TD><TD></TD><TD>1.77415e-06</TD><TD>2.37285e-06</TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD>https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HST/product/n3t401ehq_ima.fits</TD><TD>application/fits</TD><TD>4904640</TD></TR>
+</TABLEDATA>
+</DATA>
+</TABLE>
+</RESOURCE>
+</VOTABLE>

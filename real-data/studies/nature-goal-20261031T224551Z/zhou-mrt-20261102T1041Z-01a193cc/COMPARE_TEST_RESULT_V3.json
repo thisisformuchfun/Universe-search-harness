@@ -1,0 +1,15 @@
+{
+  "command": [
+    "C:\\gogogo\\universe search harness\\blackhole search\\astra-20261031T2113Z-01a193cc\\.venv-fits-study\\Scripts\\python.exe",
+    "-B",
+    "-m",
+    "unittest",
+    "-v",
+    "test_compare_table_v3"
+  ],
+  "returncode": 0,
+  "tests_expected": 12,
+  "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stderr_sha256": "baabb5edf17c5f060a68399d454bbcd403e1f5dea4a532314e68a8880e9f0fec",
+  "scope": "offline synthetic fixed-width and exact-ID tests; no network or holdout"
+}

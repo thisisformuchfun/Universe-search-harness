@@ -1,0 +1,11 @@
+# Local environments, generated builds, logs, and private settings
+.venv*/
+**/.venv*/
+__pycache__/
+*.py[cod]
+*.egg-info/
+node_modules/
+dashboard/dist/
+.env
+.env.*
+*.log

@@ -1,0 +1,5 @@
+# Independent query-shape science review
+
+On 2026-11-02 UTC `/root/ps1_science_review` independently checked raw SHA256 `7c2a79ab93566c877e94d6dc4e674e7bc85c4920cf375cc4d0bbbf0ccf2ddf5f`: VOTable 1.2, one results table, QUERY_STATUS OK, exact frozen query echo, TableRows=1, explicit TABLEDATA, no trailing error/overflow, and the same 14 FIELD attributes as the positive control. One row had exact Gaia `1607896637338835712`, matching x/s `specobjid=7912885126627088384`, and published SDSS tuple `(7028,56449,220)`. No sentinel rows appeared; one row is below the cap. Assuming degrees, independently calculated separation 0.2583826592566 arcsec agrees with the returned value.
+
+The positive and shape requests took place at different times and do not establish a shared archive/cache snapshot. This supports recovery of one known positive in the tested 14-value shape, not all-member behavior, held-source absence, archive completeness, independent RVs or an orbit. Known controls are not discoveries.

@@ -1,0 +1,5 @@
+# Independent execution preflight
+
+On 2026-11-02 UTC `/root/ps1_execution_review` accepted exactly one frozen held-field GET. Manifest SHA256 `f88ce9a42c67ed945d1c1ba4722dc54e5737d290491796886216abdc1e2dbf59` and all 13 pins matched; script SHA256 `82d27ef069f863080aae0e23986204110661497641028bfd7c065d96f0c4646d`. Prerequisite JSON is parsed from the same bytes whose hashes were checked; reviewed control raw, inventory and RESULT-to-FINISH chain pass. The reviewer independently re-read the original Gaia VOTable and confirmed the exact string source identifier, RA/Dec and 2016.0 epoch.
+
+Network-denied in-memory checks covered no-child, uncertain pre-callback, and observed-child accounting. Child start does not prove server receipt. Custody was pinned, coordination idle, and no locks or target capture were present. The reviewer counted but did not rerun the local filesystem-using 16-test suite; the local run passed. The 192-pixel target may return multiple bricks or exceed the cap. Target FITS and coverage remain unvalidated until separately reviewed.

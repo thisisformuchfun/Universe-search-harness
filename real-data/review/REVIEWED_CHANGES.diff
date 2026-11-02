@@ -1,0 +1,595 @@
+--- baseline/harness2/cli/universe.py
++++ proposed/harness2/cli/universe.py
+@@ -55,12 +55,13 @@
+     connector=PublicSkyConnector(args.cache,timeout=args.timeout,retries=args.retries)
+     known,coverage=bundled_catalogs()
+     if args.live:
+-        connector.gaia_schema()
++        schema=connector.gaia_schema()
+         acquisition=connector.gaia_nss_pages(out/'acquisition',args.page_size,args.max_pages,args.resume)
+         rows,provenance=acquisition.rows,acquisition.provenance
+         # Failure stops the run; no implicit stale-catalog substitution in live mode.
+         coverage+=augment_live(known,connector.vizier_known_catalogs())
+-        provenance={'mode':'LIVE_REAL_ARCHIVE','acquisition':provenance}
++        provenance={'mode':'LIVE_REAL_ARCHIVE','acquisition':provenance,
++                    'source_schema':schema.provenance}
+     else: rows,provenance=snapshot()
+     if not rows: raise ValueError('No real source rows received; no empty success run')
+     keys=[identity(r) for r in rows]
+--- baseline/harness2/providers/router.py
++++ proposed/harness2/providers/router.py
+@@ -34,7 +34,9 @@
+         # Do not follow a localhost server redirect to a remote host.
+         class NoRedirect(urllib.request.HTTPRedirectHandler):
+             def redirect_request(self,*a,**kw): raise RuntimeError('Model endpoint redirect forbidden')
+-        opener=urllib.request.build_opener(NoRedirect)
++        # A loopback URL must not inherit an environment proxy that forwards
++        # local training aggregates to an external service.
++        opener=urllib.request.build_opener(urllib.request.ProxyHandler({}),NoRedirect)
+         with opener.open(req,timeout=60) as resp:
+             raw=resp.read(1024*1024+1)
+         if len(raw)>1024*1024: raise ValueError('Model response too large')
+--- baseline/harness2/universe/connectors/public_archives.py
++++ proposed/harness2/universe/connectors/public_archives.py
+@@ -11,6 +11,7 @@
+ from pathlib import Path
+ import csv
+ import hashlib
++from http.client import HTTPException, IncompleteRead
+ import io
+ import json
+ import math
+@@ -19,6 +20,7 @@
+ import urllib.error
+ import urllib.parse
+ import urllib.request
++import uuid
+ import xml.etree.ElementTree as ET
+ 
+ GAIA_TAP = 'https://gea.esac.esa.int/tap-server/tap/sync'
+@@ -207,42 +209,118 @@
+         self.max_bytes = max_bytes
+         self.opener = urllib.request.build_opener(_TrustedRedirect())
+ 
++    def _record_attempt(self, request, http, raw=None, outcome='HTTP_RESPONSE'):
++        """Write immutable evidence before interpretation, including failed attempts.
++
++        A raw hash covers only the stored bytes. body_complete=False explicitly
++        marks a partial/capped body; such bytes never become a usable cache entry.
++        Each retrieval has its own metadata even if its content is unchanged.
++        """
++        key = sha256(json.dumps(request,sort_keys=True).encode())
++        event_id = uuid.uuid4().hex
++        evidence = dict(http, request=request, cache_key=key, cache_reused=False,
++                        fetched_at_utc=utc_now(), outcome=outcome, event_id=event_id)
++        self.cache_dir.mkdir(parents=True,exist_ok=True)
++        if raw is not None:
++            digest = sha256(raw)
++            rawpath = self.cache_dir/(key+'.'+digest+'.xml')
++            try:
++                with rawpath.open('xb') as handle: handle.write(raw)
++            except FileExistsError:
++                if sha256(rawpath.read_bytes()) != digest:
++                    raise ArchiveError('Existing content-addressed evidence changed')
++            evidence.update(raw_sha256=digest, bytes=len(raw), raw_file=rawpath.name)
++        else:
++            evidence.update(raw_sha256=None, bytes=0, raw_file=None)
++        events = self.cache_dir/'attempts';events.mkdir(exist_ok=True)
++        eventpath = events/(key+'.'+event_id+'.json')
++        evidence['retrieval_record'] = 'attempts/'+eventpath.name
++        with eventpath.open('x',encoding='utf-8') as handle:
++            json.dump(evidence,handle,indent=2,allow_nan=False)
++        return evidence
++
++    def _read_bounded_body(self, response):
++        chunks=[];size=0;error=None
++        while size<=self.max_bytes:
++            try:
++                part=response.read(min(65536,self.max_bytes+1-size))
++            except IncompleteRead as exc:
++                part=exc.partial;chunks.append(part);size+=len(part)
++                error='IncompleteRead';break
++            except (TimeoutError,OSError) as exc:
++                error=type(exc).__name__+': '+str(exc);break
++            if not part:break
++            chunks.append(part);size+=len(part)
++        raw=b''.join(chunks)
++        capped=len(raw)>self.max_bytes
++        return raw[:self.max_bytes],error,capped
++
++    @staticmethod
++    def _retry_delay(headers, attempt):
++        delay=float(min(30,2**attempt));retry=headers.get('Retry-After')
++        if retry:
++            try:
++                requested=float(retry)
++            except ValueError:
++                try:
++                    stamp=parsedate_to_datetime(retry)
++                    if stamp.tzinfo is None:stamp=stamp.replace(tzinfo=timezone.utc)
++                    requested=(stamp-datetime.now(timezone.utc)).total_seconds()
++                except (TypeError,ValueError,OverflowError):
++                    requested=None
++            if requested is not None and math.isfinite(requested):
++                delay=max(0,requested)
++        return delay
++
+     def _request(self, endpoint, query, maxrec):
+         _validate_endpoint(endpoint)
+         params = {'REQUEST':'doQuery','LANG':'ADQL','FORMAT':'votable_plain','QUERY':query,'MAXREC':str(maxrec)}
+         url = endpoint + '?' + urllib.parse.urlencode(params)
++        request = {'endpoint':endpoint,'query':query,'maxrec':maxrec,'format':'votable_plain'}
+         for attempt in range(self.retries + 1):
++            started=utc_now()
+             try:
+                 req = urllib.request.Request(url, headers={'User-Agent':'UniverseRealHarness/1.0 (read-only scientific audit)', 'Accept':'application/x-votable+xml,text/xml'})
+                 with self.opener.open(req, timeout=self.timeout) as response:
+                     _validate_endpoint(response.geturl())
+                     length = response.headers.get('Content-Length')
+-                    if length and int(length) > self.max_bytes:
+-                        raise ArchiveError('Response exceeds configured byte cap')
+-                    raw = response.read(self.max_bytes + 1)
+-                    if len(raw) > self.max_bytes:
+-                        raise ArchiveError('Response exceeds configured byte cap')
+-                    if length and len(raw) != int(length):
+-                        raise ArchiveError('Truncated HTTP body')
+-                    return raw, {'http_status':response.status,'content_type':response.headers.get('Content-Type'),
+-                                 'effective_url':response.geturl(),'attempts':attempt+1}
++                    raw,read_error,capped = self._read_bounded_body(response)
++                    try:declared_length=int(length) if length is not None else None
++                    except ValueError:declared_length=None;read_error='Invalid Content-Length'
++                    complete=not read_error and not capped and (declared_length is None or len(raw)==declared_length)
++                    http = self._record_attempt(request,{
++                        'http_status':response.status,'content_type':response.headers.get('Content-Type'),
++                        'effective_url':response.geturl(),'attempts':attempt+1,
++                        'started_at_utc':started,'content_length':length,'body_complete':complete,
++                        'body_capped':capped,'read_error':read_error},raw)
++                    if not complete:
++                        reason='Response exceeds configured byte cap' if capped else 'Incomplete HTTP body'
++                        raise ArchiveError(reason+'; evidence='+http['retrieval_record'])
++                    return raw,http
+             except urllib.error.HTTPError as exc:
++                raw,read_error,capped=self._read_bounded_body(exc)
++                length=exc.headers.get('Content-Length')
++                try:declared_length=int(length) if length is not None else None
++                except ValueError:declared_length=None;read_error='Invalid Content-Length'
++                complete=not read_error and not capped and (declared_length is None or len(raw)==declared_length)
++                http=self._record_attempt(request,{
++                    'http_status':exc.code,'content_type':exc.headers.get('Content-Type'),
++                    'effective_url':exc.geturl(),'attempts':attempt+1,'started_at_utc':started,
++                    'retry_after':exc.headers.get('Retry-After'),'content_length':length,'body_complete':complete,
++                    'body_capped':capped,'read_error':read_error},raw,outcome='HTTP_ERROR')
++                exc.close()
+                 if exc.code not in {408,429,500,502,503,504} or attempt == self.retries:
+-                    raise ArchiveError(f'HTTP {exc.code} from {endpoint}') from exc
+-                delay = min(30, 2**attempt)
+-                retry = exc.headers.get('Retry-After')
+-                if retry:
+-                    try:
+-                        delay = max(0,min(30,float(retry)))
+-                    except ValueError:
+-                        try:
+-                            delay = max(0,min(30,(parsedate_to_datetime(retry)-datetime.now(timezone.utc)).total_seconds()))
+-                        except (TypeError,ValueError):
+-                            pass
++                    raise ArchiveError(f'HTTP {exc.code} from {endpoint}; evidence='+http['retrieval_record']) from exc
++                delay = self._retry_delay(exc.headers,attempt)
++                if delay>30:
++                    raise ArchiveError(f'HTTP {exc.code}: Retry-After requires {delay:.1f}s; deferred without early retry; evidence='+http['retrieval_record']) from exc
+                 time.sleep(delay)
+-            except (TimeoutError, urllib.error.URLError, OSError) as exc:
++            except (TimeoutError, urllib.error.URLError, OSError, HTTPException) as exc:
++                http=self._record_attempt(request,{'http_status':None,'attempts':attempt+1,
++                    'started_at_utc':started,'body_complete':False,'network_error':type(exc).__name__+': '+str(exc)},
++                    outcome='NETWORK_ERROR')
+                 if attempt == self.retries:
+-                    raise ArchiveError(f'Archive network failure: {type(exc).__name__}: {exc}') from exc
++                    raise ArchiveError(f'Archive network failure: {type(exc).__name__}: {exc}; evidence='+http['retrieval_record']) from exc
+                 time.sleep(min(10,2**attempt))
+         raise ArchiveError('Request attempts exhausted')
+ 
+@@ -278,17 +356,24 @@
+             provenance = dict(meta, cache_reused=True, cache_checked_utc=utc_now())
+         else:
+             raw,http = self._request(endpoint,query,maxrec)
+-            rows = parse_votable(raw,required)
+-            if len(rows)>maxrec:
+-                raise ArchiveError('Archive ignored MAXREC')
+-            provenance = dict(request=request, raw_sha256=sha256(raw), bytes=len(raw), row_count=len(rows),
+-                              fetched_at_utc=utc_now(), cache_key=key, cache_reused=False, **http)
++            if 'retrieval_record' not in http:
++                http=self._record_attempt(request,http,raw)
++            try:
++                rows = parse_votable(raw,required)
++                if len(rows)>maxrec:raise ArchiveError('Archive ignored MAXREC')
++                _check_composite_duplicates(rows)
++            except (ArchiveError,ValueError,TypeError) as exc:
++                evidence=self._record_attempt(request,dict(http,parse_error=str(exc)),raw,outcome='TAP_PARSE_ERROR')
++                raise ArchiveError(str(exc)+'; evidence='+evidence['retrieval_record']) from exc
++            provenance = dict(http,row_count=len(rows))
+             self.cache_dir.mkdir(parents=True,exist_ok=True)
+             digest=provenance['raw_sha256']
+-            rawpath=self.cache_dir/(key+'.'+digest+'.xml')
+             immutable_meta=self.cache_dir/(key+'.'+digest+'.json')
+-            tmp=rawpath.with_name(rawpath.name+'.tmp');tmp.write_bytes(raw);tmp.replace(rawpath)
+-            atomic_json(immutable_meta,provenance)
++            # The first successful interpretation of these bytes remains fixed.
++            # The newest retrieval gets a separate event and the explicit latest index.
++            if not immutable_meta.exists():
++                with immutable_meta.open('x',encoding='utf-8') as handle:
++                    json.dump(provenance,handle,indent=2,allow_nan=False)
+             atomic_json(metapath,provenance)
+         _check_composite_duplicates(rows)
+         return ArchiveResult(rows,provenance)
+@@ -316,19 +401,22 @@
+     def gaia_nss_pages(self, output_dir, page_size=500, max_pages=2, resume=False, offline=False):
+         """Bounded keyset pagination. max_pages is TOTAL pages, not extra pages.
+ 
+-        Raising max_pages with resume=True extends a run. A full final page means
+-        bounded/incomplete, NOT complete. Source-id+solution type is the key.
++        Resume requires the original page cap. A full final page means bounded/
++        incomplete, NOT complete. Source-id+solution type is the key.
+         """
+         if not 1<=max_pages<=10000:raise ValueError('max_pages must be 1..10000')
++        self.nss_query(page_size)  # Validate bounds before creating acquisition state.
+         out=Path(output_dir);mp=out/'acquisition.json'
+-        config={'version':1,'endpoint':GAIA_TAP,'page_size':page_size,'filter':NSS_FILTER,'columns':list(NSS_COLUMNS)}
++        config={'version':2,'endpoint':GAIA_TAP,'page_size':page_size,'max_pages':max_pages,'filter':NSS_FILTER,'columns':list(NSS_COLUMNS)}
+         if resume:
+             try:manifest=json.loads(mp.read_text())
+             except (FileNotFoundError,json.JSONDecodeError) as exc:raise ArchiveError('Missing/invalid resume manifest') from exc
+             if manifest.get('config')!=config:raise ArchiveError('Resume configuration mismatch')
+         else:
+             if mp.exists():raise ArchiveError('Acquisition exists; use resume or a new output directory')
+-            manifest={'config':config,'started_at_utc':utc_now(),'pages':[],'cursor':None,'complete':False}
++            manifest={'config':config,'started_at_utc':utc_now(),'pages':[],'cursor':None,
++                      'complete':False,'rows':0,'coverage':'not_yet_acquired'}
++            atomic_json(mp,manifest)
+         rows=[]
+         verified_cursor=None
+         for page in manifest['pages']:
+--- baseline/scripts/package_release.py
++++ proposed/scripts/package_release.py
+@@ -1,16 +1,45 @@
+-"""Build a source ZIP; no caches, credentials, old runs, binaries or model weights."""
++"""Create a separately named source ZIP from an allowlist, never overwrite one."""
++import argparse
++import hashlib
++import json
+ from pathlib import Path
+-import zipfile,hashlib
+-root=Path(__file__).resolve().parents[1]
+-out=root.parent/'Universe_Search_Harness_Real_Data_v1.zip'
+-with zipfile.ZipFile(out,'w',zipfile.ZIP_DEFLATED) as z:
++import zipfile
++
++TOP_FILES={'AGENTS.md','README.md','LICENSE','pyproject.toml','requirements.lock'}
++SOURCE_SUFFIXES={'harness2':{'.py'},'tests':{'.py'},'scripts':{'.py'},
++                 'docs':{'.md'},'policy':{'.json'}}
++
++def package(root,output):
++    root=Path(root).resolve();output=Path(output)
++    if output.name=='Universe_Search_Harness_Real_Data_v1.zip':
++        raise ValueError('Reserve the original baseline filename; choose a reviewed-patch name')
++    pilot=root/'data/pilot'
++    snapshot=json.loads((pilot/'SNAPSHOT_MANIFEST.json').read_text())
++    pilot_names=set(snapshot['files'])|{'SNAPSHOT_MANIFEST.json'}
++    selected=[]
+     for p in sorted(root.rglob('*')):
+-        if not p.is_file() or p.is_symlink():continue
+         rel=p.relative_to(root)
++        if not p.is_file() or p.is_symlink() or not p.resolve().is_relative_to(root):continue
+         if any(x.startswith('.') or x=='__pycache__' or x.endswith('.egg-info') for x in rel.parts):continue
+-        if rel.parts[:2]==('data','cache'):continue
+-        if rel.parts[0]=='runs' and not (rel.parts[1]=='verified-release' or rel.name in {'test-results.txt','live_connector_probe.json','live_post_probe.json','release-console.json'}):continue
+-        z.write(p,Path(root.name)/rel)
+-print(out)
+-print('SHA256',hashlib.sha256(out.read_bytes()).hexdigest())
+-print('Bytes',out.stat().st_size)
++        allowed=(len(rel.parts)==1 and rel.name in TOP_FILES)
++        allowed|=(rel.parts[0] in SOURCE_SUFFIXES and p.suffix in SOURCE_SUFFIXES[rel.parts[0]])
++        allowed|=(len(rel.parts)==3 and rel.parts[:2]==('data','pilot') and rel.name in pilot_names)
++        if allowed:selected.append((p,rel.as_posix()))
++    hashes={rel:hashlib.sha256(p.read_bytes()).hexdigest() for p,rel in selected}
++    guard=json.loads((root/'policy/guard_manifest.json').read_text())
++    mismatches=[name for name,digest in guard['files'].items() if hashes.get(name)!=digest]
++    manifest={'kind':'separately_identified_source_package','files':hashes,
++              'guard_state':'UNSEALED_REVIEW_REQUIRED' if mismatches else 'MATCHES_MANIFEST',
++              'guard_mismatches':mismatches,'excludes':'runs, caches, credentials, venvs, models'}
++    with output.open('xb') as target:
++        with zipfile.ZipFile(target,'w',zipfile.ZIP_DEFLATED) as z:
++            for p,rel in selected:z.write(p,'universe-real-harness/'+rel)
++            z.writestr('universe-real-harness/PACKAGE_MANIFEST.json',json.dumps(manifest,indent=2))
++    return {'output':str(output),'sha256':hashlib.sha256(output.read_bytes()).hexdigest(),
++            'bytes':output.stat().st_size,'guard_state':manifest['guard_state']}
++
++if __name__=='__main__':
++    parser=argparse.ArgumentParser(description=__doc__)
++    parser.add_argument('--output',required=True,type=Path)
++    args=parser.parse_args()
++    print(json.dumps(package(Path(__file__).resolve().parents[1],args.output),indent=2))
+--- baseline/scripts/seal_release.py
++++ proposed/scripts/seal_release.py
+@@ -5,5 +5,5 @@
+ files.append(root/'data/pilot/SNAPSHOT_MANIFEST.json')
+ files=[p for p in files if p.name!='guard_manifest.json']
+ manifest={'scope':'These files cannot be changed by proposals. Hashes are audit checks, not an OS security boundary.',
+-'files':{str(p.relative_to(root)):hashlib.sha256(p.read_bytes()).hexdigest() for p in sorted(files)}}
+-(root/'policy/guard_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
++'files':{p.relative_to(root).as_posix():hashlib.sha256(p.read_bytes()).hexdigest() for p in sorted(files)}}
++(root/'policy/guard_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n',encoding='utf-8')
+--- baseline/tests/test_connectors.py
++++ proposed/tests/test_connectors.py
+@@ -1,7 +1,12 @@
+ """Synthetic protocol fixtures only; never production observations."""
+ import json
++import io
+ import tempfile
+ import unittest
++import urllib.error
++from datetime import datetime,timedelta,timezone
++from email.message import Message
++from email.utils import format_datetime
+ from pathlib import Path
+ from unittest.mock import patch
+ from harness2.universe.connectors.public_archives import (
+@@ -9,6 +14,11 @@
+  load_csv_snapshot, sha256, GAIA_TAP, _validate_endpoint)
+ 
+ ID='5991734159714775296'
++
++class Response(io.BytesIO):
++ def __init__(self,raw,headers=None):
++  super().__init__(raw);self.status=200;self.headers=headers or {}
++ def geturl(self):return GAIA_TAP
+ def votable(rows=None,status='OK',tail=''):
+  rows=rows if rows is not None else [(ID,'Orbital')]
+  body=''.join('<TR><TD>'+sid+'</TD><TD>'+kind+'</TD></TR>' for sid,kind in rows)
+@@ -61,6 +71,62 @@
+    old=c.tap(GAIA_TAP,q,2,offline=True,expected_sha256=first.provenance['raw_sha256'])
+    self.assertEqual(old.rows[0]['nss_solution_type'],'Orbital')
+    self.assertEqual(c.tap(GAIA_TAP,q,2,offline=True).rows[0]['nss_solution_type'],'Other')
++ def test_identical_response_preserves_first_metadata_and_each_retrieval(self):
++  with tempfile.TemporaryDirectory() as d:
++   c=PublicSkyConnector(d);q='SELECT TOP 1 source_id FROM x'
++   with patch.object(c,'_request',return_value=(votable(),{'http_status':200})):
++    first=c.tap(GAIA_TAP,q,2)
++    path=Path(d)/(first.provenance['cache_key']+'.'+first.provenance['raw_sha256']+'.json')
++    original=path.read_bytes();second=c.tap(GAIA_TAP,q,2)
++   self.assertEqual(path.read_bytes(),original)
++   self.assertNotEqual(first.provenance['event_id'],second.provenance['event_id'])
++   events=[json.loads(p.read_text()) for p in (Path(d)/'attempts').glob('*.json')]
++   self.assertEqual(len(events),2)
++   self.assertTrue(all(e['raw_sha256']==sha256(votable()) and e['request']['query']==q for e in events))
++   self.assertEqual(c.tap(GAIA_TAP,q,2,offline=True).provenance['event_id'],second.provenance['event_id'])
++ def test_failed_tap_responses_are_preserved_before_parsing(self):
++  for raw in [votable(status='ERROR'),votable(status='OVERFLOW'),votable()[:-8]]:
++   with self.subTest(raw=raw[:80]),tempfile.TemporaryDirectory() as d:
++    c=PublicSkyConnector(d,retries=0);q='SELECT TOP 1 source_id FROM x'
++    with patch.object(c.opener,'open',return_value=Response(raw)):
++     with self.assertRaisesRegex(ArchiveError,'evidence='):c.tap(GAIA_TAP,q,2)
++    events=[json.loads(p.read_text()) for p in (Path(d)/'attempts').glob('*.json')]
++    self.assertEqual({e['outcome'] for e in events},{'HTTP_RESPONSE','TAP_PARSE_ERROR'})
++    self.assertTrue(all(e['raw_sha256']==sha256(raw) and e['http_status']==200 for e in events))
++    self.assertEqual(next(Path(d).glob('*.xml')).read_bytes(),raw)
++    with self.assertRaisesRegex(ArchiveError,'No verified cache'):c.tap(GAIA_TAP,q,2,offline=True)
++ def test_http_error_and_network_attempt_evidence(self):
++  with tempfile.TemporaryDirectory() as d:
++   c=PublicSkyConnector(d,retries=1);q='SELECT TOP 1 source_id FROM x'
++   headers=Message();headers['Content-Type']='text/plain';headers['Retry-After']='0'
++   failure=urllib.error.HTTPError(GAIA_TAP,503,'unavailable',headers,io.BytesIO(b'service unavailable'))
++   with patch.object(c.opener,'open',side_effect=[failure,urllib.error.URLError('test network failure')]),patch('time.sleep'):
++    with self.assertRaisesRegex(ArchiveError,'network failure'):c.tap(GAIA_TAP,q,2)
++   events=[json.loads(p.read_text()) for p in (Path(d)/'attempts').glob('*.json')]
++   self.assertEqual(len(events),2)
++   http=next(e for e in events if e['outcome']=='HTTP_ERROR')
++   network=next(e for e in events if e['outcome']=='NETWORK_ERROR')
++   self.assertEqual(http['http_status'],503);self.assertEqual(http['retry_after'],'0')
++   self.assertEqual((Path(d)/http['raw_file']).read_bytes(),b'service unavailable')
++   self.assertEqual(network['attempts'],2);self.assertIsNone(network['raw_sha256'])
++   self.assertTrue(all(e['request']['query']==q and e['started_at_utc'] and e['fetched_at_utc'] for e in events))
++ def test_long_retry_after_defers_without_early_retry(self):
++  for retry in ['120',format_datetime(datetime.now(timezone.utc)+timedelta(minutes=3),usegmt=True)]:
++   with self.subTest(retry=retry),tempfile.TemporaryDirectory() as d:
++    c=PublicSkyConnector(d,retries=2);headers=Message();headers['Retry-After']=retry
++    failure=urllib.error.HTTPError(GAIA_TAP,429,'wait',headers,io.BytesIO(b'rate limited'))
++    with patch.object(c.opener,'open',side_effect=failure) as opened,patch('time.sleep') as sleep:
++     with self.assertRaisesRegex(ArchiveError,'deferred without early retry'):c.tap(GAIA_TAP,'SELECT TOP 1 source_id FROM x',2)
++    self.assertEqual(opened.call_count,1);sleep.assert_not_called()
++ def test_oversized_and_truncated_body_evidence_is_not_cache(self):
++  for raw,headers in [(b'x'*2048,{'Content-Length':'2048'}),(votable(),{'Content-Length':'9999'})]:
++   with self.subTest(headers=headers),tempfile.TemporaryDirectory() as d:
++    c=PublicSkyConnector(d,retries=0,max_bytes=1024)
++    with patch.object(c.opener,'open',return_value=Response(raw,headers)):
++     with self.assertRaises(ArchiveError):c.tap(GAIA_TAP,'SELECT TOP 1 source_id FROM x',2)
++    event=json.loads(next((Path(d)/'attempts').glob('*.json')).read_text())
++    self.assertFalse(event['body_complete']);self.assertLessEqual(event['bytes'],1024)
++    self.assertEqual((Path(d)/event['raw_file']).read_bytes(),raw[:1024])
+  def test_snapshot_hash(self):
+   with tempfile.TemporaryDirectory() as d:
+    p=Path(d)/'a.csv';p.write_text('source_id,nss_solution_type\n'+ID+',Orbital\n')
+@@ -75,13 +141,30 @@
+   with tempfile.TemporaryDirectory() as d:
+    c=PublicSkyConnector(Path(d)/'cache')
+    pages=[votable([('10','AstroSpectroSB1'),('10','Orbital')]),votable([('11','Orbital')])]
+-   with patch.object(c,'_request',side_effect=[(p,{'http_status':200}) for p in pages]):
++   with patch.object(c,'_request',side_effect=[(pages[0],{'http_status':200}),ArchiveError('interrupted'),(pages[1],{'http_status':200})]) as request:
+     # Required schema is separately exercised; this protocol fixture has only keys.
+     with patch('harness2.universe.connectors.public_archives.NSS_REQUIRED',frozenset({'source_id','nss_solution_type'})):
+-     r=c.gaia_nss_pages(Path(d)/'run',page_size=2,max_pages=1)
+-     self.assertFalse(r.provenance['complete']);self.assertEqual(len(r.rows),2)
++     with self.assertRaisesRegex(ArchiveError,'interrupted'):
++      c.gaia_nss_pages(Path(d)/'run',page_size=2,max_pages=2)
++     state=json.loads((Path(d)/'run/acquisition.json').read_text())
++     self.assertFalse(state['complete']);self.assertEqual(state['rows'],2)
++     self.assertEqual(state['config']['max_pages'],2)
++     for cap in [1,3]:
++      with self.assertRaisesRegex(ArchiveError,'configuration mismatch'):
++       c.gaia_nss_pages(Path(d)/'run',page_size=2,max_pages=cap,resume=True)
++     self.assertEqual(request.call_count,2)
+      r=c.gaia_nss_pages(Path(d)/'run',page_size=2,max_pages=2,resume=True)
+      self.assertTrue(r.provenance['complete']);self.assertEqual(len(r.rows),3)
+      with self.assertRaises(ArchiveError):c.gaia_nss_pages(Path(d)/'run',page_size=3,max_pages=2,resume=True)
++ def test_resume_after_first_request_interruption(self):
++  with tempfile.TemporaryDirectory() as d:
++   c=PublicSkyConnector(Path(d)/'cache');out=Path(d)/'run'
++   with patch.object(c,'_request',side_effect=ArchiveError('interrupted before first page')):
++    with self.assertRaisesRegex(ArchiveError,'interrupted'):c.gaia_nss_pages(out,page_size=2,max_pages=2)
++   state=json.loads((out/'acquisition.json').read_text())
++   self.assertEqual(state['pages'],[]);self.assertEqual(state['config']['max_pages'],2)
++   with patch.object(c,'_request',return_value=(votable([('10','Orbital')]),{'http_status':200})),patch('harness2.universe.connectors.public_archives.NSS_REQUIRED',frozenset({'source_id','nss_solution_type'})):
++    result=c.gaia_nss_pages(out,page_size=2,max_pages=2,resume=True)
++   self.assertEqual(len(result.rows),1);self.assertTrue(result.provenance['complete'])
+ 
+ if __name__=='__main__':unittest.main()
+--- baseline/tests/test_packaging.py
++++ proposed/tests/test_packaging.py
+@@ -0,0 +1,29 @@
++"""Packaging protocol fixtures; no private files or real science evaluation."""
++import hashlib,importlib.util,json,tempfile,unittest,zipfile
++from pathlib import Path
++
++spec=importlib.util.spec_from_file_location('package_release',Path(__file__).resolve().parents[1]/'scripts/package_release.py')
++packager=importlib.util.module_from_spec(spec);spec.loader.exec_module(packager)
++
++class PackageTests(unittest.TestCase):
++    def test_allowlist_excludes_caches_and_never_overwrites(self):
++        with tempfile.TemporaryDirectory() as d:
++            root=Path(d)/'source';root.mkdir()
++            files={'README.md':'test','harness2/example.py':'# test',
++                   'data/pilot/rows.csv':'source_id\n1\n','data/astra-cache/private.xml':'not included',
++                   'runs/private.json':'not included','.env':'not included','model.weights':'not included'}
++            for name,body in files.items():
++                p=root/name;p.parent.mkdir(parents=True,exist_ok=True);p.write_text(body)
++            (root/'data/pilot/SNAPSHOT_MANIFEST.json').write_text(json.dumps({'files':{'rows.csv':hashlib.sha256((root/'data/pilot/rows.csv').read_bytes()).hexdigest()}}))
++            (root/'policy').mkdir();(root/'policy/guard_manifest.json').write_text(json.dumps({'files':{'harness2/example.py':'stale'}}))
++            output=Path(d)/'reviewed.zip';result=packager.package(root,output)
++            self.assertEqual(result['guard_state'],'UNSEALED_REVIEW_REQUIRED')
++            original=output.read_bytes()
++            with self.assertRaises(FileExistsError):packager.package(root,output)
++            self.assertEqual(original,output.read_bytes())
++            with zipfile.ZipFile(output) as z:
++                names=z.namelist()
++                self.assertIn('universe-real-harness/data/pilot/rows.csv',names)
++                self.assertFalse(any('private' in name or '.env' in name or 'weights' in name for name in names))
++            with self.assertRaisesRegex(ValueError,'baseline filename'):
++                packager.package(root,Path(d)/'Universe_Search_Harness_Real_Data_v1.zip')
+--- baseline/tests/test_science.py
++++ proposed/tests/test_science.py
+@@ -3,10 +3,13 @@
+ """
+ import copy,json,math,tempfile,unittest,warnings
+ from pathlib import Path
++from unittest.mock import patch
+ import numpy as np
+ from harness2.universe.detectors.signal_pipeline import (COVARIANCE_ORDERS,TERMS,covariance,identity,measure,propagate)
+ from harness2.cli.universe import ROOT,parser,run,evaluate_holdout,snapshot
+-from harness2.core.guards import disposition
++from harness2.core.guards import disposition,sha
++from harness2.core.recursion import partition
++from harness2.core.components import HarnessBundle
+ from harness2.universe.novelty import bundled_catalogs
+ 
+ 
+@@ -88,15 +91,29 @@
+         self.assertEqual(disposition(r,known)['status'],'EXCLUDE_KNOWN_BH')
+ 
+     def test_frozen_budget_and_overlap_gate(self):
++        # Synthetic protocol fixture only. Never evaluate real sky holdouts in
++        # disposable test ledgers. This tests the evaluator, not science yield.
+         with tempfile.TemporaryDirectory() as d:
+             root=Path(d);out=root/'run';ledger=root/'ledger.json'
+-            args=parser().parse_args(['run','--output',str(out),'--memory',str(root/'memory.json'),'--review-budget','1','--k','1','--draws','128'])
+-            result=run(args);self.assertEqual(result['releasable_novel_candidates'],0)
+-            first=evaluate_holdout(out,ledger)
++            out.mkdir()
++            ids=[str(i) for i in range(1,100) if partition(str(i))=='test'][:2]
++            records=[{'source_id':sid,'record_id':sid+':Orbital','nss_solution_type':'Orbital',
++                      'status':'HOLD_QUALITY_AND_NOVELTY','f_phot_solar':4.0,
++                      'parallax_relative_error':.01,'period_relative_error':.01,
++                      'efficiency':.8,'fixture':'SYNTHETIC_PROTOCOL_ONLY'} for sid in ids]
++            (out/'records.json').write_text(json.dumps(records))
++            (out/'recursion.json').write_text(json.dumps({'review_budget':1,
++                'adopted_configuration':HarnessBundle().to_dict()}))
++            manifest={'guard_hash':'synthetic-fixture-guard','dataset_sha256':'synthetic-protocol-only',
++                      'output_hashes':{name:sha(out/name) for name in ['records.json','recursion.json']}}
++            (out/'run_manifest.json').write_text(json.dumps(manifest))
++            with patch('harness2.cli.universe.verify_guard',return_value='synthetic-fixture-guard'):
++                first=evaluate_holdout(out,ledger)
+             self.assertEqual(first['review_budget'],1);self.assertLessEqual(first['heldout_utility']['evaluated'],1)
+             self.assertTrue(first['test_source_ids'])
+             manifest=json.loads((out/'run_manifest.json').read_text());manifest['dataset_sha256']='changed-dataset-with-identical-test-sources'
+             (out/'run_manifest.json').write_text(json.dumps(manifest))
+-            with self.assertRaisesRegex(ValueError,'Overlapping'):evaluate_holdout(out,ledger)
++            with patch('harness2.cli.universe.verify_guard',return_value='synthetic-fixture-guard'):
++                with self.assertRaisesRegex(ValueError,'Overlapping'):evaluate_holdout(out,ledger)
+ 
+ if __name__=='__main__':unittest.main()
+--- baseline/tests/test_security.py
++++ proposed/tests/test_security.py
+@@ -3,8 +3,10 @@
+ import json
+ import tempfile
+ import unittest
++import os
++import urllib.request
+ from pathlib import Path
+-from unittest.mock import patch
++from unittest.mock import patch,MagicMock
+ from harness2.core.components import HarnessBundle
+ from harness2.core.library import ContinualLibrary
+ from harness2.core.recursion import Harness2Engine
+@@ -36,6 +38,22 @@
+         with patch('urllib.request.OpenerDirector.open', side_effect=TimeoutError('test-only')):
+             with self.assertRaises(TimeoutError):
+                 router.propose(HarnessBundle(), {'count': 0}, 0)
++
++    def test_local_model_disables_environment_proxies(self):
++        router=UniversalModelRouter(LLMConfig('local','test-only'))
++        response=MagicMock()
++        response.__enter__.return_value.read.return_value=json.dumps(
++            {'choices':[{'message':{'content':json.dumps(BASE)}}]}).encode()
++        original=urllib.request.build_opener
++        with patch.dict(os.environ,{'HTTP_PROXY':'http://proxy.invalid:3128',
++                                   'HTTPS_PROXY':'http://proxy.invalid:3128','NO_PROXY':''}):
++            with patch('urllib.request.build_opener',wraps=original) as build:
++                with patch('urllib.request.OpenerDirector.open',return_value=response):
++                    self.assertEqual(router.propose(HarnessBundle(),{'count':0},0).to_dict(),BASE)
++                handlers=build.call_args.args
++                proxy=[h for h in handlers if isinstance(h,urllib.request.ProxyHandler)]
++                self.assertEqual(len(proxy),1)
++                self.assertEqual(proxy[0].proxies,{})
+ 
+     def test_memory_policy_mismatch_and_injected_fields(self):
+         with tempfile.TemporaryDirectory() as directory:
+@@ -69,11 +87,25 @@
+                 target.write_text('modified')
+                 with self.assertRaises(RuntimeError):
+                     guards.verify_guard()
+-                target.unlink()
+-                sibling = root/'same_content.py'; sibling.write_text('original')
+-                target.symlink_to(sibling)
+-                with self.assertRaises(RuntimeError):
+-                    guards.verify_guard()
++                target.write_text('original')
++                # Exercise the fail-closed symlink branch on every platform.
++                with patch.object(Path,'is_symlink',return_value=True):
++                    with self.assertRaises(RuntimeError):guards.verify_guard()
++
++    def test_native_symlink_guard_when_os_permits(self):
++        with tempfile.TemporaryDirectory() as directory:
++            root=Path(directory);(root/'policy').mkdir()
++            sibling=root/'same_content.py';sibling.write_text('original')
++            target=root/'protected.py'
++            try:target.symlink_to(sibling)
++            except OSError as exc:
++                if getattr(exc,'winerror',None)==1314:
++                    self.skipTest('Windows denied symlink creation (WinError 1314); guard branch tested separately')
++                raise
++            digest=hashlib.sha256(sibling.read_bytes()).hexdigest()
++            (root/'policy/guard_manifest.json').write_text(json.dumps({'files':{'protected.py':digest}}))
++            with patch.object(guards,'ROOT',root):
++                with self.assertRaises(RuntimeError):guards.verify_guard()
+ 
+ if __name__ == '__main__':
+     unittest.main()

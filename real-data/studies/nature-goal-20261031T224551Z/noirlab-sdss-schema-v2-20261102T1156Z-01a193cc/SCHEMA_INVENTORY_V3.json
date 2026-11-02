@@ -1,0 +1,152 @@
+{
+  "created_utc": "2026-11-02T12:02:11.725737+00:00",
+  "input_sha256": "86def01aba2baa9ef9263b7477c9c7efed6cec611ad164caf29b066052903b23",
+  "query_sha256": "97f91cbe7fab05f415e3914ac7ec7bf4f6f369830b547aa15ef64ccd287ec6d2",
+  "evidence_pins": {
+    "query": "97f91cbe7fab05f415e3914ac7ec7bf4f6f369830b547aa15ef64ccd287ec6d2",
+    "raw": "86def01aba2baa9ef9263b7477c9c7efed6cec611ad164caf29b066052903b23",
+    "request": "19a61fc6163a6a2b5daa8b5e0c3b3f5f06fe70b3ddd97ac892fa8966f17de8c9",
+    "native": "0bb57ac0950e48100b1de74da9cd57e4441f763223f5435e4b7786622f9d9512",
+    "result": "d0f33cd29e21e0a1f665ca12762982646f3102151f2db2658bd58301da577b19",
+    "finish": "f6cf3fbb9ba3e36a824da8d8f2537ffc4424d53f53c9da23afd04a5ca05cb3d7",
+    "protocol": "2ac501e518257e5abad62a81f84702215295bd9080a6dc4c704b4ca3cb115f91"
+  },
+  "result": {
+    "status_values": [
+      "OK"
+    ],
+    "reported_rows": 18,
+    "row_count": 18,
+    "rows": [
+      {
+        "table_name": "sdss_dr17.specobj",
+        "column_name": "class",
+        "datatype": "adql:CHAR",
+        "unit": null,
+        "description": "Spectroscopic class (GALAXY, QSO, or STAR)"
+      },
+      {
+        "table_name": "sdss_dr17.specobj",
+        "column_name": "dec",
+        "datatype": "adql:DOUBLE",
+        "unit": "deg",
+        "description": "Declination of fiber, J2000"
+      },
+      {
+        "table_name": "sdss_dr17.specobj",
+        "column_name": "fiberid",
+        "datatype": "adql:SMALLINT",
+        "unit": null,
+        "description": "Fiber ID"
+      },
+      {
+        "table_name": "sdss_dr17.specobj",
+        "column_name": "mjd",
+        "datatype": "adql:INTEGER",
+        "unit": "days",
+        "description": "MJD of observation"
+      },
+      {
+        "table_name": "sdss_dr17.specobj",
+        "column_name": "plate",
+        "datatype": "adql:SMALLINT",
+        "unit": null,
+        "description": "Plate number"
+      },
+      {
+        "table_name": "sdss_dr17.specobj",
+        "column_name": "ra",
+        "datatype": "adql:DOUBLE",
+        "unit": "deg",
+        "description": "Right ascension of fiber, J2000"
+      },
+      {
+        "table_name": "sdss_dr17.specobj",
+        "column_name": "run2d",
+        "datatype": "adql:CHAR",
+        "unit": null,
+        "description": "2D Reduction version of spectrum"
+      },
+      {
+        "table_name": "sdss_dr17.specobj",
+        "column_name": "snmedian",
+        "datatype": "adql:REAL",
+        "unit": null,
+        "description": "Median signal-to-noise over all good pixels"
+      },
+      {
+        "table_name": "sdss_dr17.specobj",
+        "column_name": "specobjid",
+        "datatype": "adql:BIGINT",
+        "unit": null,
+        "description": "Unique database ID based on PLATE, MJD, FIBERID, RUN2D"
+      },
+      {
+        "table_name": "sdss_dr17.specobj",
+        "column_name": "subclass",
+        "datatype": "adql:CHAR",
+        "unit": null,
+        "description": "Spectroscopic subclass"
+      },
+      {
+        "table_name": "sdss_dr17.specobj",
+        "column_name": "zwarning",
+        "datatype": "adql:INTEGER",
+        "unit": null,
+        "description": "Bitmask of warning values; 0 means all is well"
+      },
+      {
+        "table_name": "sdss_dr17.x1p5__specobj__gaia_dr3__gaia_source",
+        "column_name": "dec1",
+        "datatype": "adql:DOUBLE",
+        "unit": null,
+        "description": "Declination in left/first table (dec)"
+      },
+      {
+        "table_name": "sdss_dr17.x1p5__specobj__gaia_dr3__gaia_source",
+        "column_name": "dec2",
+        "datatype": "adql:DOUBLE",
+        "unit": null,
+        "description": "Declination in right/second table (dec)"
+      },
+      {
+        "table_name": "sdss_dr17.x1p5__specobj__gaia_dr3__gaia_source",
+        "column_name": "distance",
+        "datatype": "adql:DOUBLE",
+        "unit": null,
+        "description": "Distance between ra1,dec1 and ra2,dec2 (arcsec)"
+      },
+      {
+        "table_name": "sdss_dr17.x1p5__specobj__gaia_dr3__gaia_source",
+        "column_name": "id1",
+        "datatype": "adql:BIGINT",
+        "unit": null,
+        "description": "ID in left/first table (specobjid)"
+      },
+      {
+        "table_name": "sdss_dr17.x1p5__specobj__gaia_dr3__gaia_source",
+        "column_name": "id2",
+        "datatype": "adql:BIGINT",
+        "unit": null,
+        "description": "ID in right/second table (source_id)"
+      },
+      {
+        "table_name": "sdss_dr17.x1p5__specobj__gaia_dr3__gaia_source",
+        "column_name": "ra1",
+        "datatype": "adql:DOUBLE",
+        "unit": null,
+        "description": "Right ascension in left/first table (ra)"
+      },
+      {
+        "table_name": "sdss_dr17.x1p5__specobj__gaia_dr3__gaia_source",
+        "column_name": "ra2",
+        "datatype": "adql:DOUBLE",
+        "unit": null,
+        "description": "Right ascension in right/second table (ra)"
+      }
+    ],
+    "empty_cell_semantics": "empty or null; no semantic distinction inferred",
+    "reader_scope": "specific unnamespaced VOTable 1.2 TABLEDATA fixture"
+  },
+  "interpretation": "finite TAP schema rows only; no source or orbit evidence"
+}

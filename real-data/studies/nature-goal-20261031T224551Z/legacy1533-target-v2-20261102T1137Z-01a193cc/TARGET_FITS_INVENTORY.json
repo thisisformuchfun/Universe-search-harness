@@ -1,0 +1,689 @@
+{
+  "created_utc": "2026-11-02T11:39:24.749156+00:00",
+  "input_sha256": "eb89b9c44c2e1c8273f901c2269c90c2f9cdfa2784644d05175719749addc2af",
+  "astropy": "7.1.1",
+  "numpy": "2.3.5",
+  "fits_verify_exception_passed": true,
+  "warning_types": [],
+  "points": {
+    "gaia_2016_unpropagated": [
+      185.71462554756414,
+      40.88393733581962
+    ],
+    "ps1_one_detection_mean": [
+      185.71518099,
+      40.88389641
+    ],
+    "gaia_neighbor_2016_unpropagated": [
+      185.7131520967809,
+      40.88946022434856
+    ]
+  },
+  "hdus": [
+    {
+      "index": 0,
+      "class": "PrimaryHDU",
+      "shape": null,
+      "dtype": null,
+      "survey": "DECaLS",
+      "version": "DR9-north",
+      "band": null,
+      "image_type": "image",
+      "brick": null,
+      "bunit": null,
+      "radesys_card": null,
+      "equinox_card": null,
+      "checksum_present": false,
+      "datasum_present": false
+    },
+    {
+      "index": 1,
+      "class": "ImageHDU",
+      "shape": [
+        56,
+        192
+      ],
+      "dtype": ">f4",
+      "survey": "DECaLS",
+      "version": "DR9-north",
+      "band": "g",
+      "image_type": "image",
+      "brick": "1857p407",
+      "bunit": null,
+      "radesys_card": null,
+      "equinox_card": null,
+      "checksum_present": false,
+      "datasum_present": false,
+      "finite_fraction": 1.0,
+      "min": -0.00725798262283206,
+      "max": 0.0647255927324295,
+      "wcs_celestial": true,
+      "ctype": [
+        "RA---TAN",
+        "DEC--TAN"
+      ],
+      "astropy_default_radesys": "ICRS",
+      "locations": {
+        "gaia_2016_unpropagated": {
+          "pixel_xy": [
+            96.19065439838266,
+            95.97887150736233
+          ],
+          "inside": false
+        },
+        "ps1_one_detection_mean": {
+          "pixel_xy": [
+            90.42081649004575,
+            95.41364306531932
+          ],
+          "inside": false
+        },
+        "gaia_neighbor_2016_unpropagated": {
+          "pixel_xy": [
+            111.45797500898732,
+            171.8741577789715
+          ],
+          "inside": false
+        }
+      }
+    },
+    {
+      "index": 2,
+      "class": "ImageHDU",
+      "shape": [
+        56,
+        192
+      ],
+      "dtype": ">f4",
+      "survey": "DECaLS",
+      "version": "DR9-north",
+      "band": "g",
+      "image_type": "invvar",
+      "brick": "1857p407",
+      "bunit": null,
+      "radesys_card": null,
+      "equinox_card": null,
+      "checksum_present": false,
+      "datasum_present": false,
+      "finite_fraction": 1.0,
+      "min": 122757.140625,
+      "max": 211182.328125,
+      "wcs_celestial": true,
+      "ctype": [
+        "RA---TAN",
+        "DEC--TAN"
+      ],
+      "astropy_default_radesys": "ICRS",
+      "locations": {
+        "gaia_2016_unpropagated": {
+          "pixel_xy": [
+            96.19065439838266,
+            95.97887150736233
+          ],
+          "inside": false
+        },
+        "ps1_one_detection_mean": {
+          "pixel_xy": [
+            90.42081649004575,
+            95.41364306531932
+          ],
+          "inside": false
+        },
+        "gaia_neighbor_2016_unpropagated": {
+          "pixel_xy": [
+            111.45797500898732,
+            171.8741577789715
+          ],
+          "inside": false
+        }
+      }
+    },
+    {
+      "index": 3,
+      "class": "ImageHDU",
+      "shape": [
+        56,
+        192
+      ],
+      "dtype": ">f4",
+      "survey": "DECaLS",
+      "version": "DR9-north",
+      "band": "r",
+      "image_type": "image",
+      "brick": "1857p407",
+      "bunit": null,
+      "radesys_card": null,
+      "equinox_card": null,
+      "checksum_present": false,
+      "datasum_present": false,
+      "finite_fraction": 1.0,
+      "min": -0.01480615884065628,
+      "max": 0.3793717622756958,
+      "wcs_celestial": true,
+      "ctype": [
+        "RA---TAN",
+        "DEC--TAN"
+      ],
+      "astropy_default_radesys": "ICRS",
+      "locations": {
+        "gaia_2016_unpropagated": {
+          "pixel_xy": [
+            96.19065439838266,
+            95.97887150736233
+          ],
+          "inside": false
+        },
+        "ps1_one_detection_mean": {
+          "pixel_xy": [
+            90.42081649004575,
+            95.41364306531932
+          ],
+          "inside": false
+        },
+        "gaia_neighbor_2016_unpropagated": {
+          "pixel_xy": [
+            111.45797500898732,
+            171.8741577789715
+          ],
+          "inside": false
+        }
+      }
+    },
+    {
+      "index": 4,
+      "class": "ImageHDU",
+      "shape": [
+        56,
+        192
+      ],
+      "dtype": ">f4",
+      "survey": "DECaLS",
+      "version": "DR9-north",
+      "band": "r",
+      "image_type": "invvar",
+      "brick": "1857p407",
+      "bunit": null,
+      "radesys_card": null,
+      "equinox_card": null,
+      "checksum_present": false,
+      "datasum_present": false,
+      "finite_fraction": 1.0,
+      "min": 19891.46484375,
+      "max": 53514.21484375,
+      "wcs_celestial": true,
+      "ctype": [
+        "RA---TAN",
+        "DEC--TAN"
+      ],
+      "astropy_default_radesys": "ICRS",
+      "locations": {
+        "gaia_2016_unpropagated": {
+          "pixel_xy": [
+            96.19065439838266,
+            95.97887150736233
+          ],
+          "inside": false
+        },
+        "ps1_one_detection_mean": {
+          "pixel_xy": [
+            90.42081649004575,
+            95.41364306531932
+          ],
+          "inside": false
+        },
+        "gaia_neighbor_2016_unpropagated": {
+          "pixel_xy": [
+            111.45797500898732,
+            171.8741577789715
+          ],
+          "inside": false
+        }
+      }
+    },
+    {
+      "index": 5,
+      "class": "ImageHDU",
+      "shape": [
+        56,
+        192
+      ],
+      "dtype": ">f4",
+      "survey": "DECaLS",
+      "version": "DR9-north",
+      "band": "z",
+      "image_type": "image",
+      "brick": "1857p407",
+      "bunit": null,
+      "radesys_card": null,
+      "equinox_card": null,
+      "checksum_present": false,
+      "datasum_present": false,
+      "finite_fraction": 1.0,
+      "min": -0.029755424708127975,
+      "max": 1.705265998840332,
+      "wcs_celestial": true,
+      "ctype": [
+        "RA---TAN",
+        "DEC--TAN"
+      ],
+      "astropy_default_radesys": "ICRS",
+      "locations": {
+        "gaia_2016_unpropagated": {
+          "pixel_xy": [
+            96.19065439838266,
+            95.97887150736233
+          ],
+          "inside": false
+        },
+        "ps1_one_detection_mean": {
+          "pixel_xy": [
+            90.42081649004575,
+            95.41364306531932
+          ],
+          "inside": false
+        },
+        "gaia_neighbor_2016_unpropagated": {
+          "pixel_xy": [
+            111.45797500898732,
+            171.8741577789715
+          ],
+          "inside": false
+        }
+      }
+    },
+    {
+      "index": 6,
+      "class": "ImageHDU",
+      "shape": [
+        56,
+        192
+      ],
+      "dtype": ">f4",
+      "survey": "DECaLS",
+      "version": "DR9-north",
+      "band": "z",
+      "image_type": "invvar",
+      "brick": "1857p407",
+      "bunit": null,
+      "radesys_card": null,
+      "equinox_card": null,
+      "checksum_present": false,
+      "datasum_present": false,
+      "finite_fraction": 1.0,
+      "min": 4111.98291015625,
+      "max": 12577.1787109375,
+      "wcs_celestial": true,
+      "ctype": [
+        "RA---TAN",
+        "DEC--TAN"
+      ],
+      "astropy_default_radesys": "ICRS",
+      "locations": {
+        "gaia_2016_unpropagated": {
+          "pixel_xy": [
+            96.19065439838266,
+            95.97887150736233
+          ],
+          "inside": false
+        },
+        "ps1_one_detection_mean": {
+          "pixel_xy": [
+            90.42081649004575,
+            95.41364306531932
+          ],
+          "inside": false
+        },
+        "gaia_neighbor_2016_unpropagated": {
+          "pixel_xy": [
+            111.45797500898732,
+            171.8741577789715
+          ],
+          "inside": false
+        }
+      }
+    },
+    {
+      "index": 7,
+      "class": "ImageHDU",
+      "shape": [
+        192,
+        192
+      ],
+      "dtype": ">f4",
+      "survey": "DECaLS",
+      "version": "DR9-north",
+      "band": "g",
+      "image_type": "image",
+      "brick": "1857p410",
+      "bunit": null,
+      "radesys_card": null,
+      "equinox_card": null,
+      "checksum_present": false,
+      "datasum_present": false,
+      "finite_fraction": 1.0,
+      "min": -0.008182797580957413,
+      "max": 5.705066680908203,
+      "wcs_celestial": true,
+      "ctype": [
+        "RA---TAN",
+        "DEC--TAN"
+      ],
+      "astropy_default_radesys": "ICRS",
+      "locations": {
+        "gaia_2016_unpropagated": {
+          "pixel_xy": [
+            95.72445358233165,
+            95.99582658387362
+          ],
+          "inside": true,
+          "nearest_pixel_finite": true,
+          "nearest_pixel_value": 4.2449259757995605
+        },
+        "ps1_one_detection_mean": {
+          "pixel_xy": [
+            89.95475565836307,
+            95.42920589121854
+          ],
+          "inside": true,
+          "nearest_pixel_finite": true,
+          "nearest_pixel_value": 0.4357123076915741
+        },
+        "gaia_neighbor_2016_unpropagated": {
+          "pixel_xy": [
+            110.97320560189348,
+            171.89467665137727
+          ],
+          "inside": true,
+          "nearest_pixel_finite": true,
+          "nearest_pixel_value": 5.705066680908203
+        }
+      }
+    },
+    {
+      "index": 8,
+      "class": "ImageHDU",
+      "shape": [
+        192,
+        192
+      ],
+      "dtype": ">f4",
+      "survey": "DECaLS",
+      "version": "DR9-north",
+      "band": "g",
+      "image_type": "invvar",
+      "brick": "1857p410",
+      "bunit": null,
+      "radesys_card": null,
+      "equinox_card": null,
+      "checksum_present": false,
+      "datasum_present": false,
+      "finite_fraction": 1.0,
+      "min": 3340.265380859375,
+      "max": 210762.46875,
+      "wcs_celestial": true,
+      "ctype": [
+        "RA---TAN",
+        "DEC--TAN"
+      ],
+      "astropy_default_radesys": "ICRS",
+      "locations": {
+        "gaia_2016_unpropagated": {
+          "pixel_xy": [
+            95.72445358233165,
+            95.99582658387362
+          ],
+          "inside": true,
+          "nearest_pixel_finite": true,
+          "nearest_pixel_value": 4519.1826171875
+        },
+        "ps1_one_detection_mean": {
+          "pixel_xy": [
+            89.95475565836307,
+            95.42920589121854
+          ],
+          "inside": true,
+          "nearest_pixel_finite": true,
+          "nearest_pixel_value": 41065.6171875
+        },
+        "gaia_neighbor_2016_unpropagated": {
+          "pixel_xy": [
+            110.97320560189348,
+            171.89467665137727
+          ],
+          "inside": true,
+          "nearest_pixel_finite": true,
+          "nearest_pixel_value": 3340.265380859375
+        }
+      }
+    },
+    {
+      "index": 9,
+      "class": "ImageHDU",
+      "shape": [
+        192,
+        192
+      ],
+      "dtype": ">f4",
+      "survey": "DECaLS",
+      "version": "DR9-north",
+      "band": "r",
+      "image_type": "image",
+      "brick": "1857p410",
+      "bunit": null,
+      "radesys_card": null,
+      "equinox_card": null,
+      "checksum_present": false,
+      "datasum_present": false,
+      "finite_fraction": 1.0,
+      "min": -0.01492796465754509,
+      "max": 13.923379898071289,
+      "wcs_celestial": true,
+      "ctype": [
+        "RA---TAN",
+        "DEC--TAN"
+      ],
+      "astropy_default_radesys": "ICRS",
+      "locations": {
+        "gaia_2016_unpropagated": {
+          "pixel_xy": [
+            95.72445358233165,
+            95.99582658387362
+          ],
+          "inside": true,
+          "nearest_pixel_finite": true,
+          "nearest_pixel_value": 11.645692825317383
+        },
+        "ps1_one_detection_mean": {
+          "pixel_xy": [
+            89.95475565836307,
+            95.42920589121854
+          ],
+          "inside": true,
+          "nearest_pixel_finite": true,
+          "nearest_pixel_value": 0.459717720746994
+        },
+        "gaia_neighbor_2016_unpropagated": {
+          "pixel_xy": [
+            110.97320560189348,
+            171.89467665137727
+          ],
+          "inside": true,
+          "nearest_pixel_finite": true,
+          "nearest_pixel_value": 13.923379898071289
+        }
+      }
+    },
+    {
+      "index": 10,
+      "class": "ImageHDU",
+      "shape": [
+        192,
+        192
+      ],
+      "dtype": ">f4",
+      "survey": "DECaLS",
+      "version": "DR9-north",
+      "band": "r",
+      "image_type": "invvar",
+      "brick": "1857p410",
+      "bunit": null,
+      "radesys_card": null,
+      "equinox_card": null,
+      "checksum_present": false,
+      "datasum_present": false,
+      "finite_fraction": 1.0,
+      "min": 529.6466064453125,
+      "max": 53518.859375,
+      "wcs_celestial": true,
+      "ctype": [
+        "RA---TAN",
+        "DEC--TAN"
+      ],
+      "astropy_default_radesys": "ICRS",
+      "locations": {
+        "gaia_2016_unpropagated": {
+          "pixel_xy": [
+            95.72445358233165,
+            95.99582658387362
+          ],
+          "inside": true,
+          "nearest_pixel_finite": true,
+          "nearest_pixel_value": 937.067138671875
+        },
+        "ps1_one_detection_mean": {
+          "pixel_xy": [
+            89.95475565836307,
+            95.42920589121854
+          ],
+          "inside": true,
+          "nearest_pixel_finite": true,
+          "nearest_pixel_value": 17111.66015625
+        },
+        "gaia_neighbor_2016_unpropagated": {
+          "pixel_xy": [
+            110.97320560189348,
+            171.89467665137727
+          ],
+          "inside": true,
+          "nearest_pixel_finite": true,
+          "nearest_pixel_value": 529.6466064453125
+        }
+      }
+    },
+    {
+      "index": 11,
+      "class": "ImageHDU",
+      "shape": [
+        192,
+        192
+      ],
+      "dtype": ">f4",
+      "survey": "DECaLS",
+      "version": "DR9-north",
+      "band": "z",
+      "image_type": "image",
+      "brick": "1857p410",
+      "bunit": null,
+      "radesys_card": null,
+      "equinox_card": null,
+      "checksum_present": false,
+      "datasum_present": false,
+      "finite_fraction": 1.0,
+      "min": -0.036140043288469315,
+      "max": 10.000049591064453,
+      "wcs_celestial": true,
+      "ctype": [
+        "RA---TAN",
+        "DEC--TAN"
+      ],
+      "astropy_default_radesys": "ICRS",
+      "locations": {
+        "gaia_2016_unpropagated": {
+          "pixel_xy": [
+            95.72445358233165,
+            95.99582658387362
+          ],
+          "inside": true,
+          "nearest_pixel_finite": true,
+          "nearest_pixel_value": 9.999980926513672
+        },
+        "ps1_one_detection_mean": {
+          "pixel_xy": [
+            89.95475565836307,
+            95.42920589121854
+          ],
+          "inside": true,
+          "nearest_pixel_finite": true,
+          "nearest_pixel_value": 0.32822170853614807
+        },
+        "gaia_neighbor_2016_unpropagated": {
+          "pixel_xy": [
+            110.97320560189348,
+            171.89467665137727
+          ],
+          "inside": true,
+          "nearest_pixel_finite": true,
+          "nearest_pixel_value": 10.000046730041504
+        }
+      }
+    },
+    {
+      "index": 12,
+      "class": "ImageHDU",
+      "shape": [
+        192,
+        192
+      ],
+      "dtype": ">f4",
+      "survey": "DECaLS",
+      "version": "DR9-north",
+      "band": "z",
+      "image_type": "invvar",
+      "brick": "1857p410",
+      "bunit": null,
+      "radesys_card": null,
+      "equinox_card": null,
+      "checksum_present": false,
+      "datasum_present": false,
+      "finite_fraction": 1.0,
+      "min": 0.0,
+      "max": 12603.8759765625,
+      "wcs_celestial": true,
+      "ctype": [
+        "RA---TAN",
+        "DEC--TAN"
+      ],
+      "astropy_default_radesys": "ICRS",
+      "locations": {
+        "gaia_2016_unpropagated": {
+          "pixel_xy": [
+            95.72445358233165,
+            95.99582658387362
+          ],
+          "inside": true,
+          "nearest_pixel_finite": true,
+          "nearest_pixel_value": 0.0
+        },
+        "ps1_one_detection_mean": {
+          "pixel_xy": [
+            89.95475565836307,
+            95.42920589121854
+          ],
+          "inside": true,
+          "nearest_pixel_finite": true,
+          "nearest_pixel_value": 5517.30224609375
+        },
+        "gaia_neighbor_2016_unpropagated": {
+          "pixel_xy": [
+            110.97320560189348,
+            171.89467665137727
+          ],
+          "inside": true,
+          "nearest_pixel_finite": true,
+          "nearest_pixel_value": 0.0
+        }
+      }
+    }
+  ],
+  "interpretation": "coverage inventory only; no detection, flux-limit or orbit inference"
+}

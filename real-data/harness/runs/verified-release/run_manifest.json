@@ -1,0 +1,29 @@
+{
+  "created_at_utc": "2026-10-31T20:53:36.833587+00:00",
+  "version": "1.0.0-real",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+  "guard_hash": "9d03ad1ef0d2421cd04c67237925c4afb4ed71266bb378719129fcd8c4d81439",
+  "dataset_sha256": "9017a4a33a11791310197a5d78c36b2fc00cdab48730fb89292bc71faf4ea43a",
+  "output_hashes": {
+    "summary.json": "2dd29d0c1710bf61a53c112b6307af56f3d5d504a1668bbcbb51f6b8340322a7",
+    "provenance.json": "7318ed00daca28c843d0092926996cc13423300bb82196a247a415fd10378912",
+    "human_review_template.json": "fd5284cb454fe78d0b4b2799c1773dc10211a0b9ffe6be491e818a88bd57ea96",
+    "context.json": "b8d22a7f5f89ad3cb8f60b334707e6b49db32a58ea4608c6018c700967ee4f5f",
+    "raw_rows.json": "be6aec77fd386de6b748c92a6135350ba77cee8f72277bbb34be9d46ba211556",
+    "review_queue.json": "738ea3f48413263fb7911dcb069353ecc473ce7aa95ee197e92d9b19f53534ed",
+    "invalid_rows.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "catalog_coverage.json": "4fe7bf809d05a54fa950c606f71806f14495f9b040dfb0eec26c50a285a03f6e",
+    "review_queue.csv": "96bb97406908a0d78102ef540178e8b07cb61eec30c3f80d6044e76c818c1887",
+    "records.json": "519a87faafbdd3a2fa9536e6097dd1472aa4184ee3ff202f6f64e7884d675d7a",
+    "recursion.json": "8e7c94be4fe6a998bc9e4b5a9fd19743803487f226ce3ab725c06bb86d8f2e12"
+  },
+  "live": false,
+  "gpu_requested": false,
+  "gpu_benchmark_claim": false,
+  "unsupported_production_domains": [
+    "exoplanet_transit",
+    "gw_subthreshold_merger",
+    "anomalous_star"
+  ]
+}

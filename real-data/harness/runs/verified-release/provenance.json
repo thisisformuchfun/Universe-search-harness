@@ -1,0 +1,16 @@
+{
+  "mode": "OFFLINE_REAL_SNAPSHOT_NOT_FRESH",
+  "original_provenance": {
+    "repo_commit": "69c2986a84c5cf22180a08fd370b2082a937b32e",
+    "archive_git_blob": "d722d07ef436cdce27b53fedf284fa4838bbeb6b",
+    "archive_sha256": "b10d953310f2c6c618bab46a3d60e3cee91344fa977575ac965abe62178d73fd",
+    "data_fetched_utc": "2026-10-19T23:21:05.787090+00:00",
+    "endpoint": "https://gea.esac.esa.int/tap-server/tap/sync",
+    "query": "SELECT TOP 500 n.source_id, n.nss_solution_type, n.ra, n.dec,\nn.parallax, n.parallax_error, n.period, n.period_error, n.eccentricity, n.eccentricity_error,\nn.a_thiele_innes, n.a_thiele_innes_error, n.b_thiele_innes, n.b_thiele_innes_error,\nn.f_thiele_innes, n.f_thiele_innes_error, n.g_thiele_innes, n.g_thiele_innes_error,\nn.significance, n.goodness_of_fit, n.efficiency, n.flags,\nPOWER(n.a_thiele_innes*n.a_thiele_innes+n.b_thiele_innes*n.b_thiele_innes+n.f_thiele_innes*n.f_thiele_innes+n.g_thiele_innes*n.g_thiele_innes,1.5)*365.25*365.25/(n.parallax*n.parallax*n.parallax*n.period*n.period) AS f_proxy\nFROM gaiadr3.nss_two_body_orbit AS n\nWHERE n.parallax>0 AND n.parallax/n.parallax_error>10\nAND n.period>0 AND n.period/n.period_error>10 AND n.significance>10\nAND n.a_thiele_innes IS NOT NULL AND n.b_thiele_innes IS NOT NULL\nAND n.f_thiele_innes IS NOT NULL AND n.g_thiele_innes IS NOT NULL\nORDER BY f_proxy DESC",
+    "raw_sha256": "4cae3b1c7980f6b140f9a156921f108eec12ec73e271b3614736ab2d594b792e",
+    "initial_join_attempt": "HTTP408; subsequently used NSS-only query",
+    "repository_code_executed": false,
+    "independent_pilot_executed": true
+  },
+  "rows": 500
+}

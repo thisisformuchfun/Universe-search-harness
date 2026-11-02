@@ -1,0 +1,158 @@
+{
+  "review_budget": 20,
+  "mode": "sequential",
+  "k": 3,
+  "guard_hash": "558cef0d2d1cab72110c03e2089009ef8cdaf031c63247f8e345bfbbbb81953c",
+  "train_rows": 10,
+  "validation_rows": 1,
+  "base_configuration": {
+    "mass_function_weight": 1.0,
+    "precision_weight": 1.0,
+    "efficiency_weight": 1.0
+  },
+  "adopted_configuration": {
+    "mass_function_weight": 1.0,
+    "precision_weight": 1.0,
+    "efficiency_weight": 1.0
+  },
+  "validation_metric": {
+    "utility": 0.11733346196313343,
+    "evaluated": 1
+  },
+  "traces": [
+    {
+      "step": 0,
+      "mode": "sequential",
+      "parent": {
+        "mass_function_weight": 1.0,
+        "precision_weight": 1.0,
+        "efficiency_weight": 1.0
+      },
+      "proposed": {
+        "mass_function_weight": 0.9,
+        "precision_weight": 1.5,
+        "efficiency_weight": 1.25
+      },
+      "domain": {
+        "mass_function_weight": 1.0,
+        "precision_weight": 1.5,
+        "efficiency_weight": 1.0
+      },
+      "composed": {
+        "mass_function_weight": 0.95,
+        "precision_weight": 1.5,
+        "efficiency_weight": 1.125
+      },
+      "validation_probes": [
+        {
+          "utility": 0.11733346196313343,
+          "evaluated": 1
+        },
+        {
+          "utility": 0.11733346196313343,
+          "evaluated": 1
+        },
+        {
+          "utility": 0.11733346196313343,
+          "evaluated": 1
+        }
+      ],
+      "adopted": {
+        "mass_function_weight": 1.0,
+        "precision_weight": 1.0,
+        "efficiency_weight": 1.0
+      }
+    },
+    {
+      "step": 1,
+      "mode": "sequential",
+      "parent": {
+        "mass_function_weight": 1.0,
+        "precision_weight": 1.0,
+        "efficiency_weight": 1.0
+      },
+      "proposed": {
+        "mass_function_weight": 1.0,
+        "precision_weight": 2.0,
+        "efficiency_weight": 1.5
+      },
+      "domain": {
+        "mass_function_weight": 1.0,
+        "precision_weight": 1.5,
+        "efficiency_weight": 1.0
+      },
+      "composed": {
+        "mass_function_weight": 1.0,
+        "precision_weight": 1.75,
+        "efficiency_weight": 1.25
+      },
+      "validation_probes": [
+        {
+          "utility": 0.11733346196313343,
+          "evaluated": 1
+        },
+        {
+          "utility": 0.11733346196313343,
+          "evaluated": 1
+        },
+        {
+          "utility": 0.11733346196313343,
+          "evaluated": 1
+        }
+      ],
+      "adopted": {
+        "mass_function_weight": 1.0,
+        "precision_weight": 1.0,
+        "efficiency_weight": 1.0
+      }
+    },
+    {
+      "step": 2,
+      "mode": "sequential",
+      "parent": {
+        "mass_function_weight": 1.0,
+        "precision_weight": 1.0,
+        "efficiency_weight": 1.0
+      },
+      "proposed": {
+        "mass_function_weight": 0.75,
+        "precision_weight": 2.5,
+        "efficiency_weight": 1.75
+      },
+      "domain": {
+        "mass_function_weight": 1.0,
+        "precision_weight": 1.5,
+        "efficiency_weight": 1.0
+      },
+      "composed": {
+        "mass_function_weight": 0.875,
+        "precision_weight": 2.0,
+        "efficiency_weight": 1.375
+      },
+      "validation_probes": [
+        {
+          "utility": 0.11733346196313343,
+          "evaluated": 1
+        },
+        {
+          "utility": 0.11733346196313343,
+          "evaluated": 1
+        },
+        {
+          "utility": 0.11733346196313343,
+          "evaluated": 1
+        }
+      ],
+      "adopted": {
+        "mass_function_weight": 1.0,
+        "precision_weight": 1.0,
+        "efficiency_weight": 1.0
+      }
+    }
+  ],
+  "model_calls": 3,
+  "provider": "deterministic",
+  "model": null,
+  "metric_meaning": "Quality-weighted triage utility only. Not precision/recall, SNR, FAP, discovery yield or model training.",
+  "memory_saved": false
+}

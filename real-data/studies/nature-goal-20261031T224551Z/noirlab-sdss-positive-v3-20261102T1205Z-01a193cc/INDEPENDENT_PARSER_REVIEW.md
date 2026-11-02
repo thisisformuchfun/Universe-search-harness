@@ -1,0 +1,5 @@
+# Independent positive parser review — fixed fixture
+
+On 2026-11-02 UTC `/root/ps1_execution_review` accepted the V2 reader for this exact pinned control body. Parser SHA256 `1fefa89bf06c6a0f23218589df78689ce5545fe0a394e1029466480bad54d2b0`; test SHA256 `722878bc7a0d74ebdea41edce79d7a60941896ac65bd5e8ac2a2c7fed80bbc01`; output SHA256 `aa43ad6e505e79e660943bf7e9dafd8dddfc8469172b4090fb7f5c3837b4e076`. All seven evidence pins matched; the output matched an independent reparse and V1's result. All 14 tests passed with socket/process denial. The corrected FIELD-null test inserts a null declaration under the actual FIELD; signed-long overflow and underscored float strings are rejected. IDs and the published tuple remain exact decimal strings. Independent spherical geometry agreed with the returned separation under the stated degree assumption.
+
+This reader is a fixed-fixture prerequisite, not a general parser for a fresh VOTable, held-source result, completeness or RV inference. The earlier V1 parser/test remain preserved for review.

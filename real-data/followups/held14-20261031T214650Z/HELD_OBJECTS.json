@@ -1,0 +1,1740 @@
+{
+  "created_utc": "2026-10-31T22:05:59.265778+00:00",
+  "scope": "User-authorized investigation of existing14, no new sky search/selection/holdout test.",
+  "counts": {
+    "investigated": 14,
+    "previously_studied_candidates_proven": 2,
+    "other_sources_novelty_unresolved": 12,
+    "independently_validated_orbits_found": 0,
+    "new_black_hole_discoveries": 0
+  },
+  "inputs": {
+    "derived-v2/diagnostics.json": "395b8ee8f710fb4bc5f69b1e7bf3981d549fdaa2bf4ed9ffe7d29bcbc331d4a4",
+    "formal-covariance/RESULTS.json": "5e21578b7934f3e6cd46b57376c58dcaa893e9dd7ab32a8b435b094e2e05f6df",
+    "evidence/identifications/IDENTIFICATION_EVIDENCE.json": "063c1d5a8ce80261d5c332607e6ea75b800d49844144a2104a354041f7bf6d90",
+    "research/literature_evidence_held14.json": "8067e17959801950768f63fc67ea11ba66cf6a79d07ae57a597ba85a29f02577",
+    "research/xp_nss_evidence_held14.json": "48b4202c4db39d37b6ba45dc7f3c72234a047b0ecea03723681a14455eeb4f6c"
+  },
+  "sources": [
+    {
+      "source_id": "5991734159714775296",
+      "review_status": "HELD_ORBIT_AND_NOVELTY_UNRESOLVED",
+      "production_disposition_changed": false,
+      "black_hole_confirmed": false,
+      "period_days": 15.739223706431797,
+      "nominal_conditional_dark_K1_km_s": 2802.4712403066574,
+      "nearest_gaia_neighbor": {
+        "source_id": "5991734159702000128",
+        "separation_arcsec": 0.9808722362732315,
+        "delta_g": 3.863128999999999,
+        "nominal_g_flux_ratio": 0.028493670642661055,
+        "parallax": null,
+        "parallax_error": null,
+        "pmra": null,
+        "pmra_error": null,
+        "pmdec": null,
+        "pmdec_error": null,
+        "ruwe": null,
+        "astrometric_params_solved": 3,
+        "delta_parallax_sigma_independent": null,
+        "delta_pm_mas_yr": null,
+        "pm_mahalanobis_squared": null
+      },
+      "in_published_31_5day_artifact_interval": false,
+      "source_specific_findings": "Resolved neighbor0.981arcsec, \u0394G3.86; neighbor has no parallax/PM. Gaia2MASS association is shared.",
+      "next_measurement_that_could_resolve_hold": "Separate neighbor flux/astrometry; obtain independent RV epochs. No blend or bound-pair verdict.",
+      "catalogue_and_spectral_coverage": {
+        "source_id": "5991734159714775296",
+        "simbad": {
+          "exact_dr3_id_rows": 0,
+          "cone_5arcsec_rows": 0,
+          "control_success": true,
+          "note": "No catalogue match is not novelty evidence"
+        },
+        "lamost_distinct_observations": [],
+        "lamost_dr6_mrs_cone_5arcsec_rows": 0,
+        "lamost_dr11_mrs_exact_dr3_rows": 0,
+        "galah_dr4_allspec_exact_dr3_rows": 0,
+        "rave_dr5_cone_5arcsec_rows": 0,
+        "apogee_dr17": {
+          "status": "UNAVAILABLE_CONNECTION_TIMEOUT",
+          "constraint": "exact 2MASS cross-identifiers; parent crossmatch ambiguity preserved; no scientific null result",
+          "provenance": "apogee_dr17_tmass14.json"
+        },
+        "wide_binary_catalogue": "NOT_QUERIED",
+        "hold_status": "HELD; no new validated RV time series or luminous-companion exclusion"
+      },
+      "published_study_url": null,
+      "formal_published_block_propagation": {
+        "source_id": "5991734159714775296",
+        "nss_solution_type": "OrbitalAlternative",
+        "first_seed": {
+          "draws": 32768,
+          "seed": 8469789732224546659,
+          "physical_draws": 32768,
+          "invalid_draws": 0,
+          "invalid_fraction": 0.0,
+          "invalid_constraint_counts_may_overlap": {
+            "nonfinite": 0,
+            "nonpositive_parallax": 0,
+            "nonpositive_period": 0,
+            "eccentricity_outside_0_1": 0
+          },
+          "nonfinite_derived_draws": 0,
+          "f_phot_conditional_valid_draw_quantiles_solar_units": [
+            7640.141498263985,
+            11538.367036085849,
+            17875.319570037296
+          ],
+          "dark_K1_conditional_valid_draw_quantiles_km_s": [
+            2318.9882971754823,
+            2813.0851005243094,
+            3527.279382823386
+          ],
+          "published_correlation_min_eigenvalue": 0.009236445873020246
+        },
+        "second_seed": {
+          "draws": 32768,
+          "seed": 4765148350095675537,
+          "physical_draws": 32768,
+          "invalid_draws": 0,
+          "invalid_fraction": 0.0,
+          "invalid_constraint_counts_may_overlap": {
+            "nonfinite": 0,
+            "nonpositive_parallax": 0,
+            "nonpositive_period": 0,
+            "eccentricity_outside_0_1": 0
+          },
+          "nonfinite_derived_draws": 0,
+          "f_phot_conditional_valid_draw_quantiles_solar_units": [
+            7662.476613284403,
+            11566.256861454558,
+            17891.538229228812
+          ],
+          "dark_K1_conditional_valid_draw_quantiles_km_s": [
+            2318.6975216431833,
+            2821.3940736382124,
+            3521.074565711574
+          ],
+          "published_correlation_min_eigenvalue": 0.009236445873020246
+        },
+        "exact_repeat_passed": true,
+        "fractional_quantile_differences": {
+          "f_phot_conditional_valid_draw_quantiles_solar_units": [
+            0.0029148689317623133,
+            0.002411309527601306,
+            0.000906498870232419
+          ],
+          "dark_K1_conditional_valid_draw_quantiles_km_s": [
+            0.00012538896063130528,
+            0.0029449885046325696,
+            0.001759094315587099
+          ]
+        }
+      },
+      "novelty_limit": "Full Li2026 1835-source supplementary list unavailable; finite nonmatches do not clear novelty.",
+      "luminous_companion_limit": "NSS XP subset excludes Alternative solutions. No component-flux or spectral multiplicity exclusion from that nonmatch."
+    },
+    {
+      "source_id": "3316050687674598656",
+      "review_status": "HELD_ORBIT_AND_NOVELTY_UNRESOLVED",
+      "production_disposition_changed": false,
+      "black_hole_confirmed": false,
+      "period_days": 6.286964401693138,
+      "nominal_conditional_dark_K1_km_s": 1459.647800865543,
+      "nearest_gaia_neighbor": {
+        "source_id": "3316050687674597760",
+        "separation_arcsec": 9.035804517126731,
+        "delta_g": 3.771703999999998,
+        "nominal_g_flux_ratio": 0.030996909834168578,
+        "parallax": 1.1725610280834713,
+        "parallax_error": 0.4511523,
+        "pmra": 0.38082652503315295,
+        "pmra_error": 0.42893845,
+        "pmdec": 0.09717374112445334,
+        "pmdec_error": 0.36743817,
+        "ruwe": 1.0585104,
+        "astrometric_params_solved": 95,
+        "delta_parallax_sigma_independent": 0.4972697907530984,
+        "delta_pm_mas_yr": 11.34387265616136,
+        "pm_mahalanobis_squared": 614.5161440485816
+      },
+      "in_published_31_5day_artifact_interval": false,
+      "source_specific_findings": "6.287day nominal orbit; nearest Gaia neighbor9.04arcsec, \u0394G3.77. No independent RV found.",
+      "next_measurement_that_could_resolve_hold": "Independent RV period/orbit and composite SED with extinction; unresolved multiplicity remains untested.",
+      "catalogue_and_spectral_coverage": {
+        "source_id": "3316050687674598656",
+        "simbad": {
+          "exact_dr3_id_rows": 0,
+          "cone_5arcsec_rows": 0,
+          "control_success": true,
+          "note": "No catalogue match is not novelty evidence"
+        },
+        "lamost_distinct_observations": [],
+        "lamost_dr6_mrs_cone_5arcsec_rows": 0,
+        "lamost_dr11_mrs_exact_dr3_rows": 0,
+        "galah_dr4_allspec_exact_dr3_rows": 0,
+        "rave_dr5_cone_5arcsec_rows": 0,
+        "apogee_dr17": {
+          "status": "UNAVAILABLE_CONNECTION_TIMEOUT",
+          "constraint": "exact 2MASS cross-identifiers; parent crossmatch ambiguity preserved; no scientific null result",
+          "provenance": "apogee_dr17_tmass14.json"
+        },
+        "wide_binary_catalogue": "NOT_QUERIED",
+        "hold_status": "HELD; no new validated RV time series or luminous-companion exclusion"
+      },
+      "published_study_url": null,
+      "formal_published_block_propagation": {
+        "source_id": "3316050687674598656",
+        "nss_solution_type": "OrbitalAlternative",
+        "first_seed": {
+          "draws": 32768,
+          "seed": 894651770337574998,
+          "physical_draws": 32235,
+          "invalid_draws": 533,
+          "invalid_fraction": 0.016265869140625,
+          "invalid_constraint_counts_may_overlap": {
+            "nonfinite": 0,
+            "nonpositive_parallax": 0,
+            "nonpositive_period": 0,
+            "eccentricity_outside_0_1": 533
+          },
+          "nonfinite_derived_draws": 0,
+          "f_phot_conditional_valid_draw_quantiles_solar_units": [
+            1658.4030341292187,
+            2292.277197272027,
+            4644.211559987363
+          ],
+          "dark_K1_conditional_valid_draw_quantiles_km_s": [
+            1385.8953714983525,
+            1557.3873487748144,
+            1984.0224017297915
+          ],
+          "published_correlation_min_eigenvalue": 0.007217848146956226
+        },
+        "second_seed": {
+          "draws": 32768,
+          "seed": 13908085867961144933,
+          "physical_draws": 32220,
+          "invalid_draws": 548,
+          "invalid_fraction": 0.0167236328125,
+          "invalid_constraint_counts_may_overlap": {
+            "nonfinite": 0,
+            "nonpositive_parallax": 0,
+            "nonpositive_period": 0,
+            "eccentricity_outside_0_1": 548
+          },
+          "nonfinite_derived_draws": 0,
+          "f_phot_conditional_valid_draw_quantiles_solar_units": [
+            1648.4317154781338,
+            2299.508517574308,
+            4655.889560040341
+          ],
+          "dark_K1_conditional_valid_draw_quantiles_km_s": [
+            1383.609996483601,
+            1559.1312145165375,
+            1984.0527788547004
+          ],
+          "published_correlation_min_eigenvalue": 0.007217848146956226
+        },
+        "exact_repeat_passed": true,
+        "fractional_quantile_differences": {
+          "f_phot_conditional_valid_draw_quantiles_solar_units": [
+            0.006012602754505041,
+            0.003144724295219843,
+            0.0025082210182143507
+          ],
+          "dark_K1_conditional_valid_draw_quantiles_km_s": [
+            0.0016490242061207412,
+            0.0011184855549594202,
+            1.531064356384955e-05
+          ]
+        }
+      },
+      "novelty_limit": "Full Li2026 1835-source supplementary list unavailable; finite nonmatches do not clear novelty.",
+      "luminous_companion_limit": "NSS XP subset excludes Alternative solutions. No component-flux or spectral multiplicity exclusion from that nonmatch."
+    },
+    {
+      "source_id": "5928370816455687808",
+      "review_status": "HELD_ORBIT_AND_NOVELTY_UNRESOLVED",
+      "production_disposition_changed": false,
+      "black_hole_confirmed": false,
+      "period_days": 31.58748151581934,
+      "nominal_conditional_dark_K1_km_s": 713.2484801554083,
+      "nearest_gaia_neighbor": {
+        "source_id": "5928370816424099072",
+        "separation_arcsec": 1.3291000922439744,
+        "delta_g": 3.7379830000000016,
+        "nominal_g_flux_ratio": 0.03197472367487997,
+        "parallax": 0.9419527376571276,
+        "parallax_error": 0.6453016,
+        "pmra": -4.331534145277377,
+        "pmra_error": 1.1250063,
+        "pmdec": -4.549386398440197,
+        "pmdec_error": 0.9739309,
+        "ruwe": 0.9834605,
+        "astrometric_params_solved": 95,
+        "delta_parallax_sigma_independent": -0.555812589700271,
+        "delta_pm_mas_yr": 4.327637284699949,
+        "pm_mahalanobis_squared": 25.428233043118823
+      },
+      "in_published_31_5day_artifact_interval": true,
+      "source_specific_findings": "Neighbor1.329arcsec, \u0394G3.74; IPD multi-peak2%; period within published31.5+-0.6day artifact feature.",
+      "next_measurement_that_could_resolve_hold": "Imaging/deblending plus independent RV orbit; neighbor contamination and alias remain hypotheses.",
+      "catalogue_and_spectral_coverage": {
+        "source_id": "5928370816455687808",
+        "simbad": {
+          "exact_dr3_id_rows": 0,
+          "cone_5arcsec_rows": 0,
+          "control_success": true,
+          "note": "No catalogue match is not novelty evidence"
+        },
+        "lamost_distinct_observations": [],
+        "lamost_dr6_mrs_cone_5arcsec_rows": 0,
+        "lamost_dr11_mrs_exact_dr3_rows": 0,
+        "galah_dr4_allspec_exact_dr3_rows": 0,
+        "rave_dr5_cone_5arcsec_rows": 0,
+        "apogee_dr17": {
+          "status": "UNAVAILABLE_CONNECTION_TIMEOUT",
+          "constraint": "exact 2MASS cross-identifiers; parent crossmatch ambiguity preserved; no scientific null result",
+          "provenance": "apogee_dr17_tmass14.json"
+        },
+        "wide_binary_catalogue": "NOT_QUERIED",
+        "hold_status": "HELD; no new validated RV time series or luminous-companion exclusion"
+      },
+      "published_study_url": null,
+      "formal_published_block_propagation": {
+        "source_id": "5928370816455687808",
+        "nss_solution_type": "OrbitalAlternative",
+        "first_seed": {
+          "draws": 32768,
+          "seed": 4432062768240953745,
+          "physical_draws": 32028,
+          "invalid_draws": 740,
+          "invalid_fraction": 0.0225830078125,
+          "invalid_constraint_counts_may_overlap": {
+            "nonfinite": 0,
+            "nonpositive_parallax": 0,
+            "nonpositive_period": 0,
+            "eccentricity_outside_0_1": 740
+          },
+          "nonfinite_derived_draws": 0,
+          "f_phot_conditional_valid_draw_quantiles_solar_units": [
+            874.7819247414484,
+            1693.2935772123185,
+            5173.775262076724
+          ],
+          "dark_K1_conditional_valid_draw_quantiles_km_s": [
+            638.4480091046914,
+            803.0741941981116,
+            1167.9523495054757
+          ],
+          "published_correlation_min_eigenvalue": 0.001213096170091859
+        },
+        "second_seed": {
+          "draws": 32768,
+          "seed": 13305280911842621059,
+          "physical_draws": 32034,
+          "invalid_draws": 734,
+          "invalid_fraction": 0.02239990234375,
+          "invalid_constraint_counts_may_overlap": {
+            "nonfinite": 0,
+            "nonpositive_parallax": 0,
+            "nonpositive_period": 0,
+            "eccentricity_outside_0_1": 734
+          },
+          "nonfinite_derived_draws": 0,
+          "f_phot_conditional_valid_draw_quantiles_solar_units": [
+            880.2930086460461,
+            1679.7230600468292,
+            5055.281320327871
+          ],
+          "dark_K1_conditional_valid_draw_quantiles_km_s": [
+            639.7612383250986,
+            800.7341786101647,
+            1157.218169645536
+          ],
+          "published_correlation_min_eigenvalue": 0.001213096170091859
+        },
+        "exact_repeat_passed": true,
+        "fractional_quantile_differences": {
+          "f_phot_conditional_valid_draw_quantiles_solar_units": [
+            0.006260510819089865,
+            0.008014273099547513,
+            0.022902800324050083
+          ],
+          "dark_K1_conditional_valid_draw_quantiles_km_s": [
+            0.0020526864425941143,
+            0.0029138224149805945,
+            0.009190597428469373
+          ]
+        }
+      },
+      "novelty_limit": "Full Li2026 1835-source supplementary list unavailable; finite nonmatches do not clear novelty.",
+      "luminous_companion_limit": "NSS XP subset excludes Alternative solutions. No component-flux or spectral multiplicity exclusion from that nonmatch."
+    },
+    {
+      "source_id": "632497706010874240",
+      "review_status": "HELD_ORBIT_AND_NOVELTY_UNRESOLVED",
+      "production_disposition_changed": false,
+      "black_hole_confirmed": false,
+      "period_days": 31.38662480515533,
+      "nominal_conditional_dark_K1_km_s": 397.2304594687264,
+      "nearest_gaia_neighbor": {
+        "source_id": "632544645708760576",
+        "separation_arcsec": 40.4720828924357,
+        "delta_g": -3.0910860000000007,
+        "nominal_g_flux_ratio": 17.235917235537038,
+        "parallax": 1.0446795939543005,
+        "parallax_error": 0.022231176,
+        "pmra": -11.542117425220008,
+        "pmra_error": 0.0247436,
+        "pmdec": -6.942897573267362,
+        "pmdec_error": 0.019878365,
+        "ruwe": 1.0371311,
+        "astrometric_params_solved": 31,
+        "delta_parallax_sigma_independent": 1.975994337361856,
+        "delta_pm_mas_yr": 0.5099330514783822,
+        "pm_mahalanobis_squared": 6.764432382485028
+      },
+      "in_published_31_5day_artifact_interval": true,
+      "source_specific_findings": "31.387day orbit; nearest neighbor40.47arcsec is3.09mag brighter. Similar single-star PM is less consistent with NSS PM. Wide-pair catalogue incomplete.",
+      "next_measurement_that_could_resolve_hold": "Independent RV orbit; establish any wide association before a triple interpretation.",
+      "catalogue_and_spectral_coverage": {
+        "source_id": "632497706010874240",
+        "simbad": {
+          "exact_dr3_id_rows": 0,
+          "cone_5arcsec_rows": 0,
+          "control_success": true,
+          "note": "No catalogue match is not novelty evidence"
+        },
+        "lamost_distinct_observations": [],
+        "lamost_dr6_mrs_cone_5arcsec_rows": 0,
+        "lamost_dr11_mrs_exact_dr3_rows": 0,
+        "galah_dr4_allspec_exact_dr3_rows": 0,
+        "rave_dr5_cone_5arcsec_rows": 0,
+        "apogee_dr17": {
+          "status": "UNAVAILABLE_CONNECTION_TIMEOUT",
+          "constraint": "exact 2MASS cross-identifiers; parent crossmatch ambiguity preserved; no scientific null result",
+          "provenance": "apogee_dr17_tmass14.json"
+        },
+        "wide_binary_catalogue": "INCOMPLETE_SERVICE_TIMEOUT",
+        "hold_status": "HELD; no new validated RV time series or luminous-companion exclusion"
+      },
+      "published_study_url": null,
+      "formal_published_block_propagation": {
+        "source_id": "632497706010874240",
+        "nss_solution_type": "OrbitalAlternative",
+        "first_seed": {
+          "draws": 32768,
+          "seed": 4087841427975504944,
+          "physical_draws": 31890,
+          "invalid_draws": 878,
+          "invalid_fraction": 0.02679443359375,
+          "invalid_constraint_counts_may_overlap": {
+            "nonfinite": 0,
+            "nonpositive_parallax": 0,
+            "nonpositive_period": 0,
+            "eccentricity_outside_0_1": 878
+          },
+          "nonfinite_derived_draws": 0,
+          "f_phot_conditional_valid_draw_quantiles_solar_units": [
+            362.14041473156135,
+            633.0369018223698,
+            1943.2957058838067
+          ],
+          "dark_K1_conditional_valid_draw_quantiles_km_s": [
+            306.8634206938456,
+            440.8150662000801,
+            630.1821821921345
+          ],
+          "published_correlation_min_eigenvalue": 0.001112174056958165
+        },
+        "second_seed": {
+          "draws": 32768,
+          "seed": 12558261202964692427,
+          "physical_draws": 31864,
+          "invalid_draws": 904,
+          "invalid_fraction": 0.027587890625,
+          "invalid_constraint_counts_may_overlap": {
+            "nonfinite": 0,
+            "nonpositive_parallax": 0,
+            "nonpositive_period": 0,
+            "eccentricity_outside_0_1": 904
+          },
+          "nonfinite_derived_draws": 0,
+          "f_phot_conditional_valid_draw_quantiles_solar_units": [
+            363.7252631994895,
+            639.0909201765064,
+            2000.5747085325827
+          ],
+          "dark_K1_conditional_valid_draw_quantiles_km_s": [
+            305.7421048239063,
+            442.7602032237388,
+            633.1002178906373
+          ],
+          "published_correlation_min_eigenvalue": 0.001112174056958165
+        },
+        "exact_repeat_passed": true,
+        "fractional_quantile_differences": {
+          "f_phot_conditional_valid_draw_quantiles_solar_units": [
+            0.004357268048931039,
+            0.009472859280279819,
+            0.02863127400565311
+          ],
+          "dark_K1_conditional_valid_draw_quantiles_km_s": [
+            0.0036541203490593377,
+            0.00439320654723749,
+            0.004609121298718032
+          ]
+        }
+      },
+      "novelty_limit": "Full Li2026 1835-source supplementary list unavailable; finite nonmatches do not clear novelty.",
+      "luminous_companion_limit": "NSS XP subset excludes Alternative solutions. No component-flux or spectral multiplicity exclusion from that nonmatch."
+    },
+    {
+      "source_id": "1533365584518328576",
+      "review_status": "HELD_ORBIT_AND_NOVELTY_UNRESOLVED",
+      "production_disposition_changed": false,
+      "black_hole_confirmed": false,
+      "period_days": 15.692089776023604,
+      "nominal_conditional_dark_K1_km_s": 615.854106663437,
+      "nearest_gaia_neighbor": {
+        "source_id": "1533365584518329344",
+        "separation_arcsec": 13.940473670061793,
+        "delta_g": 3.8390070000000023,
+        "nominal_g_flux_ratio": 0.029133804392517726,
+        "parallax": -0.5485165882304732,
+        "parallax_error": 0.4423594,
+        "pmra": -0.11406296734056505,
+        "pmra_error": 0.38545063,
+        "pmdec": 1.0231488798213615,
+        "pmdec_error": 0.50868976,
+        "ruwe": 1.0891447,
+        "astrometric_params_solved": 31,
+        "delta_parallax_sigma_independent": 3.790284038665369,
+        "delta_pm_mas_yr": 8.997323574389121,
+        "pm_mahalanobis_squared": 527.5839654408245
+      },
+      "in_published_31_5day_artifact_interval": false,
+      "source_specific_findings": "One exact-ID LAMOST spectrum2015-01-08, K3 catalogue class, lowSNR, no retrieved LASP RV.",
+      "next_measurement_that_could_resolve_hold": "Higher-quality repeated spectra; existing spectrum cannot exclude luminous companion.",
+      "catalogue_and_spectral_coverage": {
+        "source_id": "1533365584518328576",
+        "simbad": {
+          "exact_dr3_id_rows": 0,
+          "cone_5arcsec_rows": 0,
+          "control_success": true,
+          "note": "No catalogue match is not novelty evidence"
+        },
+        "lamost_distinct_observations": [
+          {
+            "survey": "LAMOST LRS",
+            "obsid": "294101037",
+            "uid": "G14984010306277",
+            "designation": "J122251.51+405302.1",
+            "observation_date_catalogue": "2015-01-08",
+            "mjd_catalogue": 57030,
+            "gaia_dr3_exact_id": "1533365584518328576",
+            "positional_separation_arcsec": 0.02011347961108663,
+            "ra_deg_catalogue": 185.714633,
+            "dec_deg_catalogue": 40.883936,
+            "classification_catalogue": "K3",
+            "snr_g": 4.4,
+            "snr_r": 3.45,
+            "fibermask": 0,
+            "releases_same_observation": [
+              "DR6 GAVO mirror",
+              "DR11 v2.0 official archive"
+            ],
+            "spectrum_raw": "lamost_spectrum_direct_294101037.raw",
+            "rv_lasp_heliocentric_km_s": null,
+            "rv_lasp_catalogue_error_km_s": null,
+            "quality_note": "Low SNR; absent from queried DR11 AFGK stellar-parameter table",
+            "claim_limit": "One released observation, not an RV time series; no SB1/SB2 or companion classification inferred.",
+            "paper_rv_independence": "Not established"
+          }
+        ],
+        "lamost_dr6_mrs_cone_5arcsec_rows": 0,
+        "lamost_dr11_mrs_exact_dr3_rows": 0,
+        "galah_dr4_allspec_exact_dr3_rows": 0,
+        "rave_dr5_cone_5arcsec_rows": 0,
+        "apogee_dr17": {
+          "status": "UNAVAILABLE_CONNECTION_TIMEOUT",
+          "constraint": "exact 2MASS cross-identifiers; parent crossmatch ambiguity preserved; no scientific null result",
+          "provenance": "apogee_dr17_tmass14.json"
+        },
+        "wide_binary_catalogue": "NOT_QUERIED",
+        "hold_status": "HELD; no new validated RV time series or luminous-companion exclusion"
+      },
+      "published_study_url": null,
+      "formal_published_block_propagation": {
+        "source_id": "1533365584518328576",
+        "nss_solution_type": "OrbitalAlternative",
+        "first_seed": {
+          "draws": 32768,
+          "seed": 2503285125355016145,
+          "physical_draws": 32768,
+          "invalid_draws": 0,
+          "invalid_fraction": 0.0,
+          "invalid_constraint_counts_may_overlap": {
+            "nonfinite": 0,
+            "nonpositive_parallax": 0,
+            "nonpositive_period": 0,
+            "eccentricity_outside_0_1": 0
+          },
+          "nonfinite_derived_draws": 0,
+          "f_phot_conditional_valid_draw_quantiles_solar_units": [
+            246.75013788974852,
+            354.7650903393826,
+            522.5290804806694
+          ],
+          "dark_K1_conditional_valid_draw_quantiles_km_s": [
+            520.5494766885564,
+            628.345257596637,
+            778.0339304065039
+          ],
+          "published_correlation_min_eigenvalue": 0.014162213637005532
+        },
+        "second_seed": {
+          "draws": 32768,
+          "seed": 13079775208762516998,
+          "physical_draws": 32768,
+          "invalid_draws": 0,
+          "invalid_fraction": 0.0,
+          "invalid_constraint_counts_may_overlap": {
+            "nonfinite": 0,
+            "nonpositive_parallax": 0,
+            "nonpositive_period": 0,
+            "eccentricity_outside_0_1": 0
+          },
+          "nonfinite_derived_draws": 0,
+          "f_phot_conditional_valid_draw_quantiles_solar_units": [
+            246.9444011610547,
+            355.9660714449675,
+            521.0014660302235
+          ],
+          "dark_K1_conditional_valid_draw_quantiles_km_s": [
+            521.5885126524161,
+            628.4243818366956,
+            777.2609004133781
+          ],
+          "published_correlation_min_eigenvalue": 0.014162213637005532
+        },
+        "exact_repeat_passed": true,
+        "fractional_quantile_differences": {
+          "f_phot_conditional_valid_draw_quantiles_solar_units": [
+            0.0007866680531845775,
+            0.003373863977287997,
+            0.0029235013083687956
+          ],
+          "dark_K1_conditional_valid_draw_quantiles_km_s": [
+            0.001992060673606236,
+            0.00012590892770160815,
+            0.0009935684845029634
+          ]
+        }
+      },
+      "novelty_limit": "Full Li2026 1835-source supplementary list unavailable; finite nonmatches do not clear novelty.",
+      "luminous_companion_limit": "NSS XP subset excludes Alternative solutions. No component-flux or spectral multiplicity exclusion from that nonmatch."
+    },
+    {
+      "source_id": "1538284425878995712",
+      "review_status": "HELD_ORBIT_AND_NOVELTY_UNRESOLVED",
+      "production_disposition_changed": false,
+      "black_hole_confirmed": false,
+      "period_days": 14.470571249544475,
+      "nominal_conditional_dark_K1_km_s": 504.756323184574,
+      "nearest_gaia_neighbor": {
+        "source_id": "1538284524662789248",
+        "separation_arcsec": 33.97537488988845,
+        "delta_g": 2.4164230000000018,
+        "nominal_g_flux_ratio": 0.10800175183800728,
+        "parallax": 1.8530638090776061,
+        "parallax_error": 0.1670004,
+        "pmra": 17.49940141515795,
+        "pmra_error": 0.14104111,
+        "pmdec": -15.415214712728519,
+        "pmdec_error": 0.19484748,
+        "ruwe": 1.0000645,
+        "astrometric_params_solved": 95,
+        "delta_parallax_sigma_independent": 0.1651929481657988,
+        "delta_pm_mas_yr": 35.02497847910378,
+        "pm_mahalanobis_squared": 53176.88455069609
+      },
+      "in_published_31_5day_artifact_interval": false,
+      "source_specific_findings": "No independent RV found. Nearest Gaia neighbor33.98arcsec has very different PM.",
+      "next_measurement_that_could_resolve_hold": "Independent RV orbit and single/composite SED; no close resolved neighbor does not exclude a sub-resolution companion.",
+      "catalogue_and_spectral_coverage": {
+        "source_id": "1538284425878995712",
+        "simbad": {
+          "exact_dr3_id_rows": 0,
+          "cone_5arcsec_rows": 0,
+          "control_success": true,
+          "note": "No catalogue match is not novelty evidence"
+        },
+        "lamost_distinct_observations": [],
+        "lamost_dr6_mrs_cone_5arcsec_rows": 0,
+        "lamost_dr11_mrs_exact_dr3_rows": 0,
+        "galah_dr4_allspec_exact_dr3_rows": 0,
+        "rave_dr5_cone_5arcsec_rows": 0,
+        "apogee_dr17": {
+          "status": "UNAVAILABLE_CONNECTION_TIMEOUT",
+          "constraint": "exact 2MASS cross-identifiers; parent crossmatch ambiguity preserved; no scientific null result",
+          "provenance": "apogee_dr17_tmass14.json"
+        },
+        "wide_binary_catalogue": "NOT_QUERIED",
+        "hold_status": "HELD; no new validated RV time series or luminous-companion exclusion"
+      },
+      "published_study_url": null,
+      "formal_published_block_propagation": {
+        "source_id": "1538284425878995712",
+        "nss_solution_type": "OrbitalAlternative",
+        "first_seed": {
+          "draws": 32768,
+          "seed": 8972539437320208629,
+          "physical_draws": 32768,
+          "invalid_draws": 0,
+          "invalid_fraction": 0.0,
+          "invalid_constraint_counts_may_overlap": {
+            "nonfinite": 0,
+            "nonpositive_parallax": 0,
+            "nonpositive_period": 0,
+            "eccentricity_outside_0_1": 0
+          },
+          "nonfinite_derived_draws": 0,
+          "f_phot_conditional_valid_draw_quantiles_solar_units": [
+            98.82307358107465,
+            137.79548092710613,
+            198.08578112768976
+          ],
+          "dark_K1_conditional_valid_draw_quantiles_km_s": [
+            427.0333687706347,
+            513.2570162070745,
+            668.6589337481366
+          ],
+          "published_correlation_min_eigenvalue": 0.016477253421649483
+        },
+        "second_seed": {
+          "draws": 32768,
+          "seed": 2950186375319492599,
+          "physical_draws": 32767,
+          "invalid_draws": 1,
+          "invalid_fraction": 3.0517578125e-05,
+          "invalid_constraint_counts_may_overlap": {
+            "nonfinite": 0,
+            "nonpositive_parallax": 0,
+            "nonpositive_period": 0,
+            "eccentricity_outside_0_1": 1
+          },
+          "nonfinite_derived_draws": 0,
+          "f_phot_conditional_valid_draw_quantiles_solar_units": [
+            98.16137391443038,
+            138.1084065189329,
+            197.73315635352722
+          ],
+          "dark_K1_conditional_valid_draw_quantiles_km_s": [
+            426.73446232069193,
+            512.7353897250675,
+            670.8869033760848
+          ],
+          "published_correlation_min_eigenvalue": 0.016477253421649483
+        },
+        "exact_repeat_passed": true,
+        "fractional_quantile_differences": {
+          "f_phot_conditional_valid_draw_quantiles_solar_units": [
+            0.006695801321150041,
+            0.002265796845493766,
+            0.0017801619689967903
+          ],
+          "dark_K1_conditional_valid_draw_quantiles_km_s": [
+            0.0006999604054438878,
+            0.0010163065784501066,
+            0.0033209317647078726
+          ]
+        }
+      },
+      "novelty_limit": "Full Li2026 1835-source supplementary list unavailable; finite nonmatches do not clear novelty.",
+      "luminous_companion_limit": "NSS XP subset excludes Alternative solutions. No component-flux or spectral multiplicity exclusion from that nonmatch."
+    },
+    {
+      "source_id": "4491401821468887552",
+      "review_status": "PREVIOUSLY_STUDIED_CANDIDATE_NOT_NEW",
+      "production_disposition_changed": false,
+      "black_hole_confirmed": false,
+      "period_days": 31.30919944699542,
+      "nominal_conditional_dark_K1_km_s": 349.61578907848696,
+      "nearest_gaia_neighbor": {
+        "source_id": "4491401890188365312",
+        "separation_arcsec": 19.89108013994151,
+        "delta_g": 0.5105760000000004,
+        "nominal_g_flux_ratio": 0.6248411168669558,
+        "parallax": 0.6905567660417332,
+        "parallax_error": 0.06869472,
+        "pmra": 0.4810554654132594,
+        "pmra_error": 0.060502693,
+        "pmdec": 0.1813990281053171,
+        "pmdec_error": 0.055870205,
+        "ruwe": 0.97739315,
+        "astrometric_params_solved": 31,
+        "delta_parallax_sigma_independent": 5.638484617581978,
+        "delta_pm_mas_yr": 14.245163559271036,
+        "pm_mahalanobis_squared": 16549.878938963666
+      },
+      "in_published_31_5day_artifact_interval": true,
+      "source_specific_findings": "Previously studied in Li2026, one effective RV epoch. One retrieved LAMOST2018-05-18 RV-5.31+-4.36km/s has NEARWHOPPER fibre flag; paper/archive epoch independence unknown.",
+      "next_measurement_that_could_resolve_hold": "Prior candidate status resolved: not previously unreported. Validate fibre/pixels and obtain independent epoch series before orbital inference.",
+      "catalogue_and_spectral_coverage": {
+        "source_id": "4491401821468887552",
+        "simbad": {
+          "exact_dr3_id_rows": 0,
+          "cone_5arcsec_rows": 0,
+          "control_success": true,
+          "note": "No catalogue match is not novelty evidence"
+        },
+        "lamost_distinct_observations": [
+          {
+            "survey": "LAMOST LRS",
+            "obsid": "664307135",
+            "uid": "G14348033118988",
+            "designation": "J172600.40+093330.7",
+            "observation_date_catalogue": "2018-05-18",
+            "mjd_catalogue": 58256,
+            "gaia_dr3_exact_id": "4491401821468887552",
+            "positional_separation_arcsec": 0.4020966743414079,
+            "ra_deg_catalogue": 261.5017,
+            "dec_deg_catalogue": 9.5585352,
+            "classification_catalogue": "K5",
+            "snr_g": 16.62,
+            "snr_r": 53.7,
+            "fibermask": 128,
+            "releases_same_observation": [
+              "DR6 GAVO mirror",
+              "DR11 v2.0 official archive"
+            ],
+            "spectrum_raw": "lamost_spectrum_direct_664307135.raw",
+            "rv_lasp_heliocentric_km_s": -5.31,
+            "rv_lasp_catalogue_error_km_s": 4.36,
+            "quality_note": "fibermask128: documented bit8 NEARWHOPPER; line-profile reliability unassessed",
+            "claim_limit": "One released observation, not an RV time series; no SB1/SB2 or companion classification inferred.",
+            "paper_rv_independence": "UNKNOWN: Li et al.2610.34715v1 has n_RV=1 for4491 but no epoch/obsid table. Do not add it as an independent epoch."
+          }
+        ],
+        "lamost_dr6_mrs_cone_5arcsec_rows": 0,
+        "lamost_dr11_mrs_exact_dr3_rows": 0,
+        "galah_dr4_allspec_exact_dr3_rows": 0,
+        "rave_dr5_cone_5arcsec_rows": 0,
+        "apogee_dr17": {
+          "status": "UNAVAILABLE_CONNECTION_TIMEOUT",
+          "constraint": "exact 2MASS cross-identifiers; parent crossmatch ambiguity preserved; no scientific null result",
+          "provenance": "apogee_dr17_tmass14.json"
+        },
+        "wide_binary_catalogue": "NOT_QUERIED",
+        "hold_status": "HELD; no new validated RV time series or luminous-companion exclusion"
+      },
+      "published_study_url": "https://arxiv.org/html/2610.34715v1",
+      "formal_published_block_propagation": {
+        "source_id": "4491401821468887552",
+        "nss_solution_type": "OrbitalAlternative",
+        "first_seed": {
+          "draws": 32768,
+          "seed": 7971486676611233589,
+          "physical_draws": 32714,
+          "invalid_draws": 54,
+          "invalid_fraction": 0.00164794921875,
+          "invalid_constraint_counts_may_overlap": {
+            "nonfinite": 0,
+            "nonpositive_parallax": 0,
+            "nonpositive_period": 0,
+            "eccentricity_outside_0_1": 54
+          },
+          "nonfinite_derived_draws": 0,
+          "f_phot_conditional_valid_draw_quantiles_solar_units": [
+            103.50108738203794,
+            148.6809751733631,
+            252.38383233560373
+          ],
+          "dark_K1_conditional_valid_draw_quantiles_km_s": [
+            321.20637438336763,
+            367.7732900511915,
+            441.04341272855
+          ],
+          "published_correlation_min_eigenvalue": 0.005534924453967632
+        },
+        "second_seed": {
+          "draws": 32768,
+          "seed": 6554104957431309715,
+          "physical_draws": 32711,
+          "invalid_draws": 57,
+          "invalid_fraction": 0.001739501953125,
+          "invalid_constraint_counts_may_overlap": {
+            "nonfinite": 0,
+            "nonpositive_parallax": 0,
+            "nonpositive_period": 0,
+            "eccentricity_outside_0_1": 57
+          },
+          "nonfinite_derived_draws": 0,
+          "f_phot_conditional_valid_draw_quantiles_solar_units": [
+            103.11991386502355,
+            149.29510436686647,
+            252.97763011576367
+          ],
+          "dark_K1_conditional_valid_draw_quantiles_km_s": [
+            321.22675578489424,
+            367.9026112901555,
+            441.0223293207185
+          ],
+          "published_correlation_min_eigenvalue": 0.005534924453967632
+        },
+        "exact_repeat_passed": true,
+        "fractional_quantile_differences": {
+          "f_phot_conditional_valid_draw_quantiles_solar_units": [
+            0.0036827972213221375,
+            0.004113525330303256,
+            0.0023472343380251505
+          ],
+          "dark_K1_conditional_valid_draw_quantiles_km_s": [
+            6.344864230504615e-05,
+            0.00035150943482160766,
+            4.780347517507008e-05
+          ]
+        }
+      },
+      "novelty_limit": "Full Li2026 1835-source supplementary list unavailable; finite nonmatches do not clear novelty.",
+      "luminous_companion_limit": "NSS XP subset excludes Alternative solutions. No component-flux or spectral multiplicity exclusion from that nonmatch."
+    },
+    {
+      "source_id": "5959603097090964992",
+      "review_status": "HELD_ORBIT_AND_NOVELTY_UNRESOLVED",
+      "production_disposition_changed": false,
+      "black_hole_confirmed": false,
+      "period_days": 25.22729708025345,
+      "nominal_conditional_dark_K1_km_s": 390.6041708662214,
+      "nearest_gaia_neighbor": {
+        "source_id": "5959603097060485504",
+        "separation_arcsec": 3.9716023348863656,
+        "delta_g": 5.439865000000001,
+        "nominal_g_flux_ratio": 0.006668896848520046,
+        "parallax": null,
+        "parallax_error": null,
+        "pmra": null,
+        "pmra_error": null,
+        "pmdec": null,
+        "pmdec_error": null,
+        "ruwe": null,
+        "astrometric_params_solved": 3,
+        "delta_parallax_sigma_independent": null,
+        "delta_pm_mas_yr": null,
+        "pm_mahalanobis_squared": null
+      },
+      "in_published_31_5day_artifact_interval": false,
+      "source_specific_findings": "Gaia SOLAR_LIKE classifier0.165; G scatter0.00988mag, no SOS rotation/eclipsing period. Nearest neighbor3.97arcsec is5.44mag fainter.",
+      "next_measurement_that_could_resolve_hold": "Independent RV and photometric time series; classifier score is not physical probability or orbit confirmation.",
+      "catalogue_and_spectral_coverage": {
+        "source_id": "5959603097090964992",
+        "simbad": {
+          "exact_dr3_id_rows": 0,
+          "cone_5arcsec_rows": 0,
+          "control_success": true,
+          "note": "No catalogue match is not novelty evidence"
+        },
+        "lamost_distinct_observations": [],
+        "lamost_dr6_mrs_cone_5arcsec_rows": 0,
+        "lamost_dr11_mrs_exact_dr3_rows": 0,
+        "galah_dr4_allspec_exact_dr3_rows": 0,
+        "rave_dr5_cone_5arcsec_rows": 0,
+        "apogee_dr17": {
+          "status": "UNAVAILABLE_CONNECTION_TIMEOUT",
+          "constraint": "exact 2MASS cross-identifiers; parent crossmatch ambiguity preserved; no scientific null result",
+          "provenance": "apogee_dr17_tmass14.json"
+        },
+        "wide_binary_catalogue": "NOT_QUERIED",
+        "hold_status": "HELD; no new validated RV time series or luminous-companion exclusion"
+      },
+      "published_study_url": null,
+      "formal_published_block_propagation": {
+        "source_id": "5959603097090964992",
+        "nss_solution_type": "OrbitalAlternative",
+        "first_seed": {
+          "draws": 32768,
+          "seed": 1500675370451627354,
+          "physical_draws": 32703,
+          "invalid_draws": 65,
+          "invalid_fraction": 0.001983642578125,
+          "invalid_constraint_counts_may_overlap": {
+            "nonfinite": 0,
+            "nonpositive_parallax": 0,
+            "nonpositive_period": 0,
+            "eccentricity_outside_0_1": 65
+          },
+          "nonfinite_derived_draws": 0,
+          "f_phot_conditional_valid_draw_quantiles_solar_units": [
+            107.88029682382071,
+            143.21949397577185,
+            206.1373190160021
+          ],
+          "dark_K1_conditional_valid_draw_quantiles_km_s": [
+            360.6785945569751,
+            405.3369893111336,
+            473.1676928910284
+          ],
+          "published_correlation_min_eigenvalue": 0.004555100497425916
+        },
+        "second_seed": {
+          "draws": 32768,
+          "seed": 18246650187589209895,
+          "physical_draws": 32708,
+          "invalid_draws": 60,
+          "invalid_fraction": 0.0018310546875,
+          "invalid_constraint_counts_may_overlap": {
+            "nonfinite": 0,
+            "nonpositive_parallax": 0,
+            "nonpositive_period": 0,
+            "eccentricity_outside_0_1": 60
+          },
+          "nonfinite_derived_draws": 0,
+          "f_phot_conditional_valid_draw_quantiles_solar_units": [
+            107.83434347465915,
+            143.33018727769286,
+            204.57736735564922
+          ],
+          "dark_K1_conditional_valid_draw_quantiles_km_s": [
+            360.6486109416888,
+            405.38710331944134,
+            472.2627513477412
+          ],
+          "published_correlation_min_eigenvalue": 0.004555100497425916
+        },
+        "exact_repeat_passed": true,
+        "fractional_quantile_differences": {
+          "f_phot_conditional_valid_draw_quantiles_solar_units": [
+            0.0004259660986714827,
+            0.000772295801906281,
+            0.007567536377203894
+          ],
+          "dark_K1_conditional_valid_draw_quantiles_km_s": [
+            8.313111933670855e-05,
+            0.0001236201346746862,
+            0.0019125176060903351
+          ]
+        }
+      },
+      "novelty_limit": "Full Li2026 1835-source supplementary list unavailable; finite nonmatches do not clear novelty.",
+      "luminous_companion_limit": "NSS XP subset excludes Alternative solutions. No component-flux or spectral multiplicity exclusion from that nonmatch."
+    },
+    {
+      "source_id": "824344003814438528",
+      "review_status": "PREVIOUSLY_STUDIED_CANDIDATE_NOT_NEW",
+      "production_disposition_changed": false,
+      "black_hole_confirmed": false,
+      "period_days": 31.498720306335702,
+      "nominal_conditional_dark_K1_km_s": 297.77310746722003,
+      "nearest_gaia_neighbor": {
+        "source_id": "824344038174176640",
+        "separation_arcsec": 23.335522516948874,
+        "delta_g": -0.5347929999999987,
+        "nominal_g_flux_ratio": 1.636504485482331,
+        "parallax": 3.064753208093318,
+        "parallax_error": 0.17795748,
+        "pmra": -9.93735853169904,
+        "pmra_error": 0.16069055,
+        "pmdec": -14.00714239616314,
+        "pmdec_error": 0.15393321,
+        "ruwe": 7.576027,
+        "astrometric_params_solved": 31,
+        "delta_parallax_sigma_independent": -9.190087256793348,
+        "delta_pm_mas_yr": 12.917868916198074,
+        "pm_mahalanobis_squared": 6421.122136333437
+      },
+      "in_published_31_5day_artifact_interval": true,
+      "source_specific_findings": "Previously studied in Li2026, one effective RV epoch; Gaia SOLAR_LIKE classifier0.455, no SOS rotation/eclipsing period;31.499day alias concern.",
+      "next_measurement_that_could_resolve_hold": "Prior candidate status resolved: not previously unreported. Retrieve the paper RV provenance and additional independent epochs.",
+      "catalogue_and_spectral_coverage": {
+        "source_id": "824344003814438528",
+        "simbad": {
+          "exact_dr3_id_rows": 0,
+          "cone_5arcsec_rows": 0,
+          "control_success": true,
+          "note": "No catalogue match is not novelty evidence"
+        },
+        "lamost_distinct_observations": [],
+        "lamost_dr6_mrs_cone_5arcsec_rows": 0,
+        "lamost_dr11_mrs_exact_dr3_rows": 0,
+        "galah_dr4_allspec_exact_dr3_rows": 0,
+        "rave_dr5_cone_5arcsec_rows": 0,
+        "apogee_dr17": {
+          "status": "UNAVAILABLE_CONNECTION_TIMEOUT",
+          "constraint": "exact 2MASS cross-identifiers; parent crossmatch ambiguity preserved; no scientific null result",
+          "provenance": "apogee_dr17_tmass14.json"
+        },
+        "wide_binary_catalogue": "NOT_QUERIED",
+        "hold_status": "HELD; no new validated RV time series or luminous-companion exclusion"
+      },
+      "published_study_url": "https://arxiv.org/html/2610.34715v1",
+      "formal_published_block_propagation": {
+        "source_id": "824344003814438528",
+        "nss_solution_type": "OrbitalAlternative",
+        "first_seed": {
+          "draws": 32768,
+          "seed": 14786388564346697455,
+          "physical_draws": 32768,
+          "invalid_draws": 0,
+          "invalid_fraction": 0.0,
+          "invalid_constraint_counts_may_overlap": {
+            "nonfinite": 0,
+            "nonpositive_parallax": 0,
+            "nonpositive_period": 0,
+            "eccentricity_outside_0_1": 0
+          },
+          "nonfinite_derived_draws": 0,
+          "f_phot_conditional_valid_draw_quantiles_solar_units": [
+            58.455487208894155,
+            76.36299456844324,
+            123.38784607745696
+          ],
+          "dark_K1_conditional_valid_draw_quantiles_km_s": [
+            275.5550518745383,
+            311.8417347490674,
+            379.03419395456575
+          ],
+          "published_correlation_min_eigenvalue": 0.005690214945969819
+        },
+        "second_seed": {
+          "draws": 32768,
+          "seed": 6538428208725581339,
+          "physical_draws": 32768,
+          "invalid_draws": 0,
+          "invalid_fraction": 0.0,
+          "invalid_constraint_counts_may_overlap": {
+            "nonfinite": 0,
+            "nonpositive_parallax": 0,
+            "nonpositive_period": 0,
+            "eccentricity_outside_0_1": 0
+          },
+          "nonfinite_derived_draws": 0,
+          "f_phot_conditional_valid_draw_quantiles_solar_units": [
+            58.26858308928455,
+            76.53461762261382,
+            124.52105868552589
+          ],
+          "dark_K1_conditional_valid_draw_quantiles_km_s": [
+            274.9607850820877,
+            312.3624519843245,
+            380.05403486535016
+          ],
+          "published_correlation_min_eigenvalue": 0.005690214945969819
+        },
+        "exact_repeat_passed": true,
+        "fractional_quantile_differences": {
+          "f_phot_conditional_valid_draw_quantiles_solar_units": [
+            0.0031973751059792685,
+            0.0022424238795683412,
+            0.00910056997612608
+          ],
+          "dark_K1_conditional_valid_draw_quantiles_km_s": [
+            0.002156617301726017,
+            0.0016670289016785665,
+            0.0026834102975534274
+          ]
+        }
+      },
+      "novelty_limit": "Full Li2026 1835-source supplementary list unavailable; finite nonmatches do not clear novelty.",
+      "luminous_companion_limit": "NSS XP subset excludes Alternative solutions. No component-flux or spectral multiplicity exclusion from that nonmatch."
+    },
+    {
+      "source_id": "5929746958324419200",
+      "review_status": "HELD_ORBIT_AND_NOVELTY_UNRESOLVED",
+      "production_disposition_changed": false,
+      "black_hole_confirmed": false,
+      "period_days": 53.999188027654874,
+      "nominal_conditional_dark_K1_km_s": 250.0520039399733,
+      "nearest_gaia_neighbor": {
+        "source_id": "5929746958292136704",
+        "separation_arcsec": 1.9590535806252154,
+        "delta_g": 4.601610999999998,
+        "nominal_g_flux_ratio": 0.01443296638058462,
+        "parallax": 0.2567821107750659,
+        "parallax_error": 0.5233694,
+        "pmra": -4.034313142086723,
+        "pmra_error": 0.64541507,
+        "pmdec": -4.369777026729995,
+        "pmdec_error": 0.43397108,
+        "ruwe": 1.0656985,
+        "astrometric_params_solved": 95,
+        "delta_parallax_sigma_independent": 0.6682775144680082,
+        "delta_pm_mas_yr": 2.7850948087240646,
+        "pm_mahalanobis_squared": 18.889956133782423
+      },
+      "in_published_31_5day_artifact_interval": false,
+      "source_specific_findings": "Neighbor1.959arcsec, \u0394G4.60; no independent RV found.",
+      "next_measurement_that_could_resolve_hold": "Deblending/imaging and independent RV orbit; catalogue neighbor does not establish cause of astrometry.",
+      "catalogue_and_spectral_coverage": {
+        "source_id": "5929746958324419200",
+        "simbad": {
+          "exact_dr3_id_rows": 0,
+          "cone_5arcsec_rows": 0,
+          "control_success": true,
+          "note": "No catalogue match is not novelty evidence"
+        },
+        "lamost_distinct_observations": [],
+        "lamost_dr6_mrs_cone_5arcsec_rows": 0,
+        "lamost_dr11_mrs_exact_dr3_rows": 0,
+        "galah_dr4_allspec_exact_dr3_rows": 0,
+        "rave_dr5_cone_5arcsec_rows": 0,
+        "apogee_dr17": {
+          "status": "UNAVAILABLE_CONNECTION_TIMEOUT",
+          "constraint": "exact 2MASS cross-identifiers; parent crossmatch ambiguity preserved; no scientific null result",
+          "provenance": "apogee_dr17_tmass14.json"
+        },
+        "wide_binary_catalogue": "NOT_QUERIED",
+        "hold_status": "HELD; no new validated RV time series or luminous-companion exclusion"
+      },
+      "published_study_url": null,
+      "formal_published_block_propagation": {
+        "source_id": "5929746958324419200",
+        "nss_solution_type": "OrbitalAlternative",
+        "first_seed": {
+          "draws": 32768,
+          "seed": 1737891264449814450,
+          "physical_draws": 31341,
+          "invalid_draws": 1427,
+          "invalid_fraction": 0.043548583984375,
+          "invalid_constraint_counts_may_overlap": {
+            "nonfinite": 0,
+            "nonpositive_parallax": 0,
+            "nonpositive_period": 0,
+            "eccentricity_outside_0_1": 1427
+          },
+          "nonfinite_derived_draws": 0,
+          "f_phot_conditional_valid_draw_quantiles_solar_units": [
+            44.76354205865947,
+            66.87968689395926,
+            109.4828860937975
+          ],
+          "dark_K1_conditional_valid_draw_quantiles_km_s": [
+            215.06813897752392,
+            264.68395879052395,
+            444.8504797361709
+          ],
+          "published_correlation_min_eigenvalue": 0.004852912413519973
+        },
+        "second_seed": {
+          "draws": 32768,
+          "seed": 8071746052672089569,
+          "physical_draws": 31430,
+          "invalid_draws": 1338,
+          "invalid_fraction": 0.04083251953125,
+          "invalid_constraint_counts_may_overlap": {
+            "nonfinite": 0,
+            "nonpositive_parallax": 0,
+            "nonpositive_period": 0,
+            "eccentricity_outside_0_1": 1338
+          },
+          "nonfinite_derived_draws": 0,
+          "f_phot_conditional_valid_draw_quantiles_solar_units": [
+            44.74693242231911,
+            66.76980930389524,
+            109.50477482704737
+          ],
+          "dark_K1_conditional_valid_draw_quantiles_km_s": [
+            215.9465402031842,
+            264.9444010479191,
+            449.15354314831035
+          ],
+          "published_correlation_min_eigenvalue": 0.004852912413519973
+        },
+        "exact_repeat_passed": true,
+        "fractional_quantile_differences": {
+          "f_phot_conditional_valid_draw_quantiles_solar_units": [
+            0.00037105277144041987,
+            0.0016429142414831003,
+            0.00019988839102621738
+          ],
+          "dark_K1_conditional_valid_draw_quantiles_km_s": [
+            0.0040676790877677855,
+            0.0009830072134569706,
+            0.00958038398623652
+          ]
+        }
+      },
+      "novelty_limit": "Full Li2026 1835-source supplementary list unavailable; finite nonmatches do not clear novelty.",
+      "luminous_companion_limit": "NSS XP subset excludes Alternative solutions. No component-flux or spectral multiplicity exclusion from that nonmatch."
+    },
+    {
+      "source_id": "2852726284550996352",
+      "review_status": "HELD_ORBIT_AND_NOVELTY_UNRESOLVED",
+      "production_disposition_changed": false,
+      "black_hole_confirmed": false,
+      "period_days": 19.896257707709832,
+      "nominal_conditional_dark_K1_km_s": 260.59158921113465,
+      "nearest_gaia_neighbor": {
+        "source_id": "2852726284550996224",
+        "separation_arcsec": 6.089484401066155,
+        "delta_g": 0.47065799999999847,
+        "nominal_g_flux_ratio": 0.6482414539717408,
+        "parallax": 1.0095782644942826,
+        "parallax_error": 0.026180586,
+        "pmra": 4.238065293687255,
+        "pmra_error": 0.024824249,
+        "pmdec": -4.111129580317012,
+        "pmdec_error": 0.01960032,
+        "ruwe": 0.9687127,
+        "astrometric_params_solved": 31,
+        "delta_parallax_sigma_independent": 1.6276223363451392,
+        "delta_pm_mas_yr": 0.2294051207491766,
+        "pm_mahalanobis_squared": 48.43939284926158
+      },
+      "in_published_31_5day_artifact_interval": false,
+      "source_specific_findings": "Neighbor2852726284550996224 at6.089arcsec, \u0394G0.47, similar parallax/PM; possible wide-component lead. Gaia meanRV uses method2, no epoch scatter.",
+      "next_measurement_that_could_resolve_hold": "Confirm wide association and resolved component spectra; separate inner/outer periods before any triple or compact-object inference.",
+      "catalogue_and_spectral_coverage": {
+        "source_id": "2852726284550996352",
+        "simbad": {
+          "exact_dr3_id_rows": 0,
+          "cone_5arcsec_rows": 0,
+          "control_success": true,
+          "note": "No catalogue match is not novelty evidence"
+        },
+        "lamost_distinct_observations": [],
+        "lamost_dr6_mrs_cone_5arcsec_rows": 0,
+        "lamost_dr11_mrs_exact_dr3_rows": 0,
+        "galah_dr4_allspec_exact_dr3_rows": 0,
+        "rave_dr5_cone_5arcsec_rows": 0,
+        "apogee_dr17": {
+          "status": "UNAVAILABLE_CONNECTION_TIMEOUT",
+          "constraint": "exact 2MASS cross-identifiers; parent crossmatch ambiguity preserved; no scientific null result",
+          "provenance": "apogee_dr17_tmass14.json"
+        },
+        "wide_binary_catalogue": "INCOMPLETE_SERVICE_TIMEOUT",
+        "hold_status": "HELD; no new validated RV time series or luminous-companion exclusion"
+      },
+      "published_study_url": null,
+      "formal_published_block_propagation": {
+        "source_id": "2852726284550996352",
+        "nss_solution_type": "OrbitalAlternative",
+        "first_seed": {
+          "draws": 32768,
+          "seed": 15323954256216028134,
+          "physical_draws": 28601,
+          "invalid_draws": 4167,
+          "invalid_fraction": 0.127166748046875,
+          "invalid_constraint_counts_may_overlap": {
+            "nonfinite": 0,
+            "nonpositive_parallax": 0,
+            "nonpositive_period": 0,
+            "eccentricity_outside_0_1": 4167
+          },
+          "nonfinite_derived_draws": 0,
+          "f_phot_conditional_valid_draw_quantiles_solar_units": [
+            32.4151656158579,
+            52.75370965587354,
+            200.90063872938515
+          ],
+          "dark_K1_conditional_valid_draw_quantiles_km_s": [
+            252.1582089698463,
+            296.1324196107571,
+            464.27860936639104
+          ],
+          "published_correlation_min_eigenvalue": 0.00222544457967976
+        },
+        "second_seed": {
+          "draws": 32768,
+          "seed": 8397473110576885303,
+          "physical_draws": 28670,
+          "invalid_draws": 4098,
+          "invalid_fraction": 0.12506103515625,
+          "invalid_constraint_counts_may_overlap": {
+            "nonfinite": 0,
+            "nonpositive_parallax": 0,
+            "nonpositive_period": 0,
+            "eccentricity_outside_0_1": 4098
+          },
+          "nonfinite_derived_draws": 0,
+          "f_phot_conditional_valid_draw_quantiles_solar_units": [
+            32.54117778116919,
+            52.80363275939032,
+            201.3173473161328
+          ],
+          "dark_K1_conditional_valid_draw_quantiles_km_s": [
+            252.63186946047918,
+            296.1916274508519,
+            463.9454780450054
+          ],
+          "published_correlation_min_eigenvalue": 0.00222544457967976
+        },
+        "exact_repeat_passed": true,
+        "fractional_quantile_differences": {
+          "f_phot_conditional_valid_draw_quantiles_solar_units": [
+            0.003872391041242761,
+            0.0009454482752021877,
+            0.0020699089884851996
+          ],
+          "dark_K1_conditional_valid_draw_quantiles_km_s": [
+            0.0018749039527136083,
+            0.00019989707543181147,
+            0.0007175245955015071
+          ]
+        }
+      },
+      "novelty_limit": "Full Li2026 1835-source supplementary list unavailable; finite nonmatches do not clear novelty.",
+      "luminous_companion_limit": "NSS XP subset excludes Alternative solutions. No component-flux or spectral multiplicity exclusion from that nonmatch."
+    },
+    {
+      "source_id": "5591318172608607232",
+      "review_status": "HELD_ORBIT_AND_NOVELTY_UNRESOLVED",
+      "production_disposition_changed": false,
+      "black_hole_confirmed": false,
+      "period_days": 24.94616570444552,
+      "nominal_conditional_dark_K1_km_s": 254.32235650647277,
+      "nearest_gaia_neighbor": {
+        "source_id": "5591318168307968384",
+        "separation_arcsec": 11.26310119913793,
+        "delta_g": 1.9530639999999977,
+        "nominal_g_flux_ratio": 0.16549100752703177,
+        "parallax": 0.2312965272143904,
+        "parallax_error": 0.18147345,
+        "pmra": -2.1870211639502894,
+        "pmra_error": 0.1687737,
+        "pmdec": 1.823389072151773,
+        "pmdec_error": 0.19735138,
+        "ruwe": 1.0219072,
+        "astrometric_params_solved": 31,
+        "delta_parallax_sigma_independent": 11.222117458283673,
+        "delta_pm_mas_yr": 18.84466156578625,
+        "pm_mahalanobis_squared": 8574.191793477019
+      },
+      "in_published_31_5day_artifact_interval": false,
+      "source_specific_findings": "No independent RV found. Nearest Gaia neighbor11.26arcsec differs strongly in parallax/PM.",
+      "next_measurement_that_could_resolve_hold": "Independent RV orbit and component-flux constraints; unresolved companion not excluded.",
+      "catalogue_and_spectral_coverage": {
+        "source_id": "5591318172608607232",
+        "simbad": {
+          "exact_dr3_id_rows": 0,
+          "cone_5arcsec_rows": 0,
+          "control_success": true,
+          "note": "No catalogue match is not novelty evidence"
+        },
+        "lamost_distinct_observations": [],
+        "lamost_dr6_mrs_cone_5arcsec_rows": 0,
+        "lamost_dr11_mrs_exact_dr3_rows": 0,
+        "galah_dr4_allspec_exact_dr3_rows": 0,
+        "rave_dr5_cone_5arcsec_rows": 0,
+        "apogee_dr17": {
+          "status": "UNAVAILABLE_CONNECTION_TIMEOUT",
+          "constraint": "exact 2MASS cross-identifiers; parent crossmatch ambiguity preserved; no scientific null result",
+          "provenance": "apogee_dr17_tmass14.json"
+        },
+        "wide_binary_catalogue": "NOT_QUERIED",
+        "hold_status": "HELD; no new validated RV time series or luminous-companion exclusion"
+      },
+      "published_study_url": null,
+      "formal_published_block_propagation": {
+        "source_id": "5591318172608607232",
+        "nss_solution_type": "OrbitalAlternative",
+        "first_seed": {
+          "draws": 32768,
+          "seed": 3249782724535128325,
+          "physical_draws": 32504,
+          "invalid_draws": 264,
+          "invalid_fraction": 0.008056640625,
+          "invalid_constraint_counts_may_overlap": {
+            "nonfinite": 0,
+            "nonpositive_parallax": 0,
+            "nonpositive_period": 0,
+            "eccentricity_outside_0_1": 264
+          },
+          "nonfinite_derived_draws": 0,
+          "f_phot_conditional_valid_draw_quantiles_solar_units": [
+            33.048594653594726,
+            47.17460161643804,
+            97.99202417962033
+          ],
+          "dark_K1_conditional_valid_draw_quantiles_km_s": [
+            239.218117409268,
+            273.0658152019708,
+            349.8831218539025
+          ],
+          "published_correlation_min_eigenvalue": 0.008350020174181128
+        },
+        "second_seed": {
+          "draws": 32768,
+          "seed": 17745326484927558227,
+          "physical_draws": 32520,
+          "invalid_draws": 248,
+          "invalid_fraction": 0.007568359375,
+          "invalid_constraint_counts_may_overlap": {
+            "nonfinite": 0,
+            "nonpositive_parallax": 0,
+            "nonpositive_period": 0,
+            "eccentricity_outside_0_1": 248
+          },
+          "nonfinite_derived_draws": 0,
+          "f_phot_conditional_valid_draw_quantiles_solar_units": [
+            33.0737880827597,
+            47.16038267324423,
+            97.0221892295093
+          ],
+          "dark_K1_conditional_valid_draw_quantiles_km_s": [
+            239.0720006646848,
+            273.06315592905145,
+            349.3001753635046
+          ],
+          "published_correlation_min_eigenvalue": 0.008350020174181128
+        },
+        "exact_repeat_passed": true,
+        "fractional_quantile_differences": {
+          "f_phot_conditional_valid_draw_quantiles_solar_units": [
+            0.0007617340082705654,
+            0.0003014109861365754,
+            0.00989708048415572
+          ],
+          "dark_K1_conditional_valid_draw_quantiles_km_s": [
+            0.0006108096918646478,
+            9.738578655033783e-06,
+            0.0016661177804435593
+          ]
+        }
+      },
+      "novelty_limit": "Full Li2026 1835-source supplementary list unavailable; finite nonmatches do not clear novelty.",
+      "luminous_companion_limit": "NSS XP subset excludes Alternative solutions. No component-flux or spectral multiplicity exclusion from that nonmatch."
+    },
+    {
+      "source_id": "4299244434901041024",
+      "review_status": "HELD_ORBIT_AND_NOVELTY_UNRESOLVED",
+      "production_disposition_changed": false,
+      "black_hole_confirmed": false,
+      "period_days": 31.501475704330648,
+      "nominal_conditional_dark_K1_km_s": 238.63562032821875,
+      "nearest_gaia_neighbor": {
+        "source_id": "4299244434901040384",
+        "separation_arcsec": 3.8927603309062384,
+        "delta_g": 6.287060000000002,
+        "nominal_g_flux_ratio": 0.0030561593860902216,
+        "parallax": -0.3018471722971968,
+        "parallax_error": 0.7418628,
+        "pmra": -3.1334806571247418,
+        "pmra_error": 0.9032492,
+        "pmdec": -3.741845706199876,
+        "pmdec_error": 0.46260718,
+        "ruwe": 1.0502827,
+        "astrometric_params_solved": 95,
+        "delta_parallax_sigma_independent": 1.5689007424040662,
+        "delta_pm_mas_yr": 10.448794028005803,
+        "pm_mahalanobis_squared": 260.4894623381789
+      },
+      "in_published_31_5day_artifact_interval": true,
+      "source_specific_findings": "31.501day alias concern; Gaia RV method2; nearest neighbor3.893arcsec is6.29mag fainter, IPD multi-peak2%.",
+      "next_measurement_that_could_resolve_hold": "Phase-resolved RV and scan/image checks; do not turn meanRV error into epoch scatter.",
+      "catalogue_and_spectral_coverage": {
+        "source_id": "4299244434901041024",
+        "simbad": {
+          "exact_dr3_id_rows": 0,
+          "cone_5arcsec_rows": 0,
+          "control_success": true,
+          "note": "No catalogue match is not novelty evidence"
+        },
+        "lamost_distinct_observations": [],
+        "lamost_dr6_mrs_cone_5arcsec_rows": 0,
+        "lamost_dr11_mrs_exact_dr3_rows": 0,
+        "galah_dr4_allspec_exact_dr3_rows": 0,
+        "rave_dr5_cone_5arcsec_rows": 0,
+        "apogee_dr17": {
+          "status": "UNAVAILABLE_CONNECTION_TIMEOUT",
+          "constraint": "exact 2MASS cross-identifiers; parent crossmatch ambiguity preserved; no scientific null result",
+          "provenance": "apogee_dr17_tmass14.json"
+        },
+        "wide_binary_catalogue": "NOT_QUERIED",
+        "hold_status": "HELD; no new validated RV time series or luminous-companion exclusion"
+      },
+      "published_study_url": null,
+      "formal_published_block_propagation": {
+        "source_id": "4299244434901041024",
+        "nss_solution_type": "OrbitalAlternative",
+        "first_seed": {
+          "draws": 32768,
+          "seed": 15682340289799323695,
+          "physical_draws": 32768,
+          "invalid_draws": 0,
+          "invalid_fraction": 0.0,
+          "invalid_constraint_counts_may_overlap": {
+            "nonfinite": 0,
+            "nonpositive_parallax": 0,
+            "nonpositive_period": 0,
+            "eccentricity_outside_0_1": 0
+          },
+          "nonfinite_derived_draws": 0,
+          "f_phot_conditional_valid_draw_quantiles_solar_units": [
+            26.629349858966595,
+            35.732948126971806,
+            49.644414165694165
+          ],
+          "dark_K1_conditional_valid_draw_quantiles_km_s": [
+            214.99331098661568,
+            242.35418955632184,
+            277.2943833130881
+          ],
+          "published_correlation_min_eigenvalue": 0.016071208023672033
+        },
+        "second_seed": {
+          "draws": 32768,
+          "seed": 10943311238013812928,
+          "physical_draws": 32768,
+          "invalid_draws": 0,
+          "invalid_fraction": 0.0,
+          "invalid_constraint_counts_may_overlap": {
+            "nonfinite": 0,
+            "nonpositive_parallax": 0,
+            "nonpositive_period": 0,
+            "eccentricity_outside_0_1": 0
+          },
+          "nonfinite_derived_draws": 0,
+          "f_phot_conditional_valid_draw_quantiles_solar_units": [
+            26.55025243344375,
+            35.67124131153618,
+            49.52393961633658
+          ],
+          "dark_K1_conditional_valid_draw_quantiles_km_s": [
+            214.61698758900008,
+            242.23042255119947,
+            276.7083062325364
+          ],
+          "published_correlation_min_eigenvalue": 0.016071208023672033
+        },
+        "exact_repeat_passed": true,
+        "fractional_quantile_differences": {
+          "f_phot_conditional_valid_draw_quantiles_solar_units": [
+            0.0029703100504428087,
+            0.0017268884508594522,
+            0.0024267493409327037
+          ],
+          "dark_K1_conditional_valid_draw_quantiles_km_s": [
+            0.0017503958420317326,
+            0.0005106864682180857,
+            0.002113555541764911
+          ]
+        }
+      },
+      "novelty_limit": "Full Li2026 1835-source supplementary list unavailable; finite nonmatches do not clear novelty.",
+      "luminous_companion_limit": "NSS XP subset excludes Alternative solutions. No component-flux or spectral multiplicity exclusion from that nonmatch."
+    },
+    {
+      "source_id": "2245423750054837888",
+      "review_status": "HELD_ORBIT_AND_NOVELTY_UNRESOLVED",
+      "production_disposition_changed": false,
+      "black_hole_confirmed": false,
+      "period_days": 91.098644139502,
+      "nominal_conditional_dark_K1_km_s": 174.9077875271967,
+      "nearest_gaia_neighbor": {
+        "source_id": "2245423750054837760",
+        "separation_arcsec": 5.46465030270351,
+        "delta_g": 1.3183820000000015,
+        "nominal_g_flux_ratio": 0.29692529730912076,
+        "parallax": 1.4183617058646616,
+        "parallax_error": 0.043256465,
+        "pmra": 2.395072364566671,
+        "pmra_error": 0.055692066,
+        "pmdec": 7.65028211128908,
+        "pmdec_error": 0.0498977,
+        "ruwe": 1.0044574,
+        "astrometric_params_solved": 31,
+        "delta_parallax_sigma_independent": -10.024701364950657,
+        "delta_pm_mas_yr": 5.352833930753773,
+        "pm_mahalanobis_squared": 5230.40541835469
+      },
+      "in_published_31_5day_artifact_interval": false,
+      "source_specific_findings": "91.099day orbit; no independent RV found. Neighbor5.465arcsec, \u0394G1.32, discrepant parallax/PM.",
+      "next_measurement_that_could_resolve_hold": "Independent RV orbit and component-flux assessment; unrelated foreground/background neighbor may still affect apertures.",
+      "catalogue_and_spectral_coverage": {
+        "source_id": "2245423750054837888",
+        "simbad": {
+          "exact_dr3_id_rows": 0,
+          "cone_5arcsec_rows": 0,
+          "control_success": true,
+          "note": "No catalogue match is not novelty evidence"
+        },
+        "lamost_distinct_observations": [],
+        "lamost_dr6_mrs_cone_5arcsec_rows": 0,
+        "lamost_dr11_mrs_exact_dr3_rows": 0,
+        "galah_dr4_allspec_exact_dr3_rows": 0,
+        "rave_dr5_cone_5arcsec_rows": 0,
+        "apogee_dr17": {
+          "status": "UNAVAILABLE_CONNECTION_TIMEOUT",
+          "constraint": "exact 2MASS cross-identifiers; parent crossmatch ambiguity preserved; no scientific null result",
+          "provenance": "apogee_dr17_tmass14.json"
+        },
+        "wide_binary_catalogue": "NOT_QUERIED",
+        "hold_status": "HELD; no new validated RV time series or luminous-companion exclusion"
+      },
+      "published_study_url": null,
+      "formal_published_block_propagation": {
+        "source_id": "2245423750054837888",
+        "nss_solution_type": "OrbitalAlternative",
+        "first_seed": {
+          "draws": 32768,
+          "seed": 2129378184311293938,
+          "physical_draws": 32768,
+          "invalid_draws": 0,
+          "invalid_fraction": 0.0,
+          "invalid_constraint_counts_may_overlap": {
+            "nonfinite": 0,
+            "nonpositive_parallax": 0,
+            "nonpositive_period": 0,
+            "eccentricity_outside_0_1": 0
+          },
+          "nonfinite_derived_draws": 0,
+          "f_phot_conditional_valid_draw_quantiles_solar_units": [
+            22.208246136138683,
+            29.46826254389768,
+            41.11837647604453
+          ],
+          "dark_K1_conditional_valid_draw_quantiles_km_s": [
+            153.89751861354077,
+            177.6330144948189,
+            210.952460894729
+          ],
+          "published_correlation_min_eigenvalue": 0.007227123836898631
+        },
+        "second_seed": {
+          "draws": 32768,
+          "seed": 15917911309005549783,
+          "physical_draws": 32768,
+          "invalid_draws": 0,
+          "invalid_fraction": 0.0,
+          "invalid_constraint_counts_may_overlap": {
+            "nonfinite": 0,
+            "nonpositive_parallax": 0,
+            "nonpositive_period": 0,
+            "eccentricity_outside_0_1": 0
+          },
+          "nonfinite_derived_draws": 0,
+          "f_phot_conditional_valid_draw_quantiles_solar_units": [
+            22.145353015905954,
+            29.493813172525385,
+            41.18081085509707
+          ],
+          "dark_K1_conditional_valid_draw_quantiles_km_s": [
+            153.75043325212417,
+            177.5428715705055,
+            211.3635053044353
+          ],
+          "published_correlation_min_eigenvalue": 0.007227123836898631
+        },
+        "exact_repeat_passed": true,
+        "fractional_quantile_differences": {
+          "f_phot_conditional_valid_draw_quantiles_solar_units": [
+            0.0028319715049621003,
+            0.0008663046883170331,
+            0.0015161036841219078
+          ],
+          "dark_K1_conditional_valid_draw_quantiles_km_s": [
+            0.0009557357567665092,
+            0.0005074671764691962,
+            0.0019447274453281939
+          ]
+        }
+      },
+      "novelty_limit": "Full Li2026 1835-source supplementary list unavailable; finite nonmatches do not clear novelty.",
+      "luminous_companion_limit": "NSS XP subset excludes Alternative solutions. No component-flux or spectral multiplicity exclusion from that nonmatch."
+    }
+  ]
+}

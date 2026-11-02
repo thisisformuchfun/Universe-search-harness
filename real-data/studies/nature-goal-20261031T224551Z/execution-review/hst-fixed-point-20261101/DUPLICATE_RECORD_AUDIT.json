@@ -1,0 +1,141 @@
+{
+  "created_utc": "2026-11-01T07:16:28.733935+00:00",
+  "raw_sha256": "dbfb5660e120a04888538f8e8bce4b0d22ca52ea5784b50f85f5c9b065e8d01b",
+  "fields": 31,
+  "rows": 20,
+  "distinct_exact_objids": 5,
+  "distinct_raw_cell_tuples": 20,
+  "distinct_obs_id_count": 5,
+  "distinct_publisher_DID_count": 5,
+  "distinct_access_URLs": 20,
+  "groups": [
+    {
+      "objid_exact": "109191367",
+      "row_indices_one_based": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "rows": 4,
+      "obs_ids": [
+        "n3t401e2q"
+      ],
+      "unique_publisher_DIDs": 1,
+      "differing_fields": [
+        "access_url",
+        "access_format",
+        "access_estsize"
+      ],
+      "unique_access_URLs": 4
+    },
+    {
+      "objid_exact": "109191376",
+      "row_indices_one_based": [
+        5,
+        6,
+        7,
+        8
+      ],
+      "rows": 4,
+      "obs_ids": [
+        "n3t401drq"
+      ],
+      "unique_publisher_DIDs": 1,
+      "differing_fields": [
+        "access_url",
+        "access_format",
+        "access_estsize"
+      ],
+      "unique_access_URLs": 4
+    },
+    {
+      "objid_exact": "109191380",
+      "row_indices_one_based": [
+        9,
+        10,
+        11,
+        12
+      ],
+      "rows": 4,
+      "obs_ids": [
+        "n3t401eaq"
+      ],
+      "unique_publisher_DIDs": 1,
+      "differing_fields": [
+        "access_url",
+        "access_format",
+        "access_estsize"
+      ],
+      "unique_access_URLs": 4
+    },
+    {
+      "objid_exact": "109191389",
+      "row_indices_one_based": [
+        13,
+        14,
+        15,
+        16
+      ],
+      "rows": 4,
+      "obs_ids": [
+        "n3t401egq"
+      ],
+      "unique_publisher_DIDs": 1,
+      "differing_fields": [
+        "access_url",
+        "access_format",
+        "access_estsize"
+      ],
+      "unique_access_URLs": 4
+    },
+    {
+      "objid_exact": "109191393",
+      "row_indices_one_based": [
+        17,
+        18,
+        19,
+        20
+      ],
+      "rows": 4,
+      "obs_ids": [
+        "n3t401ehq"
+      ],
+      "unique_publisher_DIDs": 1,
+      "differing_fields": [
+        "access_url",
+        "access_format",
+        "access_estsize"
+      ],
+      "unique_access_URLs": 4
+    }
+  ],
+  "first28_known_control_cells_equal_previous_row_presence": true,
+  "all_rows_preserved_without_deduplication": true,
+  "objid_order_non_decreasing_but_not_unique": true,
+  "observed_composite_objid_access_URL_unique_here": true,
+  "global_stable_unique_key_validated": false,
+  "interpretation": "The five obsids each appear in four access-record variants. First28 cell values are identical within each objid; only access_url/access_format/access_estsize differ. These are not four independent observations or exact duplicate tuples. Saved schema calls objid primary key, but returned view disproves row uniqueness in this response. ORDER BY objid is not a total order. No keyset pagination using objid alone, globally unique composite key, product access rights, independent epochs or completeness is validated. The20-row boundary remains truncated/unknown coverage.",
+  "row_fingerprints_sha256": [
+    "cf4fa19e8bd0f0bf8a6626542628dbf58387527c55bd90cea80ab873fc639bac",
+    "8f9a27dda44b89a48200d3496d89f2bee678e99e8fd1d99370d2b11a222b4939",
+    "c429300c8e7969a3fc9ec50a9772e2e0d861e9694e1c87021954487b31b2134e",
+    "59148da378c6ea28b94cdd86630666e4135c0e324f4b6207424f125d97d05b8d",
+    "d5839a0dc4aa1dcbc79cf42f953cf2a4fc874a726cce86e1ac8decf7548ae75a",
+    "19fff64f90c9c2621ac44529afefa52dc35ec77e6e1c16b8be036ec28ab23dd6",
+    "ffdb920cdcf090915a7813fdfd97fe160c68a6eaa7fffe9b02639dbcd4ef5e9d",
+    "a322b8698fa952a6d91a94d208f44a47cede99d16c479374ba7e1328b0ba1bd3",
+    "3fac21ac6599839fa7f22a6555e185a27b95e2a11ca1d2935a173ce105b6a980",
+    "010246f27d8fb96a6396f002ec239ae308b83eddc91834a383f263c9a9ef3d67",
+    "e5cb403dea2ec94739af282f7c6b0df14a14a1cdf3aa5850c2a7304f41b79cc0",
+    "c7b07d35e9f33a30368bd9f281cb5960c67bd1be72245dda20f1f5d305fa9c5e",
+    "e73ca58f73005fc84573ed081e57e5c91b082bc085783a2c83b9b27830d08dd2",
+    "84ce0ba6d5f0c15bcf483d56d2d8f602676390d30979ffc504f16b42d3f9007f",
+    "7ede868c4b95f9fa4ff78163b56eb1b8d71172456769611ca4b244df73282033",
+    "e442f52ddf352b91aedc9583340d77ba74dbc58600101ff82913fc07a38c4f19",
+    "822571b0590dca532030bc6b9fdca572baaf2639732d9ffeee160b4557029e07",
+    "f986f54355fd9dbc5b6d4d9249199d63a26a7bf90ec01c7e5e1ddb8b9c3a9ca4",
+    "9a1595309d16c52d74e5c6ec49fea2587668e50d7e2240e47d0d6b789b7139bc",
+    "a4e6ec21de7c872680fb1e1296108ee5d148d808e76181555098415af3db5e60"
+  ]
+}

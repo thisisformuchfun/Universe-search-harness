@@ -1,0 +1,20 @@
+{
+  "url": "https://zenodo.org/api/records/19181131/files/RGB+BH_candidates_from_GaiaDR3_summary_diagnostics.csv/content",
+  "query": null,
+  "started_at_utc": "2026-10-31T21:16:03.971487+00:00",
+  "timeout_seconds": 30,
+  "retries": 0,
+  "max_bytes": 12000000,
+  "research_only": true,
+  "accept": "*/*",
+  "http_status": 200,
+  "effective_url": "https://zenodo.org/api/records/19181131/files/RGB+BH_candidates_from_GaiaDR3_summary_diagnostics.csv/content",
+  "content_type": "text/plain; charset=utf-8",
+  "content_length": "9952764",
+  "received_bytes": 9952764,
+  "truncated_by_cap": false,
+  "raw_sha256": "dbe32424ff4ec5fa773d92ac2892958ae080e777f6a8d2afcaf19617553fcdb5",
+  "raw_file": "zenodo_v2_RGB_20261031.raw",
+  "finished_at_utc": "2026-10-31T21:16:22.920331+00:00",
+  "elapsed_seconds": 18.95299999997951
+}

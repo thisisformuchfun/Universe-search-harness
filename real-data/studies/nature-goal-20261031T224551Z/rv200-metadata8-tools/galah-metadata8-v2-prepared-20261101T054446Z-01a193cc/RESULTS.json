@@ -1,0 +1,88 @@
+{
+  "status": "FAILED_VISIBLE_INCOMPLETE",
+  "finished_utc": "2026-11-01T05:56:03.279236+00:00",
+  "elapsed_perf_counter_seconds": 1.354768,
+  "attempted_requests": 1,
+  "body_bytes": 8325,
+  "requests": [
+    {
+      "name": "galah_00",
+      "sobject_id": "160524002101096",
+      "status": "HELD_UNSUPPORTED_OR_FAILED_METADATA",
+      "spacing_evidence": {
+        "prior_transport_return_ns": null,
+        "not_before_ns": null,
+        "admitted_ns": 469372492359100,
+        "checks": 1,
+        "sleep_calls": 0,
+        "minimum_interval_ns": 1000000000,
+        "safety_margin_ns": 50000000,
+        "counter_gap_ns": null
+      },
+      "transport_return_ns": 469373834337200,
+      "retrieval_sha256": "4d51429d06ebe39dd9769ddcc880ef9a64cebbbea150a44f1e4897c0337c512d",
+      "body_bytes": 8325,
+      "rows": 20,
+      "exact_ID_rows": 20,
+      "parsed_sha256": "e8fea690e92cfc3dfec1ea29773ce0b7e36f3002ece3bfab897f2008c8af4791",
+      "fatal_issues": [
+        "UNREVIEWED_EXTRA_FIELDS_VALUES_RAW_ONLY"
+      ],
+      "interpretation_holds": [
+        "RESPONSE_RELEASE_NOT_EXPLICITLY_VERIFIED"
+      ]
+    },
+    {
+      "name": "galah_01",
+      "sobject_id": "171228004201312",
+      "status": "UNATTEMPTED"
+    },
+    {
+      "name": "galah_02",
+      "sobject_id": "140118003501327",
+      "status": "UNATTEMPTED"
+    },
+    {
+      "name": "galah_03",
+      "sobject_id": "140307001601327",
+      "status": "UNATTEMPTED"
+    },
+    {
+      "name": "galah_04",
+      "sobject_id": "161117003501169",
+      "status": "UNATTEMPTED"
+    },
+    {
+      "name": "galah_05",
+      "sobject_id": "220815003201170",
+      "status": "UNATTEMPTED"
+    },
+    {
+      "name": "galah_06",
+      "sobject_id": "140808004701207",
+      "status": "UNATTEMPTED"
+    },
+    {
+      "name": "galah_07",
+      "sobject_id": "221105002101197",
+      "status": "UNATTEMPTED"
+    }
+  ],
+  "clock": {
+    "name": "perf_counter_ns",
+    "implementation": "QueryPerformanceCounter()",
+    "monotonic": true,
+    "adjustable": false,
+    "reported_resolution_ns": 100,
+    "safety_margin_ns": 50000000,
+    "contract": "Within-run counter differences govern admission. UTC timestamps are audit labels and may be quantized or adjusted; they are not the spacing clock."
+  },
+  "error": {
+    "type": "RuntimeError",
+    "message": "Unsupported or unattributed metadata; raw preserved"
+  },
+  "product_downloads": 0,
+  "returned_URLs_followed": false,
+  "independent_exposures_inferred": false,
+  "scientific_policy_or_holdout_changed": false
+}

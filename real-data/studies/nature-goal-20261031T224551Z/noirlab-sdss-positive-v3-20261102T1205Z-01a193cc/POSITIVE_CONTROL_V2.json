@@ -1,0 +1,41 @@
+{
+  "created_utc": "2026-11-02T12:10:08.889449+00:00",
+  "input_sha256": "4a2ca013b79bbe7bd1d57286f7504554f640139034c8f1e2dce35183a7f809f5",
+  "query_sha256": "35501f4e6b6234ccc1a88498cac569992da849b6b3a498fdaa839f261d32c28b",
+  "evidence_pins": {
+    "query": "35501f4e6b6234ccc1a88498cac569992da849b6b3a498fdaa839f261d32c28b",
+    "protocol": "ad84ffb8d2ec70ae28eb5537bacc7bbfcb1a548e4fced538a6aa3713e39055eb",
+    "raw": "4a2ca013b79bbe7bd1d57286f7504554f640139034c8f1e2dce35183a7f809f5",
+    "request": "b1e807e086b3364a0fe1627ee2560eeb851e0316a9a7beaf61f6297dbf588ff8",
+    "native": "5f7f2a277a3635f012203f6415b4e58885228a97c584472de70a0acb57fc3a43",
+    "result": "14d30cf0624cfd3bb12fdbd276331e830220d26048898d409ccf250905701173",
+    "finish": "01102f82c95d321eb5d9fe74449e7f91bb5d5742d57d677aa6a30cd02ec2b7d5"
+  },
+  "result": {
+    "status": "PASS_FIXED_PUBLISHED_CONTROL",
+    "row_count": 1,
+    "records": [
+      {
+        "x_specobjid": "7912885126627088384",
+        "gaia_source_id": "1607896637338835712",
+        "ra1": 214.17772000000002,
+        "dec1": 52.262147,
+        "ra2": 214.1777755466145,
+        "dec2": 52.26208378970914,
+        "distance": 0.2583826592661557,
+        "s_specobjid": "7912885126627088384",
+        "plate": "7028",
+        "mjd": "56449",
+        "fiberid": "220",
+        "fiber_ra": 214.17772000000002,
+        "fiber_dec": 52.262147,
+        "run2d": "v5_13_2",
+        "computed_separation_arcsec_assuming_degrees": 0.25838265925170484,
+        "fiber_to_paper_rounded_arcsec_assuming_degrees": 0.5577848688481339,
+        "gaia_to_paper_rounded_arcsec_assuming_degrees": 0.3064172752489696
+      }
+    ],
+    "coordinate_assumption": "crossmatch RA/Dec interpreted as degrees; unit cells were blank",
+    "scope": "one non-held positive; no completeness, fibre light, RV or orbit conclusion"
+  }
+}

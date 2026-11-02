@@ -1,0 +1,50 @@
+{
+  "started_utc": "2026-11-02T09:18:22.192677+00:00",
+  "request": {
+    "name": "target",
+    "method": "POST",
+    "url": "https://nadc.china-vo.org/data/data/general/sedr5/sexprv/build.csvs",
+    "payload_sha256": "4f6e5a30cb9eded0d5a32f6ee45912ca718d8ba8385a179b076869cc4b0017c5",
+    "manifest_sha256": "1c93d8e2e759d1f39065c30b9f1c6a62da324331115fc358d90b229a6a2ff64e",
+    "protocol_sha256": "a5aa19ad59a33f2e0c69299b56722b40ef57183fe7ac7158ddf4df5fcac2f0d7",
+    "scope": "public catalogue identity strings only; no RV analysis"
+  },
+  "command": [
+    "C:/Windows/System32/curl.exe",
+    "--disable",
+    "--proto",
+    "=https",
+    "--connect-timeout",
+    "15",
+    "--max-time",
+    "45",
+    "--max-filesize",
+    "524288",
+    "--silent",
+    "--show-error",
+    "--dump-header",
+    "C:\\gogogo\\universe search harness\\blackhole search\\astra-20261031T2113Z-01a193cc\\studies\\nature-goal-20261031T224551Z\\sedr5-target-query-20261102T0913Z-01a193cc\\capture-v1\\target.headers",
+    "--output",
+    "C:\\gogogo\\universe search harness\\blackhole search\\astra-20261031T2113Z-01a193cc\\studies\\nature-goal-20261031T224551Z\\sedr5-target-query-20261102T0913Z-01a193cc\\capture-v1\\target.raw",
+    "--write-out",
+    "%{http_code}\n%{ssl_verify_result}\n%{size_download}\n%{num_redirects}\n%{url_effective}\n",
+    "--header",
+    "Content-Type: multipart/form-data; boundary=astra-sedr5-01a193cc-boundary",
+    "--data-binary",
+    "@C:\\gogogo\\universe search harness\\blackhole search\\astra-20261031T2113Z-01a193cc\\studies\\nature-goal-20261031T224551Z\\sedr5-target-query-20261102T0913Z-01a193cc\\target.body",
+    "--url",
+    "https://nadc.china-vo.org/data/data/general/sedr5/sexprv/build.csvs"
+  ],
+  "limits": {
+    "body_bytes": 524288,
+    "header_bytes": 65536,
+    "stdout_bytes": 4096,
+    "stderr_bytes": 262144,
+    "curl_seconds": 45,
+    "process_seconds": 48,
+    "poll_seconds": 0.02,
+    "owned_process_cleanup_seconds": 2
+  },
+  "batch_deadline_ns": 46022734440600,
+  "effective_curl_seconds": 45
+}

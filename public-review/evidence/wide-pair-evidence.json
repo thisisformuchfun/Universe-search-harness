@@ -1,0 +1,170 @@
+{
+  "reviewed_utc": "2026-10-31T23:38:45.734885+00:00",
+  "verdict": "VERIFIED_POSITIVE_PUBLISHED_WIDE_PAIR_MEMBERSHIP_WITH_INCOMPLETE_REVERSE_ROLE_QUERY",
+  "raw_sha256": "36d34d23dd37322b05324969b038599532bab4a206e9c932f3b78bd4565c97bf",
+  "protocol_sha256": "3d848a41204e850c62742ed36472297d4aabe57f812b6061104518fdbc5a2428",
+  "table": "J/MNRAS/506/2269/catalog",
+  "article_bibcode": "bibcode:2021MNRAS.506.2269E",
+  "catalogue_reference_url": "https://cdsarc.cds.unistra.fr/viz-bin/cat/J/MNRAS/506/2269",
+  "actual_returned_rows": 1,
+  "server_reported_matches": 1,
+  "exact_selected_fields": {
+    "Source1": {
+      "exact_text": "2852726284550996352",
+      "schema": {
+        "name": "Source1",
+        "ucd": "meta.id;meta.main",
+        "datatype": "long",
+        "width": "19"
+      },
+      "description": "Unique source identifier from Gaia EDR3 (I/350) (source_id1)"
+    },
+    "Source2": {
+      "exact_text": "2852726284550996224",
+      "schema": {
+        "name": "Source2",
+        "ucd": "meta.id.assoc",
+        "datatype": "long",
+        "width": "19"
+      },
+      "description": "Unique source identifier from Gaia EDR3 (I/350) (source_id2)"
+    },
+    "R": {
+      "exact_text": "3.430363601580250100e-03",
+      "schema": {
+        "name": "R",
+        "ucd": "stat.fit.param",
+        "datatype": "double",
+        "width": "25",
+        "precision": "E18"
+      },
+      "description": "R chance align (R_chance_align) (2)"
+    },
+    "theta": {
+      "exact_text": "1.691523444694767453e-03",
+      "schema": {
+        "name": "theta",
+        "ucd": "pos.angDistance",
+        "datatype": "double",
+        "width": "25",
+        "precision": "E18",
+        "unit": "deg"
+      },
+      "description": "Angular separation (pairdistance)"
+    },
+    "sepAU": {
+      "exact_text": "5637.754594496825121",
+      "schema": {
+        "name": "sepAU",
+        "ucd": "pos.distance;src.orbital",
+        "datatype": "double",
+        "width": "22",
+        "precision": "15",
+        "unit": "AU"
+      },
+      "description": "Projected separation (sep_AU)"
+    },
+    "BinType": {
+      "exact_text": "MSMS",
+      "schema": {
+        "name": "BinType",
+        "ucd": "meta.code",
+        "datatype": "char",
+        "arraysize": "4"
+      },
+      "description": "Binary type (binary_type) (1)"
+    },
+    "RA_ICRS": {
+      "exact_text": "358.1038581667645530615",
+      "schema": {
+        "name": "RA_ICRS",
+        "ucd": "pos.eq.ra;meta.main",
+        "ref": "H_2016.000",
+        "datatype": "double",
+        "width": "23",
+        "precision": "19",
+        "unit": "deg"
+      },
+      "description": "Right ascension (ICRS) at Ep=2016.0 (ra1)"
+    },
+    "DE_ICRS": {
+      "exact_text": "+26.2920229736276240828",
+      "schema": {
+        "name": "DE_ICRS",
+        "ucd": "pos.eq.dec;meta.main",
+        "ref": "H_2016.000",
+        "datatype": "double",
+        "width": "23",
+        "precision": "19",
+        "unit": "deg"
+      },
+      "description": "Declination (ICRS) at Ep=2016.0 (dec1)"
+    },
+    "RA2deg": {
+      "exact_text": "3.581019742850343164e+02",
+      "schema": {
+        "name": "RA2deg",
+        "ucd": "pos.eq.ra",
+        "datatype": "double",
+        "width": "25",
+        "precision": "E18",
+        "unit": "deg"
+      },
+      "description": "Right ascension (ICRS) at Ep=2016.0 (ra2)"
+    },
+    "DE2deg": {
+      "exact_text": "2.629211551868515073e+01",
+      "schema": {
+        "name": "DE2deg",
+        "ucd": "pos.eq.dec",
+        "datatype": "double",
+        "width": "25",
+        "precision": "E18",
+        "unit": "deg"
+      },
+      "description": "Declination (ICRS) at Ep=2016.0 (dec2)"
+    },
+    "Plx1": {
+      "exact_text": "1.0801258371276543",
+      "schema": {
+        "name": "Plx1",
+        "ucd": "pos.parallax.trig",
+        "datatype": "double",
+        "width": "20",
+        "precision": "16",
+        "unit": "mas"
+      },
+      "description": "Parallax (parallax1)"
+    },
+    "Plx2": {
+      "exact_text": "1.0095782644942826",
+      "schema": {
+        "name": "Plx2",
+        "ucd": "pos.parallax.trig",
+        "datatype": "double",
+        "width": "20",
+        "precision": "16",
+        "unit": "mas"
+      },
+      "description": "Parallax (parallax2)"
+    }
+  },
+  "independent_arithmetic": {
+    "angular_separation_arcsec": 6.089484401065164,
+    "catalogue_theta_arcsec": 6.089484400901163,
+    "projected_separation_using_catalogue_primary_parallax_AU": 5637.754594496825,
+    "catalogue_projected_separation_AU": 5637.754594496825
+  },
+  "identity_notes": "Source1/2 metadata explicitly say GaiaEDR3. Exact19-digit strings preserved; their numeric equality to already investigatedDR3 identifiers is recorded without float conversion.",
+  "reverse_role_query": "Source2=target timed out withHTTP0/curl28 and no body; it is unavailable, not a nonmatch or complete pair census.",
+  "interpretation_limits": [
+    "Positive membership supplies prior published wide-pair evidence for this exact pair. It is not a newly discovered wide pair, a confirmed boundorbit, a measured triple architecture, or a BH discovery.",
+    "R is the catalogue R_chance_align statistic with a referenced note; do not reinterpret it as a calibrated probability that theNSS solution is correct, a BH probability, or a new release threshold.",
+    "sepAU is nominal projected separation using catalogue geometry; it is not semimajoraxis or3Ddistance.",
+    "Published pair selection uses relatedGaia astrometry; it is not an independent measurement that validates the innerNSSorbit or establishes the origin of blending.",
+    "Both objects remain subject to source/solution provenance, multiplicity, scan/blend and RV follow-up holds. No new criterion or automatic exclusion is adopted."
+  ],
+  "network_requests_by_reviewer": 0,
+  "production_changed": false,
+  "holdout_evaluated": false
+}

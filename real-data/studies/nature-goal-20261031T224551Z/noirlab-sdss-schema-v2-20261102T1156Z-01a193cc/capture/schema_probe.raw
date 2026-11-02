@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VOTABLE xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="xmlns:http://www.ivoa.net/xml/VOTable-1.2.xsd" version="1.2">
+<RESOURCE type="results">
+<DESCRIPTION>DALServer TAP Query</DESCRIPTION>
+<INFO name="QUERY_STATUS" value="OK"/>
+<INFO name="QUERY" value="SELECT TOP 100 table_name,column_name,datatype,unit,description FROM TAP_SCHEMA.columns WHERE (table_name='sdss_dr17.specobj' OR table_name='sdss_dr17.x1p5__specobj__gaia_dr3__gaia_source') AND column_name IN ('id1','id2','distance','ra1','dec1','ra2','dec2','specobjid','plate','mjd','fiberid','ra','dec','run2d','class','subclass','snmedian','zwarning') ORDER BY table_name,column_name"/>
+<INFO name="TableRows" value="18"/>
+<TABLE>
+<FIELD ID="table_name" name="table_name" datatype="char" arraysize="64">
+<DESCRIPTION>Table Name</DESCRIPTION>
+</FIELD>
+<FIELD ID="column_name" name="column_name" datatype="char" arraysize="64">
+<DESCRIPTION>Column Name</DESCRIPTION>
+</FIELD>
+<FIELD ID="datatype" name="datatype" datatype="char" arraysize="64">
+<DESCRIPTION>Column data type (ADQL)</DESCRIPTION>
+</FIELD>
+<FIELD ID="unit" name="unit" datatype="char" arraysize="64">
+<DESCRIPTION>Column units</DESCRIPTION>
+</FIELD>
+<FIELD ID="description" name="description" datatype="char" arraysize="64">
+<DESCRIPTION>Column description</DESCRIPTION>
+</FIELD>
+<DATA>
+<TABLEDATA>
+<TR><TD>sdss_dr17.specobj</TD><TD>class</TD><TD>adql:CHAR</TD><TD></TD><TD>Spectroscopic class (GALAXY, QSO, or STAR)</TD></TR>
+<TR><TD>sdss_dr17.specobj</TD><TD>dec</TD><TD>adql:DOUBLE</TD><TD>deg</TD><TD>Declination of fiber, J2000</TD></TR>
+<TR><TD>sdss_dr17.specobj</TD><TD>fiberid</TD><TD>adql:SMALLINT</TD><TD></TD><TD>Fiber ID</TD></TR>
+<TR><TD>sdss_dr17.specobj</TD><TD>mjd</TD><TD>adql:INTEGER</TD><TD>days</TD><TD>MJD of observation</TD></TR>
+<TR><TD>sdss_dr17.specobj</TD><TD>plate</TD><TD>adql:SMALLINT</TD><TD></TD><TD>Plate number</TD></TR>
+<TR><TD>sdss_dr17.specobj</TD><TD>ra</TD><TD>adql:DOUBLE</TD><TD>deg</TD><TD>Right ascension of fiber, J2000</TD></TR>
+<TR><TD>sdss_dr17.specobj</TD><TD>run2d</TD><TD>adql:CHAR</TD><TD></TD><TD>2D Reduction version of spectrum</TD></TR>
+<TR><TD>sdss_dr17.specobj</TD><TD>snmedian</TD><TD>adql:REAL</TD><TD></TD><TD>Median signal-to-noise over all good pixels</TD></TR>
+<TR><TD>sdss_dr17.specobj</TD><TD>specobjid</TD><TD>adql:BIGINT</TD><TD></TD><TD>Unique database ID based on PLATE, MJD, FIBERID, RUN2D</TD></TR>
+<TR><TD>sdss_dr17.specobj</TD><TD>subclass</TD><TD>adql:CHAR</TD><TD></TD><TD>Spectroscopic subclass</TD></TR>
+<TR><TD>sdss_dr17.specobj</TD><TD>zwarning</TD><TD>adql:INTEGER</TD><TD></TD><TD>Bitmask of warning values; 0 means all is well</TD></TR>
+<TR><TD>sdss_dr17.x1p5__specobj__gaia_dr3__gaia_source</TD><TD>dec1</TD><TD>adql:DOUBLE</TD><TD></TD><TD>Declination in left/first table (dec)</TD></TR>
+<TR><TD>sdss_dr17.x1p5__specobj__gaia_dr3__gaia_source</TD><TD>dec2</TD><TD>adql:DOUBLE</TD><TD></TD><TD>Declination in right/second table (dec)</TD></TR>
+<TR><TD>sdss_dr17.x1p5__specobj__gaia_dr3__gaia_source</TD><TD>distance</TD><TD>adql:DOUBLE</TD><TD></TD><TD>Distance between ra1,dec1 and ra2,dec2 (arcsec)</TD></TR>
+<TR><TD>sdss_dr17.x1p5__specobj__gaia_dr3__gaia_source</TD><TD>id1</TD><TD>adql:BIGINT</TD><TD></TD><TD>ID in left/first table (specobjid)</TD></TR>
+<TR><TD>sdss_dr17.x1p5__specobj__gaia_dr3__gaia_source</TD><TD>id2</TD><TD>adql:BIGINT</TD><TD></TD><TD>ID in right/second table (source_id)</TD></TR>
+<TR><TD>sdss_dr17.x1p5__specobj__gaia_dr3__gaia_source</TD><TD>ra1</TD><TD>adql:DOUBLE</TD><TD></TD><TD>Right ascension in left/first table (ra)</TD></TR>
+<TR><TD>sdss_dr17.x1p5__specobj__gaia_dr3__gaia_source</TD><TD>ra2</TD><TD>adql:DOUBLE</TD><TD></TD><TD>Right ascension in right/second table (ra)</TD></TR>
+</TABLEDATA>
+</DATA>
+</TABLE>
+</RESOURCE>
+</VOTABLE>

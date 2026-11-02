@@ -1,0 +1,17 @@
+{
+  "status": "CAPTURED_UNINTERPRETED_AWAITING_XML_SCHEMA_AND_SCIENCE_REVIEW",
+  "attempted_requests": 1,
+  "metadata_scientifically_validated": false,
+  "XML_schema_QUERY_STATUS_or_rows_interpreted": false,
+  "new_images": 0,
+  "returned_links_followed": false,
+  "retrieval_sha256": "385b51743b69a22aa35aa139b121682b773ed86cdebb619001a6ca5e42a3fa21",
+  "body_bytes": 18907,
+  "transport_status": "HTTP_COMPLETE_UNPARSED",
+  "http_status": 200,
+  "finished_utc": "2026-11-01T07:13:50.822207+00:00",
+  "elapsed_perf_counter_seconds": 34.3240717,
+  "completed_protocol_sha256": "4bb39d2e6441776e2b45a7a1f5f62bcc2049ccf3a170a120bb1c8b16f59f8d78",
+  "remaining_requests": 0,
+  "no_retry_or_resume": true
+}

@@ -1,0 +1,79 @@
+{
+  "verdict": "PASS_BOUNDED_FIXED_POINT_CONTROL",
+  "reviewed_utc": "2026-11-02T12:32:47.842972+00:00",
+  "reviewer": "independent science reviewer",
+  "scope": "Fixed non-held HST footprint mechanics control only; no target observation request, product download, ranking, release or holdout evaluation.",
+  "input_sha256": {
+    "raw_sha256": "760770c6c3e0d3ff0d7d548b2a9b90182f95bcc668b42c7a3e9ae7ad08cb20e2",
+    "result_sha256": "6a6560d95b36e98f09df1c23d7b8ed568f1a7c1432e20d8aa0efa9a6ce8156d0",
+    "native_metadata_sha256": "53b7918a077681b48130c99def5230c756a3485f64d9525deb118ba6ebd81809",
+    "protocol_sha256": "6e059b0a4d0b3e7fb0673851c1e44b9352c272995352c4791bddc16ba9561a14",
+    "query_sha256": "a31374750e59638a58dc8819803ac029557d4f44c476d41379c3809061d79a92",
+    "manifest_sha256": "bec4540f44f17367faa3d85d6b2a6c8a30619151fcc950957df80c54a12a267d",
+    "prior_raw_sha256": "dbfb5660e120a04888538f8e8bce4b0d22ca52ea5784b50f85f5c9b065e8d01b"
+  },
+  "transport": {
+    "http_status": 200,
+    "curl_exit": 0,
+    "tls_verify_result": 0,
+    "redirect_count": 0,
+    "limit_failure": null,
+    "finished_utc": "2026-11-02T12:30:50.428961+00:00",
+    "raw_bytes": 18907
+  },
+  "votable": {
+    "version": "1.4",
+    "query_echo_exact": true,
+    "query_status_sequence": [
+      "OK"
+    ],
+    "trailing_error_or_overflow": false,
+    "field_count": 31,
+    "field_attributes_match_prior": true,
+    "tabledata_explicit": true,
+    "row_count": 20,
+    "full_external_xsd_validation_performed": false
+  },
+  "known_control": {
+    "objid": "109191367",
+    "obs_id": "n3t401e2q",
+    "observation_collection": "HST",
+    "instrument": "NICMOS/NIC2",
+    "dataproduct_type": "image",
+    "rows_for_objid": 4,
+    "first_28_cells_match_prior": true,
+    "reported_polygon_matches_prior": true,
+    "finite_closed_polygon": true,
+    "fixed_point_strictly_inside_under_assumptions": true,
+    "minimum_edge_distance_arcsec": 9.66053109413396,
+    "geometry_assumptions": "Use the saved MAST ICRS s_region interpretation and minor great-circle edges; the polygon literal omits its own frame token. This does not validate detector pixels or absolute astrometric registration."
+  },
+  "multiplicity_and_cap": {
+    "row_count": 20,
+    "distinct_objid_count": 5,
+    "access_variants_per_objid_in_this_response": 4,
+    "top": 20,
+    "maxrec": 20,
+    "response_at_cap": true,
+    "coverage": "unknown; potentially incomplete despite OK status",
+    "all_row_tuples_match_prior_as_multiset": true,
+    "all_row_tuples_match_prior_in_order": false,
+    "order_note": "ORDER BY objid is not a total order; access variants are not independent observations."
+  },
+  "privacy": {
+    "access_value_count": 20,
+    "all_have_https_scheme": true,
+    "query_component_count": 20,
+    "userinfo_count": 0,
+    "product_links_followed": false,
+    "product_links_or_headers_in_this_review": false,
+    "limitation": "Treat all returned access values and native headers as untrusted; presence or absence of obvious credential markers does not establish public or private access."
+  },
+  "limitations": [
+    "Positive mechanics for this fixed known point only; no current negative control or validation of all footprint cases.",
+    "At-cap response does not establish complete archive coverage.",
+    "An ObsCore footprint row does not establish source attribution, detector coverage, image availability or resolution.",
+    "Raw-response and prior-response hashes differ; the actual row tuples match as a multiset, while their order differs.",
+    "No held-source findings or dispositions changed."
+  ]
+}

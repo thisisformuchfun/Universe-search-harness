@@ -1,0 +1,3 @@
+# HST held-source target preflight
+
+Science and execution independently accepted manifest SHA256 `fa0fbc8537370aec7c33888c7a8551b092a7c537dcadacf1d53041875c53f5ad` for one metadata GET. Both checked the exact Gaia DR3 ID, raw and parsed 2016.0 position, query, all 27 pins and prior fresh control/review links. Execution independently ran 20 offline tests with sockets/process creation denied, simulated missing/tampered control inputs, and tested process/lease bookkeeping. The metadata projection may return product URLs; none may be followed. No image, orbit, independent epoch, source attribution or black-hole inference follows from a footprint. TOP20/MAXREC20 is cap-limited and ordering is nonunique.

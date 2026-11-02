@@ -1,0 +1,17 @@
+test_bounded_single_read_uses_verified_bytes (test_compare_table_v3.TableTests.test_bounded_single_read_uses_verified_bytes) ... ok
+test_duplicate_id_rejected (test_compare_table_v3.TableTests.test_duplicate_id_rejected) ... ok
+test_float_target_rejected (test_compare_table_v3.TableTests.test_float_target_rejected) ... ok
+test_frozen_targets_valid (test_compare_table_v3.TableTests.test_frozen_targets_valid) ... ok
+test_invalid_decimal_rejected (test_compare_table_v3.TableTests.test_invalid_decimal_rejected) ... ok
+test_missing_header_rejected (test_compare_table_v3.TableTests.test_missing_header_rejected) ... ok
+test_missing_record_rejected (test_compare_table_v3.TableTests.test_missing_record_rejected) ... ok
+test_preview_type_swap_rejected_even_if_counts_match (test_compare_table_v3.TableTests.test_preview_type_swap_rejected_even_if_counts_match) ... ok
+test_tab_padding_rejected (test_compare_table_v3.TableTests.test_tab_padding_rejected) ... ok
+test_valid_with_17_digit_id (test_compare_table_v3.TableTests.test_valid_with_17_digit_id) ... ok
+test_wrong_type_distribution_rejected (test_compare_table_v3.TableTests.test_wrong_type_distribution_rejected) ... ok
+test_wrong_width_rejected (test_compare_table_v3.TableTests.test_wrong_width_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 12 tests in 0.001s
+
+OK

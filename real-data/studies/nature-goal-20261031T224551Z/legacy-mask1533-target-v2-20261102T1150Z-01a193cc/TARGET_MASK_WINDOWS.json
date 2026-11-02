@@ -1,0 +1,656 @@
+{
+  "created_utc": "2026-11-02T11:53:02.455921+00:00",
+  "mask_sha256": "cd1409e6d636e7bfa284f16ca985adfb151ff81a6c384485bb0f8feea9a061c4",
+  "image_sha256": "eb89b9c44c2e1c8273f901c2269c90c2f9cdfa2784644d05175719749addc2af",
+  "brick": "1857p410",
+  "frames": {
+    "image_header_radesys": null,
+    "image_header_equinox": null,
+    "mask_header_radesys": null,
+    "mask_header_equinox": 2000.0,
+    "astropy_image_frame": "<ICRS Frame>",
+    "astropy_mask_frame": "<FK5 Frame (equinox=2000.0)>"
+  },
+  "numeric_grid_checks": [
+    {
+      "image_xy": [
+        96.0,
+        96.0
+      ],
+      "numeric_grid_residual_pixels": [
+        -1.1868905858136714e-10,
+        6.184563972055912e-11
+      ]
+    },
+    {
+      "image_xy": [
+        30.0,
+        30.0
+      ],
+      "numeric_grid_residual_pixels": [
+        1.864464138634503e-11,
+        2.1873347577638924e-10
+      ]
+    },
+    {
+      "image_xy": [
+        160.0,
+        30.0
+      ],
+      "numeric_grid_residual_pixels": [
+        1.6052581486292183e-10,
+        -2.935394149972126e-10
+      ]
+    },
+    {
+      "image_xy": [
+        30.0,
+        160.0
+      ],
+      "numeric_grid_residual_pixels": [
+        1.1823431123048067e-11,
+        2.2282620193436742e-10
+      ]
+    },
+    {
+      "image_xy": [
+        160.0,
+        160.0
+      ],
+      "numeric_grid_residual_pixels": [
+        4.547473508864641e-13,
+        5.3660187404602766e-11
+      ]
+    }
+  ],
+  "max_numeric_grid_residual_pixels": 2.935394149972126e-10,
+  "full_optical_data_loaded": false,
+  "rows": [
+    {
+      "point": "gaia_2016_unpropagated",
+      "ra_dec": [
+        185.71462554756414,
+        40.88393733581962
+      ],
+      "mapping_xy": {
+        "numeric": [
+          2476.7244535823315,
+          204.99582658387362
+        ],
+        "frame_aware_icrs": [
+          2476.710123420553,
+          204.9688186249773
+        ]
+      },
+      "numeric": {
+        "pixel_count": 25,
+        "counts_by_bit": {
+          "NPRIMARY": 0,
+          "BRIGHT": 0,
+          "SATUR_G": 0,
+          "SATUR_R": 0,
+          "SATUR_Z": 25,
+          "ALLMASK_G": 0,
+          "ALLMASK_R": 0,
+          "ALLMASK_Z": 21,
+          "WISEM1": 0,
+          "WISEM2": 0,
+          "BAILOUT": 0,
+          "MEDIUM": 0,
+          "GALAXY": 0,
+          "CLUSTER": 0,
+          "SATUR_I": 0,
+          "ALLMASK_I": 0
+        },
+        "unique_values": [
+          16,
+          144
+        ]
+      },
+      "frame_aware_icrs": {
+        "pixel_count": 25,
+        "counts_by_bit": {
+          "NPRIMARY": 0,
+          "BRIGHT": 0,
+          "SATUR_G": 0,
+          "SATUR_R": 0,
+          "SATUR_Z": 25,
+          "ALLMASK_G": 0,
+          "ALLMASK_R": 0,
+          "ALLMASK_Z": 21,
+          "WISEM1": 0,
+          "WISEM2": 0,
+          "BAILOUT": 0,
+          "MEDIUM": 0,
+          "GALAXY": 0,
+          "CLUSTER": 0,
+          "SATUR_I": 0,
+          "ALLMASK_I": 0
+        },
+        "unique_values": [
+          16,
+          144
+        ]
+      },
+      "union": {
+        "pixel_count": 25,
+        "counts_by_bit": {
+          "NPRIMARY": 0,
+          "BRIGHT": 0,
+          "SATUR_G": 0,
+          "SATUR_R": 0,
+          "SATUR_Z": 25,
+          "ALLMASK_G": 0,
+          "ALLMASK_R": 0,
+          "ALLMASK_Z": 21,
+          "WISEM1": 0,
+          "WISEM2": 0,
+          "BAILOUT": 0,
+          "MEDIUM": 0,
+          "GALAXY": 0,
+          "CLUSTER": 0,
+          "SATUR_I": 0,
+          "ALLMASK_I": 0
+        },
+        "unique_values": [
+          16,
+          144
+        ]
+      },
+      "union_pixels_xy": [
+        [
+          2475,
+          203
+        ],
+        [
+          2475,
+          204
+        ],
+        [
+          2475,
+          205
+        ],
+        [
+          2475,
+          206
+        ],
+        [
+          2475,
+          207
+        ],
+        [
+          2476,
+          203
+        ],
+        [
+          2476,
+          204
+        ],
+        [
+          2476,
+          205
+        ],
+        [
+          2476,
+          206
+        ],
+        [
+          2476,
+          207
+        ],
+        [
+          2477,
+          203
+        ],
+        [
+          2477,
+          204
+        ],
+        [
+          2477,
+          205
+        ],
+        [
+          2477,
+          206
+        ],
+        [
+          2477,
+          207
+        ],
+        [
+          2478,
+          203
+        ],
+        [
+          2478,
+          204
+        ],
+        [
+          2478,
+          205
+        ],
+        [
+          2478,
+          206
+        ],
+        [
+          2478,
+          207
+        ],
+        [
+          2479,
+          203
+        ],
+        [
+          2479,
+          204
+        ],
+        [
+          2479,
+          205
+        ],
+        [
+          2479,
+          206
+        ],
+        [
+          2479,
+          207
+        ]
+      ]
+    },
+    {
+      "point": "ps1_one_detection_mean",
+      "ra_dec": [
+        185.71518099,
+        40.88389641
+      ],
+      "mapping_xy": {
+        "numeric": [
+          2470.954755658363,
+          204.42920589121854
+        ],
+        "frame_aware_icrs": [
+          2470.9404254120964,
+          204.40219878952917
+        ]
+      },
+      "numeric": {
+        "pixel_count": 25,
+        "counts_by_bit": {
+          "NPRIMARY": 0,
+          "BRIGHT": 0,
+          "SATUR_G": 0,
+          "SATUR_R": 0,
+          "SATUR_Z": 17,
+          "ALLMASK_G": 0,
+          "ALLMASK_R": 0,
+          "ALLMASK_Z": 5,
+          "WISEM1": 0,
+          "WISEM2": 0,
+          "BAILOUT": 0,
+          "MEDIUM": 0,
+          "GALAXY": 0,
+          "CLUSTER": 0,
+          "SATUR_I": 0,
+          "ALLMASK_I": 0
+        },
+        "unique_values": [
+          0,
+          16,
+          144
+        ]
+      },
+      "frame_aware_icrs": {
+        "pixel_count": 25,
+        "counts_by_bit": {
+          "NPRIMARY": 0,
+          "BRIGHT": 0,
+          "SATUR_G": 0,
+          "SATUR_R": 0,
+          "SATUR_Z": 17,
+          "ALLMASK_G": 0,
+          "ALLMASK_R": 0,
+          "ALLMASK_Z": 5,
+          "WISEM1": 0,
+          "WISEM2": 0,
+          "BAILOUT": 0,
+          "MEDIUM": 0,
+          "GALAXY": 0,
+          "CLUSTER": 0,
+          "SATUR_I": 0,
+          "ALLMASK_I": 0
+        },
+        "unique_values": [
+          0,
+          16,
+          144
+        ]
+      },
+      "union": {
+        "pixel_count": 25,
+        "counts_by_bit": {
+          "NPRIMARY": 0,
+          "BRIGHT": 0,
+          "SATUR_G": 0,
+          "SATUR_R": 0,
+          "SATUR_Z": 17,
+          "ALLMASK_G": 0,
+          "ALLMASK_R": 0,
+          "ALLMASK_Z": 5,
+          "WISEM1": 0,
+          "WISEM2": 0,
+          "BAILOUT": 0,
+          "MEDIUM": 0,
+          "GALAXY": 0,
+          "CLUSTER": 0,
+          "SATUR_I": 0,
+          "ALLMASK_I": 0
+        },
+        "unique_values": [
+          0,
+          16,
+          144
+        ]
+      },
+      "union_pixels_xy": [
+        [
+          2469,
+          202
+        ],
+        [
+          2469,
+          203
+        ],
+        [
+          2469,
+          204
+        ],
+        [
+          2469,
+          205
+        ],
+        [
+          2469,
+          206
+        ],
+        [
+          2470,
+          202
+        ],
+        [
+          2470,
+          203
+        ],
+        [
+          2470,
+          204
+        ],
+        [
+          2470,
+          205
+        ],
+        [
+          2470,
+          206
+        ],
+        [
+          2471,
+          202
+        ],
+        [
+          2471,
+          203
+        ],
+        [
+          2471,
+          204
+        ],
+        [
+          2471,
+          205
+        ],
+        [
+          2471,
+          206
+        ],
+        [
+          2472,
+          202
+        ],
+        [
+          2472,
+          203
+        ],
+        [
+          2472,
+          204
+        ],
+        [
+          2472,
+          205
+        ],
+        [
+          2472,
+          206
+        ],
+        [
+          2473,
+          202
+        ],
+        [
+          2473,
+          203
+        ],
+        [
+          2473,
+          204
+        ],
+        [
+          2473,
+          205
+        ],
+        [
+          2473,
+          206
+        ]
+      ]
+    },
+    {
+      "point": "gaia_neighbor_2016_unpropagated",
+      "ra_dec": [
+        185.7131520967809,
+        40.88946022434856
+      ],
+      "mapping_xy": {
+        "numeric": [
+          2491.9732056018934,
+          280.89467665137727
+        ],
+        "frame_aware_icrs": [
+          2491.9588867191565,
+          280.8676664360589
+        ]
+      },
+      "numeric": {
+        "pixel_count": 25,
+        "counts_by_bit": {
+          "NPRIMARY": 0,
+          "BRIGHT": 0,
+          "SATUR_G": 0,
+          "SATUR_R": 25,
+          "SATUR_Z": 25,
+          "ALLMASK_G": 0,
+          "ALLMASK_R": 0,
+          "ALLMASK_Z": 22,
+          "WISEM1": 0,
+          "WISEM2": 0,
+          "BAILOUT": 0,
+          "MEDIUM": 25,
+          "GALAXY": 0,
+          "CLUSTER": 0,
+          "SATUR_I": 0,
+          "ALLMASK_I": 0
+        },
+        "unique_values": [
+          2072,
+          2200
+        ]
+      },
+      "frame_aware_icrs": {
+        "pixel_count": 25,
+        "counts_by_bit": {
+          "NPRIMARY": 0,
+          "BRIGHT": 0,
+          "SATUR_G": 0,
+          "SATUR_R": 25,
+          "SATUR_Z": 25,
+          "ALLMASK_G": 0,
+          "ALLMASK_R": 0,
+          "ALLMASK_Z": 22,
+          "WISEM1": 0,
+          "WISEM2": 0,
+          "BAILOUT": 0,
+          "MEDIUM": 25,
+          "GALAXY": 0,
+          "CLUSTER": 0,
+          "SATUR_I": 0,
+          "ALLMASK_I": 0
+        },
+        "unique_values": [
+          2072,
+          2200
+        ]
+      },
+      "union": {
+        "pixel_count": 25,
+        "counts_by_bit": {
+          "NPRIMARY": 0,
+          "BRIGHT": 0,
+          "SATUR_G": 0,
+          "SATUR_R": 25,
+          "SATUR_Z": 25,
+          "ALLMASK_G": 0,
+          "ALLMASK_R": 0,
+          "ALLMASK_Z": 22,
+          "WISEM1": 0,
+          "WISEM2": 0,
+          "BAILOUT": 0,
+          "MEDIUM": 25,
+          "GALAXY": 0,
+          "CLUSTER": 0,
+          "SATUR_I": 0,
+          "ALLMASK_I": 0
+        },
+        "unique_values": [
+          2072,
+          2200
+        ]
+      },
+      "union_pixels_xy": [
+        [
+          2490,
+          279
+        ],
+        [
+          2490,
+          280
+        ],
+        [
+          2490,
+          281
+        ],
+        [
+          2490,
+          282
+        ],
+        [
+          2490,
+          283
+        ],
+        [
+          2491,
+          279
+        ],
+        [
+          2491,
+          280
+        ],
+        [
+          2491,
+          281
+        ],
+        [
+          2491,
+          282
+        ],
+        [
+          2491,
+          283
+        ],
+        [
+          2492,
+          279
+        ],
+        [
+          2492,
+          280
+        ],
+        [
+          2492,
+          281
+        ],
+        [
+          2492,
+          282
+        ],
+        [
+          2492,
+          283
+        ],
+        [
+          2493,
+          279
+        ],
+        [
+          2493,
+          280
+        ],
+        [
+          2493,
+          281
+        ],
+        [
+          2493,
+          282
+        ],
+        [
+          2493,
+          283
+        ],
+        [
+          2494,
+          279
+        ],
+        [
+          2494,
+          280
+        ],
+        [
+          2494,
+          281
+        ],
+        [
+          2494,
+          282
+        ],
+        [
+          2494,
+          283
+        ]
+      ]
+    }
+  ],
+  "interpretation": "provider flags at sampled pixels only; frame union is not a position bound or orbit evidence"
+}

@@ -1,0 +1,7 @@
+{
+  "timestamp_utc": "2026-11-02T11:00:00.834592+00:00",
+  "before_coord_sha256": "0906c7ebd7a428f028b5dfba1e670480edf2b951ef143c24f3c95db83b2cb9ed",
+  "after_coord_sha256": "4d78950c40729413cde1fe86cd9b5995888a9f8f8b707f59f2e0f12dc3044bc5",
+  "verified_install_event_sha256": "be1b9d40281107bb3fa35fe21b99e75fc55e976858c8b5a8aad1c33faa73a341",
+  "custody_sha256": "155f5aa7f98726c62add15bd302b9f43ca4a216ed14850ecbf649c82a65d3c14"
+}

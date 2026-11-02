@@ -1,0 +1,124 @@
+{
+  "checked_at_utc": "2026-10-19T23:23:45.118748+00:00",
+  "tables": {
+    "J/MNRAS/518/2991/table2": 177,
+    "J/MNRAS/521/5927/table": 234
+  },
+  "scope": "Exact Gaia DR3 source-ID matches only; no match does not establish novelty; all existing quality holds remain.",
+  "matches": [
+    {
+      "source_id": "5991734159714775296",
+      "matches": []
+    },
+    {
+      "source_id": "3316050687674598656",
+      "matches": []
+    },
+    {
+      "source_id": "5928370816455687808",
+      "matches": []
+    },
+    {
+      "source_id": "632497706010874240",
+      "matches": []
+    },
+    {
+      "source_id": "1533365584518328576",
+      "matches": []
+    },
+    {
+      "source_id": "1538284425878995712",
+      "matches": []
+    },
+    {
+      "source_id": "5959603097090964992",
+      "matches": []
+    },
+    {
+      "source_id": "4491401821468887552",
+      "matches": []
+    },
+    {
+      "source_id": "824344003814438528",
+      "matches": []
+    },
+    {
+      "source_id": "5929746958324419200",
+      "matches": []
+    },
+    {
+      "source_id": "5591318172608607232",
+      "matches": []
+    },
+    {
+      "source_id": "2852726284550996352",
+      "matches": []
+    },
+    {
+      "source_id": "4299244434901041024",
+      "matches": []
+    },
+    {
+      "source_id": "2245423750054837888",
+      "matches": []
+    },
+    {
+      "source_id": "4373465352415301632",
+      "matches": [
+        {
+          "catalog": "J/MNRAS/518/2991/table2",
+          "row": {
+            "recno": "1",
+            "GaiaDR3": "4373465352415301632",
+            "M2min": "12.806249189164857",
+            "e_M2min": "2.595242449611575",
+            "M1": "0.954539",
+            "P": "185.7656578920495",
+            "e_P": "0.306886",
+            "e": "0.488935892984520",
+            "e_e": "0.074341",
+            "s": "13.56551",
+            "sigTI": "1.216190651249506",
+            "Class": "BH",
+            "n_Class": "Gaia BH1",
+            "NSGaiaDR3": "NSGaiaDR3",
+            "Simbad": "Simbad",
+            "_RA": "262.17121",
+            "_DE": "-00.58109"
+          }
+        }
+      ]
+    },
+    {
+      "source_id": "6281177228434199296",
+      "matches": [
+        {
+          "catalog": "J/MNRAS/518/2991/table2",
+          "row": {
+            "recno": "2",
+            "GaiaDR3": "6281177228434199296",
+            "M2min": "11.905034742536959",
+            "e_M2min": "1.487093207536028",
+            "M1": "0.951687",
+            "P": "153.9472362065534",
+            "e_P": "0.360797",
+            "e": "0.180088943699084",
+            "e_e": "0.042266",
+            "s": "24.30680",
+            "sigTI": "0.610111043902046",
+            "Class": "BH",
+            "n_Class": "refuted",
+            "NSGaiaDR3": "NSGaiaDR3",
+            "Simbad": "Simbad",
+            "_RA": "223.20971",
+            "_DE": "-19.37362"
+          }
+        }
+      ]
+    },
+    {
+      "source_id": "5870569352746779008",
+      "matches": []
+    }
+  ]
+}

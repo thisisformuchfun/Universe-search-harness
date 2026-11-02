@@ -1,0 +1,25 @@
+{
+  "finished_utc": "2026-11-02T09:12:47.678369+00:00",
+  "status": "STOP_EXCEPTION",
+  "manifest_sha256": "6fefd5df5810567921011256e37c69c7aa18198d26847575447dc2b9adbe7add",
+  "summaries": {
+    "error_type": "ValueError"
+  },
+  "request_files": [
+    "control.request.json"
+  ],
+  "owned_process_exit_confirmed": true,
+  "last_owned_pid": 5184,
+  "last_owned_process": {
+    "pid": 5184,
+    "creation_filetime_100ns": "134380843415889117",
+    "observed_utc": "2026-11-02T09:12:21.596205+00:00",
+    "executable_expected": "C:/Windows/System32/curl.exe",
+    "identity_status": "OWNED_HANDLE_CREATION_TIME_OBSERVED",
+    "instruction": "Never kill or claim ownership based on a stale PID alone."
+  },
+  "lease_released": true,
+  "holdout_evaluated": false,
+  "rv_analysis_performed": false,
+  "native_headers_and_diagnostics": "local only; privacy review required before packaging"
+}

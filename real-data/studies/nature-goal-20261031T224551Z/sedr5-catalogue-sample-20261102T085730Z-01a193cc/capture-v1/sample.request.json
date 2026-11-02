@@ -1,0 +1,45 @@
+{
+  "started_utc": "2026-11-02T09:03:31.107143+00:00",
+  "request": {
+    "name": "sample",
+    "method": "GET",
+    "url": "https://dr5.lamost.org/sedr5/sexprv-sample.csv",
+    "manifest_sha256": "646414cf45ca54fd8578be16476dfdc6fccfe56254fe7fe5e4a33312e7996ddf",
+    "protocol_sha256": "5effc84dbf44e4a9d48942e9397492a8ac2382863f0ba47d21df3f6b691c409a",
+    "scope": "public sample schema only"
+  },
+  "command": [
+    "C:/Windows/System32/curl.exe",
+    "--disable",
+    "--proto",
+    "=https",
+    "--connect-timeout",
+    "15",
+    "--max-time",
+    "30",
+    "--max-filesize",
+    "262144",
+    "--silent",
+    "--show-error",
+    "--dump-header",
+    "C:\\gogogo\\universe search harness\\blackhole search\\astra-20261031T2113Z-01a193cc\\studies\\nature-goal-20261031T224551Z\\sedr5-catalogue-sample-20261102T085730Z-01a193cc\\capture-v1\\sample.headers",
+    "--output",
+    "C:\\gogogo\\universe search harness\\blackhole search\\astra-20261031T2113Z-01a193cc\\studies\\nature-goal-20261031T224551Z\\sedr5-catalogue-sample-20261102T085730Z-01a193cc\\capture-v1\\sample.raw",
+    "--write-out",
+    "%{http_code}\n%{ssl_verify_result}\n%{size_download}\n%{num_redirects}\n%{url_effective}\n",
+    "--url",
+    "https://dr5.lamost.org/sedr5/sexprv-sample.csv"
+  ],
+  "limits": {
+    "body_bytes": 262144,
+    "header_bytes": 65536,
+    "stdout_bytes": 4096,
+    "stderr_bytes": 262144,
+    "curl_seconds": 30,
+    "process_seconds": 33,
+    "poll_seconds": 0.02,
+    "owned_process_cleanup_seconds": 2
+  },
+  "batch_deadline_ns": 45116621463800,
+  "effective_curl_seconds": 30
+}

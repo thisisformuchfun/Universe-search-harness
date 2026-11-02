@@ -1,0 +1,136 @@
+{
+  "input_sha256": "e56b8a2e5fa37dc45d5f67a0ff07cf9d49a13ad6dc75c4ddf505650c6ac5f6bd",
+  "control_image_sha256": "033df85a32f94a79932af1e15d29d9804f77362c64dc4ae8b63a16bc4ba4edf9",
+  "mask_shape": [
+    3600,
+    3600
+  ],
+  "tile_shape": [
+    100,
+    100
+  ],
+  "sample_xy": [
+    2349,
+    1164
+  ],
+  "control_section_values": [
+    [
+      4096,
+      4096,
+      4096,
+      4096,
+      4096
+    ],
+    [
+      4096,
+      4096,
+      4096,
+      4096,
+      4096
+    ],
+    [
+      4096,
+      4096,
+      4096,
+      4096,
+      4096
+    ],
+    [
+      4096,
+      4096,
+      4096,
+      4096,
+      4096
+    ],
+    [
+      4096,
+      4096,
+      4096,
+      4096,
+      4096
+    ]
+  ],
+  "center_bit_flags": {
+    "SATUR_G": false,
+    "SATUR_R": false,
+    "SATUR_Z": false,
+    "ALLMASK_G": false,
+    "ALLMASK_R": false,
+    "ALLMASK_Z": false
+  },
+  "wcs_registration_checks": [
+    {
+      "cutout_xy": [
+        64.0,
+        64.0
+      ],
+      "mask_xy": [
+        2348.999999999973,
+        1164.0000000001114
+      ],
+      "offset_residual_pixels": [
+        -2.6830093702301383e-11,
+        1.1141310096718371e-10
+      ]
+    },
+    {
+      "cutout_xy": [
+        15.0,
+        15.0
+      ],
+      "mask_xy": [
+        2299.9999999999072,
+        1114.9999999999925
+      ],
+      "offset_residual_pixels": [
+        -9.276845958083868e-11,
+        -7.503331289626658e-12
+      ]
+    },
+    {
+      "cutout_xy": [
+        112.0,
+        15.0
+      ],
+      "mask_xy": [
+        2397.000000000029,
+        1115.000000000121
+      ],
+      "offset_residual_pixels": [
+        2.9103830456733704e-11,
+        1.2096279533579946e-10
+      ]
+    },
+    {
+      "cutout_xy": [
+        15.0,
+        112.0
+      ],
+      "mask_xy": [
+        2299.999999999811,
+        1212.0000000003654
+      ],
+      "offset_residual_pixels": [
+        -1.8917489796876907e-10,
+        3.653894964372739e-10
+      ]
+    },
+    {
+      "cutout_xy": [
+        112.0,
+        112.0
+      ],
+      "mask_xy": [
+        2396.9999999999695,
+        1211.9999999999122
+      ],
+      "offset_residual_pixels": [
+        -3.0468072509393096e-11,
+        -8.776623872108757e-11
+      ]
+    }
+  ],
+  "max_abs_registration_residual_pixels": 3.653894964372739e-10,
+  "synthetic_bit_decoding_passed": true,
+  "interpretation": "format and alignment control only; no held-field mask or orbit"
+}

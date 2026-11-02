@@ -1,0 +1,160 @@
+{
+  "created_utc": "2026-11-02T08:09:48.975876+00:00",
+  "scope": "unadopted synthetic fixtures, field-schema metadata and literature context; not real-data inference or production patch",
+  "files": [
+    {
+      "relative_to_prototype": "toy_graph_v4.py",
+      "bytes": 16993,
+      "sha256": "5c46c5a704623dcebf433cf3e92d09113f35667ba05365263f73263362aa8b83"
+    },
+    {
+      "relative_to_prototype": "test_toy_graph_v4.py",
+      "bytes": 16689,
+      "sha256": "f635e551b66b0133e00a0b025d0c366bc0c264dbef23c410378bf90f15eb8761"
+    },
+    {
+      "relative_to_prototype": "run_offline_tests_v5.py",
+      "bytes": 4364,
+      "sha256": "a49766069858263547b19dbd59150359e04825602a4f05ceb29d4811c6d5177a"
+    },
+    {
+      "relative_to_prototype": "build_field_contract_v3.py",
+      "bytes": 10648,
+      "sha256": "5bf886ea709423aea527ab699093c0de9f0f9923f44a5b5feceff108314116d8"
+    },
+    {
+      "relative_to_prototype": "test_field_contract_v3.py",
+      "bytes": 4042,
+      "sha256": "e28f55a968cecbb934f3dc132b917f71a38d53dc716f5be40d742dde5107beb1"
+    },
+    {
+      "relative_to_prototype": "run_contract_tests_v4.py",
+      "bytes": 4414,
+      "sha256": "a85ef4bbe9df3bace40eab2893d29e6023a187045db3059a819d12bac269b2dc"
+    },
+    {
+      "relative_to_prototype": "FIELD_CONTRACT_DRAFT_V3.json",
+      "bytes": 41520,
+      "sha256": "e17b888c886c7c017dc6bef21866ce6f23caf6b14dee8d273f53e1774325e0a1"
+    },
+    {
+      "relative_to_prototype": "RUN_REPORT_V3.md",
+      "bytes": 3296,
+      "sha256": "7b26a1506ed2d37dc5d2b732809817e77a1c92165539403f05940ab3228e4e26"
+    },
+    {
+      "relative_to_prototype": "CHANGELOG_V2.md",
+      "bytes": 3061,
+      "sha256": "16760fb5803941224855ae97ae6779a2ab5f2b7df312c16d0c0377d17754c98f"
+    },
+    {
+      "relative_to_prototype": "REPRODUCIBILITY_V2.md",
+      "bytes": 1905,
+      "sha256": "1238a956dcfc30a77c7ebfdc36356a0386db4b7d9ca509bba02acbf2a1f3a0f4"
+    },
+    {
+      "relative_to_prototype": "NEXT_ACTION_V2.md",
+      "bytes": 701,
+      "sha256": "d8849b593f55d7e6be2f1ce926cff1093be347637aa80e091fbc62f46267a554"
+    },
+    {
+      "relative_to_prototype": "PROPOSED_RESEARCH_V3.diff",
+      "bytes": 60331,
+      "sha256": "15d084392087961e34cb03751095b9fa81e74560a8e4b8ee13280ea0670ae058"
+    },
+    {
+      "relative_to_prototype": "INDEPENDENT_EXECUTION_REVIEW_V2.md",
+      "bytes": 2508,
+      "sha256": "9d565a25464ee720d410e09161a10b214173487a0bbe9d77e021ea64bb946e01"
+    },
+    {
+      "relative_to_prototype": "INDEPENDENT_SCIENCE_REVIEW.md",
+      "bytes": 1593,
+      "sha256": "077688f478d9d0ea9e544789d3661635ac58bf0427fc4f912c66f0a6210e45ba"
+    },
+    {
+      "relative_to_prototype": "INDEPENDENT_SUPPLEMENT_REVIEW.md",
+      "bytes": 1539,
+      "sha256": "16828c4b8afcb527769e3dafbae04e0ca8cce56f68df57f55df3f2587ab3b7fb"
+    },
+    {
+      "relative_to_prototype": "LITERATURE_AND_14_OBJECT_FOLLOWUP_20261102.md",
+      "bytes": 2896,
+      "sha256": "f7a0ea07997a2b02656cd5154657129093e4650ec83a27be55cecf6d42e8f09b"
+    },
+    {
+      "relative_to_prototype": "INDEPENDENT_LITERATURE_REVIEW.md",
+      "bytes": 1055,
+      "sha256": "6be3a7e583d97cc9c200736eb3ee6f553ca5e308312935fe0582ea8b5bfd13dc"
+    },
+    {
+      "relative_to_prototype": "PORTABLE_START_HERE_V2.md",
+      "bytes": 1281,
+      "sha256": "f5addbcae5cd7df1b3fcaf0c9494f8173a584fef426bdb045f87499503b94664"
+    },
+    {
+      "relative_to_prototype": "PORTABLE_REPRODUCIBILITY.md",
+      "bytes": 1653,
+      "sha256": "9436ff29ef990ce04f19573c8af3698c712c5eaed4b718165b0c5a3775f96e20"
+    },
+    {
+      "relative_to_prototype": "build_portable_supplement_v2.py",
+      "bytes": 4175,
+      "sha256": "a7eef408d3112e5046482ad4d6fd0b3d86666457f28e7a6d2a0ff2ccc229065f"
+    },
+    {
+      "relative_to_prototype": "verify_portable_supplement_v2.py",
+      "bytes": 4042,
+      "sha256": "4f12819064941eeac0b0d61650948e6331c0567c6b3b362a5bf829192136569d"
+    },
+    {
+      "relative_to_prototype": "PORTABLE_PROOF_V2.json",
+      "bytes": 2032,
+      "sha256": "8f84d22a741062fd0d1df0daba98edf5b09059ea3a5af3c087295e90e17c60f1"
+    },
+    {
+      "relative_to_prototype": "PORTABLE_PROOF_QUALIFICATION_V2.md",
+      "bytes": 1783,
+      "sha256": "5b1ab1486def373f2860434cff67ed19a5491ccd38de36752b1ccee8cc106a67"
+    },
+    {
+      "relative_to_prototype": "EXPERIMENT_JOURNAL.jsonl",
+      "bytes": 4105,
+      "sha256": "70cebf7ea9e523645120b380fafda3365fe55c2e78710541cf3d3fa8cf56cd85"
+    }
+  ],
+  "schema_projection": {
+    "path": "C:\\gogogo\\universe search harness\\blackhole search\\astra-20261031T2113Z-01a193cc\\studies\\nature-goal-20261031T224551Z\\rv200-root-postrun-20261101\\ACTUAL_FIELD_METADATA.json",
+    "sha256": "dc937e9e2629052bd89d17f9b52dd00db382ac9012a4734c3baa83895a3aea71",
+    "description": "saved metadata descriptors only, 42 LAMOST and 27 GALAH"
+  },
+  "research_supplement": {
+    "path": "C:\\gogogo\\universe search harness\\blackhole search\\astra-20261031T2113Z-01a193cc\\artifacts\\Universe_Research_Prototype_Supplement_v2_20261102T0810Z_01a193cc.zip",
+    "bytes": 47754,
+    "sha256": "9de5daac3e80f54820341c523857f9b0a9f5f03f69280c363ab24ffb0b6d1952",
+    "external_manifest_sha256": "d34687a052e4c9fa7baaedf3dc414307c3c98cd5e67a3bf6a3b910989c849711",
+    "identifier_note": "0810Z is an allocated identifier; the external manifest records actual creation time"
+  },
+  "parent_experiment_ledger": {
+    "path": "C:\\gogogo\\universe search harness\\blackhole search\\astra-20261031T2113Z-01a193cc\\studies\\nature-goal-20261031T224551Z\\experiment_ledger_checkpoint59.jsonl",
+    "sha256": "11b9b6ace7253bb5a6889fa5129c651555bb543849bf4574d25dd2f4abdf8216",
+    "unchanged": true
+  },
+  "holdout_custody": {
+    "path": "C:\\gogogo\\universe search harness\\blackhole search\\coordination\\HOLDOUT_CUSTODY.json",
+    "sha256": "155f5aa7f98726c62add15bd302b9f43ca4a216ed14850ecbf649c82a65d3c14",
+    "state": "DO_NOT_EVALUATE",
+    "owner": "astra-20261031T2113Z-01a193cc"
+  },
+  "verification": "Windows Python 3.11.4 only; proof counters are assertions, not monitored metrics",
+  "independent_reviews": [
+    "INDEPENDENT_SCIENCE_REVIEW.md",
+    "INDEPENDENT_EXECUTION_REVIEW_V2.md",
+    "INDEPENDENT_SUPPLEMENT_REVIEW.md",
+    "INDEPENDENT_LITERATURE_REVIEW.md"
+  ],
+  "new_discoveries": 0,
+  "real_native_observation_rows_opened_by_prototype_or_contract": false,
+  "prior_observation_summaries_consulted_for_literature_context": true,
+  "data_use_qualification": "The literature note consults the existing 14-source evidence matrix, which summarizes prior real measurements; the toy graph and schema contract did not read real observation rows."
+}

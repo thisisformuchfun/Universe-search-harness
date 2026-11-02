@@ -1,0 +1,923 @@
+{
+  "schema_version": 1,
+  "generated_utc": "2026-10-31T22:00:19.628117+00:00",
+  "target_count": 14,
+  "actual_distinct_lamost_observations": 2,
+  "sources_with_lasp_rv": 1,
+  "sources_with_multi_epoch_rv_found": 0,
+  "coverage_note": "Bounded catalogue-version and sky-radius searches; selection/footprint/quality incompleteness remains. Missing archive matches never prove novelty.",
+  "evidence_integrity": "Every retained request body/header checksum verified; source IDs kept as exact strings in derived science summary.",
+  "sources": [
+    {
+      "source_id": "5991734159714775296",
+      "simbad": {
+        "exact_dr3_id_rows": 0,
+        "cone_5arcsec_rows": 0,
+        "control_success": true,
+        "note": "No catalogue match is not novelty evidence"
+      },
+      "lamost_distinct_observations": [],
+      "lamost_dr6_mrs_cone_5arcsec_rows": 0,
+      "lamost_dr11_mrs_exact_dr3_rows": 0,
+      "galah_dr4_allspec_exact_dr3_rows": 0,
+      "rave_dr5_cone_5arcsec_rows": 0,
+      "apogee_dr17": {
+        "status": "UNAVAILABLE_CONNECTION_TIMEOUT",
+        "constraint": "exact 2MASS cross-identifiers; parent crossmatch ambiguity preserved; no scientific null result",
+        "provenance": "apogee_dr17_tmass14.json"
+      },
+      "wide_binary_catalogue": "NOT_QUERIED",
+      "hold_status": "HELD; no new validated RV time series or luminous-companion exclusion"
+    },
+    {
+      "source_id": "3316050687674598656",
+      "simbad": {
+        "exact_dr3_id_rows": 0,
+        "cone_5arcsec_rows": 0,
+        "control_success": true,
+        "note": "No catalogue match is not novelty evidence"
+      },
+      "lamost_distinct_observations": [],
+      "lamost_dr6_mrs_cone_5arcsec_rows": 0,
+      "lamost_dr11_mrs_exact_dr3_rows": 0,
+      "galah_dr4_allspec_exact_dr3_rows": 0,
+      "rave_dr5_cone_5arcsec_rows": 0,
+      "apogee_dr17": {
+        "status": "UNAVAILABLE_CONNECTION_TIMEOUT",
+        "constraint": "exact 2MASS cross-identifiers; parent crossmatch ambiguity preserved; no scientific null result",
+        "provenance": "apogee_dr17_tmass14.json"
+      },
+      "wide_binary_catalogue": "NOT_QUERIED",
+      "hold_status": "HELD; no new validated RV time series or luminous-companion exclusion"
+    },
+    {
+      "source_id": "5928370816455687808",
+      "simbad": {
+        "exact_dr3_id_rows": 0,
+        "cone_5arcsec_rows": 0,
+        "control_success": true,
+        "note": "No catalogue match is not novelty evidence"
+      },
+      "lamost_distinct_observations": [],
+      "lamost_dr6_mrs_cone_5arcsec_rows": 0,
+      "lamost_dr11_mrs_exact_dr3_rows": 0,
+      "galah_dr4_allspec_exact_dr3_rows": 0,
+      "rave_dr5_cone_5arcsec_rows": 0,
+      "apogee_dr17": {
+        "status": "UNAVAILABLE_CONNECTION_TIMEOUT",
+        "constraint": "exact 2MASS cross-identifiers; parent crossmatch ambiguity preserved; no scientific null result",
+        "provenance": "apogee_dr17_tmass14.json"
+      },
+      "wide_binary_catalogue": "NOT_QUERIED",
+      "hold_status": "HELD; no new validated RV time series or luminous-companion exclusion"
+    },
+    {
+      "source_id": "632497706010874240",
+      "simbad": {
+        "exact_dr3_id_rows": 0,
+        "cone_5arcsec_rows": 0,
+        "control_success": true,
+        "note": "No catalogue match is not novelty evidence"
+      },
+      "lamost_distinct_observations": [],
+      "lamost_dr6_mrs_cone_5arcsec_rows": 0,
+      "lamost_dr11_mrs_exact_dr3_rows": 0,
+      "galah_dr4_allspec_exact_dr3_rows": 0,
+      "rave_dr5_cone_5arcsec_rows": 0,
+      "apogee_dr17": {
+        "status": "UNAVAILABLE_CONNECTION_TIMEOUT",
+        "constraint": "exact 2MASS cross-identifiers; parent crossmatch ambiguity preserved; no scientific null result",
+        "provenance": "apogee_dr17_tmass14.json"
+      },
+      "wide_binary_catalogue": "INCOMPLETE_SERVICE_TIMEOUT",
+      "hold_status": "HELD; no new validated RV time series or luminous-companion exclusion"
+    },
+    {
+      "source_id": "1533365584518328576",
+      "simbad": {
+        "exact_dr3_id_rows": 0,
+        "cone_5arcsec_rows": 0,
+        "control_success": true,
+        "note": "No catalogue match is not novelty evidence"
+      },
+      "lamost_distinct_observations": [
+        {
+          "survey": "LAMOST LRS",
+          "obsid": "294101037",
+          "uid": "G14984010306277",
+          "designation": "J122251.51+405302.1",
+          "observation_date_catalogue": "2015-01-08",
+          "mjd_catalogue": 57030,
+          "gaia_dr3_exact_id": "1533365584518328576",
+          "positional_separation_arcsec": 0.02011347961108663,
+          "ra_deg_catalogue": 185.714633,
+          "dec_deg_catalogue": 40.883936,
+          "classification_catalogue": "K3",
+          "snr_g": 4.4,
+          "snr_r": 3.45,
+          "fibermask": 0,
+          "releases_same_observation": [
+            "DR6 GAVO mirror",
+            "DR11 v2.0 official archive"
+          ],
+          "spectrum_raw": "lamost_spectrum_direct_294101037.raw",
+          "rv_lasp_heliocentric_km_s": null,
+          "rv_lasp_catalogue_error_km_s": null,
+          "quality_note": "Low SNR; absent from queried DR11 AFGK stellar-parameter table",
+          "claim_limit": "One released observation, not an RV time series; no SB1/SB2 or companion classification inferred.",
+          "paper_rv_independence": "Not established"
+        }
+      ],
+      "lamost_dr6_mrs_cone_5arcsec_rows": 0,
+      "lamost_dr11_mrs_exact_dr3_rows": 0,
+      "galah_dr4_allspec_exact_dr3_rows": 0,
+      "rave_dr5_cone_5arcsec_rows": 0,
+      "apogee_dr17": {
+        "status": "UNAVAILABLE_CONNECTION_TIMEOUT",
+        "constraint": "exact 2MASS cross-identifiers; parent crossmatch ambiguity preserved; no scientific null result",
+        "provenance": "apogee_dr17_tmass14.json"
+      },
+      "wide_binary_catalogue": "NOT_QUERIED",
+      "hold_status": "HELD; no new validated RV time series or luminous-companion exclusion"
+    },
+    {
+      "source_id": "1538284425878995712",
+      "simbad": {
+        "exact_dr3_id_rows": 0,
+        "cone_5arcsec_rows": 0,
+        "control_success": true,
+        "note": "No catalogue match is not novelty evidence"
+      },
+      "lamost_distinct_observations": [],
+      "lamost_dr6_mrs_cone_5arcsec_rows": 0,
+      "lamost_dr11_mrs_exact_dr3_rows": 0,
+      "galah_dr4_allspec_exact_dr3_rows": 0,
+      "rave_dr5_cone_5arcsec_rows": 0,
+      "apogee_dr17": {
+        "status": "UNAVAILABLE_CONNECTION_TIMEOUT",
+        "constraint": "exact 2MASS cross-identifiers; parent crossmatch ambiguity preserved; no scientific null result",
+        "provenance": "apogee_dr17_tmass14.json"
+      },
+      "wide_binary_catalogue": "NOT_QUERIED",
+      "hold_status": "HELD; no new validated RV time series or luminous-companion exclusion"
+    },
+    {
+      "source_id": "4491401821468887552",
+      "simbad": {
+        "exact_dr3_id_rows": 0,
+        "cone_5arcsec_rows": 0,
+        "control_success": true,
+        "note": "No catalogue match is not novelty evidence"
+      },
+      "lamost_distinct_observations": [
+        {
+          "survey": "LAMOST LRS",
+          "obsid": "664307135",
+          "uid": "G14348033118988",
+          "designation": "J172600.40+093330.7",
+          "observation_date_catalogue": "2018-05-18",
+          "mjd_catalogue": 58256,
+          "gaia_dr3_exact_id": "4491401821468887552",
+          "positional_separation_arcsec": 0.4020966743414079,
+          "ra_deg_catalogue": 261.5017,
+          "dec_deg_catalogue": 9.5585352,
+          "classification_catalogue": "K5",
+          "snr_g": 16.62,
+          "snr_r": 53.7,
+          "fibermask": 128,
+          "releases_same_observation": [
+            "DR6 GAVO mirror",
+            "DR11 v2.0 official archive"
+          ],
+          "spectrum_raw": "lamost_spectrum_direct_664307135.raw",
+          "rv_lasp_heliocentric_km_s": -5.31,
+          "rv_lasp_catalogue_error_km_s": 4.36,
+          "quality_note": "fibermask128: documented bit8 NEARWHOPPER; line-profile reliability unassessed",
+          "claim_limit": "One released observation, not an RV time series; no SB1/SB2 or companion classification inferred.",
+          "paper_rv_independence": "UNKNOWN: Li et al.2610.34715v1 has n_RV=1 for4491 but no epoch/obsid table. Do not add it as an independent epoch."
+        }
+      ],
+      "lamost_dr6_mrs_cone_5arcsec_rows": 0,
+      "lamost_dr11_mrs_exact_dr3_rows": 0,
+      "galah_dr4_allspec_exact_dr3_rows": 0,
+      "rave_dr5_cone_5arcsec_rows": 0,
+      "apogee_dr17": {
+        "status": "UNAVAILABLE_CONNECTION_TIMEOUT",
+        "constraint": "exact 2MASS cross-identifiers; parent crossmatch ambiguity preserved; no scientific null result",
+        "provenance": "apogee_dr17_tmass14.json"
+      },
+      "wide_binary_catalogue": "NOT_QUERIED",
+      "hold_status": "HELD; no new validated RV time series or luminous-companion exclusion"
+    },
+    {
+      "source_id": "5959603097090964992",
+      "simbad": {
+        "exact_dr3_id_rows": 0,
+        "cone_5arcsec_rows": 0,
+        "control_success": true,
+        "note": "No catalogue match is not novelty evidence"
+      },
+      "lamost_distinct_observations": [],
+      "lamost_dr6_mrs_cone_5arcsec_rows": 0,
+      "lamost_dr11_mrs_exact_dr3_rows": 0,
+      "galah_dr4_allspec_exact_dr3_rows": 0,
+      "rave_dr5_cone_5arcsec_rows": 0,
+      "apogee_dr17": {
+        "status": "UNAVAILABLE_CONNECTION_TIMEOUT",
+        "constraint": "exact 2MASS cross-identifiers; parent crossmatch ambiguity preserved; no scientific null result",
+        "provenance": "apogee_dr17_tmass14.json"
+      },
+      "wide_binary_catalogue": "NOT_QUERIED",
+      "hold_status": "HELD; no new validated RV time series or luminous-companion exclusion"
+    },
+    {
+      "source_id": "824344003814438528",
+      "simbad": {
+        "exact_dr3_id_rows": 0,
+        "cone_5arcsec_rows": 0,
+        "control_success": true,
+        "note": "No catalogue match is not novelty evidence"
+      },
+      "lamost_distinct_observations": [],
+      "lamost_dr6_mrs_cone_5arcsec_rows": 0,
+      "lamost_dr11_mrs_exact_dr3_rows": 0,
+      "galah_dr4_allspec_exact_dr3_rows": 0,
+      "rave_dr5_cone_5arcsec_rows": 0,
+      "apogee_dr17": {
+        "status": "UNAVAILABLE_CONNECTION_TIMEOUT",
+        "constraint": "exact 2MASS cross-identifiers; parent crossmatch ambiguity preserved; no scientific null result",
+        "provenance": "apogee_dr17_tmass14.json"
+      },
+      "wide_binary_catalogue": "NOT_QUERIED",
+      "hold_status": "HELD; no new validated RV time series or luminous-companion exclusion"
+    },
+    {
+      "source_id": "5929746958324419200",
+      "simbad": {
+        "exact_dr3_id_rows": 0,
+        "cone_5arcsec_rows": 0,
+        "control_success": true,
+        "note": "No catalogue match is not novelty evidence"
+      },
+      "lamost_distinct_observations": [],
+      "lamost_dr6_mrs_cone_5arcsec_rows": 0,
+      "lamost_dr11_mrs_exact_dr3_rows": 0,
+      "galah_dr4_allspec_exact_dr3_rows": 0,
+      "rave_dr5_cone_5arcsec_rows": 0,
+      "apogee_dr17": {
+        "status": "UNAVAILABLE_CONNECTION_TIMEOUT",
+        "constraint": "exact 2MASS cross-identifiers; parent crossmatch ambiguity preserved; no scientific null result",
+        "provenance": "apogee_dr17_tmass14.json"
+      },
+      "wide_binary_catalogue": "NOT_QUERIED",
+      "hold_status": "HELD; no new validated RV time series or luminous-companion exclusion"
+    },
+    {
+      "source_id": "2852726284550996352",
+      "simbad": {
+        "exact_dr3_id_rows": 0,
+        "cone_5arcsec_rows": 0,
+        "control_success": true,
+        "note": "No catalogue match is not novelty evidence"
+      },
+      "lamost_distinct_observations": [],
+      "lamost_dr6_mrs_cone_5arcsec_rows": 0,
+      "lamost_dr11_mrs_exact_dr3_rows": 0,
+      "galah_dr4_allspec_exact_dr3_rows": 0,
+      "rave_dr5_cone_5arcsec_rows": 0,
+      "apogee_dr17": {
+        "status": "UNAVAILABLE_CONNECTION_TIMEOUT",
+        "constraint": "exact 2MASS cross-identifiers; parent crossmatch ambiguity preserved; no scientific null result",
+        "provenance": "apogee_dr17_tmass14.json"
+      },
+      "wide_binary_catalogue": "INCOMPLETE_SERVICE_TIMEOUT",
+      "hold_status": "HELD; no new validated RV time series or luminous-companion exclusion"
+    },
+    {
+      "source_id": "5591318172608607232",
+      "simbad": {
+        "exact_dr3_id_rows": 0,
+        "cone_5arcsec_rows": 0,
+        "control_success": true,
+        "note": "No catalogue match is not novelty evidence"
+      },
+      "lamost_distinct_observations": [],
+      "lamost_dr6_mrs_cone_5arcsec_rows": 0,
+      "lamost_dr11_mrs_exact_dr3_rows": 0,
+      "galah_dr4_allspec_exact_dr3_rows": 0,
+      "rave_dr5_cone_5arcsec_rows": 0,
+      "apogee_dr17": {
+        "status": "UNAVAILABLE_CONNECTION_TIMEOUT",
+        "constraint": "exact 2MASS cross-identifiers; parent crossmatch ambiguity preserved; no scientific null result",
+        "provenance": "apogee_dr17_tmass14.json"
+      },
+      "wide_binary_catalogue": "NOT_QUERIED",
+      "hold_status": "HELD; no new validated RV time series or luminous-companion exclusion"
+    },
+    {
+      "source_id": "4299244434901041024",
+      "simbad": {
+        "exact_dr3_id_rows": 0,
+        "cone_5arcsec_rows": 0,
+        "control_success": true,
+        "note": "No catalogue match is not novelty evidence"
+      },
+      "lamost_distinct_observations": [],
+      "lamost_dr6_mrs_cone_5arcsec_rows": 0,
+      "lamost_dr11_mrs_exact_dr3_rows": 0,
+      "galah_dr4_allspec_exact_dr3_rows": 0,
+      "rave_dr5_cone_5arcsec_rows": 0,
+      "apogee_dr17": {
+        "status": "UNAVAILABLE_CONNECTION_TIMEOUT",
+        "constraint": "exact 2MASS cross-identifiers; parent crossmatch ambiguity preserved; no scientific null result",
+        "provenance": "apogee_dr17_tmass14.json"
+      },
+      "wide_binary_catalogue": "NOT_QUERIED",
+      "hold_status": "HELD; no new validated RV time series or luminous-companion exclusion"
+    },
+    {
+      "source_id": "2245423750054837888",
+      "simbad": {
+        "exact_dr3_id_rows": 0,
+        "cone_5arcsec_rows": 0,
+        "control_success": true,
+        "note": "No catalogue match is not novelty evidence"
+      },
+      "lamost_distinct_observations": [],
+      "lamost_dr6_mrs_cone_5arcsec_rows": 0,
+      "lamost_dr11_mrs_exact_dr3_rows": 0,
+      "galah_dr4_allspec_exact_dr3_rows": 0,
+      "rave_dr5_cone_5arcsec_rows": 0,
+      "apogee_dr17": {
+        "status": "UNAVAILABLE_CONNECTION_TIMEOUT",
+        "constraint": "exact 2MASS cross-identifiers; parent crossmatch ambiguity preserved; no scientific null result",
+        "provenance": "apogee_dr17_tmass14.json"
+      },
+      "wide_binary_catalogue": "NOT_QUERIED",
+      "hold_status": "HELD; no new validated RV time series or luminous-companion exclusion"
+    }
+  ],
+  "retrieval_attempts": [
+    {
+      "started_utc": "2026-10-31T21:54:16.078746+00:00",
+      "finished_utc": "2026-10-31T21:54:36.067322+00:00",
+      "status": "FAILED",
+      "http_code": 0,
+      "returncode": 28,
+      "raw_bytes": null,
+      "raw_sha256": null,
+      "name": "apogee_dr17_tmass14",
+      "provenance": "apogee_dr17_tmass14.json"
+    },
+    {
+      "started_utc": "2026-10-31T21:53:41.043258+00:00",
+      "finished_utc": "2026-10-31T21:54:16.077745+00:00",
+      "status": "FAILED",
+      "http_code": 0,
+      "returncode": 28,
+      "raw_bytes": null,
+      "raw_sha256": null,
+      "name": "elbadry2021_2852726284550996352_Source1",
+      "provenance": "elbadry2021_2852726284550996352_Source1.json"
+    },
+    {
+      "started_utc": "2026-10-31T21:53:41.043258+00:00",
+      "finished_utc": "2026-10-31T21:54:16.077745+00:00",
+      "status": "FAILED",
+      "http_code": 0,
+      "returncode": 28,
+      "raw_bytes": null,
+      "raw_sha256": null,
+      "name": "elbadry2021_2852726284550996352_Source2",
+      "provenance": "elbadry2021_2852726284550996352_Source2.json"
+    },
+    {
+      "started_utc": "2026-10-31T21:53:41.043258+00:00",
+      "finished_utc": "2026-10-31T21:54:16.077745+00:00",
+      "status": "FAILED",
+      "http_code": 0,
+      "returncode": 28,
+      "raw_bytes": null,
+      "raw_sha256": null,
+      "name": "elbadry2021_632497706010874240_Source1",
+      "provenance": "elbadry2021_632497706010874240_Source1.json"
+    },
+    {
+      "started_utc": "2026-10-31T21:54:16.078746+00:00",
+      "finished_utc": "2026-10-31T21:54:17.762860+00:00",
+      "status": "PASS_HTTP_ONLY_PARSE_REQUIRED",
+      "http_code": 200,
+      "returncode": 0,
+      "raw_bytes": 56883,
+      "raw_sha256": "d253a1a4f6e9467db8e8c12ec2051fd5a79dc4ebcec85dcd24580b97dd422233",
+      "name": "elbadry2021_632497706010874240_Source2",
+      "provenance": "elbadry2021_632497706010874240_Source2.json"
+    },
+    {
+      "started_utc": "2026-10-31T21:55:54.002557+00:00",
+      "finished_utc": "2026-10-31T21:56:29.034646+00:00",
+      "status": "FAILED",
+      "http_code": 0,
+      "returncode": 28,
+      "raw_bytes": null,
+      "raw_sha256": null,
+      "name": "elbadry2021_cone_2852726284550996352",
+      "provenance": "elbadry2021_cone_2852726284550996352.json"
+    },
+    {
+      "started_utc": "2026-10-31T21:55:54.003559+00:00",
+      "finished_utc": "2026-10-31T21:56:29.034646+00:00",
+      "status": "FAILED",
+      "http_code": 0,
+      "returncode": 28,
+      "raw_bytes": null,
+      "raw_sha256": null,
+      "name": "elbadry2021_cone_632497706010874240",
+      "provenance": "elbadry2021_cone_632497706010874240.json"
+    },
+    {
+      "started_utc": "2026-10-31T21:52:10.070149+00:00",
+      "finished_utc": "2026-10-31T21:52:11.015837+00:00",
+      "status": "PASS_HTTP_ONLY_PARSE_REQUIRED",
+      "http_code": 200,
+      "returncode": 0,
+      "raw_bytes": 91882,
+      "raw_sha256": "e05471e28cd8fffaae3f350e7a24f4e5a91769cb6cb5cea18cec989318b31d0b",
+      "name": "galah_dr4_schema",
+      "provenance": "galah_dr4_schema.json"
+    },
+    {
+      "started_utc": "2026-10-31T21:52:35.481253+00:00",
+      "finished_utc": "2026-10-31T21:52:36.421224+00:00",
+      "status": "PASS_HTTP_ONLY_PARSE_REQUIRED",
+      "http_code": 200,
+      "returncode": 0,
+      "raw_bytes": 2874,
+      "raw_sha256": "140a444a51d477a2284b898be02bf2aebd5a984517865a0a133ee2a7962e0c77",
+      "name": "galah_dr4_spectra_exact14",
+      "provenance": "galah_dr4_spectra_exact14.json"
+    },
+    {
+      "started_utc": "2026-10-31T21:50:41.613358+00:00",
+      "finished_utc": "2026-10-31T21:50:42.234137+00:00",
+      "status": "FAILED",
+      "http_code": 400,
+      "returncode": 0,
+      "raw_bytes": 854,
+      "raw_sha256": "5a83bab98be2fd6ae25a78c30d09e3aefc48ba7664a0b25c4b55c54dd2bee53d",
+      "name": "galah_tables",
+      "provenance": "galah_tables.json"
+    },
+    {
+      "started_utc": "2026-10-31T21:51:28.355242+00:00",
+      "finished_utc": "2026-10-31T21:51:28.946716+00:00",
+      "status": "PASS_HTTP_ONLY_PARSE_REQUIRED",
+      "http_code": 200,
+      "returncode": 0,
+      "raw_bytes": 2230,
+      "raw_sha256": "dd488dc82027573b0b63400a47db682bf558d9352a7db9b84611a0eb98408598",
+      "name": "galah_tables_td",
+      "provenance": "galah_tables_td.json"
+    },
+    {
+      "started_utc": "2026-10-31T21:49:56.182859+00:00",
+      "finished_utc": "2026-10-31T21:49:57.699739+00:00",
+      "status": "FAILED",
+      "http_code": 404,
+      "returncode": 0,
+      "raw_bytes": 4872,
+      "raw_sha256": "1fb1930c410d26c1870351dfdd74e851c40153a55ea2146988f75a0d0d6167b8",
+      "name": "galah_tap_documentation",
+      "provenance": "galah_tap_documentation.json"
+    },
+    {
+      "started_utc": "2026-10-31T21:48:25.245296+00:00",
+      "finished_utc": "2026-10-31T21:48:27.303331+00:00",
+      "status": "PASS_HTTP_ONLY_PARSE_REQUIRED",
+      "http_code": 200,
+      "returncode": 0,
+      "raw_bytes": 38988,
+      "raw_sha256": "4fbcf4bd9062e225dd9fbc11e41572d2c74e2f69119ab24763ab85f9e81aecaf",
+      "name": "gavo_catalog_schema",
+      "provenance": "gavo_catalog_schema.json"
+    },
+    {
+      "started_utc": "2026-10-31T21:49:56.182859+00:00",
+      "finished_utc": "2026-10-31T21:49:57.174880+00:00",
+      "status": "PASS_HTTP_ONLY_PARSE_REQUIRED",
+      "http_code": 200,
+      "returncode": 0,
+      "raw_bytes": 23294,
+      "raw_sha256": "3f275032497d96bf638e39fcaaaa2a20e278278679d39211bfb0bbecf0bf6048",
+      "name": "gavo_lamost_table_documentation",
+      "provenance": "gavo_lamost_table_documentation.json"
+    },
+    {
+      "started_utc": "2026-10-31T21:58:42.696726+00:00",
+      "finished_utc": "2026-10-31T21:59:01.084747+00:00",
+      "status": "PASS_HTTP_ONLY_PARSE_REQUIRED",
+      "http_code": 200,
+      "returncode": 0,
+      "raw_bytes": 1949,
+      "raw_sha256": "94304a61037fba4bcbf250ceb043a3424bb8ac8241f0c77a0b2c50261c230127",
+      "name": "lamost_dr11_catalogue_boxes14",
+      "provenance": "lamost_dr11_catalogue_boxes14.json"
+    },
+    {
+      "started_utc": "2026-10-31T21:57:52.815393+00:00",
+      "finished_utc": "2026-10-31T21:57:54.191623+00:00",
+      "status": "PASS_HTTP_ONLY_PARSE_REQUIRED",
+      "http_code": 200,
+      "returncode": 0,
+      "raw_bytes": 2572,
+      "raw_sha256": "b4deaa06ae458e3c2b900b48c854e4c1197c6ffe9f7a2da505081633694f1aee",
+      "name": "lamost_dr11_catalogue_exact14",
+      "provenance": "lamost_dr11_catalogue_exact14.json"
+    },
+    {
+      "started_utc": "2026-10-31T21:58:42.696726+00:00",
+      "finished_utc": "2026-10-31T21:58:48.032991+00:00",
+      "status": "PASS_HTTP_ONLY_PARSE_REQUIRED",
+      "http_code": 200,
+      "returncode": 0,
+      "raw_bytes": 372969,
+      "raw_sha256": "37b31d5a047e9bee4dbd3cc2496477f81cba36d2e24a5e4c7724884841d877fe",
+      "name": "lamost_dr11_lrs_product_documentation",
+      "provenance": "lamost_dr11_lrs_product_documentation.json"
+    },
+    {
+      "started_utc": "2026-10-31T21:57:52.816391+00:00",
+      "finished_utc": "2026-10-31T21:57:54.132084+00:00",
+      "status": "PASS_HTTP_ONLY_PARSE_REQUIRED",
+      "http_code": 200,
+      "returncode": 0,
+      "raw_bytes": 1935,
+      "raw_sha256": "f3bf2289e1a003b68df723a2c3a0227f90eca86af4f48959edf71eda28a2ddb3",
+      "name": "lamost_dr11_med_catalogue_exact14",
+      "provenance": "lamost_dr11_med_catalogue_exact14.json"
+    },
+    {
+      "started_utc": "2026-10-31T21:57:23.833933+00:00",
+      "finished_utc": "2026-10-31T21:57:26.628148+00:00",
+      "status": "PASS_HTTP_ONLY_PARSE_REQUIRED",
+      "http_code": 200,
+      "returncode": 0,
+      "raw_bytes": 60608,
+      "raw_sha256": "76f350eb09474653ce2c23cbab61dd7f9b26b3c8f0ffa683c1f64ac2eb76c3b7",
+      "name": "lamost_dr11_schema",
+      "provenance": "lamost_dr11_schema.json"
+    },
+    {
+      "started_utc": "2026-10-31T21:57:52.815393+00:00",
+      "finished_utc": "2026-10-31T21:57:54.154248+00:00",
+      "status": "PASS_HTTP_ONLY_PARSE_REQUIRED",
+      "http_code": 200,
+      "returncode": 0,
+      "raw_bytes": 1792,
+      "raw_sha256": "e5cfa247558734aee9b12510475ac9fd3adc94829a99bdc153647ab6dc1abaaa",
+      "name": "lamost_dr11_stellar_exact14",
+      "provenance": "lamost_dr11_stellar_exact14.json"
+    },
+    {
+      "started_utc": "2026-10-31T21:57:02.063163+00:00",
+      "finished_utc": "2026-10-31T21:57:04.006579+00:00",
+      "status": "PASS_HTTP_ONLY_PARSE_REQUIRED",
+      "http_code": 200,
+      "returncode": 0,
+      "raw_bytes": 2726,
+      "raw_sha256": "5d31b34aa2df519235896ae2cb16b12d09469a5115ef64c656870ac1a353842e",
+      "name": "lamost_dr11_tables",
+      "provenance": "lamost_dr11_tables.json"
+    },
+    {
+      "started_utc": "2026-10-31T21:57:02.063163+00:00",
+      "finished_utc": "2026-10-31T21:57:04.901253+00:00",
+      "status": "PASS_HTTP_ONLY_PARSE_REQUIRED",
+      "http_code": 200,
+      "returncode": 0,
+      "raw_bytes": 12585,
+      "raw_sha256": "a7e3f48e5ad21ecd44544103fc069d670c99f1a073057a581a694a511cf6f00d",
+      "name": "lamost_dr11_vo_documentation",
+      "provenance": "lamost_dr11_vo_documentation.json"
+    },
+    {
+      "started_utc": "2026-10-31T21:49:06.677150+00:00",
+      "finished_utc": "2026-10-31T21:49:28.113786+00:00",
+      "status": "FAILED",
+      "http_code": 500,
+      "returncode": 0,
+      "raw_bytes": 2888,
+      "raw_sha256": "bc96ebcdec89c7a747962c1210bd729613fde686c3e46409c368a0ef493e957f",
+      "name": "lamost_dr6_lrs_cone14",
+      "provenance": "lamost_dr6_lrs_cone14.json"
+    },
+    {
+      "started_utc": "2026-10-31T21:50:41.613358+00:00",
+      "finished_utc": "2026-10-31T21:50:43.043822+00:00",
+      "status": "PASS_HTTP_ONLY_PARSE_REQUIRED",
+      "http_code": 200,
+      "returncode": 0,
+      "raw_bytes": 10821,
+      "raw_sha256": "bf05e0a798576c65e657f46d4a2c7d056aa6567ca84c9574e73f1ee81162fdf2",
+      "name": "lamost_dr6_lrs_indexed_cone14",
+      "provenance": "lamost_dr6_lrs_indexed_cone14.json"
+    },
+    {
+      "started_utc": "2026-10-31T21:49:06.741154+00:00",
+      "finished_utc": "2026-10-31T21:49:28.183039+00:00",
+      "status": "FAILED",
+      "http_code": 500,
+      "returncode": 0,
+      "raw_bytes": 2888,
+      "raw_sha256": "cf3fd31c3812bef11d32575acabbac7c2a1f853828ef1a922bf6131e56b8b6b8",
+      "name": "lamost_dr6_mrs_cone14",
+      "provenance": "lamost_dr6_mrs_cone14.json"
+    },
+    {
+      "started_utc": "2026-10-31T21:50:41.613358+00:00",
+      "finished_utc": "2026-10-31T21:50:42.996118+00:00",
+      "status": "PASS_HTTP_ONLY_PARSE_REQUIRED",
+      "http_code": 200,
+      "returncode": 0,
+      "raw_bytes": 12195,
+      "raw_sha256": "10c65aecc453f28183d6eb57954dc177e345fcdc54313bb0c6cbc4ce0ab36ffe",
+      "name": "lamost_dr6_mrs_indexed_cone14",
+      "provenance": "lamost_dr6_mrs_indexed_cone14.json"
+    },
+    {
+      "started_utc": "2026-10-31T21:51:52.235657+00:00",
+      "finished_utc": "2026-10-31T21:51:53.000038+00:00",
+      "status": "FAILED",
+      "http_code": 301,
+      "returncode": 0,
+      "raw_bytes": 1131,
+      "raw_sha256": "3eede56fef230c4058e8bc9aad33788013411ae8cded5fae2f7ab8a7d75a33d8",
+      "name": "lamost_spectrum_294101037",
+      "provenance": "lamost_spectrum_294101037.json"
+    },
+    {
+      "started_utc": "2026-10-31T21:51:52.587322+00:00",
+      "finished_utc": "2026-10-31T21:51:53.885718+00:00",
+      "status": "FAILED",
+      "http_code": 301,
+      "returncode": 0,
+      "raw_bytes": 1131,
+      "raw_sha256": "543c1008618347eb22ac1407cea4a26dc72951f22fab7cd1dc8dfe2a525b1223",
+      "name": "lamost_spectrum_664307135",
+      "provenance": "lamost_spectrum_664307135.json"
+    },
+    {
+      "started_utc": "2026-10-31T21:52:35.481253+00:00",
+      "finished_utc": "2026-10-31T21:52:37.771268+00:00",
+      "status": "PASS_HTTP_ONLY_PARSE_REQUIRED",
+      "http_code": 200,
+      "returncode": 0,
+      "raw_bytes": 139703,
+      "raw_sha256": "42909324a1507d0b8a408a77f62f4530bf8006c5f555ac201f3453cfa1a161ec",
+      "name": "lamost_spectrum_direct_294101037",
+      "provenance": "lamost_spectrum_direct_294101037.json"
+    },
+    {
+      "started_utc": "2026-10-31T21:52:35.481253+00:00",
+      "finished_utc": "2026-10-31T21:52:37.559339+00:00",
+      "status": "PASS_HTTP_ONLY_PARSE_REQUIRED",
+      "http_code": 200,
+      "returncode": 0,
+      "raw_bytes": 140099,
+      "raw_sha256": "87bda77bd6d1d81f81f2c38368653552de64e5140847457968d32275a4d1dbdc",
+      "name": "lamost_spectrum_direct_664307135",
+      "provenance": "lamost_spectrum_direct_664307135.json"
+    },
+    {
+      "started_utc": "2026-10-31T21:49:06.283339+00:00",
+      "finished_utc": "2026-10-31T21:49:07.807205+00:00",
+      "status": "PASS_HTTP_ONLY_PARSE_REQUIRED",
+      "http_code": 200,
+      "returncode": 0,
+      "raw_bytes": 34604,
+      "raw_sha256": "ac41a1b592918f825890155c8c41769b51ed3e5d0740008e9986f87384d8e90e",
+      "name": "rave_dr5_cone14",
+      "provenance": "rave_dr5_cone14.json"
+    },
+    {
+      "started_utc": "2026-10-31T21:52:10.070149+00:00",
+      "finished_utc": "2026-10-31T21:52:10.453174+00:00",
+      "status": "PASS_HTTP_ONLY_PARSE_REQUIRED",
+      "http_code": 200,
+      "returncode": 0,
+      "raw_bytes": 1721,
+      "raw_sha256": "8a14b58a1b0905611af6322b6ca914d9152f73df97419bfed67d2b5ad73dbc7f",
+      "name": "simbad_bh1_control",
+      "provenance": "simbad_bh1_control.json"
+    },
+    {
+      "started_utc": "2026-10-31T21:49:56.181860+00:00",
+      "finished_utc": "2026-10-31T21:50:31.214904+00:00",
+      "status": "FAILED",
+      "http_code": 0,
+      "returncode": 28,
+      "raw_bytes": null,
+      "raw_sha256": null,
+      "name": "simbad_cone14",
+      "provenance": "simbad_cone14.json"
+    },
+    {
+      "started_utc": "2026-10-31T21:49:06.283339+00:00",
+      "finished_utc": "2026-10-31T21:49:06.669149+00:00",
+      "status": "PASS_HTTP_ONLY_PARSE_REQUIRED",
+      "http_code": 200,
+      "returncode": 0,
+      "raw_bytes": 11894,
+      "raw_sha256": "2b14c9166f30f92e6472a26ca45ff8b68f899b9269ffa4723ff78d51c3393694",
+      "name": "simbad_exact14",
+      "provenance": "simbad_exact14.json"
+    },
+    {
+      "started_utc": "2026-10-31T21:48:25.244297+00:00",
+      "finished_utc": "2026-10-31T21:48:25.664720+00:00",
+      "status": "PASS_HTTP_ONLY_PARSE_REQUIRED",
+      "http_code": 200,
+      "returncode": 0,
+      "raw_bytes": 5411,
+      "raw_sha256": "b4ecc8e47db4992353d0e091b3f3c77fa2eb7969abcfc42347a9f0b4349ff48a",
+      "name": "simbad_mirror_capabilities",
+      "provenance": "simbad_mirror_capabilities.json"
+    },
+    {
+      "started_utc": "2026-10-31T21:48:25.245296+00:00",
+      "finished_utc": "2026-10-31T21:48:25.664720+00:00",
+      "status": "PASS_HTTP_ONLY_PARSE_REQUIRED",
+      "http_code": 200,
+      "returncode": 0,
+      "raw_bytes": 11357,
+      "raw_sha256": "41db05a0336445a6485b4360eefeba06ccf91997e1c291abde149e938822bf4d",
+      "name": "simbad_schema",
+      "provenance": "simbad_schema.json"
+    },
+    {
+      "started_utc": "2026-10-31T21:49:06.283339+00:00",
+      "finished_utc": "2026-10-31T21:49:06.734148+00:00",
+      "status": "PASS_HTTP_ONLY_PARSE_REQUIRED",
+      "http_code": 200,
+      "returncode": 0,
+      "raw_bytes": 15655,
+      "raw_sha256": "454400820d130e005c838380cafb64bdb56f94df65e121238f4dc104fe9903b0",
+      "name": "simbad_schema_td",
+      "provenance": "simbad_schema_td.json"
+    },
+    {
+      "started_utc": "2026-10-31T21:51:51.093937+00:00",
+      "finished_utc": "2026-10-31T21:51:51.467194+00:00",
+      "status": "PASS_HTTP_ONLY_PARSE_REQUIRED",
+      "http_code": 200,
+      "returncode": 0,
+      "raw_bytes": 2568,
+      "raw_sha256": "54d7ef969f67a212b6c1b9ebf66816c4bc725bb1a19fb64778119343f3581f2c",
+      "name": "simbad_single_1533365584518328576",
+      "provenance": "simbad_single_1533365584518328576.json"
+    },
+    {
+      "started_utc": "2026-10-31T21:51:51.093937+00:00",
+      "finished_utc": "2026-10-31T21:51:51.483735+00:00",
+      "status": "PASS_HTTP_ONLY_PARSE_REQUIRED",
+      "http_code": 200,
+      "returncode": 0,
+      "raw_bytes": 2569,
+      "raw_sha256": "30bd2bd9c60852802cbba76cb72d95a9311aab0f351e604832e26be20b1863f1",
+      "name": "simbad_single_1538284425878995712",
+      "provenance": "simbad_single_1538284425878995712.json"
+    },
+    {
+      "started_utc": "2026-10-31T21:51:52.232658+00:00",
+      "finished_utc": "2026-10-31T21:51:52.615834+00:00",
+      "status": "PASS_HTTP_ONLY_PARSE_REQUIRED",
+      "http_code": 200,
+      "returncode": 0,
+      "raw_bytes": 2568,
+      "raw_sha256": "838107362cb9d923ec7512bb9324e55ab61f7579e94e4b83c8d0ea6f044ac6ca",
+      "name": "simbad_single_2245423750054837888",
+      "provenance": "simbad_single_2245423750054837888.json"
+    },
+    {
+      "started_utc": "2026-10-31T21:51:51.856158+00:00",
+      "finished_utc": "2026-10-31T21:51:52.217825+00:00",
+      "status": "PASS_HTTP_ONLY_PARSE_REQUIRED",
+      "http_code": 200,
+      "returncode": 0,
+      "raw_bytes": 2568,
+      "raw_sha256": "a7a77838548005a916fa80e7bf6c8d6d54c01fc71f6d462fba7a4d61b0edd4f1",
+      "name": "simbad_single_2852726284550996352",
+      "provenance": "simbad_single_2852726284550996352.json"
+    },
+    {
+      "started_utc": "2026-10-31T21:51:27.992231+00:00",
+      "finished_utc": "2026-10-31T21:51:28.366245+00:00",
+      "status": "PASS_HTTP_ONLY_PARSE_REQUIRED",
+      "http_code": 200,
+      "returncode": 0,
+      "raw_bytes": 2569,
+      "raw_sha256": "c7b23ad4287dd92084f8900fe6353c2fedf1d539feaa8c2a99c70916751a65d4",
+      "name": "simbad_single_3316050687674598656",
+      "provenance": "simbad_single_3316050687674598656.json"
+    },
+    {
+      "started_utc": "2026-10-31T21:51:52.225624+00:00",
+      "finished_utc": "2026-10-31T21:51:52.578322+00:00",
+      "status": "PASS_HTTP_ONLY_PARSE_REQUIRED",
+      "http_code": 200,
+      "returncode": 0,
+      "raw_bytes": 2569,
+      "raw_sha256": "4b6c3ea1c1a1fe80266336045fd0da6ec45d8a7c9698539387d7ac62f6766edf",
+      "name": "simbad_single_4299244434901041024",
+      "provenance": "simbad_single_4299244434901041024.json"
+    },
+    {
+      "started_utc": "2026-10-31T21:51:51.482735+00:00",
+      "finished_utc": "2026-10-31T21:51:51.847946+00:00",
+      "status": "PASS_HTTP_ONLY_PARSE_REQUIRED",
+      "http_code": 200,
+      "returncode": 0,
+      "raw_bytes": 2569,
+      "raw_sha256": "d943738bb4e851c8551cc8243888c0a525b0812bb9990e6b27cc897d9df4c56c",
+      "name": "simbad_single_4491401821468887552",
+      "provenance": "simbad_single_4491401821468887552.json"
+    },
+    {
+      "started_utc": "2026-10-31T21:51:51.865161+00:00",
+      "finished_utc": "2026-10-31T21:51:52.217825+00:00",
+      "status": "PASS_HTTP_ONLY_PARSE_REQUIRED",
+      "http_code": 200,
+      "returncode": 0,
+      "raw_bytes": 2570,
+      "raw_sha256": "aa6dd99a7fe4d089781e3ecc2bfc72ff5d5a0c425427b9a1b7961e1390b3634a",
+      "name": "simbad_single_5591318172608607232",
+      "provenance": "simbad_single_5591318172608607232.json"
+    },
+    {
+      "started_utc": "2026-10-31T21:51:27.992231+00:00",
+      "finished_utc": "2026-10-31T21:51:28.339543+00:00",
+      "status": "PASS_HTTP_ONLY_PARSE_REQUIRED",
+      "http_code": 200,
+      "returncode": 0,
+      "raw_bytes": 2571,
+      "raw_sha256": "2e5f212644b6aa664369fbd733c86f6efed22c7313065836f69ccf1c37f6ddb3",
+      "name": "simbad_single_5928370816455687808",
+      "provenance": "simbad_single_5928370816455687808.json"
+    },
+    {
+      "started_utc": "2026-10-31T21:51:51.856158+00:00",
+      "finished_utc": "2026-10-31T21:51:52.216049+00:00",
+      "status": "PASS_HTTP_ONLY_PARSE_REQUIRED",
+      "http_code": 200,
+      "returncode": 0,
+      "raw_bytes": 2570,
+      "raw_sha256": "7103b7cab7df14243549f40202b89373af362e988fc6ec8a0b94b761d28078e9",
+      "name": "simbad_single_5929746958324419200",
+      "provenance": "simbad_single_5929746958324419200.json"
+    },
+    {
+      "started_utc": "2026-10-31T21:51:51.482735+00:00",
+      "finished_utc": "2026-10-31T21:51:51.847946+00:00",
+      "status": "PASS_HTTP_ONLY_PARSE_REQUIRED",
+      "http_code": 200,
+      "returncode": 0,
+      "raw_bytes": 2569,
+      "raw_sha256": "94429ff71233a9621cd2985d01c0e35c102c37431add836c825d620b6889faf0",
+      "name": "simbad_single_5959603097090964992",
+      "provenance": "simbad_single_5959603097090964992.json"
+    },
+    {
+      "started_utc": "2026-10-31T21:51:27.992231+00:00",
+      "finished_utc": "2026-10-31T21:51:28.360245+00:00",
+      "status": "PASS_HTTP_ONLY_PARSE_REQUIRED",
+      "http_code": 200,
+      "returncode": 0,
+      "raw_bytes": 2570,
+      "raw_sha256": "f8b638886639770c95ae96ad28a07985623798b85c4fb7b3851572dc3e0f35f8",
+      "name": "simbad_single_5991734159714775296",
+      "provenance": "simbad_single_5991734159714775296.json"
+    },
+    {
+      "started_utc": "2026-10-31T21:51:51.093937+00:00",
+      "finished_utc": "2026-10-31T21:51:51.467194+00:00",
+      "status": "PASS_HTTP_ONLY_PARSE_REQUIRED",
+      "http_code": 200,
+      "returncode": 0,
+      "raw_bytes": 2569,
+      "raw_sha256": "0f911c71c768ec6e49e674b3bbdf9f4023a689a87df9b01f5261f71353aaec79",
+      "name": "simbad_single_632497706010874240",
+      "provenance": "simbad_single_632497706010874240.json"
+    },
+    {
+      "started_utc": "2026-10-31T21:51:51.492736+00:00",
+      "finished_utc": "2026-10-31T21:51:51.841520+00:00",
+      "status": "PASS_HTTP_ONLY_PARSE_REQUIRED",
+      "http_code": 200,
+      "returncode": 0,
+      "raw_bytes": 2569,
+      "raw_sha256": "1f553158d420cfe13c6c29fb69b7e941f3d415c0245b266c1640b51a9d73ae32",
+      "name": "simbad_single_824344003814438528",
+      "provenance": "simbad_single_824344003814438528.json"
+    }
+  ]
+}

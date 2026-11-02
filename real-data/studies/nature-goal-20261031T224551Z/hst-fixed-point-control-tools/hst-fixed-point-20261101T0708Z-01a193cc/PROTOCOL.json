@@ -1,0 +1,111 @@
+{
+  "created_utc": "2026-11-01T07:08:40.679296+00:00",
+  "status": "PREPARED_ONE_METADATA_CAPTURE_AWAITING_EXACT_PROTOCOL_REVIEW",
+  "script_sha256": "90c63d8f067d393aa3fbe4b5052e30b9a1bee3f8d584cd9dd722ae5b22d43730",
+  "transport_sha256": "80aed571bb16a274b61264d2f61a9425fd528a99777353e48d30e9e8c7205087",
+  "pin_file_sha256": "7fd2ee1f0da211f6ed2d76f31a8538c1f993c0087225f054f547a75c19f3cb6c",
+  "input_pins": {
+    "hst-row-presence-control-tools/ROW_PRESENCE_DIAGNOSTIC_PROPOSAL.json": "3a522b5455ad630df2837e1c7b241c97b7d76258931cf1352544ac95220acb06",
+    "hst-row-presence-control-tools/hst-row-presence-20261101T0653Z-01a193cc/PROTOCOL.json": "284c1af5544779a9f6ec3e8162cfc7dbde4cb9274c4003a73549fa1de50d34ab",
+    "hst-row-presence-control-tools/hst-row-presence-20261101T0653Z-01a193cc/RESULTS.json": "b169fdae08f0e606e77abbd68359eb6d73e34259ff62aeb3903a79cf5983cb9d",
+    "hst-row-presence-control-tools/hst-row-presence-20261101T0653Z-01a193cc/hst_row_presence.json": "564d73d3e0289fce609db10b90645d983e5b88bebb9ea30630d0ef26aed020a0",
+    "hst-row-presence-control-tools/hst-row-presence-20261101T0653Z-01a193cc/hst_row_presence.raw": "af7e5a48d410518c79a6360d8951cd6ad955f1c32ca113f33aed156a2ab981ba",
+    "science/hst-fixed-point-control-20261101/derive_control_point.py": "90a16ecaed1a29be028183577d0d873fe524cf7c4dd1aaab44b4ec5d00475665",
+    "science/hst-fixed-point-control-20261101/INTERIOR_POINT_AND_ROW_REVIEW.json": "89d2579afd1f8888fd5c2b7f1807cdc90e648e73571d58aa462ecfe93ff97679",
+    "science/hst599-footprint-20261101/FIELD_MAP.json": "eacdb7fcfdcd17cac8493b006e30d0dc6147d72b28118d19fed75fbd9950c7af",
+    "hst599-column-schema-tools/primary.raw": "e38ce95aa2d5dd949df9f7fbd799787b3a09665728ddaf631e40c26dfd844e44",
+    "hst599-schema-tools/examples/primary.raw": "120b65d6c92b8a21e5090ea0951ed15e59f57903f5fc6dc803a67338bd400aab",
+    "science/existing14-followup-methods-root/evidence/mast_caom_fields.raw": "18bca08d3b5c7513310967f1a0e39f0a6fefae1d9530998d1de56a38b838ed80",
+    "science/hst-positive-control-20261101/POSTRUN_SCIENCE_REVIEW.json": "4a057566f640dc7268fa3789a664e93afc19c7f7e4711296a080ef14e4bd4602",
+    "science/hst-fixed-point-control-20261101/FIXED_POINT_GEOMETRY_CONTROL_PROPOSAL_V2.json": "cd1e02245c3715b6bdd069c2e3af6cda7cb97081efe7c57d4837e2c6f8670cb7",
+    "science/hst-fixed-point-control-20261101/QUERY.adql": "ba344869502a537c709a9df6fbca8356b0b7a607b306b71fedee72b06f1fc989",
+    "science/hst-fixed-point-control-20261101/FIXED_POINT_GEOMETRY_CONTROL_PROPOSAL.json": "92abfae1a1266adb122f5d94e5b5a226582dd9d1f6acaa4abb45c0fe3a5dae41",
+    "science/hst-fixed-point-control-20261101/V1_TO_V2_CONTROL_INTERPRETATION.diff": "36fff65c763ab5d14030b3dbb5f032e55335bb237f6a1230986959c9cd92f33c",
+    "science/hst-fixed-point-control-20261101/V2_INTERPRETATION_SCIENCE_REVIEW.json": "018b59e28fa0ce2e1067301322a66067f5db644d2e0826019f432fcb1982d0f2",
+    "hst599-footprint-tools/native_transport.py": "4640cf205bff66266c452ae57bf84450d160539dc94db382d3b70aa27c26f65c",
+    "hst599-footprint-tools/acquire_hst599_v1.py": "c1de5a8fd7edbd40c1a8317b12488975e30a92d96b894e28cbf02a0a5ce50b1d",
+    "execution-review/hst599-footprint-20261101/IMPLEMENTATION_EXECUTION_REVIEW.json": "0c9275702d78b4d37a34035fefc891580dde41000b428220eebaf5d75eaac1fa",
+    "science/hst599-implementation-review-20261101/IMPLEMENTATION_SCIENCE_REVIEW.json": "bf84d0248d0b9539372e1855af946aa36ec4e57fa7aa253a3b702801618ec936",
+    "execution-review/hst-fixed-point-20261101/GEOMETRY_EXECUTION_REVIEW.json": "ca1a51b4b14ef800d9f3fcc6e48988291a29776138cb3e2bda62b2a0c4f21283"
+  },
+  "proposal_sha256": "cd1e02245c3715b6bdd069c2e3af6cda7cb97081efe7c57d4837e2c6f8670cb7",
+  "identity_scope": "PROVIDER_METADATA_CONTROL_ONLY",
+  "scientific_target_selected": false,
+  "original599_query_changed_or_retried": false,
+  "automatic_followup_authorized": false,
+  "provider_control_identity": {
+    "table": "ivoa.obscore",
+    "objid": "109191367",
+    "obs_id": "n3t401e2q",
+    "scope": "Namespaced HST observation metadata only; no Gaia source association."
+  },
+  "fixed_point": {
+    "frame": "ICRS",
+    "ra_deg_literal": "189.160987245742007",
+    "dec_deg_literal": "62.180980370585935",
+    "derivation_sha256": "89d2579afd1f8888fd5c2b7f1807cdc90e648e73571d58aa462ecfe93ff97679",
+    "uses_reported_s_ra_s_dec": false
+  },
+  "control_success_criterion": "Valid QUERY_STATUS OK and TABLEDATA with exact 31-field schema, all raw cells/nulls/types/units and ascending exact objids preserved; known objid 109191367 present among 1 to 20 rows with HST/image metadata. This passes the populated scalar-query mechanics control only.",
+  "positive_but_bounded_case": "Known objid present among exactly 20 valid rows passes scalar-query mechanics, while overlapping archive coverage remains truncated or unknown. No automatic pagination, all-sky completeness, original-source completeness or image-access conclusion follows.",
+  "control_failure_or_hold": "One attempt. Transport/TLS/HTTP/deadline/byte-cap/ERROR/OVERFLOW/unknown serialization/schema or contradictory HST-image fields stops. Valid zero or missing known objid remains an explicit control hold. The 20-row boundary alone is a coverage limitation, not a failed mechanics control. Never repair a hold by dropping rows or changing the query.",
+  "requests": [
+    {
+      "method": "GET",
+      "url": "https://mast.stsci.edu/vo-tap/api/v0.1/caom/sync?REQUEST=doQuery&LANG=ADQL&FORMAT=votable&MAXREC=20&QUERY=SELECT+TOP+20+objid%2Cobs_collection%2Cfacility_name%2Cinstrument_name%2Ctarget_name%2Cobs_id%2Cobs_publisher_did%2Cdataproduct_type%2Ccalib_level%2Cs_region%2Cs_ra%2Cs_dec%2Cs_fov%2Cs_resolution%2Cs_xel1%2Cs_xel2%2Ct_min%2Ct_max%2Ct_exptime%2Ct_resolution%2Ct_xel%2Cem_min%2Cem_max%2Cem_res_power%2Cem_xel%2Cpol_states%2Cpol_xel%2Co_ucd%2Caccess_url%2Caccess_format%2Caccess_estsize+FROM+ivoa.obscore+WHERE+obs_collection%3D%27HST%27+AND+dataproduct_type%3D%27image%27+AND+CONTAINS%28POINT%28%27ICRS%27%2C189.160987245742007%2C62.180980370585935%29%2Cs_region%29%3D1+ORDER+BY+objid",
+      "parameters": {
+        "REQUEST": "doQuery",
+        "LANG": "ADQL",
+        "FORMAT": "votable",
+        "MAXREC": "20",
+        "QUERY": "SELECT TOP 20 objid,obs_collection,facility_name,instrument_name,target_name,obs_id,obs_publisher_did,dataproduct_type,calib_level,s_region,s_ra,s_dec,s_fov,s_resolution,s_xel1,s_xel2,t_min,t_max,t_exptime,t_resolution,t_xel,em_min,em_max,em_res_power,em_xel,pol_states,pol_xel,o_ucd,access_url,access_format,access_estsize FROM ivoa.obscore WHERE obs_collection='HST' AND dataproduct_type='image' AND CONTAINS(POINT('ICRS',189.160987245742007,62.180980370585935),s_region)=1 ORDER BY objid"
+      },
+      "query": "SELECT TOP 20 objid,obs_collection,facility_name,instrument_name,target_name,obs_id,obs_publisher_did,dataproduct_type,calib_level,s_region,s_ra,s_dec,s_fov,s_resolution,s_xel1,s_xel2,t_min,t_max,t_exptime,t_resolution,t_xel,em_min,em_max,em_res_power,em_xel,pol_states,pol_xel,o_ucd,access_url,access_format,access_estsize FROM ivoa.obscore WHERE obs_collection='HST' AND dataproduct_type='image' AND CONTAINS(POINT('ICRS',189.160987245742007,62.180980370585935),s_region)=1 ORDER BY objid",
+      "follow_returned_URLs": false
+    }
+  ],
+  "limits": {
+    "requests": 1,
+    "automatic_retries": 0,
+    "redirects": 0,
+    "concurrency": 1,
+    "TOP": 20,
+    "MAXREC": 20,
+    "body_bytes": 1000000,
+    "header_bytes": 65536,
+    "stdout_bytes": 4096,
+    "stderr_bytes": 262144,
+    "curl_seconds": 45,
+    "owned_process_seconds": 48,
+    "cleanup_seconds": 2,
+    "aggregate_wall_seconds": 55,
+    "product_downloads": 0
+  },
+  "transport_limits": {
+    "body_bytes": 1000000,
+    "header_bytes": 65536,
+    "stdout_bytes": 4096,
+    "stderr_bytes": 262144,
+    "curl_seconds": 45,
+    "process_seconds": 48,
+    "poll_seconds": 0.02,
+    "owned_process_cleanup_seconds": 2
+  },
+  "hypothesis": "A scalar ICRS point independently demonstrated to be inside a returned HST polygon should cause the fixed-point footprint query to include that known provider row.",
+  "interpretation_requirements": [
+    "All returned observation identities stay provider context; no Gaia crossmatch, source photons, candidate membership or independent epoch is inferred.",
+    "Known-row inclusion tests scalar query behaviour at this metadata point, not all-sky completeness, source599 image absence or actual image WCS/pixels.",
+    "The separately reported centre being outside the literal footprint is an observed metadata relation; it does not prove catalogue error or cause the earlierHTTP500.",
+    "Any reported resolutions/pixel dimensions may be null; do not fill them from instrument expectations.",
+    "No epoch propagation, image access, product URL following or automatic remaining13 batch is included.",
+    "The numerical interior tolerance belongs to a geometry calculation, not a scientific acceptance/rejection threshold."
+  ],
+  "geometry": "The documented constant POINT-in-s_region pattern, with the frozen interior literals; no column-dependent POINT and no objid filter.",
+  "rights_policy": "No rights/release field exists in the saved view. This requests public metadata, not public image access.",
+  "capture_stage": "Transport capture only. Even HTTP200 is NOT a validated populated fixed-point control. Actual XML QUERY_STATUS, serialization, fields/units, exact objid ordering and rows require separate inert review before interpretation.",
+  "failure_policy": "One attempt; any transport/TLS/HTTP/redirect/byte/deadline failure stops. No retry, alternate endpoint, cache substitution or completed-run replay.",
+  "privacy": "Raw response, all returned URLs, native headers and diagnostics remain local pending privacy review. No returned link is followed.",
+  "new_images": 0,
+  "new_cohort_or_scientific_criteria": false,
+  "holdout_or_production_mutation": false
+}
