@@ -1,0 +1,345 @@
+{
+  "version": "controls-v1",
+  "meaning": "Sources in the bundled 500-row snapshot already published as compact-companion candidates, known black holes or refuted candidates. Positives only: absence of a label is not novelty.",
+  "blind_rule": "Hide known_catalogs and withhold each control's labeling VizieR catalog.",
+  "controls": [
+    {
+      "source_id": "347695336533949440",
+      "label": "PUBLISHED_PRIOR",
+      "label_sources": [
+        "shahaf2023"
+      ],
+      "split": "tune"
+    },
+    {
+      "source_id": "747174436620510976",
+      "label": "PUBLISHED_PRIOR",
+      "label_sources": [
+        "shahaf2023"
+      ],
+      "split": "tune"
+    },
+    {
+      "source_id": "809741149368202752",
+      "label": "PUBLISHED_PRIOR",
+      "label_sources": [
+        "shahaf2023"
+      ],
+      "split": "tune"
+    },
+    {
+      "source_id": "824344003814438528",
+      "label": "PUBLISHED_PRIOR",
+      "label_sources": [
+        "li2026"
+      ],
+      "split": "tune"
+    },
+    {
+      "source_id": "1028887114002082432",
+      "label": "PUBLISHED_PRIOR",
+      "label_sources": [
+        "shahaf2023"
+      ],
+      "split": "test"
+    },
+    {
+      "source_id": "1058875159778407808",
+      "label": "PUBLISHED_PRIOR",
+      "label_sources": [
+        "shahaf2023"
+      ],
+      "split": "tune"
+    },
+    {
+      "source_id": "1109902566711892352",
+      "label": "PUBLISHED_PRIOR",
+      "label_sources": [
+        "shahaf2023"
+      ],
+      "split": "tune"
+    },
+    {
+      "source_id": "1350295047363872512",
+      "label": "PUBLISHED_PRIOR",
+      "label_sources": [
+        "shahaf2023"
+      ],
+      "split": "tune"
+    },
+    {
+      "source_id": "1525829295599805184",
+      "label": "PUBLISHED_PRIOR",
+      "label_sources": [
+        "shahaf2023"
+      ],
+      "split": "tune"
+    },
+    {
+      "source_id": "1581117310088807552",
+      "label": "PUBLISHED_PRIOR",
+      "label_sources": [
+        "shahaf2023"
+      ],
+      "split": "tune"
+    },
+    {
+      "source_id": "1695294922548180224",
+      "label": "PUBLISHED_PRIOR",
+      "label_sources": [
+        "shahaf2023"
+      ],
+      "split": "tune"
+    },
+    {
+      "source_id": "1801110822095134848",
+      "label": "PUBLISHED_PRIOR",
+      "label_sources": [
+        "shahaf2023"
+      ],
+      "split": "tune"
+    },
+    {
+      "source_id": "1871419337958702720",
+      "label": "PUBLISHED_PRIOR",
+      "label_sources": [
+        "shahaf2023"
+      ],
+      "split": "tune"
+    },
+    {
+      "source_id": "2196619383835483648",
+      "label": "PUBLISHED_PRIOR",
+      "label_sources": [
+        "shahaf2023"
+      ],
+      "split": "tune"
+    },
+    {
+      "source_id": "2397135910639986304",
+      "label": "PUBLISHED_PRIOR",
+      "label_sources": [
+        "shahaf2023"
+      ],
+      "split": "tune"
+    },
+    {
+      "source_id": "2426116249713980416",
+      "label": "PUBLISHED_PRIOR",
+      "label_sources": [
+        "shahaf2023"
+      ],
+      "split": "tune"
+    },
+    {
+      "source_id": "2469926638416055168",
+      "label": "PUBLISHED_PRIOR",
+      "label_sources": [
+        "shahaf2023"
+      ],
+      "split": "tune"
+    },
+    {
+      "source_id": "2885872059004028800",
+      "label": "PUBLISHED_PRIOR",
+      "label_sources": [
+        "shahaf2023"
+      ],
+      "split": "test"
+    },
+    {
+      "source_id": "2912474227443068544",
+      "label": "PUBLISHED_PRIOR",
+      "label_sources": [
+        "shahaf2023"
+      ],
+      "split": "tune"
+    },
+    {
+      "source_id": "3263804373319076480",
+      "label": "PUBLISHED_PRIOR",
+      "label_sources": [
+        "shahaf2023"
+      ],
+      "split": "tune"
+    },
+    {
+      "source_id": "3509370326763016704",
+      "label": "PUBLISHED_PRIOR",
+      "label_sources": [
+        "shahaf2023"
+      ],
+      "split": "tune"
+    },
+    {
+      "source_id": "3869650535947137920",
+      "label": "PUBLISHED_PRIOR",
+      "label_sources": [
+        "shahaf2023"
+      ],
+      "split": "tune"
+    },
+    {
+      "source_id": "4240540718818313984",
+      "label": "PUBLISHED_PRIOR",
+      "label_sources": [
+        "shahaf2023"
+      ],
+      "split": "tune"
+    },
+    {
+      "source_id": "4373465352415301632",
+      "label": "PUBLISHED_PRIOR",
+      "label_sources": [
+        "shahaf2023",
+        "known_objects"
+      ],
+      "split": "tune"
+    },
+    {
+      "source_id": "4482912934572480384",
+      "label": "PUBLISHED_PRIOR",
+      "label_sources": [
+        "shahaf2023"
+      ],
+      "split": "tune"
+    },
+    {
+      "source_id": "4491401821468887552",
+      "label": "PUBLISHED_PRIOR",
+      "label_sources": [
+        "li2026"
+      ],
+      "split": "test"
+    },
+    {
+      "source_id": "4578398926673187328",
+      "label": "PUBLISHED_PRIOR",
+      "label_sources": [
+        "shahaf2023"
+      ],
+      "split": "tune"
+    },
+    {
+      "source_id": "4618063808640529920",
+      "label": "PUBLISHED_PRIOR",
+      "label_sources": [
+        "shahaf2023"
+      ],
+      "split": "test"
+    },
+    {
+      "source_id": "4637171465304969216",
+      "label": "PUBLISHED_PRIOR",
+      "label_sources": [
+        "shahaf2023"
+      ],
+      "split": "tune"
+    },
+    {
+      "source_id": "4638295715945158144",
+      "label": "PUBLISHED_PRIOR",
+      "label_sources": [
+        "shahaf2023"
+      ],
+      "split": "tune"
+    },
+    {
+      "source_id": "4744087975990080896",
+      "label": "PUBLISHED_PRIOR",
+      "label_sources": [
+        "shahaf2023"
+      ],
+      "split": "test"
+    },
+    {
+      "source_id": "5355633933885075328",
+      "label": "PUBLISHED_PRIOR",
+      "label_sources": [
+        "shahaf2023"
+      ],
+      "split": "test"
+    },
+    {
+      "source_id": "5530442371304582912",
+      "label": "PUBLISHED_PRIOR",
+      "label_sources": [
+        "shahaf2023"
+      ],
+      "split": "tune"
+    },
+    {
+      "source_id": "5580526947012630912",
+      "label": "PUBLISHED_PRIOR",
+      "label_sources": [
+        "shahaf2023"
+      ],
+      "split": "tune"
+    },
+    {
+      "source_id": "5590962927271507712",
+      "label": "PUBLISHED_PRIOR",
+      "label_sources": [
+        "shahaf2023"
+      ],
+      "split": "tune"
+    },
+    {
+      "source_id": "5681911574178198400",
+      "label": "PUBLISHED_PRIOR",
+      "label_sources": [
+        "shahaf2023"
+      ],
+      "split": "test"
+    },
+    {
+      "source_id": "5693240254808387584",
+      "label": "PUBLISHED_PRIOR",
+      "label_sources": [
+        "shahaf2023"
+      ],
+      "split": "test"
+    },
+    {
+      "source_id": "5870569352746779008",
+      "label": "PUBLISHED_PRIOR",
+      "label_sources": [
+        "known_objects"
+      ],
+      "split": "tune"
+    },
+    {
+      "source_id": "6281177228434199296",
+      "label": "PUBLISHED_PRIOR",
+      "label_sources": [
+        "shahaf2023",
+        "known_objects"
+      ],
+      "split": "test"
+    },
+    {
+      "source_id": "6328149636482597888",
+      "label": "PUBLISHED_PRIOR",
+      "label_sources": [
+        "shahaf2023"
+      ],
+      "split": "test"
+    },
+    {
+      "source_id": "6588211521163024640",
+      "label": "PUBLISHED_PRIOR",
+      "label_sources": [
+        "shahaf2023"
+      ],
+      "split": "test"
+    },
+    {
+      "source_id": "6601396177408279040",
+      "label": "PUBLISHED_PRIOR",
+      "label_sources": [
+        "shahaf2023"
+      ],
+      "split": "test"
+    }
+  ]
+}

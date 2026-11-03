@@ -1,0 +1,31 @@
+{
+  "version": "agent-tools-v1",
+  "gaia_release": "gaiadr3",
+  "gaia_quality_columns": [
+    "source_id", "ra", "dec", "phot_g_mean_mag", "bp_rp", "ruwe",
+    "ipd_frac_multi_peak", "ipd_gof_harmonic_amplitude", "duplicated_source",
+    "phot_bp_rp_excess_factor", "astrometric_excess_noise",
+    "radial_velocity", "radial_velocity_error", "rv_nb_transits",
+    "rv_amplitude_robust", "rv_chisq_pvalue", "non_single_star"
+  ],
+  "vizier_catalogs": {
+    "shahaf2023": {
+      "table": "J/MNRAS/518/2991/table2",
+      "id_column": "GaiaDR3",
+      "description": "Shahaf et al. 2023 Gaia DR3 astrometric triage, compact-companion candidates (177 rows)"
+    },
+    "jayasinghe2023": {
+      "table": "J/MNRAS/521/5927/table",
+      "id_column": "Source",
+      "description": "Jayasinghe et al. 2023 Gaia DR3 astrometric binaries with possible dark companions (234 rows)"
+    }
+  },
+  "compact_companion_bibcodes": {
+    "2023MNRAS.518.2991S": "Shahaf et al. 2023, astrometric triage of Gaia DR3 binaries",
+    "2023MNRAS.521.5927J": "Jayasinghe et al. 2023, dark-companion candidates in Gaia DR3",
+    "2023MNRAS.518.1057E": "El-Badry et al. 2023, Gaia BH1",
+    "2023MNRAS.521.4323E": "El-Badry et al. 2023, Gaia BH2",
+    "2024A&A...686L...2G": "Gaia Collaboration 2024, Gaia BH3"
+  },
+  "notes": "Add catalogs only after confirming the VizieR table name and Gaia ID column from the official ReadMe. Gaia DR4 (2 Dec 2026) needs its own column check before gaia_release changes."
+}
