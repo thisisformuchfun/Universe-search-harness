@@ -77,10 +77,23 @@ python scripts/seal_release.py
 
 Never reseal to make a failing guard pass in an automated loop.
 
+## Gaia DR4
+
+Gaia DR4 is scheduled for 2 December 2026. The harness still reads DR3; [`docs/DR4.md`](docs/DR4.md) lists every DR3 assumption in the code and the release-day runbook.
+
+```sh
+python scripts/dr4_readiness.py requirements                         # tables and columns the harness reads, offline
+python scripts/dr4_readiness.py check --release gaiadr3 --sample 0   # positive control against DR3
+python scripts/dr4_readiness.py check --release gaiadr4 --out runs/dr4-readiness.json
+python scripts/dr4_readiness.py watchlist --out data/dr4/watchlist.csv
+```
+
+`check` reports `NOT_PUBLISHED`, `SCHEMA_COMPATIBLE`, `NEEDS_PARSER_REVIEW`, `INCOMPATIBLE` or `ARCHIVE_ERROR`. A compatible schema is not permission to switch: changing `gaia_release` and the connector is a guarded change that needs review and a reseal.
+
 ## GPU
 
 CPU is enough for the snapshot. `--backend cuda` uses float64 torch for covariance Monte Carlo when live rows carry `corr_vec`. Install a CUDA PyTorch build separately and check that CPU and CUDA agree.
 
 ## Further reading
 
-`docs/SCIENCE.md` covers the physics and caveats. `docs/REPAIR_AUDIT.md` and the independent reviews record how the first version was found to cheat on synthetic data and how that was fixed.
+`docs/SCIENCE.md` covers the physics and caveats. `docs/DR4.md` covers the move to Gaia DR4. `docs/REPAIR_AUDIT.md` and the independent reviews record how the first version was found to cheat on synthetic data and how that was fixed.
