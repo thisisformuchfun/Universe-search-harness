@@ -1,12 +1,7 @@
-# Preserve hashes of the historical packet and dated review across platforms.
-real-data/** -text
-public-review/** -text
+# Preserve hashes of the frozen packet and dated media across platforms.
+archive/** -text
 dashboard/** -text
 docs/media/** -text
-scripts/** -text
-README.md -text
-EXPORT_REVIEW.md -text
-EXPORT_MANIFEST.json -text
-verify_export.py -text
-.gitattributes -text
-.gitignore -text
+harness/data/** -text
+harness/policy/** -text
+harness/runs/** -text

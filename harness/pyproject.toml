@@ -1,0 +1,14 @@
+[build-system]
+requires = ["setuptools==80.9.0", "wheel==0.45.1"]
+build-backend = "setuptools.build_meta"
+[project]
+name = "harness2-universe-real"
+version = "1.1.0"
+description = "Gaia DR3 astrometric-binary triage with an evidence-verified, tool-using follow-up agent"
+requires-python = ">=3.11"
+dependencies = ["numpy==2.3.5"]
+[project.scripts]
+harness2-universe = "harness2.cli.universe:main"
+harness2-agent = "harness2.cli.agent:main"
+[tool.setuptools.packages.find]
+include = ["harness2*"]

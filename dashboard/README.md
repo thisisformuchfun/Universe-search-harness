@@ -13,4 +13,4 @@ npm run dev
 
 Open the local URL printed by Vite. `npm run build` creates a deployable `dist/` directory. `src/SpaceView.jsx`, its CSS, geometry helpers, and `src/snapshot.json` are the dashboard-specific source and dated data. The app shell here is a small standalone wrapper. The source IDs are strings so the browser cannot round Gaia identifiers.
 
-See [the literature review](../public-review/README.md) and the [research handoff](../real-data/START_HERE.md) for evidence and limitations.
+See [the literature review](../archive/dr3-review-2026-11/public-review/README.md) and the [research handoff](../archive/dr3-review-2026-11/START_HERE.md) for evidence and limitations.

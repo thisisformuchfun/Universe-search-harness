@@ -1,4 +1,4 @@
-# Local environments, generated builds, logs, and private settings
+# Local environments, builds, logs, secrets
 .venv*/
 **/.venv*/
 __pycache__/
@@ -9,3 +9,7 @@ dashboard/dist/
 .env
 .env.*
 *.log
+# Harness working output (commit fixtures/ deliberately; runs and caches are local)
+harness/runs/*
+!harness/runs/verified-release/
+harness/data/cache/
