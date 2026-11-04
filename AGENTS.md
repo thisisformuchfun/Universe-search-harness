@@ -23,3 +23,8 @@ Applies to Claude Code, Codex and any other agent editing or operating this repo
 11. Prefer `--tools replay` with recorded fixtures. Record new fixtures with `--tools record` only when live data is needed, and commit them so reruns are free.
 12. Keep the baseline reproducible: the bundled snapshot run must give 500 records, 17 anomalies, 14 held, 2 known black holes, 1 refuted, 0 released.
 13. `archive/` is a frozen historical packet. Do not edit it except to fix links.
+
+## Gaia DR4
+
+14. Never switch to Gaia DR4, or any new release, by assumption. Run `python scripts/dr4_readiness.py check` from `harness/` first, follow `harness/docs/DR4.md`, and make the switch as a reviewed, resealed change. Do not assume DR3 table names, column names, covariance layouts or source IDs carry over.
+15. DR4 data goes into new snapshot and control files. Keep the DR3 baseline in rule 12 reproducible, and leave `controls_v1.json` unchanged.

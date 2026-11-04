@@ -9,12 +9,15 @@ Agentic follow-up of Gaia astrometric black-hole candidates, where every agent v
 <p>
   <img alt="Python 3.11+" src="https://img.shields.io/badge/Python-3.11%2B-3776AB?style=flat-square&logo=python&logoColor=white">
   <img alt="Gaia DR3" src="https://img.shields.io/badge/Data-Gaia%20DR3-3cb8b0?style=flat-square">
-  <img alt="Tests" src="https://img.shields.io/badge/tests-63%20offline-4c9a2a?style=flat-square">
+  <img alt="Tests" src="https://img.shields.io/badge/tests-75%20offline-4c9a2a?style=flat-square">
   <img alt="License" src="https://img.shields.io/badge/code-Apache--2.0-6376d9?style=flat-square">
 </p>
 
 > [!IMPORTANT]
 > No new black hole is claimed. The agent cannot output a discovery verdict; its best possible outcome is "needs follow-up".
+
+> [!NOTE]
+> **Gaia DR4 is scheduled for 2 December 2026.** It is the first Gaia release with epoch astrometry, so held candidates can be refit instead of only triaged. The repository is ready for it: see [Gaia DR4](#gaia-dr4-2-december-2026) and the [release-day runbook](harness/docs/DR4.md).
 
 ## The problem
 
@@ -53,7 +56,7 @@ pip install -r requirements.lock
 pip install --no-build-isolation --no-deps -e .
 
 harness2-universe verify
-python -m unittest discover -s tests          # 63 tests, offline
+python -m unittest discover -s tests          # 75 tests, offline
 harness2-universe run --output runs/base --memory runs/base-memory.json
 ```
 
@@ -104,9 +107,32 @@ The [interactive explorer](dashboard/README.md) shows the 14 held sources in 3D 
 - Live tool queries (Gaia `gaia_source` columns, SIMBAD `has_ref`/`ref` joins, VizieR tables) were written against the published schemas but have not yet run from this repository's CI. Run one `--tools record` pass and check the fixtures before relying on them.
 - The heuristic thresholds (RUWE, IPD, significance) are triage defaults, not validated physical cuts.
 
-## Next: Gaia DR4
+## Gaia DR4 (2 December 2026)
 
-Gaia DR4 is scheduled for 2 December 2026 and includes epoch astrometry and radial velocities. That allows actual orbit refits instead of triage of catalog solutions. Planned work: a DR4 connector after schema verification on release day, an `epoch_astrometry` tool, and controls rebuilt from DR3 results that DR4 confirms or refutes.
+ESA has scheduled Gaia DR4 for Wednesday 2 December 2026. It covers 66 months of observations, against 34 for DR3, and it is the first release to publish epoch data: per-transit astrometry, photometry and spectroscopy. For this project, that means refitting orbits from the measurements instead of triaging one catalog solution per source.
+
+What DR4 should make possible:
+
+- Independent orbit refits from epoch astrometry
+- Direct tests of the alternatives that keep sources on hold: bad fits, blends, luminous companions and triples
+- New controls from DR3 candidates that DR4 confirms or refutes, giving the first labeled negatives
+- The strongest test yet of the 14 held sources. A DR4 orbit that stays anomalous is still a held anomaly for human review, not a discovery.
+
+Ready in the repository now:
+
+| Item | What it does |
+| --- | --- |
+| [`dr4_readiness.py`](harness/scripts/dr4_readiness.py) | `check --release gaiadr4` compares the archive schema with every table and column the harness queries, lists candidate epoch and DR3-to-DR4 match tables, and checks sampled NSS covariance layouts against the parser |
+| [`watchlist.csv`](harness/data/dr4/watchlist.csv) | The 54 sources to pull first: 14 held and 42 controls, 2 of them in both groups |
+| [`dr4-watch.yml`](.github/workflows/dr4-watch.yml) | Checks the archive daily, runs DR3 as a positive control, and fails when DR4 appears with a schema the harness can't read unchanged |
+| [`DR4.md`](harness/docs/DR4.md) | Every DR3 assumption in the code, and the release-day runbook |
+
+```sh
+cd harness
+python scripts/dr4_readiness.py check --release gaiadr4 --out runs/dr4-readiness.json
+```
+
+The harness still runs on DR3. Switching releases changes guarded code, so it will happen in a reviewed PR after the schema check, never by assumption. Gaia source IDs can change between releases, so DR3 IDs will be mapped through the official cross-release table before any comparison.
 
 ## Layout
 
@@ -115,6 +141,7 @@ Gaia DR4 is scheduled for 2 December 2026 and includes epoch astrometry and radi
 | [`harness/`](harness/README.md) | Python package: pipeline, agent, verifier, controls, tests |
 | [`harness/harness2/agent/`](harness/harness2/agent) | `tools.py`, `models.py`, `loop.py`, `verify.py`, `evaluate.py` |
 | [`harness/data/controls/`](harness/data/controls/controls_v1.json) | 42 labeled controls with a fixed tune/test split |
+| [`harness/docs/DR4.md`](harness/docs/DR4.md) | Gaia DR4 readiness: DR3 assumptions and the release-day runbook |
 | [`dashboard/`](dashboard/README.md) | Static 3D explorer for the held sources |
 | [`archive/dr3-review-2026-11/`](archive/dr3-review-2026-11/README.md) | Frozen evidence packet from the first review |
 | [`AGENTS.md`](AGENTS.md) | Rules for coding agents working in this repo |

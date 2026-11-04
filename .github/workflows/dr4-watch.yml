@@ -1,0 +1,52 @@
+name: dr4-watch
+# Daily check of the Gaia archive for the DR4 schema (release scheduled for
+# 2 December 2026). Read-only TAP_SCHEMA queries plus a small NSS sample.
+# Remove this workflow once the harness has moved to DR4 (harness/docs/DR4.md).
+on:
+  workflow_dispatch:
+    inputs:
+      release:
+        description: Gaia archive schema to check
+        default: gaiadr4
+  schedule:
+    - cron: "41 12 * * *"
+permissions:
+  contents: read
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: harness
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.lock && pip install --no-build-isolation --no-deps -e .
+      - run: harness2-universe verify
+      - name: Positive control (DR3 schema must be compatible)
+        run: python scripts/dr4_readiness.py check --release gaiadr3 --sample 0 --out runs/dr4-readiness/dr3-schema.json
+      - name: DR3 covariance layout (informational)
+        continue-on-error: true
+        run: python scripts/dr4_readiness.py check --release gaiadr3 --sample 2000 --out runs/dr4-readiness/dr3-layout.json
+      - name: DR4 readiness
+        env:
+          RELEASE: ${{ inputs.release || 'gaiadr4' }}
+        run: python scripts/dr4_readiness.py check --release "$RELEASE" --out "runs/dr4-readiness/$RELEASE.json"
+      - name: Summary
+        if: always()
+        run: |
+          python - >> "$GITHUB_STEP_SUMMARY" <<'EOF'
+          import json, pathlib
+          print("### Gaia DR4 readiness")
+          for p in sorted(pathlib.Path("runs/dr4-readiness").glob("*.json")):
+              r = json.loads(p.read_text())
+              print(f"- `{p.name}`: **{r.get('status')}**. {r.get('meaning', '')}")
+          EOF
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: dr4-readiness
+          path: harness/runs/dr4-readiness/
+          if-no-files-found: ignore
