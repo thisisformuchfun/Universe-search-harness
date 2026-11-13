@@ -9,7 +9,7 @@ Agentic follow-up of Gaia astrometric black-hole candidates, where every agent v
 <p>
   <img alt="Python 3.11+" src="https://img.shields.io/badge/Python-3.11%2B-3776AB?style=flat-square&logo=python&logoColor=white">
   <img alt="Gaia DR3" src="https://img.shields.io/badge/Data-Gaia%20DR3-3cb8b0?style=flat-square">
-  <img alt="Tests" src="https://img.shields.io/badge/tests-75%20offline-4c9a2a?style=flat-square">
+  <img alt="Tests" src="https://img.shields.io/badge/tests-106%20offline-4c9a2a?style=flat-square">
   <img alt="License" src="https://img.shields.io/badge/code-Apache--2.0-6376d9?style=flat-square">
 </p>
 
@@ -32,6 +32,8 @@ Gaia DR3 published about 170,000 astrometric binary orbits. A few of them have p
 3. Verifier. The verifier rejects any citation that does not match the tool output, and applies rules per verdict. For example, `PUBLISHED_PRIOR` must cite a real `matched=true` result. Rejected verdicts become `UNVERIFIED`, so a model cannot score by inventing evidence.
 
 4. Blind controls and an outer loop (`harness2-agent eval`, `optimize`). There are 42 sources in the snapshot that are already published: Gaia BH1 and BH2, Shahaf 2023 and Li 2026 candidates. Each control's labeling catalog is withheld, so the agent has to rediscover it through other routes. The harness2 Propose/Probe/Compose loop then tunes the agent's playbook (strategy text, tool order, call budget) on the tune split. A playbook is adopted only on strict improvement, and the test split can be spent once.
+
+5. Whole-catalogue survey with built-in vetting (`harness2-survey`). Takes all 443,205 Gaia DR3 orbit solutions from ESA's bulk file, searches them through an astrometric and a spectroscopic channel with vectorized NumPy or PyTorch kernels, and runs about 20 adversarial tests on every shortlisted source as candidates accumulate. See [`harness/docs/SURVEY.md`](harness/docs/SURVEY.md).
 
 ## Why it works for agentic loops
 
@@ -56,7 +58,7 @@ pip install -r requirements.lock
 pip install --no-build-isolation --no-deps -e .
 
 harness2-universe verify
-python -m unittest discover -s tests          # 75 tests, offline
+python -m unittest discover -s tests          # 106 tests, offline
 harness2-universe run --output runs/base --memory runs/base-memory.json
 ```
 
@@ -95,6 +97,8 @@ Each investigation writes a JSON file with the full transcript, every tool call 
 ## Results so far
 
 The DR3 review from October and November 2026 is preserved in [`archive/dr3-review-2026-11`](archive/dr3-review-2026-11/README.md). Of the 14 held sources, two turned out to be already-published compact-binary candidates in [Li et al. 2026](https://arxiv.org/abs/2610.34715). A general web-search index failed to find known positive controls during that review. That failure is why this repo now measures agents on blind controls instead of trusting their literature searches.
+
+The first whole-catalogue survey (November 2026) is in [`harness/runs/survey-dr3-20261112`](harness/runs/survey-dr3-20261112/REVIEW.md). It scanned 350,756 solutions and shortlisted 1,547. Vetting excluded 270 as already published, failed 1,001 and left 276 held with caveats. None survived every test, and none is claimed as new.
 
 The [interactive explorer](dashboard/README.md) shows the 14 held sources in 3D with their measurements, risks and references.
 
@@ -141,6 +145,7 @@ The harness still runs on DR3. Switching releases changes guarded code, so it wi
 | [`harness/`](harness/README.md) | Python package: pipeline, agent, verifier, controls, tests |
 | [`harness/harness2/agent/`](harness/harness2/agent) | `tools.py`, `models.py`, `loop.py`, `verify.py`, `evaluate.py` |
 | [`harness/data/controls/`](harness/data/controls/controls_v1.json) | 42 labeled controls with a fixed tune/test split |
+| [`harness/harness2/survey/`](harness/harness2/survey) | Bulk acquisition, vectorized search, vetting battery (new, awaiting review and seal) |
 | [`harness/docs/DR4.md`](harness/docs/DR4.md) | Gaia DR4 readiness: DR3 assumptions and the release-day runbook |
 | [`dashboard/`](dashboard/README.md) | Static 3D explorer for the held sources |
 | [`archive/dr3-review-2026-11/`](archive/dr3-review-2026-11/README.md) | Frozen evidence packet from the first review |

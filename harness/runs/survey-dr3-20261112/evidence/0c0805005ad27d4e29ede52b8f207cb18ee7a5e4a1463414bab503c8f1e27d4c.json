@@ -1,0 +1,19 @@
+{
+ "http_status": 200,
+ "host": "gea.esac.esa.int",
+ "seconds": 0.828,
+ "request": {
+  "url": "https://gea.esac.esa.int/tap-server/tap/sync",
+  "form": {
+   "REQUEST": "doQuery",
+   "LANG": "ADQL",
+   "FORMAT": "csv",
+   "QUERY": "SELECT table_name FROM tap_schema.tables WHERE schema_name = 'gaiadr3'"
+  }
+ },
+ "sha256": "f23f7ca31705641d980dc26a8efc2a4321161ef07826e9e7610dc0a7d397f229",
+ "bytes": 2651,
+ "body_file": "0c0805005ad27d4e.f23f7ca31705641d.body",
+ "fetched_at_utc": "2026-11-13T00:29:23.854405+00:00",
+ "cache_reused": false
+}

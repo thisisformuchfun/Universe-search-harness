@@ -1,0 +1,14 @@
+{
+ "http_status": 200,
+ "host": "vizier.cfa.harvard.edu",
+ "seconds": 0.283,
+ "request": {
+  "url": "https://vizier.cfa.harvard.edu/viz-bin/asu-tsv?-source=J/MNRAS/521/5927/table&-out=Source&-out.max=unlimited",
+  "form": null
+ },
+ "sha256": "ef5eee79cd6ee08f38d3a73822d0ba590a16004d1e85c28189f5c764264b21ed",
+ "bytes": 6466,
+ "body_file": "a94eb32757886260.ef5eee79cd6ee08f.body",
+ "fetched_at_utc": "2026-11-13T00:27:47.420531+00:00",
+ "cache_reused": false
+}

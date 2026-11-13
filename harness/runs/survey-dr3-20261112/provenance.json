@@ -1,0 +1,700 @@
+{
+  "nss_bulk": {
+    "release": "gaiadr3",
+    "table": "nss_two_body_orbit",
+    "url": "https://cdn.gea.esac.esa.int/Gaia/gdr3/Non-single_stars/nss_two_body_orbit/NssTwoBodyOrbit_1.csv.gz",
+    "md5": "6ca835765e60066bbbeb353a83b749c7",
+    "md5_published_by_esa": "6ca835765e60066bbbeb353a83b749c7",
+    "md5_list_sha256": "596bfdb8fcfd623c38e255574b96bdaf4e1b7ee0cb6b6a1fe8e53bda9eb83ab0",
+    "sha256": "df1b93069a88b36ae45d299f351eaf7b30edc00b9f959a7023e29214144b36ce",
+    "bytes": 167383676,
+    "verified_at_utc": "2026-11-12T23:42:20.088268+00:00",
+    "local_file_reused": true,
+    "mode": "REAL_ARCHIVE_BULK_FILE",
+    "rows": 443205
+  },
+  "gaia_source_context": {
+    "release": "gaiadr3",
+    "table": "gaia_source",
+    "rows": 437275,
+    "chunks": [
+      {
+        "sha256": "7fd6e541e5f0cffee0151085d9695879455dbba0da8fb64960f33a03d73e8491",
+        "bytes": 5746697,
+        "fetched_at_utc": "2026-11-13T00:02:55.726922+00:00",
+        "cache_reused": false,
+        "http_status": 200,
+        "host": "gea.esac.esa.int",
+        "seconds": 26.947,
+        "evidence": "b6ec4babb04da47f",
+        "label": "gaia_source 33711199137024-426022139721937408",
+        "rows": 20000
+      },
+      {
+        "sha256": "ba9b579a0094879178c095220b95b88d8b403c3502b2bc967921638c4e76ae67",
+        "bytes": 5719184,
+        "fetched_at_utc": "2026-11-13T00:02:54.678001+00:00",
+        "cache_reused": false,
+        "http_status": 200,
+        "host": "gea.esac.esa.int",
+        "seconds": 25.901,
+        "evidence": "0ba05183958a1754",
+        "label": "gaia_source 426032585082299136-697133222900760704",
+        "rows": 20000
+      },
+      {
+        "sha256": "5e2c67a6e79a9ee6cbdf98fdeccca25cd3c957db238d97888e4f48b1de3efaba",
+        "bytes": 5839128,
+        "fetched_at_utc": "2026-11-13T00:02:55.207732+00:00",
+        "cache_reused": false,
+        "http_status": 200,
+        "host": "gea.esac.esa.int",
+        "seconds": 26.428,
+        "evidence": "9a6fc12fc69ae9c6",
+        "label": "gaia_source 697199051862453632-1341482908344196096",
+        "rows": 20000
+      },
+      {
+        "sha256": "5af3bf661ddf31d9541bdb1568ffc269f7a74f77c32db4e3e2c3049c887037b4",
+        "bytes": 5814402,
+        "fetched_at_utc": "2026-11-13T00:02:52.973054+00:00",
+        "cache_reused": false,
+        "http_status": 200,
+        "host": "gea.esac.esa.int",
+        "seconds": 24.194,
+        "evidence": "b399b0669b987aa6",
+        "label": "gaia_source 1341485794562267904-1823407822714631808",
+        "rows": 20000
+      },
+      {
+        "sha256": "394ae65b4d254cbfc15b28afa12ec474c13280738761c8ca3cad1034fccdf6fe",
+        "bytes": 5733521,
+        "fetched_at_utc": "2026-11-13T00:03:19.056228+00:00",
+        "cache_reused": false,
+        "http_status": 200,
+        "host": "gea.esac.esa.int",
+        "seconds": 25.982,
+        "evidence": "8e8e417711907232",
+        "label": "gaia_source 1823410674573025280-1974842013003802624",
+        "rows": 20000
+      },
+      {
+        "sha256": "7c66742ba3ea252638f3bf3ec995a07f45bb5311c215b76eda3855c8251fae59",
+        "bytes": 5615387,
+        "fetched_at_utc": "2026-11-13T00:03:14.718606+00:00",
+        "cache_reused": false,
+        "http_status": 200,
+        "host": "gea.esac.esa.int",
+        "seconds": 19.876,
+        "evidence": "e1bfee6c64782ac9",
+        "label": "gaia_source 1974843284314116352-2062047544395696000",
+        "rows": 20000
+      },
+      {
+        "sha256": "42b040ae0065001db8283f97c28f4c33e83c67ded8e4863aa911d21d20ee2455",
+        "bytes": 5654089,
+        "fetched_at_utc": "2026-11-13T00:03:17.546968+00:00",
+        "cache_reused": false,
+        "http_status": 200,
+        "host": "gea.esac.esa.int",
+        "seconds": 22.212,
+        "evidence": "7747784b6d3cdeeb",
+        "label": "gaia_source 2062048781345662592-2215216867106458880",
+        "rows": 20000
+      },
+      {
+        "sha256": "af9221b542e5410d87c93db1edd12391978580d5fa31e7882fb05fac239a1594",
+        "bytes": 5848124,
+        "fetched_at_utc": "2026-11-13T00:03:16.369846+00:00",
+        "cache_reused": false,
+        "http_status": 200,
+        "host": "gea.esac.esa.int",
+        "seconds": 20.506,
+        "evidence": "7841c2f439f9f844",
+        "label": "gaia_source 2215229678988486656-2913224506690158336",
+        "rows": 20000
+      },
+      {
+        "sha256": "d6d89aec6d165b0d6415247d9275b9589cd5f9cb80cfcbe428df5ce42ac292a3",
+        "bytes": 5795023,
+        "fetched_at_utc": "2026-11-13T00:03:40.309582+00:00",
+        "cache_reused": false,
+        "http_status": 200,
+        "host": "gea.esac.esa.int",
+        "seconds": 25.485,
+        "evidence": "bd736a97edaffe8a",
+        "label": "gaia_source 2913265119900826624-3233149886058613888",
+        "rows": 20000
+      },
+      {
+        "sha256": "64ef073d7845837705a91f345b8f540e42e62da73e10b1b45bf7dcc1526951e3",
+        "bytes": 5792311,
+        "fetched_at_utc": "2026-11-13T00:03:38.680740+00:00",
+        "cache_reused": false,
+        "http_status": 200,
+        "host": "gea.esac.esa.int",
+        "seconds": 22.187,
+        "evidence": "c3d044ec5fd1a1c0",
+        "label": "gaia_source 3233209122248013056-4030687139255015296",
+        "rows": 20000
+      },
+      {
+        "sha256": "e5a3e81a39c35ef820e13b1a1c46bf23808bd9962c104ec233d471a30b752c9c",
+        "bytes": 5325872,
+        "fetched_at_utc": "2026-11-13T00:03:37.925312+00:00",
+        "cache_reused": false,
+        "http_status": 200,
+        "host": "gea.esac.esa.int",
+        "seconds": 20.278,
+        "evidence": "6ae22064668b3fd5",
+        "label": "gaia_source 4030873334677713408-4227113654607889792",
+        "rows": 20000
+      },
+      {
+        "sha256": "35b0cfd58a2d2553508c369fbb9635845ff22e7bc5aeb18700bda96d4fc93209",
+        "bytes": 5614912,
+        "fetched_at_utc": "2026-11-13T00:03:41.579204+00:00",
+        "cache_reused": false,
+        "http_status": 200,
+        "host": "gea.esac.esa.int",
+        "seconds": 22.398,
+        "evidence": "6bb840f986a03699",
+        "label": "gaia_source 4227114444881845120-4505321054580197504",
+        "rows": 20000
+      },
+      {
+        "sha256": "9cd13f9830baf2d607e34ddc955209aa71102ffbcded95895596fff68bea9a3a",
+        "bytes": 5763441,
+        "fetched_at_utc": "2026-11-13T00:04:03.110157+00:00",
+        "cache_reused": false,
+        "http_status": 200,
+        "host": "gea.esac.esa.int",
+        "seconds": 25.054,
+        "evidence": "09c330cbcf50730a",
+        "label": "gaia_source 4505329193525082624-4810981335711503616",
+        "rows": 20000
+      },
+      {
+        "sha256": "7f7e16704b38f54097175e1916bd27b7373f720a84c2d70be5ed13d42474f262",
+        "bytes": 5748068,
+        "fetched_at_utc": "2026-11-13T00:04:03.679757+00:00",
+        "cache_reused": false,
+        "http_status": 200,
+        "host": "gea.esac.esa.int",
+        "seconds": 24.843,
+        "evidence": "82e31313256718f9",
+        "label": "gaia_source 4811013290268127488-5254068235247710720",
+        "rows": 20000
+      },
+      {
+        "sha256": "b84066e2c860af6ef9662df164812fd81bf62fdcc674de6d29714765d5182eee",
+        "bytes": 5593186,
+        "fetched_at_utc": "2026-11-13T00:04:10.698658+00:00",
+        "cache_reused": false,
+        "http_status": 200,
+        "host": "gea.esac.esa.int",
+        "seconds": 29.984,
+        "evidence": "b94dd05863149d6e",
+        "label": "gaia_source 5254069880161858816-5359615544677200512",
+        "rows": 20000
+      },
+      {
+        "sha256": "7804213c6046f68e1d9a858bb3191227720a987f03f970a1cd41b6c19e5e56d9",
+        "bytes": 5744544,
+        "fetched_at_utc": "2026-11-13T00:04:02.341855+00:00",
+        "cache_reused": false,
+        "http_status": 200,
+        "host": "gea.esac.esa.int",
+        "seconds": 20.669,
+        "evidence": "0663c08b67ba6abd",
+        "label": "gaia_source 5359618048624937344-5539084292182237952",
+        "rows": 20000
+      },
+      {
+        "sha256": "585685c8a4df6fcddb40b106c46dbfb51008b2a4a28e9665eb7830dfbe16b389",
+        "bytes": 5775290,
+        "fetched_at_utc": "2026-11-13T00:04:29.302185+00:00",
+        "cache_reused": false,
+        "http_status": 200,
+        "host": "gea.esac.esa.int",
+        "seconds": 26.84,
+        "evidence": "f3c53ea3e9d70d65",
+        "label": "gaia_source 5539086216327428608-5712909590112782208",
+        "rows": 20000
+      },
+      {
+        "sha256": "5b689afd186e3eb76f93196ebd4e9ddf43c6811d655c3cc047213981080d5026",
+        "bytes": 5735184,
+        "fetched_at_utc": "2026-11-13T00:04:25.420660+00:00",
+        "cache_reused": false,
+        "http_status": 200,
+        "host": "gea.esac.esa.int",
+        "seconds": 22.179,
+        "evidence": "eb086392bbb88727",
+        "label": "gaia_source 5712921371198106496-5850956264320987264",
+        "rows": 20000
+      },
+      {
+        "sha256": "dd03947d60cff7ed9757a906c827ab5698b53b20449a819742a465155d1916c1",
+        "bytes": 5533659,
+        "fetched_at_utc": "2026-11-13T00:04:28.787240+00:00",
+        "cache_reused": false,
+        "http_status": 200,
+        "host": "gea.esac.esa.int",
+        "seconds": 24.978,
+        "evidence": "42e96ac5df903751",
+        "label": "gaia_source 5850963239348629376-5936392883301142144",
+        "rows": 20000
+      },
+      {
+        "sha256": "bf0a1a6ebbf366cae5e1f8871546515e96f5f947334f1068d34241b8e38822a5",
+        "bytes": 5537011,
+        "fetched_at_utc": "2026-11-13T00:04:34.839615+00:00",
+        "cache_reused": false,
+        "http_status": 200,
+        "host": "gea.esac.esa.int",
+        "seconds": 23.978,
+        "evidence": "6aa79acbfd0daff0",
+        "label": "gaia_source 5936397216967891328-6072645811638218624",
+        "rows": 20000
+      },
+      {
+        "sha256": "e0b488fa65079e0b8933de0eb56491c2c5268547830f22f9663e9e7b2491b044",
+        "bytes": 5813731,
+        "fetched_at_utc": "2026-11-13T00:04:46.765619+00:00",
+        "cache_reused": false,
+        "http_status": 200,
+        "host": "gea.esac.esa.int",
+        "seconds": 21.235,
+        "evidence": "d392b435933f1ed7",
+        "label": "gaia_source 6072653714378899200-6513305328719838976",
+        "rows": 20000
+      },
+      {
+        "sha256": "93718bda2a296e6d5e993f79359e848022164630edfd2b9bf5c2987ed4fc33da",
+        "bytes": 5034927,
+        "fetched_at_utc": "2026-11-13T00:04:48.446043+00:00",
+        "cache_reused": false,
+        "http_status": 200,
+        "host": "gea.esac.esa.int",
+        "seconds": 19.57,
+        "evidence": "f7493bc6beae9301",
+        "label": "gaia_source 6513344056441560832-6917527794986540928",
+        "rows": 17275
+      }
+    ],
+    "acquired_at_utc": "2026-11-13T00:04:53.765321+00:00",
+    "completeness": "every NSS source ID returned exactly once"
+  },
+  "binary_masses": {
+    "release": "gaiadr3",
+    "table": "binary_masses",
+    "rows": 195315,
+    "count_check": {
+      "sha256": "8637df7e067c721f051d91513d346d11b8565fd0aef3d5806ab38bd48c32ea31",
+      "bytes": 9,
+      "fetched_at_utc": "2026-11-12T23:44:08.519745+00:00",
+      "cache_reused": false,
+      "http_status": 200,
+      "host": "gea.esac.esa.int",
+      "seconds": 2.823,
+      "evidence": "b1452cd97cdbf3b0",
+      "label": "binary_masses count",
+      "rows": 1
+    },
+    "chunks": [
+      {
+        "sha256": "80ecc5091932f76f0a8dbc755e05c04a66fc6cc53fc1e80a0d48b1b598acfc9f",
+        "bytes": 1642864,
+        "fetched_at_utc": "2026-11-12T23:44:12.532676+00:00",
+        "cache_reused": false,
+        "http_status": 200,
+        "host": "gea.esac.esa.int",
+        "seconds": 4.009,
+        "evidence": "07fc3d0ec9ac379f",
+        "label": "binary_masses bin 0",
+        "rows": 16580
+      },
+      {
+        "sha256": "a956cead55a20409b18f551bdb6ba53b9b4c0f553f935e721346c2fbd13a196d",
+        "bytes": 1201682,
+        "fetched_at_utc": "2026-11-12T23:44:12.415413+00:00",
+        "cache_reused": false,
+        "http_status": 200,
+        "host": "gea.esac.esa.int",
+        "seconds": 3.891,
+        "evidence": "ef7a6eb4083f3b75",
+        "label": "binary_masses bin 1",
+        "rows": 11823
+      },
+      {
+        "sha256": "6bd6313d42c37b771262adf373ae30bad381467d1b286c0ecfbafb8307dc7c28",
+        "bytes": 1344767,
+        "fetched_at_utc": "2026-11-12T23:44:12.250274+00:00",
+        "cache_reused": false,
+        "http_status": 200,
+        "host": "gea.esac.esa.int",
+        "seconds": 3.725,
+        "evidence": "dc24c6084dbaed0c",
+        "label": "binary_masses bin 2",
+        "rows": 12799
+      },
+      {
+        "sha256": "dedc796d7c5aac3046b96df990ae402490e48b48336c41430f09caa0a3f3cdf4",
+        "bytes": 3140013,
+        "fetched_at_utc": "2026-11-12T23:44:13.334139+00:00",
+        "cache_reused": false,
+        "http_status": 200,
+        "host": "gea.esac.esa.int",
+        "seconds": 4.806,
+        "evidence": "7dfa69e2cbec5045",
+        "label": "binary_masses bin 3",
+        "rows": 31185
+      },
+      {
+        "sha256": "57f1d5908f234270d41ee336fc7dc78461f3c69c81e7716108aa2330b0968c72",
+        "bytes": 730002,
+        "fetched_at_utc": "2026-11-12T23:44:15.111555+00:00",
+        "cache_reused": false,
+        "http_status": 200,
+        "host": "gea.esac.esa.int",
+        "seconds": 2.837,
+        "evidence": "b643d9f4966d7db9",
+        "label": "binary_masses bin 4",
+        "rows": 7257
+      },
+      {
+        "sha256": "3adfc4b6b3885095584ca1651519ef1e04010299d0188973341f1bf10d5203b5",
+        "bytes": 1494459,
+        "fetched_at_utc": "2026-11-12T23:44:15.314720+00:00",
+        "cache_reused": false,
+        "http_status": 200,
+        "host": "gea.esac.esa.int",
+        "seconds": 2.871,
+        "evidence": "30554e4bda50ff7b",
+        "label": "binary_masses bin 5",
+        "rows": 15003
+      },
+      {
+        "sha256": "23af2b30fa6ec10ea31966accfc14a41564a39be0a1a5578bb4de2e36ec5df58",
+        "bytes": 648595,
+        "fetched_at_utc": "2026-11-12T23:44:15.350028+00:00",
+        "cache_reused": false,
+        "http_status": 200,
+        "host": "gea.esac.esa.int",
+        "seconds": 2.787,
+        "evidence": "2a5ab2d5eed33ec8",
+        "label": "binary_masses bin 6",
+        "rows": 6420
+      },
+      {
+        "sha256": "517364162f276347b395d758beb78fd4a5c3b05374212587599c98fea638e375",
+        "bytes": 1491573,
+        "fetched_at_utc": "2026-11-12T23:44:16.549343+00:00",
+        "cache_reused": false,
+        "http_status": 200,
+        "host": "gea.esac.esa.int",
+        "seconds": 3.145,
+        "evidence": "fa7bc011a255ae92",
+        "label": "binary_masses bin 7",
+        "rows": 14828
+      },
+      {
+        "sha256": "cf189c8ac7350bc57cd9c70e15597bc0b3c4f527d44481adef27c75785eb0a5b",
+        "bytes": 1424929,
+        "fetched_at_utc": "2026-11-12T23:44:18.204414+00:00",
+        "cache_reused": false,
+        "http_status": 200,
+        "host": "gea.esac.esa.int",
+        "seconds": 3.073,
+        "evidence": "fd07391ee3fcd0ac",
+        "label": "binary_masses bin 8",
+        "rows": 13684
+      },
+      {
+        "sha256": "d5d01d4652a940d1b62f8f323ade82c1d8a6b19a3a1b0505ec0c25a9db949be7",
+        "bytes": 2916779,
+        "fetched_at_utc": "2026-11-12T23:44:19.266138+00:00",
+        "cache_reused": false,
+        "http_status": 200,
+        "host": "gea.esac.esa.int",
+        "seconds": 3.918,
+        "evidence": "58cf11ca918c6fec",
+        "label": "binary_masses bin 9",
+        "rows": 29310
+      },
+      {
+        "sha256": "0d89960c8adf23b617bcd8f35ee85c57353b8e9a3f810f27e7a794e1eb8eb936",
+        "bytes": 2052641,
+        "fetched_at_utc": "2026-11-12T23:44:20.314575+00:00",
+        "cache_reused": false,
+        "http_status": 200,
+        "host": "gea.esac.esa.int",
+        "seconds": 4.951,
+        "evidence": "65bfd95e9c826293",
+        "label": "binary_masses bin 10",
+        "rows": 20803
+      },
+      {
+        "sha256": "4fcffb44103cf76852e18627299417d3c4c7b3a7a4b0633fd5e3e8686989a1c4",
+        "bytes": 1580197,
+        "fetched_at_utc": "2026-11-12T23:44:20.224723+00:00",
+        "cache_reused": false,
+        "http_status": 200,
+        "host": "gea.esac.esa.int",
+        "seconds": 3.647,
+        "evidence": "a5e27ef3f60a0111",
+        "label": "binary_masses bin 11",
+        "rows": 15623
+      },
+      {
+        "sha256": "98438e3c61e9c6fb2138a90d31136ee3b37f40fa9f499031c7f22ae434f4a9a2",
+        "bytes": 125,
+        "fetched_at_utc": "2026-11-12T23:44:21.122367+00:00",
+        "cache_reused": false,
+        "http_status": 200,
+        "host": "gea.esac.esa.int",
+        "seconds": 2.884,
+        "evidence": "e1aa27c3c861d87f",
+        "label": "binary_masses bin 12",
+        "rows": 0
+      },
+      {
+        "sha256": "98438e3c61e9c6fb2138a90d31136ee3b37f40fa9f499031c7f22ae434f4a9a2",
+        "bytes": 125,
+        "fetched_at_utc": "2026-11-12T23:44:21.257961+00:00",
+        "cache_reused": false,
+        "http_status": 200,
+        "host": "gea.esac.esa.int",
+        "seconds": 1.931,
+        "evidence": "c88fa729332843f7",
+        "label": "binary_masses bin 13",
+        "rows": 0
+      },
+      {
+        "sha256": "98438e3c61e9c6fb2138a90d31136ee3b37f40fa9f499031c7f22ae434f4a9a2",
+        "bytes": 125,
+        "fetched_at_utc": "2026-11-12T23:44:22.251001+00:00",
+        "cache_reused": false,
+        "http_status": 200,
+        "host": "gea.esac.esa.int",
+        "seconds": 1.983,
+        "evidence": "e3cab36c167ee646",
+        "label": "binary_masses bin 14",
+        "rows": 0
+      },
+      {
+        "sha256": "98438e3c61e9c6fb2138a90d31136ee3b37f40fa9f499031c7f22ae434f4a9a2",
+        "bytes": 125,
+        "fetched_at_utc": "2026-11-12T23:44:22.700098+00:00",
+        "cache_reused": false,
+        "http_status": 200,
+        "host": "gea.esac.esa.int",
+        "seconds": 2.344,
+        "evidence": "d6f156d2415bb09c",
+        "label": "binary_masses bin 15",
+        "rows": 0
+      }
+    ],
+    "acquired_at_utc": "2026-11-12T23:44:23.306708+00:00"
+  },
+  "prior_catalogues": {
+    "version": "prior-catalogues-1",
+    "verified_on": "2026-11-12",
+    "verified_how": "Each table's ID column was downloaded in full from the VizieR mirror at CfA and the row count recorded. The row count is re-checked on every fetch.",
+    "kinds": {
+      "compact_candidates": "Membership excludes a source as already published.",
+      "analysed_sample": "Whole analysed samples. Membership is reported, never used to exclude."
+    },
+    "known_gaps": [
+      "El-Badry+ 2024 neutron-star candidates (Open J. Astrophys.): not on VizieR",
+      "Shahaf+ 2024 WD+MS astrometric triage: not on VizieR mirror",
+      "Gaia Collaboration/Arenou+ 2023 compact-companion tables: not found on VizieR mirror",
+      "Andrews+ 2022: no catalogue",
+      "Fu+ 2022, Bashi+ 2022, Tanikawa+ 2023: not found on VizieR mirror",
+      "Li+ 2026 (arXiv:2610.34715): not on VizieR",
+      "ADS full-text search: needs a token, not run"
+    ],
+    "catalogues": [
+      {
+        "key": "shahaf2023_class3",
+        "table": "J/MNRAS/518/2991/table2",
+        "id_column": "GaiaDR3",
+        "rows": 177,
+        "bibcode": "2023MNRAS.518.2991S",
+        "kind": "compact_candidates",
+        "title": "Shahaf+ 2023 class-III astrometric compact-companion candidates"
+      },
+      {
+        "key": "jayasinghe2023_sb1",
+        "table": "J/MNRAS/521/5927/table",
+        "id_column": "Source",
+        "rows": 234,
+        "bibcode": "2023MNRAS.521.5927J",
+        "kind": "compact_candidates",
+        "title": "Jayasinghe+ 2023 SB1s searched for non-interacting compact companions"
+      },
+      {
+        "key": "gomel2023_ellipsoidal",
+        "table": "J/A+A/674/A19/table3",
+        "id_column": "GaiaDR3",
+        "rows": 262,
+        "bibcode": "2023A&A...674A..19G",
+        "kind": "compact_candidates",
+        "title": "Gomel+ 2023 ellipsoidal variables with possible compact companions"
+      },
+      {
+        "key": "yamaguchi2024_wide_pceb",
+        "table": "J/PASP/136/H4202/table1",
+        "id_column": "GaiaDR3",
+        "rows": 31,
+        "bibcode": "2024PASP..136h4202Y",
+        "kind": "compact_candidates",
+        "title": "Yamaguchi+ 2024 astrometric WD+MS binaries with RV follow-up"
+      },
+      {
+        "key": "rebassa2025_wdms",
+        "table": "J/A+A/699/A153/table2",
+        "id_column": "GaiaDR3",
+        "rows": 1312,
+        "bibcode": "2025A&A...699A.153R",
+        "kind": "compact_candidates",
+        "title": "Rebassa-Mansergas+ 2025 unresolved WD+MS binaries"
+      },
+      {
+        "key": "nayak2026_wdms_good",
+        "table": "J/A+A/709/A114/table2",
+        "id_column": "GaiaDR3",
+        "rows": 347,
+        "bibcode": "2026A&A...709A.114N",
+        "kind": "compact_candidates",
+        "title": "Nayak 2026 WD+MS with well fitted SEDs"
+      },
+      {
+        "key": "nayak2026_wdms_probable",
+        "table": "J/A+A/709/A114/table3",
+        "id_column": "GaiaDR3",
+        "rows": 1070,
+        "bibcode": "2026A&A...709A.114N",
+        "kind": "compact_candidates",
+        "title": "Nayak 2026 probable WD+MS"
+      },
+      {
+        "key": "mueller_horn2026_rgb",
+        "table": "J/A+A/709/A62/table1",
+        "id_column": "GaiaDR3",
+        "rows": 21028,
+        "bibcode": "2026A&A...709A..62M",
+        "kind": "analysed_sample",
+        "title": "Mueller-Horn+ 2026 dormant compact-object search, whole RGB sample (not a candidate list)"
+      },
+      {
+        "key": "mueller_horn2026_ms",
+        "table": "J/A+A/709/A62/table2",
+        "id_column": "GaiaDR3",
+        "rows": 19664,
+        "bibcode": "2026A&A...709A..62M",
+        "kind": "analysed_sample",
+        "title": "Mueller-Horn+ 2026 dormant compact-object search, whole MS sample (not a candidate list)"
+      },
+      {
+        "key": "shahaf2023_amrf_all",
+        "table": "J/MNRAS/518/2991/table1",
+        "id_column": "GaiaDR3",
+        "rows": 101380,
+        "bibcode": "2023MNRAS.518.2991S",
+        "kind": "analysed_sample",
+        "title": "Shahaf+ 2023 full AMRF-classified astrometric sample (not a candidate list)"
+      },
+      {
+        "key": "bashi2024_orbital",
+        "table": "J/A+A/692/A247/table1",
+        "id_column": "GaiaDR3",
+        "rows": 19858,
+        "bibcode": "2024A&A...692A.247B",
+        "kind": "analysed_sample",
+        "title": "Bashi+ 2024 astrometric-vs-RV consistency for orbital solutions"
+      },
+      {
+        "key": "nagarajan2024_validation_orb",
+        "table": "J/PASP/136/I4203/orb",
+        "id_column": "Id1",
+        "rows": 7820,
+        "bibcode": "2024PASP..136i4203N",
+        "kind": "analysed_sample",
+        "title": "Nagarajan+ 2024 validation of DR3 orbital solutions with wide tertiaries"
+      },
+      {
+        "key": "bailer_jones2026_masses",
+        "table": "J/A+A/708/A249/table1",
+        "id_column": "GaiaDR3",
+        "rows": 20334,
+        "bibcode": "2026A&A...708A.249B",
+        "kind": "analysed_sample",
+        "title": "Bailer-Jones+ 2026 binary component masses"
+      },
+      {
+        "key": "esmorga2024",
+        "table": "J/A+A/682/A12/catalog",
+        "id_column": "GaiaDR3",
+        "rows": 88417,
+        "bibcode": "2024A&A...682A..12P",
+        "kind": "analysed_sample",
+        "title": "Perez-Couto+ 2024 ESMORGA astrometric binary masses"
+      },
+      {
+        "key": "liao2026_inclinations",
+        "table": "J/A+A/710/A398/table1",
+        "id_column": "GaiaDR3",
+        "rows": 221,
+        "bibcode": "2026A&A...710A.398L",
+        "kind": "analysed_sample",
+        "title": "Liao+ 2026 inclinations of 221 non-single stars"
+      }
+    ]
+  },
+  "literature_supplement": [
+    {
+      "key": "arxiv:2206.05595",
+      "url": "https://arxiv.org/abs/2206.05595",
+      "title": "Gaia Data Release 3: Stellar multiplicity, a teaser for the hidden treasure",
+      "html_sha256": "887d88e5ab7206522191ca8f127823abf66c7e779e7b55bdadf88e413d3eb804",
+      "ids": 178
+    },
+    {
+      "key": "arxiv:2207.05086",
+      "url": "https://arxiv.org/abs/2207.05086",
+      "title": "A search for compact object companions to high mass function single-lined spectroscopic binaries in Gaia DR3",
+      "html_sha256": "135b4b52877e23af1bbf6d45fcdc7d9d65cff45208645ec6a18c1af08fcff3a3",
+      "ids": 84
+    },
+    {
+      "key": "arxiv:2405.00089",
+      "url": "https://arxiv.org/abs/2405.00089",
+      "title": "A population of neutron star candidates in wide orbits from Gaia astrometry",
+      "html_sha256": "1ad233b61423ed0d4b1a9ad9d2ec37d239adefb048c3da32a3a008b1c7b7c256",
+      "ids": 61
+    },
+    {
+      "key": "arxiv:2608.06453",
+      "url": "https://arxiv.org/abs/2608.06453",
+      "title": "Spectroscopic follow-up of compact object binary candidates from Gaia DR3: White dwarfs, neutron stars, black holes, and the parallax zeropoint",
+      "html_sha256": "de4e93f5fadcb2cf353887015779f61afd4c890cf8039a33e11c44299c87414b",
+      "ids": 227
+    },
+    {
+      "key": "arxiv:2609.24321",
+      "url": "https://arxiv.org/abs/2609.24321",
+      "title": "Companion masses of Gaia DR3 AstroSpectroSB1 binaries: a Bayesian forward-modelling framework",
+      "html_sha256": "11e4a210c561dc3685800aab3d07c2c6b56fb0dab8c5523125f366b2c5a05004",
+      "ids": 2
+    },
+    {
+      "key": "arxiv:2610.34715",
+      "url": "https://arxiv.org/abs/2610.34715",
+      "title": "Gaia DR3 Compact Binary Candidates Constrained by Radial Velocity Measurements",
+      "html_sha256": "f2405936dcd5518d23ff1b66d006e2b8eb9c2a255ced0436536310941cdcad99",
+      "ids": 16
+    }
+  ]
+}
