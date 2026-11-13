@@ -1,0 +1,14 @@
+{
+ "http_status": 200,
+ "host": "vizier.cfa.harvard.edu",
+ "seconds": 0.416,
+ "request": {
+  "url": "https://vizier.cfa.harvard.edu/viz-bin/asu-tsv?-source=J/A+A/692/A247/table1&-out=GaiaDR3&-out.max=unlimited",
+  "form": null
+ },
+ "sha256": "1fcc0f1ad580c4ca128a1f61638a5b8549261f78266cfde37026521e5c4f3c3e",
+ "bytes": 398949,
+ "body_file": "ed4dc6c700575277.1fcc0f1ad580c4ca.body",
+ "fetched_at_utc": "2026-11-13T00:27:50.773754+00:00",
+ "cache_reused": false
+}

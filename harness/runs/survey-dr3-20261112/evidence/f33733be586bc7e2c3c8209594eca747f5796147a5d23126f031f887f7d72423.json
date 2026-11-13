@@ -1,0 +1,19 @@
+{
+ "http_status": 200,
+ "host": "simbad.cfa.harvard.edu",
+ "seconds": 0.182,
+ "request": {
+  "url": "https://simbad.cfa.harvard.edu/simbad/sim-tap/sync",
+  "form": {
+   "REQUEST": "doQuery",
+   "LANG": "ADQL",
+   "FORMAT": "csv",
+   "QUERY": "SELECT i.id, b.main_id, b.otype, b.nbref FROM ident AS i JOIN basic AS b ON i.oidref = b.oid WHERE i.id IN ('Gaia DR3 6872108618914913536')"
+  }
+ },
+ "sha256": "862a5bde3eeb1b2912e5ec9210a7ec0d9d4ff38e603b35bc298bed54854c36dd",
+ "bytes": 23,
+ "body_file": "f33733be586bc7e2.862a5bde3eeb1b29.body",
+ "fetched_at_utc": "2026-11-13T00:28:51.334627+00:00",
+ "cache_reused": false
+}

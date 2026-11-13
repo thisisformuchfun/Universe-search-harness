@@ -1,0 +1,185 @@
+{
+  "label": "Whole-catalogue anomaly survey with automated vetting. Not companion masses, not black-hole detections.",
+  "release": "gaiadr3",
+  "rows_in_table": 443205,
+  "find": {
+    "astrometric": {
+      "rows_scanned": 169227,
+      "rows_monte_carlo": 38977,
+      "point_m2_above_cut": 2008,
+      "shortlisted": 779,
+      "seconds": 7.039
+    },
+    "spectroscopic": {
+      "rows_scanned": 181529,
+      "rows_monte_carlo": 35430,
+      "point_m2_above_cut": 2897,
+      "shortlisted": 768,
+      "seconds": 2.9720000000000004
+    }
+  },
+  "shortlisted": 1547,
+  "vetted": 1547,
+  "tier_counts": {
+    "HELD_FAILED_VETTING": 1001,
+    "HELD_WITH_CAVEATS": 276,
+    "EXCLUDED_PUBLISHED_PRIOR": 270
+  },
+  "tier_counts_by_channel": {
+    "astrometric:EXCLUDED_PUBLISHED_PRIOR": 75,
+    "astrometric:HELD_FAILED_VETTING": 431,
+    "astrometric:HELD_WITH_CAVEATS": 273,
+    "spectroscopic:EXCLUDED_PUBLISHED_PRIOR": 195,
+    "spectroscopic:HELD_FAILED_VETTING": 570,
+    "spectroscopic:HELD_WITH_CAVEATS": 3
+  },
+  "fail_reasons": {
+    "sb1_hidden_pair": 698,
+    "independent_amrf_classification": 207,
+    "orbit_significance": 205,
+    "ms_triple_excluded": 177,
+    "gaia_variability_tables": 72,
+    "blend_image_parameters": 27,
+    "orbit_goodness_of_fit": 25,
+    "mass_plausibility": 18,
+    "blend_neighbours": 12,
+    "ms_companion_excluded": 7,
+    "parallax_quality": 5,
+    "sb1_rv_range_consistency": 3,
+    "rv_amplitude_consistency": 2,
+    "astrospectro_darkness": 1
+  },
+  "tier_meaning": {
+    "EXCLUDED_PUBLISHED_PRIOR": "Already in a compact-companion catalogue or discussed in that context. Not new.",
+    "HELD_FAILED_VETTING": "At least one test found an ordinary explanation or a quality failure. Held.",
+    "HELD_WITH_CAVEATS": "No failure, but at least one warning or a core test that could not be run. Held.",
+    "HELD_SURVIVED_AUTOMATED_VETTING": "No ordinary explanation found by these automated checks. Still a held anomaly that needs independent orbit validation and human review. Not a discovery."
+  },
+  "vetting_rounds": [
+    {
+      "event": "vet",
+      "reason": "25+ unvetted after shard 0",
+      "candidates": 181,
+      "tiers": {
+        "HELD_WITH_CAVEATS": 37,
+        "HELD_FAILED_VETTING": 111,
+        "EXCLUDED_PUBLISHED_PRIOR": 33
+      },
+      "evidence_errors": {},
+      "seconds": 22.5,
+      "at_utc": "2026-11-13T00:27:52.516321+00:00"
+    },
+    {
+      "event": "vet",
+      "reason": "25+ unvetted after shard 1",
+      "candidates": 198,
+      "tiers": {
+        "HELD_FAILED_VETTING": 123,
+        "HELD_WITH_CAVEATS": 33,
+        "EXCLUDED_PUBLISHED_PRIOR": 42
+      },
+      "evidence_errors": {},
+      "seconds": 13.7,
+      "at_utc": "2026-11-13T00:28:07.595524+00:00"
+    },
+    {
+      "event": "vet",
+      "reason": "25+ unvetted after shard 2",
+      "candidates": 191,
+      "tiers": {
+        "HELD_FAILED_VETTING": 133,
+        "HELD_WITH_CAVEATS": 32,
+        "EXCLUDED_PUBLISHED_PRIOR": 26
+      },
+      "evidence_errors": {},
+      "seconds": 12.6,
+      "at_utc": "2026-11-13T00:28:21.582753+00:00"
+    },
+    {
+      "event": "vet",
+      "reason": "25+ unvetted after shard 3",
+      "candidates": 188,
+      "tiers": {
+        "HELD_FAILED_VETTING": 125,
+        "HELD_WITH_CAVEATS": 34,
+        "EXCLUDED_PUBLISHED_PRIOR": 29
+      },
+      "evidence_errors": {},
+      "seconds": 11.7,
+      "at_utc": "2026-11-13T00:28:34.687969+00:00"
+    },
+    {
+      "event": "vet",
+      "reason": "25+ unvetted after shard 4",
+      "candidates": 203,
+      "tiers": {
+        "HELD_WITH_CAVEATS": 33,
+        "HELD_FAILED_VETTING": 134,
+        "EXCLUDED_PUBLISHED_PRIOR": 36
+      },
+      "evidence_errors": {},
+      "seconds": 15.5,
+      "at_utc": "2026-11-13T00:28:51.565886+00:00"
+    },
+    {
+      "event": "vet",
+      "reason": "25+ unvetted after shard 5",
+      "candidates": 173,
+      "tiers": {
+        "HELD_FAILED_VETTING": 105,
+        "HELD_WITH_CAVEATS": 35,
+        "EXCLUDED_PUBLISHED_PRIOR": 33
+      },
+      "evidence_errors": {},
+      "seconds": 13.3,
+      "at_utc": "2026-11-13T00:29:06.313024+00:00"
+    },
+    {
+      "event": "vet",
+      "reason": "25+ unvetted after shard 6",
+      "candidates": 200,
+      "tiers": {
+        "HELD_FAILED_VETTING": 127,
+        "HELD_WITH_CAVEATS": 40,
+        "EXCLUDED_PUBLISHED_PRIOR": 33
+      },
+      "evidence_errors": {},
+      "seconds": 13.6,
+      "at_utc": "2026-11-13T00:29:21.481337+00:00"
+    },
+    {
+      "event": "vet",
+      "reason": "25+ unvetted after shard 7",
+      "candidates": 213,
+      "tiers": {
+        "HELD_FAILED_VETTING": 143,
+        "HELD_WITH_CAVEATS": 32,
+        "EXCLUDED_PUBLISHED_PRIOR": 38
+      },
+      "evidence_errors": {},
+      "seconds": 17.1,
+      "at_utc": "2026-11-13T00:29:40.094990+00:00"
+    }
+  ],
+  "evidence_errors": [],
+  "controls": {
+    "meaning": "Published positives used as a sanity check of the search and vetting, not as a tuning target. Most controls have f_phot well below this survey's mass cut and are not expected to be shortlisted.",
+    "n": 31,
+    "shortlisted": 23,
+    "excluded_as_published": 23,
+    "shortlisted_but_not_excluded": [],
+    "physics_tier_counts": {
+      "HELD_SURVIVED_AUTOMATED_VETTING": 8,
+      "HELD_WITH_CAVEATS": 12,
+      "HELD_FAILED_VETTING": 3
+    }
+  },
+  "agent_run_records": 273,
+  "new_candidates": [],
+  "releasable_novel_candidates": 0,
+  "discovery_claims": 0,
+  "data_mode": "REAL_ARCHIVE_BULK_FILE",
+  "vetting_evidence_mode": "LIVE_ARCHIVE_QUERIES",
+  "seconds_total": 134.1,
+  "backend": "numpy"
+}

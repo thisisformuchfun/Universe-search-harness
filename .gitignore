@@ -12,4 +12,6 @@ dashboard/dist/
 # Harness working output (commit fixtures/ deliberately; runs and caches are local)
 harness/runs/*
 !harness/runs/verified-release/
+!harness/runs/survey-dr3-20261112/
+harness/runs/survey-dr3-20261112/ledger.json
 harness/data/cache/

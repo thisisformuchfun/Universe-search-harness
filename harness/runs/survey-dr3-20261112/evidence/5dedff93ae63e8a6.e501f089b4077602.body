@@ -1,0 +1,67 @@
+#
+#   VizieR Astronomical Server vizier.cfa.harvard.edu
+#    Date: 2026-11-13T00:27:47 [V7.6.1]
+#   In case of problem, please report to:	cds-question@unistra.fr
+#
+#
+#Coosys	J2000:	eq_FK5 J2000
+#INFO	service_protocol=ASU	  IVOID of the protocol through which the data was retrieved
+#INFO	request_date=2026-11-13T00:27:47	  Query execution date
+#INFO	request=https://vizier.cfa.harvard.edu/viz-bin/asu-tsv?-source=J/PASP/136/H4202/table1&-out=GaiaDR3&-out.max=unlimited	  Full request URL
+#INFO	contact=cds-question@unistra.fr	  Email or URL to contact publisher
+#INFO	server_software=VizieR/7.6.1	  Software version
+#INFO	publisher=CDS	  Data centre that produced the VOTable
+
+#RESOURCE=yCat_61373202
+#Name: J/PASP/136/H4202
+#Title: Wide Post-common Envelope Binaries from Gaia (Yamaguchi+, 2024)
+#INFO	ivoid=ivo://cds.vizier/j/pasp/136/h4202	    IVOID of underlying data collection
+#INFO	data_ivoid=ivo://cds.vizier/j/pasp/136/h4202	    IVOID of underlying data collection
+#INFO	creator=Yamaguchi N.	    First author or institution
+#INFO	cites=bibcode:2024PASP..136h4202Y	    Article or Data origin sources
+#INFO	journal=PASP	    Journal name
+#INFO	original_date=2024	    Year of the article publication
+#INFO	reference_url=https://cdsarc.cds.unistra.fr/viz-bin/cat/J/PASP/136/H4202	    Dataset landing page
+#INFO	citation=doi:10.26093/cds/vizier.61373202	    Dataset identifier that can be used for citation
+#INFO	publication_date=2025-10-30	    Date of first publication in the data centre
+#INFO	rights_uri=https://cds.unistra.fr/vizier-org/licences_vizier.html	    Licence URI
+#Coosys	H_2016.000:	ICRS
+#Table	J_PASP_136_H4202_table1:
+#Name: J/PASP/136/H4202/table1
+#Title: Basic Information from Gaia DR3 of all Objects Studied in this Work
+#Column	GaiaDR3	(I19)	Gaia DR3 Source ID	[ucd=meta.id]
+GaiaDR3
+
+-------------------
+1803080360967961856
+2505477938150534016
+2966114550741693440
+2990664622462566528
+3533798283973293056
+4192464229290454912
+4233885203132760320
+4237613470960339456
+4346259930053416064
+4463782295536949632
+4509912512048265088
+4712016939794270720
+4722462403337867520
+4746089877426994048
+4807112532250705280
+4877335724279916032
+4907589061595812224
+4928000193592001920
+5119937334246966656
+5120822131869574784
+5501078229653801600
+5953913841603513984
+6001340936385389440
+6032398738252562688
+6385252016957373824
+6409382723774888448
+6428833084470488704
+6479954396567118976
+6632738920293491584
+6637389068504460288
+6663317786070516736
+

@@ -1,0 +1,323 @@
+{
+  "meaning": "Published positives used as a sanity check of the search and vetting, not as a tuning target. Most controls have f_phot well below this survey's mass cut and are not expected to be shortlisted.",
+  "n": 31,
+  "shortlisted": 23,
+  "excluded_as_published": 23,
+  "shortlisted_but_not_excluded": [],
+  "physics_tier_counts": {
+    "HELD_SURVIVED_AUTOMATED_VETTING": 8,
+    "HELD_WITH_CAVEATS": 12,
+    "HELD_FAILED_VETTING": 3
+  },
+  "rows": [
+    {
+      "source_id": "347695336533949440",
+      "label": "control_tune:shahaf2023",
+      "shortlisted": false,
+      "tiers": [],
+      "physics_tiers": []
+    },
+    {
+      "source_id": "747174436620510976",
+      "label": "control_tune:shahaf2023",
+      "shortlisted": true,
+      "tiers": [
+        "EXCLUDED_PUBLISHED_PRIOR"
+      ],
+      "physics_tiers": [
+        "HELD_SURVIVED_AUTOMATED_VETTING"
+      ]
+    },
+    {
+      "source_id": "809741149368202752",
+      "label": "control_tune:shahaf2023",
+      "shortlisted": true,
+      "tiers": [
+        "EXCLUDED_PUBLISHED_PRIOR"
+      ],
+      "physics_tiers": [
+        "HELD_WITH_CAVEATS"
+      ]
+    },
+    {
+      "source_id": "824344003814438528",
+      "label": "control_tune:li2026",
+      "shortlisted": true,
+      "tiers": [
+        "EXCLUDED_PUBLISHED_PRIOR"
+      ],
+      "physics_tiers": [
+        "HELD_WITH_CAVEATS"
+      ]
+    },
+    {
+      "source_id": "1058875159778407808",
+      "label": "control_tune:shahaf2023",
+      "shortlisted": true,
+      "tiers": [
+        "EXCLUDED_PUBLISHED_PRIOR"
+      ],
+      "physics_tiers": [
+        "HELD_SURVIVED_AUTOMATED_VETTING"
+      ]
+    },
+    {
+      "source_id": "1109902566711892352",
+      "label": "control_tune:shahaf2023",
+      "shortlisted": false,
+      "tiers": [],
+      "physics_tiers": []
+    },
+    {
+      "source_id": "1350295047363872512",
+      "label": "control_tune:shahaf2023",
+      "shortlisted": true,
+      "tiers": [
+        "EXCLUDED_PUBLISHED_PRIOR"
+      ],
+      "physics_tiers": [
+        "HELD_SURVIVED_AUTOMATED_VETTING"
+      ]
+    },
+    {
+      "source_id": "1525829295599805184",
+      "label": "control_tune:shahaf2023",
+      "shortlisted": false,
+      "tiers": [],
+      "physics_tiers": []
+    },
+    {
+      "source_id": "1581117310088807552",
+      "label": "control_tune:shahaf2023",
+      "shortlisted": false,
+      "tiers": [],
+      "physics_tiers": []
+    },
+    {
+      "source_id": "1695294922548180224",
+      "label": "control_tune:shahaf2023",
+      "shortlisted": true,
+      "tiers": [
+        "EXCLUDED_PUBLISHED_PRIOR"
+      ],
+      "physics_tiers": [
+        "HELD_WITH_CAVEATS"
+      ]
+    },
+    {
+      "source_id": "1801110822095134848",
+      "label": "control_tune:shahaf2023",
+      "shortlisted": true,
+      "tiers": [
+        "EXCLUDED_PUBLISHED_PRIOR"
+      ],
+      "physics_tiers": [
+        "HELD_SURVIVED_AUTOMATED_VETTING"
+      ]
+    },
+    {
+      "source_id": "1871419337958702720",
+      "label": "control_tune:shahaf2023",
+      "shortlisted": true,
+      "tiers": [
+        "EXCLUDED_PUBLISHED_PRIOR"
+      ],
+      "physics_tiers": [
+        "HELD_SURVIVED_AUTOMATED_VETTING"
+      ]
+    },
+    {
+      "source_id": "2196619383835483648",
+      "label": "control_tune:shahaf2023",
+      "shortlisted": false,
+      "tiers": [],
+      "physics_tiers": []
+    },
+    {
+      "source_id": "2397135910639986304",
+      "label": "control_tune:shahaf2023",
+      "shortlisted": true,
+      "tiers": [
+        "EXCLUDED_PUBLISHED_PRIOR"
+      ],
+      "physics_tiers": [
+        "HELD_SURVIVED_AUTOMATED_VETTING"
+      ]
+    },
+    {
+      "source_id": "2426116249713980416",
+      "label": "control_tune:shahaf2023",
+      "shortlisted": true,
+      "tiers": [
+        "EXCLUDED_PUBLISHED_PRIOR"
+      ],
+      "physics_tiers": [
+        "HELD_WITH_CAVEATS"
+      ]
+    },
+    {
+      "source_id": "2469926638416055168",
+      "label": "control_tune:shahaf2023",
+      "shortlisted": false,
+      "tiers": [],
+      "physics_tiers": []
+    },
+    {
+      "source_id": "2912474227443068544",
+      "label": "control_tune:shahaf2023",
+      "shortlisted": true,
+      "tiers": [
+        "EXCLUDED_PUBLISHED_PRIOR"
+      ],
+      "physics_tiers": [
+        "HELD_FAILED_VETTING"
+      ]
+    },
+    {
+      "source_id": "3263804373319076480",
+      "label": "control_tune:shahaf2023",
+      "shortlisted": true,
+      "tiers": [
+        "EXCLUDED_PUBLISHED_PRIOR"
+      ],
+      "physics_tiers": [
+        "HELD_WITH_CAVEATS"
+      ]
+    },
+    {
+      "source_id": "3509370326763016704",
+      "label": "control_tune:shahaf2023",
+      "shortlisted": true,
+      "tiers": [
+        "EXCLUDED_PUBLISHED_PRIOR"
+      ],
+      "physics_tiers": [
+        "HELD_FAILED_VETTING"
+      ]
+    },
+    {
+      "source_id": "3869650535947137920",
+      "label": "control_tune:shahaf2023",
+      "shortlisted": true,
+      "tiers": [
+        "EXCLUDED_PUBLISHED_PRIOR"
+      ],
+      "physics_tiers": [
+        "HELD_WITH_CAVEATS"
+      ]
+    },
+    {
+      "source_id": "4240540718818313984",
+      "label": "control_tune:shahaf2023",
+      "shortlisted": true,
+      "tiers": [
+        "EXCLUDED_PUBLISHED_PRIOR"
+      ],
+      "physics_tiers": [
+        "HELD_WITH_CAVEATS"
+      ]
+    },
+    {
+      "source_id": "4318465066420528000",
+      "label": "EXCLUDE_KNOWN_BH",
+      "shortlisted": false,
+      "tiers": [],
+      "physics_tiers": []
+    },
+    {
+      "source_id": "4373465352415301632",
+      "label": "EXCLUDE_KNOWN_BH",
+      "shortlisted": true,
+      "tiers": [
+        "EXCLUDED_PUBLISHED_PRIOR"
+      ],
+      "physics_tiers": [
+        "HELD_WITH_CAVEATS"
+      ]
+    },
+    {
+      "source_id": "4482912934572480384",
+      "label": "control_tune:shahaf2023",
+      "shortlisted": true,
+      "tiers": [
+        "EXCLUDED_PUBLISHED_PRIOR"
+      ],
+      "physics_tiers": [
+        "HELD_FAILED_VETTING"
+      ]
+    },
+    {
+      "source_id": "4578398926673187328",
+      "label": "control_tune:shahaf2023",
+      "shortlisted": true,
+      "tiers": [
+        "EXCLUDED_PUBLISHED_PRIOR"
+      ],
+      "physics_tiers": [
+        "HELD_SURVIVED_AUTOMATED_VETTING"
+      ]
+    },
+    {
+      "source_id": "4637171465304969216",
+      "label": "control_tune:shahaf2023",
+      "shortlisted": true,
+      "tiers": [
+        "EXCLUDED_PUBLISHED_PRIOR"
+      ],
+      "physics_tiers": [
+        "HELD_WITH_CAVEATS"
+      ]
+    },
+    {
+      "source_id": "4638295715945158144",
+      "label": "control_tune:shahaf2023",
+      "shortlisted": false,
+      "tiers": [],
+      "physics_tiers": []
+    },
+    {
+      "source_id": "5530442371304582912",
+      "label": "control_tune:shahaf2023",
+      "shortlisted": true,
+      "tiers": [
+        "EXCLUDED_PUBLISHED_PRIOR"
+      ],
+      "physics_tiers": [
+        "HELD_SURVIVED_AUTOMATED_VETTING"
+      ]
+    },
+    {
+      "source_id": "5580526947012630912",
+      "label": "control_tune:shahaf2023",
+      "shortlisted": true,
+      "tiers": [
+        "EXCLUDED_PUBLISHED_PRIOR"
+      ],
+      "physics_tiers": [
+        "HELD_WITH_CAVEATS"
+      ]
+    },
+    {
+      "source_id": "5590962927271507712",
+      "label": "control_tune:shahaf2023",
+      "shortlisted": true,
+      "tiers": [
+        "EXCLUDED_PUBLISHED_PRIOR"
+      ],
+      "physics_tiers": [
+        "HELD_WITH_CAVEATS"
+      ]
+    },
+    {
+      "source_id": "5870569352746779008",
+      "label": "EXCLUDE_KNOWN_BH",
+      "shortlisted": true,
+      "tiers": [
+        "EXCLUDED_PUBLISHED_PRIOR"
+      ],
+      "physics_tiers": [
+        "HELD_WITH_CAVEATS"
+      ]
+    }
+  ]
+}

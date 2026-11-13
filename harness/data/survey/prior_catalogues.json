@@ -1,0 +1,155 @@
+{
+ "version": "prior-catalogues-1",
+ "verified_on": "2026-11-12",
+ "verified_how": "Each table's ID column was downloaded in full from the VizieR mirror at CfA and the row count recorded. The row count is re-checked on every fetch.",
+ "kinds": {
+  "compact_candidates": "Membership excludes a source as already published.",
+  "analysed_sample": "Whole analysed samples. Membership is reported, never used to exclude."
+ },
+ "known_gaps": [
+  "El-Badry+ 2024 neutron-star candidates (Open J. Astrophys.): not on VizieR",
+  "Shahaf+ 2024 WD+MS astrometric triage: not on VizieR mirror",
+  "Gaia Collaboration/Arenou+ 2023 compact-companion tables: not found on VizieR mirror",
+  "Andrews+ 2022: no catalogue",
+  "Fu+ 2022, Bashi+ 2022, Tanikawa+ 2023: not found on VizieR mirror",
+  "Li+ 2026 (arXiv:2610.34715): not on VizieR",
+  "ADS full-text search: needs a token, not run"
+ ],
+ "catalogues": [
+  {
+   "key": "shahaf2023_class3",
+   "table": "J/MNRAS/518/2991/table2",
+   "id_column": "GaiaDR3",
+   "rows": 177,
+   "bibcode": "2023MNRAS.518.2991S",
+   "kind": "compact_candidates",
+   "title": "Shahaf+ 2023 class-III astrometric compact-companion candidates"
+  },
+  {
+   "key": "jayasinghe2023_sb1",
+   "table": "J/MNRAS/521/5927/table",
+   "id_column": "Source",
+   "rows": 234,
+   "bibcode": "2023MNRAS.521.5927J",
+   "kind": "compact_candidates",
+   "title": "Jayasinghe+ 2023 SB1s searched for non-interacting compact companions"
+  },
+  {
+   "key": "gomel2023_ellipsoidal",
+   "table": "J/A+A/674/A19/table3",
+   "id_column": "GaiaDR3",
+   "rows": 262,
+   "bibcode": "2023A&A...674A..19G",
+   "kind": "compact_candidates",
+   "title": "Gomel+ 2023 ellipsoidal variables with possible compact companions"
+  },
+  {
+   "key": "yamaguchi2024_wide_pceb",
+   "table": "J/PASP/136/H4202/table1",
+   "id_column": "GaiaDR3",
+   "rows": 31,
+   "bibcode": "2024PASP..136h4202Y",
+   "kind": "compact_candidates",
+   "title": "Yamaguchi+ 2024 astrometric WD+MS binaries with RV follow-up"
+  },
+  {
+   "key": "rebassa2025_wdms",
+   "table": "J/A+A/699/A153/table2",
+   "id_column": "GaiaDR3",
+   "rows": 1312,
+   "bibcode": "2025A&A...699A.153R",
+   "kind": "compact_candidates",
+   "title": "Rebassa-Mansergas+ 2025 unresolved WD+MS binaries"
+  },
+  {
+   "key": "nayak2026_wdms_good",
+   "table": "J/A+A/709/A114/table2",
+   "id_column": "GaiaDR3",
+   "rows": 347,
+   "bibcode": "2026A&A...709A.114N",
+   "kind": "compact_candidates",
+   "title": "Nayak 2026 WD+MS with well fitted SEDs"
+  },
+  {
+   "key": "nayak2026_wdms_probable",
+   "table": "J/A+A/709/A114/table3",
+   "id_column": "GaiaDR3",
+   "rows": 1070,
+   "bibcode": "2026A&A...709A.114N",
+   "kind": "compact_candidates",
+   "title": "Nayak 2026 probable WD+MS"
+  },
+  {
+   "key": "mueller_horn2026_rgb",
+   "table": "J/A+A/709/A62/table1",
+   "id_column": "GaiaDR3",
+   "rows": 21028,
+   "bibcode": "2026A&A...709A..62M",
+   "kind": "analysed_sample",
+   "title": "Mueller-Horn+ 2026 dormant compact-object search, whole RGB sample (not a candidate list)"
+  },
+  {
+   "key": "mueller_horn2026_ms",
+   "table": "J/A+A/709/A62/table2",
+   "id_column": "GaiaDR3",
+   "rows": 19664,
+   "bibcode": "2026A&A...709A..62M",
+   "kind": "analysed_sample",
+   "title": "Mueller-Horn+ 2026 dormant compact-object search, whole MS sample (not a candidate list)"
+  },
+  {
+   "key": "shahaf2023_amrf_all",
+   "table": "J/MNRAS/518/2991/table1",
+   "id_column": "GaiaDR3",
+   "rows": 101380,
+   "bibcode": "2023MNRAS.518.2991S",
+   "kind": "analysed_sample",
+   "title": "Shahaf+ 2023 full AMRF-classified astrometric sample (not a candidate list)"
+  },
+  {
+   "key": "bashi2024_orbital",
+   "table": "J/A+A/692/A247/table1",
+   "id_column": "GaiaDR3",
+   "rows": 19858,
+   "bibcode": "2024A&A...692A.247B",
+   "kind": "analysed_sample",
+   "title": "Bashi+ 2024 astrometric-vs-RV consistency for orbital solutions"
+  },
+  {
+   "key": "nagarajan2024_validation_orb",
+   "table": "J/PASP/136/I4203/orb",
+   "id_column": "Id1",
+   "rows": 7820,
+   "bibcode": "2024PASP..136i4203N",
+   "kind": "analysed_sample",
+   "title": "Nagarajan+ 2024 validation of DR3 orbital solutions with wide tertiaries"
+  },
+  {
+   "key": "bailer_jones2026_masses",
+   "table": "J/A+A/708/A249/table1",
+   "id_column": "GaiaDR3",
+   "rows": 20334,
+   "bibcode": "2026A&A...708A.249B",
+   "kind": "analysed_sample",
+   "title": "Bailer-Jones+ 2026 binary component masses"
+  },
+  {
+   "key": "esmorga2024",
+   "table": "J/A+A/682/A12/catalog",
+   "id_column": "GaiaDR3",
+   "rows": 88417,
+   "bibcode": "2024A&A...682A..12P",
+   "kind": "analysed_sample",
+   "title": "Perez-Couto+ 2024 ESMORGA astrometric binary masses"
+  },
+  {
+   "key": "liao2026_inclinations",
+   "table": "J/A+A/710/A398/table1",
+   "id_column": "GaiaDR3",
+   "rows": 221,
+   "bibcode": "2026A&A...710A.398L",
+   "kind": "analysed_sample",
+   "title": "Liao+ 2026 inclinations of 221 non-single stars"
+  }
+ ]
+}

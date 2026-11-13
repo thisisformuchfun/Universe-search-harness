@@ -10,5 +10,6 @@ dependencies = ["numpy==2.3.5"]
 [project.scripts]
 harness2-universe = "harness2.cli.universe:main"
 harness2-agent = "harness2.cli.agent:main"
+harness2-survey = "harness2.cli.survey:main"
 [tool.setuptools.packages.find]
 include = ["harness2*"]

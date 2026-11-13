@@ -27,6 +27,16 @@ harness2-universe run --live --output runs/live-01 --page-size 500 --max-pages 2
 - Output files: `records.json` (all dispositions), `review_queue.json/csv` (held only), `summary.json`, `provenance.json`, `run_manifest.json` (input, code and output hashes).
 - The old three-weight ranking loop (`--provider deterministic|local`) is still there for reproducibility. The agent below is where the model does real work.
 
+## Survey: harness2-survey
+
+```sh
+harness2-survey acquire --store data/cache/bulk                       # whole NSS table + context, verified
+harness2-survey run --store data/cache/bulk --out runs/survey-01      # find, then vet as candidates accumulate
+harness2-survey bench --store data/cache/bulk --backends numpy torch:cpu
+```
+
+Searches all 443,205 Gaia DR3 orbit solutions through an astrometric and a spectroscopic channel, then runs an automated vetting battery on the shortlist. The vetting stage triggers by itself whenever enough candidates are waiting. Every tier is a hold or an exclusion; see [`docs/SURVEY.md`](docs/SURVEY.md). The first full run is committed under `runs/survey-dr3-20261112/`.
+
 ## Agent: harness2-agent
 
 | Command | Purpose |
@@ -92,8 +102,10 @@ python scripts/dr4_readiness.py watchlist --out data/dr4/watchlist.csv
 
 ## GPU
 
-CPU is enough for the snapshot. `--backend cuda` uses float64 torch for covariance Monte Carlo when live rows carry `corr_vec`. Install a CUDA PyTorch build separately and check that CPU and CUDA agree.
+`harness2-survey run --backend torch:cuda` (or `torch:mps`, `torch:cpu`) moves the survey's Monte Carlo kernels to PyTorch; the default NumPy backend runs chunks on a thread pool. The PyTorch path is tested against NumPy on CPU only, and no GPU timing is claimed here.
+
+For the sealed pipeline, CPU is enough for the snapshot. `--backend cuda` uses float64 torch for covariance Monte Carlo when live rows carry `corr_vec`. Install a CUDA PyTorch build separately and check that CPU and CUDA agree.
 
 ## Further reading
 
-`docs/SCIENCE.md` covers the physics and caveats. `docs/DR4.md` covers the move to Gaia DR4. `docs/REPAIR_AUDIT.md` and the independent reviews record how the first version was found to cheat on synthetic data and how that was fixed.
+`docs/SCIENCE.md` covers the physics and caveats. `docs/SURVEY.md` covers the whole-catalogue survey and its vetting battery. `docs/DR4.md` covers the move to Gaia DR4. `docs/REPAIR_AUDIT.md` and the independent reviews record how the first version was found to cheat on synthetic data and how that was fixed.
